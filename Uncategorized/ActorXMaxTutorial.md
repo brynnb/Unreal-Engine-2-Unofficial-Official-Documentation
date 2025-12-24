@@ -113,7 +113,7 @@ Before batch-processing you will need to format your animations.
 * All of the animations that are to be processed together need to reside in a single directory
 * Each file must have its start and end time set properly. Click the *Time Configuration* button
 
-![time configuration](../assets/TimeConfig.jpg)
+![time configuration](../assets/timeconfig.jpg)
 
 in 3D-Studio to set this up properly.
 * The files should have the same name as the desired animation name once in the engine.

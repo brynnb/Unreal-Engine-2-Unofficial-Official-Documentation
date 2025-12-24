@@ -47,7 +47,7 @@ This slider controls the percentage to cut based on visablity into the next zone
 
 Rebuilding lighting can also be skipped if the box is not checked. The pull-down in this field determines what type of compression will be used for the light maps on BSP. As with any texture, the different compression settings are a give and take between quality and file size. The "Dither" check box also allows you to set whether or not you want the light maps to be dithered.The "Save as BMP" will create a BMP file that contains all of the light map information for shadows cast on BSP. As many 512x512 Bitmap files as needed will be saved in the System folder of your version of Unreal as "LM-0000#.bmp"Below is an example of what one of the light map files looks like from the EM\_Runtime.urt example map:
 
-![LM-00000.jpg](../assets/LM-00000.jpg)
+![LM-00000.jpg](../assets/lm-00000.jpg)
 
 The usefulness of this functionality it not entirely clear though as you cannot import light maps.
 

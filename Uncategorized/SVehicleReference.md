@@ -285,11 +285,11 @@ These variables are how SVehicles access user input; you are not supposed to cha
 
 `var() EAxis SupportBoneAxis`*SupportBoneAxis* is the local axis about which to rotate the bone given by [SupportBoneName](SVehicleReference.md#SupportBoneName). The axis you should choose depends on the orientation of the bone in the modeling program. If you are using Maya and use the default bone orientations, the images below will illustrate different bone axis choices:AXIS\_X - rotation axis going into the page, vehicle seen from side, front strut compressed, rear strut uncompressed
 
-![Axis_X.jpg](../assets/Axis_X.jpg)
+![Axis_X.jpg](../assets/axis_x.jpg)
 
 AXIS\_Z - rotation axis going into the page, vehicle seen from back, right strut compressed, left strut uncompressed
 
-![Axis_Z.jpg](../assets/Axis_Z.jpg)
+![Axis_Z.jpg](../assets/axis_z.jpg)
 
 ### Configurable Wheel Properties
 

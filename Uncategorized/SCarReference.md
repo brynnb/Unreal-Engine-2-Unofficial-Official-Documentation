@@ -88,7 +88,7 @@ There are a couple code changes you need to make to a stock 2226 build before SV
 
 `var() float LSDFactor`
 
-![LSDFactor.jpg](../assets/LSDFactor.jpg)
+![LSDFactor.jpg](../assets/lsdfactor.jpg)
 
 *LSDFactor* affects how the torque of the engine is distributed. If it is 0.0, the torque will be split evenly between the wheels. This will not necessarily yield wheels that all spin at the same rate; in fact, in most cases it doesn't. If *LSDFactor* is 1.0, more torque will be sent to the slower wheels in the ratio of how fast the wheels are spinning. By setting *LSDFactor* between 0.0 and 1.0, you will have a balance between these two methods.
 

@@ -54,33 +54,33 @@ There are three types of BSP Brush you will use:
 
 Below is how they will appear within the editor
 
-![AddedSolid.jpg](../../assets/AddedSolid.jpg)
+![AddedSolid.jpg](../../assets/addedsolid.jpg)
 
-![AddedNonSolid.jpg](../../assets/AddedNonSolid.jpg)
+![AddedNonSolid.jpg](../../assets/addednonsolid.jpg)
 
-![Subtracted.jpg](../../assets/Subtracted.jpg)
+![Subtracted.jpg](../../assets/subtracted.jpg)
 
-![Antiportal.jpg](../../assets/Antiportal.jpg)
+![Antiportal.jpg](../../assets/antiportal.jpg)
 
 ## Creating BSP Brushes
 
-![Primitives.jpg](../../assets/Primitives.jpg)
+![Primitives.jpg](../../assets/primitives.jpg)
 
 You create the BSP brushes by selecting your primitive, setting the size by right clicking the icon and plugging in numbers.
 
-![CSGbuttons.jpg](../../assets/CSGbuttons.jpg)
+![CSGbuttons.jpg](../../assets/csgbuttons.jpg)
 
 Then use the CSG buttons to add
 
-![AddButton.jpg](../../assets/AddButton.jpg)
+![AddButton.jpg](../../assets/addbutton.jpg)
 
 or subtract
 
-![SubtractButton.jpg](../../assets/SubtractButton.jpg)
+![SubtractButton.jpg](../../assets/subtractbutton.jpg)
 
 the brush.You can Use the Add Special Button
 
-![AddSpecialButton.jpg](../../assets/AddSpecialButton.jpg)
+![AddSpecialButton.jpg](../../assets/addspecialbutton.jpg)
 
 to add non-solid brushes (used for zone portals mainly).The "Add Antiportal" button
 
@@ -92,7 +92,7 @@ creates a non-solid brush that occludes geometry from the renderer. Once created
 
 You can modify your BSP brush several ways. You can re-shape it and scale it, move the vertices around, clip the brush, etc... to manipulate the brush to just the shape you need. You can access the modes to modify your brush a couple different ways. One is to go to the Menu at the top and go to Brush, and select your method from the menu.
 
-![BrushMenu.jpg](../../assets/BrushMenu.jpg)
+![BrushMenu.jpg](../../assets/brushmenu.jpg)
 
 Also, you can select the mode from the tool bar.
 
@@ -106,29 +106,29 @@ You can select vertex editing mode from the tool bar, or you can simply click a 
 
 ### Brush Scaling
 
-![ScaleBrush.jpg](../../assets/ScaleBrush.jpg)
+![ScaleBrush.jpg](../../assets/scalebrush.jpg)
 
 You can scale your brush by clicking the brush scale icon on the tool bar. If you hold CTRL-LMB while moving the mouse you will scale your brush.You can also scale the brush by going to the top menu, going to Brush and selecting Scale. This will open a Brush Scaling dialog box.
 
-![BrushScalingDiag.jpg](../../assets/BrushScalingDiag.jpg)
+![BrushScalingDiag.jpg](../../assets/brushscalingdiag.jpg)
 
 Here you can plug numbers into the different axes to get the size you want. For example if I had a 256 cubic brush and I wanted it to be twice as tall (512), but the same length and width I would put a 2 in the Z axis box and leave the others at one.
 
 ### Brush Rotation
 
-![RotateBrush.jpg](../../assets/RotateBrush.jpg)
+![RotateBrush.jpg](../../assets/rotatebrush.jpg)
 
 You can rotate the brush in Brush Rotate mode or by holding CTRL and moving the mouse in the different 2D views.
 
 ### Brush Clipping
 
-![BrushClip.jpg](../../assets/BrushClip.jpg)
+![BrushClip.jpg](../../assets/brushclip.jpg)
 
 You can clip brushes by clicking the Brush Clipping button on the tool bar. Specifics on brush clipping can be found in the [BrushClipping](../../Uncategorized/BrushClipping.md) document.
 
 ### Face Dragging
 
-![FaceDrag.jpg](../../assets/FaceDrag.jpg)
+![FaceDrag.jpg](../../assets/facedrag.jpg)
 
 By going into Face Drag mode you can move a face, or one side of your brush. This will allow you to "stretch" a brush or to make it slant for ramps, etc...
 

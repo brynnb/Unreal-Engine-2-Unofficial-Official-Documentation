@@ -69,9 +69,9 @@ Next, model the various components of the car (chassis, wheels, suspension strut
 Once the skeleton is created and the joints are correctly placed, bind the geometry to the skeleton using Smooth Bind. Then, in the Component Editor, set the influence of each vehicle part to it's respective joint. It's a very good idea to bind all the verts of a given vehicle part to a single bone, to keep things rigid. For example, all the verts of a tire should be influenced only by the Right Tire joint.
 Finally, export the geometry using the Actor X skeletal exporter to a .PSK file.The following images show the vehicle in Maya:
 
-![MayaCarRender.gif](../assets/MayaCarRender.gif)
+![MayaCarRender.gif](../assets/mayacarrender.gif)
 
-![MayaCarWireframe.gif](../assets/MayaCarWireframe.gif)You can download the [MayaCar.mb](rsrc/Two/SVehicleCreation/MayaCar.mb) file to see the car described in this example.
+![MayaCarWireframe.gif](../assets/mayacarwireframe.gif)You can download the [MayaCar.mb](rsrc/Two/SVehicleCreation/MayaCar.mb) file to see the car described in this example.
 
 #### Bone Orientation
 
@@ -122,11 +122,11 @@ When you set up your car, you will need to change the pivot points for some of t
 The orientation of the pivots is also important because it affects which way the tires and suspension rotate. You can see the alignment of the pivots by going to hierarchy and clicking "Affect Pivot Only". You should be able to freely rotate the pivots with this selected. If for some reason you can not rotate the pivot without affecting the object, you need to [Reset Pivots](SVehicleCreation.md#Reset_Pivots).In the example car all the pivots are oriented with the world coordinate system. This means that X (red) is forward, Y (green) is left, and Z (blue) is up. In most cases, this is what you want. You can set all the pivots by selecting all the objects, making sure "Affect Pivot Only" is selected and then typing 0.0 in all the "Absolute:World" rotation dialog. (You can set the car to a Maya coordinate system by typing 90 in X and 90 in Z.)Now that we have the pivots set to world orientation, we can easily see
 we want the wheels to rotate around the Y axis.
 
-![Pivot1.jpg](../assets/Pivot1.jpg)
+![Pivot1.jpg](../assets/pivot1.jpg)
 
 The suspension can rotate about either the Y axis or the X axis depending on what you want (they look different but both look good).
 
-![Pivot2.jpg](../assets/Pivot2.jpg)
+![Pivot2.jpg](../assets/pivot2.jpg)
 
 If you want the suspension or the wheels to rotate around a non-world axis, you can simply rotate the pivot till it is oriented with one of the axes pointed along the axis about which you want to rotate.
 
@@ -181,7 +181,7 @@ Now you need to pick which axis the wheels should rotate about. The axis you are
 
 ### Setting up Suspension Axes
 
-You need to choose which axis about which the suspension should rotate. The axis you are choosing is an axis of the suspension support's local bone coordinate system defined in the modeling program. This is defined per wheel in the *Wheels* array of the SVehicle. Refer to the [SupportBoneAxis](SVehicleReference.md#SupportBoneAxis) variable in the [SVehicleReference](SVehicleReference.md) doc.If you are using Maya and did not change the orientation of the bones, you will probably want to pick the X axis or the Z axis. The [SupportBoneAxis](SVehicleReference.md#SupportBoneAxis) description talks more about this choice. In the [example map](../assets/SVehicleExample.zip), both Maya cars use the X axis but they work ok with the Z axis if you set them to that.If you are using MAX the axis about which you want to rotate depends how you oriented the pivots of the suspension objects (see [Pivot Points](SVehicleCreation.md#Pivot_Points) for more details). If you aligned the pivots with the world coordinates, you probably want to rotate about the X or Y axes. The X axis MAX is the same as the [Z axis](SVehicleReference.md#SupportBoneAxis) in Maya, while the Y axis in MAX is the same as the [X axis](SVehicleReference.md#SupportBoneAxis) in Maya. In the [example map](../assets/SVehicleExample.zip), the MAX car uses the Y axis but it will work ok with the X axis if you set it to that.
+You need to choose which axis about which the suspension should rotate. The axis you are choosing is an axis of the suspension support's local bone coordinate system defined in the modeling program. This is defined per wheel in the *Wheels* array of the SVehicle. Refer to the [SupportBoneAxis](SVehicleReference.md#SupportBoneAxis) variable in the [SVehicleReference](SVehicleReference.md) doc.If you are using Maya and did not change the orientation of the bones, you will probably want to pick the X axis or the Z axis. The [SupportBoneAxis](SVehicleReference.md#SupportBoneAxis) description talks more about this choice. In the [example map](../assets/svehicleexample.zip), both Maya cars use the X axis but they work ok with the Z axis if you set them to that.If you are using MAX the axis about which you want to rotate depends how you oriented the pivots of the suspension objects (see [Pivot Points](SVehicleCreation.md#Pivot_Points) for more details). If you aligned the pivots with the world coordinates, you probably want to rotate about the X or Y axes. The X axis MAX is the same as the [Z axis](SVehicleReference.md#SupportBoneAxis) in Maya, while the Y axis in MAX is the same as the [X axis](SVehicleReference.md#SupportBoneAxis) in Maya. In the [example map](../assets/svehicleexample.zip), the MAX car uses the Y axis but it will work ok with the X axis if you set it to that.
 
 ### Save the Animation Package
 
@@ -189,6 +189,6 @@ Make sure you save. Now you are done with the prep from the model and can start 
 
 ## Rockin' Your Model In-Game
 
-Now that you have your model set up and saved in an animation package, you can put your model on an SVehicle. The example models were both made to use the same bone names as the *Lynx* which is the jeep in CodeDrop2226. Both of these models can replace the jeep model though the MAX model will require some changes to the wheel and suspension axes.Create a level you want to drive around in. Next place a *Lynx* (Actor->Pawn->SVehicle->SCar->Lynx) in the level. Go to *Display* and set the mesh to be one of the example models. (If UnrealEd crashes while setting the mesh, try setting the mesh to something very simple, like the "WaspMesh" in "AmbientCreatures", then setting it to the example model.) Now play the map and you should have able to drive the vehicles around and have lots of fun!Or you can download the SVehicles [example](../assets/SVehicleExample.zip) and unzip it into your build. This includes a map with all the example cars and terrain to drive on. This zip also includes the .UKX for all the cars. This example is not meant to be a release quality work; it is just an example but it works and you can drive around and see how the vehicles behave.The example map is for 2226 only. Because the 3323 codedrop doesn't have the assets used by the example (the Lynx) you can use it directly.
+Now that you have your model set up and saved in an animation package, you can put your model on an SVehicle. The example models were both made to use the same bone names as the *Lynx* which is the jeep in CodeDrop2226. Both of these models can replace the jeep model though the MAX model will require some changes to the wheel and suspension axes.Create a level you want to drive around in. Next place a *Lynx* (Actor->Pawn->SVehicle->SCar->Lynx) in the level. Go to *Display* and set the mesh to be one of the example models. (If UnrealEd crashes while setting the mesh, try setting the mesh to something very simple, like the "WaspMesh" in "AmbientCreatures", then setting it to the example model.) Now play the map and you should have able to drive the vehicles around and have lots of fun!Or you can download the SVehicles [example](../assets/svehicleexample.zip) and unzip it into your build. This includes a map with all the example cars and terrain to drive on. This zip also includes the .UKX for all the cars. This example is not meant to be a release quality work; it is just an example but it works and you can drive around and see how the vehicles behave.The example map is for 2226 only. Because the 3323 codedrop doesn't have the assets used by the example (the Lynx) you can use it directly.
 
 ## Download

@@ -105,4 +105,4 @@ This is the stage that makes the effect really come to life and can also cripple
 
 Below you can download a compressed archive that contains the content for this example:
 
-* [SwingingLight-2107.zip](../assets/SwingingLight-2107.zip) (for Unreal Engine 2 build 2107 - uses some Textures and Meshes from UT2003)
+* [SwingingLight-2107.zip](../assets/swinginglight-2107.zip) (for Unreal Engine 2 build 2107 - uses some Textures and Meshes from UT2003)

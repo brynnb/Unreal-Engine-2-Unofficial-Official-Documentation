@@ -38,7 +38,7 @@ Setting up the Terrain was one of the first things done for the EM\_RunTime map.
 
 Since much of the Terrain was already roughly laid out, it was not worth it to start over. Instead, the "UnrealEd3 G16 file editor" (created by [Martin Bell](http://homepage.ntlworld.com/martingbell/) was used to double the resolution of the Terrain Height Map and then it was re-imported, scaled in the TerrainInfo, and then smoothed over using the Terrain editor in Unreal Ed.
 
-![G16tool.jpg](../assets/G16tool.jpg)
+![G16tool.jpg](../assets/g16tool.jpg)
 
 You can download this tool from Martin Bell's site: <http://homepage.ntlworld.com/martingbell/ut2003/>
 

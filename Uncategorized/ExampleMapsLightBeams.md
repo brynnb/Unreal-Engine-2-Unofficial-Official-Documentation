@@ -19,5 +19,5 @@ There's a window in a dusty room, the sun shines through the window, creating li
 Below you can download a compressed archive that contains the content for this example:
 
 * [lightbeam.zip](../assets/lightbeam.zip)
-* [EM2110\_LightBeam.zip](../assets/EM2110_LightBeam.zip) (for Unreal Engine 2 build 2110)
-* [EM2226\_LightBearm.zip](../assets/EM2226_LightBearm.zip) (for Unreal Engine 2 build 2226)
+* [EM2110\_LightBeam.zip](../assets/em2110_lightbeam.zip) (for Unreal Engine 2 build 2110)
+* [EM2226\_LightBearm.zip](../assets/em2226_lightbearm.zip) (for Unreal Engine 2 build 2226)

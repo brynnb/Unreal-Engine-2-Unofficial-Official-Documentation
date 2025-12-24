@@ -69,7 +69,7 @@ It is very important to note that this collision will be added to ALL instances 
 
 ### K-DOP
 
-![K-DOP.gif](../../assets/K-DOP.gif)
+![K-DOP.gif](../../assets/k-dop.gif)
 
 K-DOP is a tool in the static mesh browser for generating simple *Type 1* [collision models](#collision-models). K-DOP stands for 'K discrete oriented polytope' but that doesn't really matter :). Basically it takes 'k' axis-aligned planes and pushes them as close to the mesh as it can. The resulting shape is used as a collision model. In the editor k can be:
 
@@ -86,7 +86,7 @@ See below for an example. This util is quite handy for .usx's full of pipes, pil
 
 ### Fit Karma Primitive
 
-![FitKarma.gif](../../assets/FitKarma.gif)
+![FitKarma.gif](../../assets/fitkarma.gif)
 
 *Fit Karma Primitive* is a tool in the static mesh browser for generating simple *Type 2* [collision models](#collision-models). You can fit Spheres or Cylinders.
 
@@ -109,7 +109,7 @@ You can create [collision models](#collision-models) of *Type 1* and *Type 2* in
 
 * Convex objects can be any completely closed convex 3D shape. A box for example can also be a convex object. The diagram below illustrates what is convex and what is not:
 
-![Convex.gif](../../assets/Convex.gif)
+![Convex.gif](../../assets/convex.gif)
 
 Objects created with the *MCDCX* tag behave differently than the others; please see the [collision models](#collision-models) parts of this document for more details. In general you probably want to create *MCDCX* primitives. Once your collision objects are set up you can export both the graphics and collision mesh in the same .ASE. When you import the .ASE into UnrealEd it should find the collision mesh, remove it from the graphic, and turn it into the collision model.Note: In the case of an object whose collision is defined by multiple convex hulls, results are best when the hulls do not intersect with one another. For example, if the collision for a lollipop were defined by two convex hulls, one for the candy and one for the stick, a gap should be left between the two as in the following illustration:
 

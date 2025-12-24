@@ -108,6 +108,6 @@ The TexScaler can scale a material. Put a material in Material, and then you can
 
 ## Example Map and Other Material Classes
 
-![EPICmaterials1.jpg](../assets/EPICmaterials1.jpg)
+![EPICmaterials1.jpg](../assets/epicmaterials1.jpg)
 
 For an example map that shows many different complex Materials in action, take a look at this document:[ExampleMapsEPIC](ExampleMapsEPIC.md#Materials_Example_Map) *(The example map is at the bottom of the page)*To return back the main Materials page, click [here](../Content Creation/Lighting and Textures/MaterialTutorial.md) <--

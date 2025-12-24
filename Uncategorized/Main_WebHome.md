@@ -39,6 +39,6 @@ Information to get started licensing Unreal Engine technology and other legal an
 * [Home](../Three/BusinessAndLegalHome.md)
 * [Technology Roadmap](../Three/UnrealTechnologyRoadmap.md)
 
-[![Epic Games](../assets/Logo_Epic-New.jpg)](http://www.epicgames.com/)
+[![Epic Games](../assets/logo_epic-new.jpg)](http://www.epicgames.com/)
 
 *By contributing information to Epic's Unreal Engine support outlets, including but not limited to **Unreal Developer Network** websites and mailing lists, you agree that any information you, your employees, assignees, sub-licensees, or representatives post shall become the sole property of Epic.*

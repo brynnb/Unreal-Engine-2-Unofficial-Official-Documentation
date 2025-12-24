@@ -19,9 +19,9 @@
 
 Before breaking into this section on detailed mesh optimization, be sure you've read through [LevelOptimization](../Content Creation/Techniques/LevelOptimization.md). Optimizing a level will yield much more significant results. Build meshes with the ideas contained herein but make sure to perform level-wide optimizations first. Before beginning any significant optimization, always attempt to identify the performance problem before trying to speed things up. If you optimize the wrong thing, you might not get any improvement at all.The performance implications of modular level-design are a bit tricky as they vary from platform to platform. In general, there are two types of rendering that take place, **Batched** and **Un-Batched**. There are tradeoffs for each. Ask a programmer which you are using since it drastically affects what you should worry about for optimization. In general, folks developing for consoles are using un-batched rendering and batched rendering on the PC. There are two considerations when doing optimizations, performance and memory, we'll cover both where applicable.For the purposes of this discussion, we'll be referring to the following scenes:
 
-![Scene1.jpg](../assets/Scene1.jpg)
+![Scene1.jpg](../assets/scene1.jpg)
 
-![Scene2.jpg](../assets/Scene2.jpg)
+![Scene2.jpg](../assets/scene2.jpg)
 **Scene 1**
 
 |  |  |  |

@@ -62,11 +62,11 @@ Begin with a new map and subtract out a 1024x1024x1024 cube from the world (If y
 
 With the room setup, open up the actor browser and select **Emitter**.
 
-![ActorBrowser.jpg](../../assets/ActorBrowser.jpg)
+![ActorBrowser.jpg](../../assets/actorbrowser.jpg)
 
 Right-click on the far wall and select **Add Emitter Here**.With your emitter created we are now ready to start editing it. Before we do however, make sure you have *Realtime Preview* turned on by clicking the joystick at the top of the viewport like this:
 
-![RealtimePreview.jpg](../../assets/RealtimePreview.jpg)
+![RealtimePreview.jpg](../../assets/realtimepreview.jpg)
 
 With that selection you'll be able to see the changes you make to your emitters update in realtime. Before moving on, drag the emitter to the middle of the room so there will be plenty of space when it begins emitting particles.
 
@@ -74,7 +74,7 @@ With that selection you'll be able to see the changes you make to your emitters 
 
 With the emitter selected pull down **Particle Editor** from the **Tools** menu in UnrealEd. A window like this will appear:
 
-![BlankEmitter.jpg](../../assets/BlankEmitter.jpg)
+![BlankEmitter.jpg](../../assets/blankemitter.jpg)
 
 .From this tool you will be doing all of your particle editing.
 
@@ -82,20 +82,20 @@ With the emitter selected pull down **Particle Editor** from the **Tools** menu 
 
 The [introduction](#introduction) of this manual explains that particle systems can be made up of *Sprite Emitters*. The first thing to do is to add a sprite emitter to your particle system. To do this click the
 
-![NewEmitterButton.jpg](../../assets/NewEmitterButton.jpg)
+![NewEmitterButton.jpg](../../assets/newemitterbutton.jpg)
 
 *New Particle Emitter* button in the top toolbar of the particle editor.
 Fill the the dialoge that appears like this and click Ok.
 
-![NewDlg.jpg](../../assets/NewDlg.jpg)
+![NewDlg.jpg](../../assets/newdlg.jpg)
 
 .This will create a new Sprite Emitter called "MyFirstEmitter". After you click okay. The Particle System Editor will now look like this:
 
-![MyFirstEmitter.jpg](../../assets/MyFirstEmitter.jpg)
+![MyFirstEmitter.jpg](../../assets/myfirstemitter.jpg)
 
 If everything worked correctly, you'll notice your particle system has begun spitting out some ugly particles and will look like this:
 
-![FirstParticles.jpg](../../assets/FirstParticles.jpg)
+![FirstParticles.jpg](../../assets/firstparticles.jpg)
 
 .
 
@@ -103,11 +103,11 @@ If everything worked correctly, you'll notice your particle system has begun spi
 
 Right now the particle system doesn't do much at all. The first step in making it a bit more interesting is to get the particle to move rather than piling up in one place. To do this select the [Movement](#movement) category from the left-hand column. The large scrolling area on the right will zip down to the Movement heading. Fill in the values under [Start Velocity](#startvelocity) to look like this and things will start to happen.
 
-![StartVelocity.jpg](../../assets/StartVelocity.jpg)
+![StartVelocity.jpg](../../assets/startvelocity.jpg)
 
 The [Start Velocity](#startvelocity) settings, like most of the settings in the particle system editor change things in real time. You can type numbers in or you can click and **drag** the buttons next to the fields to change values and watch the system change as you drag. You can also "link" values together so you don't have to change each one individually.
 
-![StartVelocity2.jpg](../../assets/StartVelocity2.jpg)
+![StartVelocity2.jpg](../../assets/startvelocity2.jpg)
 
 ### Picking a Texture
 
@@ -123,11 +123,11 @@ Take some time to play around with all the properties available to you. They may
 
 To add an emitter to a particle system click the
 
-![NewEmitterButton.jpg](../../assets/NewEmitterButton.jpg)
+![NewEmitterButton.jpg](../../assets/newemitterbutton.jpg)
 
 *New Particle Emitter* button in the top toolbar of the particle editor. This dialogue will appear:
 
-![NewDlg.jpg](../../assets/NewDlg.jpg)
+![NewDlg.jpg](../../assets/newdlg.jpg)
 
 Give your particle system a name and select the type you would like and click *Ok*.
 
@@ -137,21 +137,21 @@ Give your particle system a name and select the type you would like and click *O
 
 The left column contains a list of categories which organize the various properties of a given emitter. Clicking on the categories will scroll to that set of variables. Checking and unchecking the boxes will show and hide those categories.
 
-![Categories.jpg](../../assets/Categories.jpg)
+![Categories.jpg](../../assets/categories.jpg)
 
 #### Controls
 
 There are several types of controls that are used in the particle system editor. Almost all of the controls have fields where you can values and watch the particle system change. Some properties will force the system to re-start others will update smoothly in realtime.All of the numeric fields have "Scroll Buttons"
 
-![ScrollButton.jpg](../../assets/ScrollButton.jpg)
+![ScrollButton.jpg](../../assets/scrollbutton.jpg)
 
 next to them. These buttons make it simple to edit the values in the corresponding text boxes. Clicking, holding and dragging a scroll button will cycle the value inside of the text box up or down. You can also just click up and down to increment the value.Many of the controls also have a Hide/Expand button
 
-![HideExpand.jpg](../../assets/HideExpand.jpg)
+![HideExpand.jpg](../../assets/hideexpand.jpg)
 
 which can be used to hide or show a tool.
 
-![RangeVectEdit.jpg](../../assets/RangeVectEdit.jpg)
+![RangeVectEdit.jpg](../../assets/rangevectedit.jpg)
 
 Some controls have mins and maxes. In addition to being able to set the individual components of the vector with the scroll buttons, you can click the Different/Same/Mirror button to alter the min and max of a variable in sync.
 
@@ -165,7 +165,7 @@ Some controls like [Start Velocity](#startvelocity) have a min and max for sever
 
 Clicking the Delete Emitter button
 
-![DeleteEmitter.jpg](../../assets/DeleteEmitter.jpg)
+![DeleteEmitter.jpg](../../assets/deleteemitter.jpg)
 
 will remove the emitter tab currently selected from the particle system.
 
@@ -173,7 +173,7 @@ will remove the emitter tab currently selected from the particle system.
 
 Many particle systems aren't designed to be going constantly. For example, a muzzle flash or breaking glass need to be restarted in order to preview them properly. Clicking the *Refresh Button*
 
-![Refresh.jpg](../../assets/Refresh.jpg)
+![Refresh.jpg](../../assets/refresh.jpg)
 
 causes a system to start over.
 
@@ -181,11 +181,11 @@ causes a system to start over.
 
 If you need to spawn a particle system dynamically in-game you'll need to make a script out of it. You might also want to make a script so that your particle system is availible in the actor browser. To create a script click the
 
-![ExportButton.jpg](../../assets/ExportButton.jpg)
+![ExportButton.jpg](../../assets/exportbutton.jpg)
 
 *Export to Script* button.
 
-![ExportToScript.jpg](../../assets/ExportToScript.jpg)
+![ExportToScript.jpg](../../assets/exporttoscript.jpg)
 
 Fill in the package and name of the actor you want to create and click *Ok* to export the script. Checking *Auto Destroy* creates an actor that will delete itself when it no longer has particles. You will need to recompile the package the script was exported to in order for it to work or show up in the editor.
 
@@ -193,7 +193,7 @@ Fill in the package and name of the actor you want to create and click *Ok* to e
 
 Clicking the
 
-![DuplicateButton.jpg](../../assets/DuplicateButton.jpg)
+![DuplicateButton.jpg](../../assets/duplicatebutton.jpg)
 
 *Duplicate Emitter* button will cause the emitter currently being edited to be duplicated and added as the last tab.
 
@@ -201,11 +201,11 @@ Clicking the
 
 Individual emitters can be saved to ".emt" files for later use by clicking the
 
-![SaveButton.jpg](../../assets/SaveButton.jpg)
+![SaveButton.jpg](../../assets/savebutton.jpg)
 
 *Save Emitter* button. These files may later be loaded into a particle system by clicking on the
 
-![OpenButton.jpg](../../assets/OpenButton.jpg)
+![OpenButton.jpg](../../assets/openbutton.jpg)
 
 *Open Emitter* button.
 
@@ -213,7 +213,7 @@ Individual emitters can be saved to ".emt" files for later use by clicking the
 
 You can also use the context-help tool
 
-![HelpButton.jpg](../../assets/HelpButton.jpg)
+![HelpButton.jpg](../../assets/helpbutton.jpg)
 
 at the top of the UnrealEd toolbar. Click that button once and then click on any of the tool headings to open up this page's help section on that tool.
 
@@ -223,7 +223,7 @@ The referance section of this document borrows heavily from Lode Vandevenne's or
 
 ### General
 
-![GeneralCat.jpg](../../assets/GeneralCat.jpg)
+![GeneralCat.jpg](../../assets/generalcat.jpg)
 
 #### Disable
 
@@ -259,7 +259,7 @@ This tool adjusts several properties throughout the editor to make your emitter 
 
 ### Texture
 
-![TextureCat.jpg](../../assets/TextureCat.jpg)
+![TextureCat.jpg](../../assets/texturecat.jpg)
 
 #### Texture Picker
 
@@ -358,7 +358,7 @@ This option is only shown when the emitter is a mesh emitter. This is different 
 
 ### Rendering
 
-![RenderingCat.jpg](../../assets/RenderingCat.jpg)
+![RenderingCat.jpg](../../assets/renderingcat.jpg)
 
 #### Disable Fogging
 
@@ -378,7 +378,7 @@ This causes the particles to write to the Z-buffer. ("In a graphics card, this s
 
 ### Color/Fading
 
-![ColorFadingCat.jpg](../../assets/ColorFadingCat.jpg)
+![ColorFadingCat.jpg](../../assets/colorfadingcat.jpg)
 
 #### Opacity
 
@@ -414,25 +414,25 @@ This turns on the use of color scale and color scale repeats (see below)
 
 This is another scale that can be applied to the particles. A scale changes something of the particle during its lifetime, in this case the color. To use a Color Scale, first set "Use Color Scale" to True, and then add a new color bar. To add a new a new color bar double click somewhere in the color scale box. This will bring up a color picker window where you can pick a color and click OK. This will show the color you choose on a vertical bar where you double clicked.
 
-![ColorFade1.jpg](../../assets/ColorFade1.jpg)
+![ColorFade1.jpg](../../assets/colorfade1.jpg)
 
 You can change this color at any time by double clicking on the color to bring up the color picker window or by single clicking on the color and manually adjusting the R, G, B, and A values. The alpha values (which only are only relevant for alpha blend mode) must be changed manually in this way because the color picker does not support alpha. The color in the color bar is combined with the color of the texture so if your texture is bluish and your color bar is white, the particle will still look bluish. If the color bar is cyan on the other hand, the particle will look more cyan but not as cyan as the color bar. White textures generally work best with color scale because they take the color of the color bars best.The position of the color bar represents the relative time of this color. This is the time in the life of the particle that the particle will be the color you have chosen. If the color bar is in the middle of the Color Scale the value will be somewhere around 0.5. If the lifetime of the particles is 4.0 seconds, about 2.0 seconds into the particle's life it will be the color you have chosen. The relative time can be changed by dragging the color bar or manually adjusting the relative time field below the Color Scale box.Color scale is most useful with two or more color bars. If you do not have a color bar at the far right of the Color Scale box, the color of the particles will pop back their normal color after the rightmost color bar. This is generally undesired. If you do not have a color bar at the far left of the Color Scale box, the system will behave as if there is a white color bar there. This is an example of 3 color bars used with a white texture. The middle color bar is selected so the field values correspond to that color bar.
 
-![ColorFade2.jpg](../../assets/ColorFade2.jpg)
+![ColorFade2.jpg](../../assets/colorfade2.jpg)
 
 #### Color Scale Repeats
 
 With "Color Scale Repeats", the Color Scale process can be repeated an arbitrary number of times. The default is 0 which means that the color scale with work once, but not repeat any times. With the value set to 1.0, there will be two scales, once for the normal color scale and one repeat. This is the same color scale as above but with "Color Scale Repeats" set to 1.0.
 
-![ColorFade3.jpg](../../assets/ColorFade3.jpg)
+![ColorFade3.jpg](../../assets/colorfade3.jpg)
 
 This is an image with color scale repeats set to 2.5. Note how the color ends on green, which is in the middle of the color scale.
 
-![ColorFade4.jpg](../../assets/ColorFade4.jpg)
+![ColorFade4.jpg](../../assets/colorfade4.jpg)
 
 ### Time
 
-![TimeCat.jpg](../../assets/TimeCat.jpg)
+![TimeCat.jpg](../../assets/timecat.jpg)
 
 #Lifetime
 
@@ -464,7 +464,7 @@ You can make the engine precalculate the Emitter, so when you start the map it's
 
 ### Movement
 
-![MovementCat.gif](../../assets/MovementCat.gif)
+![MovementCat.gif](../../assets/movementcat.gif)
 
 #### Start Velocity
 
@@ -541,7 +541,7 @@ This controls the minimum velocity a particle may have before it becomes inactiv
 
 #### Use Velocity Scale
 
-![VelocityScale.jpg](../../assets/VelocityScale.jpg)
+![VelocityScale.jpg](../../assets/velocityscale.jpg)
 
 *UseVelocityScale* turns velocity scale on an off. Velocity scale is used to scale the velocity of the particle over time. Given that this is a component scale, velocity scale can be used to make the particles change direction over time and even reverse directions.
 
@@ -555,7 +555,7 @@ This controls the minimum velocity a particle may have before it becomes inactiv
 
 ### Location
 
-![LocationCat.jpg](../../assets/LocationCat.jpg)
+![LocationCat.jpg](../../assets/locationcat.jpg)
 
 #### Start Location Shape
 
@@ -583,7 +583,7 @@ The blue sprites never move, but when they die they respawn at one of the bounci
 
 ### Mesh Spawning
 
-![MeshSpawning.gif](../../assets/MeshSpawning.gif)
+![MeshSpawning.gif](../../assets/meshspawning.gif)
 
 Mesh Spawning uses the vertices of a static mesh to calculate the spawn location and optionally the velocity and the color of the particles in this emitter. The static mesh does not have to exist in the world nor do the faces of the static mesh matter. This means that you can make arbitrary shapes for static meshes in a modeling program. You can also use existing static meshes in the world and attach effects to them to produce results like a bush on fire.
 
@@ -637,15 +637,15 @@ This uses the color of the each vertex to determine the color the particle being
 
 ### Skeletal Mesh
 
-![SkelMesh1.gif](../../assets/SkelMesh1.gif)
+![SkelMesh1.gif](../../assets/skelmesh1.gif)
 
 Skeletal Mesh animation allows you to attach particles to the bones of a skeletal mesh. The mesh is used to determine the spawn location of the particles and can also be used to determine the movement the particles. The main way to use this system is to attach effects to existing character models such as the dead greens DeRes effect in UT2003.
 
-![SkelMesh2.jpg](../../assets/SkelMesh2.jpg)
+![SkelMesh2.jpg](../../assets/skelmesh2.jpg)
 
 Another way to use skeletal mesh animation is to create a simple model that moves a bone in a pattern that you want an emitter to move in. This can be used to move emitters in more complex patterns than is otherwise possible with the PSE. The example below moves an emitter in a decreasing spiral that travels upwards.
 
-![SkelMesh3.jpg](../../assets/SkelMesh3.jpg)
+![SkelMesh3.jpg](../../assets/skelmesh3.jpg)
 
 Complex movement patterns can also be achieved by using [Anim Notifies](../Animation/AnimNotifies.md) to attach particles systems to bones. (See *AnimNotify\_Effect*).While it is possible to use skeletal mesh animation without any new code (the spiral example did not use any new code for example) the system works best when coupled with game specific code. This is mainly do to the fact that [SkeletalMeshActor](#skeletalmeshactor) must be an *Actor* that exists in the level. This makes it impossible to preview this type of particle system in Unrealed because characters do not move around or animate in the editor. Below is an example of attaching the dead green DeRes effect in UT2003:
 
@@ -685,7 +685,7 @@ If you do not want to use code you can create a *Pawn* (or a subclass of *Pawn* 
 
 ### Rotation
 
-![RotationCat.jpg](../../assets/RotationCat.jpg)
+![RotationCat.jpg](../../assets/rotationcat.jpg)
 
 #### Spin
 
@@ -701,31 +701,31 @@ With *Start Spin*, you can set the rotation the particle has when it's spawned. 
 
 #### Facing Direction
 
-![FacingDir.jpg](../../assets/FacingDir.jpg)
+![FacingDir.jpg](../../assets/facingdir.jpg)
 
 Facing Direction determines how particles are oriented in the world. It is important to remember that this orientation is calculated BEFORE the spin of the particles is calculated. If there is any spin it will be applied after the facing direction making it difficult to see the effects of the facing direction. To illustrate the effect of this tool, I created a simple particle system effected by gravity. The texture on the particles is this arrow.
 
-![FacingDirTex.jpg](../../assets/FacingDirTex.jpg)
+![FacingDirTex.jpg](../../assets/facingdirtex.jpg)
 
 **Facing Camera** is the default and most common choice for facing direction. All the particles are billboarded facing the camera no matter where the camera is. This can be seen in the image below. The one confusing part about *Facing Camera* is that it flips the texture vertically. Another confusing aspect of this settings is that the size of particles has a constant aspect ratio because X size (from [Start Size](#startsize)) is used to scale both X and Y. Y size is ignored when facing direction is set to *Facing Camera*.
 
-![FacingDir1a.jpg](../../assets/FacingDir1a.jpg)
+![FacingDir1a.jpg](../../assets/facingdir1a.jpg)
 
-![FacingDir1b.jpg](../../assets/FacingDir1b.jpg)**Along Movement Facing Camera** is fairly straightforward. The particles orient themselves so that the "up" of the texture is always facing the direction the particle is moving. The particle tries its best to also face the camera at the same time but it is hard at certain angles like looking along the direction the particle is moving. These two images illustrate the effect of this setting.
+![FacingDir1b.jpg](../../assets/facingdir1b.jpg)**Along Movement Facing Camera** is fairly straightforward. The particles orient themselves so that the "up" of the texture is always facing the direction the particle is moving. The particle tries its best to also face the camera at the same time but it is hard at certain angles like looking along the direction the particle is moving. These two images illustrate the effect of this setting.
 
-![FacingDir2a.jpg](../../assets/FacingDir2a.jpg)
+![FacingDir2a.jpg](../../assets/facingdir2a.jpg)
 
-![FacingDir2b.jpg](../../assets/FacingDir2b.jpg)**Specified Normal** is very simple; the particle normal is specified by [Projection Normal](#projectionnormal). In the case of the first image the normal is straight up (0, 0, 1). The second image has a normal of (-0.5, 0.3, 1.0).
+![FacingDir2b.jpg](../../assets/facingdir2b.jpg)**Specified Normal** is very simple; the particle normal is specified by [Projection Normal](#projectionnormal). In the case of the first image the normal is straight up (0, 0, 1). The second image has a normal of (-0.5, 0.3, 1.0).
 
-![FacingDir3.jpg](../../assets/FacingDir3.jpg)
+![FacingDir3.jpg](../../assets/facingdir3.jpg)
 
-![FacingDir3b.jpg](../../assets/FacingDir3b.jpg)**Along Movement Facing Normal** is like *Along Movement Facing Camera* but instead of facing the camera, the particles faces the specified [Projection Normal](#projectionnormal). This is very useful for things like waterfalls where the particles should orient with its movement but not face the camera. The effects can be seen below.
+![FacingDir3b.jpg](../../assets/facingdir3b.jpg)**Along Movement Facing Normal** is like *Along Movement Facing Camera* but instead of facing the camera, the particles faces the specified [Projection Normal](#projectionnormal). This is very useful for things like waterfalls where the particles should orient with its movement but not face the camera. The effects can be seen below.
 
-![FacingDir4a.jpg](../../assets/FacingDir4a.jpg)
+![FacingDir4a.jpg](../../assets/facingdir4a.jpg)
 
-![FacingDir4b.jpg](../../assets/FacingDir4b.jpg)**Perpendicular to Movement** orients the particles perpendicular to the movement direction. This has the unfortunate side effect that in some cases it rotates the particles 90 degrees mid flight. This can be seen in the image below.
+![FacingDir4b.jpg](../../assets/facingdir4b.jpg)**Perpendicular to Movement** orients the particles perpendicular to the movement direction. This has the unfortunate side effect that in some cases it rotates the particles 90 degrees mid flight. This can be seen in the image below.
 
-![FacingDir5.jpg](../../assets/FacingDir5.jpg)
+![FacingDir5.jpg](../../assets/facingdir5.jpg)
 
 #### Projection Normal
 
@@ -741,7 +741,7 @@ You can also rotate the entire particle system for the particles using *Use Rota
 
 ### Revolution
 
-![Revolution.jpg](../../assets/Revolution.jpg)
+![Revolution.jpg](../../assets/revolution.jpg)
 
 While [Rotation](#rotation) is for rotating individual particles about their center, Revolution is for rotation particles about a fixed point in space. Using Revolution will cause the particles to change position.
 
@@ -771,7 +771,7 @@ This *Revolution Scale* is used as a multiplier for each of the axes of *Revolut
 
 ### Size
 
-![SizeCat.jpg](../../assets/SizeCat.jpg)
+![SizeCat.jpg](../../assets/sizecat.jpg)
 
 #### Uniform Size
 
@@ -795,7 +795,7 @@ The *Size Scale* works exactly the same as the [Color Scale](#colorscale), only 
 
 ### Collision
 
-![CollisionCat.gif](../../assets/CollisionCat.gif)
+![CollisionCat.gif](../../assets/collisioncat.gif)
 
 #### Use Actor Forces
 
@@ -862,7 +862,7 @@ If you check *Use Spawned Velocity Scale*, you can also give the particles that 
 
 ### Sounds
 
-![Sounds.gif](../../assets/Sounds.gif)
+![Sounds.gif](../../assets/sounds.gif)
 
 Sounds can be played when particles are spawned and also when they collide with the world.
 
@@ -909,7 +909,7 @@ Collision sounds can be enabled by setting the *Collision Sound* pull down to an
 
 ### Mesh
 
-![MeshCat.jpg](../../assets/MeshCat.jpg)
+![MeshCat.jpg](../../assets/meshcat.jpg)
 
 #### Mesh
 
@@ -929,7 +929,7 @@ If this is set, the mesh will use the settings in Color/Fading?. This is only us
 
 ### Spark
 
-![SparkCat.jpg](../../assets/SparkCat.jpg)
+![SparkCat.jpg](../../assets/sparkcat.jpg)
 
 This ParticleEmitter generates sparks, for example the kind of sparks you see when someone's welding. This emitter turns it's Texture into one thin line with the colors of the texture. Settings such as [Acceleration](#acceleration), [Start Velocity](#startvelocity), and [Start Location](#startlocation) still work on it, but [Collision](#collision), [Rotation](#rotation), [Size](#size), etc... don't work on it because the particles are just lines. [Texture](#texture) still works to color the particle but because it is just a line the entire texture can not be seen. Things such as the [Color Scale](#colorscale) and [Fading](#fading) work, but these work per segment so you might not get the look you expected. On the screenshot: a random [Start Location](#startlocation) and a subtle red [Color Scale](#colorscale) on a white texture.
 
@@ -965,7 +965,7 @@ The effect of *Time Between Segments* is best visible if you let the line to be 
 
 ### Beam
 
-![BeamCat.jpg](../../assets/BeamCat.jpg)
+![BeamCat.jpg](../../assets/beamcat.jpg)
 
 Beam Emitters are very useful to create lightning and other such things. The emitter stretches the chosen Texture into a beam with [High Frequency Points](#highfrequencypoints) and [Low Frequency Points](#lowfrequencypoints). There must be at least two of each to make the lightning work. Each particle will be such a beam, and once created a particle never moves. The way to get the lightning moving is to create a new beam all the time while the old one gets destroyed, or to make the lightning flash with a Color Scale. Normally, the beam is only one angular line, but you can also give it branches.Getting started: Given a new beam emitter, leave all the settings at default, and add some Velocity and you will start to see something. The length of the beams depends on the magnitude of the Velocity and the Lifetime.
 
@@ -1003,7 +1003,7 @@ By default, the texture is repeated only once for the Beam. In Beam, with BeamTe
 
 #### Determine End Point By
 
-![DetermineEndPointBy.jpg](../../assets/DetermineEndPointBy.jpg)
+![DetermineEndPointBy.jpg](../../assets/determineendpointby.jpg)
 
 This property sets what determines the EndPoint of the beam. The StartPoint is determined by the location of the Emitter actor and the settings in [Location](#location). There's more about StartPoints for beams [later](#huh).*Velocity* is the default setting. With this selected the end point is determinated by the [Velocity](#movement) of the particle and the [Lifetime](#time). The length of the beam is then determinated by the StartVelocityRange values and the [Lifetime](#time) of the particles. The direction of it is determinated by the X, Y and Z values of the StartVelocityRange. You can again use random values, so for example if X(Max) = Y(Max) = Z(Max) = +1000 and X(Min) = Y(Min) = Z(Min) = -1000, each Beam will be anything random between this. It'll do almost exactly the same as on this animated gif below. You'll be able to see more than one Beam now, because MaxParticles is set to 10 by default. Also, lightnings normally only goes straight towards the ground, so only using negative Z values for StartVelocityRange is useful.
 
@@ -1012,11 +1012,11 @@ This property sets what determines the EndPoint of the beam. The StartPoint is d
 *Distance* does the same as *Velocity*, but the StartVelocityRange only determines the direction of the beam. The length is set with [Beam Distance](#beamdistance), in editor units.*Offset* allows you to determinate the EndPoint in relative coordinates. You have to enter these coordinates in Offset, inside BeamEndPoints[0]. To get this, first expand
 [Beam End Points](#beamendpoints) and press the Insert button.
 
-![BeamEndPoints.jpg](../../assets/BeamEndPoints.jpg)
+![BeamEndPoints.jpg](../../assets/beamendpoints.jpg)
 
 In Offset, enter the X, Y and Z coordinate range for the EndPoint of the Beam. The coordinates are relative to the StartPoint (most of the times this is the Emitter actor), so for example X = 0, Y = 0, Z = -1000 means the EndPoint will be 1000 units below the StartPoint. Before it works, you also have to set Weight to something larger than 0. You can again use different Min and Max values if you want a random Location for the EndPoint. You can add more *Beam End Points*, and then the Beam will use one of these *Beam End Points* by random. With Weight, you can set the importance of each *Beam End Point*, this is the probability that it'll be used. If you give all the *Beam End Points* a Weight of 1, the chances will be equally divided. If for the Offset X = Y = Z = 0, the EndPoint and the StartPoint the same, so there won't be a Beam. You can use this if you want the lightning to strike only a few times and to be invisible for the rest of the time. Then you can give the *Beam End Point* with this 0-Offset a high Weight, so the lightning is most of the times invisible.*TraceOffset* does the same as *Offset*, but if there is a solid surface in the way the lightning will hit against it, instead of going to the actual end point. *TraceOffset* does not work well in combination with the relative coordinate systems.*OffsetAsAbsolute* does the same thing as *Offset* but interprets the offset range as world coordinates instead of relative coordinates. So if X = Y = Z = 0, the beam end point would be at the origin.*Actor* lets you make the beam go to a certain actor. This also uses [[#BeamEndPoints][Beam End Points], but this time, you have to fill in the Actor Tag property (and not the Offset property). The lightning will go towards the actor you gave that Tag (in the Event properties of that actor). If you want the lightning to go randomly towards different actors, you have to add more *Beam End Points*, and in each *Beam End Points* enter a different Actor Tag. Of course also give the actors these Tags. If you'd give three trees the SAME tag and use only the first *Beam End Point*, it won't work, the lightning will go to only one of the trees then. Again you have to give each of the *Beam End Points* a Weight higher than 0, that is the chance this *Beam End Point* will be used.For example if there are three trees, with Tags FullTree, FullTree2 and FullTree3, and you want the lightning to strike each of the trees randomly, but to strike FullTree3 twice as much as the other trees, give the following properties to the emitter:
 
-![BeamEndPoints2.jpg](../../assets/BeamEndPoints2.jpg)
+![BeamEndPoints2.jpg](../../assets/beamendpoints2.jpg)
 
 ![lightning2.gif](../../assets/lightning2.gif)If the actor is moving, the Beam will follow it:
 
@@ -1036,7 +1036,7 @@ If *Trigger Actor End Point* is true, the beam will trigger the actor it draws t
 
 ### Beam Noise
 
-![BeamNoiseCat.gif](../../assets/BeamNoiseCat.gif)
+![BeamNoiseCat.gif](../../assets/beamnoisecat.gif)
 
 Here you can give the beam noise. You can give *High Frequency Points* and *Low Frequency Points*. Both do exactly the same, but you can use them independent for example to give the lightning a lot of small bends inside a few large bends. There must be at least 2 *High Frequency Points* (and 2 *Low Frequency Points*), these represent the start point and end point. If you set it to 0, the editor crashes. If you set it to 1, there will be no beam. If it's 2, the beam will always be straight. If *High Frequency Points* is 3 (and *Low Frequency Points* is 2), there will be 1 bend in the half of the beam. The higher the value, the more bends. You can determinate the size of the bend with *High or Low Frequency Noise Range* by entering Min and Max values for X, Y and Z there. This way you can set the direction of the bend, the size of it, and you can make it to be random. Actually, you have to make it random, otherwise it'll not work the way you want. For example if *High Frequency Noise Range* has Y(Max) = 1000 and Y(Min) = -1000 and there are 4 *High Frequency Points*, it'll look like the screenshot. 1 particle will not change during it's lifetime, so to get the lightning moving make sure the [lifetime](#time) is short enough for new particles to get spawned fast enough.
 
@@ -1062,7 +1062,7 @@ The *Low Frequency* settings do exactly the same as the *High Frequency* setting
 
 ### Beam Branching
 
-![BeamBranching.gif](../../assets/BeamBranching.gif)
+![BeamBranching.gif](../../assets/beambranching.gif)
 
 To make good looking lightning effects, you can give beams branches. If this is used correctly, you can get a very cool and realistic lightning. It works like this: you have to create more than one [BeamEmitter](#beamemitter) (inside the same Emitter). Then you can tell the first [BeamEmitter](#beamemitter) to use the second [BeamEmitter](#beamemitter) for the branches. Then again, you can tell the second [BeamEmitter](#beamemitter) to use a third one for sub-branches, and so on. The *Max Particles* setting is also the maximum number of branches.First add multiple beam emitters and give each Emitter the properties you want. Make the first one big, and set it's *Max Particles* to 1. Make the second and third one smaller; they're for the branches. Give them many more *Max Particles*, for example 10 or 25. Also, set[RespawnDeadParticles](#respawndeadparticles) to False for all branches, and set [AutomaticInitialSpawning](#automaticinitialspawning) to False, otherwise the branches might get spawned at the start point of the emitter itself instead of the new start point they get when they become branch. Also, make sure the beam emitters that will get branches, have a lot of [Beam Noise](#beamnoise). The branches will appear in the bends only, so if there aren't enough [High Frequency Points](#highfrequencypoints), there will not be a place for all the branches! You can of course make the noise very subtle, so you won't notice it, only the number of [High Frequency Points](#highfrequencypoints) is important; the more the better.
 
@@ -1094,7 +1094,7 @@ You can now do the same in the *Beam Branching* properties of the second beam em
 
 ### Trigger
 
-![Trigger.jpg](../../assets/Trigger.jpg)
+![Trigger.jpg](../../assets/trigger.jpg)
 
 Triggering allows you to change the behavior of an emitter when it is triggered. You can trigger an emitter just like everything else in Unrealed by setting the *Tag* of the Particle System to be that of an *Event* of a trigger. It is important to note that the *Tag* is not specified per emitter but for the entire particle system. Each emitter can configure how it handles the trigger differently but they will all receive the same trigger event at the same time.Triggers are use mainly to turn emitters on and off in different ways. This trigger system provides good ways to turn emitters on but it unfortunately does not provide a very smooth way to turn emitters off.
 
@@ -1106,7 +1106,7 @@ This will toggle the disabledness of the emitter. If the emitter is currently di
 
 This will reset the emitter. This is very much like pressing the
 
-![Reset.gif](../../assets/Reset.gif)
+![Reset.gif](../../assets/reset.gif)
 
 reset button. The emitter will start over with all its initial values.
 

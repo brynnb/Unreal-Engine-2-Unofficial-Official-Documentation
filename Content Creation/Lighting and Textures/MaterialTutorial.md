@@ -113,7 +113,7 @@ For more detailed information on each of these Raw Material classes, click on th
 
 ## Example Map
 
-![EPICmaterials1.jpg](../../assets/EPICmaterials1.jpg)
+![EPICmaterials1.jpg](../../assets/epicmaterials1.jpg)
 
 For an example map that shows many different complex Materials in action, take a look at this document:[ExampleMapsEPIC#Materials\_Example\_Map](../../Uncategorized/ExampleMapsEPIC.md#Materials_Example_Map) *(The example map is at the bottom of the page)*
 

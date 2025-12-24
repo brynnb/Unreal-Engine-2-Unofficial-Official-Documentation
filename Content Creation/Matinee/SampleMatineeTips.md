@@ -98,7 +98,7 @@ Going into the sound browser, I can select a sound, then return to the action li
 
 ### Rotate Meshes
 
-Attached to this document you will find two new script classes. Upon hearing that I wanted to have meshes rotate (and with particle systems attached), the programmers I work with whipped up [these two little bits of code](../../assets/NewIntro.zip). Have them integrated into your build of UnrealEd before you continue.First, go to your actor browser. In **Actor** > **StaticMeshActor** there is one selection, **MoveableStaticMesh**. Highlight it, then go to a viewport and add in the actor. You'll see that it looks like one of those funky animal heads.
+Attached to this document you will find two new script classes. Upon hearing that I wanted to have meshes rotate (and with particle systems attached), the programmers I work with whipped up [these two little bits of code](../../assets/newintro.zip). Have them integrated into your build of UnrealEd before you continue.First, go to your actor browser. In **Actor** > **StaticMeshActor** there is one selection, **MoveableStaticMesh**. Highlight it, then go to a viewport and add in the actor. You'll see that it looks like one of those funky animal heads.
 
 ![notamesh1.jpg](../../assets/notamesh1.jpg)
 
@@ -108,7 +108,7 @@ I wanted a mesh to rotate, I'm betting that you will as well. There are two fiel
 
 To make this mesh rotate, we'll be using the Matinee mode to control it. First, open up the Matinee window, and create a new scene. Right away, we need to change some fields. In the **SceneManager** category, change the field **Affect** from *AFFECT\_ViewportCamera* to *AFFECT\_Actor*. Next, make sure your moveable static mesh is selected, and go to the field **AffectedActor**. Hit the **Use** button.To trigger the scene, I'm using the **StartGame** scene we created earlier; there is a **SceneManager** > **EventStart** field in the scene's properties. Put the name of the new scene in that field, it's called *rotaterockets* in this example.Go to the **Tools** tab in the Matinee window. Insert two **Interpolation point** & **Actions**. You should see these appear in your viewports as camera icons. Go to the top viewport and rotate one of the icons 360 degrees, so that the red arrow points in the SAME direction. Your mesh and Interpolation Points should look something like this.
 
-![Interpolations1.jpg](../../assets/Interpolations1.jpg)
+![Interpolations1.jpg](../../assets/interpolations1.jpg)
 
 Now, go to the **Actions** tab, select the first action and go to the **SubActions** tab. Add a **SubActionOrientation** to it, and change the **CamOrientation** Field to *CAMORIENT\_Interpolate*. Repeat for the second interpolation point.
 
@@ -128,7 +128,7 @@ It's worth mentioning that you can change the initial rotation of your falling o
 
 ![staticmeshkarma1.jpg](../../assets/staticmeshkarma1.jpg)
 
-This is super easy. If you have a static mesh that you want to receive Karma Physics, simply change these two fields in the Static Mesh browser: **UseSimpleKarmaCollision** and **UseSimpleBoxCollision**. Otherwise, a karma-enabled actor will fall straight through the mesh.[Here is an example map](../../assets/udnmat_karmaSM.zip) with Karma Collision on a pawn.
+This is super easy. If you have a static mesh that you want to receive Karma Physics, simply change these two fields in the Static Mesh browser: **UseSimpleKarmaCollision** and **UseSimpleBoxCollision**. Otherwise, a karma-enabled actor will fall straight through the mesh.[Here is an example map](../../assets/udnmat_karmasm.zip) with Karma Collision on a pawn.
 
 ![karmafall2.jpg](../../assets/karmafall2.jpg)
 
@@ -138,5 +138,5 @@ This also required some custom code, provided by programmers. Again, make sure t
 
 ![spinningparticle1.jpg](../../assets/spinningparticle1.jpg)
 
-The particle systems are offset from the pivot point of the mesh, so some trial and error may be in order before you get your particles correctly placed. In the properties of the actor, look under **Attach** to change these values.The mesh is spinning by default, you may want to change this. In the actor properties, change the **Movement** > **RotationRate** values to alter the spinning.Caution: there is no support in the GUI for changing which particle system you wish to attach. You'll have to change those values in the code itself - again, ask a programmer to do this for you.[Here is a demo map](../../assets/udnmat_partsys.zip) with the particles attached to a mesh.That's it - most of the effects and actions in the logo project are covered in these examples. To take a look at the logo project and download the custom classes, [click here](../../assets/NewIntro.zip).`` Thanks to Eric `StarFury' Bakutis. His UT2K3 Machinima Creation Tutorial was the basis for much of the playerpawn methodology. His Machinima website: `` <http://www.legionslayer.com/machinima/Machinima_Tutorial.html>
+The particle systems are offset from the pivot point of the mesh, so some trial and error may be in order before you get your particles correctly placed. In the properties of the actor, look under **Attach** to change these values.The mesh is spinning by default, you may want to change this. In the actor properties, change the **Movement** > **RotationRate** values to alter the spinning.Caution: there is no support in the GUI for changing which particle system you wish to attach. You'll have to change those values in the code itself - again, ask a programmer to do this for you.[Here is a demo map](../../assets/udnmat_partsys.zip) with the particles attached to a mesh.That's it - most of the effects and actions in the logo project are covered in these examples. To take a look at the logo project and download the custom classes, [click here](../../assets/newintro.zip).`` Thanks to Eric `StarFury' Bakutis. His UT2K3 Machinima Creation Tutorial was the basis for much of the playerpawn methodology. His Machinima website: `` <http://www.legionslayer.com/machinima/Machinima_Tutorial.html>
 

@@ -26,7 +26,7 @@
 
 ## Introduction
 
-![PausedArabic.jpg](../../assets/PausedArabic.jpg)
+![PausedArabic.jpg](../../assets/pausedarabic.jpg)
 
 The purpose of localization is to make it easy to translate your game without rewriting any code. You can use localization files (.int, .frt, .etc) to replace the properties of any variable declared as *localized*, at runtime. This is used mainly for strings, but can also be integers, floating point values, and any other variable type in Unrealscript. This modular design not only allows games to be translated without taking programmer or level designer time but also very easily allows games to be updated for new languages after they have been released.
 

@@ -47,7 +47,7 @@ The [ImportingKarmaActors](../../Uncategorized/ImportingKarmaActors.md) document
 
 The [UsingKarmaActors](../../Uncategorized/UsingKarmaActors.md) document contains an additional example KarmaActor (both in .ASE and .MAX file formats) that you can download and import into your own build. This document focuses more on how to set up KActors with constraints.
 
-![HingedFan.jpg](../../assets/HingedFan.jpg)
+![HingedFan.jpg](../../assets/hingedfan.jpg)
 
 ---
 
@@ -55,7 +55,7 @@ The [UsingKarmaActors](../../Uncategorized/UsingKarmaActors.md) document contain
 
 The [KarmaAuthoringTool](../../Uncategorized/KarmaAuthoringTool.md) document is an introduction to using KAT for setting up ragdoll physics in character models.
 
-![KAT.jpg](../../assets/KAT.jpg)
+![KAT.jpg](../../assets/kat.jpg)
 
 ---
 

@@ -100,4 +100,4 @@ ActorX StaticMesh Export:
 
 ## Downloads
 
-Here is a simple JScript files which creates a skeletal mesh, and exports it using commands as listed above.[XSI\_ExampleScripts.zip](../assets/XSI_ExampleScripts.zip)To run, please make sure XSI is configured to use JScript: go to File->Preferences and select Scripting in the properties tree (near the bottom) - then a "Script Language" selection drop box becomes available. Select "JScript Language" and close.
+Here is a simple JScript files which creates a skeletal mesh, and exports it using commands as listed above.[XSI\_ExampleScripts.zip](../assets/xsi_examplescripts.zip)To run, please make sure XSI is configured to use JScript: go to File->Preferences and select Scripting in the properties tree (near the bottom) - then a "Script Language" selection drop box becomes available. Select "JScript Language" and close.

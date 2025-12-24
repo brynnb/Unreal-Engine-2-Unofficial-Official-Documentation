@@ -223,25 +223,25 @@ It's possible to set levels of detail, depending on distance from the camera. To
 
 #### Cycle Through LOD Mesh Levels
 
-![CycleLOD.gif ](../../assets/CycleLOD.gif)
+![CycleLOD.gif ](../../assets/cyclelod.gif)
 
 This button will cycle through all the levels of mesh detail. There can be a maximum of eight levels
 
 #### Import a Single LOD Mesh
 
-![ImportLOD.gif ](../../assets/ImportLOD.gif)
+![ImportLOD.gif ](../../assets/importlod.gif)
 
 This allows you to import a .PSK as a static LOD level, which gives much finer control over the appearance of a simplified mesh. Creating these simplified meshes is more time intensive, of course, and so the advantage of a better looking simple mesh must be weighed against the cost.
 
 #### Redigest LOD Levels
 
-![RedigestLOD.gif ](../../assets/RedigestLOD.gif)
+![RedigestLOD.gif ](../../assets/redigestlod.gif)
 
 This button forces the engine to re-evaluate your LOD settings when you change them.
 
 #### Recompress Animation Data
 
-![RecompressAnim.gif ](../../assets/RecompressAnim.gif)
+![RecompressAnim.gif ](../../assets/recompressanim.gif)
 
 *In version 3323 this button is no longer available, see [Animation Set](#animationset) section for more information about this.*If you've made changes to your animations in the browser that might make them smaller, you'll want to hit this button. You have the option of recompressing an entire set at a time, or individual animations. It will perform a task based on which tab is open in the tabbed properties section, `Animation Set' or `Sequence,' so make sure the right one is picked.It is important to keep in mind that any compression performed on the data with this button is a one-way process - if you over-compressed and need to go back to the original raw animation, you'll need to re-import the .PSA source data - so, be sure to always backup .PSA data files - and of course the 3DS Max or Maya files from which they were created.You'll receive one of two confirmation windows:
 
@@ -253,7 +253,7 @@ or
 
 #### Forced Synchronous In-Level Animation
 
-![InLevelPreview.gif ](../../assets/InLevelPreview.gif)
+![InLevelPreview.gif ](../../assets/inlevelpreview.gif)
 
 Animation of skeletal meshes can now be previewed in the editor, to check lighting or placement in relation to animation, if actors displaying them have been placed in a level. It's fairly easy to do, but there are a number of steps along the way that you'll have to keep in mind.*This example uses content in the 3323 code drop.*1. First of all, open a level in UnrealEd. Turn on the realtime preview button.
 
@@ -404,7 +404,7 @@ An approximate value between 0 and 1, indicating how many vertices to collapse. 
 
 ###### Rigidize
 
-![RigidizeFlak.jpg](../../assets/RigidizeFlak.jpg)
+![RigidizeFlak.jpg](../../assets/rigidizeflak.jpg)
 
 With the release of UnrealEd 3.0, you have the option of automatically converting parts of your skeletal mesh to 'rigid parts' - sections of a mesh that are influenced only by a single bone. These parts - as far as the hardware is concerned - can be rendered like static meshes, in that they are uploaded to graphics memory once, without a CPU-intensive multi-bone skin blending step. When suitable meshes are converted in the right way, this can give very significant rendering speedups. This is a per-LOD-level option, and disabled by default. In wireframe mode, all rigid parts show up as red, while software skinned polygons remain yellow.To enable it, in a LOD-level's "rigidize" subsection, first specify the following parameters (see screenshot):
 
@@ -492,7 +492,7 @@ This defines the compression ratio before additional lossy compression is applie
 
 This controls how much compression is applied to animations on import of .PSA files. The default is 1.0, which means that there is no compression at all. You may find it easier to think of it as 100% true to the original animation, whereas .25 is only 25% the quality of the original.This is a very quick and dirty way of trimming some fat associated with the animations, but it is of somewhat limited utility. If this number is set too low, then animations will be truncated or they may develop artifacts that detract from the motion. Be sure that your animations all work well with your chosen GlobalCompression value before you commit to it.Keep in mind that this number is not retroactive; meaning that if you change the value, it will not affect all of your existing animations in the .UKX, only those you import or re-import with the changed value from your .PSA file.There is a way to use this value without having to re-import your data: if you set this value, then use the
 
-![RecompressAnim.gif ](../../assets/RecompressAnim.gif)
+![RecompressAnim.gif ](../../assets/recompressanim.gif)
 
 *Recompress Animation Data* button from the toolbar, it will recompress all of your animation data to the specified level.
 

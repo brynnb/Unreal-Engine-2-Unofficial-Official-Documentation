@@ -16,7 +16,7 @@ Antiportals are invisible barriers used for blocking geometry from the renderer'
 
 There are only a few constraints with Antiportal Volumes. First of all, they must be convex, or in other words, you should be able to draw a line from any point on the surface of the volume to another and not have it leave the boundary of the shape. Below is a diagram further what shapes are convex and which are not:
 
-![Convex.gif](../assets/Convex.gif)
+![Convex.gif](../assets/convex.gif)
 
 Secondly, the Antiportal Volume must be at least touching the subtracted world space. They will not occlude anything if they are completely within the solid additive world space. Another constraint is that you cannot resize them once you've added them to the level. You can rotate them and move them, but resizing is impossible. Lastly, you may notice that Antiportal Volumes may not occlude nearby geometry. Because the occlusion tools are built for speed and efficiency, the process of occlusion is not a perfect one. The goal is to run as fast as possible and that doesn't necessarily mean rendering as little as possible.
 

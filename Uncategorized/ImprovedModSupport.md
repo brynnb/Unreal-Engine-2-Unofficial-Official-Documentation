@@ -251,4 +251,4 @@ See the [.umod game installer](UmodInstaller.md) page for information on packagi
 
 ## Example Mod
 
-Click [here](../assets/DrSins-TestMod.zip) to download an example mod called TestMod.
+Click [here](../assets/drsins-testmod.zip) to download an example mod called TestMod.

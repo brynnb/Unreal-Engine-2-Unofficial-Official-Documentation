@@ -56,7 +56,7 @@ The GUI is the easiest way to create matinee scenes. We'll go into more depth on
 
 ### Scenes
 
-![MatScenes.jpg](../../assets/MatScenes.jpg)
+![MatScenes.jpg](../../assets/matscenes.jpg)
 
 You can create a new scene either by adding a SceneManager actor to the level manually or by clicking the `new' (
 
@@ -86,7 +86,7 @@ Across the bottom of each scene in the list is a bar. This bar shows small bars 
 
 ### Actions
 
-![MatActions.jpg](../../assets/MatActions.jpg)
+![MatActions.jpg](../../assets/matactions.jpg)
 
 Actions are what drive the scene forward. There are two types of actions. You can choose to either **move** the camera, or **pause** the camera.Clicking the new button (
 
@@ -98,11 +98,11 @@ Actions are what drive the scene forward. There are two types of actions. You ca
 
 **Move** actions (
 
-![ActionCamMove.jpg](../../assets/ActionCamMove.jpg)
+![ActionCamMove.jpg](../../assets/actioncammove.jpg)
 
 ) move the camera from one InterpolationPoint to another. **Pause** actions (
 
-![ActionCamPause.jpg](../../assets/ActionCamPause.jpg)
+![ActionCamPause.jpg](../../assets/actioncampause.jpg)
 
 ) cause the camera to wait at the current InterpolationPoint for a certain amount of time. ALL actions must have an InterpolationPoint associated with them - moves and pauses alike. (A quick reminder: an InterpolationPoint is one of the three available options on the **Tools** tab) To do this, select an InterpolationPoint actor in the level and open up the **MatAction** section of your actions properties. In the **IntPoint** field, click the **Use** button. This will assign the InterpolationPoint to that action.
 
@@ -138,7 +138,7 @@ Across the bottom of each action is a dark grey bar. This bar represents the tot
 
 ### SubActions
 
-![MatSubActions.jpg](../../assets/MatSubActions.jpg)
+![MatSubActions.jpg](../../assets/matsubactions.jpg)
 
 SubActions are where the effects are done. Everything from fades to triggers is handled by subactions. This is also where you control changes in the camera orientation.The basic UI is identical to how actions work.
 
@@ -156,19 +156,19 @@ There are quite a few subaction types. We'll go over them here.
 
 ##### Scene Speed
 
-![SubActionSceneSpeed.jpg](../../assets/SubActionSceneSpeed.jpg)
+![SubActionSceneSpeed.jpg](../../assets/subactionscenespeed.jpg)
 
 Controls how fast the scene will execute. This is independent of the game speed. Can be used for neat effects where you move the camera really quickly suddenly or slow to a crawl within a single action. Note that this does not affect anything besides the scene (usually the camera). Meaning, it doesn't make the scene events any faster, just the motion of your set cameras.I've had the most luck with using at least two or three of these subactions within a single action; one to ramp up (or down) the speed from normal, one to continue the altered camera movement, and one to return back to a normal camera speed.The **Min** and **Max** fields are named poorly. The **Min** indicates how fast the camera speed will be at the start of the subaction execution (1 by default) and the **Max** field shows how fast the subaction will leave the camera speed when it finishes.Under the **Time** section there is a **Duration** field. Have this field filled out with the appropriate value, so that UnrealEd knows when to start increasing your camera speed.
 
 ##### Game Speed
 
-![SubActionGameSpeed.jpg](../../assets/SubActionGameSpeed.jpg)
+![SubActionGameSpeed.jpg](../../assets/subactiongamespeed.jpg)
 
 This allows you to control the overall game speed speed. This has the same affect as the **slomo** command. i.e., `slomo 5' makes the game run 5x faster, and 0.2 would be 1/5th as fast.The GameSpeed has the same silly **Min** and **Max** fields as SceneSpeed. Set the **Min** field to the starting speed value (1 by default) and the **Max** to the ending value.Again, I prefer to use more than one GameSpeed subaction at once, so that I can change the game speed away from the norm, and then back.
 
 ##### Orientation
 
-![SubActionOrientation.jpg](../../assets/SubActionOrientation.jpg)
+![SubActionOrientation.jpg](../../assets/subactionorientation.jpg)
 
 This is what you use to change where the camera looks when moving through the scene. There are several options here:
 
@@ -190,31 +190,31 @@ The camera will interpolate between the rotations of the InterpolationPoints at 
 
 ##### Camera Shake
 
-![SubActionShake.jpg](../../assets/SubActionShake.jpg)
+![SubActionShake.jpg](../../assets/subactionshake.jpg)
 
 This allows you to, what else, shake the camera in a matinee movie. This has slightly different sets of options, but they follow the same formula we've been seeing. Under the section **Shake** there are three variables, **X**, **Y** and **Z**; each of these also have **Min** and **Max** fields. So, shaking upon independent axes is possible, for independent lengths of time.Make sure to set a **Duration** for your shaking, as well, in the **Time** rollout. Shake shake shake!
 
 ##### FOV
 
-![SubActionFOV.jpg](../../assets/SubActionFOV.jpg)
+![SubActionFOV.jpg](../../assets/subactionfov.jpg)
 
 This allows you to smoothly change the camera's FOV for effects like zooming. The **Min** is the start value, and **Max** is the ending value. The normal FOV for standard gameplay is 85. Anything lower than this will reduce the visible area to the player, and make faraway objects look closer. A higher FOV will make close objects look far away, and things that are on the periphery of the screen will look stretched out. The highest FOV possible is 170-180 or so, after that there appears to be no change.
 
 ##### Trigger
 
-![SubActionTrigger.jpg](../../assets/SubActionTrigger.jpg)
+![SubActionTrigger.jpg](../../assets/subactiontrigger.jpg)
 
 Will trigger an event. Useful for precisely timing explosions, triggering dialogs, scripted sequences, etc.
 
 ##### Fade
 
-![SubActionFade.jpg](../../assets/SubActionFade.jpg)
+![SubActionFade.jpg](../../assets/subactionfade.jpg)
 
 Fades to and from colors. The **FadeColor** is selectable from within the **Fade** section. Default color is set to black.Note that the `fade in' and `fade out' are both contained within this tool. Under the **Fade** section, **bFadeOut** can be set to true or false. If false, it will fade in. Also, take care that when using a fade out, the **Delay** field is set appropriately in the **Time** section. It is quite possible to fade out in the middle of a scene, and then have the scene pop back to full brightness immediately after.
 
 ##### Camera Effect
 
-![SubActionFade.jpg](../../assets/SubActionFade.jpg)
+![SubActionFade.jpg](../../assets/subactionfade.jpg)
 
 This will add an effect - there are two options:
 
@@ -232,7 +232,7 @@ This is similar to the time bar on the actions tab except that now the bar repre
 
 ### Tools
 
-![MatTools.jpg](../../assets/MatTools.jpg)
+![MatTools.jpg](../../assets/mattools.jpg)
 
 This tab is very simple, but the tools it offers are extremely helpful. You have buttons here to add InterpolationPoints or LookTargets. The actors will be added at the current camera position and use the current camera rotation.
 

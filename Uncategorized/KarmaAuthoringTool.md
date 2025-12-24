@@ -43,7 +43,7 @@ KAT is free with Karma. You can [download KAT 1.2 here](rsrc/Two/KarmaAuthoringT
 
 ## Using KAT
 
-![KAT.jpg](../assets/KAT.jpg)
+![KAT.jpg](../assets/kat.jpg)
 
 KAT is a tool for the creation of complex physical assets.Using KAT you can:
 
@@ -71,7 +71,7 @@ Note that a single .ka file can contain multiple Assets. For example "927\KarmaD
 The sizes of Physics paramters (such as mass and inertia tensors) used in KAT should be those you wish to use in your level. This means that KAT can give a good preview of the behavior you can expect. Scaling physics parameters on import into, UnrealEd is not recommended.The below picture shows scale option on importing a .PSK into KAT.
 The scale factor should be (Unreal Scale Factor X .02). The dept paramter allows you to clip the skeletons hierarchy on import.
 
-![scalingOnImport.jpg](../assets/scalingOnImport.jpg)
+![scalingOnImport.jpg](../assets/scalingonimport.jpg)
 
 ### Ragdoll Example
 
@@ -117,17 +117,17 @@ First, make sure you have KAT installed on your machine. Next, open KAT. If you 
 
 Once you have the asset in KAT you can edit it in many ways. The attached PDF, [KAT User Guide](rsrc/Two/KarmaAuthoringTool/KAT_User_Guide_prebeta_0_2.pdf), goes over how to navigate around the program and edit assets.For this example, I will go over how to edit the KarmaTube. When the KarmaTube is first imported it looks like this:
 
-![KarmaTubeFirstImport.gif](../assets/KarmaTubeFirstImport.gif)
+![KarmaTubeFirstImport.gif](../assets/karmatubefirstimport.gif)
 
 This will work ok and can be used in-game but some tweaks will improve it. The first is that there are too many bones. The last bone at the end of the chain, "joint6", is not necessary; it was only put in the model to auto-generate all the collision (if the skeleton does not include the extra bone, you have to add the collision to the last bone manually). To delete this bone, select it in the parts window and click the pull-down arrow below the list and select delete like so:
 
-![KarmaTubePartsWindow.gif](../assets/KarmaTubePartsWindow.gif)
+![KarmaTubePartsWindow.gif](../assets/karmatubepartswindow.gif)
 
 Now we need to change the joint types from "Ball and socket" to "Skeletal". This is because ball and socket joints allow twisting which makes the KarmaTube look like a Tootsie Roll. Skeletal joints allow you to constrain not only twisting but rotating as well. You can either lock rotation for both "Twist" and "Cone" rotation or specify a stiffness and damping. We will just be using the default skeletal joint settings which lock the twist and put some stiffness and damping on the cone rotation. To change the joint type go the joints window and click "Properties" to pull up the joint properties window.
 
-![KarmaTubeJointsWindow.gif](../assets/KarmaTubeJointsWindow.gif)
+![KarmaTubeJointsWindow.gif](../assets/karmatubejointswindow.gif)
 
-![KarmaTubeJointProperties.gif](../assets/KarmaTubeJointProperties.gif)In the joint properties window change the type from "Ball and socket" to "Skeletal" (the change will take place immediately). You can now select the next joint and change its type as well. Once you have changed the type of all four joints you can close the properties window.These is all the changes we are going to make for now. Go up to the top and click "Save" and you are done and ready to make a class for this ragdoll.Note: You should not change the names of *Parts*, *Joints*, or *Geometry* in KAT because then it will not match up the PSK, obviously.
+![KarmaTubeJointProperties.gif](../assets/karmatubejointproperties.gif)In the joint properties window change the type from "Ball and socket" to "Skeletal" (the change will take place immediately). You can now select the next joint and change its type as well. Once you have changed the type of all four joints you can close the properties window.These is all the changes we are going to make for now. Go up to the top and click "Save" and you are done and ready to make a class for this ragdoll.Note: You should not change the names of *Parts*, *Joints*, or *Geometry* in KAT because then it will not match up the PSK, obviously.
 
 #### Step 6: Making a Class For Your Ragdoll
 
@@ -200,7 +200,7 @@ Keep to the formentioned scaling rules and you should be OK.
 
 Again this is most likley to be the wrong scaling between your graphics and your collision model. To see if this is the case set the rendermode to wireframe and on the top menu select karma physics>collisions from the menu. This will draw collision geometry. (Alternativly type kdraw collison in the console).
 
-![DrawingCollision.jpg](../assets/DrawingCollision.jpg)
+![DrawingCollision.jpg](../assets/drawingcollision.jpg)
 
 You can then see if your collision models are in scale with your graphics. If they are not be sure to include the correct scaling factor in KAT.
 

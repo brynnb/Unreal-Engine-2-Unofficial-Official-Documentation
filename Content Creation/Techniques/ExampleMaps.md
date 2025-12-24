@@ -103,7 +103,7 @@ This document will contain links to Demos and Example Maps. Feel free to create 
 
 The second map is a small room that fills with water and then drains, but the water surface is a fluid surface that reacts to encroaching players.
 
-![2136rw1.JPG](../../assets/2136rw1.JPG)
+![2136rw1.JPG](../../assets/2136rw1.jpg)
 
 ---
 
@@ -199,7 +199,7 @@ The second map is a small room that fills with water and then drains, but the wa
 
 [UsingHardwareShaders](https://udn.epicgames.com/Two/UsingHardwareShaders)This document (from the Technical section) shows how to create your own Hardware Shaders. Note that this example map is not included in the below attachmented files, but it can be downloaded from its own page.
 
-![ShaderImported.jpg](../../assets/ShaderImported.jpg)
+![ShaderImported.jpg](../../assets/shaderimported.jpg)
 
 ---
 
@@ -223,13 +223,13 @@ The second map is a small room that fills with water and then drains, but the wa
 
 [ExampleMapsEPIC](../../Uncategorized/ExampleMapsEPIC.md)This document contains a variety of old example maps by EPIC. This document has very little explanantion, but you can play with the downloadable maps which include a matinee map, materials map, a particle systems map, and a sounds map.
 
-![EPICdolly3.jpg](../../assets/EPICdolly3.jpg)
+![EPICdolly3.jpg](../../assets/epicdolly3.jpg)
 
-![EPICmaterials1.jpg](../../assets/EPICmaterials1.jpg)
+![EPICmaterials1.jpg](../../assets/epicmaterials1.jpg)
 
-![EPICparticles1.jpg](../../assets/EPICparticles1.jpg)
+![EPICparticles1.jpg](../../assets/epicparticles1.jpg)
 
-![EPICsounds2.jpg](../../assets/EPICsounds2.jpg)
+![EPICsounds2.jpg](../../assets/epicsounds2.jpg)
 
 ---
 
