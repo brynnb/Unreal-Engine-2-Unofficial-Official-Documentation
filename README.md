@@ -19,7 +19,6 @@ The content was originally crawled from the [legacy Unreal Engine 2 documentatio
 *   Downloaded and locally linked all image assets.
 *   Cleaned unnecessary navigation headers, sidebars, and footers.
 *   Structured into folder hierarchy.
-*   Fixed broken or relative links to point to local files.
 
 ## Copyright & Disclaimer
 
