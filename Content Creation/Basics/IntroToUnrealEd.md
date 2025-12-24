@@ -51,7 +51,7 @@ Here you can set its dimensions and various other attributes. For this initial s
 
 ![redbuilderbrush.gif](../../assets/redbuilderbrush.gif)
 
-Once you have the brush in position, use the subtract button to carve out your space and it will create a Constructed Solid Geometry (CSG) but it is more commonly referred to as BSP (Binary Space Partition). For a more in depth description of these terms see the [BspBrushesTutorial](../Primitives/BspBrushesTutorial.md#BSP_Brush_Introduction).
+Once you have the brush in position, use the subtract button to carve out your space and it will create a Constructed Solid Geometry (CSG) but it is more commonly referred to as BSP (Binary Space Partition). For a more in depth description of these terms see the [BspBrushesTutorial](../Primitives/BspBrushesTutorial.md#bsp_brush_introduction).
 
 ![subtract.gif](../../assets/subtract.gif)
 
@@ -110,7 +110,7 @@ StaticMeshes are geometry created in a 3rd party package such as 3DS Max, Maya, 
 Then you need to select your StaticMesh on the right side of the StaticMesh Browser. Once selected you can either right click and add one.StaticMeshes are very versatile as they can be easily moved, rotated, scaled, and even have their textures swapped in Unreal Ed. To learn more about using StaticMeshes take a look at these documents
 
 * [StaticMeshesTutorial](../Primitives/StaticMeshesTutorial.md)
-* [Level Optimization doc](../Techniques/LevelOptimization.md#Static_Meshes) *(Static Meshes section)*
+* [Level Optimization doc](../Techniques/LevelOptimization.md#static_meshes) *(Static Meshes section)*
 
 ### Creating Terrains
 
@@ -119,7 +119,7 @@ Then you need to select your StaticMesh on the right side of the StaticMesh Brow
 Terrains are another handy type of geometry that you can in building your level. They are very useful for quickly and easily creating the framework for large outdoor environments. For more information on how to create Terrains take a look at these documents:
 
 * [TerrainTutorial](../Primitives/TerrainTutorial.md)
-* [Level Optimization doc](../Techniques/LevelOptimization.md#Terrain) *(Terrain section)*
+* [Level Optimization doc](../Techniques/LevelOptimization.md#terrain) *(Terrain section)*
 * [ExampleMapsCaverns](../../Uncategorized/ExampleMapsCaverns.md)
 
 ## Box Selection

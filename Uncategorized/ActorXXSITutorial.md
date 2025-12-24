@@ -2,11 +2,11 @@
 
 *Document Summary: A tutorial showing how to export animations using [ActorX](../Content Creation/Tools/ActorX.md) with XSI.**Document Changelog: Created; maintained over time.*
 
-* [How to export animations using ActorX and XSI](ActorXXSITutorial.md#How to export animations using _ActorX and XSI)
-  + [Install the Plug-In](ActorXXSITutorial.md#Install the Plug-In)
-  + [Usage](ActorXXSITutorial.md#Usage)
-  + [Script interface](ActorXXSITutorial.md#Script interface)
-  + [Downloads](ActorXXSITutorial.md#Downloads)
+* [How to export animations using ActorX and XSI](ActorXXSITutorial.md#how-to-export-animations-using-_actorx-and-xsi)
+  + [Install the Plug-In](ActorXXSITutorial.md#install-the-plug-in)
+  + [Usage](ActorXXSITutorial.md#usage)
+  + [Script interface](ActorXXSITutorial.md#script-interface)
+  + [Downloads](ActorXXSITutorial.md#downloads)
 
 This document assumes that you have already created and rigged your skeletal actor or static mesh and are looking for a step-by-step tutorial on how to use the ActorX exporter to export your model and animations out of XSI and into Unreal. This also assumes that you have already read the ActorX documentation on the UDN site and understand how to use static meshes in the Unreal editor, and the relationship between .PSK files and .PSA files.
 

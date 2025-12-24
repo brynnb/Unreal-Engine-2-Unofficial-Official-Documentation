@@ -2,22 +2,22 @@
 
 *Created by Chris Linder (DemiurgeStudios?) on 12-05-03 for 2226 builds. Last Updated by Chris Linder (DemiurgeStudios?).*
 
-* [Pawn Tricks and Tips](PawnTricksAndTips.md#Pawn Tricks and Tips)
-  + [Related Documents](PawnTricksAndTips.md#Related Documents)
-  + [Introduction](PawnTricksAndTips.md#Introduction)
-  + [Walking and Running](PawnTricksAndTips.md#Walking and Running)
-  + [Pawn Scale](PawnTricksAndTips.md#Pawn Scale)
-    - [Using the Scaling Code](PawnTricksAndTips.md#Using the Scaling Code)
-    - [Net Play](PawnTricksAndTips.md#Net Play)
-    - [Runtime Install](PawnTricksAndTips.md#Runtime Install)
-  + [Camera and View](PawnTricksAndTips.md#Camera and View)
-    - [Simple Third-Person Camera](PawnTricksAndTips.md#Simple Third-Person Camera)
-    - ["Special" Camera](PawnTricksAndTips.md#"Special" Camera)
-    - [PlayerController Camera Functions](PawnTricksAndTips.md#PlayerController Camera Functions)
-      * [PlayerCalcView](PawnTricksAndTips.md#PlayerCalcView)
-    - [CalcFirstPersonView](PawnTricksAndTips.md#CalcFirstPersonView)
-      * [CalcBehindView](PawnTricksAndTips.md#CalcBehindView)
-  + [The "Set" Command](PawnTricksAndTips.md#The "Set" Command)
+* [Pawn Tricks and Tips](PawnTricksAndTips.md#pawn-tricks-and-tips)
+  + [Related Documents](PawnTricksAndTips.md#related-documents)
+  + [Introduction](PawnTricksAndTips.md#introduction)
+  + [Walking and Running](PawnTricksAndTips.md#walking-and-running)
+  + [Pawn Scale](PawnTricksAndTips.md#pawn-scale)
+    - [Using the Scaling Code](PawnTricksAndTips.md#using-the-scaling-code)
+    - [Net Play](PawnTricksAndTips.md#net-play)
+    - [Runtime Install](PawnTricksAndTips.md#runtime-install)
+  + [Camera and View](PawnTricksAndTips.md#camera-and-view)
+    - [Simple Third-Person Camera](PawnTricksAndTips.md#simple-third-person-camera)
+    - ["Special" Camera](PawnTricksAndTips.md#special-camera)
+    - [PlayerController Camera Functions](PawnTricksAndTips.md#playercontroller-camera-functions)
+      * [PlayerCalcView](PawnTricksAndTips.md#playercalcview)
+    - [CalcFirstPersonView](PawnTricksAndTips.md#calcfirstpersonview)
+      * [CalcBehindView](PawnTricksAndTips.md#calcbehindview)
+  + [The "Set" Command](PawnTricksAndTips.md#the-set-command)
 
 ## Related Documents
 

@@ -2,19 +2,19 @@
 
 *Document Summary: An additional Matinee example demonstrating how to make a more complex Matinee scene.**Document Changelog: Last updated by Hugh Macdonald ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)). Original author was Hugh Macdonald ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).*
 
-* [Matinee Demo Tutorial (Opening section)](MatineeDemoOpening.md#Matinee Demo Tutorial (Opening section))
-  + [Overview](MatineeDemoOpening.md#Overview)
-  + [Concept](MatineeDemoOpening.md#Concept)
-  + [Creating the Scene](MatineeDemoOpening.md#Creating the Scene)
-    - [Setting up the Map](MatineeDemoOpening.md#Setting up the Map)
-    - [Opening Shots](MatineeDemoOpening.md#Opening Shots)
-      * [Actions](MatineeDemoOpening.md#Actions)
-      * [Sub Actions](MatineeDemoOpening.md#Sub Actions)
-        + [Music](MatineeDemoOpening.md#Music)
-        + [Fade In](MatineeDemoOpening.md#Fade In)
-        + [Motion Blur](MatineeDemoOpening.md#Motion Blur)
-        + [View Targets](MatineeDemoOpening.md#View Targets)
-        + [Fade Out](MatineeDemoOpening.md#Fade Out)
+* [Matinee Demo Tutorial (Opening section)](MatineeDemoOpening.md#matinee-demo-tutorial-opening-section))
+  + [Overview](MatineeDemoOpening.md#overview)
+  + [Concept](MatineeDemoOpening.md#concept)
+  + [Creating the Scene](MatineeDemoOpening.md#creating-the-scene)
+    - [Setting up the Map](MatineeDemoOpening.md#setting-up-the-map)
+    - [Opening Shots](MatineeDemoOpening.md#opening-shots)
+      * [Actions](MatineeDemoOpening.md#actions)
+      * [Sub Actions](MatineeDemoOpening.md#sub-actions)
+        + [Music](MatineeDemoOpening.md#music)
+        + [Fade In](MatineeDemoOpening.md#fade-in)
+        + [Motion Blur](MatineeDemoOpening.md#motion-blur)
+        + [View Targets](MatineeDemoOpening.md#view-targets)
+        + [Fade Out](MatineeDemoOpening.md#fade-out)
 
 ## Overview
 

@@ -2,9 +2,9 @@
 
 *Document Summary: A simple map that demonstrates how to simulate beams of light. Requires limited knowledge of emitters and projectors. Novices should be able to follow without much difficulty.**Document Changelog: Last updated by Tom Lin (DemiurgeStudios?), for document summary. Original author was Lode Vandevenne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).*
 
-* [Light Beams Example Map](ExampleMapsLightBeams.md#Light Beams Example Map)
-  + [Introduction](ExampleMapsLightBeams.md#Introduction)
-  + [Downloads](ExampleMapsLightBeams.md#Downloads)
+* [Light Beams Example Map](ExampleMapsLightBeams.md#light-beams-example-map)
+  + [Introduction](ExampleMapsLightBeams.md#introduction)
+  + [Downloads](ExampleMapsLightBeams.md#downloads)
 
 ## Introduction
 

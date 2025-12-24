@@ -2,60 +2,60 @@
 
 *Document Summary: A reference to properties-based emitter editing and creation. (non UDN build).**Document Changelog: Updated by Michiel Hendriks for build 3323. Previously updated by Chris Sturgill for 2226 build and reorganization. Original Author: Lode Vandevenne.*
 
-* [Beam Emitters](BeamEmitter.md#Beam Emitters)
-  + [Introduction](BeamEmitter.md#Introduction)
-  + [Acceleration](BeamEmitter.md#Acceleration)
-  + [Beam](BeamEmitter.md#Beam)
-    - [BeamDistanceRange](BeamEmitter.md#BeamDistanceRange)
-    - [BeamEndPoints](BeamEmitter.md#BeamEndPoints)
-    - [BeamTextureUScale](BeamEmitter.md#BeamTextureUScale)
-    - [BeamTextureVScale](BeamEmitter.md#BeamTextureVScale)
-    - [DetermineEndPointBy](BeamEmitter.md#DetermineEndPointBy)
-      * [PTEP\_Velocity](BeamEmitter.md#PTEP_Velocity)
-      * [PTEP\_Distance](BeamEmitter.md#PTEP_Distance)
-      * [PTEP\_Offset](BeamEmitter.md#PTEP_Offset)
-      * [PTEP\_Actor](BeamEmitter.md#PTEP_Actor)
-      * [PTEP\_TraceOffset](BeamEmitter.md#PTEP_TraceOffset)
-      * [PTEP\_OffsetAsAbsolute](BeamEmitter.md#PTEP_OffsetAsAbsolute)
-      * [PTEP\_DynamicDistance](BeamEmitter.md#PTEP_DynamicDistance)
-    - [RotatingSheets](BeamEmitter.md#RotatingSheets)
-    - [TriggerEndpoint](BeamEmitter.md#TriggerEndpoint)
-  + [BeamBranching](BeamEmitter.md#BeamBranching)
-    - [BranchEmitter](BeamEmitter.md#BranchEmitter)
-    - [BranchHFPointsRange](BeamEmitter.md#BranchHFPointsRange)
-    - [BranchProbability](BeamEmitter.md#BranchProbability)
-    - [BranchSpawnAmountRange](BeamEmitter.md#BranchSpawnAmountRange)
-    - [LinkupLifetime](BeamEmitter.md#LinkupLifetime)
-    - [UseBranching](BeamEmitter.md#UseBranching)
-  + [BeamNoise](BeamEmitter.md#BeamNoise)
-    - [DynamicHFNoisePointsRange](BeamEmitter.md#DynamicHFNoisePointsRange)
-    - [DynamicHFNoiseRange](BeamEmitter.md#DynamicHFNoiseRange)
-    - [DynamicTimeBetweenNoiseRange](BeamEmitter.md#DynamicTimeBetweenNoiseRange)
-    - [HFScaleFactors](BeamEmitter.md#HFScaleFactors)
-    - [HFScaleRepeats](BeamEmitter.md#HFScaleRepeats)
-    - [HighFrequencyNoiseRange](BeamEmitter.md#HighFrequencyNoiseRange)
-    - [HighFrequencyPoints](BeamEmitter.md#HighFrequencyPoints)
-    - [LFScaleFactors](BeamEmitter.md#LFScaleFactors)
-    - [LFScaleRepeats](BeamEmitter.md#LFScaleRepeats)
-    - [LowFrequencyNoiseRange](BeamEmitter.md#LowFrequencyNoiseRange)
-    - [LowFrequencyPoints](BeamEmitter.md#LowFrequencyPoints)
-    - [NoiseDeterminesEndPoint](BeamEmitter.md#NoiseDeterminesEndPoint)
-    - [UseHighFrequencyScale](BeamEmitter.md#UseHighFrequencyScale)
-    - [UseLowFrequencyScale](BeamEmitter.md#UseLowFrequencyScale)
-  + [Collision](BeamEmitter.md#Collision)
-  + [Color](BeamEmitter.md#Color)
-  + [Fading](BeamEmitter.md#Fading)
-  + [Revolution](BeamEmitter.md#Revolution)
-  + [Rotation](BeamEmitter.md#Rotation)
-  + [Size](BeamEmitter.md#Size)
-  + [SkeletalMesh](BeamEmitter.md#SkeletalMesh)
-  + [Spawning](BeamEmitter.md#Spawning)
-  + [Texture](BeamEmitter.md#Texture)
-  + [Tick](BeamEmitter.md#Tick)
-  + [Time](BeamEmitter.md#Time)
-  + [Trigger](BeamEmitter.md#Trigger)
-  + [Velocity](BeamEmitter.md#Velocity)
-  + [Warmup](BeamEmitter.md#Warmup)
+* [Beam Emitters](BeamEmitter.md#beam-emitters)
+  + [Introduction](BeamEmitter.md#introduction)
+  + [Acceleration](BeamEmitter.md#acceleration)
+  + [Beam](BeamEmitter.md#beam)
+    - [BeamDistanceRange](BeamEmitter.md#beamdistancerange)
+    - [BeamEndPoints](BeamEmitter.md#beamendpoints)
+    - [BeamTextureUScale](BeamEmitter.md#beamtextureuscale)
+    - [BeamTextureVScale](BeamEmitter.md#beamtexturevscale)
+    - [DetermineEndPointBy](BeamEmitter.md#determineendpointby)
+      * [PTEP\_Velocity](BeamEmitter.md#ptep_velocity)
+      * [PTEP\_Distance](BeamEmitter.md#ptep_distance)
+      * [PTEP\_Offset](BeamEmitter.md#ptep_offset)
+      * [PTEP\_Actor](BeamEmitter.md#ptep_actor)
+      * [PTEP\_TraceOffset](BeamEmitter.md#ptep_traceoffset)
+      * [PTEP\_OffsetAsAbsolute](BeamEmitter.md#ptep_offsetasabsolute)
+      * [PTEP\_DynamicDistance](BeamEmitter.md#ptep_dynamicdistance)
+    - [RotatingSheets](BeamEmitter.md#rotatingsheets)
+    - [TriggerEndpoint](BeamEmitter.md#triggerendpoint)
+  + [BeamBranching](BeamEmitter.md#beambranching)
+    - [BranchEmitter](BeamEmitter.md#branchemitter)
+    - [BranchHFPointsRange](BeamEmitter.md#branchhfpointsrange)
+    - [BranchProbability](BeamEmitter.md#branchprobability)
+    - [BranchSpawnAmountRange](BeamEmitter.md#branchspawnamountrange)
+    - [LinkupLifetime](BeamEmitter.md#linkuplifetime)
+    - [UseBranching](BeamEmitter.md#usebranching)
+  + [BeamNoise](BeamEmitter.md#beamnoise)
+    - [DynamicHFNoisePointsRange](BeamEmitter.md#dynamichfnoisepointsrange)
+    - [DynamicHFNoiseRange](BeamEmitter.md#dynamichfnoiserange)
+    - [DynamicTimeBetweenNoiseRange](BeamEmitter.md#dynamictimebetweennoiserange)
+    - [HFScaleFactors](BeamEmitter.md#hfscalefactors)
+    - [HFScaleRepeats](BeamEmitter.md#hfscalerepeats)
+    - [HighFrequencyNoiseRange](BeamEmitter.md#highfrequencynoiserange)
+    - [HighFrequencyPoints](BeamEmitter.md#highfrequencypoints)
+    - [LFScaleFactors](BeamEmitter.md#lfscalefactors)
+    - [LFScaleRepeats](BeamEmitter.md#lfscalerepeats)
+    - [LowFrequencyNoiseRange](BeamEmitter.md#lowfrequencynoiserange)
+    - [LowFrequencyPoints](BeamEmitter.md#lowfrequencypoints)
+    - [NoiseDeterminesEndPoint](BeamEmitter.md#noisedeterminesendpoint)
+    - [UseHighFrequencyScale](BeamEmitter.md#usehighfrequencyscale)
+    - [UseLowFrequencyScale](BeamEmitter.md#uselowfrequencyscale)
+  + [Collision](BeamEmitter.md#collision)
+  + [Color](BeamEmitter.md#color)
+  + [Fading](BeamEmitter.md#fading)
+  + [Revolution](BeamEmitter.md#revolution)
+  + [Rotation](BeamEmitter.md#rotation)
+  + [Size](BeamEmitter.md#size)
+  + [SkeletalMesh](BeamEmitter.md#skeletalmesh)
+  + [Spawning](BeamEmitter.md#spawning)
+  + [Texture](BeamEmitter.md#texture)
+  + [Tick](BeamEmitter.md#tick)
+  + [Time](BeamEmitter.md#time)
+  + [Trigger](BeamEmitter.md#trigger)
+  + [Velocity](BeamEmitter.md#velocity)
+  + [Warmup](BeamEmitter.md#warmup)
 
 ## Introduction
 
@@ -63,7 +63,7 @@ This document will cover Beam Emitters, one of five different possible emitters 
 
 ## Acceleration
 
-Applies acceleration to the beam particles. This is probably not going to be useful as real-world lightning bolts are not visibly affected by gravity. Probably better results will result in changes to  [StartVelocityRange](BeamEmitter.md#Velocity). For more information on Acceleration check out the [Emitters Reference](../Content Creation/Effects/EmittersReference.md#Acceleration) document.
+Applies acceleration to the beam particles. This is probably not going to be useful as real-world lightning bolts are not visibly affected by gravity. Probably better results will result in changes to  [StartVelocityRange](BeamEmitter.md#velocity). For more information on Acceleration check out the [Emitters Reference](../Content Creation/Effects/EmittersReference.md#acceleration) document.
 
 ## Beam
 
@@ -71,12 +71,12 @@ Applies acceleration to the beam particles. This is probably not going to be use
 
 ### BeamDistanceRange
 
-The endpoint of the beam will be offset by the specified distance. This value is used if the emitter's [DetermineEndPointBy](BeamEmitter.md#DetermineEndPointBy)
-option is set to  [PTEPDistance](BeamEmitter.md#PTEPDistance).
+The endpoint of the beam will be offset by the specified distance. This value is used if the emitter's [DetermineEndPointBy](BeamEmitter.md#determineendpointby)
+option is set to  [PTEPDistance](BeamEmitter.md#ptepdistance).
 
 ### BeamEndPoints
 
-Add one or more to specify either an offset range or an ActorTag. This is further explained in  [PTEP\_Offset](BeamEmitter.md#PTEPOffset) and  [PTEP\_Actor](BeamEmitter.md#PTEPActor) under [DetermineEndPointBy](BeamEmitter.md#DetermineEndPointBy).
+Add one or more to specify either an offset range or an ActorTag. This is further explained in  [PTEP\_Offset](BeamEmitter.md#ptepoffset) and  [PTEP\_Actor](BeamEmitter.md#ptepactor) under [DetermineEndPointBy](BeamEmitter.md#determineendpointby).
 
 ### BeamTextureUScale
 
@@ -106,7 +106,7 @@ With the default setting PTEP\_Velocity, the EndPoint is determined by the Veloc
 
 #### PTEP\_Distance
 
-This does the same as PTEP\_Velocity, but now only the direction of the beams is determined by the StartVelocityRange. You can set the length with  [BeamDistanceRange](BeamEmitter.md#BeamDistanceRangE), in editor units.
+This does the same as PTEP\_Velocity, but now only the direction of the beams is determined by the StartVelocityRange. You can set the length with  [BeamDistanceRange](BeamEmitter.md#beamdistancerange), in editor units.
 
 #### PTEP\_Offset
 
@@ -131,15 +131,15 @@ Note: In the event that you have competed the above steps and your beam is still
 
 #### PTEP\_TraceOffset
 
-This does the same as  [PTEP\_Offset](BeamEmitter.md#PTEPOffset), but if there is a solid surface in the way the lightning will hit against it, instead of going to the actual EndPoint. Oh, and PTEP\_TraceOffset doesn't work good in combination with the coordinate system PTCS\_Relative.
+This does the same as  [PTEP\_Offset](BeamEmitter.md#ptepoffset), but if there is a solid surface in the way the lightning will hit against it, instead of going to the actual EndPoint. Oh, and PTEP\_TraceOffset doesn't work good in combination with the coordinate system PTCS\_Relative.
 
 #### PTEP\_OffsetAsAbsolute
 
-The same as [PTEP\_Offset](BeamEmitter.md#PTEPOffset), except that the EndPoint is the absolute location instead of the relative location.
+The same as [PTEP\_Offset](BeamEmitter.md#ptepoffset), except that the EndPoint is the absolute location instead of the relative location.
 
 #### PTEP\_DynamicDistance
 
-Does the same as [PTEP\_Distance](BeamEmitter.md#PTEPOffset) except that the length can be scaled by *Size.Y* and the distance can be changed in realtime from UnrealScript.
+Does the same as [PTEP\_Distance](BeamEmitter.md#ptepoffset) except that the length can be scaled by *Size.Y* and the distance can be changed in realtime from UnrealScript.
 
 ### RotatingSheets
 
@@ -149,7 +149,7 @@ This option determines how many sheets the beam has. 0 and 1 mean the same: only
 
 ### TriggerEndpoint
 
-This allows your beam to trigger another Actor. It is usable only when the  [DetermineEndpointBy](BeamEmitter.md#DetermineEndpointBy) is set to  [PTEP\_Actor](BeamEmitter.md#PTEPActor). If the Actor in question is something that can be triggered, ie. another particle system or a mover, then when the beam EndPoint will activate the trigger when it strikes.In the following example, a BeamEmitter is set to strike a SpriteEmitter with the Tag "ParticleActor" and a Mover with the Tag "MoveActor".
+This allows your beam to trigger another Actor. It is usable only when the  [DetermineEndpointBy](BeamEmitter.md#determineendpointby) is set to  [PTEP\_Actor](BeamEmitter.md#ptepactor). If the Actor in question is something that can be triggered, ie. another particle system or a mover, then when the beam EndPoint will activate the trigger when it strikes.In the following example, a BeamEmitter is set to strike a SpriteEmitter with the Tag "ParticleActor" and a Mover with the Tag "MoveActor".
 
 ![TriggerExample.jpg](../assets/triggerexample.jpg)
 
@@ -219,7 +219,7 @@ This determines the time the engine waits before updating the Dynamic Noise. If 
 
 ### HFScaleFactors
 
-Insert these to create a High Frequency Scale, similar to the ColorScale explained in the [EmittersReference](../Content Creation/Effects/EmittersReference.md#Color) document.For example, let's say you have a beam with 100 HighFrequencyPoints. Without the HFScale, the whole Beam has the same NoiseRange everywhere, as in the image below.
+Insert these to create a High Frequency Scale, similar to the ColorScale explained in the [EmittersReference](../Content Creation/Effects/EmittersReference.md#color) document.For example, let's say you have a beam with 100 HighFrequencyPoints. Without the HFScale, the whole Beam has the same NoiseRange everywhere, as in the image below.
 
 ![noise.jpg](../assets/noise.jpg)
 
@@ -243,7 +243,7 @@ There must be at least 2 HighFrequencyPoints which define, along with 2 LowFrequ
 
 ### LFScaleFactors
 
-This works exactly like  [HFScaleFactors](BeamEmitter.md#HFScaleFactors) (check there for a thorough explanation), except that it applies to Low Frequency Noise. Low frequency and high frequency noise work independently from each other, and can be used "through" each other. For example, you can use a lot of small High Frequency Points, and a few, very large, Low Frequency Points. Then the beam will have a few large bends, and a lot of small bends at the same time, as shown on the screenshot:
+This works exactly like  [HFScaleFactors](BeamEmitter.md#hfscalefactors) (check there for a thorough explanation), except that it applies to Low Frequency Noise. Low frequency and high frequency noise work independently from each other, and can be used "through" each other. For example, you can use a lot of small High Frequency Points, and a few, very large, Low Frequency Points. Then the beam will have a few large bends, and a lot of small bends at the same time, as shown on the screenshot:
 
 ![lightning6.jpg](../assets/lightning6.jpg)
 
@@ -261,19 +261,19 @@ There must be at least 2 LowFrequencyPoints which define, along with 2 HighFrequ
 
 ### NoiseDeterminesEndPoint
 
-This allows the noise applied to the beam to also affect its endpoint, which in most cases, it already does. Sometimes, however, the location of the endpoint is locked-- if the  [DetermineEndPointBy](BeamEmitter.md#DetermineEndPointBy) setting is  [PTEP\_Actor](BeamEmitter.md#PTEP_Actor), for example. In this case the endpoint will be set to the center point of the specified actor. However, this might not be the desired effect. It might look odd to see lightning strike the exact same place repeatedly. Setting this value to True will allow the beam to strike the desired actor but in a more random fashion.If the beam were striking a triggerable actor, allowing the noise to determine the endpoint will not stop the actor from triggering, even if the beam does not visually strike that actor. Note that this might result in visual glitches if the amount of noise is great. For example, let's say your beam is supposed to strike a tree and set off a fire particle system. However, it will look strange if a lightning bolt strikes the ground and tree 40 feet away from the impact bursts into flame. Reducing the amount of noise on the beam would fix this problem.
+This allows the noise applied to the beam to also affect its endpoint, which in most cases, it already does. Sometimes, however, the location of the endpoint is locked-- if the  [DetermineEndPointBy](BeamEmitter.md#determineendpointby) setting is  [PTEP\_Actor](BeamEmitter.md#ptep_actor), for example. In this case the endpoint will be set to the center point of the specified actor. However, this might not be the desired effect. It might look odd to see lightning strike the exact same place repeatedly. Setting this value to True will allow the beam to strike the desired actor but in a more random fashion.If the beam were striking a triggerable actor, allowing the noise to determine the endpoint will not stop the actor from triggering, even if the beam does not visually strike that actor. Note that this might result in visual glitches if the amount of noise is great. For example, let's say your beam is supposed to strike a tree and set off a fire particle system. However, it will look strange if a lightning bolt strikes the ground and tree 40 feet away from the impact bursts into flame. Reducing the amount of noise on the beam would fix this problem.
 
 ### UseHighFrequencyScale
 
-If True, the beam will use a  [HFScale](BeamEmitter.md#HFScaleFactors) as described above.
+If True, the beam will use a  [HFScale](BeamEmitter.md#hfscalefactors) as described above.
 
 ### UseLowFrequencyScale
 
-If True, the beam will use a  [LFScale](BeamEmitter.md#LFScaleFactors) as described above.
+If True, the beam will use a  [LFScale](BeamEmitter.md#lfscalefactors) as described above.
 
 ## Collision
 
-Beam Emitters do not work with collision *per se*. However, the beam can be interrupted if it intersects something. See  [PTEP\_TraceOffset](BeamEmitter.md#PTEPTraceOffset) for more information. For more on particle collision check out the [EmittersReference](../Content Creation/Effects/EmittersReference.md#Collision) document.
+Beam Emitters do not work with collision *per se*. However, the beam can be interrupted if it intersects something. See  [PTEP\_TraceOffset](BeamEmitter.md#pteptraceoffset) for more information. For more on particle collision check out the [EmittersReference](../Content Creation/Effects/EmittersReference.md#collision) document.
 
 ## Color
 
@@ -281,52 +281,52 @@ The best way to make the lightning to flash realistically is to use a color scal
 
 ![lightning14.gif](../assets/lightning14.gif)
 
-The use of ColorScale is further explained in the [EmittersReference](../Content Creation/Effects/EmittersReference.md#Color) document.
+The use of ColorScale is further explained in the [EmittersReference](../Content Creation/Effects/EmittersReference.md#color) document.
 
 ## Fading
 
-For a more in-depth review of fading, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#Fading) document.
+For a more in-depth review of fading, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#fading) document.
 
 ## Revolution
 
-This doesn't seem to affect Beam Emitters. For a more in-depth review of revolution, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#Revolution) document.
+This doesn't seem to affect Beam Emitters. For a more in-depth review of revolution, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#revolution) document.
 
 ## Rotation
 
-You may want to add rotations to your Beam Emitter. For a more in-depth review of rotation, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#Rotation) document.
+You may want to add rotations to your Beam Emitter. For a more in-depth review of rotation, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#rotation) document.
 
 ## Size
 
-With the X values of the StartSizeRange, you can make the lightning more thin or more fat. This doesn't change the length of the lightning, only the width of it's texture.For a more on Size, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#Size) document.
+With the X values of the StartSizeRange, you can make the lightning more thin or more fat. This doesn't change the length of the lightning, only the width of it's texture.For a more on Size, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#size) document.
 
 ## SkeletalMesh
 
-Skeletal Mesh emitters allows you to attach particles to the bones of a skeletal mesh. The mesh is used to determine the spawn location of the particles and can also be used to determine the movement the particles. For a more in-depth review of Skeletal Mesh emitters, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#Skeletal_Mesh) document.
+Skeletal Mesh emitters allows you to attach particles to the bones of a skeletal mesh. The mesh is used to determine the spawn location of the particles and can also be used to determine the movement the particles. For a more in-depth review of Skeletal Mesh emitters, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#skeletal_mesh) document.
 
 ## Spawning
 
-Make sure to set appropriate values in the Spawning fields. These figures will affect how quickly particles are created, over the lifetime of your emitter. For a more in-depth review of Spawning, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#Spawning) document.
+Make sure to set appropriate values in the Spawning fields. These figures will affect how quickly particles are created, over the lifetime of your emitter. For a more in-depth review of Spawning, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#spawning) document.
 
 ## Texture
 
-For more information on the texture field, see the [Emitters Reference](../Content Creation/Effects/EmittersReference.md#Texture_).
+For more information on the texture field, see the [Emitters Reference](../Content Creation/Effects/EmittersReference.md#texture_).
 
 ## Tick
 
-This functions normally. See the [Emitters Reference](../Content Creation/Effects/EmittersReference.md#Tick) for more information.
+This functions normally. See the [Emitters Reference](../Content Creation/Effects/EmittersReference.md#tick) for more information.
 
 ## Time
 
-This functions normally. See the [Emitters Reference](../Content Creation/Effects/EmittersReference.md#Time) for more information.
+This functions normally. See the [Emitters Reference](../Content Creation/Effects/EmittersReference.md#time) for more information.
 
 ## Trigger
 
-This functions normally. See the [Emitters Reference](../Content Creation/Effects/EmittersReference.md#Trigger) for more information.
+This functions normally. See the [Emitters Reference](../Content Creation/Effects/EmittersReference.md#trigger) for more information.
 
 ## Velocity
 
-StartVelocityRange will determine the initial velocity of your particles. Since this is given in a range, the value chosen for the particle velocities will be random. If your  [DetermineEndPointBy](BeamEmitter.md#DetermineEndPointBy) setting is not  [PTEP\_Velocity](BeamEmitter.md#PTEP_Actor), these numbers will be ignored.See the [Emitters Reference](../Content Creation/Effects/EmittersReference.md#Velocity) for more information on Velocity.
+StartVelocityRange will determine the initial velocity of your particles. Since this is given in a range, the value chosen for the particle velocities will be random. If your  [DetermineEndPointBy](BeamEmitter.md#determineendpointby) setting is not  [PTEP\_Velocity](BeamEmitter.md#ptep_actor), these numbers will be ignored.See the [Emitters Reference](../Content Creation/Effects/EmittersReference.md#velocity) for more information on Velocity.
 
 ## Warmup
 
-This functions normally. See the [Emitters Reference](../Content Creation/Effects/EmittersReference.md#Warmup) for more information.
+This functions normally. See the [Emitters Reference](../Content Creation/Effects/EmittersReference.md#warmup) for more information.

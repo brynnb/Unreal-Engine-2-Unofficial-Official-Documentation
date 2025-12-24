@@ -2,14 +2,14 @@
 
 *Document Summary: A detailed look at how to make a high-quality (but expensive) swinging lamp. Assumes knowledge of Karma, projectors and emitters. For intermediate users.**Document Changelog: Last updated by Tom Lin (DemiurgeStudios?), for document summary. Original author was Rob Hale ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).*
 
-* [Swinging Light Fitting](ExampleMapsSwingingLamp.md#Swinging Light Fitting)
-  + [Introduction](ExampleMapsSwingingLamp.md#Introduction)
-  + [Dynamic Projectors](ExampleMapsSwingingLamp.md#Dynamic Projectors)
-  + [The light Fitting](ExampleMapsSwingingLamp.md#The light Fitting)
-  + [Setting up the Projector](ExampleMapsSwingingLamp.md#Setting up the Projector)
-  + [The Emitter](ExampleMapsSwingingLamp.md#The Emitter)
-  + [Final Notes](ExampleMapsSwingingLamp.md#Final Notes)
-  + [Downloads](ExampleMapsSwingingLamp.md#Downloads)
+* [Swinging Light Fitting](ExampleMapsSwingingLamp.md#swinging-light-fitting)
+  + [Introduction](ExampleMapsSwingingLamp.md#introduction)
+  + [Dynamic Projectors](ExampleMapsSwingingLamp.md#dynamic-projectors)
+  + [The light Fitting](ExampleMapsSwingingLamp.md#the-light-fitting)
+  + [Setting up the Projector](ExampleMapsSwingingLamp.md#setting-up-the-projector)
+  + [The Emitter](ExampleMapsSwingingLamp.md#the-emitter)
+  + [Final Notes](ExampleMapsSwingingLamp.md#final-notes)
+  + [Downloads](ExampleMapsSwingingLamp.md#downloads)
 
 ## Introduction
 

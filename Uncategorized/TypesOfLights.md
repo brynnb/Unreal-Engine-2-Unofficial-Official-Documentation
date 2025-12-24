@@ -2,14 +2,14 @@
 
 *Document Summary: A guide to the various types of LightActors and light sources.**Document Changelog: Last updated by Jason Lentz (DemiurgeStudios?) to separate into more manageable docs. Original author - Lode Vandevenne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff))*
 
-* [Types of Lights](TypesOfLights.md#Types of Lights)
-  + [Introduction](TypesOfLights.md#Introduction)
-  + [ZoneLight](TypesOfLights.md#ZoneLight)
-  + [Other Light Actors](TypesOfLights.md#Other Light Actors)
-    - [Spotlight](TypesOfLights.md#Spotlight)
-    - [Sunlight](TypesOfLights.md#Sunlight)
-    - [TriggerLight](TypesOfLights.md#TriggerLight)
-  + [Relevant Documents](TypesOfLights.md#Relevant Documents)
+* [Types of Lights](TypesOfLights.md#types-of-lights)
+  + [Introduction](TypesOfLights.md#introduction)
+  + [ZoneLight](TypesOfLights.md#zonelight)
+  + [Other Light Actors](TypesOfLights.md#other-light-actors)
+    - [Spotlight](TypesOfLights.md#spotlight)
+    - [Sunlight](TypesOfLights.md#sunlight)
+    - [TriggerLight](TypesOfLights.md#triggerlight)
+  + [Relevant Documents](TypesOfLights.md#relevant-documents)
 
 ## Introduction
 

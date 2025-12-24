@@ -2,23 +2,23 @@
 
 *Document Summary: A reference and tutorial for setting up Triggers.**Document Changelog: Last updated by Jason Lentz (DemiurgeStudios?), to include ViewShaker Trigger and to remove broken Example Maps. Original author was Richard 'vajuras' Osborne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).*
 
-* [Placing Triggers in Maps](TriggersTutorial.md#Placing Triggers in Maps)
-  + [What is a Trigger?](TriggersTutorial.md#What is a Trigger?)
-    - [Setting up a generic Trigger](TriggersTutorial.md#Setting up a generic Trigger)
-    - [Breaking it Down](TriggersTutorial.md#Breaking it Down)
-  + [Other Types Of Triggers](TriggersTutorial.md#Other Types Of Triggers)
-    - [MusicTrigger](TriggersTutorial.md#MusicTrigger)
-    - [LineOfSightTrigger](TriggersTutorial.md#LineOfSightTrigger)
-    - [MaterialTrigger](TriggersTutorial.md#MaterialTrigger)
-    - [UseTrigger](TriggersTutorial.md#UseTrigger)
-    - [ViewShaker](TriggersTutorial.md#ViewShaker)
-    - [ZoneTriggers](TriggersTutorial.md#ZoneTriggers)
-    - [Timed Trigger](TriggersTutorial.md#Timed Trigger)
-  + [Gameplay Triggers](TriggersTutorial.md#Gameplay Triggers)
-    - [Counter](TriggersTutorial.md#Counter)
-    - [RedirectionTrigger](TriggersTutorial.md#RedirectionTrigger)
-    - [TeamTrigger](TriggersTutorial.md#TeamTrigger)
-  + [Triggers can be used for many purposes](TriggersTutorial.md#Triggers can be used for many purposes)
+* [Placing Triggers in Maps](TriggersTutorial.md#placing-triggers-in-maps)
+  + [What is a Trigger?](TriggersTutorial.md#what-is-a-trigger)
+    - [Setting up a generic Trigger](TriggersTutorial.md#setting-up-a-generic-trigger)
+    - [Breaking it Down](TriggersTutorial.md#breaking-it-down)
+  + [Other Types Of Triggers](TriggersTutorial.md#other-types-of-triggers)
+    - [MusicTrigger](TriggersTutorial.md#musictrigger)
+    - [LineOfSightTrigger](TriggersTutorial.md#lineofsighttrigger)
+    - [MaterialTrigger](TriggersTutorial.md#materialtrigger)
+    - [UseTrigger](TriggersTutorial.md#usetrigger)
+    - [ViewShaker](TriggersTutorial.md#viewshaker)
+    - [ZoneTriggers](TriggersTutorial.md#zonetriggers)
+    - [Timed Trigger](TriggersTutorial.md#timed-trigger)
+  + [Gameplay Triggers](TriggersTutorial.md#gameplay-triggers)
+    - [Counter](TriggersTutorial.md#counter)
+    - [RedirectionTrigger](TriggersTutorial.md#redirectiontrigger)
+    - [TeamTrigger](TriggersTutorial.md#teamtrigger)
+  + [Triggers can be used for many purposes](TriggersTutorial.md#triggers-can-be-used-for-many-purposes)
 
 ## What is a Trigger?
 
@@ -145,7 +145,7 @@ This is one of the most straight forward triggers to use. If a human controlled 
 
 The ViewShaker is a Trigger that affects the players. Once activated by a generic Trigger or some other event, the ViewShaker will cause all the player cameras within a specified radius to shake for a specified amount of time. Here are the variables that determine how the ViewShaker will shake the player cameras.
 
-| [Property](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=0;table=1;up=0#sorted_table "Sort by this column") | [Explanation](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=1;table=1;up=0#sorted_table "Sort by this column") | [Default value](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=2;table=1;up=0#sorted_table "Sort by this column") |
+| [Property](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=0;table=1;up=0#sorted_table-sort-by-this-column) | [Explanation](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=1;table=1;up=0#sorted_table-sort-by-this-column) | [Default value](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=2;table=1;up=0#sorted_table-sort-by-this-column) |
 | --- | --- | --- |
 | OffsetIterations | This value determines how many times the player's view will be offset, or in other words, how long the player's view will be shaken linearly. | *500.0* |
 | OffsetMagHorizontal | This value is the maximum distance that the player's view will be offset in the horizontal direction. | *0.0* |

@@ -2,16 +2,16 @@
 
 *Document Summary: A guide and reference to setting up Combiner Materials.**Document Changelog: Last updated by Jason Lentz (DemiurgeStudios?), for creation purposes. Original author was Jason Lentz (DemiurgeStudios?).*
 
-* [Combiners](MaterialsCombiners.md#Combiners)
-  + [Combiner Properties](MaterialsCombiners.md#Combiner Properties)
-    - [CombineOperation](MaterialsCombiners.md#CombineOperation)
-    - [AlphaOperation](MaterialsCombiners.md#AlphaOperation)
-    - [Material1 & Material2](MaterialsCombiners.md#Material1  Material2)
-    - [Mask](MaterialsCombiners.md#Mask)
-    - [InvertMask](MaterialsCombiners.md#InvertMask)
-    - [Modulate2X & Modulate4X](MaterialsCombiners.md#Modulate2X  Modulate4X)
-    - [FallbackMaterial](MaterialsCombiners.md#FallbackMaterial)
-  + [Example Map and Other Material Classes](MaterialsCombiners.md#Example Map and Other Material Classes)
+* [Combiners](MaterialsCombiners.md#combiners)
+  + [Combiner Properties](MaterialsCombiners.md#combiner-properties)
+    - [CombineOperation](MaterialsCombiners.md#combineoperation)
+    - [AlphaOperation](MaterialsCombiners.md#alphaoperation)
+    - [Material1 & Material2](MaterialsCombiners.md#material1--material2)
+    - [Mask](MaterialsCombiners.md#mask)
+    - [InvertMask](MaterialsCombiners.md#invertmask)
+    - [Modulate2X & Modulate4X](MaterialsCombiners.md#modulate2x--modulate4x)
+    - [FallbackMaterial](MaterialsCombiners.md#fallbackmaterial)
+  + [Example Map and Other Material Classes](MaterialsCombiners.md#example-map-and-other-material-classes)
 
 ## Combiner Properties
 
@@ -49,15 +49,15 @@ CO\_AlphaBlend\_With\_Mask: this operation uses the alphachannel of a third text
 
 ### AlphaOperation
 
-This determines how the alpha information for the resultant Combiner is created.AO\_Use\_Mask: This uses the alpha channel of the texture assigned in the [Mask](MaterialsCombiners.md#MaskField) field.AO\_Multiply: This creates the alpha information from Multiplying the alpha channels of Material1 and Material2.AO\_Add: This creates the alpha information from Adding the alpha channels of Material1 and Material2.AO\_Use\_Alpha\_From\_Material1: This uses the alpha channel of the texture assigned in the Material1 field.AO\_Use\_Alpha\_From\_Material2: This uses the alpha channel of the texture assigned in the Material2 field.Note that when using any other setting other than AO\_Use\_Mask, that the [Mask](MaterialsCombiners.md#MaskField) field must be the same as either Material1 or Material2, or have no texture or Material assigned to it.
+This determines how the alpha information for the resultant Combiner is created.AO\_Use\_Mask: This uses the alpha channel of the texture assigned in the [Mask](MaterialsCombiners.md#maskfield) field.AO\_Multiply: This creates the alpha information from Multiplying the alpha channels of Material1 and Material2.AO\_Add: This creates the alpha information from Adding the alpha channels of Material1 and Material2.AO\_Use\_Alpha\_From\_Material1: This uses the alpha channel of the texture assigned in the Material1 field.AO\_Use\_Alpha\_From\_Material2: This uses the alpha channel of the texture assigned in the Material2 field.Note that when using any other setting other than AO\_Use\_Mask, that the [Mask](MaterialsCombiners.md#maskfield) field must be the same as either Material1 or Material2, or have no texture or Material assigned to it.
 
 ### Material1 & Material2
 
-These are the two Materials you are combining. You can combine two textures, a texture with a Material, or two Materials. The order you assign the textures is only somewhat important as it will affect how they are combined, but you can easily switch them with the [InvertMask](MaterialsCombiners.md#InvertMaskToggle) toggle.
+These are the two Materials you are combining. You can combine two textures, a texture with a Material, or two Materials. The order you assign the textures is only somewhat important as it will affect how they are combined, but you can easily switch them with the [InvertMask](MaterialsCombiners.md#invertmasktoggle) toggle.
 
 ### Mask
 
-In this field you can assign another Material or texture with an alpha channel. This field is only useful though if you you set the [AlphaOperation](MaterialsCombiners.md#AlphaOperationField) field to AO\_Use\_Mask, or use any of the [CombineOperation](MaterialsCombiners.md#CombineOperationField) settings that use the mask.
+In this field you can assign another Material or texture with an alpha channel. This field is only useful though if you you set the [AlphaOperation](MaterialsCombiners.md#alphaoperationfield) field to AO\_Use\_Mask, or use any of the [CombineOperation](MaterialsCombiners.md#combineoperationfield) settings that use the mask.
 
 ### InvertMask
 
@@ -65,7 +65,7 @@ This toggles what Material is "on top." For some of the CombineOperations, the o
 
 ### Modulate2X & Modulate4X
 
-These settings only work when the [CombineOperation](MaterialsCombiners.md#CombineOperationField) is set to CO\_Multiply and it applifies the multiplication of Material1 and Material2. Essentially it is used to make the resulting Combiner brighter. Also note that Modulate4X overrides Modulate2X
+These settings only work when the [CombineOperation](MaterialsCombiners.md#combineoperationfield) is set to CO\_Multiply and it applifies the multiplication of Material1 and Material2. Essentially it is used to make the resulting Combiner brighter. Also note that Modulate4X overrides Modulate2X
 
 ### FallbackMaterial
 
@@ -77,4 +77,4 @@ Here you can set a Texture that the Engine will default to if for whatever reaso
 
 ![EPICmaterials1.jpg](../assets/epicmaterials1.jpg)
 
-For an example map that shows many different complex Materials in action, take a look at this document:[ExampleMapsEPIC](ExampleMapsEPIC.md#Materials_Example_Map) *(The example map is at the bottom of the page)*To return back the main Materials page, click [here](../Content Creation/Lighting and Textures/MaterialTutorial.md) <--
+For an example map that shows many different complex Materials in action, take a look at this document:[ExampleMapsEPIC](ExampleMapsEPIC.md#materials_example_map) *(The example map is at the bottom of the page)*To return back the main Materials page, click [here](../Content Creation/Lighting and Textures/MaterialTutorial.md) <--

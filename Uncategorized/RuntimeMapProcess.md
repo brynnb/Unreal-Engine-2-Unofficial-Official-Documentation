@@ -2,21 +2,21 @@
 
 *Document Summary: Here you will see a detailed look at the process for creating some of the features of the EM\_RunTime map.**Document Changelog: Last updated by Jason Lentz (DemiurgeStudios?), for creation purposes. Original author was Jason Lentz (DemiurgeStudios?).*
 
-* [Runtime Map Process](RuntimeMapProcess.md#Runtime Map Process)
-  + [Introduction](RuntimeMapProcess.md#Introduction)
-  + [Purpose of the EM\_RunTime Map](RuntimeMapProcess.md#Purpose of the EM_RunTime Map)
-  + [The Terrain](RuntimeMapProcess.md#The Terrain)
-    - [Changing Resolution](RuntimeMapProcess.md#Changing Resolution)
-    - [Restricting Vistas with Terrain](RuntimeMapProcess.md#Restricting Vistas with Terrain)
-    - [Hiding Texture Tiling](RuntimeMapProcess.md#Hiding Texture Tiling)
-  + [StaticMesh Guidelines](RuntimeMapProcess.md#StaticMesh Guidelines)
-    - [Size Matters](RuntimeMapProcess.md#Size Matters)
-    - [Modular Design](RuntimeMapProcess.md#Modular Design)
-    - [Collision](RuntimeMapProcess.md#Collision)
-  + [Setting up the Water](RuntimeMapProcess.md#Setting up the Water)
-    - [Advantages of the StaticMesh water surface](RuntimeMapProcess.md#Advantages of the _StaticMesh water surface)
-    - [Advantages of the FluidSurface water surface](RuntimeMapProcess.md#Advantages of the _FluidSurface water surface)
-    - [Final Decision](RuntimeMapProcess.md#Final Decision)
+* [Runtime Map Process](RuntimeMapProcess.md#runtime-map-process)
+  + [Introduction](RuntimeMapProcess.md#introduction)
+  + [Purpose of the EM\_RunTime Map](RuntimeMapProcess.md#purpose-of-the-em_runtime-map)
+  + [The Terrain](RuntimeMapProcess.md#the-terrain)
+    - [Changing Resolution](RuntimeMapProcess.md#changing-resolution)
+    - [Restricting Vistas with Terrain](RuntimeMapProcess.md#restricting-vistas-with-terrain)
+    - [Hiding Texture Tiling](RuntimeMapProcess.md#hiding-texture-tiling)
+  + [StaticMesh Guidelines](RuntimeMapProcess.md#staticmesh-guidelines)
+    - [Size Matters](RuntimeMapProcess.md#size-matters)
+    - [Modular Design](RuntimeMapProcess.md#modular-design)
+    - [Collision](RuntimeMapProcess.md#collision)
+  + [Setting up the Water](RuntimeMapProcess.md#setting-up-the-water)
+    - [Advantages of the StaticMesh water surface](RuntimeMapProcess.md#advantages-of-the-_staticmesh-water-surface)
+    - [Advantages of the FluidSurface water surface](RuntimeMapProcess.md#advantages-of-the-_fluidsurface-water-surface)
+    - [Final Decision](RuntimeMapProcess.md#final-decision)
 
 ![runtime_map.jpg](../assets/runtime_map.jpg)
 
@@ -81,7 +81,7 @@ In the EM\_RunTime map there wasn't a wide variety of StaticMeshes used and most
 
 ![stone_wall.jpg](../assets/stone_wall.jpg)
 
-Each section of the wall is only 512 units long and is designed to laid down in seamless rows. Working in large powers of 2 (such as 128, 256, and 512) can greatly simplify a level designers task of laying down world geometry as it allows for StaticMeshes to snap perfectly to the grid allowing them to line up with other meshes built with modular design in mind.This type of modular design was also used in the [BSP section](BreakAwayExample.md#BSP_Editing_Tools_and_Techniques) of the EM\_RunTime map. To read more about the principles of modular level design, take a look at the [WorkflowAndModularity](WorkflowAndModularity.md) doc.
+Each section of the wall is only 512 units long and is designed to laid down in seamless rows. Working in large powers of 2 (such as 128, 256, and 512) can greatly simplify a level designers task of laying down world geometry as it allows for StaticMeshes to snap perfectly to the grid allowing them to line up with other meshes built with modular design in mind.This type of modular design was also used in the [BSP section](BreakAwayExample.md#bsp_editing_tools_and_techniques) of the EM\_RunTime map. To read more about the principles of modular level design, take a look at the [WorkflowAndModularity](WorkflowAndModularity.md) doc.
 
 ### Collision
 

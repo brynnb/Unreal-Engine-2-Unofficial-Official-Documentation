@@ -2,35 +2,35 @@
 
 *Last updated by Chris Linder (DemiurgeStudios?) to update page and map for 2226 build. Original author was Jason Lentz (DemiurgeStudios?).*
 
-* [Karma Colosseum](ExampleMapsKarmaColosseum.md#Karma Colosseum)
-  + [Introduction](ExampleMapsKarmaColosseum.md#Introduction)
-  + [Simple Primitives](ExampleMapsKarmaColosseum.md#Simple Primitives)
-    - [Creating the StaticMesh](ExampleMapsKarmaColosseum.md#Creating the _StaticMesh)
-    - [Setting the KParams](ExampleMapsKarmaColosseum.md#Setting the KParams)
-    - [Boxes (MCDBX)](ExampleMapsKarmaColosseum.md#Boxes (MCDBX))
-      * [Stone Block](ExampleMapsKarmaColosseum.md#Stone Block)
-      * [Cardboard Box](ExampleMapsKarmaColosseum.md#Cardboard Box)
-      * [Wooden Crate](ExampleMapsKarmaColosseum.md#Wooden Crate)
-    - [Balls (MCDSP)](ExampleMapsKarmaColosseum.md#Balls (MCDSP))
-      * [Bowling Ball](ExampleMapsKarmaColosseum.md#Bowling Ball)
-      * [Beach Ball](ExampleMapsKarmaColosseum.md#Beach Ball)
-    - [Complex Shapes (MCDCX and multiple Karma Primitives)](ExampleMapsKarmaColosseum.md#Complex Shapes (MCDCX and multiple Karma Primitives))
-      * [Balloon](ExampleMapsKarmaColosseum.md#Balloon)
-      * [Boulder](ExampleMapsKarmaColosseum.md#Boulder)
-  + [Complex Karma Actors and KConstraints](ExampleMapsKarmaColosseum.md#Complex Karma Actors and KConstraints)
-    - [Punching Bag](ExampleMapsKarmaColosseum.md#Punching Bag)
-    - [Destructible Columns](ExampleMapsKarmaColosseum.md#Destructible Columns)
-    - [Ball and Chain](ExampleMapsKarmaColosseum.md#Ball and Chain)
-      * [Ball KarmaParams](ExampleMapsKarmaColosseum.md#Ball _KarmaParams)
-      * [Link KarmaParams](ExampleMapsKarmaColosseum.md#Link _KarmaParams)
-      * [The Base](ExampleMapsKarmaColosseum.md#The Base)
-  + [Tips and Pointers](ExampleMapsKarmaColosseum.md#Tips and Pointers)
-    - [Avoid Scaling Karma Actors in Unreal Ed](ExampleMapsKarmaColosseum.md#Avoid Scaling Karma Actors in Unreal Ed)
-    - [Pivot Placement of Karma Actors](ExampleMapsKarmaColosseum.md#Pivot Placement of Karma Actors)
-    - [Using Cylinder Karma Primitives (MCDCY)](ExampleMapsKarmaColosseum.md#Using Cylinder Karma Primitives (MCDCY))
-    - [Karma Collisions Through Geometry](ExampleMapsKarmaColosseum.md#Karma Collisions <em>Through</em> Geometry)
-    - [Karma with Movers](ExampleMapsKarmaColosseum.md#Karma with Movers)
-  + [Downloads](ExampleMapsKarmaColosseum.md#Downloads)
+* [Karma Colosseum](ExampleMapsKarmaColosseum.md#karma-colosseum)
+  + [Introduction](ExampleMapsKarmaColosseum.md#introduction)
+  + [Simple Primitives](ExampleMapsKarmaColosseum.md#simple-primitives)
+    - [Creating the StaticMesh](ExampleMapsKarmaColosseum.md#creating-the-_staticmesh)
+    - [Setting the KParams](ExampleMapsKarmaColosseum.md#setting-the-kparams)
+    - [Boxes (MCDBX)](ExampleMapsKarmaColosseum.md#boxes-mcdbx))
+      * [Stone Block](ExampleMapsKarmaColosseum.md#stone-block)
+      * [Cardboard Box](ExampleMapsKarmaColosseum.md#cardboard-box)
+      * [Wooden Crate](ExampleMapsKarmaColosseum.md#wooden-crate)
+    - [Balls (MCDSP)](ExampleMapsKarmaColosseum.md#balls-mcdsp))
+      * [Bowling Ball](ExampleMapsKarmaColosseum.md#bowling-ball)
+      * [Beach Ball](ExampleMapsKarmaColosseum.md#beach-ball)
+    - [Complex Shapes (MCDCX and multiple Karma Primitives)](ExampleMapsKarmaColosseum.md#complex-shapes-mcdcx-and-multiple-karma-primitives))
+      * [Balloon](ExampleMapsKarmaColosseum.md#balloon)
+      * [Boulder](ExampleMapsKarmaColosseum.md#boulder)
+  + [Complex Karma Actors and KConstraints](ExampleMapsKarmaColosseum.md#complex-karma-actors-and-kconstraints)
+    - [Punching Bag](ExampleMapsKarmaColosseum.md#punching-bag)
+    - [Destructible Columns](ExampleMapsKarmaColosseum.md#destructible-columns)
+    - [Ball and Chain](ExampleMapsKarmaColosseum.md#ball-and-chain)
+      * [Ball KarmaParams](ExampleMapsKarmaColosseum.md#ball-_karmaparams)
+      * [Link KarmaParams](ExampleMapsKarmaColosseum.md#link-_karmaparams)
+      * [The Base](ExampleMapsKarmaColosseum.md#the-base)
+  + [Tips and Pointers](ExampleMapsKarmaColosseum.md#tips-and-pointers)
+    - [Avoid Scaling Karma Actors in Unreal Ed](ExampleMapsKarmaColosseum.md#avoid-scaling-karma-actors-in-unreal-ed)
+    - [Pivot Placement of Karma Actors](ExampleMapsKarmaColosseum.md#pivot-placement-of-karma-actors)
+    - [Using Cylinder Karma Primitives (MCDCY)](ExampleMapsKarmaColosseum.md#using-cylinder-karma-primitives-mcdcy))
+    - [Karma Collisions Through Geometry](ExampleMapsKarmaColosseum.md#karma-collisions-emthroughem-geometry)
+    - [Karma with Movers](ExampleMapsKarmaColosseum.md#karma-with-movers)
+  + [Downloads](ExampleMapsKarmaColosseum.md#downloads)
 
 ![karmacolosseum.jpg](../assets/karmacolosseum.jpg)
 
@@ -52,7 +52,7 @@ In the properties window of your Karma Actor, expand the Karma tab and all of th
 
 ![default_kparams.gif](../assets/default_kparams.gif)
 
-For a detailed description of all the KarmaParams see the [Physics\_Parameters](../Content Creation/Physics/KarmaReference.md#Physics_Parameters_KParams_) sections of the [KarmaReference](../Content Creation/Physics/KarmaReference.md) doc.**NOTE:** Actors will only use Karma if their **bHighDetailOnly** setting is set to **True**. It defaults to False because Karma can cause a substantial performace hit on slower machines and is often not used as an integral part of the game. However, If you are using Karma as an integral part of your game you will want to also change the below setting your uw.ini and default.ini files, otherwise Karma may be toggled off by slower end-user machines.In the .ini files, search for this setting...
+For a detailed description of all the KarmaParams see the [Physics\_Parameters](../Content Creation/Physics/KarmaReference.md#physics_parameters_kparams_) sections of the [KarmaReference](../Content Creation/Physics/KarmaReference.md) doc.**NOTE:** Actors will only use Karma if their **bHighDetailOnly** setting is set to **True**. It defaults to False because Karma can cause a substantial performace hit on slower machines and is often not used as an integral part of the game. However, If you are using Karma as an integral part of your game you will want to also change the below setting your uw.ini and default.ini files, otherwise Karma may be toggled off by slower end-user machines.In the .ini files, search for this setting...
 
 ```
 

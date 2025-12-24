@@ -2,19 +2,19 @@
 
 *Document Summary: This example map demonstrates how to set up and use Scripted Sequences in the 2226 Runtime build.**Document Changelog: Last updated by Jason Lentz (DemiurgeStudios?) for creation purposes. Original author: Jason Lentz (DemiurgeStudios?).*
 
-* [Scripted Sequences Example Map (Runtime version)](ExampleMapsScriptedSequencesRT.md#Scripted Sequences Example Map (Runtime version))
-  + [Introduction](ExampleMapsScriptedSequencesRT.md#Introduction)
-    - [The Plan](ExampleMapsScriptedSequencesRT.md#The Plan)
-  + [Setting up Scripted Sequences](ExampleMapsScriptedSequencesRT.md#Setting up Scripted Sequences)
-    - [Setting Physics](ExampleMapsScriptedSequencesRT.md#Setting Physics)
-    - [Setting up Actions](ExampleMapsScriptedSequencesRT.md#Setting up Actions)
-      * [MoveToPoint and Walk](ExampleMapsScriptedSequencesRT.md#MoveToPoint and Walk)
-      * [SetViewTarget](ExampleMapsScriptedSequencesRT.md#SetViewTarget)
-      * [Triggering Events](ExampleMapsScriptedSequencesRT.md#Triggering Events)
-      * [PLAYANIM and WaitForAnimEnd](ExampleMapsScriptedSequencesRT.md#PLAYANIM and _WaitForAnimEnd)
-      * [IfConditions and TriggeredConditions](ExampleMapsScriptedSequencesRT.md#IfConditions and _TriggeredConditions)
-  + [Trouble Shooting and Known Issues](ExampleMapsScriptedSequencesRT.md#Trouble Shooting and Known Issues)
-  + [Downloads](ExampleMapsScriptedSequencesRT.md#Downloads)
+* [Scripted Sequences Example Map (Runtime version)](ExampleMapsScriptedSequencesRT.md#scripted-sequences-example-map-runtime-version))
+  + [Introduction](ExampleMapsScriptedSequencesRT.md#introduction)
+    - [The Plan](ExampleMapsScriptedSequencesRT.md#the-plan)
+  + [Setting up Scripted Sequences](ExampleMapsScriptedSequencesRT.md#setting-up-scripted-sequences)
+    - [Setting Physics](ExampleMapsScriptedSequencesRT.md#setting-physics)
+    - [Setting up Actions](ExampleMapsScriptedSequencesRT.md#setting-up-actions)
+      * [MoveToPoint and Walk](ExampleMapsScriptedSequencesRT.md#movetopoint-and-walk)
+      * [SetViewTarget](ExampleMapsScriptedSequencesRT.md#setviewtarget)
+      * [Triggering Events](ExampleMapsScriptedSequencesRT.md#triggering-events)
+      * [PLAYANIM and WaitForAnimEnd](ExampleMapsScriptedSequencesRT.md#playanim-and-_waitforanimend)
+      * [IfConditions and TriggeredConditions](ExampleMapsScriptedSequencesRT.md#ifconditions-and-_triggeredconditions)
+  + [Trouble Shooting and Known Issues](ExampleMapsScriptedSequencesRT.md#trouble-shooting-and-known-issues)
+  + [Downloads](ExampleMapsScriptedSequencesRT.md#downloads)
 
 ## Introduction
 

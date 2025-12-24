@@ -2,21 +2,21 @@
 
 *Document Summary: Explains design choices and pitfalls of character design and creation for UDN male and female models. Suitable for beginner and intermediate skill levels.**Document Changelog: Last updated by Tom Lin (DemiurgeStudios?), for document summary. Original author was Tom Lin (DemiurgeStudios?).*
 
-* [Example Models for the Unreal Engine](UnrealDemoModels.md#Example Models for the Unreal Engine) 
-  + [Goals](UnrealDemoModels.md#Goals)
-  + [Modeling](UnrealDemoModels.md#Modeling)
-    - [The Eye](UnrealDemoModels.md#The Eye)
-    - [Hands](UnrealDemoModels.md#Hands)
-    - [Feet](UnrealDemoModels.md#Feet)
-  + [Mapping/Texturing](UnrealDemoModels.md#Mapping/Texturing)
-    - [Crossing Alpha Textured Triangles](UnrealDemoModels.md#Crossing Alpha Textured Triangles)
-    - [Texture Size and Number](UnrealDemoModels.md#Texture Size and Number)
-    - [Swappable Clothing and Skin](UnrealDemoModels.md#Swappable Clothing and Skin)
-  + [Bones/Enveloping](UnrealDemoModels.md#Bones/Enveloping)
-  + [Swapping Models and Skeletons](UnrealDemoModels.md#Swapping Models and Skeletons)
-    - [Using the UDN Model](UnrealDemoModels.md#Using the UDN Model)
-    - [Using the UDN Rigging](UnrealDemoModels.md#Using the UDN Rigging)
-  + [Attached Files](UnrealDemoModels.md#Attached Files)
+* [Example Models for the Unreal Engine](UnrealDemoModels.md#example-models-for-the-unreal-engine) 
+  + [Goals](UnrealDemoModels.md#goals)
+  + [Modeling](UnrealDemoModels.md#modeling)
+    - [The Eye](UnrealDemoModels.md#the-eye)
+    - [Hands](UnrealDemoModels.md#hands)
+    - [Feet](UnrealDemoModels.md#feet)
+  + [Mapping/Texturing](UnrealDemoModels.md#mappingtexturing)
+    - [Crossing Alpha Textured Triangles](UnrealDemoModels.md#crossing-alpha-textured-triangles)
+    - [Texture Size and Number](UnrealDemoModels.md#texture-size-and-number)
+    - [Swappable Clothing and Skin](UnrealDemoModels.md#swappable-clothing-and-skin)
+  + [Bones/Enveloping](UnrealDemoModels.md#bonesenveloping)
+  + [Swapping Models and Skeletons](UnrealDemoModels.md#swapping-models-and-skeletons)
+    - [Using the UDN Model](UnrealDemoModels.md#using-the-udn-model)
+    - [Using the UDN Rigging](UnrealDemoModels.md#using-the-udn-rigging)
+  + [Attached Files](UnrealDemoModels.md#attached-files)
 
 This is a document that will explain design choices and pitfalls involved in creating two character models for the Unreal engine.
 
@@ -46,7 +46,7 @@ For the models I made, most of the answers are cut and dry. I had a budget of 40
 
 ### The Eye
 
-I used a planar sheet of polygons for the eyes in my models. This method is a polygon efficient way to create eyes that will require eye tracking. For a more thorough explanation, see the [UnrealModeling](UnrealModeling.md#Movable_Eyes)
+I used a planar sheet of polygons for the eyes in my models. This method is a polygon efficient way to create eyes that will require eye tracking. For a more thorough explanation, see the [UnrealModeling](UnrealModeling.md#movable_eyes)
 doc.
 
 ![eye motion range](../assets/eyelimits.jpg)
@@ -63,7 +63,7 @@ You can see in the picture above that each finger joint has two segments around 
 
 ### Feet
 
-I experimented a little bit when making the feet. As explained in the [UnrealModeling](UnrealModeling.md#In_Game_Perspective)
+I experimented a little bit when making the feet. As explained in the [UnrealModeling](UnrealModeling.md#in_game_perspective)
 doc, perspective in games often makes 'normal' human proportions seem wrong. This is especially the case with feet, where the camera point of view is often looking down at your models from a position above and behind your character. To compensate for this effect, I made the feet on the male model much larger than is normal. I made the girl's feet normal sized, so that evaluating the appropriateness of both sizes is possible.
 
 ![foot size comparison](../assets/sidefeet.jpg)
@@ -74,7 +74,7 @@ Texturing the models is a fairly straightforward task. There are some alpha and 
 
 ### Crossing Alpha Textured Triangles
 
-A major concern while texturing for UnrealEd is the "no crossing alpha textured triangles" rule. For a more detailed explanation, see the [UnrealTexturing](UnrealTexturing.md#Alpha_Channels)
+A major concern while texturing for UnrealEd is the "no crossing alpha textured triangles" rule. For a more detailed explanation, see the [UnrealTexturing](UnrealTexturing.md#alpha_channels)
 doc. In a nutshell, when two triangles cross that both have textures with alpha channels on them, Unreal gets confused. This results in ugly draw order issues, where one triangle will 'pop' over the next, and back again. Try to avoid this situation if at all possible.
 
 ### Texture Size and Number
@@ -106,7 +106,7 @@ In the picture above the girl's clothing texture has been altered so that it can
 ## Bones/Enveloping
 
 For the UDN models we chose to use character studio for animation purposes, with our own additional bones attached to that ready-made structure. All of the extra bones were added in the facial/head region. You can see a more thorough listing of the facial bones in the
-[SkeletalSetup](UnrealModeling.md#Highly_Articulated_Facial_Skelet)
+[SkeletalSetup](UnrealModeling.md#highly_articulated_facial_skelet)
 doc.We chose not to share animation data between the models for several reasons. First of all, the male and female models are substantially different sizes. Secondly, the models don't share the exact bone hierarchy in the head. Finally, because we were doing very delicate and precise animation frames (adjusting the faces for lip synch capacity), it was deemed unwise to try to adapt them to each other. This means that each model needs its own .PSA file, which could be wasteful, depending on your animation load.
 
 ## Swapping Models and Skeletons

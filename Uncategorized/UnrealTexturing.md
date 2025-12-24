@@ -2,27 +2,27 @@
 
 *Document Summary: A guide to the type of texture compressions available, as well as a general overview of texturing concerns in the Unreal engine. Suitable for all new texture artists.**Document Changelog: Last updated by Michiel Hendriks, linked to attachments. Previous update by Tom Lin (DemiurgeStudios?), for document summary. Original author was Vito Miliano ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).*
 
-* [Unreal Texturing Guide](UnrealTexturing.md#Unreal Texturing Guide)
-  + [Making Textures for the Unreal Engine](UnrealTexturing.md#Making Textures for the Unreal Engine)
-  + [Powers of 2](UnrealTexturing.md#Powers of 2)
-  + [Texture Formats](UnrealTexturing.md#Texture Formats)
-    - [32-bit RGBA (Targa)](UnrealTexturing.md#32-bit RGBA (Targa))
-    - [DirectX Texture Compression](UnrealTexturing.md#DirectX Texture Compression)
-      * [DXT1](UnrealTexturing.md#DXT1)
-      * [DXT3](UnrealTexturing.md#DXT3)
-      * [DXT5](UnrealTexturing.md#DXT5)
-    - [Eight-bit Palettized](UnrealTexturing.md#Eight-bit Palettized)
-    - [Eight-bit Palettized with Alpha](UnrealTexturing.md#Eight-bit Palettized with Alpha)
-    - [Recommendation](UnrealTexturing.md#Recommendation)
-  + [Creating Textures](UnrealTexturing.md#Creating Textures)
-    - [DXTC](UnrealTexturing.md#DXTC)
-      * [NVIDIA DXT Compression Tools](UnrealTexturing.md#NVIDIA DXT Compression Tools)
-      * [Microsoft DXTex Tool](UnrealTexturing.md#Microsoft DXTex Tool)
-    - [Creating P8 Textures](UnrealTexturing.md#Creating P8 Textures)
-  + [Alpha Channels](UnrealTexturing.md#Alpha Channels)
-  + [Appropriate Texture Sizes and Numbers](UnrealTexturing.md#Appropriate Texture Sizes and Numbers)
-  + [Clothing/Skin Swapping](UnrealTexturing.md#Clothing/Skin Swapping)
-    - [Team Colors in UT2004](UnrealTexturing.md#Team Colors in UT2004)
+* [Unreal Texturing Guide](UnrealTexturing.md#unreal-texturing-guide)
+  + [Making Textures for the Unreal Engine](UnrealTexturing.md#making-textures-for-the-unreal-engine)
+  + [Powers of 2](UnrealTexturing.md#powers-of-2)
+  + [Texture Formats](UnrealTexturing.md#texture-formats)
+    - [32-bit RGBA (Targa)](UnrealTexturing.md#32-bit-rgba-targa))
+    - [DirectX Texture Compression](UnrealTexturing.md#directx-texture-compression)
+      * [DXT1](UnrealTexturing.md#dxt1)
+      * [DXT3](UnrealTexturing.md#dxt3)
+      * [DXT5](UnrealTexturing.md#dxt5)
+    - [Eight-bit Palettized](UnrealTexturing.md#eight-bit-palettized)
+    - [Eight-bit Palettized with Alpha](UnrealTexturing.md#eight-bit-palettized-with-alpha)
+    - [Recommendation](UnrealTexturing.md#recommendation)
+  + [Creating Textures](UnrealTexturing.md#creating-textures)
+    - [DXTC](UnrealTexturing.md#dxtc)
+      * [NVIDIA DXT Compression Tools](UnrealTexturing.md#nvidia-dxt-compression-tools)
+      * [Microsoft DXTex Tool](UnrealTexturing.md#microsoft-dxtex-tool)
+    - [Creating P8 Textures](UnrealTexturing.md#creating-p8-textures)
+  + [Alpha Channels](UnrealTexturing.md#alpha-channels)
+  + [Appropriate Texture Sizes and Numbers](UnrealTexturing.md#appropriate-texture-sizes-and-numbers)
+  + [Clothing/Skin Swapping](UnrealTexturing.md#clothingskin-swapping)
+    - [Team Colors in UT2004](UnrealTexturing.md#team-colors-in-ut2004)
 
 ## Making Textures for the Unreal Engine
 
@@ -134,5 +134,5 @@ Team skins are a special example of skin swapping. In UT2004, for example, the e
 
 ![teamskins.jpg](../assets/teamskins.jpg)
 
-A final note about the above textures. Notice that there is skin on the body texture as well as the face texture, which was just previously noted as a Bad Thing to do. This actually doesn't lead to any problems, *as long as your interchangeable facial textures all share similar skin tones.* If you are willing to live with that restriction, then feel free to mix and match to your heart's content.This skin/cloth swapping is also covered in the [UnrealDemoModels](UnrealDemoModels.md#Swappable_Clothing_and_Skin)
+A final note about the above textures. Notice that there is skin on the body texture as well as the face texture, which was just previously noted as a Bad Thing to do. This actually doesn't lead to any problems, *as long as your interchangeable facial textures all share similar skin tones.* If you are willing to live with that restriction, then feel free to mix and match to your heart's content.This skin/cloth swapping is also covered in the [UnrealDemoModels](UnrealDemoModels.md#swappable_clothing_and_skin)
 document.

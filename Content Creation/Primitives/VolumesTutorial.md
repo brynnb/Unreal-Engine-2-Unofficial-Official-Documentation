@@ -18,7 +18,7 @@
 
 ## Volumes
 
-Volumes are invisible brushes that "know" when actors or players enter or leave it. When you are inside a volume, special properties can be set to take place (such as water-style friction, or pain-causing areas). There are several distinct types of Volumes, and the major subsets have their own docs or are covered in more appropriate areas. For more information on these types, see [PhysicsVolumes](https://udn.epicgames.com/Two/PhysicsVolumes) and the [LevelOptimization](../Techniques/LevelOptimization.md#Antiportal_Volumes) doc. This document will cover more general properties that are common to almost all volumes.
+Volumes are invisible brushes that "know" when actors or players enter or leave it. When you are inside a volume, special properties can be set to take place (such as water-style friction, or pain-causing areas). There are several distinct types of Volumes, and the major subsets have their own docs or are covered in more appropriate areas. For more information on these types, see [PhysicsVolumes](https://udn.epicgames.com/Two/PhysicsVolumes) and the [LevelOptimization](../Techniques/LevelOptimization.md#antiportal_volumes) doc. This document will cover more general properties that are common to almost all volumes.
 
 ## Adding a Volume
 

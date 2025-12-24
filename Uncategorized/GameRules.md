@@ -2,11 +2,11 @@
 
 *Document Summary: Describes some important elements of the GameInfo class, which is responsible for the game logic.**Document Changelog: Last updated by Michiel Hendriks, added some more information. Previous update by Richard 'vajuras' Osborne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)), for document creation.*
 
-* [GameRules Documentation](GameRules.md#GameRules Documentation)
-  + [GameInfo Objects](GameRules.md#GameInfo Objects)
-    - [Important variables](GameRules.md#Important variables)
-    - [Function Breakdown](GameRules.md#Function Breakdown)
-  + [Sample Gametype](GameRules.md#Sample Gametype)
+* [GameRules Documentation](GameRules.md#gamerules-documentation)
+  + [GameInfo Objects](GameRules.md#gameinfo-objects)
+    - [Important variables](GameRules.md#important-variables)
+    - [Function Breakdown](GameRules.md#function-breakdown)
+  + [Sample Gametype](GameRules.md#sample-gametype)
 
 ## GameInfo Objects
 

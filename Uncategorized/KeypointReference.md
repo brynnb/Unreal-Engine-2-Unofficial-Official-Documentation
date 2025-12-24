@@ -2,14 +2,14 @@
 
 *Document Summary: Here you will find definitions for all of the actors found under the Keypoint section within the Actors Browser.**Document Changelog: Last updated by Michiel Hendriks, minor update. Previously updated by Jason Lentz (DemiurgeStudios?) for creation purposes. Original author: Jason Lentz (DemiurgeStudios?).*
 
-* [Keypoint Reference](KeypointReference.md#Keypoint Reference)
-  + [Introduction](KeypointReference.md#Introduction)
-  + [AIScript](KeypointReference.md#AIScript)
-  + [AmbientSound](KeypointReference.md#AmbientSound)
-  + [DecorationList](KeypointReference.md#DecorationList)
-  + [Matinee Keypoints](KeypointReference.md#Matinee Keypoints)
-  + [Editor Reference Keypoints](KeypointReference.md#Editor Reference Keypoints)
-  + [Obsolete/Unused Keypoints](KeypointReference.md#Obsolete/Unused Keypoints)
+* [Keypoint Reference](KeypointReference.md#keypoint-reference)
+  + [Introduction](KeypointReference.md#introduction)
+  + [AIScript](KeypointReference.md#aiscript)
+  + [AmbientSound](KeypointReference.md#ambientsound)
+  + [DecorationList](KeypointReference.md#decorationlist)
+  + [Matinee Keypoints](KeypointReference.md#matinee-keypoints)
+  + [Editor Reference Keypoints](KeypointReference.md#editor-reference-keypoints)
+  + [Obsolete/Unused Keypoints](KeypointReference.md#obsoleteunused-keypoints)
 
 ## Introduction
 
@@ -31,7 +31,7 @@ This is a simple sound actor that can be placed in a level to loop a sound. For 
 
 ![decolist_actor.jpg](../assets/decolist_actor.jpg)
 
-`DecorationLists` are actors that can define a list of StaticMeshes that will appear within a volume. To see more about `DecorationLists` , see the [Volumes Tutorial](../Content Creation/Primitives/VolumesTutorial.md#DecoList) document.
+`DecorationLists` are actors that can define a list of StaticMeshes that will appear within a volume. To see more about `DecorationLists` , see the [Volumes Tutorial](../Content Creation/Primitives/VolumesTutorial.md#decolist) document.
 
 ## Matinee Keypoints
 
@@ -40,7 +40,7 @@ The following Keypoints are used in Matinee scenes:
 * InterpolationPoint
 * LookTarget
 
-An `InterpolatioPoint` is a convenience actor that you can point a matinee camera at. Note that they aren't `bStatic` so they can be attached these to movers and such.A `LookTarget` is a convenience actor that you can point a matinee camera at. Note that they aren't `bStatic` so they can be attached these to movers and such.For more about how to use these Keypoints, see the  [MatineeTutorial](../Content Creation/Matinee/MatineeTutorial.md#Tools) document.
+An `InterpolatioPoint` is a convenience actor that you can point a matinee camera at. Note that they aren't `bStatic` so they can be attached these to movers and such.A `LookTarget` is a convenience actor that you can point a matinee camera at. Note that they aren't `bStatic` so they can be attached these to movers and such.For more about how to use these Keypoints, see the  [MatineeTutorial](../Content Creation/Matinee/MatineeTutorial.md#tools) document.
 
 ## Editor Reference Keypoints
 

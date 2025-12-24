@@ -2,10 +2,10 @@
 
 *Document Summary: Tutorial which briefly describes how to use the UT2004 caching system.**Document Changelog: Original revision.*
 
-* [Unreal Cache Lists Tutorial](UnrealCacheLists.md#Unreal Cache Lists Tutorial)
-  + [Overview](UnrealCacheLists.md#Overview)
-  + [Preparation](UnrealCacheLists.md#Preparation)
-  + [Exporting](UnrealCacheLists.md#Exporting)
+* [Unreal Cache Lists Tutorial](UnrealCacheLists.md#unreal-cache-lists-tutorial)
+  + [Overview](UnrealCacheLists.md#overview)
+  + [Preparation](UnrealCacheLists.md#preparation)
+  + [Exporting](UnrealCacheLists.md#exporting)
 
 ## Overview
 

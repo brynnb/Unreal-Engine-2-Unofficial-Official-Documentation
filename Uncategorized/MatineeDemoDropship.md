@@ -2,12 +2,12 @@
 
 *Document Summary: An additional Matinee example demonstrating how to make a more complex Matinee scene.**Document Changelog: Last updated by Hugh Macdonald ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)). Original author was Hugh Macdonald ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).*
 
-* [Matinee Demo Tutorial (Drop Ship section)](MatineeDemoDropship.md#Matinee Demo Tutorial (Drop Ship section))
-  + [DropShip Landing](MatineeDemoDropship.md#DropShip Landing)
-    - [DropShip Path](MatineeDemoDropship.md#DropShip Path)
-    - [DropShip Camera](MatineeDemoDropship.md#DropShip Camera)
-    - [DropShip Touch-Down](MatineeDemoDropship.md#DropShip Touch-Down)
-      * [Timing](MatineeDemoDropship.md#Timing)
+* [Matinee Demo Tutorial (Drop Ship section)](MatineeDemoDropship.md#matinee-demo-tutorial-drop-ship-section))
+  + [DropShip Landing](MatineeDemoDropship.md#dropship-landing)
+    - [DropShip Path](MatineeDemoDropship.md#dropship-path)
+    - [DropShip Camera](MatineeDemoDropship.md#dropship-camera)
+    - [DropShip Touch-Down](MatineeDemoDropship.md#dropship-touch-down)
+      * [Timing](MatineeDemoDropship.md#timing)
 
 ## DropShip Landing
 

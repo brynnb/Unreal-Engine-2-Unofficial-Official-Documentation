@@ -2,14 +2,14 @@
 
 *Document Summary: A tutorial showing how to set up special lighting features.**Document Changelog: Last updated by Jason Lentz (DemiurgeStudios?) to separate into more manageable docs. Original author - Lode Vandevenne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff))*
 
-* [Special Lighting Features](SpecialLightingFeatures.md#Special Lighting Features)
-  + [Introduction](SpecialLightingFeatures.md#Introduction)
-  + [TexturePaletteLoop](SpecialLightingFeatures.md#TexturePaletteLoop)
-  + [TexturePaletteOnce](SpecialLightingFeatures.md#TexturePaletteOnce)
-  + [Moving Lights](SpecialLightingFeatures.md#Moving Lights)
-  + [Coronas](SpecialLightingFeatures.md#Coronas)
-  + [Projective Textures](SpecialLightingFeatures.md#Projective Textures)
-  + [Relevant Documents](SpecialLightingFeatures.md#Relevant Documents)
+* [Special Lighting Features](SpecialLightingFeatures.md#special-lighting-features)
+  + [Introduction](SpecialLightingFeatures.md#introduction)
+  + [TexturePaletteLoop](SpecialLightingFeatures.md#texturepaletteloop)
+  + [TexturePaletteOnce](SpecialLightingFeatures.md#texturepaletteonce)
+  + [Moving Lights](SpecialLightingFeatures.md#moving-lights)
+  + [Coronas](SpecialLightingFeatures.md#coronas)
+  + [Projective Textures](SpecialLightingFeatures.md#projective-textures)
+  + [Relevant Documents](SpecialLightingFeatures.md#relevant-documents)
 
 ## Introduction
 
@@ -31,7 +31,7 @@ If you used the LightType LE\_TexturePaletteLoop, the light will now cycle throu
 
 TexturePaletteOnce does the same thing as TexturePaletteLoop, only it'll do this only once. You can't use TexturePaletteOnce with normal lights. You need to make a new Actor Class for this. When this new actor is spawned in the game, it will loop through the colors of the palette once and then die. This new actor class should have the following Default Properties:
 
-* bStatic = False. You can read more about this bStatic setting in the section [Moving Lights](SpecialLightingFeatures.md#MoV).
+* bStatic = False. You can read more about this bStatic setting in the section [Moving Lights](SpecialLightingFeatures.md#mov).
 * Advanced --> bNoDelete = False: this is necessary because the actor must be able to be deleted after it's spawned.
 * Advanced --> LifeSpan > 0: here you enter the time that the actor will live. This is also the time it needs to loop through the palette. So for example if you set LifeSpan to 3 seconds, once the actor is spawned it will finish looping through the whole palette in 3 seconds and then die.
 * Display --> Skin: the skin you want to use for the palette

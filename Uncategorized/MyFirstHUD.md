@@ -2,11 +2,11 @@
 
 *Created by Chris Linder (DemiurgeStudios?) on 11-18-03 for 2226 builds. Last Updated by Chris Linder (DemiurgeStudios?). Last updated by Michiel Hendriks, small v3323 update.*
 
-* [My First HUD](MyFirstHUD.md#My First HUD)
-  + [Related Documents](MyFirstHUD.md#Related Documents)
-  + [Introduction](MyFirstHUD.md#Introduction)
-  + [ExampleHUD](MyFirstHUD.md#ExampleHUD)
-  + [ExampleScoreboard](MyFirstHUD.md#ExampleScoreboard)
+* [My First HUD](MyFirstHUD.md#my-first-hud)
+  + [Related Documents](MyFirstHUD.md#related-documents)
+  + [Introduction](MyFirstHUD.md#introduction)
+  + [ExampleHUD](MyFirstHUD.md#examplehud)
+  + [ExampleScoreboard](MyFirstHUD.md#examplescoreboard)
 
 ## Related Documents
 
@@ -18,7 +18,7 @@ If you have not looked over the [MyFirstCode](MyFirstCode.md) document you shoul
 
 ## ExampleHUD
 
-As mentioned above, *ExampleHUD* displays in the lower right corner the number of times your avatar has danced. The number of times your avatar has danced is stored in the *Score* variable in the *PlayerReplicationInfo* for your player. (See the [MyFirstController](MyFirstController.md#Dancing) document for more details.)In older builds (2226), the first thing we need to do before we can draw the HUD is to get at the *PlayerReplicationInfo*. The code below shows how to safely get the *PlayerReplicationInfo*. In 3323 and up this is already done by the base class.
+As mentioned above, *ExampleHUD* displays in the lower right corner the number of times your avatar has danced. The number of times your avatar has danced is stored in the *Score* variable in the *PlayerReplicationInfo* for your player. (See the [MyFirstController](MyFirstController.md#dancing) document for more details.)In older builds (2226), the first thing we need to do before we can draw the HUD is to get at the *PlayerReplicationInfo*. The code below shows how to safely get the *PlayerReplicationInfo*. In 3323 and up this is already done by the base class.
 
 ```
 

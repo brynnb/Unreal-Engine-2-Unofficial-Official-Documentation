@@ -2,12 +2,12 @@
 
 *Document Summary: A detailed description on how to optimize your level through use of BSP.**Document Changelog: Last updated by Michiel Hendriks, minor text changes. Previously updated by Jason Lentz (DemiurgeStudios?), to break up in to smaller docs. Original authors were Tomasz Jachimczak ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)) and Jason Lentz (DemiurgeStudios?).*
 
-* [Level Optimization - BSP](LevelOptimizationBSP.md#Level Optimization - BSP)
-  + [Introduction](LevelOptimizationBSP.md#Introduction)
-  + [Creating the World Space](LevelOptimizationBSP.md#Creating the World Space)
-  + [BSP Collision](LevelOptimizationBSP.md#BSP Collision)
-    - [Zones and Portals](LevelOptimizationBSP.md#Zones and Portals)
-  + [Downloads](LevelOptimizationBSP.md#Downloads)
+* [Level Optimization - BSP](LevelOptimizationBSP.md#level-optimization---bsp)
+  + [Introduction](LevelOptimizationBSP.md#introduction)
+  + [Creating the World Space](LevelOptimizationBSP.md#creating-the-world-space)
+  + [BSP Collision](LevelOptimizationBSP.md#bsp-collision)
+    - [Zones and Portals](LevelOptimizationBSP.md#zones-and-portals)
+  + [Downloads](LevelOptimizationBSP.md#downloads)
 
 ## Introduction
 
@@ -15,7 +15,7 @@ BSP is the most primitive of the geometry types as well as the most fundamental.
 
 ## Creating the World Space
 
-It is necessary in creating the actual space of the world. You must start with BSP by subtracting a BSP brush from the world, so that you are working within subtracted world space. Using BSP brush is also the only way to set up zones (explained in detail in the [Zones and Portals](LevelOptimizationBSP.md#ZonesAndPortals) section). Another thing to note with BSP is that it is occluded in nodes, which means that when it is set up to be hidden from the renderer it will be hidden in chunks, not on a triangle by triangle basis.Here are some images of a space that has been created entirely with BSP geometry carved out from the solid world space.
+It is necessary in creating the actual space of the world. You must start with BSP by subtracting a BSP brush from the world, so that you are working within subtracted world space. Using BSP brush is also the only way to set up zones (explained in detail in the [Zones and Portals](LevelOptimizationBSP.md#zonesandportals) section). Another thing to note with BSP is that it is occluded in nodes, which means that when it is set up to be hidden from the renderer it will be hidden in chunks, not on a triangle by triangle basis.Here are some images of a space that has been created entirely with BSP geometry carved out from the solid world space.
 
 ![bsp_only.jpg](../assets/bsp_only.jpg)
 
@@ -47,4 +47,4 @@ When the portal is not within the frustum of the player's view, the other room a
 
 ## Downloads
 
-To view a downloadable version of the map described above, go to the bottom of [main Level Optimization](../Content Creation/Techniques/LevelOptimization.md#DownLoads) and download the appropriate version from there.
+To view a downloadable version of the map described above, go to the bottom of [main Level Optimization](../Content Creation/Techniques/LevelOptimization.md#downloads) and download the appropriate version from there.

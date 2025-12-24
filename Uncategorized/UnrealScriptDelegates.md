@@ -2,16 +2,16 @@
 
 *Applies to: [CodeDrop](CodeDrop.md) versions 831 and above.**Original author was Jack Porter ([EpicGames](https://udn.epicgames.com/Main/EpicGames)). Wiki cleanup by Vito Miliano ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).*
 
-* [UnrealScript Delegates](UnrealScriptDelegates.md#UnrealScript Delegates) 
-  + [Introduction](UnrealScriptDelegates.md#Introduction)
-  + [Using Delegates](UnrealScriptDelegates.md#Using Delegates)
-    - [Declaring a delegate](UnrealScriptDelegates.md#Declaring a delegate)
-    - [Calling a delegate](UnrealScriptDelegates.md#Calling a delegate)
-    - [Assigning a delegate to point to a function](UnrealScriptDelegates.md#Assigning a delegate to point to a function)
-  + [Advanced](UnrealScriptDelegates.md#Advanced)
-    - [Delegates and deleted objects](UnrealScriptDelegates.md#Delegates and deleted objects)
-    - [Declaring a body to a delegate](UnrealScriptDelegates.md#Declaring a body to a delegate)
-    - [Calling delegates from C++](UnrealScriptDelegates.md#Calling delegates from C++)
+* [UnrealScript Delegates](UnrealScriptDelegates.md#unrealscript-delegates) 
+  + [Introduction](UnrealScriptDelegates.md#introduction)
+  + [Using Delegates](UnrealScriptDelegates.md#using-delegates)
+    - [Declaring a delegate](UnrealScriptDelegates.md#declaring-a-delegate)
+    - [Calling a delegate](UnrealScriptDelegates.md#calling-a-delegate)
+    - [Assigning a delegate to point to a function](UnrealScriptDelegates.md#assigning-a-delegate-to-point-to-a-function)
+  + [Advanced](UnrealScriptDelegates.md#advanced)
+    - [Delegates and deleted objects](UnrealScriptDelegates.md#delegates-and-deleted-objects)
+    - [Declaring a body to a delegate](UnrealScriptDelegates.md#declaring-a-body-to-a-delegate)
+    - [Calling delegates from C++](UnrealScriptDelegates.md#calling-delegates-from-c)
 
 ## Introduction
 

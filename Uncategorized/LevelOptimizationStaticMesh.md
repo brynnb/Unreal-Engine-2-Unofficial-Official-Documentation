@@ -2,11 +2,11 @@
 
 *Document Summary: A detailed description on how to optimize StaticMeshes in your level.**Document Changelog: Last updated by Michiel Hendriks, minor text changes. Previous update by Jason Lentz (DemiurgeStudios?), to break up in to smaller docs. Original authors was Jason Lentz (DemiurgeStudios?).*
 
-* [Level Optimization - StaticMeshes](LevelOptimizationStaticMesh.md#Level Optimization - _StaticMeshes)
-  + [Introduction](LevelOptimizationStaticMesh.md#Introduction)
-  + [Efficient StaticMesh Design](LevelOptimizationStaticMesh.md#Efficient _StaticMesh Design)
-  + [Using StaticMeshes Efficiently](LevelOptimizationStaticMesh.md#Using _StaticMeshes Efficiently)
-  + [Collision with StaticMeshes](LevelOptimizationStaticMesh.md#Collision with _StaticMeshes)
+* [Level Optimization - StaticMeshes](LevelOptimizationStaticMesh.md#level-optimization---_staticmeshes)
+  + [Introduction](LevelOptimizationStaticMesh.md#introduction)
+  + [Efficient StaticMesh Design](LevelOptimizationStaticMesh.md#efficient-_staticmesh-design)
+  + [Using StaticMeshes Efficiently](LevelOptimizationStaticMesh.md#using-_staticmeshes-efficiently)
+  + [Collision with StaticMeshes](LevelOptimizationStaticMesh.md#collision-with-_staticmeshes)
 
 ## Introduction
 

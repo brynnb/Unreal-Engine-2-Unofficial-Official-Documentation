@@ -2,22 +2,22 @@
 
 *Document Summary: A guide and reference to setting up Shader Materials.**Document Changelog: Last updated by Jason Lentz (DemiurgeStudios?), for creation purposes. Original author was Jason Lentz (DemiurgeStudios?).*
 
-* [Shaders](MaterialsShaders.md#Shaders)
-  + [Shader Properties](MaterialsShaders.md#Shader Properties)
-    - [Diffuse](MaterialsShaders.md#Diffuse)
-    - [Opacity](MaterialsShaders.md#Opacity)
-    - [Specular](MaterialsShaders.md#Specular)
-    - [SpecularityMask](MaterialsShaders.md#SpecularityMask)
-    - [SelfIllumination](MaterialsShaders.md#SelfIllumination)
-    - [SelfIlluminationMask](MaterialsShaders.md#SelfIlluminationMask)
-    - [Detail](MaterialsShaders.md#Detail)
-    - [DetailScale](MaterialsShaders.md#DetailScale)
-    - [OutputBlending](MaterialsShaders.md#OutputBlending)
-    - [TwoSided](MaterialsShaders.md#TwoSided)
-    - [Wireframe](MaterialsShaders.md#Wireframe)
-    - [PerformLightingOnSpecularPass](MaterialsShaders.md#PerformLightingOnSpecularPass)
-    - [FallbackMaterial](MaterialsShaders.md#FallbackMaterial)
-  + [Example Map and Other Material Classes](MaterialsShaders.md#Example Map and Other Material Classes)
+* [Shaders](MaterialsShaders.md#shaders)
+  + [Shader Properties](MaterialsShaders.md#shader-properties)
+    - [Diffuse](MaterialsShaders.md#diffuse)
+    - [Opacity](MaterialsShaders.md#opacity)
+    - [Specular](MaterialsShaders.md#specular)
+    - [SpecularityMask](MaterialsShaders.md#specularitymask)
+    - [SelfIllumination](MaterialsShaders.md#selfillumination)
+    - [SelfIlluminationMask](MaterialsShaders.md#selfilluminationmask)
+    - [Detail](MaterialsShaders.md#detail)
+    - [DetailScale](MaterialsShaders.md#detailscale)
+    - [OutputBlending](MaterialsShaders.md#outputblending)
+    - [TwoSided](MaterialsShaders.md#twosided)
+    - [Wireframe](MaterialsShaders.md#wireframe)
+    - [PerformLightingOnSpecularPass](MaterialsShaders.md#performlightingonspecularpass)
+    - [FallbackMaterial](MaterialsShaders.md#fallbackmaterial)
+  + [Example Map and Other Material Classes](MaterialsShaders.md#example-map-and-other-material-classes)
 
 ## Shader Properties
 
@@ -111,4 +111,4 @@ Here you can set a Texture that the Engine will default to if for whatever reaso
 
 ![EPICmaterials1.jpg](../assets/epicmaterials1.jpg)
 
-For an example map that shows many different complex Materials in action, take a look at this document:[ExampleMapsEPIC](ExampleMapsEPIC.md#Materials_Example_Map) *(The example map is at the bottom of the page)*To return back the main Materials page, click [here](../Content Creation/Lighting and Textures/MaterialTutorial.md) <--
+For an example map that shows many different complex Materials in action, take a look at this document:[ExampleMapsEPIC](ExampleMapsEPIC.md#materials_example_map) *(The example map is at the bottom of the page)*To return back the main Materials page, click [here](../Content Creation/Lighting and Textures/MaterialTutorial.md) <--

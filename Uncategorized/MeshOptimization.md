@@ -2,18 +2,18 @@
 
 *Document Summary: This document covers the optimization of static meshes to gain performance. This is fairly involved and somewhat technical. For advanced users.**Document Changelog: Last updated by Tom Lin (DemiurgeStudios?), for document summary. Original author was Albert Reed (DemiurgeStudios?).*
 
-* [Mesh Optimization](MeshOptimization.md#Mesh Optimization)
-  + [Basics](MeshOptimization.md#Basics)
-  + [Comparing Batched to Un-Batched](MeshOptimization.md#Comparing Batched to Un-Batched)
-  + [Optimizing for Batched Rendering](MeshOptimization.md#Optimizing for Batched Rendering)
-    - [Optimizing Batch Setup Time](MeshOptimization.md#Optimizing Batch Setup Time)
-    - [Optimizing Section Setup Time](MeshOptimization.md#Optimizing Section Setup Time)
-    - [Optimizing Section Drawing Time](MeshOptimization.md#Optimizing Section Drawing Time)
-  + [Optimizing for Un-Batched Rendering](MeshOptimization.md#Optimizing for Un-Batched Rendering)
-    - [Optimizing Mesh Setup Time](MeshOptimization.md#Optimizing Mesh Setup Time)
-    - [Section Setup Time](MeshOptimization.md#Section Setup Time)
-    - [Section Drawing Time](MeshOptimization.md#Section Drawing Time)
-    - [Mesh Memory Footprint Optimization](MeshOptimization.md#Mesh Memory Footprint Optimization)
+* [Mesh Optimization](MeshOptimization.md#mesh-optimization)
+  + [Basics](MeshOptimization.md#basics)
+  + [Comparing Batched to Un-Batched](MeshOptimization.md#comparing-batched-to-un-batched)
+  + [Optimizing for Batched Rendering](MeshOptimization.md#optimizing-for-batched-rendering)
+    - [Optimizing Batch Setup Time](MeshOptimization.md#optimizing-batch-setup-time)
+    - [Optimizing Section Setup Time](MeshOptimization.md#optimizing-section-setup-time)
+    - [Optimizing Section Drawing Time](MeshOptimization.md#optimizing-section-drawing-time)
+  + [Optimizing for Un-Batched Rendering](MeshOptimization.md#optimizing-for-un-batched-rendering)
+    - [Optimizing Mesh Setup Time](MeshOptimization.md#optimizing-mesh-setup-time)
+    - [Section Setup Time](MeshOptimization.md#section-setup-time)
+    - [Section Drawing Time](MeshOptimization.md#section-drawing-time)
+    - [Mesh Memory Footprint Optimization](MeshOptimization.md#mesh-memory-footprint-optimization)
 
 ## Basics
 
@@ -77,7 +77,7 @@ The same rules for optimizing mesh setup time apply to section setup time for me
 
 ### Section Drawing Time
 
-This is the same for batched and unbatched rendering. Take a look at the [batched rendering description](MeshOptimization.md#Optimizing_Section_Drawing_Time) of this time.
+This is the same for batched and unbatched rendering. Take a look at the [batched rendering description](MeshOptimization.md#optimizing_section_drawing_time) of this time.
 
 ### Mesh Memory Footprint Optimization
 

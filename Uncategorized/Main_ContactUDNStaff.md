@@ -1,8 +1,8 @@
 # Contacting Epic Staff
 
-* [Unreal Development Kit](ContactUDNStaff.md#Unreal Development Kit)
-* [Mod Developers: Unreal-Powered Games](ContactUDNStaff.md#Mod Developers: Unreal-Powered Games)
-* [If You Have an Idea](ContactUDNStaff.md#If You Have an Idea)
+* [Unreal Development Kit](ContactUDNStaff.md#unreal-development-kit)
+* [Mod Developers: Unreal-Powered Games](ContactUDNStaff.md#mod-developers-unreal-powered-games)
+* [If You Have an Idea](ContactUDNStaff.md#if-you-have-an-idea)
 
 ### Unreal Development Kit
 

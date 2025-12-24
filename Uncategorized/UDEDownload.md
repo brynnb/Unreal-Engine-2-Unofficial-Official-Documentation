@@ -2,9 +2,9 @@
 
 *Document Summary: An overview of the Unreal Development Environment (UDE), including download links for the latest version.**Document Changelog: Created by [Joe Wilcox](https://udn.epicgames.com/Main/JoeWilcox). Maintained by Richard Nalezynski?.*
 
-* [UnrealScript Development Environment](UDEDownload.md#UnrealScript Development Environment)
-  + [Overview](UDEDownload.md#Overview)
-  + [Files](UDEDownload.md#Files)
+* [UnrealScript Development Environment](UDEDownload.md#unrealscript-development-environment)
+  + [Overview](UDEDownload.md#overview)
+  + [Files](UDEDownload.md#files)
 
 ## Overview
 

@@ -2,12 +2,12 @@
 
 *Document Summary: A tutorial to showing how to set up certain Projector Effects.**Document Changelog: Last updated by Jason Lentz (DemiurgeStudios?) for splitting up the Projectors documents into smaller more manageable docs. Original authors were Lode Vandevenne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)) and Jason Lentz (DemiurgeStudios?).*
 
-* [Projectors Tutorial](ProjectorsTutorial.md#Projectors Tutorial)
-  + [Introduction](ProjectorsTutorial.md#Introduction)
-  + [Shadow](ProjectorsTutorial.md#Shadow)
-  + [Light](ProjectorsTutorial.md#Light)
-  + [Spawned Decals](ProjectorsTutorial.md#Spawned Decals)
-  + [Rotating Projections](ProjectorsTutorial.md#Rotating Projections)
+* [Projectors Tutorial](ProjectorsTutorial.md#projectors-tutorial)
+  + [Introduction](ProjectorsTutorial.md#introduction)
+  + [Shadow](ProjectorsTutorial.md#shadow)
+  + [Light](ProjectorsTutorial.md#light)
+  + [Spawned Decals](ProjectorsTutorial.md#spawned-decals)
+  + [Rotating Projections](ProjectorsTutorial.md#rotating-projections)
 
 ## Introduction
 

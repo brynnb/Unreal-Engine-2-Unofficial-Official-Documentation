@@ -2,8 +2,8 @@
 
 *Last updated by Chris Linder (DemiurgeStudios?) to date this document. Original author was Tim Sweeney / Vito Miliano ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).*
 
-* [Recommended and Required Hardware for Unreal Development](RecommendedHardware.md#Recommended and Required Hardware for Unreal Development)
-  + [Guide to Buying Computers for Unreal Development](RecommendedHardware.md#Guide to Buying Computers for Unreal Development)
+* [Recommended and Required Hardware for Unreal Development](RecommendedHardware.md#recommended-and-required-hardware-for-unreal-development)
+  + [Guide to Buying Computers for Unreal Development](RecommendedHardware.md#guide-to-buying-computers-for-unreal-development)
 
 ## Guide to Buying Computers for Unreal Development
 

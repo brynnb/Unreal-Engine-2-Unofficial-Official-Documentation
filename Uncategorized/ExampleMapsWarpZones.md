@@ -2,15 +2,15 @@
 
 *Document Summary: explains how to use warp zones to create worlds that defy conventional space. This is suitable for intermediate skill levels.**Document Changelog: Fixed a broken image tag.*
 
-* [Warp Zones](ExampleMapsWarpZones.md#Warp Zones)
-  + [Introduction](ExampleMapsWarpZones.md#Introduction)
-  + [WarpZone Basics](ExampleMapsWarpZones.md#WarpZone Basics)
-  + [Bigger on the inside](ExampleMapsWarpZones.md#Bigger on the inside)
-  + [Infinite Rooms](ExampleMapsWarpZones.md#Infinite Rooms)
-  + [Ring Worlds](ExampleMapsWarpZones.md#Ring Worlds)
-  + [Warp Zones](ExampleMapsWarpZones.md#Warp Zones)
-  + [Downloads](ExampleMapsWarpZones.md#Downloads)
-  + [Downloads](ExampleMapsWarpZones.md#Downloads)
+* [Warp Zones](ExampleMapsWarpZones.md#warp-zones)
+  + [Introduction](ExampleMapsWarpZones.md#introduction)
+  + [WarpZone Basics](ExampleMapsWarpZones.md#warpzone-basics)
+  + [Bigger on the inside](ExampleMapsWarpZones.md#bigger-on-the-inside)
+  + [Infinite Rooms](ExampleMapsWarpZones.md#infinite-rooms)
+  + [Ring Worlds](ExampleMapsWarpZones.md#ring-worlds)
+  + [Warp Zones](ExampleMapsWarpZones.md#warp-zones)
+  + [Downloads](ExampleMapsWarpZones.md#downloads)
+  + [Downloads](ExampleMapsWarpZones.md#downloads)
 
 ![warpzone_map.jpg](../assets/warpzone_map.jpg)
 
@@ -23,7 +23,7 @@ WarpZones can be used to create a variety of effects. This example map document 
 Before you start on creating your WarpZones, you will want to make sure that you follow these guidelines
 
 * **bUseStencil = True** Make sure you have this set option in your *.ini* file set to true. You will need to exit Unreal Ed, go into your system folder open up your *yourgam.ini/ file (in a clean build from UDN, that would be the \_UW.ini* file), search for "UseStencil" and set that value to True. If you don't know which *.ini* file to update, ask a programmer.
-* **WarpZone Portal Textures** You will need to create special shaders to assign to the WarpZone Portals. This is described in greater detail [here](MirrorsAndWarpZones.md#Correcting_WarpZone_Portals) .
+* **WarpZone Portal Textures** You will need to create special shaders to assign to the WarpZone Portals. This is described in greater detail [here](MirrorsAndWarpZones.md#correcting_warpzone_portals) .
 * **WarpZone Portal Alignment** WarpZones work best when the Zones you are warping between are facing in opposite directions (e.g. WarpZone A faces East and warps to WarpZone B which faces west).
 * **SkyZonesInfos** Having a SkyZone in your level can *sometimes* cause artifacts to appear when looking through a WarpZone Portal. Test this early if you intend to use a SkyZone in your level.
 
@@ -77,7 +77,7 @@ The trick here is that the WarpZone Portals are at an angle:
 
 ![section_portals.gif](../assets/section_portals.gif)
 
-The angel creates the illusion that the next section is on an incline when seen through the WarpZone Portal.And as also described in the above example, the [popping problem](ExampleMapsWarpZones.md#PoppingProblem) can be solved by making the WarpZone leading to next section be identical in appearance to the next section the player would warp to.
+The angel creates the illusion that the next section is on an incline when seen through the WarpZone Portal.And as also described in the above example, the [popping problem](ExampleMapsWarpZones.md#poppingproblem) can be solved by making the WarpZone leading to next section be identical in appearance to the next section the player would warp to.
 
 ## Warp Zones
 

@@ -2,11 +2,11 @@
 
 *Document Summary: A fairly technical discussion of the limitations of LOD on static meshes. Good for intermediate to advanced users.**Document Changelog: Last updated by Tom Lin (DemiurgeStudios?), for document summary. Original author was Vito Miliano ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)). Based on an [ongoing January 29 thread](https://udn.epicgames.com/lists/showpost/php?list=unedit&id=7845&lessthan=7854&show=20) on [UnEdit](https://udn.epicgames.com/Two/UnEdit).*
 
-* [Why Hardware Brushes Have No LOD](NoLodOnHardwareBrushes.md#Why Hardware Brushes Have No LOD)
-  + [Overview](NoLodOnHardwareBrushes.md#Overview)
-  + [Triangle throughput](NoLodOnHardwareBrushes.md#Triangle throughput)
-  + [Good LOD is Hard to Do](NoLodOnHardwareBrushes.md#Good LOD is Hard to Do)
-  + [Vertex Throughput](NoLodOnHardwareBrushes.md#Vertex Throughput)
+* [Why Hardware Brushes Have No LOD](NoLodOnHardwareBrushes.md#why-hardware-brushes-have-no-lod)
+  + [Overview](NoLodOnHardwareBrushes.md#overview)
+  + [Triangle throughput](NoLodOnHardwareBrushes.md#triangle-throughput)
+  + [Good LOD is Hard to Do](NoLodOnHardwareBrushes.md#good-lod-is-hard-to-do)
+  + [Vertex Throughput](NoLodOnHardwareBrushes.md#vertex-throughput)
 
 ## Overview
 

@@ -2,17 +2,17 @@
 
 *Document Summary: A straightforward guide to making caves using terrain. Suitable for intermediate skill levels.**Document Changelog: Last updated by Tom Lin (DemiurgeStudios?), for document summary. Original author was Jason Lentz (DemiurgeStudios?).*
 
-* [Underground Caverns](ExampleMapsCaverns.md#Underground Caverns)
-  + [Introduction](ExampleMapsCaverns.md#Introduction)
-  + [Ingredients](ExampleMapsCaverns.md#Ingredients)
-  + [Planning Your Cave](ExampleMapsCaverns.md#Planning Your Cave)
-  + [Inserting the Cave Terrains](ExampleMapsCaverns.md#Inserting the Cave Terrains)
-  + [Adding Entrances](ExampleMapsCaverns.md#Adding Entrances)
-  + [Cave Ambience](ExampleMapsCaverns.md#Cave Ambience)
-    - [Pools an Streams](ExampleMapsCaverns.md#Pools an Streams)
-    - [Lighting and Visibility](ExampleMapsCaverns.md#Lighting and Visibility)
+* [Underground Caverns](ExampleMapsCaverns.md#underground-caverns)
+  + [Introduction](ExampleMapsCaverns.md#introduction)
+  + [Ingredients](ExampleMapsCaverns.md#ingredients)
+  + [Planning Your Cave](ExampleMapsCaverns.md#planning-your-cave)
+  + [Inserting the Cave Terrains](ExampleMapsCaverns.md#inserting-the-cave-terrains)
+  + [Adding Entrances](ExampleMapsCaverns.md#adding-entrances)
+  + [Cave Ambience](ExampleMapsCaverns.md#cave-ambience)
+    - [Pools an Streams](ExampleMapsCaverns.md#pools-an-streams)
+    - [Lighting and Visibility](ExampleMapsCaverns.md#lighting-and-visibility)
     - [Echoes and Reverberations [coming soon]](ExampleMapsCaverns.html#Echoes and Reverberations [coming soon])
-  + [Downloads](ExampleMapsCaverns.md#Downloads)
+  + [Downloads](ExampleMapsCaverns.md#downloads)
 
 ## Introduction
 

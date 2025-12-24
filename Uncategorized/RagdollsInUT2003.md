@@ -2,13 +2,13 @@
 
 *Document Summary: A reference showing how ragdolls were set up in UT2003.**Document Changelog: Added links to other docs for creating level ragdolls - Chris Linder (DemiurgeStudios?).*
 
-* [Ragdolls In UT2003](RagdollsInUT2003.md#Ragdolls In UT2003)
-  + [Related Documents](RagdollsInUT2003.md#Related Documents)
-  + [Introduction](RagdollsInUT2003.md#Introduction)
-  + [Creating Your Ragdoll](RagdollsInUT2003.md#Creating Your Ragdoll)
-  + [Using Your Ragdoll In The Game](RagdollsInUT2003.md#Using Your Ragdoll In The Game)
-  + [Level Ragdoll](RagdollsInUT2003.md#Level Ragdoll)
-  + [Profiling Ragdolls](RagdollsInUT2003.md#Profiling Ragdolls)
+* [Ragdolls In UT2003](RagdollsInUT2003.md#ragdolls-in-ut2003)
+  + [Related Documents](RagdollsInUT2003.md#related-documents)
+  + [Introduction](RagdollsInUT2003.md#introduction)
+  + [Creating Your Ragdoll](RagdollsInUT2003.md#creating-your-ragdoll)
+  + [Using Your Ragdoll In The Game](RagdollsInUT2003.md#using-your-ragdoll-in-the-game)
+  + [Level Ragdoll](RagdollsInUT2003.md#level-ragdoll)
+  + [Profiling Ragdolls](RagdollsInUT2003.md#profiling-ragdolls)
 
 ## Related Documents
 
@@ -34,7 +34,7 @@ Ragdoll=AssetNameObviously replacing 'AssetName' with the name of the ragdoll as
 
 ## Level Ragdoll
 
-The section above talks about adding ragdolls for use when a character dies. However, you can also place ragdolls in your level for 'decoration'.Probably the easiest way to do this is just to create a new class using a .uc file with the correct default properties. See the[KarmaAuthoringTool document](KarmaAuthoringTool.md#Step_6_Making_a_Class_For_Your_R) for more info on how to create a class for a level ragdoll. However, if you dont want to do that, here is an alternative (but more complicated) method:
+The section above talks about adding ragdolls for use when a character dies. However, you can also place ragdolls in your level for 'decoration'.Probably the easiest way to do this is just to create a new class using a .uc file with the correct default properties. See the[KarmaAuthoringTool document](KarmaAuthoringTool.md#step_6_making_a_class_for_your_r) for more info on how to create a class for a level ragdoll. However, if you dont want to do that, here is an alternative (but more complicated) method:
 
 1. In the static mesh browser pick any static mesh which has a '\*' next to its name. That indicates it has physics properties and can be placed as a KActor.
 2. Right click in your level and choose 'Add Karma Actor'. You should see your static mesh appear where you clicked.

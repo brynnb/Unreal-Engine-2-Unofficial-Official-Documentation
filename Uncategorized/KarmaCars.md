@@ -2,27 +2,27 @@
 
 *Last updated by Chris Linder (DemiurgeStudios?), to finalize first draft. Original author was Chris Linder (DemiurgeStudios?).*
 
-* [Karma Cars](KarmaCars.md#Karma Cars)
-  + [Introduction](KarmaCars.md#Introduction)
-  + [Setting up the Code](KarmaCars.md#Setting up the Code)
-  + [Putting Cars in Your Game](KarmaCars.md#Putting Cars in Your Game)
-  + [The classes](KarmaCars.md#The classes)
-    - [KCar.uc](KarmaCars.md#KCar.uc)
-      * [Parameters](KarmaCars.md#Parameters)
-    - [GenericCar.uc](KarmaCars.md#GenericCar.uc)
-      * [Sound](KarmaCars.md#Sound)
-      * [Brake Lights](KarmaCars.md#Brake Lights)
-      * [Triggers](KarmaCars.md#Triggers)
-      * [Messages](KarmaCars.md#Messages)
-      * [Wheel Dust](KarmaCars.md#Wheel Dust)
-      * [Damage](KarmaCars.md#Damage)
-      * [Driver Hiding](KarmaCars.md#Driver Hiding)
-      * [Parameters](KarmaCars.md#Parameters)
-    - [Bulldog.uc](KarmaCars.md#Bulldog.uc)
-      * [Headlights](KarmaCars.md#Headlights)
-      * [Weapon](KarmaCars.md#Weapon)
-      * [Parameters](KarmaCars.md#Parameters)
-  + [Download](KarmaCars.md#Download)
+* [Karma Cars](KarmaCars.md#karma-cars)
+  + [Introduction](KarmaCars.md#introduction)
+  + [Setting up the Code](KarmaCars.md#setting-up-the-code)
+  + [Putting Cars in Your Game](KarmaCars.md#putting-cars-in-your-game)
+  + [The classes](KarmaCars.md#the-classes)
+    - [KCar.uc](KarmaCars.md#kcaruc)
+      * [Parameters](KarmaCars.md#parameters)
+    - [GenericCar.uc](KarmaCars.md#genericcaruc)
+      * [Sound](KarmaCars.md#sound)
+      * [Brake Lights](KarmaCars.md#brake-lights)
+      * [Triggers](KarmaCars.md#triggers)
+      * [Messages](KarmaCars.md#messages)
+      * [Wheel Dust](KarmaCars.md#wheel-dust)
+      * [Damage](KarmaCars.md#damage)
+      * [Driver Hiding](KarmaCars.md#driver-hiding)
+      * [Parameters](KarmaCars.md#parameters)
+    - [Bulldog.uc](KarmaCars.md#bulldoguc)
+      * [Headlights](KarmaCars.md#headlights)
+      * [Weapon](KarmaCars.md#weapon)
+      * [Parameters](KarmaCars.md#parameters)
+  + [Download](KarmaCars.md#download)
 
 ## Introduction
 
@@ -30,11 +30,11 @@ This document provides code and instructions to easily drop Karma Cars (any 4 wh
 
 ## Setting up the Code
 
-Download the code [below](KarmaCars.md#Download) and drop it in a UDNBuild. Make sure you add **UDNCars** to the edit packages in **uw.ini** and then build the script files. You don't *need* to change any source code but you might want to consider changing **ME\_MAX\_KARMA\_SPEED** in *Engine/Src/KarmaSuport.h* to something larger. This will allow vehicles to go faster. The other solution is to make smaller cars in smaller levels so they *look* like they are going faster. Either way, once the script is built you are now ready to drop cars in your game.
+Download the code [below](KarmaCars.md#download) and drop it in a UDNBuild. Make sure you add **UDNCars** to the edit packages in **uw.ini** and then build the script files. You don't *need* to change any source code but you might want to consider changing **ME\_MAX\_KARMA\_SPEED** in *Engine/Src/KarmaSuport.h* to something larger. This will allow vehicles to go faster. The other solution is to make smaller cars in smaller levels so they *look* like they are going faster. Either way, once the script is built you are now ready to drop cars in your game.
 
 ## Putting Cars in Your Game
 
-At this point you can open Unrealed drop a **Pawn->KVehicle->KCar->GenericCar->Bulldog** in any level. Another option is to add a **KVehicleFactory->CarFactory** that spawns the type of vehicle that you want and set up a trigger for the factory. Once in the game, bind a key to "use" for example, by typing **set input e use** at the **~** prompt. Now you can get in the vehicle pressing the "use" key at either door. Press "jump" to get out. The "use" key will also flip the vehicle if it is upside-down and you are outside of it. Now drive around and have fun! (You can pick up a fun vehicle test map in [download](KarmaCars.md#Download) section.)
+At this point you can open Unrealed drop a **Pawn->KVehicle->KCar->GenericCar->Bulldog** in any level. Another option is to add a **KVehicleFactory->CarFactory** that spawns the type of vehicle that you want and set up a trigger for the factory. Once in the game, bind a key to "use" for example, by typing **set input e use** at the **~** prompt. Now you can get in the vehicle pressing the "use" key at either door. Press "jump" to get out. The "use" key will also flip the vehicle if it is upside-down and you are outside of it. Now drive around and have fun! (You can pick up a fun vehicle test map in [download](KarmaCars.md#download) section.)
 
 ## The classes
 
@@ -44,7 +44,7 @@ KCar extends KVehicle directly and is the root car class. This class contains al
 
 #### Parameters
 
-The variables are defined on the content creation page [here](KarmaCarCreation.md#KCar).
+The variables are defined on the content creation page [here](KarmaCarCreation.md#kcar).
 
 ### GenericCar.uc
 
@@ -97,7 +97,7 @@ The driver hiding is very simple. In *KDriverEnter* the pawn that gets in has **
 
 #### Parameters
 
-The variables are defined on the content creation page [here](KarmaCarCreation.md#GenericCar).
+The variables are defined on the content creation page [here](KarmaCarCreation.md#genericcar).
 
 ### Bulldog.uc
 
@@ -115,6 +115,6 @@ The Bulldog weapon is not really a weapon in the Unreal sense. It is not a separ
 
 #### Parameters
 
-The variables are defined on the content creation page [here](KarmaCarCreation.md#Bulldog).
+The variables are defined on the content creation page [here](KarmaCarCreation.md#bulldog).
 
 ## Download

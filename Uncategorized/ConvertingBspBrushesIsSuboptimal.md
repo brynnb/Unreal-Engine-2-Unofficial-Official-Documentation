@@ -2,8 +2,8 @@
 
 *Document Summary: A technical discussion of the cons involved in converting BSP Brushes to static meshes. Suitable for intermediate to advanced artists and level designers.**Document Changelog: Last updated by Tom Lin (DemiurgeStudios?), for document summary. Original author was Andrew Scheidecker ([EpicGames](https://udn.epicgames.com/Main/EpicGames)).*
 
-* [Building Hardware Brushes from Converted BSP Brushes is Double-Plus Ungood](ConvertingBspBrushesIsSuboptimal.md#Building Hardware Brushes from Converted BSP Brushes is Double-Plus Ungood)
-  + [Overview](ConvertingBspBrushesIsSuboptimal.md#Overview)
+* [Building Hardware Brushes from Converted BSP Brushes is Double-Plus Ungood](ConvertingBspBrushesIsSuboptimal.md#building-hardware-brushes-from-converted-bsp-brushes-is-double-plus-ungood)
+  + [Overview](ConvertingBspBrushesIsSuboptimal.md#overview)
 
 ## Overview
 

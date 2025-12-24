@@ -2,22 +2,22 @@
 
 *Document Summary: A comprehensive reference for the LightColor and Lighting properties.**Document Changelog: Last update by Michiel Hendriks, small update for v3323, added bDirectionalCorona. Last updated by Jason Lentz (DemiurgeStudios?) to separate into more manageable docs. Original author - Lode Vandevenne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff))*
 
-* [Lighting Reference](LightingReference.md#Lighting Reference)
-  + [Introduction](LightingReference.md#Introduction)
-  + [LightColor](LightingReference.md#LightColor)
-    - [Light Brightness](LightingReference.md#Light Brightness)
-    - [Light Hue](LightingReference.md#Light Hue)
-    - [Light Saturation](LightingReference.md#Light Saturation)
-  + [Lighting](LightingReference.md#Lighting)
-    - [Special Lit](LightingReference.md#Special Lit)
-  + [LightCone](LightingReference.md#LightCone)
-  + [LightEffect](LightingReference.md#LightEffect)
-  + [LightPeriod](LightingReference.md#LightPeriod)
-  + [LightPhase](LightingReference.md#LightPhase)
-  + [LightRadius](LightingReference.md#LightRadius)
-  + [LightType](LightingReference.md#LightType)
-  + [Unlit](LightingReference.md#Unlit)
-  + [Relevant Documents](LightingReference.md#Relevant Documents)
+* [Lighting Reference](LightingReference.md#lighting-reference)
+  + [Introduction](LightingReference.md#introduction)
+  + [LightColor](LightingReference.md#lightcolor)
+    - [Light Brightness](LightingReference.md#light-brightness)
+    - [Light Hue](LightingReference.md#light-hue)
+    - [Light Saturation](LightingReference.md#light-saturation)
+  + [Lighting](LightingReference.md#lighting)
+    - [Special Lit](LightingReference.md#special-lit)
+  + [LightCone](LightingReference.md#lightcone)
+  + [LightEffect](LightingReference.md#lighteffect)
+  + [LightPeriod](LightingReference.md#lightperiod)
+  + [LightPhase](LightingReference.md#lightphase)
+  + [LightRadius](LightingReference.md#lightradius)
+  + [LightType](LightingReference.md#lighttype)
+  + [Unlit](LightingReference.md#unlit)
+  + [Relevant Documents](LightingReference.md#relevant-documents)
 
 ## Introduction
 
@@ -31,11 +31,11 @@ With LightColor, you can change the brightness and color of the light. The color
 
 Below are descriptions of the three properties and the default setting for a LightActor.
 
-| [Property](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=0;table=1;up=0#sorted_table "Sort by this column") | [Description](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=1;table=1;up=0#sorted_table "Sort by this column") | [Default](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=2;table=1;up=0#sorted_table "Sort by this column") |
+| [Property](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=0;table=1;up=0#sorted_table-sort-by-this-column) | [Description](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=1;table=1;up=0#sorted_table-sort-by-this-column) | [Default](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=2;table=1;up=0#sorted_table-sort-by-this-column) |
 | --- | --- | --- |
-| **LightBrightness** | This controls the amount of light cast. See [below](LightingReference.md#LightBrightness) for detailed description. | 64.0 |
-| **LightHue** | This controls the hue or color of the light cast. See [below](LightingReference.md#LightHue) for detailed description. | 0 |
-| **LightSaturation** | This controls the saturation level or "pureness" of the light cast. See [below](LightingReference.md#LightSaturation) for detailed description. | 255 |
+| **LightBrightness** | This controls the amount of light cast. See [below](LightingReference.md#lightbrightness) for detailed description. | 64.0 |
+| **LightHue** | This controls the hue or color of the light cast. See [below](LightingReference.md#lighthue) for detailed description. | 0 |
+| **LightSaturation** | This controls the saturation level or "pureness" of the light cast. See [below](LightingReference.md#lightsaturation) for detailed description. | 255 |
 
 ### Light Brightness
 
@@ -89,20 +89,20 @@ In these properties there are a lot more variable to tinker with. Below is a tab
 
 ![lightproperties.jpg](../assets/lightproperties.jpg)
 
-| [Variable](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=0;table=2;up=0#sorted_table "Sort by this column") | [Description](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=1;table=2;up=0#sorted_table "Sort by this column") | [Default](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=2;table=2;up=0#sorted_table "Sort by this column") |
+| [Variable](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=0;table=2;up=0#sorted_table-sort-by-this-column) | [Description](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=1;table=2;up=0#sorted_table-sort-by-this-column) | [Default](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=2;table=2;up=0#sorted_table-sort-by-this-column) |
 | --- | --- | --- |
 | **bActorShadows** | When `True,' actor will cast shadows. | *False* |
-| **bCorona** | The light will use *Skins* as a corona. See the [Special Lighting Features](SpecialLightingFeatures.md#Coronas) doc for a full description. | *False* |
+| **bCorona** | The light will use *Skins* as a corona. See the [Special Lighting Features](SpecialLightingFeatures.md#coronas) doc for a full description. | *False* |
 | **bDirectionalCorona** | The corona will only have an effect in the set direction instead of any direction. | *False* |
 | **bDynamicLight** | This will allow the lighting from this light to move with the light if `True.' Note that DynamicLights are somewhat more processor intensive than regular lights. | *False* |
 | **bLightingVisibility** | Calculates lighting visibility for this actor with line checks. | *True* |
-| **bSpecialLit** | This setting allows you to some extent manually control what is affected by this light and what is not. See [below](LightingReference.md#SpecialLit) for detailed description. | *False* |
-| **LightCone** | If you are using the Light Effect *LE SpotLight,* this will determine the angle of the spotlight cone. See [below](LightingReference.md#LightCone) for detailed description. | *128* |
-| **LightEffect** | These are ready made effects that you can use in your light. See [below](LightingReference.md#LightEffect) for detailed description. | *LE None* |
-| **LightPeriod** | This determines the rate of special [Light Types](LightingReference.md#LightType) See [below](LightingReference.md#LightPeriod) for detailed description. | *32* |
-| **LightPhase** | This determines the fade out and fade of the [Light Types](LightingReference.md#LightType) and [Light Effects](LightingReference.md#LightEffect). See [below](LightingReference.md#LightPhase) for detailed description. | *0* |
-| **LightRadius** | This is a multiplier of the actual radius of the light. See [below](LightingReference.md#LightRadius) for detailed description. | *64.0* |
-| **LightType** | These determine the "steadiness" of the light. See [below](LightingReference.md#LightType) for detailed description. | *LT Steady* |
+| **bSpecialLit** | This setting allows you to some extent manually control what is affected by this light and what is not. See [below](LightingReference.md#speciallit) for detailed description. | *False* |
+| **LightCone** | If you are using the Light Effect *LE SpotLight,* this will determine the angle of the spotlight cone. See [below](LightingReference.md#lightcone) for detailed description. | *128* |
+| **LightEffect** | These are ready made effects that you can use in your light. See [below](LightingReference.md#lighteffect) for detailed description. | *LE None* |
+| **LightPeriod** | This determines the rate of special [Light Types](LightingReference.md#lighttype) See [below](LightingReference.md#lightperiod) for detailed description. | *32* |
+| **LightPhase** | This determines the fade out and fade of the [Light Types](LightingReference.md#lighttype) and [Light Effects](LightingReference.md#lighteffect). See [below](LightingReference.md#lightphase) for detailed description. | *0* |
+| **LightRadius** | This is a multiplier of the actual radius of the light. See [below](LightingReference.md#lightradius) for detailed description. | *64.0* |
+| **LightType** | These determine the "steadiness" of the light. See [below](LightingReference.md#lighttype) for detailed description. | *LT Steady* |
 
 ### Special Lit
 
@@ -169,7 +169,7 @@ Here's a description of all of the non-obsolete LightEffects:**LE\_None**: this 
 
 ![lefastwave.jpg](../assets/lefastwave.jpg)
 
-**LE\_StaticSpot** and **LE\_SpotLight**: these change the light into a spot, you can change the cone of it with LightCone, and the direction of it with it's rotation settings, more about this in [LightCone](LightingReference.md#LightCone) and [Spotlight Direction](TypesOfLights.md#Spotlight).
+**LE\_StaticSpot** and **LE\_SpotLight**: these change the light into a spot, you can change the cone of it with LightCone, and the direction of it with it's rotation settings, more about this in [LightCone](LightingReference.md#lightcone) and [Spotlight Direction](TypesOfLights.md#spotlight).
 
 ![lespotlight.jpg](../assets/lespotlight.jpg)
 
@@ -201,7 +201,7 @@ Here's a description of all of the non-obsolete LightEffects:**LE\_None**: this 
 
 ![lerotor.jpg](../assets/lerotor.jpg)
 
-**LE\_Sunlight**: this simulates a light that comes from infinitely far, more about this in the section [Sunlight](TypesOfLights.md#Sunlight).
+**LE\_Sunlight**: this simulates a light that comes from infinitely far, more about this in the section [Sunlight](TypesOfLights.md#sunlight).
 
 ![lesunlight.jpg](../assets/lesunlight.jpg)
 
@@ -265,7 +265,7 @@ LT\_SubtlePulse: this does the same as pulse, but more subtle
 
 ![subtlepulse.gif](../assets/subtlepulse.gif)
 
-LT\_TexturePaletteLoop and LT\_TexturePaletteOnce: these can be used to make the light loop through different colors, more about this in the sections [TexturePaletteLoop](SpecialLightingFeatures.md#TpL) and [TexturePaletteOnce](SpecialLightingFeatures.md#TpO).  
+LT\_TexturePaletteLoop and LT\_TexturePaletteOnce: these can be used to make the light loop through different colors, more about this in the sections [TexturePaletteLoop](SpecialLightingFeatures.md#tpl) and [TexturePaletteOnce](SpecialLightingFeatures.md#tpo).  
 LT\_FadeOut: looks exactly the same as LT\_None
 
 ![none.gif](../assets/none.gif)

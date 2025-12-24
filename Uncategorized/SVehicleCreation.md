@@ -2,37 +2,37 @@
 
 Document Summary: This document goes over how to create SVehicles (also known as skeletal vehicles) in 2226 builds or later using either Maya or 3DS MAX.Document Changelog: Last updated by Michiel Hendriks, small v3323 update. Created on 8/11/03 by Chris Linder, Tom Lin, Chris Sturgill (DemiurgeStudios?) for build 2226.
 
-* [SVehicle Creation](SVehicleCreation.md#SVehicle Creation)
-  + [Related Documents](SVehicleCreation.md#Related Documents)
-  + [Do First (pre-v3323)](SVehicleCreation.md#Do First (pre-v3323))
-  + [Intro](SVehicleCreation.md#Intro)
-  + [Creation Overview](SVehicleCreation.md#Creation Overview)
-  + [Rendering Speed Concerns](SVehicleCreation.md#Rendering Speed Concerns)
-  + [Center of Mass and Inertia](SVehicleCreation.md#Center of Mass and Inertia)
-  + [Creating SVehicles in Maya](SVehicleCreation.md#Creating SVehicles in Maya)
-    - [Making the Car](SVehicleCreation.md#Making the Car)
-      * [Bone Orientation](SVehicleCreation.md#Bone Orientation)
-    - [Importing the Car in UnrealEd](SVehicleCreation.md#Importing the Car in _UnrealEd)
-  + [Creating SVehicles in 3D Studio MAX](SVehicleCreation.md#Creating SVehicles in 3D Studio MAX)
-    - [Making the Car](SVehicleCreation.md#Making the Car)
-      * [Construction](SVehicleCreation.md#Construction)
-      * [Linking](SVehicleCreation.md#Linking)
-      * [Naming](SVehicleCreation.md#Naming)
-      * [Orientation](SVehicleCreation.md#Orientation)
-      * [Pivot Points](SVehicleCreation.md#Pivot Points)
-      * [Mirroring](SVehicleCreation.md#Mirroring)
-      * [Reset Pivots](SVehicleCreation.md#Reset Pivots)
-      * [Exporting](SVehicleCreation.md#Exporting)
-      * [MAX Model](SVehicleCreation.md#MAX Model)
-    - [Importing the Car in UnrealEd](SVehicleCreation.md#Importing the Car in _UnrealEd)
-  + [Setting Up SVehicles in UnrealEd](SVehicleCreation.md#Setting Up SVehicles in _UnrealEd)
-    - [Set up Collision Volumes](SVehicleCreation.md#Set up Collision Volumes)
-    - [Rigidize](SVehicleCreation.md#Rigidize)
-    - [Setting up Wheel Axes](SVehicleCreation.md#Setting up Wheel Axes)
-    - [Setting up Suspension Axes](SVehicleCreation.md#Setting up Suspension Axes)
-    - [Save the Animation Package](SVehicleCreation.md#Save the Animation Package)
-  + [Rockin' Your Model In-Game](SVehicleCreation.md#Rockin' Your Model In-Game)
-  + [Download](SVehicleCreation.md#Download)
+* [SVehicle Creation](SVehicleCreation.md#svehicle-creation)
+  + [Related Documents](SVehicleCreation.md#related-documents)
+  + [Do First (pre-v3323)](SVehicleCreation.md#do-first-pre-v3323))
+  + [Intro](SVehicleCreation.md#intro)
+  + [Creation Overview](SVehicleCreation.md#creation-overview)
+  + [Rendering Speed Concerns](SVehicleCreation.md#rendering-speed-concerns)
+  + [Center of Mass and Inertia](SVehicleCreation.md#center-of-mass-and-inertia)
+  + [Creating SVehicles in Maya](SVehicleCreation.md#creating-svehicles-in-maya)
+    - [Making the Car](SVehicleCreation.md#making-the-car)
+      * [Bone Orientation](SVehicleCreation.md#bone-orientation)
+    - [Importing the Car in UnrealEd](SVehicleCreation.md#importing-the-car-in-_unrealed)
+  + [Creating SVehicles in 3D Studio MAX](SVehicleCreation.md#creating-svehicles-in-3d-studio-max)
+    - [Making the Car](SVehicleCreation.md#making-the-car)
+      * [Construction](SVehicleCreation.md#construction)
+      * [Linking](SVehicleCreation.md#linking)
+      * [Naming](SVehicleCreation.md#naming)
+      * [Orientation](SVehicleCreation.md#orientation)
+      * [Pivot Points](SVehicleCreation.md#pivot-points)
+      * [Mirroring](SVehicleCreation.md#mirroring)
+      * [Reset Pivots](SVehicleCreation.md#reset-pivots)
+      * [Exporting](SVehicleCreation.md#exporting)
+      * [MAX Model](SVehicleCreation.md#max-model)
+    - [Importing the Car in UnrealEd](SVehicleCreation.md#importing-the-car-in-_unrealed)
+  + [Setting Up SVehicles in UnrealEd](SVehicleCreation.md#setting-up-svehicles-in-_unrealed)
+    - [Set up Collision Volumes](SVehicleCreation.md#set-up-collision-volumes)
+    - [Rigidize](SVehicleCreation.md#rigidize)
+    - [Setting up Wheel Axes](SVehicleCreation.md#setting-up-wheel-axes)
+    - [Setting up Suspension Axes](SVehicleCreation.md#setting-up-suspension-axes)
+    - [Save the Animation Package](SVehicleCreation.md#save-the-animation-package)
+  + [Rockin' Your Model In-Game](SVehicleCreation.md#rockin-your-model-in-game)
+  + [Download](SVehicleCreation.md#download)
 
 ## Related Documents
 
@@ -52,11 +52,11 @@ SVehicles are a different type of Karma vehicle than KVehicles. The main differe
 
 ## Rendering Speed Concerns
 
-Traditionally, rendering speed is a concern for skeletal meshes in Unreal. This however is not the case for SVehicles, because they can take advantage of [Rigidize](SVehicleCreation.md#Rigidize) which will speed up the rendering of the parts of skeletal meshes that have only one influence. Given that SVehicles generally do not have vertices that are influence by 2 or more bones, [Rigidize](SVehicleCreation.md#Rigidize) makes SVehicles render about as fast static meshes.
+Traditionally, rendering speed is a concern for skeletal meshes in Unreal. This however is not the case for SVehicles, because they can take advantage of [Rigidize](SVehicleCreation.md#rigidize) which will speed up the rendering of the parts of skeletal meshes that have only one influence. Given that SVehicles generally do not have vertices that are influence by 2 or more bones, [Rigidize](SVehicleCreation.md#rigidize) makes SVehicles render about as fast static meshes.
 
 ## Center of Mass and Inertia
 
-SVehicles are simulated with Karma and so the familiar concepts of center of mass and rotational inertia apply. When modeling an SVehicle, one can affect the center of mass but not the rotational inertia. These topics are covered here:[Center of Mass](SVehicleReference.md#Center_of_Mass)[Rotational Inertia](SVehicleReference.md#Rotational_Inertia)
+SVehicles are simulated with Karma and so the familiar concepts of center of mass and rotational inertia apply. When modeling an SVehicle, one can affect the center of mass but not the rotational inertia. These topics are covered here:[Center of Mass](SVehicleReference.md#center_of_mass)[Rotational Inertia](SVehicleReference.md#rotational_inertia)
 
 ## Creating SVehicles in Maya
 
@@ -79,7 +79,7 @@ By default, when creating bones in Maya, each bone will be oriented with world c
 
 ### Importing the Car in UnrealEd
 
-Once you have the .PSK file, you are ready to import the car into UnrealEd. Open the "Animations" browser in UnrealEd and select "Mesh import" from the File menu. Find the .PSK file you want and then in the "Import Mesh/Animation" make sure you check "Assume Maya coordinates" box and then click "OK". At this point, models from Maya and MAX are basically the same except that the coordinate systems are most likely different. Now you are ready for the [Setting Up SVehicles in UnrealEd](SVehicleCreation.md#Setting_Up_SVehicles_in_UnrealEd) section.
+Once you have the .PSK file, you are ready to import the car into UnrealEd. Open the "Animations" browser in UnrealEd and select "Mesh import" from the File menu. Find the .PSK file you want and then in the "Import Mesh/Animation" make sure you check "Assume Maya coordinates" box and then click "OK". At this point, models from Maya and MAX are basically the same except that the coordinate systems are most likely different. Now you are ready for the [Setting Up SVehicles in UnrealEd](SVehicleCreation.md#setting_up_svehicles_in_unrealed) section.
 
 ## Creating SVehicles in 3D Studio MAX
 
@@ -119,7 +119,7 @@ When you set up your car, you will need to change the pivot points for some of t
 
 ![max2.jpg](../assets/max2.jpg)
 
-The orientation of the pivots is also important because it affects which way the tires and suspension rotate. You can see the alignment of the pivots by going to hierarchy and clicking "Affect Pivot Only". You should be able to freely rotate the pivots with this selected. If for some reason you can not rotate the pivot without affecting the object, you need to [Reset Pivots](SVehicleCreation.md#Reset_Pivots).In the example car all the pivots are oriented with the world coordinate system. This means that X (red) is forward, Y (green) is left, and Z (blue) is up. In most cases, this is what you want. You can set all the pivots by selecting all the objects, making sure "Affect Pivot Only" is selected and then typing 0.0 in all the "Absolute:World" rotation dialog. (You can set the car to a Maya coordinate system by typing 90 in X and 90 in Z.)Now that we have the pivots set to world orientation, we can easily see
+The orientation of the pivots is also important because it affects which way the tires and suspension rotate. You can see the alignment of the pivots by going to hierarchy and clicking "Affect Pivot Only". You should be able to freely rotate the pivots with this selected. If for some reason you can not rotate the pivot without affecting the object, you need to [Reset Pivots](SVehicleCreation.md#reset_pivots).In the example car all the pivots are oriented with the world coordinate system. This means that X (red) is forward, Y (green) is left, and Z (blue) is up. In most cases, this is what you want. You can set all the pivots by selecting all the objects, making sure "Affect Pivot Only" is selected and then typing 0.0 in all the "Absolute:World" rotation dialog. (You can set the car to a Maya coordinate system by typing 90 in X and 90 in Z.)Now that we have the pivots set to world orientation, we can easily see
 we want the wheels to rotate around the Y axis.
 
 ![Pivot1.jpg](../assets/pivot1.jpg)
@@ -161,7 +161,7 @@ You can download the [MAXCar.max](rsrc/Two/SVehicleCreation/MAXCar.max) file to 
 
 ### Importing the Car in UnrealEd
 
-Once you have the .PSK file, you are ready to import the car into UnrealEd. Open the "Animations" browser in UnrealEd and select "Mesh import" from the File menu. Find the .PSK file you want and then in the "Import Mesh/Animation" set up the package, group, and name, then click "OK". At this point, models from MAX and Maya are basically the same except that the coordinate systems are most likely different. Now you are ready for the [Setting Up SVehicles in UnrealEd](SVehicleCreation.md#Setting_Up_SVehicles_in_UnrealEd) section.
+Once you have the .PSK file, you are ready to import the car into UnrealEd. Open the "Animations" browser in UnrealEd and select "Mesh import" from the File menu. Find the .PSK file you want and then in the "Import Mesh/Animation" set up the package, group, and name, then click "OK". At this point, models from MAX and Maya are basically the same except that the coordinate systems are most likely different. Now you are ready for the [Setting Up SVehicles in UnrealEd](SVehicleCreation.md#setting_up_svehicles_in_unrealed) section.
 
 ## Setting Up SVehicles in UnrealEd
 
@@ -169,19 +169,19 @@ Once you have the vehicles you made in UnrealEd, you will need to do a few thing
 
 ### Set up Collision Volumes
 
-Meshes need at least one collision volume defined before they will work. Adding collision volumes is described in the [SVehicle Reference](SVehicleReference.md#Collision_Volumes).
+Meshes need at least one collision volume defined before they will work. Adding collision volumes is described in the [SVehicle Reference](SVehicleReference.md#collision_volumes).
 
 ### Rigidize
 
-As mentioned in [Rendering Speed Concerns](SVehicleCreation.md#Rendering_Speed_Concerns) Rigidize speeds up the rendering of SVehicles. See the [Animation Browser Reference](../Content Creation/Animation/AnimBrowserReference.md#Rigidize) for more details on Rigidize.Rigidize is part of the LOD settings of the mesh in the Animations browser. By default, meshes will have 4 levels of detail. You only want one. Delete all but the first LOD in *LODLevels*. In the one remaining LOD, go to *Rigidize* and set *MeshSectionMethod* to "MSM\_Mixed". Once this is done, pull down "Mesh" in the main menu bar and select "Redigest Lod". Now click the wireframe button (it is the button with the yellow wireframe) on the tool bar. Your model should now be all red. If any part is yellow, that means it has more than one influence and it will not be rigidized.
+As mentioned in [Rendering Speed Concerns](SVehicleCreation.md#rendering_speed_concerns) Rigidize speeds up the rendering of SVehicles. See the [Animation Browser Reference](../Content Creation/Animation/AnimBrowserReference.md#rigidize) for more details on Rigidize.Rigidize is part of the LOD settings of the mesh in the Animations browser. By default, meshes will have 4 levels of detail. You only want one. Delete all but the first LOD in *LODLevels*. In the one remaining LOD, go to *Rigidize* and set *MeshSectionMethod* to "MSM\_Mixed". Once this is done, pull down "Mesh" in the main menu bar and select "Redigest Lod". Now click the wireframe button (it is the button with the yellow wireframe) on the tool bar. Your model should now be all red. If any part is yellow, that means it has more than one influence and it will not be rigidized.
 
 ### Setting up Wheel Axes
 
-Now you need to pick which axis the wheels should rotate about. The axis you are choosing is an axis of the wheel's local bone coordinate system defined in the modeling program. This is defined per wheel in the *Wheels* array of the SVehicle. Refer to the [BoneRollAxis](SVehicleReference.md#BoneRollAxis)  and [BoneSteerAxis](SVehicleReference.md#BoneSteerAxis)  variables in the [SVehicleReference](SVehicleReference.md) doc.If you created your model in Maya, you probably don't need to change anything because by default, wheels rotate about the X axis of the wheel bone coordinate system. In Maya the default orientation of bone coordinate systems points the X axis to the left, which makes it the correct axis to rotate about.If you are using MAX the axis about which you want to rotate depends how you oriented the pivots of the wheel objects (see [Pivot Points](SVehicleCreation.md#Pivot_Points) for more details). If you aligned the pivots with the world coordinates, you should rotate the wheels about the Y axis.
+Now you need to pick which axis the wheels should rotate about. The axis you are choosing is an axis of the wheel's local bone coordinate system defined in the modeling program. This is defined per wheel in the *Wheels* array of the SVehicle. Refer to the [BoneRollAxis](SVehicleReference.md#bonerollaxis)  and [BoneSteerAxis](SVehicleReference.md#bonesteeraxis)  variables in the [SVehicleReference](SVehicleReference.md) doc.If you created your model in Maya, you probably don't need to change anything because by default, wheels rotate about the X axis of the wheel bone coordinate system. In Maya the default orientation of bone coordinate systems points the X axis to the left, which makes it the correct axis to rotate about.If you are using MAX the axis about which you want to rotate depends how you oriented the pivots of the wheel objects (see [Pivot Points](SVehicleCreation.md#pivot_points) for more details). If you aligned the pivots with the world coordinates, you should rotate the wheels about the Y axis.
 
 ### Setting up Suspension Axes
 
-You need to choose which axis about which the suspension should rotate. The axis you are choosing is an axis of the suspension support's local bone coordinate system defined in the modeling program. This is defined per wheel in the *Wheels* array of the SVehicle. Refer to the [SupportBoneAxis](SVehicleReference.md#SupportBoneAxis) variable in the [SVehicleReference](SVehicleReference.md) doc.If you are using Maya and did not change the orientation of the bones, you will probably want to pick the X axis or the Z axis. The [SupportBoneAxis](SVehicleReference.md#SupportBoneAxis) description talks more about this choice. In the [example map](../assets/svehicleexample.zip), both Maya cars use the X axis but they work ok with the Z axis if you set them to that.If you are using MAX the axis about which you want to rotate depends how you oriented the pivots of the suspension objects (see [Pivot Points](SVehicleCreation.md#Pivot_Points) for more details). If you aligned the pivots with the world coordinates, you probably want to rotate about the X or Y axes. The X axis MAX is the same as the [Z axis](SVehicleReference.md#SupportBoneAxis) in Maya, while the Y axis in MAX is the same as the [X axis](SVehicleReference.md#SupportBoneAxis) in Maya. In the [example map](../assets/svehicleexample.zip), the MAX car uses the Y axis but it will work ok with the X axis if you set it to that.
+You need to choose which axis about which the suspension should rotate. The axis you are choosing is an axis of the suspension support's local bone coordinate system defined in the modeling program. This is defined per wheel in the *Wheels* array of the SVehicle. Refer to the [SupportBoneAxis](SVehicleReference.md#supportboneaxis) variable in the [SVehicleReference](SVehicleReference.md) doc.If you are using Maya and did not change the orientation of the bones, you will probably want to pick the X axis or the Z axis. The [SupportBoneAxis](SVehicleReference.md#supportboneaxis) description talks more about this choice. In the [example map](../assets/svehicleexample.zip), both Maya cars use the X axis but they work ok with the Z axis if you set them to that.If you are using MAX the axis about which you want to rotate depends how you oriented the pivots of the suspension objects (see [Pivot Points](SVehicleCreation.md#pivot_points) for more details). If you aligned the pivots with the world coordinates, you probably want to rotate about the X or Y axes. The X axis MAX is the same as the [Z axis](SVehicleReference.md#supportboneaxis) in Maya, while the Y axis in MAX is the same as the [X axis](SVehicleReference.md#supportboneaxis) in Maya. In the [example map](../assets/svehicleexample.zip), the MAX car uses the Y axis but it will work ok with the X axis if you set it to that.
 
 ### Save the Animation Package
 

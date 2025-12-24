@@ -2,32 +2,32 @@
 
 *Document Summary: Using visual explanations, this doc shows how various Unreal elements can be combined to create a scene.**Document Changelog: Last updated by Jason Lentz (DemiurgeStudios?), for creation purposes. Original author was Jason Lentz (DemiurgeStudios?).*
 
-* [Breakaway Example](BreakAwayExample.md#Breakaway Example)
-  + [Introduction](BreakAwayExample.md#Introduction)
-  + [Order of Operations](BreakAwayExample.md#Order of Operations)
-    - [Subtracting Out the World Space](BreakAwayExample.md#Subtracting Out the World Space)
-    - [Adding a Rough Terrain](BreakAwayExample.md#Adding a Rough Terrain)
-    - [Adding/Subtracting secondary BSP zones](BreakAwayExample.md#Adding/Subtracting secondary BSP zones)
-    - [Adding World Geometry](BreakAwayExample.md#Adding World Geometry)
-    - [Adding Water and Other effects](BreakAwayExample.md#Adding Water and Other effects)
-    - [Adding Polish](BreakAwayExample.md#Adding Polish)
-  + [Creating the BSP Space](BreakAwayExample.md#Creating the BSP Space)
-    - [Setting up the Zones](BreakAwayExample.md#Setting up the Zones)
-    - [Connecting to the Terrain](BreakAwayExample.md#Connecting to the Terrain)
-    - [Advantages of BSP](BreakAwayExample.md#Advantages of BSP)
-    - [BSP Editing Tools and Techniques Used](BreakAwayExample.md#BSP Editing Tools and Techniques Used)
-    - [BSP Holes](BreakAwayExample.md#BSP Holes)
-    - [Additional BSP references](BreakAwayExample.md#Additional BSP references)
-  + [Setting up Trees with Shadows](BreakAwayExample.md#Setting up Trees with Shadows)
-    - [Basic Tree StaticMesh](BreakAwayExample.md#Basic Tree _StaticMesh)
-    - [Shadow Projector](BreakAwayExample.md#Shadow Projector)
-    - [Special Materials for Leaves](BreakAwayExample.md#Special Materials for Leaves)
-    - [Assembling the Torches](BreakAwayExample.md#Assembling the Torches)
-  + [Giving Atmosphere to the Level](BreakAwayExample.md#Giving Atmosphere to the Level)
-    - [Sun Light](BreakAwayExample.md#Sun Light)
-    - [Rolling Clouds](BreakAwayExample.md#Rolling Clouds)
-    - [Sky Zone](BreakAwayExample.md#Sky Zone)
-    - [Distance Fog](BreakAwayExample.md#Distance Fog)
+* [Breakaway Example](BreakAwayExample.md#breakaway-example)
+  + [Introduction](BreakAwayExample.md#introduction)
+  + [Order of Operations](BreakAwayExample.md#order-of-operations)
+    - [Subtracting Out the World Space](BreakAwayExample.md#subtracting-out-the-world-space)
+    - [Adding a Rough Terrain](BreakAwayExample.md#adding-a-rough-terrain)
+    - [Adding/Subtracting secondary BSP zones](BreakAwayExample.md#addingsubtracting-secondary-bsp-zones)
+    - [Adding World Geometry](BreakAwayExample.md#adding-world-geometry)
+    - [Adding Water and Other effects](BreakAwayExample.md#adding-water-and-other-effects)
+    - [Adding Polish](BreakAwayExample.md#adding-polish)
+  + [Creating the BSP Space](BreakAwayExample.md#creating-the-bsp-space)
+    - [Setting up the Zones](BreakAwayExample.md#setting-up-the-zones)
+    - [Connecting to the Terrain](BreakAwayExample.md#connecting-to-the-terrain)
+    - [Advantages of BSP](BreakAwayExample.md#advantages-of-bsp)
+    - [BSP Editing Tools and Techniques Used](BreakAwayExample.md#bsp-editing-tools-and-techniques-used)
+    - [BSP Holes](BreakAwayExample.md#bsp-holes)
+    - [Additional BSP references](BreakAwayExample.md#additional-bsp-references)
+  + [Setting up Trees with Shadows](BreakAwayExample.md#setting-up-trees-with-shadows)
+    - [Basic Tree StaticMesh](BreakAwayExample.md#basic-tree-_staticmesh)
+    - [Shadow Projector](BreakAwayExample.md#shadow-projector)
+    - [Special Materials for Leaves](BreakAwayExample.md#special-materials-for-leaves)
+    - [Assembling the Torches](BreakAwayExample.md#assembling-the-torches)
+  + [Giving Atmosphere to the Level](BreakAwayExample.md#giving-atmosphere-to-the-level)
+    - [Sun Light](BreakAwayExample.md#sun-light)
+    - [Rolling Clouds](BreakAwayExample.md#rolling-clouds)
+    - [Sky Zone](BreakAwayExample.md#sky-zone)
+    - [Distance Fog](BreakAwayExample.md#distance-fog)
 
 ![runtime_map.jpg](../assets/runtime_map.jpg)
 
@@ -43,16 +43,16 @@ The map being referenced in this example is the EM\_Runtime map that comes with 
 
 The creation of the level can be broken down into six stages:
 
-* [1](BreakAwayExample.md#OnE) Subtracting out a large BSP zone for the world
-* [2](BreakAwayExample.md#TwO) Adding the Terrain and roughly sculpting it
-* [3](BreakAwayExample.md#ThreE) Adding the secondary BSP addition then subtractions with zones
-* [4](BreakAwayExample.md#FouR) Adding world geometry
-* [5](BreakAwayExample.md#FivE) Adding water and other effects
-* [6](BreakAwayExample.md#SiX) Polishing everything (sounds, special materials, better lighting)
+* [1](BreakAwayExample.md#one) Subtracting out a large BSP zone for the world
+* [2](BreakAwayExample.md#two) Adding the Terrain and roughly sculpting it
+* [3](BreakAwayExample.md#three) Adding the secondary BSP addition then subtractions with zones
+* [4](BreakAwayExample.md#four) Adding world geometry
+* [5](BreakAwayExample.md#five) Adding water and other effects
+* [6](BreakAwayExample.md#six) Polishing everything (sounds, special materials, better lighting)
 
 ### Subtracting Out the World Space
 
-There is also of course a *zeroth* step which is the designing of your level but once you've figured out what you want where and how big, you are ready to subtract out your world space. If you misjudge how large your world needs to be, you may need to make more subtractions later, which is not ideal. So when in doubt, it is best to error on the side of larger rather than smaller.After subtracting the space you will need to do three more things, make sure the faces are set up to be Fake Backdrop, add a SunLight Actor, and then set up a ZoneInfo. The only fields that are necessary to fill out right now are **bTerrainZone = True** and some sort of **AmbientBrightness.** It might also be a good idea to set **bDistanceFog = True** but we'll get to that later in this doc.One last thing you can do to make your life just a little bit easier, is to increase the **DrawScale** to something on the order of 10 or 20 so it's easier to find in the level. This only changes the size of the icon, so it's a purely cosmetic feature that will only be noticeable in the Editor.For more about setting up a basic world space see the [Intro To Unreal Ed](../Content Creation/Basics/IntroToUnrealEd.md#Creating_the_Basic_World_Space) doc.
+There is also of course a *zeroth* step which is the designing of your level but once you've figured out what you want where and how big, you are ready to subtract out your world space. If you misjudge how large your world needs to be, you may need to make more subtractions later, which is not ideal. So when in doubt, it is best to error on the side of larger rather than smaller.After subtracting the space you will need to do three more things, make sure the faces are set up to be Fake Backdrop, add a SunLight Actor, and then set up a ZoneInfo. The only fields that are necessary to fill out right now are **bTerrainZone = True** and some sort of **AmbientBrightness.** It might also be a good idea to set **bDistanceFog = True** but we'll get to that later in this doc.One last thing you can do to make your life just a little bit easier, is to increase the **DrawScale** to something on the order of 10 or 20 so it's easier to find in the level. This only changes the size of the icon, so it's a purely cosmetic feature that will only be noticeable in the Editor.For more about setting up a basic world space see the [Intro To Unreal Ed](../Content Creation/Basics/IntroToUnrealEd.md#creating_the_basic_world_space) doc.
 
 ### Adding a Rough Terrain
 
@@ -62,7 +62,7 @@ Next in the process for creating the Runtime map a rough Terrain was added. In t
 
 ### Adding/Subtracting secondary BSP zones
 
-Once a rough layout of the landscape of the entire level is set up, then the more detailed underground BSP section was added. This in itself was a multi-step process, but the most important part was setting it up to make sure it would fit beneath the Terrain without popping through. A more detailed description of the BSP space can be found [below.](BreakAwayExample.md#Creating_the_BSP_Space) Also in this step a sky box was added to help give the entire world a better sense of place.
+Once a rough layout of the landscape of the entire level is set up, then the more detailed underground BSP section was added. This in itself was a multi-step process, but the most important part was setting it up to make sure it would fit beneath the Terrain without popping through. A more detailed description of the BSP space can be found [below.](BreakAwayExample.md#creating_the_bsp_space) Also in this step a sky box was added to help give the entire world a better sense of place.
 
 ### Adding World Geometry
 
@@ -163,7 +163,7 @@ To create the appearance of several different similar types of trees and avoid o
 
 ### Shadow Projector
 
-To set up a more elaborate shadow, a projector is used in conjunction with the tree mesh. This will require a special additional texture to be created, by taking a screenshot of the tree in the level and importing desaturating then importing it as described in the [Advanced Lighting Example Map doc](ExampleMapsAdvLighting.md#Single_Tree_Shadow).In the EM\_RunTime map the sun is at such a steep angle that the shadow is close enough to being directly beneath it that a simple TexRotator that subtly oscillated back and for was used to give the effect that the shadow of the leaves are waiving just as the leaves in the tree are. The next section describes briefly how the leaves were made to wave.
+To set up a more elaborate shadow, a projector is used in conjunction with the tree mesh. This will require a special additional texture to be created, by taking a screenshot of the tree in the level and importing desaturating then importing it as described in the [Advanced Lighting Example Map doc](ExampleMapsAdvLighting.md#single_tree_shadow).In the EM\_RunTime map the sun is at such a steep angle that the shadow is close enough to being directly beneath it that a simple TexRotator that subtly oscillated back and for was used to give the effect that the shadow of the leaves are waiving just as the leaves in the tree are. The next section describes briefly how the leaves were made to wave.
 
 ### Special Materials for Leaves
 
@@ -183,7 +183,7 @@ The torches in the EM\_RunTime map are made up of four parts, the StaticMesh, th
 
 ![BA_torch.jpg](../assets/ba_torch.jpg)
 
-The AmbientSound, for simplicities sake was set in the Sound property of the Fire Emitter -this way if you need to copy or move a torch set up you have one less object to select. The light is best left as a separate actor as the lighting looks much better if it is actually set apart from the wall some and thus the apparent light source. And of course the Emitter and StaticMesh must be separate actors.One helpful tool used in organizing this torch set is the Groups Browser. By creating a group that has just the lights for the torch you can then go back later if you want to tweak the lighting to adjust the hue or brightness. You could even create a hidden mover that constantly wiggles back and forth, attach all the lights to it at once, and set them to bDynamicLight = *True* to create a shimmering effect consistent with flickering flame. If the lights were not in their own group, this task would be as many times more time consuming as you have lights, and there's always the chance you might miss one.For more on using the Groups Browser, see the [GroupsBrowser](GroupsBrowser.md) document. Also you can see more cool effects that you can add to your torch in the [Advanced Lighting Example Map doc](ExampleMapsAdvLighting.md#Wavering_Torch_Light). If you are curious about how to create your own fire emitter, check out the this example in the [Emitters Examples doc](EmittersExamples.md#The_Torches).
+The AmbientSound, for simplicities sake was set in the Sound property of the Fire Emitter -this way if you need to copy or move a torch set up you have one less object to select. The light is best left as a separate actor as the lighting looks much better if it is actually set apart from the wall some and thus the apparent light source. And of course the Emitter and StaticMesh must be separate actors.One helpful tool used in organizing this torch set is the Groups Browser. By creating a group that has just the lights for the torch you can then go back later if you want to tweak the lighting to adjust the hue or brightness. You could even create a hidden mover that constantly wiggles back and forth, attach all the lights to it at once, and set them to bDynamicLight = *True* to create a shimmering effect consistent with flickering flame. If the lights were not in their own group, this task would be as many times more time consuming as you have lights, and there's always the chance you might miss one.For more on using the Groups Browser, see the [GroupsBrowser](GroupsBrowser.md) document. Also you can see more cool effects that you can add to your torch in the [Advanced Lighting Example Map doc](ExampleMapsAdvLighting.md#wavering_torch_light). If you are curious about how to create your own fire emitter, check out the this example in the [Emitters Examples doc](EmittersExamples.md#the_torches).
 
 ---
 
@@ -197,11 +197,11 @@ There are several tools that one can use to create a sense of atmosphere and a r
 
 ### Sun Light
 
-The SunLight Actor was among the first of these elements to be placed and set up in the level, and also one of the easiest, but it is very important to note that how the SunLight is set up will affect several other aspects of the level. For instance, as mentioned [above](BreakAwayExample.md#TreeShadow), the Projectors used for the Tree Shadows are aligned to match the same exact rotation of the SunLight Actor.Another thing that the SunLight will obviously have a dramatic impact on are the shadows cast by the Terrain as well as the time of day. You will want to experiment with the LightColor fields as well as the Rotation settings in the SunLight Actor to make sure that it's not obscuring important parts of your level and is highlighting areas that you do want out in the light.
+The SunLight Actor was among the first of these elements to be placed and set up in the level, and also one of the easiest, but it is very important to note that how the SunLight is set up will affect several other aspects of the level. For instance, as mentioned [above](BreakAwayExample.md#treeshadow), the Projectors used for the Tree Shadows are aligned to match the same exact rotation of the SunLight Actor.Another thing that the SunLight will obviously have a dramatic impact on are the shadows cast by the Terrain as well as the time of day. You will want to experiment with the LightColor fields as well as the Rotation settings in the SunLight Actor to make sure that it's not obscuring important parts of your level and is highlighting areas that you do want out in the light.
 
 ### Rolling Clouds
 
-To create a rolling clouds all you really need is a panning cloud texture and a really large projector that casts down across the entire level. For a more detailed description you can take a look at the [Advanced Lighting Example Map](ExampleMapsAdvLighting.md#Rolling_Clouds) doc.Some things to watch out for when setting up your rolling clouds Projector are artifacts that occur on masked and alpha-ed textures (like the leaves in the tree StaticMesh) as well as indoor spaces that are still within the MaxTraceDistance of the Projector. There are a couple ways to take care of these issues. Mainly, just make sure that the Projector isn't casting on the surfaces. This can be accomplished with any of the following techniques:
+To create a rolling clouds all you really need is a panning cloud texture and a really large projector that casts down across the entire level. For a more detailed description you can take a look at the [Advanced Lighting Example Map](ExampleMapsAdvLighting.md#rolling_clouds) doc.Some things to watch out for when setting up your rolling clouds Projector are artifacts that occur on masked and alpha-ed textures (like the leaves in the tree StaticMesh) as well as indoor spaces that are still within the MaxTraceDistance of the Projector. There are a couple ways to take care of these issues. Mainly, just make sure that the Projector isn't casting on the surfaces. This can be accomplished with any of the following techniques:
 
 * ProjectTag settings
 * bAcceptProjectors on the non-cooperative Actors
@@ -217,4 +217,4 @@ As you can see, the SkyZone is constructed out of four StaticMeshes -or rather t
 
 ### Distance Fog
 
-The last thing you can use to create a sense of atmosphere in your level is to turn on Distance Fog in your ZoneInfo. By playing with the DistanceFogEnd and DistanceFogStart values you can get the density of fog you want, and then by making the DistanceFogColor matching the inner ring of a sky cylinder, you will get the effect of things being culled by the Distance Fog will appear as if they are blending into the horizon.For additional information on using Distance Fog, see the [Level Optimization doc](../Content Creation/Techniques/LevelOptimization.md#Distance_Fog).
+The last thing you can use to create a sense of atmosphere in your level is to turn on Distance Fog in your ZoneInfo. By playing with the DistanceFogEnd and DistanceFogStart values you can get the density of fog you want, and then by making the DistanceFogColor matching the inner ring of a sky cylinder, you will get the effect of things being culled by the Distance Fog will appear as if they are blending into the horizon.For additional information on using Distance Fog, see the [Level Optimization doc](../Content Creation/Techniques/LevelOptimization.md#distance_fog).

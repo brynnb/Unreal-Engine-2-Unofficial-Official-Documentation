@@ -2,12 +2,12 @@
 
 *Document Summary: A guide to setting up KActors with KConstraints.**Document Changelog: Last updated by Jason Lentz (DemiurgeStudios?) to correct .ASE and .MAX files, update for the 2226 build, and for re-organizational purposes. Original author was James Golding. ( [jamesg@epicgames.com](mailto:jamesg@epicgames.com) )*
 
-* [Using Karma Actors](UsingKarmaActors.md#Using Karma Actors)
-  + [Overview](UsingKarmaActors.md#Overview)
-  + [Getting Started](UsingKarmaActors.md#Getting Started)
-  + [Adding To a Level](UsingKarmaActors.md#Adding To a Level)
-  + [Adding a Hinge Constraint](UsingKarmaActors.md#Adding a Hinge Constraint)
-  + [Motorizing The Hinge](UsingKarmaActors.md#Motorizing The Hinge)
+* [Using Karma Actors](UsingKarmaActors.md#using-karma-actors)
+  + [Overview](UsingKarmaActors.md#overview)
+  + [Getting Started](UsingKarmaActors.md#getting-started)
+  + [Adding To a Level](UsingKarmaActors.md#adding-to-a-level)
+  + [Adding a Hinge Constraint](UsingKarmaActors.md#adding-a-hinge-constraint)
+  + [Motorizing The Hinge](UsingKarmaActors.md#motorizing-the-hinge)
 
 ## Overview
 

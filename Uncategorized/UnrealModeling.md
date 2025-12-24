@@ -2,25 +2,25 @@
 
 *Document Summary: This document suggests some design choices that are appropriate for modeling for Unreal. Also, a suggested polycount for levels and characters is supplied. Suitable for any modeler new to modeling for the Unreal Engine.**Document Changelog: Last updated by Michiel Hendriks, few minor changes. Previously updated by Tom Lin (DemiurgeStudios?), for document summary. Original author was Tom Lin (DemiurgeStudios?).*
 
-* [Unreal Modeling Guide](UnrealModeling.md#Unreal Modeling Guide)
-  + [Making Models for the Unreal Engine](UnrealModeling.md#Making Models for the Unreal Engine)
-  + [Planning the Model](UnrealModeling.md#Planning the Model)
-  + [Smooth Meshes](UnrealModeling.md#Smooth Meshes)
-  + [Extra Articulation](UnrealModeling.md#Extra Articulation)
-    - [Movable Eyes](UnrealModeling.md#Movable Eyes)
-    - [Eyelids](UnrealModeling.md#Eyelids)
-    - [Tongue](UnrealModeling.md#Tongue)
-  + [The Refpose](UnrealModeling.md#The Refpose)
-  + [Smoothing Groups](UnrealModeling.md#Smoothing Groups)
-  + [In-Game Perspective](UnrealModeling.md#In-Game Perspective)
-  + [Unreal Engine tips](UnrealModeling.md#Unreal Engine tips)
-    - [Clipping Polygons](UnrealModeling.md#Clipping Polygons)
-    - [Single-sided polygons](UnrealModeling.md#Single-sided polygons)
-    - [Holes](UnrealModeling.md#Holes)
-  + [Comparative Detail Levels](UnrealModeling.md#Comparative Detail Levels)
-    - [Unreal II](UnrealModeling.md#Unreal II)
-    - [UT2003](UnrealModeling.md#UT2003)
-    - [Unreal Tournament](UnrealModeling.md#Unreal Tournament)
+* [Unreal Modeling Guide](UnrealModeling.md#unreal-modeling-guide)
+  + [Making Models for the Unreal Engine](UnrealModeling.md#making-models-for-the-unreal-engine)
+  + [Planning the Model](UnrealModeling.md#planning-the-model)
+  + [Smooth Meshes](UnrealModeling.md#smooth-meshes)
+  + [Extra Articulation](UnrealModeling.md#extra-articulation)
+    - [Movable Eyes](UnrealModeling.md#movable-eyes)
+    - [Eyelids](UnrealModeling.md#eyelids)
+    - [Tongue](UnrealModeling.md#tongue)
+  + [The Refpose](UnrealModeling.md#the-refpose)
+  + [Smoothing Groups](UnrealModeling.md#smoothing-groups)
+  + [In-Game Perspective](UnrealModeling.md#in-game-perspective)
+  + [Unreal Engine tips](UnrealModeling.md#unreal-engine-tips)
+    - [Clipping Polygons](UnrealModeling.md#clipping-polygons)
+    - [Single-sided polygons](UnrealModeling.md#single-sided-polygons)
+    - [Holes](UnrealModeling.md#holes)
+  + [Comparative Detail Levels](UnrealModeling.md#comparative-detail-levels)
+    - [Unreal II](UnrealModeling.md#unreal-ii)
+    - [UT2003](UnrealModeling.md#ut2003)
+    - [Unreal Tournament](UnrealModeling.md#unreal-tournament)
 
 ## Making Models for the Unreal Engine
 
@@ -72,7 +72,7 @@ Smoothing static meshes using smoothing groups works without any problems. Smoot
 
 ## In-Game Perspective
 
-Modeling for games is unique in that the camera has a wide range of motion. This leads to difficulty for artists, though - since the camera can be directed at a model from a variety of distances and perspectives, it can distort an otherwise good model into a misshapen mess. Looking straight down at a model's feet sometimes has the effect of making them look too small, the legs tapering down to the floor. Contrast this with looking at the same model from 50 yards away, where they might look appropriate. Some artists like to compensate for this effect by subtly widening the legs as they approach the feet, which are similarly oversized. See the [UnrealDemoModels](UnrealDemoModels.md#Feet) document for examples.There is no hard and fast rule for these situations. Evaluate how you will be displaying the models, and see what fits.Another item to keep in mind is the size that your model will be seen at. In many cases, the character on the screen will be smaller in total pixels than the texture maps you use on him. If you will be making several models, strive to distinguish them enough so that they will be recognizable at a distance.Obviously, this is more important in a multiplayer/team based game, such as UT2003.
+Modeling for games is unique in that the camera has a wide range of motion. This leads to difficulty for artists, though - since the camera can be directed at a model from a variety of distances and perspectives, it can distort an otherwise good model into a misshapen mess. Looking straight down at a model's feet sometimes has the effect of making them look too small, the legs tapering down to the floor. Contrast this with looking at the same model from 50 yards away, where they might look appropriate. Some artists like to compensate for this effect by subtly widening the legs as they approach the feet, which are similarly oversized. See the [UnrealDemoModels](UnrealDemoModels.md#feet) document for examples.There is no hard and fast rule for these situations. Evaluate how you will be displaying the models, and see what fits.Another item to keep in mind is the size that your model will be seen at. In many cases, the character on the screen will be smaller in total pixels than the texture maps you use on him. If you will be making several models, strive to distinguish them enough so that they will be recognizable at a distance.Obviously, this is more important in a multiplayer/team based game, such as UT2003.
 
 ## Unreal Engine tips
 

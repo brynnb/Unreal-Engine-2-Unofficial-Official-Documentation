@@ -2,12 +2,12 @@
 
 *Document Summary: An example map with brief documentaion on how to set up various Karma effects in UT2003.**Document Changelog: Last updated by James Golding.*
 
-* [Karma Example UT2003](KarmaExampleUT2003.md#Karma Example UT2003)
-  + [Introduction](KarmaExampleUT2003.md#Introduction)
-    - [Catapult](KarmaExampleUT2003.md#Catapult)
-    - [Swing Door](KarmaExampleUT2003.md#Swing Door)
-    - [Fan](KarmaExampleUT2003.md#Fan)
-  + [Downloads](KarmaExampleUT2003.md#Downloads)
+* [Karma Example UT2003](KarmaExampleUT2003.md#karma-example-ut2003)
+  + [Introduction](KarmaExampleUT2003.md#introduction)
+    - [Catapult](KarmaExampleUT2003.md#catapult)
+    - [Swing Door](KarmaExampleUT2003.md#swing-door)
+    - [Fan](KarmaExampleUT2003.md#fan)
+  + [Downloads](KarmaExampleUT2003.md#downloads)
 
 ## Introduction
 

@@ -2,17 +2,17 @@
 
 *Document Summary: A guide and reference to setting up Modifier Materials.**Document Changelog: Last updated by Richard Nalezynski (VirtualHeroes?). Original author was Jason Lentz (DemiurgeStudios?).*
 
-* [Modifiers](MaterialsModifiers.md#Modifiers)
-  + [Modifier Types](MaterialsModifiers.md#Modifier Types)
-    - [ColorModifier](MaterialsModifiers.md#ColorModifier)
-    - [ConstantColor](MaterialsModifiers.md#ConstantColor)
-    - [TexEnvMap](MaterialsModifiers.md#TexEnvMap)
-    - [TexOscillator](MaterialsModifiers.md#TexOscillator)
-    - [TexPanner](MaterialsModifiers.md#TexPanner)
-    - [TexRotator](MaterialsModifiers.md#TexRotator)
-      * [TexRotator Example](MaterialsModifiers.md#TexRotator Example)
-    - [TexScaler](MaterialsModifiers.md#TexScaler)
-  + [Example Map and Other Material Classes](MaterialsModifiers.md#Example Map and Other Material Classes)
+* [Modifiers](MaterialsModifiers.md#modifiers)
+  + [Modifier Types](MaterialsModifiers.md#modifier-types)
+    - [ColorModifier](MaterialsModifiers.md#colormodifier)
+    - [ConstantColor](MaterialsModifiers.md#constantcolor)
+    - [TexEnvMap](MaterialsModifiers.md#texenvmap)
+    - [TexOscillator](MaterialsModifiers.md#texoscillator)
+    - [TexPanner](MaterialsModifiers.md#texpanner)
+    - [TexRotator](MaterialsModifiers.md#texrotator)
+      * [TexRotator Example](MaterialsModifiers.md#texrotator-example)
+    - [TexScaler](MaterialsModifiers.md#texscaler)
+  + [Example Map and Other Material Classes](MaterialsModifiers.md#example-map-and-other-material-classes)
 
 ## Modifier Types
 
@@ -110,4 +110,4 @@ The TexScaler can scale a material. Put a material in Material, and then you can
 
 ![EPICmaterials1.jpg](../assets/epicmaterials1.jpg)
 
-For an example map that shows many different complex Materials in action, take a look at this document:[ExampleMapsEPIC](ExampleMapsEPIC.md#Materials_Example_Map) *(The example map is at the bottom of the page)*To return back the main Materials page, click [here](../Content Creation/Lighting and Textures/MaterialTutorial.md) <--
+For an example map that shows many different complex Materials in action, take a look at this document:[ExampleMapsEPIC](ExampleMapsEPIC.md#materials_example_map) *(The example map is at the bottom of the page)*To return back the main Materials page, click [here](../Content Creation/Lighting and Textures/MaterialTutorial.md) <--

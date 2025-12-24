@@ -4,24 +4,24 @@
 
 *Document Summary: Introduction to version 2226.20.02 of the UnrealEngine2 Runtime edition of the second-generation Unreal engine, including release information.**Document Changelog: Created; maintained over time.*
 
-* [UnrealEngine2 Runtime 2226.20.02](UnrealEngine2Runtime22262002.md#UnrealEngine2 Runtime 2226.20.02)
-  + [Overview](UnrealEngine2Runtime22262002.md#Overview)
-  + [Introduction](UnrealEngine2Runtime22262002.md#Introduction)
-  + [System Requirements](UnrealEngine2Runtime22262002.md#System Requirements)
-    - [Windows 98/Me/2000/XP Minimum](UnrealEngine2Runtime22262002.md#Windows 98/Me/2000/XP Minimum)
-    - [Windows 98/Me/2000/XP Recommended](UnrealEngine2Runtime22262002.md#Windows 98/Me/2000/XP Recommended)
-    - [GNU/Linux x86, Macintosh OS X](UnrealEngine2Runtime22262002.md#GNU/Linux x86, Macintosh OS X)
-  + [Obtaining the Runtime](UnrealEngine2Runtime22262002.md#Obtaining the Runtime)
-    - [Downloading](UnrealEngine2Runtime22262002.md#Downloading)
-    - [Installing](UnrealEngine2Runtime22262002.md#Installing)
-  + [Using the Runtime](UnrealEngine2Runtime22262002.md#Using the Runtime)
-    - [Configuring](UnrealEngine2Runtime22262002.md#Configuring)
-  + [Developing for the Runtime](UnrealEngine2Runtime22262002.md#Developing for the Runtime)
-    - [Programming the Runtime](UnrealEngine2Runtime22262002.md#Programming the Runtime)
-    - [Creating your own Runtime Content](UnrealEngine2Runtime22262002.md#Creating your own Runtime Content)
-  + [Reporting Bugs](UnrealEngine2Runtime22262002.md#Reporting Bugs)
-  + [Known Issues](UnrealEngine2Runtime22262002.md#Known Issues)
-  + [Errata](UnrealEngine2Runtime22262002.md#Errata)
+* [UnrealEngine2 Runtime 2226.20.02](UnrealEngine2Runtime22262002.md#unrealengine2-runtime-22262002)
+  + [Overview](UnrealEngine2Runtime22262002.md#overview)
+  + [Introduction](UnrealEngine2Runtime22262002.md#introduction)
+  + [System Requirements](UnrealEngine2Runtime22262002.md#system-requirements)
+    - [Windows 98/Me/2000/XP Minimum](UnrealEngine2Runtime22262002.md#windows-98me2000xp-minimum)
+    - [Windows 98/Me/2000/XP Recommended](UnrealEngine2Runtime22262002.md#windows-98me2000xp-recommended)
+    - [GNU/Linux x86, Macintosh OS X](UnrealEngine2Runtime22262002.md#gnulinux-x86-macintosh-os-x)
+  + [Obtaining the Runtime](UnrealEngine2Runtime22262002.md#obtaining-the-runtime)
+    - [Downloading](UnrealEngine2Runtime22262002.md#downloading)
+    - [Installing](UnrealEngine2Runtime22262002.md#installing)
+  + [Using the Runtime](UnrealEngine2Runtime22262002.md#using-the-runtime)
+    - [Configuring](UnrealEngine2Runtime22262002.md#configuring)
+  + [Developing for the Runtime](UnrealEngine2Runtime22262002.md#developing-for-the-runtime)
+    - [Programming the Runtime](UnrealEngine2Runtime22262002.md#programming-the-runtime)
+    - [Creating your own Runtime Content](UnrealEngine2Runtime22262002.md#creating-your-own-runtime-content)
+  + [Reporting Bugs](UnrealEngine2Runtime22262002.md#reporting-bugs)
+  + [Known Issues](UnrealEngine2Runtime22262002.md#known-issues)
+  + [Errata](UnrealEngine2Runtime22262002.md#errata)
 
 ## Overview
 
@@ -46,20 +46,20 @@ Please note that regardless of Runtime client and server availability, the conte
 * **Processor:** Intel Pentium III or AMD Athlon 733 MHz CPU
 * **Memory:** 128 MByte RAM
 * **Hard Disk Space:** 65 MByte free HD space
-* **Video:** 16 MB NVIDIA TNT2-class or other DirectX version 8-compliant video card[1](UnrealEngine2Runtime22262002.md#SysReqVideo)
-* **Sound:** Windows-compatible sound card[2](UnrealEngine2Runtime22262002.md#SysReqSound)
-* **DirectX:** DirectX version 8.1b[3](UnrealEngine2Runtime22262002.md#SysReqDX)
-* **Modem:** 33.3 Kbps[4](UnrealEngine2Runtime22262002.md#SysReqNet)
+* **Video:** 16 MB NVIDIA TNT2-class or other DirectX version 8-compliant video card[1](UnrealEngine2Runtime22262002.md#sysreqvideo)
+* **Sound:** Windows-compatible sound card[2](UnrealEngine2Runtime22262002.md#sysreqsound)
+* **DirectX:** DirectX version 8.1b[3](UnrealEngine2Runtime22262002.md#sysreqdx)
+* **Modem:** 33.3 Kbps[4](UnrealEngine2Runtime22262002.md#sysreqnet)
 
 ### Windows 98/Me/2000/XP Recommended
 
 * **Processor:** Intel Pentium III or AMD Athlon 733 MHz CPU
 * **Memory:** 256 MByte RAM
 * **Hard Disk Space:** 65 MByte free HD space
-* **Video:** 32 to 128 MB NVIDIA GeForce2 or ATI Radeon[1](UnrealEngine2Runtime22262002.md#SysReqVideo)
-* **Sound:** Sound Blaster Audigy series sound card[2](UnrealEngine2Runtime22262002.md#SysReqSound)
-* **DirectX:** DirectX version 8.1b[3](UnrealEngine2Runtime22262002.md#SysReqDX)
-* **Modem:** 56.7 Kbps[4](UnrealEngine2Runtime22262002.md#SysReqNet)
+* **Video:** 32 to 128 MB NVIDIA GeForce2 or ATI Radeon[1](UnrealEngine2Runtime22262002.md#sysreqvideo)
+* **Sound:** Sound Blaster Audigy series sound card[2](UnrealEngine2Runtime22262002.md#sysreqsound)
+* **DirectX:** DirectX version 8.1b[3](UnrealEngine2Runtime22262002.md#sysreqdx)
+* **Modem:** 56.7 Kbps[4](UnrealEngine2Runtime22262002.md#sysreqnet)
 
  1 Indicates device should be compatible with DirectX, version 8.1 or higher. 2 NVIDIA nForce or other motherboards/soundcards containing the Dolby Digital Interactive Content Encoder required for Dolby Digital audio. 3 DirectX 8.1b is not provided with the Runtime installation, and must already be present on your system or downloaded from Microsoft. See EndUserDirectX81bInstallation? for details. 4 Modem only required for modem-based Internet multi-user networking. Internet (TCP/IP) and LAN (TCP/IP) multi-user networking is also supported.
 

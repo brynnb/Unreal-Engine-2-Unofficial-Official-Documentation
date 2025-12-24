@@ -2,31 +2,31 @@
 
 *Document Summary: An overview of the improved mod support in the latest UT2004 patches.**Document Changelog: Created by [Joe Wilcox](https://udn.epicgames.com/Main/JoeWilcox). Updated by Michiel Hendriks. Maintained by Richard Nalezynski?.*
 
-* [Improved Mod Support](ImprovedModSupport.md#Improved Mod Support)
-  + [Overview](ImprovedModSupport.md#Overview)
-  + [Running a Mod](ImprovedModSupport.md#Running a Mod)
-    - [The (Magic) Commandline Switch](ImprovedModSupport.md#The (Magic) Commandline Switch)
-  + [Setting Up a Mod Project](ImprovedModSupport.md#Setting Up a Mod Project)
-    - [Getting the Resources](ImprovedModSupport.md#Getting the Resources)
-      * [Essential files](ImprovedModSupport.md#Essential files)
-      * [Other useful files](ImprovedModSupport.md#Other useful files)
-    - [Directory Structure](ImprovedModSupport.md#Directory Structure)
-    - [Script Packages](ImprovedModSupport.md#Script Packages)
-    - [Content Packages](ImprovedModSupport.md#Content Packages)
-    - [Karma Asset Files (.ka)](ImprovedModSupport.md#Karma Asset Files (.ka))
-  + [Configuration Files](ImprovedModSupport.md#Configuration Files)
-    - [Mod Configuration](ImprovedModSupport.md#Mod Configuration)
-      * [UT2004Mod.ini File](ImprovedModSupport.md#UT2004Mod.ini File)
-      * [UT2004User.ini File](ImprovedModSupport.md#UT2004User.ini File)
-    - [Alternate Class Configuration Files](ImprovedModSupport.md#Alternate Class Configuration Files)
-  + [System Files](ImprovedModSupport.md#System Files)
-    - [Log Files](ImprovedModSupport.md#Log Files)
-    - [Localization Files](ImprovedModSupport.md#Localization Files)
-    - [Cache Record Files](ImprovedModSupport.md#Cache Record Files)
-    - [Player Settings Files (.upl)](ImprovedModSupport.md#Player Settings Files (.upl))
-  + [Splash Screen](ImprovedModSupport.md#Splash Screen)
-  + [Installation and Distribution](ImprovedModSupport.md#Installation and Distribution)
-  + [Example Mod](ImprovedModSupport.md#Example Mod)
+* [Improved Mod Support](ImprovedModSupport.md#improved-mod-support)
+  + [Overview](ImprovedModSupport.md#overview)
+  + [Running a Mod](ImprovedModSupport.md#running-a-mod)
+    - [The (Magic) Commandline Switch](ImprovedModSupport.md#the-magic) Commandline Switch)
+  + [Setting Up a Mod Project](ImprovedModSupport.md#setting-up-a-mod-project)
+    - [Getting the Resources](ImprovedModSupport.md#getting-the-resources)
+      * [Essential files](ImprovedModSupport.md#essential-files)
+      * [Other useful files](ImprovedModSupport.md#other-useful-files)
+    - [Directory Structure](ImprovedModSupport.md#directory-structure)
+    - [Script Packages](ImprovedModSupport.md#script-packages)
+    - [Content Packages](ImprovedModSupport.md#content-packages)
+    - [Karma Asset Files (.ka)](ImprovedModSupport.md#karma-asset-files-ka))
+  + [Configuration Files](ImprovedModSupport.md#configuration-files)
+    - [Mod Configuration](ImprovedModSupport.md#mod-configuration)
+      * [UT2004Mod.ini File](ImprovedModSupport.md#ut2004modini-file)
+      * [UT2004User.ini File](ImprovedModSupport.md#ut2004userini-file)
+    - [Alternate Class Configuration Files](ImprovedModSupport.md#alternate-class-configuration-files)
+  + [System Files](ImprovedModSupport.md#system-files)
+    - [Log Files](ImprovedModSupport.md#log-files)
+    - [Localization Files](ImprovedModSupport.md#localization-files)
+    - [Cache Record Files](ImprovedModSupport.md#cache-record-files)
+    - [Player Settings Files (.upl)](ImprovedModSupport.md#player-settings-files-upl))
+  + [Splash Screen](ImprovedModSupport.md#splash-screen)
+  + [Installation and Distribution](ImprovedModSupport.md#installation-and-distribution)
+  + [Example Mod](ImprovedModSupport.md#example-mod)
 
 ## Overview
 
@@ -101,11 +101,11 @@ c:\ut2004
    +- Web
 ```
 
-All of the game's content and script packages are nicely seperated in various folders.The isolated directory of your mod should be created in the same root directory. Therefore, create a directory called `MyMod` in the root directory. The name of this directory is important because that's the name you will have to use for the **-mod=** commandline switch. So, now you should have a directory called *c:\ut2004\MyMod*. This directory will be the root directory of your mod that will contain your mod's content and scripts.How you further organise the content in the *MyMod* directory is up to you, with one exception: a sub-directory called `System` has to exist. The rest of the directories is up to your [configuration](ImprovedModSupport.md#DefaultIni).
+All of the game's content and script packages are nicely seperated in various folders.The isolated directory of your mod should be created in the same root directory. Therefore, create a directory called `MyMod` in the root directory. The name of this directory is important because that's the name you will have to use for the **-mod=** commandline switch. So, now you should have a directory called *c:\ut2004\MyMod*. This directory will be the root directory of your mod that will contain your mod's content and scripts.How you further organise the content in the *MyMod* directory is up to you, with one exception: a sub-directory called `System` has to exist. The rest of the directories is up to your [configuration](ImprovedModSupport.md#defaultini).
 
 ### Script Packages
 
-The *c:\ut2004\MyMod* directory will be used as the root directory of your mod (when the programs are started with the **-mod=MyMod** switch). Even though you can include content from UT2004's root directory (with the right [configuration](ImprovedModSupport.md#DefaultIni)), it doesn't apply to the UnrealScript packages. The UnrealScript packages you create should be set up just like you would do with a normal package for UT2004 except it should be within your mod directory.Your mod directory would look like this:
+The *c:\ut2004\MyMod* directory will be used as the root directory of your mod (when the programs are started with the **-mod=MyMod** switch). Even though you can include content from UT2004's root directory (with the right [configuration](ImprovedModSupport.md#defaultini)), it doesn't apply to the UnrealScript packages. The UnrealScript packages you create should be set up just like you would do with a normal package for UT2004 except it should be within your mod directory.Your mod directory would look like this:
 
 ```
 

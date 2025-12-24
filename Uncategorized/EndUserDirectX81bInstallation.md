@@ -2,13 +2,13 @@
 
 *Document Summary: Instructions on installing DirectX 8.1b for end-users (people installing games, applications, etc.). Only required if you're using Windows 98 or ME, Windows 2000, or Windows XP without Service Pack 1.*Document Changelog: Created.
 
-* [Installing DirectX 8.1b (for End-Users)](EndUserDirectX81bInstallation.md#Installing _DirectX 8.1b (for End-Users))
-  + [Overview](EndUserDirectX81bInstallation.md#Overview)
-  + [DirectX 8.1b](EndUserDirectX81bInstallation.md#DirectX 8.1b)
-    - [Windows 98/Me](EndUserDirectX81bInstallation.md#Windows 98/Me)
-    - [Windows 2000](EndUserDirectX81bInstallation.md#Windows 2000)
-    - [Windows XP](EndUserDirectX81bInstallation.md#Windows XP)
-  + [DirectX 9.0b](EndUserDirectX81bInstallation.md#DirectX 9.0b)
+* [Installing DirectX 8.1b (for End-Users)](EndUserDirectX81bInstallation.md#installing-_directx-81b-for-end-users))
+  + [Overview](EndUserDirectX81bInstallation.md#overview)
+  + [DirectX 8.1b](EndUserDirectX81bInstallation.md#directx-81b)
+    - [Windows 98/Me](EndUserDirectX81bInstallation.md#windows-98me)
+    - [Windows 2000](EndUserDirectX81bInstallation.md#windows-2000)
+    - [Windows XP](EndUserDirectX81bInstallation.md#windows-xp)
+  + [DirectX 9.0b](EndUserDirectX81bInstallation.md#directx-90b)
 
 ## Overview
 

@@ -26,7 +26,7 @@ This example will go over how to create and use GUIStyles. To do so, we will red
 
 ## How to Use GUIStyles
 
-As explained in the [GUIReference](GuiReference.md#GUIStyles) document, GUIStyles is a class that provides support for making different drawing styles for *GUIComponents*. The style for the component is set using the *StyleName* variable in *defaultproperties* where the *GUIComponent* is defined. For example:
+As explained in the [GUIReference](GuiReference.md#guistyles) document, GUIStyles is a class that provides support for making different drawing styles for *GUIComponents*. The style for the component is set using the *StyleName* variable in *defaultproperties* where the *GUIComponent* is defined. For example:
 
 ```
 
@@ -115,7 +115,7 @@ Like the *StyleNames* array, the *FontStack* must start indexing where the super
 
 ### Creating GUIStyles
 
-To create your own *GUIStyles* refer to the [GUIReference](GuiReference.md#GUIStyles) document. *STY\_LeftButton* is shown below as an example. *STY\_LeftButton* shows all the possible variables for *GUIStyles* being set; this is not necessary but just here for convenient reference.
+To create your own *GUIStyles* refer to the [GUIReference](GuiReference.md#guistyles) document. *STY\_LeftButton* is shown below as an example. *STY\_LeftButton* shows all the possible variables for *GUIStyles* being set; this is not necessary but just here for convenient reference.
 
 ```
 
@@ -233,7 +233,7 @@ This is the image resized to 300 x 300 pixels:
 
 ![Stretch300.jpg](../../assets/stretch300.jpg)
 
-Note that the corners are unaffected while the central areas are. This means that your textures can have detail in the corners while the central parts should be relatively plain. This will inevitably result in some iterations with your textures, but it will be worth it in the end. For more information on this, check out the [CanvasReference](CanvasReference.md#DrawTileStretched) document.While these textures can be reused throughout your new GUIStyle, there are some limitations. Note that button textures can't easily be mirrored. In the case of this example, the mid game menu consists of two buttons (one for Continue and one for Close Map). These buttons are identical except they are mirrored horizontally. This required the creation of two different sets of button textures--one with the curlycues on the left and one on the right.
+Note that the corners are unaffected while the central areas are. This means that your textures can have detail in the corners while the central parts should be relatively plain. This will inevitably result in some iterations with your textures, but it will be worth it in the end. For more information on this, check out the [CanvasReference](CanvasReference.md#drawtilestretched) document.While these textures can be reused throughout your new GUIStyle, there are some limitations. Note that button textures can't easily be mirrored. In the case of this example, the mid game menu consists of two buttons (one for Continue and one for Close Map). These buttons are identical except they are mirrored horizontally. This required the creation of two different sets of button textures--one with the curlycues on the left and one on the right.
 
 ![MirrorButtons.jpg](../../assets/mirrorbuttons.jpg)
 

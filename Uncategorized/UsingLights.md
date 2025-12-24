@@ -2,15 +2,15 @@
 
 *Document Summary: A general guide to not only using lights but also how to use features associated with lights.**Document Changelog: Last updated by Jason Lentz (DemiurgeStudios?) to separate into more manageable docs. Original author - Lode Vandevenne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff))*
 
-* [Using Lights](UsingLights.md#Using Lights)
-  + [Introduction](UsingLights.md#Introduction)
-  + [Adding a Light](UsingLights.md#Adding a Light)
-  + [Radii View](UsingLights.md#Radii View)
-  + [3D View Modes](UsingLights.md#3D View Modes)
-  + [Game Settings](UsingLights.md#Game Settings)
-  + [Rebuilding](UsingLights.md#Rebuilding)
-  + [Scale Lights](UsingLights.md#Scale Lights)
-  + [Relevant Documents](UsingLights.md#Relevant Documents)
+* [Using Lights](UsingLights.md#using-lights)
+  + [Introduction](UsingLights.md#introduction)
+  + [Adding a Light](UsingLights.md#adding-a-light)
+  + [Radii View](UsingLights.md#radii-view)
+  + [3D View Modes](UsingLights.md#3d-view-modes)
+  + [Game Settings](UsingLights.md#game-settings)
+  + [Rebuilding](UsingLights.md#rebuilding)
+  + [Scale Lights](UsingLights.md#scale-lights)
+  + [Relevant Documents](UsingLights.md#relevant-documents)
 
 ## Introduction
 

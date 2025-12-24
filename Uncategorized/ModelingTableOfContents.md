@@ -2,23 +2,23 @@
 
 *Document Summary: A table of contents for tutorials on creating skeletal mesh art assets for Unreal Ed.**Document Changelog: Original author was Tom Lin (DemiurgeStudios?).*
 
-* [Modeling/Art Table of Contents](ModelingTableOfContents.md#Modeling/Art Table of Contents)
-  + [Start Here.](ModelingTableOfContents.md#Start Here.)
-  + [Modeling](ModelingTableOfContents.md#Modeling)
-  + [Example Models](ModelingTableOfContents.md#Example Models)
-  + [Texturing](ModelingTableOfContents.md#Texturing)
-  + [Rigging/Animation](ModelingTableOfContents.md#Rigging/Animation)
-  + [Exporting with ActorX](ModelingTableOfContents.md#Exporting with _ActorX)
-    - [ActorX Max](ModelingTableOfContents.md#ActorX Max)
-    - [ActorX Maya](ModelingTableOfContents.md#ActorX Maya)
+* [Modeling/Art Table of Contents](ModelingTableOfContents.md#modelingart-table-of-contents)
+  + [Start Here.](ModelingTableOfContents.md#start-here)
+  + [Modeling](ModelingTableOfContents.md#modeling)
+  + [Example Models](ModelingTableOfContents.md#example-models)
+  + [Texturing](ModelingTableOfContents.md#texturing)
+  + [Rigging/Animation](ModelingTableOfContents.md#rigginganimation)
+  + [Exporting with ActorX](ModelingTableOfContents.md#exporting-with-_actorx)
+    - [ActorX Max](ModelingTableOfContents.md#actorx-max)
+    - [ActorX Maya](ModelingTableOfContents.md#actorx-maya)
 
 ## Start Here.
 
-This document is a guide to all the docs related to getting artwork into the Unreal Engine, from static meshes to textures to animations. Note that this document does **not** cover level creation. The guides are arranged beginning with modeling and ending with exporting to a file format that Unreal can import. To Jump to a section, click on the following links:[Modeling](ModelingTableOfContents.md#Modeling)
+This document is a guide to all the docs related to getting artwork into the Unreal Engine, from static meshes to textures to animations. Note that this document does **not** cover level creation. The guides are arranged beginning with modeling and ending with exporting to a file format that Unreal can import. To Jump to a section, click on the following links:[Modeling](ModelingTableOfContents.md#modeling)
   
-[Texturing](ModelingTableOfContents.md#Texturing)   
-[Rigging and Animation](ModelingTableOfContents.md#Rigging_Animation)   
-[Exporting](ModelingTableOfContents.md#Exporting_with_ActorX)
+[Texturing](ModelingTableOfContents.md#texturing)   
+[Rigging and Animation](ModelingTableOfContents.md#rigging_animation)   
+[Exporting](ModelingTableOfContents.md#exporting_with_actorx)
   
 
 ---

@@ -2,23 +2,23 @@
 
 *Document Summary: A quick tutorial on how to create and import a wheeled Karma vehicle, with extensive reference documentation. Requires a fair amount of Unreal knowledge. Also requires the help of a programmer. For intermediate to advanced users.**Document Changelog: Last updated by Tom Lin (DemiurgeStudios?), for document summary. Original author was Chris Linder ([chris@demiurgestudios.com](mailto:chris@demiurgestudios.com)) (DemiurgeStudios?).*
 
-* [Karma Car Content Creation](KarmaCarCreation.md#Karma Car Content Creation)
-  + [Introduction](KarmaCarCreation.md#Introduction)
-  + [Building a Car in 3DS MAX](KarmaCarCreation.md#Building a Car in 3DS MAX)
-    - [Step 1: Model a Car](KarmaCarCreation.md#Step 1: Model a Car)
-    - [Step 2: Model Tires](KarmaCarCreation.md#Step 2: Model Tires)
-    - [Step 2: Add Karma Collision Volumes](KarmaCarCreation.md#Step 2: Add Karma Collision Volumes)
-      * [For the Car](KarmaCarCreation.md#For the Car)
-      * [For the Tires](KarmaCarCreation.md#For the Tires)
-    - [Save and Export](KarmaCarCreation.md#Save and Export)
-  + [Importing Your Car into Unrealed](KarmaCarCreation.md#Importing Your Car into Unrealed)
-  + [Putting Your Car in Your Level](KarmaCarCreation.md#Putting Your Car in Your Level)
-  + [Customizing Your Car](KarmaCarCreation.md#Customizing Your Car)
-    - [Display](KarmaCarCreation.md#Display)
-    - [KCar](KarmaCarCreation.md#KCar)
-    - [GenericCar](KarmaCarCreation.md#GenericCar)
-    - [Bulldog](KarmaCarCreation.md#Bulldog)
-  + [Testing the Car In-Game](KarmaCarCreation.md#Testing the Car In-Game)
+* [Karma Car Content Creation](KarmaCarCreation.md#karma-car-content-creation)
+  + [Introduction](KarmaCarCreation.md#introduction)
+  + [Building a Car in 3DS MAX](KarmaCarCreation.md#building-a-car-in-3ds-max)
+    - [Step 1: Model a Car](KarmaCarCreation.md#step-1-model-a-car)
+    - [Step 2: Model Tires](KarmaCarCreation.md#step-2-model-tires)
+    - [Step 2: Add Karma Collision Volumes](KarmaCarCreation.md#step-2-add-karma-collision-volumes)
+      * [For the Car](KarmaCarCreation.md#for-the-car)
+      * [For the Tires](KarmaCarCreation.md#for-the-tires)
+    - [Save and Export](KarmaCarCreation.md#save-and-export)
+  + [Importing Your Car into Unrealed](KarmaCarCreation.md#importing-your-car-into-unrealed)
+  + [Putting Your Car in Your Level](KarmaCarCreation.md#putting-your-car-in-your-level)
+  + [Customizing Your Car](KarmaCarCreation.md#customizing-your-car)
+    - [Display](KarmaCarCreation.md#display)
+    - [KCar](KarmaCarCreation.md#kcar)
+    - [GenericCar](KarmaCarCreation.md#genericcar)
+    - [Bulldog](KarmaCarCreation.md#bulldog)
+  + [Testing the Car In-Game](KarmaCarCreation.md#testing-the-car-in-game)
 
 ## Introduction
 
@@ -42,7 +42,7 @@ In a different MAX scene model a tire you want on your car. You can make differe
 
 #### For the Car
 
-Add Karma collision volumes to your scene such that they surround most of your vehicle. The adding of collision volumes is described in the [KarmaReference](../Content Creation/Physics/KarmaReference.md) [here](../Content Creation/Physics/KarmaReference.md#Karma_Collision). They should be as simple as possible while still surrounding the object. Also, avoid the use of cylinders, they don't seem to work. In the end your mesh and your volumes should look something like this:
+Add Karma collision volumes to your scene such that they surround most of your vehicle. The adding of collision volumes is described in the [KarmaReference](../Content Creation/Physics/KarmaReference.md) [here](../Content Creation/Physics/KarmaReference.md#karma_collision). They should be as simple as possible while still surrounding the object. Also, avoid the use of cylinders, they don't seem to work. In the end your mesh and your volumes should look something like this:
 
 ![UDNCarContent2.jpg](../assets/udncarcontent2.jpg)
 
@@ -100,4 +100,4 @@ There are 3 (4 if using the bulldog) categories in the car properties in Unreale
 
 ## Testing the Car In-Game
 
-Once in the game, bind a key to "use" for example, by typing **set input e use** at the **~** prompt. Now you can get in the vehicle pressing the "use" key at either door. Press "jump" to get out. The "use" key will also flip the vehicle if it is upside-down and you are outside of it. Now drive around and have fun! (You can pick up a fun vehicle test map in the [download](KarmaCars.md#Download) section of [KarmaCars](KarmaCars.md).)
+Once in the game, bind a key to "use" for example, by typing **set input e use** at the **~** prompt. Now you can get in the vehicle pressing the "use" key at either door. Press "jump" to get out. The "use" key will also flip the vehicle if it is upside-down and you are outside of it. Now drive around and have fun! (You can pick up a fun vehicle test map in the [download](KarmaCars.md#download) section of [KarmaCars](KarmaCars.md).)

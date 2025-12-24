@@ -2,21 +2,21 @@
 
 *Document Summary: A guide and reference to setting up FinalBlend Materials.**Document Changelog: Last updated by Jason Lentz (DemiurgeStudios?), for creation purposes. Original author was Jason Lentz (DemiurgeStudios?).*
 
-* [FinalBlends](MaterialsFinalBlend.md#FinalBlends)
-  + [FinalBlend Properties](MaterialsFinalBlend.md#FinalBlend Properties)
-    - [FrameBufferBlending](MaterialsFinalBlend.md#FrameBufferBlending)
-      * [FB\_Overwrite](MaterialsFinalBlend.md#FB_Overwrite)
-      * [FB\_Modulate](MaterialsFinalBlend.md#FB_Modulate)
-      * [FB\_AlphaBlend](MaterialsFinalBlend.md#FB_AlphaBlend)
-      * [FB\_AlphaModulate\_MightNotFogCorrectly](MaterialsFinalBlend.md#FB_AlphaModulate_MightNotFogCorrectly)
-      * [FB\_Translucent](MaterialsFinalBlend.md#FB_Translucent)
-      * [FB\_Darken](MaterialsFinalBlend.md#FB_Darken)
-      * [FB\_Brighten](MaterialsFinalBlend.md#FB_Brighten)
-      * [FB\_Invisible](MaterialsFinalBlend.md#FB_Invisible)
-    - [TwoSided](MaterialsFinalBlend.md#TwoSided)
-    - [AlphaTest & AlphaRef](MaterialsFinalBlend.md#AlphaTest  _AlphaRef)
-    - [FallbackMaterial](MaterialsFinalBlend.md#FallbackMaterial)
-  + [Example Map and Other Material Classes](MaterialsFinalBlend.md#Example Map and Other Material Classes)
+* [FinalBlends](MaterialsFinalBlend.md#finalblends)
+  + [FinalBlend Properties](MaterialsFinalBlend.md#finalblend-properties)
+    - [FrameBufferBlending](MaterialsFinalBlend.md#framebufferblending)
+      * [FB\_Overwrite](MaterialsFinalBlend.md#fb_overwrite)
+      * [FB\_Modulate](MaterialsFinalBlend.md#fb_modulate)
+      * [FB\_AlphaBlend](MaterialsFinalBlend.md#fb_alphablend)
+      * [FB\_AlphaModulate\_MightNotFogCorrectly](MaterialsFinalBlend.md#fb_alphamodulate_mightnotfogcorrectly)
+      * [FB\_Translucent](MaterialsFinalBlend.md#fb_translucent)
+      * [FB\_Darken](MaterialsFinalBlend.md#fb_darken)
+      * [FB\_Brighten](MaterialsFinalBlend.md#fb_brighten)
+      * [FB\_Invisible](MaterialsFinalBlend.md#fb_invisible)
+    - [TwoSided](MaterialsFinalBlend.md#twosided)
+    - [AlphaTest & AlphaRef](MaterialsFinalBlend.md#alphatest--_alpharef)
+    - [FallbackMaterial](MaterialsFinalBlend.md#fallbackmaterial)
+  + [Example Map and Other Material Classes](MaterialsFinalBlend.md#example-map-and-other-material-classes)
 
 ## FinalBlend Properties
 
@@ -128,4 +128,4 @@ Here you can set a Texture that the Engine will default to if for whatever reaso
 
 ![EPICmaterials1.jpg](../assets/epicmaterials1.jpg)
 
-For an example map that shows many different complex Materials in action, take a look at this document:[ExampleMapsEPIC](ExampleMapsEPIC.md#Materials_Example_Map) *(The example map is at the bottom of the page)*To return back the main Materials page, click [here](../Content Creation/Lighting and Textures/MaterialTutorial.md) <--
+For an example map that shows many different complex Materials in action, take a look at this document:[ExampleMapsEPIC](ExampleMapsEPIC.md#materials_example_map) *(The example map is at the bottom of the page)*To return back the main Materials page, click [here](../Content Creation/Lighting and Textures/MaterialTutorial.md) <--

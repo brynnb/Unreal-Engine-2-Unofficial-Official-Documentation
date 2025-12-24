@@ -2,20 +2,20 @@
 
 *Document Summary: An introductory document on editing Terrain Maps.**Document Changelog: Last updated by Jason Lentz (DemiurgeStudios?) to separate into smaller docs and update for the 2110 build. Original author was Lode Vandevenne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).*
 
-* [Editing the Terrain Map](EditingTerrainMaps.md#Editing the Terrain Map)
-  + [Introduction](EditingTerrainMaps.md#Introduction)
-  + [Editing the TerrainMap](EditingTerrainMaps.md#Editing the _TerrainMap)
-    - [Vertex Editing](EditingTerrainMaps.md#Vertex Editing)
-    - [Select](EditingTerrainMaps.md#Select)
-    - [Painting](EditingTerrainMaps.md#Painting)
-    - [Color](EditingTerrainMaps.md#Color)
-    - [Smoothing](EditingTerrainMaps.md#Smoothing)
-    - [Noise](EditingTerrainMaps.md#Noise)
-    - [Flatten](EditingTerrainMaps.md#Flatten)
-    - [Visibility](EditingTerrainMaps.md#Visibility)
-    - [Edge Turn](EditingTerrainMaps.md#Edge Turn)
-    - [Tex Pan, Tex Scale and Tex Rotate](EditingTerrainMaps.md#Tex Pan, Tex Scale and Tex Rotate)
-  + [Other Sections](EditingTerrainMaps.md#Other Sections)
+* [Editing the Terrain Map](EditingTerrainMaps.md#editing-the-terrain-map)
+  + [Introduction](EditingTerrainMaps.md#introduction)
+  + [Editing the TerrainMap](EditingTerrainMaps.md#editing-the-_terrainmap)
+    - [Vertex Editing](EditingTerrainMaps.md#vertex-editing)
+    - [Select](EditingTerrainMaps.md#select)
+    - [Painting](EditingTerrainMaps.md#painting)
+    - [Color](EditingTerrainMaps.md#color)
+    - [Smoothing](EditingTerrainMaps.md#smoothing)
+    - [Noise](EditingTerrainMaps.md#noise)
+    - [Flatten](EditingTerrainMaps.md#flatten)
+    - [Visibility](EditingTerrainMaps.md#visibility)
+    - [Edge Turn](EditingTerrainMaps.md#edge-turn)
+    - [Tex Pan, Tex Scale and Tex Rotate](EditingTerrainMaps.md#tex-pan-tex-scale-and-tex-rotate)
+  + [Other Sections](EditingTerrainMaps.md#other-sections)
 
 ## Introduction
 

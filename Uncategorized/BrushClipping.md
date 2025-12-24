@@ -2,12 +2,12 @@
 
 *Document Summary: A reference for the Brush Clipping tool.**Document Changelog: Last updated by Vito Miliano ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)), for whatever reason. Original author was Warren Marshall ([EpicGames](https://udn.epicgames.com/Main/EpicGames)).*
 
-* [Two- and Three-Point Brush Clipping](BrushClipping.md#Two- and Three-Point Brush Clipping)
-  + [Overview](BrushClipping.md#Overview)
-  + [2 Point Clipping](BrushClipping.md#2 Point Clipping)
-  + [3 Point Clipping](BrushClipping.md#3 Point Clipping)
-  + [Advanced Trick #1](BrushClipping.md#Advanced Trick #1)
-  + [Advanced Trick #2](BrushClipping.md#Advanced Trick #2)
+* [Two- and Three-Point Brush Clipping](BrushClipping.md#two--and-three-point-brush-clipping)
+  + [Overview](BrushClipping.md#overview)
+  + [2 Point Clipping](BrushClipping.md#2-point-clipping)
+  + [3 Point Clipping](BrushClipping.md#3-point-clipping)
+  + [Advanced Trick #1](BrushClipping.md#advanced-trick-1)
+  + [Advanced Trick #2](BrushClipping.md#advanced-trick-2)
 
 ## Overview
 

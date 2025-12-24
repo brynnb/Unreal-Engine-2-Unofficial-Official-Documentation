@@ -2,18 +2,18 @@
 
 *Last updated by Michiel Hendriks, some minor v3323 updates and formatting changes. Previous update by Richard 'vajuras' Osborne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)). Original author was Richard 'vajuras' Osborne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).*
 
-* [Heads Up Display (HUD) Tutorial](HeadsUpDisplayTutorial.md#Heads Up Display (HUD) Tutorial) 
-  + [The Basics](HeadsUpDisplayTutorial.md#The Basics)
-  + [Network Behavior](HeadsUpDisplayTutorial.md#Network Behavior)
-  + [Gametype](HeadsUpDisplayTutorial.md#Gametype)
-    - [GameReplicationInfo](HeadsUpDisplayTutorial.md#GameReplicationInfo)
-  + [Canvas](HeadsUpDisplayTutorial.md#Canvas)
-    - [DrawTile](HeadsUpDisplayTutorial.md#DrawTile)
-    - [DrawIcon](HeadsUpDisplayTutorial.md#DrawIcon)
-    - [DrawPortal](HeadsUpDisplayTutorial.md#DrawPortal)
-  + [PostRender](HeadsUpDisplayTutorial.md#PostRender)
-  + [Scoreboard](HeadsUpDisplayTutorial.md#Scoreboard)
-  + [Putting it all together](HeadsUpDisplayTutorial.md#Putting it all together)
+* [Heads Up Display (HUD) Tutorial](HeadsUpDisplayTutorial.md#heads-up-display-hud) Tutorial) 
+  + [The Basics](HeadsUpDisplayTutorial.md#the-basics)
+  + [Network Behavior](HeadsUpDisplayTutorial.md#network-behavior)
+  + [Gametype](HeadsUpDisplayTutorial.md#gametype)
+    - [GameReplicationInfo](HeadsUpDisplayTutorial.md#gamereplicationinfo)
+  + [Canvas](HeadsUpDisplayTutorial.md#canvas)
+    - [DrawTile](HeadsUpDisplayTutorial.md#drawtile)
+    - [DrawIcon](HeadsUpDisplayTutorial.md#drawicon)
+    - [DrawPortal](HeadsUpDisplayTutorial.md#drawportal)
+  + [PostRender](HeadsUpDisplayTutorial.md#postrender)
+  + [Scoreboard](HeadsUpDisplayTutorial.md#scoreboard)
+  + [Putting it all together](HeadsUpDisplayTutorial.md#putting-it-all-together)
 
 ## The Basics
 

@@ -2,14 +2,14 @@
 
 *Document Summary: An excellent guide for 3D Studio Max artists beginning to use the Unreal engine. Perfect for novices to the engine.**Document Changelog: Last updated by Tom Lin (DemiurgeStudios?), for document summary. Original author was Daniel Patton ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).*
 
-* [MAXtoUnreal: Preparing Geometry in MAX](MAXtoUnreal.md#MAXtoUnreal: Preparing Geometry in MAX)
-  + [Overview](MAXtoUnreal.md#Overview)
-  + [Do's and Don'ts](MAXtoUnreal.md#Do's and Don'ts)
-  + [Textures/Mapping](MAXtoUnreal.md#Textures/Mapping)
-    - [Regarding Textures](MAXtoUnreal.md#Regarding Textures)
-  + [Pivot/Grid Location](MAXtoUnreal.md#Pivot/Grid Location)
-  + [Collapsing/Attaching Geometry](MAXtoUnreal.md#Collapsing/Attaching Geometry)
-  + [Exporting to ASE](MAXtoUnreal.md#Exporting to ASE)
+* [MAXtoUnreal: Preparing Geometry in MAX](MAXtoUnreal.md#maxtounreal-preparing-geometry-in-max)
+  + [Overview](MAXtoUnreal.md#overview)
+  + [Do's and Don'ts](MAXtoUnreal.md#dos-and-donts)
+  + [Textures/Mapping](MAXtoUnreal.md#texturesmapping)
+    - [Regarding Textures](MAXtoUnreal.md#regarding-textures)
+  + [Pivot/Grid Location](MAXtoUnreal.md#pivotgrid-location)
+  + [Collapsing/Attaching Geometry](MAXtoUnreal.md#collapsingattaching-geometry)
+  + [Exporting to ASE](MAXtoUnreal.md#exporting-to-ase)
 
 ## Overview
 
@@ -17,12 +17,12 @@ This document covers preparing your geometry in 3D Studio MAX R4.26 or R5, for I
 
 ## Do's and Don'ts
 
-| [Do](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=0;table=1;up=0#sorted_table "Sort by this column") | [Don't](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=1;table=1;up=0#sorted_table "Sort by this column") |
+| [Do](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=0;table=1;up=0#sorted_table-sort-by-this-column) | [Don't](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=1;table=1;up=0#sorted_table-sort-by-this-column) |
 | --- | --- |
 | **Do** convert 2D lines to *Editable Mesh*, especially when using a *Thickness* variable, and make sure you have *Display Render Mesh* checked.    [editablemesh_small.jpg](rsrc/Two/MAXtoUnreal/editablemesh.jpg) | **Don't** export 2D lines/splines from MAX; this will likely crash UnrealEd during import of the ASE file. Either delete or extrude all 2D lines/splines. |
 | **Do** clear *Smoothing Groups* when geometry does not need them, meaning geometry that is primarily made up of flat surfaces. This helps to reduce odd lighting behavior in Unreal.    [smoothinggroups_small.jpg](rsrc/Two/MAXtoUnreal/smoothinggroups.jpg) |  |
 | **Do** control geometry texture mapping, such as its positioning and U, V and W tiling, using a *UVW Map* modifier.    [uvwmap_small.jpg](rsrc/Two/MAXtoUnreal/uvwmap.jpg) | **Don't** use Max's *Material Editor* to control a material's offset, texture repeating, etc. Uncheck *2-Sided*; it crashes UnrealEd. Only the *Diffuse Map* channel is supported; other channels like *Bump*, *Opacity*, etc. are ignored.    [materialeditor_small.jpg](rsrc/Two/MAXtoUnreal/materialeditor.jpg) |
-| **Do** *Attach* multiple objects to a single object prior to exporting to ASE. This is necessary if you intend to export several models at one time. See [Collapsing/Attaching Geometry](MAXtoUnreal.md#Collapsing_Attaching_Geometry). | **Don't** export a *Group* of geometry from MAX as an ASE file, this will crash UnrealEd during import; use *Attach* instead. |
+| **Do** *Attach* multiple objects to a single object prior to exporting to ASE. This is necessary if you intend to export several models at one time. See [Collapsing/Attaching Geometry](MAXtoUnreal.md#collapsing_attaching_geometry). | **Don't** export a *Group* of geometry from MAX as an ASE file, this will crash UnrealEd during import; use *Attach* instead. |
 
 ## Textures/Mapping
 

@@ -2,13 +2,13 @@
 
 *Document Summary: A look at how to trouble shoot performance problems in your level at a glance.**Document Changelog: Last updated by Michiel Hendirks, minor text changes. Previous update by Jason Lentz (DemiurgeStudios?), to break up in to smaller docs. Original authors were Tomasz Jachimczak ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)) and Jason Lentz (DemiurgeStudios?).*
 
-* [Level Optimization - Profiling](LevelOptimizationProfiling.md#Level Optimization - Profiling)
-  + [Introduction](LevelOptimizationProfiling.md#Introduction)
-  + [Viewport Display Modes](LevelOptimizationProfiling.md#Viewport Display Modes)
-  + [Console Commands](LevelOptimizationProfiling.md#Console Commands)
-    - [Stat Commands](LevelOptimizationProfiling.md#Stat Commands)
-    - [Rmodes](LevelOptimizationProfiling.md#Rmodes)
-  + [Manually Assigning Zones](LevelOptimizationProfiling.md#Manually Assigning Zones)
+* [Level Optimization - Profiling](LevelOptimizationProfiling.md#level-optimization---profiling)
+  + [Introduction](LevelOptimizationProfiling.md#introduction)
+  + [Viewport Display Modes](LevelOptimizationProfiling.md#viewport-display-modes)
+  + [Console Commands](LevelOptimizationProfiling.md#console-commands)
+    - [Stat Commands](LevelOptimizationProfiling.md#stat-commands)
+    - [Rmodes](LevelOptimizationProfiling.md#rmodes)
+  + [Manually Assigning Zones](LevelOptimizationProfiling.md#manually-assigning-zones)
 
 ## Introduction
 

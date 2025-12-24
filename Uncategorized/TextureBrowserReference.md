@@ -2,71 +2,71 @@
 
 *Document Summary: A comprehensive reference for the Texture Browser and importing .UTX packages.**Document Changelog: Last updated by Tom Lin (DemiurgeStudios?) for content creation. Original author - Tom Lin (DemiurgeStudios?).*
 
-* [Using the Texture Browser and UTX Animation Packages](TextureBrowserReference.md#Using the Texture Browser and UTX Animation Packages) 
-  + [Introduction](TextureBrowserReference.md#Introduction)
-  + [Browser Layout](TextureBrowserReference.md#Browser Layout)
-  + [Pull Down Menus](TextureBrowserReference.md#Pull Down Menus)
-    - [File](TextureBrowserReference.md#File)
-      * [Import](TextureBrowserReference.md#Import)
-      * [Export (R-Click)](TextureBrowserReference.md#Export (R-Click))
-    - [Edit](TextureBrowserReference.md#Edit)
-      * [Properties (R-Click)](TextureBrowserReference.md#Properties (R-Click))
-      * [Duplicate (R-Click)](TextureBrowserReference.md#Duplicate (R-Click))
-      * [Rename (R-Click)](TextureBrowserReference.md#Rename (R-Click))
-      * [Remove from Level (R-Click)](TextureBrowserReference.md#Remove from Level (R-Click))
-      * [Cull Unused Textures](TextureBrowserReference.md#Cull Unused Textures)
-      * [Load Entire Package](TextureBrowserReference.md#Load Entire Package)
-      * [Detail Hack (R-Click)](TextureBrowserReference.md#Detail Hack (R-Click))
-      * [Replace Textures](TextureBrowserReference.md#Replace Textures)
-      * [Previous/Next Group](TextureBrowserReference.md#Previous/Next Group)
-      * [Delete (R-Click)](TextureBrowserReference.md#Delete (R-Click))
-    - [View](TextureBrowserReference.md#View)
-    - [Tools](TextureBrowserReference.md#Tools)
-    - [Filter](TextureBrowserReference.md#Filter)
-    - ["In Use" Filter](TextureBrowserReference.md#"In Use" Filter)
-  + [Toolbar Buttons](TextureBrowserReference.md#Toolbar Buttons)
-    - [Open Package](TextureBrowserReference.md#Open Package)
-    - [Save Package](TextureBrowserReference.md#Save Package)
-    - [Texture Properties](TextureBrowserReference.md#Texture Properties)
-      * [Buttons](TextureBrowserReference.md#Buttons)
-      * [Animation](TextureBrowserReference.md#Animation)
-        + [AnimNext](TextureBrowserReference.md#AnimNext)
-        + [MaxFrameRate](TextureBrowserReference.md#MaxFrameRate)
-        + [MinFramRate](TextureBrowserReference.md#MinFramRate)
-        + [PrimeCount](TextureBrowserReference.md#PrimeCount)
-      * [Material](TextureBrowserReference.md#Material)
-        + [FallbackMaterial](TextureBrowserReference.md#FallbackMaterial)
-      * [Quality](TextureBrowserReference.md#Quality)
-        + [bHighColorQuality](TextureBrowserReference.md#b_HighColorQuality)
-        + [bHighextureQuality](TextureBrowserReference.md#b_HighextureQuality)
-      * [Surface](TextureBrowserReference.md#Surface)
-        + [bAlphaTexture](TextureBrowserReference.md#b_AlphaTexture)
-        + [bMasked](TextureBrowserReference.md#bMasked)
-        + [bTwoSided](TextureBrowserReference.md#b_TwoSided)
-      * [Texture](TextureBrowserReference.md#Texture)
-        + [Detail](TextureBrowserReference.md#Detail)
-        + [Detail Scale](TextureBrowserReference.md#Detail Scale)
-        + [LODSet](TextureBrowserReference.md#LODSet)
-        + [NormalLOD](TextureBrowserReference.md#NormalLOD)
-        + [Palette](TextureBrowserReference.md#Palette)
-        + [UClamp](TextureBrowserReference.md#UClamp)
-        + [UClampMode](TextureBrowserReference.md#UClampMode)
-        + [VClamp](TextureBrowserReference.md#VClamp)
-        + [VClampMode](TextureBrowserReference.md#VClampMode)
-      * [TextureFormat](TextureBrowserReference.md#TextureFormat)
-        + [Format](TextureBrowserReference.md#Format)
-    - [Load Entire Package](TextureBrowserReference.md#Load Entire Package)
-    - [Previous Group](TextureBrowserReference.md#Previous Group)
-    - [Next Group](TextureBrowserReference.md#Next Group)
-  + [Tabs](TextureBrowserReference.md#Tabs)
-    - [Full](TextureBrowserReference.md#Full)
-      * [Package Name](TextureBrowserReference.md#Package Name)
-      * [Group Name](TextureBrowserReference.md#Group Name)
-      * [! Button](TextureBrowserReference.md#! Button)
-      * [All Button](TextureBrowserReference.md#All Button)
-    - [In Use](TextureBrowserReference.md#In Use)
-    - [Recent](TextureBrowserReference.md#Recent)
-  + [Name Filter](TextureBrowserReference.md#Name Filter)
+* [Using the Texture Browser and UTX Animation Packages](TextureBrowserReference.md#using-the-texture-browser-and-utx-animation-packages) 
+  + [Introduction](TextureBrowserReference.md#introduction)
+  + [Browser Layout](TextureBrowserReference.md#browser-layout)
+  + [Pull Down Menus](TextureBrowserReference.md#pull-down-menus)
+    - [File](TextureBrowserReference.md#file)
+      * [Import](TextureBrowserReference.md#import)
+      * [Export (R-Click)](TextureBrowserReference.md#export-r-click))
+    - [Edit](TextureBrowserReference.md#edit)
+      * [Properties (R-Click)](TextureBrowserReference.md#properties-r-click))
+      * [Duplicate (R-Click)](TextureBrowserReference.md#duplicate-r-click))
+      * [Rename (R-Click)](TextureBrowserReference.md#rename-r-click))
+      * [Remove from Level (R-Click)](TextureBrowserReference.md#remove-from-level-r-click))
+      * [Cull Unused Textures](TextureBrowserReference.md#cull-unused-textures)
+      * [Load Entire Package](TextureBrowserReference.md#load-entire-package)
+      * [Detail Hack (R-Click)](TextureBrowserReference.md#detail-hack-r-click))
+      * [Replace Textures](TextureBrowserReference.md#replace-textures)
+      * [Previous/Next Group](TextureBrowserReference.md#previousnext-group)
+      * [Delete (R-Click)](TextureBrowserReference.md#delete-r-click))
+    - [View](TextureBrowserReference.md#view)
+    - [Tools](TextureBrowserReference.md#tools)
+    - [Filter](TextureBrowserReference.md#filter)
+    - ["In Use" Filter](TextureBrowserReference.md#in-use-filter)
+  + [Toolbar Buttons](TextureBrowserReference.md#toolbar-buttons)
+    - [Open Package](TextureBrowserReference.md#open-package)
+    - [Save Package](TextureBrowserReference.md#save-package)
+    - [Texture Properties](TextureBrowserReference.md#texture-properties)
+      * [Buttons](TextureBrowserReference.md#buttons)
+      * [Animation](TextureBrowserReference.md#animation)
+        + [AnimNext](TextureBrowserReference.md#animnext)
+        + [MaxFrameRate](TextureBrowserReference.md#maxframerate)
+        + [MinFramRate](TextureBrowserReference.md#minframrate)
+        + [PrimeCount](TextureBrowserReference.md#primecount)
+      * [Material](TextureBrowserReference.md#material)
+        + [FallbackMaterial](TextureBrowserReference.md#fallbackmaterial)
+      * [Quality](TextureBrowserReference.md#quality)
+        + [bHighColorQuality](TextureBrowserReference.md#b_highcolorquality)
+        + [bHighextureQuality](TextureBrowserReference.md#b_highexturequality)
+      * [Surface](TextureBrowserReference.md#surface)
+        + [bAlphaTexture](TextureBrowserReference.md#b_alphatexture)
+        + [bMasked](TextureBrowserReference.md#bmasked)
+        + [bTwoSided](TextureBrowserReference.md#b_twosided)
+      * [Texture](TextureBrowserReference.md#texture)
+        + [Detail](TextureBrowserReference.md#detail)
+        + [Detail Scale](TextureBrowserReference.md#detail-scale)
+        + [LODSet](TextureBrowserReference.md#lodset)
+        + [NormalLOD](TextureBrowserReference.md#normallod)
+        + [Palette](TextureBrowserReference.md#palette)
+        + [UClamp](TextureBrowserReference.md#uclamp)
+        + [UClampMode](TextureBrowserReference.md#uclampmode)
+        + [VClamp](TextureBrowserReference.md#vclamp)
+        + [VClampMode](TextureBrowserReference.md#vclampmode)
+      * [TextureFormat](TextureBrowserReference.md#textureformat)
+        + [Format](TextureBrowserReference.md#format)
+    - [Load Entire Package](TextureBrowserReference.md#load-entire-package)
+    - [Previous Group](TextureBrowserReference.md#previous-group)
+    - [Next Group](TextureBrowserReference.md#next-group)
+  + [Tabs](TextureBrowserReference.md#tabs)
+    - [Full](TextureBrowserReference.md#full)
+      * [Package Name](TextureBrowserReference.md#package-name)
+      * [Group Name](TextureBrowserReference.md#group-name)
+      * [! Button](TextureBrowserReference.md#-button)
+      * [All Button](TextureBrowserReference.md#all-button)
+    - [In Use](TextureBrowserReference.md#in-use)
+    - [Recent](TextureBrowserReference.md#recent)
+  + [Name Filter](TextureBrowserReference.md#name-filter)
 
 ## Introduction
 
@@ -76,12 +76,12 @@ A .UTX file is a repository for a group of textures, and files derived from such
 
 ![utxbrowser.jpg](../assets/utxbrowser.jpg)
 
-* 1: [Pull down Menus](TextureBrowserReference.md#Pull_Down_Menus). These duplicate the functionality of the buttons, and sometimes extend them.
+* 1: [Pull down Menus](TextureBrowserReference.md#pull_down_menus). These duplicate the functionality of the buttons, and sometimes extend them.
 * 2: Browser tabs. *Textures* should be selected, of course.
-* 3: [The toolbar buttons](TextureBrowserReference.md#Toolbar_Buttons). The more heavily used functions have places here.
-* 4: [Tabs](TextureBrowserReference.md#Tabs). Package management tabs/buttons.
+* 3: [The toolbar buttons](TextureBrowserReference.md#toolbar_buttons). The more heavily used functions have places here.
+* 4: [Tabs](TextureBrowserReference.md#tabs). Package management tabs/buttons.
 * 5: Main texture display window.
-* 6: [Name filter](TextureBrowserReference.md#Name_Filter) for current package.
+* 6: [Name filter](TextureBrowserReference.md#name_filter) for current package.
 
 ## Pull Down Menus
 
@@ -187,7 +187,7 @@ Clicking the Properties button will lead to you the texture properties window.
 
 #### Buttons
 
-This has been covered in another document. See the [Material Tutorial](../Content Creation/Lighting and Textures/MaterialTutorial.md#Using_the_Material_Browser) for more information.
+This has been covered in another document. See the [Material Tutorial](../Content Creation/Lighting and Textures/MaterialTutorial.md#using_the_material_browser) for more information.
 
 #### Animation
 

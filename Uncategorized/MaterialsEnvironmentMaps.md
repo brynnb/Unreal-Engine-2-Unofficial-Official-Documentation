@@ -2,11 +2,11 @@
 
 *Document Summary: A guide and reference to setting up Environment Map and Cube Map Materials.**Document Changelog: Last updated by Richard Nalezynski (VirtualHeroes?). Original author was Jason Lentz (DemiurgeStudios?).*
 
-* [Environment Maps](MaterialsEnvironmentMaps.md#Environment Maps)
-  + [Introduction](MaterialsEnvironmentMaps.md#Introduction)
-  + [Cubemap](MaterialsEnvironmentMaps.md#Cubemap)
-  + [TexEnvMap](MaterialsEnvironmentMaps.md#TexEnvMap)
-  + [Example Map and Other Material Classes](MaterialsEnvironmentMaps.md#Example Map and Other Material Classes)
+* [Environment Maps](MaterialsEnvironmentMaps.md#environment-maps)
+  + [Introduction](MaterialsEnvironmentMaps.md#introduction)
+  + [Cubemap](MaterialsEnvironmentMaps.md#cubemap)
+  + [TexEnvMap](MaterialsEnvironmentMaps.md#texenvmap)
+  + [Example Map and Other Material Classes](MaterialsEnvironmentMaps.md#example-map-and-other-material-classes)
 
 ## Introduction
 
@@ -54,4 +54,4 @@ You can use TexEnvMap materials on Static Meshes as well as on BSP Surfaces. A T
 
 ![EPICmaterials1.jpg](../assets/epicmaterials1.jpg)
 
-For an example map that shows many different complex Materials in action, take a look at this document:[ExampleMapsEPIC](ExampleMapsEPIC.md#Materials_Example_Map) *(The example map is at the bottom of the page)*To return back the main Materials page, click [here](../Content Creation/Lighting and Textures/MaterialTutorial.md) <--
+For an example map that shows many different complex Materials in action, take a look at this document:[ExampleMapsEPIC](ExampleMapsEPIC.md#materials_example_map) *(The example map is at the bottom of the page)*To return back the main Materials page, click [here](../Content Creation/Lighting and Textures/MaterialTutorial.md) <--

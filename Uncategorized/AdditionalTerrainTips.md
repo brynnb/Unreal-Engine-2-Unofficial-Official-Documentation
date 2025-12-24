@@ -2,15 +2,15 @@
 
 *Document Summary: Some tips and pointers for improving your Terrain.**Document Changelog: Last updated by Jason Lentz (DemiurgeStudios?) to separate into smaller docs and update for the 2110 build. Original author was Lode Vandevenne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).*
 
-* [Additional Terrain Tips](AdditionalTerrainTips.md#Additional Terrain Tips)
-  + [Introduction](AdditionalTerrainTips.md#Introduction)
-  + [Saving and Testing the Map](AdditionalTerrainTips.md#Saving and Testing the Map)
-  + [Terrain Statistics](AdditionalTerrainTips.md#Terrain Statistics)
-  + [Adding a SkyBox](AdditionalTerrainTips.md#Adding a _SkyBox)
-  + [SunLight](AdditionalTerrainTips.md#SunLight)
-  + [DistanceFog](AdditionalTerrainTips.md#DistanceFog)
-  + [Multiple TerrainInfos, Multiple Zones](AdditionalTerrainTips.md#Multiple _TerrainInfos, Multiple Zones)
-  + [Other Sections](AdditionalTerrainTips.md#Other Sections)
+* [Additional Terrain Tips](AdditionalTerrainTips.md#additional-terrain-tips)
+  + [Introduction](AdditionalTerrainTips.md#introduction)
+  + [Saving and Testing the Map](AdditionalTerrainTips.md#saving-and-testing-the-map)
+  + [Terrain Statistics](AdditionalTerrainTips.md#terrain-statistics)
+  + [Adding a SkyBox](AdditionalTerrainTips.md#adding-a-_skybox)
+  + [SunLight](AdditionalTerrainTips.md#sunlight)
+  + [DistanceFog](AdditionalTerrainTips.md#distancefog)
+  + [Multiple TerrainInfos, Multiple Zones](AdditionalTerrainTips.md#multiple-_terraininfos-multiple-zones)
+  + [Other Sections](AdditionalTerrainTips.md#other-sections)
 
 ## Introduction
 

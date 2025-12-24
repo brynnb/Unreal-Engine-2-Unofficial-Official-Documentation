@@ -4,17 +4,17 @@
 
 *Document Summary: Introduction to the UnrealEngine2 Runtime edition of the second-generation Unreal engine, including release information.**Document Changelog: Created and updated; maintained over time.*
 
-* [UnrealEngine2 Runtime](UnrealEngine2Runtime.md#UnrealEngine2 Runtime)
-  + [Overview](UnrealEngine2Runtime.md#Overview)
-  + [Introduction](UnrealEngine2Runtime.md#Introduction)
-  + [System Requirements](UnrealEngine2Runtime.md#System Requirements)
-    - [Windows 98/Me/2000/XP Minimum](UnrealEngine2Runtime.md#Windows 98/Me/2000/XP Minimum)
-    - [Windows 98/Me/2000/XP Recommended](UnrealEngine2Runtime.md#Windows 98/Me/2000/XP Recommended)
-    - [GNU/Linux x86, Macintosh OS X](UnrealEngine2Runtime.md#GNU/Linux x86, Macintosh OS X)
-  + [Obtaining the Runtime](UnrealEngine2Runtime.md#Obtaining the Runtime)
-  + [Reporting Bugs](UnrealEngine2Runtime.md#Reporting Bugs)
-  + [Known Issues](UnrealEngine2Runtime.md#Known Issues)
-  + [Errata](UnrealEngine2Runtime.md#Errata)
+* [UnrealEngine2 Runtime](UnrealEngine2Runtime.md#unrealengine2-runtime)
+  + [Overview](UnrealEngine2Runtime.md#overview)
+  + [Introduction](UnrealEngine2Runtime.md#introduction)
+  + [System Requirements](UnrealEngine2Runtime.md#system-requirements)
+    - [Windows 98/Me/2000/XP Minimum](UnrealEngine2Runtime.md#windows-98me2000xp-minimum)
+    - [Windows 98/Me/2000/XP Recommended](UnrealEngine2Runtime.md#windows-98me2000xp-recommended)
+    - [GNU/Linux x86, Macintosh OS X](UnrealEngine2Runtime.md#gnulinux-x86-macintosh-os-x)
+  + [Obtaining the Runtime](UnrealEngine2Runtime.md#obtaining-the-runtime)
+  + [Reporting Bugs](UnrealEngine2Runtime.md#reporting-bugs)
+  + [Known Issues](UnrealEngine2Runtime.md#known-issues)
+  + [Errata](UnrealEngine2Runtime.md#errata)
 
 ## Overview
 
@@ -39,20 +39,20 @@ Please note that regardless of Runtime client and server availability, the conte
 * **Processor:** Intel Pentium III or AMD Athlon 733 MHz CPU
 * **Memory:** 128 MByte RAM
 * **Hard Disk Space:** 65 MByte free HD space
-* **Video:** 16 MB NVIDIA TNT2-class or other DirectX version 8-compliant video card[1](UnrealEngine2Runtime.md#SysReqVideo)
-* **Sound:** Windows-compatible sound card[2](UnrealEngine2Runtime.md#SysReqSound)
-* **DirectX:** DirectX version 8.1b[3](UnrealEngine2Runtime.md#SysReqDX)
-* **Modem:** 33.3 Kbps[4](UnrealEngine2Runtime.md#SysReqNet)
+* **Video:** 16 MB NVIDIA TNT2-class or other DirectX version 8-compliant video card[1](UnrealEngine2Runtime.md#sysreqvideo)
+* **Sound:** Windows-compatible sound card[2](UnrealEngine2Runtime.md#sysreqsound)
+* **DirectX:** DirectX version 8.1b[3](UnrealEngine2Runtime.md#sysreqdx)
+* **Modem:** 33.3 Kbps[4](UnrealEngine2Runtime.md#sysreqnet)
 
 ### Windows 98/Me/2000/XP Recommended
 
 * **Processor:** Intel Pentium III or AMD Athlon 733 MHz CPU
 * **Memory:** 256 MByte RAM
 * **Hard Disk Space:** 65 MByte free HD space
-* **Video:** 32 to 128 MB NVIDIA GeForce2 or ATI Radeon[1](UnrealEngine2Runtime.md#SysReqVideo)
-* **Sound:** Sound Blaster Audigy series sound card[2](UnrealEngine2Runtime.md#SysReqSound)
-* **DirectX:** DirectX version 8.1b[3](UnrealEngine2Runtime.md#SysReqDX)
-* **Modem:** 56.7 Kbps[4](UnrealEngine2Runtime.md#SysReqNet)
+* **Video:** 32 to 128 MB NVIDIA GeForce2 or ATI Radeon[1](UnrealEngine2Runtime.md#sysreqvideo)
+* **Sound:** Sound Blaster Audigy series sound card[2](UnrealEngine2Runtime.md#sysreqsound)
+* **DirectX:** DirectX version 8.1b[3](UnrealEngine2Runtime.md#sysreqdx)
+* **Modem:** 56.7 Kbps[4](UnrealEngine2Runtime.md#sysreqnet)
 
  1 Indicates device should be compatible with DirectX, version 8.1 or higher. 2 NVIDIA nForce or other motherboards/soundcards containing the Dolby Digital Interactive Content Encoder required for Dolby Digital audio. 3 DirectX 8.1b is not provided with the Runtime installation, and must already be present on your system or downloaded from Microsoft. See EndUserDirectX81bInstallation? for details. 4 Modem only required for modem-based Internet multi-user networking. Internet (TCP/IP) and LAN (TCP/IP) multi-user networking is also supported.
 

@@ -2,12 +2,12 @@
 
 *Document Summary: A detailed description on how to optimize Terrain in your level.**Document Changelog: Last updated by Michiel Hendriks, minor text changes. Previous update by Jason Lentz (DemiurgeStudios?), to break up in to smaller docs. Original authors were Tomasz Jachimczak ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)) and Jason Lentz (DemiurgeStudios?).*
 
-* [Level Optimization - Terrain](LevelOptimizationTerrain.md#Level Optimization - Terrain)
-  + [Introduction](LevelOptimizationTerrain.md#Introduction)
-  + [Setting an Initial Size](LevelOptimizationTerrain.md#Setting an Initial Size)
-  + [Invisibility Tool](LevelOptimizationTerrain.md#Invisibility Tool)
-  + [Optimizing Layers](LevelOptimizationTerrain.md#Optimizing Layers)
-  + [Terrain SectorSize](LevelOptimizationTerrain.md#Terrain _SectorSize)
+* [Level Optimization - Terrain](LevelOptimizationTerrain.md#level-optimization---terrain)
+  + [Introduction](LevelOptimizationTerrain.md#introduction)
+  + [Setting an Initial Size](LevelOptimizationTerrain.md#setting-an-initial-size)
+  + [Invisibility Tool](LevelOptimizationTerrain.md#invisibility-tool)
+  + [Optimizing Layers](LevelOptimizationTerrain.md#optimizing-layers)
+  + [Terrain SectorSize](LevelOptimizationTerrain.md#terrain-_sectorsize)
 
 ## Introduction
 

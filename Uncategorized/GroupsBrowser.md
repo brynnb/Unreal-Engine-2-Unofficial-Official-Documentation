@@ -2,11 +2,11 @@
 
 *Document Summary: A guide and reference to using the Groups Browser for managing levels.**Document Changelog: Last updated by Jason Lentz (DemiurgeStudios?), for creation purposes. Original author was Jason Lentz (DemiurgeStudios?).*
 
-* [Groups Browser](GroupsBrowser.md#Groups Browser)
-  + [Introduction](GroupsBrowser.md#Introduction)
-  + [Creating New Groups](GroupsBrowser.md#Creating New Groups)
-  + [Adding and Subtracting to and from Groups](GroupsBrowser.md#Adding and Subtracting to and from Groups)
-  + [Organizing and Using Groups](GroupsBrowser.md#Organizing and Using Groups)
+* [Groups Browser](GroupsBrowser.md#groups-browser)
+  + [Introduction](GroupsBrowser.md#introduction)
+  + [Creating New Groups](GroupsBrowser.md#creating-new-groups)
+  + [Adding and Subtracting to and from Groups](GroupsBrowser.md#adding-and-subtracting-to-and-from-groups)
+  + [Organizing and Using Groups](GroupsBrowser.md#organizing-and-using-groups)
 
 ## Introduction
 

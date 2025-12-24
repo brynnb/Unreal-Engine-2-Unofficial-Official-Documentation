@@ -2,16 +2,16 @@
 
 *Document Summary: Here you will find explanations for all of the different settings under the Build Options menu.**Document Changelog: Last updated by Jason Lentz (DemiurgeStudios?) to include infomation on the Ignore Portal/Portals Cut All slider. Original author: Jason Lentz (DemiurgeStudios?).*
 
-* [Build Options Reference](BuildOptionsReference.md#Build Options Reference)
-  + [Introduction](BuildOptionsReference.md#Introduction)
-  + [Configuration](BuildOptionsReference.md#Configuration)
-  + [Geometry](BuildOptionsReference.md#Geometry)
-  + [BSP](BuildOptionsReference.md#BSP)
-    - [Optimization: Lame Good Optimal](BuildOptionsReference.md#Optimization: Lame Good Optimal)
-    - [Minimize Cuts versus Balance Tree](BuildOptionsReference.md#Minimize Cuts versus Balance Tree)
-    - [Ignore Portals versus Portals Cut All](BuildOptionsReference.md#Ignore Portals versus Portals Cut All)
-  + [Lighting](BuildOptionsReference.md#Lighting)
-  + [Define Paths](BuildOptionsReference.md#Define Paths)
+* [Build Options Reference](BuildOptionsReference.md#build-options-reference)
+  + [Introduction](BuildOptionsReference.md#introduction)
+  + [Configuration](BuildOptionsReference.md#configuration)
+  + [Geometry](BuildOptionsReference.md#geometry)
+  + [BSP](BuildOptionsReference.md#bsp)
+    - [Optimization: Lame Good Optimal](BuildOptionsReference.md#optimization-lame-good-optimal)
+    - [Minimize Cuts versus Balance Tree](BuildOptionsReference.md#minimize-cuts-versus-balance-tree)
+    - [Ignore Portals versus Portals Cut All](BuildOptionsReference.md#ignore-portals-versus-portals-cut-all)
+  + [Lighting](BuildOptionsReference.md#lighting)
+  + [Define Paths](BuildOptionsReference.md#define-paths)
 
 ![build_options.gif](../assets/build_options.gif)
 

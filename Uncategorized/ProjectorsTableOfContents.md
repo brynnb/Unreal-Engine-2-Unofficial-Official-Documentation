@@ -6,10 +6,10 @@
 * [ProjectorTextures](ProjectorTextures.md)
 * [ProjectorsTutorial](ProjectorsTutorial.md)
 
-* [Projectors Table of Contents](ProjectorsTableOfContents.md#Projectors Table of Contents)
-  + [Introduction](ProjectorsTableOfContents.md#Introduction)
-  + [Projector Documents](ProjectorsTableOfContents.md#Projector Documents)
-  + [Known Projector Issues](ProjectorsTableOfContents.md#Known Projector Issues)
+* [Projectors Table of Contents](ProjectorsTableOfContents.md#projectors-table-of-contents)
+  + [Introduction](ProjectorsTableOfContents.md#introduction)
+  + [Projector Documents](ProjectorsTableOfContents.md#projector-documents)
+  + [Known Projector Issues](ProjectorsTableOfContents.md#known-projector-issues)
 
 ## Introduction
 

@@ -4,10 +4,10 @@
 
 *Document Summary: Introduction to the native source code headers for the [UnrealEngine2Runtime](UnrealEngine2Runtime.md), including release information.*
 
-* [UnrealEngine2 Runtime Native Source Code Headers](RuntimeHeaders.md#UnrealEngine2 Runtime Native Source Code Headers)
-  + [Overview](RuntimeHeaders.md#Overview)
-  + [About the Native Source Code Headers](RuntimeHeaders.md#About the Native Source Code Headers)
-  + [Obtaining the Native Source Code Headers](RuntimeHeaders.md#Obtaining the Native Source Code Headers)
+* [UnrealEngine2 Runtime Native Source Code Headers](RuntimeHeaders.md#unrealengine2-runtime-native-source-code-headers)
+  + [Overview](RuntimeHeaders.md#overview)
+  + [About the Native Source Code Headers](RuntimeHeaders.md#about-the-native-source-code-headers)
+  + [Obtaining the Native Source Code Headers](RuntimeHeaders.md#obtaining-the-native-source-code-headers)
 
 ## Overview
 

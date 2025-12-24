@@ -2,21 +2,21 @@
 
 *Document Summary: Public mod community portal and resource page for Unreal Tournament (UT2003, UT2004) mod development, including links to tutorials, files, etc.**Document Changelog: Last updated by Richard Nalezynski?; previous updates by by Ron Prestenback? (link to .ucl tutorial) and Michiel Hendriks.*
 
-* [Public Mod Author Support for Unreal Tournament (UT2003, UT2004)](PublicModResource.md#Public Mod Author Support for Unreal Tournament (UT2003, UT2004))
-  + [Overview](PublicModResource.md#Overview)
-  + [Check Yourself](PublicModResource.md#Check Yourself)
-  + [Getting the Resources](PublicModResource.md#Getting the Resources)
-    - [Essential files](PublicModResource.md#Essential files)
-    - [Other useful files](PublicModResource.md#Other useful files)
-  + [Support](PublicModResource.md#Support)
-    - [Documentation](PublicModResource.md#Documentation)
-      * [Tutorials](PublicModResource.md#Tutorials)
-    - [Mailing Lists](PublicModResource.md#Mailing Lists)
-    - [IRC](PublicModResource.md#IRC)
-    - [Community](PublicModResource.md#Community)
-      * [Forums](PublicModResource.md#Forums)
-      * [IRC](PublicModResource.md#IRC)
-      * [Additional Resources](PublicModResource.md#Additional Resources)
+* [Public Mod Author Support for Unreal Tournament (UT2003, UT2004)](PublicModResource.md#public-mod-author-support-for-unreal-tournament-ut2003-ut2004))
+  + [Overview](PublicModResource.md#overview)
+  + [Check Yourself](PublicModResource.md#check-yourself)
+  + [Getting the Resources](PublicModResource.md#getting-the-resources)
+    - [Essential files](PublicModResource.md#essential-files)
+    - [Other useful files](PublicModResource.md#other-useful-files)
+  + [Support](PublicModResource.md#support)
+    - [Documentation](PublicModResource.md#documentation)
+      * [Tutorials](PublicModResource.md#tutorials)
+    - [Mailing Lists](PublicModResource.md#mailing-lists)
+    - [IRC](PublicModResource.md#irc)
+    - [Community](PublicModResource.md#community)
+      * [Forums](PublicModResource.md#forums)
+      * [IRC](PublicModResource.md#irc)
+      * [Additional Resources](PublicModResource.md#additional-resources)
 
 ## Overview
 

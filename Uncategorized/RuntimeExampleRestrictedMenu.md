@@ -2,13 +2,13 @@
 
 *Created by Chris Linder (DemiurgeStudios?) on 10-21-03 for the Unreal Runtime. Last Updated by Chris Linder (DemiurgeStudios?).*
 
-* [Runtime Example Restricted Menu](RuntimeExampleRestrictedMenu.md#Runtime Example Restricted Menu)
-  + [Related Documents](RuntimeExampleRestrictedMenu.md#Related Documents)
-  + [Introduction](RuntimeExampleRestrictedMenu.md#Introduction)
-  + [Creating the Main Menu](RuntimeExampleRestrictedMenu.md#Creating the Main Menu)
-  + [Creating the In-Game Menu](RuntimeExampleRestrictedMenu.md#Creating the In-Game Menu)
-  + [Creating the Restricted Console](RuntimeExampleRestrictedMenu.md#Creating the Restricted Console)
-  + [Installing the Example](RuntimeExampleRestrictedMenu.md#Installing the Example)
+* [Runtime Example Restricted Menu](RuntimeExampleRestrictedMenu.md#runtime-example-restricted-menu)
+  + [Related Documents](RuntimeExampleRestrictedMenu.md#related-documents)
+  + [Introduction](RuntimeExampleRestrictedMenu.md#introduction)
+  + [Creating the Main Menu](RuntimeExampleRestrictedMenu.md#creating-the-main-menu)
+  + [Creating the In-Game Menu](RuntimeExampleRestrictedMenu.md#creating-the-in-game-menu)
+  + [Creating the Restricted Console](RuntimeExampleRestrictedMenu.md#creating-the-restricted-console)
+  + [Installing the Example](RuntimeExampleRestrictedMenu.md#installing-the-example)
 
 ## Related Documents
 

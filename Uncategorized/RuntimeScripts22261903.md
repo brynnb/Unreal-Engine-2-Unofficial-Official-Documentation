@@ -4,13 +4,13 @@
 
 *Document Summary: Introduction to the [UnrealEngine2Runtime](UnrealEngine2Runtime.md) UnrealScript source code, including release information.**Document Changelog: Created and updated; maintained over time.*
 
-* [UnrealEngine2 Runtime UnrealScript Source Code (version 2226.19.03)](RuntimeScripts22261903.md#UnrealEngine2 Runtime _UnrealScript Source Code (version 2226.19.03))
-  + [Overview](RuntimeScripts22261903.md#Overview)
-  + [Obtaining the UnrealScript Source Code](RuntimeScripts22261903.md#Obtaining the _UnrealScript Source Code)
-    - [Downloading](RuntimeScripts22261903.md#Downloading)
-  + [Installing](RuntimeScripts22261903.md#Installing)
-  + [Developing with the UnrealScript Source Code](RuntimeScripts22261903.md#Developing with the _UnrealScript Source Code)
-    - [Debugging](RuntimeScripts22261903.md#Debugging)
+* [UnrealEngine2 Runtime UnrealScript Source Code (version 2226.19.03)](RuntimeScripts22261903.md#unrealengine2-runtime-_unrealscript-source-code-version-22261903))
+  + [Overview](RuntimeScripts22261903.md#overview)
+  + [Obtaining the UnrealScript Source Code](RuntimeScripts22261903.md#obtaining-the-_unrealscript-source-code)
+    - [Downloading](RuntimeScripts22261903.md#downloading)
+  + [Installing](RuntimeScripts22261903.md#installing)
+  + [Developing with the UnrealScript Source Code](RuntimeScripts22261903.md#developing-with-the-_unrealscript-source-code)
+    - [Debugging](RuntimeScripts22261903.md#debugging)
 
 ## Overview
 

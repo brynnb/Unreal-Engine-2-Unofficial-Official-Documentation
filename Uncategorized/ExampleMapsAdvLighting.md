@@ -2,28 +2,28 @@
 
 *Document Summary: A useful guide to performing some tricks with lighting in Unreal. Best for advanced users, since knowledge of many aspects of the engine is a requirement.**Document Changelog: Last updated by Michiel, style changes and what not. Previous update by Tom Lin (DemiurgeStudios?), for document summary. Original author was Jason Lentz (DemiurgeStudios?).*
 
-* [Advanced Lighting Tutorial](ExampleMapsAdvLighting.md#Advanced Lighting Tutorial)
-  + [Introduction](ExampleMapsAdvLighting.md#Introduction)
-  + [Projectors + Shaders](ExampleMapsAdvLighting.md#Projectors + Shaders)
-    - [Tree Canopy Shadows](ExampleMapsAdvLighting.md#Tree Canopy Shadows)
-      * [Single Tree Shadow](ExampleMapsAdvLighting.md#Single Tree Shadow)
-      * [Forest Canopy Shadow](ExampleMapsAdvLighting.md#Forest Canopy Shadow)
-    - [Ground Fog](ExampleMapsAdvLighting.md#Ground Fog)
-    - [Rolling Clouds](ExampleMapsAdvLighting.md#Rolling Clouds)
-    - [Wavering Torch Light](ExampleMapsAdvLighting.md#Wavering Torch Light)
-    - [Caustics](ExampleMapsAdvLighting.md#Caustics)
-      * [Underwater](ExampleMapsAdvLighting.md#Underwater)
-      * [Above Water](ExampleMapsAdvLighting.md#Above Water)
-  + [Projectors + Emitters](ExampleMapsAdvLighting.md#Projectors + Emitters)
-    - [Light Beam through Window](ExampleMapsAdvLighting.md#Light Beam through Window)
-  + [Mesh Effects](ExampleMapsAdvLighting.md#Mesh Effects)
-    - [Tree Canopy Light Beams](ExampleMapsAdvLighting.md#Tree Canopy Light Beams)
-    - [Neon Lights](ExampleMapsAdvLighting.md#Neon Lights)
-    - [Rotating Caution Light](ExampleMapsAdvLighting.md#Rotating Caution Light)
-    - [Moths Casting Shadows](ExampleMapsAdvLighting.md#Moths Casting Shadows)
-  + [Special Projectors](ExampleMapsAdvLighting.md#Special Projectors)
-    - [Triggerable FluorescentLight Projector](ExampleMapsAdvLighting.md#Triggerable _FluorescentLight Projector)
-  + [Downloads](ExampleMapsAdvLighting.md#Downloads)
+* [Advanced Lighting Tutorial](ExampleMapsAdvLighting.md#advanced-lighting-tutorial)
+  + [Introduction](ExampleMapsAdvLighting.md#introduction)
+  + [Projectors + Shaders](ExampleMapsAdvLighting.md#projectors--shaders)
+    - [Tree Canopy Shadows](ExampleMapsAdvLighting.md#tree-canopy-shadows)
+      * [Single Tree Shadow](ExampleMapsAdvLighting.md#single-tree-shadow)
+      * [Forest Canopy Shadow](ExampleMapsAdvLighting.md#forest-canopy-shadow)
+    - [Ground Fog](ExampleMapsAdvLighting.md#ground-fog)
+    - [Rolling Clouds](ExampleMapsAdvLighting.md#rolling-clouds)
+    - [Wavering Torch Light](ExampleMapsAdvLighting.md#wavering-torch-light)
+    - [Caustics](ExampleMapsAdvLighting.md#caustics)
+      * [Underwater](ExampleMapsAdvLighting.md#underwater)
+      * [Above Water](ExampleMapsAdvLighting.md#above-water)
+  + [Projectors + Emitters](ExampleMapsAdvLighting.md#projectors--emitters)
+    - [Light Beam through Window](ExampleMapsAdvLighting.md#light-beam-through-window)
+  + [Mesh Effects](ExampleMapsAdvLighting.md#mesh-effects)
+    - [Tree Canopy Light Beams](ExampleMapsAdvLighting.md#tree-canopy-light-beams)
+    - [Neon Lights](ExampleMapsAdvLighting.md#neon-lights)
+    - [Rotating Caution Light](ExampleMapsAdvLighting.md#rotating-caution-light)
+    - [Moths Casting Shadows](ExampleMapsAdvLighting.md#moths-casting-shadows)
+  + [Special Projectors](ExampleMapsAdvLighting.md#special-projectors)
+    - [Triggerable FluorescentLight Projector](ExampleMapsAdvLighting.md#triggerable-_fluorescentlight-projector)
+  + [Downloads](ExampleMapsAdvLighting.md#downloads)
 
 ![advanced_lighting.jpg](../assets/advanced_lighting.jpg)
 
@@ -92,7 +92,7 @@ The process for a forest shadow is not that much different from a single tree sh
 
 ![forest_shadow.jpg](../assets/forest_shadow.jpg)
 
-Now you will need to use a TexScaler so that the image will tile when set as the Projector Texture. There will be an obvious tiling pattern duplicating the projector and moving it slightly off from the first one will solve this. You will still have a fairly obvious edge around the perimeter of the two projectors. To mask this just create another projector that casts the shadow of a single tree (as described [above](ExampleMapsAdvLighting.md#SingleTree)) and strategically place them along the perimeter of your forest so as to mask the forest canopy shadow seams.
+Now you will need to use a TexScaler so that the image will tile when set as the Projector Texture. There will be an obvious tiling pattern duplicating the projector and moving it slightly off from the first one will solve this. You will still have a fairly obvious edge around the perimeter of the two projectors. To mask this just create another projector that casts the shadow of a single tree (as described [above](ExampleMapsAdvLighting.md#singletree)) and strategically place them along the perimeter of your forest so as to mask the forest canopy shadow seams.
 
 ### Ground Fog
 
@@ -185,7 +185,7 @@ After setting all this up, your projector should be ready to go. If you are usin
 
 ![aw_caustics.jpg](../assets/aw_caustics.jpg)
 
-Using an almost identical Shader and very similar Projector settings, a caustics effect can be applied to the underside of geometry that may be over water (such as a bridge).Because a large projector isn't required to cover the space of the underside of the bridge, the TexScaler should be made to reduce the size of the texture even further so that you get more detail out of the projector (U and V Scale are set to .375). All other properties of this Shader are identical to the Shader described [above](ExampleMapsAdvLighting.md#UnderWaterShader).The Projector properties for the above water caustics are also very similar to that of the below water caustics. Because of subtleties with casting on to somewhat complex StaticMeshes, some setting may have to be altered to achieve the proper effect. For instance, `bProjectOnBackfaces` must remain at False so that the caustics do not cast through the bridge and appear on the top side. Below is a list of the settings you will want to change from the underwater projector with explanations as to why:
+Using an almost identical Shader and very similar Projector settings, a caustics effect can be applied to the underside of geometry that may be over water (such as a bridge).Because a large projector isn't required to cover the space of the underside of the bridge, the TexScaler should be made to reduce the size of the texture even further so that you get more detail out of the projector (U and V Scale are set to .375). All other properties of this Shader are identical to the Shader described [above](ExampleMapsAdvLighting.md#underwatershader).The Projector properties for the above water caustics are also very similar to that of the below water caustics. Because of subtleties with casting on to somewhat complex StaticMeshes, some setting may have to be altered to achieve the proper effect. For instance, `bProjectOnBackfaces` must remain at False so that the caustics do not cast through the bridge and appear on the top side. Below is a list of the settings you will want to change from the underwater projector with explanations as to why:
 
 * Display -
   + `DrawScale` : `1` This setting should remain at the default setting of 1 and you can use the FOV to make the Project cast an appropriately sized projection.
@@ -297,11 +297,11 @@ Once you assign a texture to the **ProjTexture,** your caution light is ready to
 
 ![moth_shadow.jpg](../assets/moth_shadow.jpg)
 
-Some of the more dynamic lighting effects will require additional code to be written. This effect will create a dynamic shadow that follows the movement of a moth around a light. Below is a link to a document in the Technical section of UDN that shows how your programmers can set this up.[Moth Shadows](https://udn.epicgames.com/Two/ExampleMapsAdvLightingCode#Moth)
+Some of the more dynamic lighting effects will require additional code to be written. This effect will create a dynamic shadow that follows the movement of a moth around a light. Below is a link to a document in the Technical section of UDN that shows how your programmers can set this up.[Moth Shadows](https://udn.epicgames.com/Two/ExampleMapsAdvLightingCode#moth)
 
 ## Special Projectors
 
-Special Projectors can also be added by your programmers depending on what you want. This example shows a FluorescentLight Projector that was added to the UDNContent code. To add this TriggerLight into your build, just copy the "UDNContent.dll" and "UDNContent.u" files into your system folder. You can download these files [here](https://udn.epicgames.com/Two/UDNBuildContent#Running_the_Content_). The new classes are explained in [this document](https://udn.epicgames.com/Two/ExampleMapsAdvLightingCode#Fluorescent_Lights).
+Special Projectors can also be added by your programmers depending on what you want. This example shows a FluorescentLight Projector that was added to the UDNContent code. To add this TriggerLight into your build, just copy the "UDNContent.dll" and "UDNContent.u" files into your system folder. You can download these files [here](https://udn.epicgames.com/Two/UDNBuildContent#running_the_content_). The new classes are explained in [this document](https://udn.epicgames.com/Two/ExampleMapsAdvLightingCode#fluorescent_lights).
 
 ### Triggerable FluorescentLight Projector
 
@@ -319,7 +319,7 @@ Next you will need to place two types of triggers, a regular trigger and a Mater
 
 ![materialswitch_triggers.jpg](../assets/materialswitch_triggers.jpg)
 
-In the example map two separate regular triggers activate the MaterialSwitchTrigger which switches the MaterialSwitch material on both fluorescent lights. These two regular triggers are also set the bHidden False so that they can be easily found in game.If your programmers want to create your own special Projector lights, they can see how the FluorescentLight Projector was created [here](https://udn.epicgames.com/Two/ExampleMapsAdvLightingCode#Fluorescent_Lights) in the Technical version of this document.
+In the example map two separate regular triggers activate the MaterialSwitchTrigger which switches the MaterialSwitch material on both fluorescent lights. These two regular triggers are also set the bHidden False so that they can be easily found in game.If your programmers want to create your own special Projector lights, they can see how the FluorescentLight Projector was created [here](https://udn.epicgames.com/Two/ExampleMapsAdvLightingCode#fluorescent_lights) in the Technical version of this document.
 
 ## Downloads
 

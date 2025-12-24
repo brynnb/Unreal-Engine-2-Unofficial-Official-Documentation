@@ -2,16 +2,16 @@
 
 *Document Summary: A guide showing how LightActors affect various types of geometry.**Document Changelog: Last updated by Jason Lentz (DemiurgeStudios?) to separate into more manageable docs. Original author - Lode Vandevenne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff))*
 
-* [Lighting on Surfaces](LightingOnSurfaces.md#Lighting on Surfaces)
-  + [Introduction](LightingOnSurfaces.md#Introduction)
-  + [Lighting on BSP](LightingOnSurfaces.md#Lighting on BSP)
-  + [Lighting on Static Meshes](LightingOnSurfaces.md#Lighting on Static Meshes)
-  + [Lighting on Meshes](LightingOnSurfaces.md#Lighting on Meshes)
-  + [Lighting on Terrain](LightingOnSurfaces.md#Lighting on Terrain)
-  + [Lighting on Sprites](LightingOnSurfaces.md#Lighting on Sprites)
-  + [Lighting on Particles](LightingOnSurfaces.md#Lighting on Particles)
-  + [Lighting on Movers](LightingOnSurfaces.md#Lighting on Movers)
-  + [Relevant Documents](LightingOnSurfaces.md#Relevant Documents)
+* [Lighting on Surfaces](LightingOnSurfaces.md#lighting-on-surfaces)
+  + [Introduction](LightingOnSurfaces.md#introduction)
+  + [Lighting on BSP](LightingOnSurfaces.md#lighting-on-bsp)
+  + [Lighting on Static Meshes](LightingOnSurfaces.md#lighting-on-static-meshes)
+  + [Lighting on Meshes](LightingOnSurfaces.md#lighting-on-meshes)
+  + [Lighting on Terrain](LightingOnSurfaces.md#lighting-on-terrain)
+  + [Lighting on Sprites](LightingOnSurfaces.md#lighting-on-sprites)
+  + [Lighting on Particles](LightingOnSurfaces.md#lighting-on-particles)
+  + [Lighting on Movers](LightingOnSurfaces.md#lighting-on-movers)
+  + [Relevant Documents](LightingOnSurfaces.md#relevant-documents)
 
 ## Introduction
 

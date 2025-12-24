@@ -1,16 +1,16 @@
 # Getting Started: Unreal Engine 3
 
-* [Getting Started: Unreal Engine 3](GettingStartedOverview.md#Getting Started: Unreal Engine 3)
-  + [Overview](GettingStartedOverview.md#Overview)
-    - [Platform Specific Considerations](GettingStartedOverview.md#Platform Specific Considerations)
-  + [Planning and Preproduction](GettingStartedOverview.md#Planning and Preproduction)
-  + [Engine Acquisition and Setup](GettingStartedOverview.md#Engine Acquisition and Setup)
-  + [UnrealScript and the UE3 Codebase](GettingStartedOverview.md#UnrealScript and the UE3 Codebase)
-  + [Gameplay Element Creation](GettingStartedOverview.md#Gameplay Element Creation)
-  + [Level Creation](GettingStartedOverview.md#Level Creation)
-  + [Content Creation](GettingStartedOverview.md#Content Creation)
-  + [Compiling and Testing](GettingStartedOverview.md#Compiling and Testing)
-  + [Packaging and Distribution](GettingStartedOverview.md#Packaging and Distribution)
+* [Getting Started: Unreal Engine 3](GettingStartedOverview.md#getting-started-unreal-engine-3)
+  + [Overview](GettingStartedOverview.md#overview)
+    - [Platform Specific Considerations](GettingStartedOverview.md#platform-specific-considerations)
+  + [Planning and Preproduction](GettingStartedOverview.md#planning-and-preproduction)
+  + [Engine Acquisition and Setup](GettingStartedOverview.md#engine-acquisition-and-setup)
+  + [UnrealScript and the UE3 Codebase](GettingStartedOverview.md#unrealscript-and-the-ue3-codebase)
+  + [Gameplay Element Creation](GettingStartedOverview.md#gameplay-element-creation)
+  + [Level Creation](GettingStartedOverview.md#level-creation)
+  + [Content Creation](GettingStartedOverview.md#content-creation)
+  + [Compiling and Testing](GettingStartedOverview.md#compiling-and-testing)
+  + [Packaging and Distribution](GettingStartedOverview.md#packaging-and-distribution)
 
 ## Overview
 

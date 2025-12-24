@@ -2,13 +2,13 @@
 
 *Document Summary: A smattering of maps that cover a range of topics. Matinee, Material, Particles and Sound are all covered. Since these are here more as examples of what is possible rather than tutorials/explanations, these maps are appropriate for novices. Requires some knowledge of where to put Unreal-specific files.**Document Changelog: Last updated by Tom Lin (DemiurgeStudios?), for document summary. Original author was Jason Lentz (DemiurgeStudios?).*
 
-* [EPIC Demonstration Maps](ExampleMapsEPIC.md#EPIC Demonstration Maps)
-  + [Introduction](ExampleMapsEPIC.md#Introduction)
-  + [CIN Dolly Example Map](ExampleMapsEPIC.md#CIN Dolly Example Map)
-  + [Materials Example Map](ExampleMapsEPIC.md#Materials Example Map)
-  + [Particles Example Map](ExampleMapsEPIC.md#Particles Example Map)
-  + [Sound Example Map](ExampleMapsEPIC.md#Sound Example Map)
-  + [Downloads](ExampleMapsEPIC.md#Downloads)
+* [EPIC Demonstration Maps](ExampleMapsEPIC.md#epic-demonstration-maps)
+  + [Introduction](ExampleMapsEPIC.md#introduction)
+  + [CIN Dolly Example Map](ExampleMapsEPIC.md#cin-dolly-example-map)
+  + [Materials Example Map](ExampleMapsEPIC.md#materials-example-map)
+  + [Particles Example Map](ExampleMapsEPIC.md#particles-example-map)
+  + [Sound Example Map](ExampleMapsEPIC.md#sound-example-map)
+  + [Downloads](ExampleMapsEPIC.md#downloads)
 
 ## Introduction
 

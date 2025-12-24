@@ -2,9 +2,9 @@
 
 *Document Summary: An example of cel shading in UnrealEngine2, with example content provided for UT2004.**Document Changelog: Created. Thanks to Steve Polge and Alan Willard. Renamed to UT2004 by Michiel Hendriks*
 
-* [Example of Cel Shading in UT2004](CelShadingExampleUT2004.md#Example of Cel Shading in UT2004)
-  + [Alan Willard writes...](CelShadingExampleUT2004.md#Alan Willard writes...)
-  + [A Note](CelShadingExampleUT2004.md#A Note)
+* [Example of Cel Shading in UT2004](CelShadingExampleUT2004.md#example-of-cel-shading-in-ut2004)
+  + [Alan Willard writes...](CelShadingExampleUT2004.md#alan-willard-writes)
+  + [A Note](CelShadingExampleUT2004.md#a-note)
 
 ## Alan Willard writes...
 

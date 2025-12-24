@@ -37,8 +37,8 @@ While StaticMeshes are now primarily used to populate levels with geometry, ther
 
 * The main "box(es)" where your level exists
 * [Sky boxes](../../Uncategorized/ExampleMapsSkyZones.md)
-* [Zone Portals](../Techniques/LevelOptimization.md#Zones_and_Portals)
-* [Antiportal Volumes](../Techniques/LevelOptimization.md#Antiportal_Volumes)
+* [Zone Portals](../Techniques/LevelOptimization.md#zones_and_portals)
+* [Antiportal Volumes](../Techniques/LevelOptimization.md#antiportal_volumes)
 * [special Volumes](VolumesTutorial.md)
 * [MirrorsAndWarpZones](../../Uncategorized/MirrorsAndWarpZones.md)
 

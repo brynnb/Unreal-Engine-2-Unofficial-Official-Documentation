@@ -2,14 +2,14 @@
 
 *Document Summary: An introductory guide to importing Karma Assets into Unreal Ed.**Document Changelog: Last updated by Michiel Hendriks. Previously updated by Jason Lentz (DemiurgeStudios?), to update for the 2226 build and for re-organizational purposes. Original author was James Golding. ( [jamesg@epicgames.com](mailto:jamesg@epicgames.com) )*
 
-* [Importing Karma Actors](ImportingKarmaActors.md#Importing Karma Actors)
-  + [Overview](ImportingKarmaActors.md#Overview)
-  + [Getting Started](ImportingKarmaActors.md#Getting Started)
-  + [Creating Graphics With Collision](ImportingKarmaActors.md#Creating Graphics With Collision)
-  + [Adding To Level](ImportingKarmaActors.md#Adding To Level)
-  + [Setting Parameters](ImportingKarmaActors.md#Setting Parameters)
-  + [Playing The Level](ImportingKarmaActors.md#Playing The Level)
-  + [In Closing](ImportingKarmaActors.md#In Closing)
+* [Importing Karma Actors](ImportingKarmaActors.md#importing-karma-actors)
+  + [Overview](ImportingKarmaActors.md#overview)
+  + [Getting Started](ImportingKarmaActors.md#getting-started)
+  + [Creating Graphics With Collision](ImportingKarmaActors.md#creating-graphics-with-collision)
+  + [Adding To Level](ImportingKarmaActors.md#adding-to-level)
+  + [Setting Parameters](ImportingKarmaActors.md#setting-parameters)
+  + [Playing The Level](ImportingKarmaActors.md#playing-the-level)
+  + [In Closing](ImportingKarmaActors.md#in-closing)
 
 ## Overview
 

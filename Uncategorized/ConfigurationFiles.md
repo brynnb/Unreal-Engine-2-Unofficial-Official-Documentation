@@ -2,11 +2,11 @@
 
 *Last updated by Michiel Hendriks, brought up to date with v3323. Previously updated by Richard 'vajuras' Osborne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)), to add more detail about DefaultGame property in Engine.Engine. Original author was Richard 'vajuras' Osborne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).**Quick Note: If anyone finds any major details missing, feel free to add detail.*
 
-* [Configuring the Unreal Engine via Ini files](ConfigurationFiles.md#Configuring the Unreal Engine via Ini files)
-  + [About the Ini files](ConfigurationFiles.md#About the Ini files)
-    - [UT2004.ini file](ConfigurationFiles.md#UT2004.ini file)
-    - [User.ini file](ConfigurationFiles.md#User.ini file)
-  + [Saving Object Configuration](ConfigurationFiles.md#Saving Object Configuration)
+* [Configuring the Unreal Engine via Ini files](ConfigurationFiles.md#configuring-the-unreal-engine-via-ini-files)
+  + [About the Ini files](ConfigurationFiles.md#about-the-ini-files)
+    - [UT2004.ini file](ConfigurationFiles.md#ut2004ini-file)
+    - [User.ini file](ConfigurationFiles.md#userini-file)
+  + [Saving Object Configuration](ConfigurationFiles.md#saving-object-configuration)
 
 ## About the Ini files
 

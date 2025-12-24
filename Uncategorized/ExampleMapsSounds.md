@@ -2,14 +2,14 @@
 
 *Document Summary: A comprehensive look at how to play sounds in a variety of ways. Good for beginners, but even advanced users may want to look through the properties enumerated in these lists.**Document Changelog: Last updated by Chris Linder (DemiurgeStudios?) to clarify ambient sound settings. Updated by Tom Lin (DemiurgeStudios?), for document summary. Original author was Jason Lentz (DemiurgeStudios?).*
 
-* [Sounds Tutorial](ExampleMapsSounds.md#Sounds Tutorial)
-  + [Introduction](ExampleMapsSounds.md#Introduction)
-  + [AmbientSounds](ExampleMapsSounds.md#AmbientSounds)
-  + [ZoneInfo Sounds](ExampleMapsSounds.md#ZoneInfo Sounds)
-    - [ZoneEffects](ExampleMapsSounds.md#ZoneEffects)
-  + [Sounds in StaticMeshes and Movers](ExampleMapsSounds.md#Sounds in _StaticMeshes and Movers)
-  + [Triggerable Sounds](ExampleMapsSounds.md#Triggerable Sounds)
-  + [Downloads](ExampleMapsSounds.md#Downloads)
+* [Sounds Tutorial](ExampleMapsSounds.md#sounds-tutorial)
+  + [Introduction](ExampleMapsSounds.md#introduction)
+  + [AmbientSounds](ExampleMapsSounds.md#ambientsounds)
+  + [ZoneInfo Sounds](ExampleMapsSounds.md#zoneinfo-sounds)
+    - [ZoneEffects](ExampleMapsSounds.md#zoneeffects)
+  + [Sounds in StaticMeshes and Movers](ExampleMapsSounds.md#sounds-in-_staticmeshes-and-movers)
+  + [Triggerable Sounds](ExampleMapsSounds.md#triggerable-sounds)
+  + [Downloads](ExampleMapsSounds.md#downloads)
 
 ## Introduction
 
@@ -27,7 +27,7 @@ All of the settings for this sound are found in the properties window.
 
 The following is a description of what each setting controls:
 
-| [Property](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=0;table=1;up=0#sorted_table "Sort by this column") | [Description](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=1;table=1;up=0#sorted_table "Sort by this column") |
+| [Property](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=0;table=1;up=0#sorted_table-sort-by-this-column) | [Description](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=1;table=1;up=0#sorted_table-sort-by-this-column) |
 | --- | --- |
 | AmbientSound | From here you will apply the sound you have selected in the Sound Browser to this AmbientSound Actor. This is the ambient looping sound effect of this actor. AmbientSound can be set on any *Actor*; it does not need to be an *AmbientSound* from the Actor Browser. The sound must be mono to be heard in 3D. If the sound is stereo it will not play in 3D. Because the sound is not played in 3D, it will not attenuate with distance nor will there be any stereo separation based on the direction of the sound. The stereo sound will play at full volume when you are inside the *SoundRadius* and will not play at all outside the radius. |
 | bFullVolume | If this is set to true, the ambient sound of this actor will ignore the *AmbientVolume* settings in *<your\_game>.ini*. See *SoundVolume* below for more details about volume. |
@@ -58,7 +58,7 @@ Under the ZoneSound tab though, you can select a ZoneEffect. Using these will ac
 
 Below are descriptions of what each of these settings control:
 
-| [Property](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=0;table=2;up=0#sorted_table "Sort by this column") | [Description](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=1;table=2;up=0#sorted_table "Sort by this column") | [Range](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=2;table=2;up=0#sorted_table "Sort by this column") |
+| [Property](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=0;table=2;up=0#sorted_table-sort-by-this-column) | [Description](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=1;table=2;up=0#sorted_table-sort-by-this-column) | [Range](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=2;table=2;up=0#sorted_table-sort-by-this-column) |
 | --- | --- | --- |
 | AirAbsorptionHF | You can use this setting to simulate sound transmission through air of different consistency (foggy, dry, smoky, etc.,). The lower the setting, the more absorbent the air is. | [-100.0, 0.0] |
 | bDecayHFLimit | If this is True, a high-frequency decay time automatically stays below a limit value that is derived from the setting of the *AirAbsorptionHF* and is independent of the *DecayHFRatio*. It is useful for maintaining natural sounding reverberation decay without risking an unnaturally long decay time at high frequencies. | [True/False] |
@@ -112,4 +112,4 @@ Below you can download a compressed archive that contains the content for this e
 * [SoundsDemo.zip](../assets/soundsdemo.zip) (for Unreal Engine 2 build 2226)
 * [EM\_SoundsDemo\_RT.zip](../assets/em_soundsdemo_rt.zip) (for Unreal Engine 2 build 2226)
 
-To run this example map just download the appropriate zip file and put the packages in their appropriate folders. Also see the [Epic Sounds ExampleMap](ExampleMapsEPIC.md#Sound_Example_Map) (build 2110).
+To run this example map just download the appropriate zip file and put the packages in their appropriate folders. Also see the [Epic Sounds ExampleMap](ExampleMapsEPIC.md#sound_example_map) (build 2110).

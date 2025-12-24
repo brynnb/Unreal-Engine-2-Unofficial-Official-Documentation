@@ -2,27 +2,27 @@
 
 *Last updated by Michiel Hendriks, fixed formatting. Perviously updated by Chris Linder (DemiurgeStudios?), for creation. Original author was Chris Linder (DemiurgeStudios?).*
 
-* [Hotrod and Trailer Tutorial](HotRod.md#Hotrod and Trailer Tutorial)
-  + [Disclaimer](HotRod.md#Disclaimer)
-  + [Introduction](HotRod.md#Introduction)
-  + [Cuda](HotRod.md#Cuda)
-    - [Engine](HotRod.md#Engine)
-    - [How to Fake Gears](HotRod.md#How to Fake Gears)
-    - [Tail Pipe Flames](HotRod.md#Tail Pipe Flames)
-    - [Better Tire Squealing](HotRod.md#Better Tire Squealing)
-    - [Head/Tail Lights](HotRod.md#Head/Tail Lights)
-    - [Different Front and Rear Suspension and Tire Physics](HotRod.md#Different Front and Rear Suspension and Tire Physics)
-    - [How to Get That Muscle Car Feel](HotRod.md#How to Get That Muscle Car Feel)
-    - [Camera Control](HotRod.md#Camera Control)
-  + [Trailer](HotRod.md#Trailer)
-    - [Tires and Suspension](HotRod.md#Tires and Suspension)
-    - [Ramps](HotRod.md#Ramps)
-    - [Hitching: Physics, Brakes, and Lights](HotRod.md#Hitching: Physics, Brakes, and Lights)
-  + [Towing Vehicle](HotRod.md#Towing Vehicle)
-  + [Installing and Using](HotRod.md#Installing and Using)
-    - [Normal Install](HotRod.md#Normal Install)
-  + [Known Issues](HotRod.md#Known Issues)
-  + [Download](HotRod.md#Download)
+* [Hotrod and Trailer Tutorial](HotRod.md#hotrod-and-trailer-tutorial)
+  + [Disclaimer](HotRod.md#disclaimer)
+  + [Introduction](HotRod.md#introduction)
+  + [Cuda](HotRod.md#cuda)
+    - [Engine](HotRod.md#engine)
+    - [How to Fake Gears](HotRod.md#how-to-fake-gears)
+    - [Tail Pipe Flames](HotRod.md#tail-pipe-flames)
+    - [Better Tire Squealing](HotRod.md#better-tire-squealing)
+    - [Head/Tail Lights](HotRod.md#headtail-lights)
+    - [Different Front and Rear Suspension and Tire Physics](HotRod.md#different-front-and-rear-suspension-and-tire-physics)
+    - [How to Get That Muscle Car Feel](HotRod.md#how-to-get-that-muscle-car-feel)
+    - [Camera Control](HotRod.md#camera-control)
+  + [Trailer](HotRod.md#trailer)
+    - [Tires and Suspension](HotRod.md#tires-and-suspension)
+    - [Ramps](HotRod.md#ramps)
+    - [Hitching: Physics, Brakes, and Lights](HotRod.md#hitching-physics-brakes-and-lights)
+  + [Towing Vehicle](HotRod.md#towing-vehicle)
+  + [Installing and Using](HotRod.md#installing-and-using)
+    - [Normal Install](HotRod.md#normal-install)
+  + [Known Issues](HotRod.md#known-issues)
+  + [Download](HotRod.md#download)
 
 ## Disclaimer
 
@@ -32,7 +32,7 @@ This document is mostly done but is not finalized!
 
 ![HotRodOnTrailer.jpg](../assets/hotrodontrailer.jpg)
 
-This tutorial is designed to show how to build a hotrod muscle car, a trailer on which to carry the car, and a vehicle to pull the trailer. This tutorial assumes you have read or at least glanced at the [KarmaCars](KarmaCars.md) tutorial. The code in this document requires the [code](KarmaCars.md#Download) from [KarmaCars](KarmaCars.md) to work.The hotrod, in this case a 1970 Plymouth Barracuda, has a large blower that protrudes from the hood and vibrates with the speed of the engine, has flames that shoot out of the tail pipes, and has the sound of gears shifting. The Cuda improves upon **GenericCar** in many ways such as better tire squealing, front and rear tires that have different physics properties, and adding brake lights and reverse lights that are independent of each other.The trailer, given that it only has two wheels and you can not drive it, is not a **KVehicle** at all; it extends **KActor**. The trailer can be attached to a **KCar** and towed. When the towing car brakes, the trailer will also brake, its brake lights lighting up in the process. The ramps on the back of the trailer can be raised and lowered by triggering a lever on the back left near the ramps. Once the ramps are down, a car can be driven on or off the trailer.The vehicle that pulls the trailer in this tutorial is just a very heavy version on the Bulldog with a lot of power and a low top speed. The link between the trailer and the towing vehicle is built in Unrealed; it is not created dynamically.
+This tutorial is designed to show how to build a hotrod muscle car, a trailer on which to carry the car, and a vehicle to pull the trailer. This tutorial assumes you have read or at least glanced at the [KarmaCars](KarmaCars.md) tutorial. The code in this document requires the [code](KarmaCars.md#download) from [KarmaCars](KarmaCars.md) to work.The hotrod, in this case a 1970 Plymouth Barracuda, has a large blower that protrudes from the hood and vibrates with the speed of the engine, has flames that shoot out of the tail pipes, and has the sound of gears shifting. The Cuda improves upon **GenericCar** in many ways such as better tire squealing, front and rear tires that have different physics properties, and adding brake lights and reverse lights that are independent of each other.The trailer, given that it only has two wheels and you can not drive it, is not a **KVehicle** at all; it extends **KActor**. The trailer can be attached to a **KCar** and towed. When the towing car brakes, the trailer will also brake, its brake lights lighting up in the process. The ramps on the back of the trailer can be raised and lowered by triggering a lever on the back left near the ramps. Once the ramps are down, a car can be driven on or off the trailer.The vehicle that pulls the trailer in this tutorial is just a very heavy version on the Bulldog with a lot of power and a low top speed. The link between the trailer and the towing vehicle is built in Unrealed; it is not created dynamically.
 
 ## Cuda
 
@@ -75,7 +75,7 @@ EngineModel.SetRelativeRotation(rot(0, 32768, 0));
 EngineModel.LoopAnim('Vibrate');
 ```
 
-The vibrate animation is played at different rates depending on the pitch of the engine noise (engine pitch covered in section [below](HotRod.md#How_to_Fake_Gears)). This is done by calling *LoopAnim* every tick with a different rate. This causes the animation to be played at different rates and thankfully does not start the animation from the beginning each call. If there is no driver in the car, the engine vibrate is played very very slowly to make it look stopped.The engine is destroyed in *Destroyed*.
+The vibrate animation is played at different rates depending on the pitch of the engine noise (engine pitch covered in section [below](HotRod.md#how_to_fake_gears)). This is done by calling *LoopAnim* every tick with a different rate. This causes the animation to be played at different rates and thankfully does not start the animation from the beginning each call. If there is no driver in the car, the engine vibrate is played very very slowly to make it look stopped.The engine is destroyed in *Destroyed*.
 
 ### How to Fake Gears
 
@@ -196,7 +196,7 @@ if(rearLeft.SoundVolume != DesiredSlipVol)
 
 ### Head/Tail Lights
 
-The headlights are done almost exactly like the Bulldog headlights as described [here](KarmaCars.md#Headlights). The tail lights are similar to those in **GenericCar** but in this case there are independent reverse and brake lights. The brake lights are set to be on when the player is braking. The reverse light is set to be on when the last thing the player did is reverse but has not gone forward yet (otherwise the revere light would only be on when you were holding reverse). The lights are handled as follows in *Tick*:*(**OutputBrake** is true when the player is braking. **Skins[0]** is the material on the static mesh that has the brake light texture. **Skins[1]** is the reverse light material. **Gear** is 1 if you are pressing forward and going forward, -1 if you are pressing backwards and going backwards, and 0 otherwise which is considered coasting.)*
+The headlights are done almost exactly like the Bulldog headlights as described [here](KarmaCars.md#headlights). The tail lights are similar to those in **GenericCar** but in this case there are independent reverse and brake lights. The brake lights are set to be on when the player is braking. The reverse light is set to be on when the last thing the player did is reverse but has not gone forward yet (otherwise the revere light would only be on when you were holding reverse). The lights are handled as follows in *Tick*:*(**OutputBrake** is true when the player is braking. **Skins[0]** is the material on the static mesh that has the brake light texture. **Skins[1]** is the reverse light material. **Gear** is 1 if you are pressing forward and going forward, -1 if you are pressing backwards and going backwards, and 0 otherwise which is considered coasting.)*
 
 ```
 
@@ -326,7 +326,7 @@ simulated function bool CalcInsideView(out actor ViewActor,
 
 ### Tires and Suspension
 
-The tires are created in almost exactly the same way as the rear tires on **KCar**. The tires and tire joints are spawned and set up in *PostNetBeingPlay*. The tire properties and the suspension properties are then set up in *KVehicleUpdateParams* which is called from *PostNetBeingPlay*. The values for the tire and suspension properties are set in defaultproperties of **Trailer.uc** or from Unrealed under the **Trailer** heading in the properties of the trailer actor. These parameters are the same as those used for **KCar** and a reference for their meanings can be found in the KarmaCarCreation doc [here](KarmaCarCreation.md#KCar).
+The tires are created in almost exactly the same way as the rear tires on **KCar**. The tires and tire joints are spawned and set up in *PostNetBeingPlay*. The tire properties and the suspension properties are then set up in *KVehicleUpdateParams* which is called from *PostNetBeingPlay*. The values for the tire and suspension properties are set in defaultproperties of **Trailer.uc** or from Unrealed under the **Trailer** heading in the properties of the trailer actor. These parameters are the same as those used for **KCar** and a reference for their meanings can be found in the KarmaCarCreation doc [here](KarmaCarCreation.md#kcar).
 
 ### Ramps
 
@@ -412,7 +412,7 @@ As mentioned before this a modified Bulldog that is much heavier and more powerf
 
 ### Normal Install
 
-First download the zip from [KarmaCars](KarmaCars.md) and install it as described in the document.Next download the zip from this document. Unzip it into your build where you setup the [KarmaCars](KarmaCars.md). Next, add the *HotRod* packages to your edit packages in `UT2004.ini`. Then do a **ucc make** and you should be ready to go. You can start dropping **Cuda** s, **CudaEasyFun** s, **Trailer** s, and **TrailerPullBulldog** s in your map or download the example map [here](HotRod.md#Download).Once you run the game but before you start driving the Cuda, I would suggest binding a key to *Use* and a key to *SwitchCameraMode*. I used `E' and `R' by typing
+First download the zip from [KarmaCars](KarmaCars.md) and install it as described in the document.Next download the zip from this document. Unzip it into your build where you setup the [KarmaCars](KarmaCars.md). Next, add the *HotRod* packages to your edit packages in `UT2004.ini`. Then do a **ucc make** and you should be ready to go. You can start dropping **Cuda** s, **CudaEasyFun** s, **Trailer** s, and **TrailerPullBulldog** s in your map or download the example map [here](HotRod.md#download).Once you run the game but before you start driving the Cuda, I would suggest binding a key to *Use* and a key to *SwitchCameraMode*. I used `E' and `R' by typing
 
 ```
 

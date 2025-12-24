@@ -2,10 +2,10 @@
 
 *Document Summary: A simple demonstration of how to make a projector expand, to simulate pooling water. Requires some knowledge of emitters and projectors. Most of this document is at an intermediate skill level. However, code exists to modify the projector, so to follow this document, programmer aid is required to create a subclass.**Document Changelog: Last updated by Tom Lin (DemiurgeStudios?), for document summary. Original author was Lode Vandevenne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).*
 
-* [Expanding Pool Example Map](ExampleMapsExpandingPool.md#Expanding Pool Example Map)
-  + [Introduction](ExampleMapsExpandingPool.md#Introduction)
-  + [The emitter](ExampleMapsExpandingPool.md#The emitter)
-  + [The Projector](ExampleMapsExpandingPool.md#The Projector)
+* [Expanding Pool Example Map](ExampleMapsExpandingPool.md#expanding-pool-example-map)
+  + [Introduction](ExampleMapsExpandingPool.md#introduction)
+  + [The emitter](ExampleMapsExpandingPool.md#the-emitter)
+  + [The Projector](ExampleMapsExpandingPool.md#the-projector)
 
 ## Introduction
 

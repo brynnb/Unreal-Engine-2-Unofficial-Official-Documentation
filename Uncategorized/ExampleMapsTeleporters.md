@@ -2,15 +2,15 @@
 
 *Document Summary: A thorough look at how to set up teleporters. Basic level setup ability is required. Intermediate skill level recommended.**Document Changelog: Last updated by Tom Lin (DemiurgeStudios?), for document summary. Original author was Jason Lentz (DemiurgeStudios?)*
 
-* [Teleporters](ExampleMapsTeleporters.md#Teleporters)
-  + [Introduction](ExampleMapsTeleporters.md#Introduction)
-  + [Teleporting to Another Map](ExampleMapsTeleporters.md#Teleporting to Another Map)
-  + [Teleporting Within a Map](ExampleMapsTeleporters.md#Teleporting Within a Map)
-    - [One-Way](ExampleMapsTeleporters.md#One-Way)
-    - [Two-Way Teleporters](ExampleMapsTeleporters.md#Two-Way Teleporters)
-    - [Random](ExampleMapsTeleporters.md#Random)
-    - [Teleporting with Velocity and Rotation](ExampleMapsTeleporters.md#Teleporting with Velocity and Rotation)
-  + [Downloads](ExampleMapsTeleporters.md#Downloads)
+* [Teleporters](ExampleMapsTeleporters.md#teleporters)
+  + [Introduction](ExampleMapsTeleporters.md#introduction)
+  + [Teleporting to Another Map](ExampleMapsTeleporters.md#teleporting-to-another-map)
+  + [Teleporting Within a Map](ExampleMapsTeleporters.md#teleporting-within-a-map)
+    - [One-Way](ExampleMapsTeleporters.md#one-way)
+    - [Two-Way Teleporters](ExampleMapsTeleporters.md#two-way-teleporters)
+    - [Random](ExampleMapsTeleporters.md#random)
+    - [Teleporting with Velocity and Rotation](ExampleMapsTeleporters.md#teleporting-with-velocity-and-rotation)
+  + [Downloads](ExampleMapsTeleporters.md#downloads)
 
 ## Introduction
 

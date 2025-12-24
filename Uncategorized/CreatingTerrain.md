@@ -2,15 +2,15 @@
 
 *Document Summary: An introductory document to creating Terrain.**Document Changelog: Last updated by Jason Lentz (DemiurgeStudios?) to separate into smaller docs for the 2110 build. Original author was Lode Vandevenne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).*
 
-* [Creating Your First Terrain](CreatingTerrain.md#Creating Your First Terrain)
-  + [Introduction](CreatingTerrain.md#Introduction)
-  + [Preparing Your Map for Terrain](CreatingTerrain.md#Preparing Your Map for Terrain)
-  + [Your First Terrain](CreatingTerrain.md#Your First Terrain)
-    - [The TerrainMap](CreatingTerrain.md#The _TerrainMap)
-    - [Adding a Texture](CreatingTerrain.md#Adding a Texture)
-    - [Rebuilding the Map](CreatingTerrain.md#Rebuilding the Map)
-  + [The Terrain Generator](CreatingTerrain.md#The Terrain Generator)
-  + [Other Sections](CreatingTerrain.md#Other Sections)
+* [Creating Your First Terrain](CreatingTerrain.md#creating-your-first-terrain)
+  + [Introduction](CreatingTerrain.md#introduction)
+  + [Preparing Your Map for Terrain](CreatingTerrain.md#preparing-your-map-for-terrain)
+  + [Your First Terrain](CreatingTerrain.md#your-first-terrain)
+    - [The TerrainMap](CreatingTerrain.md#the-_terrainmap)
+    - [Adding a Texture](CreatingTerrain.md#adding-a-texture)
+    - [Rebuilding the Map](CreatingTerrain.md#rebuilding-the-map)
+  + [The Terrain Generator](CreatingTerrain.md#the-terrain-generator)
+  + [Other Sections](CreatingTerrain.md#other-sections)
 
 ## Introduction
 

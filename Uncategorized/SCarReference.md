@@ -5,25 +5,25 @@
 *Updated on 9/15/03 by Chris Linder (DemiurgeStudios?), first public release.*
 *Updated on 2005-04-05 by Michiel Hendriks, v3323 update.*
 
-* [SCar Reference](SCarReference.md#SCar Reference)
-  + [Related Documents](SCarReference.md#Related Documents)
-  + [Introduction](SCarReference.md#Introduction)
-  + [Code Changes](SCarReference.md#Code Changes)
-  + [Editable SCar Variables](SCarReference.md#Editable SCar Variables)
-    - [Engine](SCarReference.md#Engine)
-    - [Transmission](SCarReference.md#Transmission)
-    - [Suspension](SCarReference.md#Suspension)
-    - [Friction and Brakes](SCarReference.md#Friction and Brakes)
-    - [Steering](SCarReference.md#Steering)
-    - [Misc](SCarReference.md#Misc)
-    - [Air control](SCarReference.md#Air control)
-    - [Jumping](SCarReference.md#Jumping)
-    - [Stunt info](SCarReference.md#Stunt info)
-  + [Network Issues](SCarReference.md#Network Issues)
-    - [Problems in 2226](SCarReference.md#Problems in 2226)
-  + [Tuning / Debugging Tips](SCarReference.md#Tuning / Debugging Tips)
-    - [KDraw](SCarReference.md#KDraw)
-    - [Max Speed](SCarReference.md#Max Speed)
+* [SCar Reference](SCarReference.md#scar-reference)
+  + [Related Documents](SCarReference.md#related-documents)
+  + [Introduction](SCarReference.md#introduction)
+  + [Code Changes](SCarReference.md#code-changes)
+  + [Editable SCar Variables](SCarReference.md#editable-scar-variables)
+    - [Engine](SCarReference.md#engine)
+    - [Transmission](SCarReference.md#transmission)
+    - [Suspension](SCarReference.md#suspension)
+    - [Friction and Brakes](SCarReference.md#friction-and-brakes)
+    - [Steering](SCarReference.md#steering)
+    - [Misc](SCarReference.md#misc)
+    - [Air control](SCarReference.md#air-control)
+    - [Jumping](SCarReference.md#jumping)
+    - [Stunt info](SCarReference.md#stunt-info)
+  + [Network Issues](SCarReference.md#network-issues)
+    - [Problems in 2226](SCarReference.md#problems-in-2226)
+  + [Tuning / Debugging Tips](SCarReference.md#tuning--debugging-tips)
+    - [KDraw](SCarReference.md#kdraw)
+    - [Max Speed](SCarReference.md#max-speed)
 
 ## Related Documents
 
@@ -52,11 +52,11 @@ There are a couple code changes you need to make to a stock 2226 build before SV
 
 #### EngineBrakeFactor
 
-`var() float EngineBrakeFactor`This is used to slow down the engine if the gas is not being pressed. This will consequently slow down the car if the gas is not being pressed. The square of the scaled engine RPMs (see [EngineBrakeRPMScale](SCarReference.md#EngineBrakeRPMScale)) is multipled by *EngineBrakeFactor*
+`var() float EngineBrakeFactor`This is used to slow down the engine if the gas is not being pressed. This will consequently slow down the car if the gas is not being pressed. The square of the scaled engine RPMs (see [EngineBrakeRPMScale](SCarReference.md#enginebrakerpmscale)) is multipled by *EngineBrakeFactor*
 
 #### EngineBrakeRPMScale
 
-`var() float EngineBrakeRPMScale`*EngineBrakeRPMScale* is used to scale the engine RPMs for engine braking. See [EngineBrakeFactor](SCarReference.md#EngineBrakeFactor).
+`var() float EngineBrakeRPMScale`*EngineBrakeRPMScale* is used to scale the engine RPMs for engine braking. See [EngineBrakeFactor](SCarReference.md#enginebrakefactor).
 
 #### EngineInertia
 
@@ -66,7 +66,7 @@ There are a couple code changes you need to make to a stock 2226 build before SV
 
 #### GearRatios
 
-`var() float GearRatios[5]`This array contains the gear ratios for the transmission. 0 is reverse and 1-4 are forward. The entry for reverse should be negative. For the forward gears, each ratio should be larger than the previous ratio. The car is always in a *Gear* which corresponds to an index in this array. The engine torque is divided by a scaled version of the gear ratio (see [TransRatio](SCarReference.md#TransRatio)) to get the actual torque applied to the wheel. This means there is less torque for gears with larger numbers but more spins of the wheel for every "turn" of the engine. The speed of the engine, *EngineRPM*, is directly linked to the speed of the drive wheels. The drive wheels have a shared differential though which means one wheel could be spinning super fast and all the other wheels could be stopped.
+`var() float GearRatios[5]`This array contains the gear ratios for the transmission. 0 is reverse and 1-4 are forward. The entry for reverse should be negative. For the forward gears, each ratio should be larger than the previous ratio. The car is always in a *Gear* which corresponds to an index in this array. The engine torque is divided by a scaled version of the gear ratio (see [TransRatio](SCarReference.md#transratio)) to get the actual torque applied to the wheel. This means there is less torque for gears with larger numbers but more spins of the wheel for every "turn" of the engine. The speed of the engine, *EngineRPM*, is directly linked to the speed of the drive wheels. The drive wheels have a shared differential though which means one wheel could be spinning super fast and all the other wheels could be stopped.
 
 #### NumForwardGears
 
@@ -74,15 +74,15 @@ There are a couple code changes you need to make to a stock 2226 build before SV
 
 #### TransRatio
 
-`var() float TransRatio`This is a constant gearing factor applied to all gears in the [GearRatios](SCarReference.md#GearRatios) array. This allows you to work with whatever scale numbers you want in the GearRatios array as well as easily adjust the total gearing of car.
+`var() float TransRatio`This is a constant gearing factor applied to all gears in the [GearRatios](SCarReference.md#gearratios) array. This allows you to work with whatever scale numbers you want in the GearRatios array as well as easily adjust the total gearing of car.
 
 #### ChangeUpPoint
 
-`var() float ChangeUpPoint`When the speed of the engine, *EngineRPM*, reaches this point, the transmission will shift up into the next gear unless you are in the highest gear. Note that the RPMs displayed on the HUD include the additional [IdleRPM](SCarReference.md#IdleRPM) value but the transmission does not use the [IdleRPM](SCarReference.md#IdleRPM) in its calculations. Be careful about setting *ChangeUpPoint* too close to [ChangeDownPoint](SCarReference.md#ChangeDownPoint) because if the gears are spread out, the engine will oscillate between two gears. Ofcourse in case of manual gear shifting you want to set this to a very high (unreachable) value.
+`var() float ChangeUpPoint`When the speed of the engine, *EngineRPM*, reaches this point, the transmission will shift up into the next gear unless you are in the highest gear. Note that the RPMs displayed on the HUD include the additional [IdleRPM](SCarReference.md#idlerpm) value but the transmission does not use the [IdleRPM](SCarReference.md#idlerpm) in its calculations. Be careful about setting *ChangeUpPoint* too close to [ChangeDownPoint](SCarReference.md#changedownpoint) because if the gears are spread out, the engine will oscillate between two gears. Ofcourse in case of manual gear shifting you want to set this to a very high (unreachable) value.
 
 #### ChangeDownPoint
 
-`var() float ChangeDownPoint`When the speed of the engine, *EngineRPM*, falls to this point, the transmission will shift down a gear unless you are in the lowest gear (since gear #0 is reverse the lowest gear would be gear #1). Note that the RPMs displayed on the HUD include the additional [IdleRPM](SCarReference.md#IdleRPM) value but the transmission does not use the [IdleRPM](SCarReference.md#IdleRPM) in its calculations. Be careful about setting *ChangeDownPoint* too close to [ChangeUpPoint](SCarReference.md#ChangeUpPoint) because if the gears are spread out, the engine will oscillate between two gears. And ofcourse for a manual gear shift this value should be negative.
+`var() float ChangeDownPoint`When the speed of the engine, *EngineRPM*, falls to this point, the transmission will shift down a gear unless you are in the lowest gear (since gear #0 is reverse the lowest gear would be gear #1). Note that the RPMs displayed on the HUD include the additional [IdleRPM](SCarReference.md#idlerpm) value but the transmission does not use the [IdleRPM](SCarReference.md#idlerpm) in its calculations. Be careful about setting *ChangeDownPoint* too close to [ChangeUpPoint](SCarReference.md#changeuppoint) because if the gears are spread out, the engine will oscillate between two gears. And ofcourse for a manual gear shift this value should be negative.
 
 #### LSDFactor
 
@@ -94,23 +94,23 @@ There are a couple code changes you need to make to a stock 2226 build before SV
 
 #### IdleRPM
 
-`var() float IdleRPM`This value is added to the current engine RPMs ( *EngineRPM* ) to calculate the engine sound and display the engine RPMs. *IdleRPM* is used for nothing else; if you want to know what the engine is really doing, subtract this value from the RPM value displayed on the HUD. This value functions best for engine sounds if it is 1/4 of [ChangeUpPoint](SCarReference.md#ChangeUpPoint).
+`var() float IdleRPM`This value is added to the current engine RPMs ( *EngineRPM* ) to calculate the engine sound and display the engine RPMs. *IdleRPM* is used for nothing else; if you want to know what the engine is really doing, subtract this value from the RPM value displayed on the HUD. This value functions best for engine sounds if it is 1/4 of [ChangeUpPoint](SCarReference.md#changeuppoint).
 
 #### EngineRPMSoundRange
 
-`var() float EngineRPMSoundRange`The current engine RPMs are added to [IdleRPM](SCarReference.md#IdleRPM) and this value is divided by *EngineRPMSoundRange* and multiplied by 255. The pitch of the engine [IdleSound](SCarReference.md#IdleSound) is then set to this value. In general, you want adjust *EngineRPMSoundRange* so that the pitch of the sound varies between 16 (which is half the default pitch) and 128 (which is twice the default pitch). This value works best for engine sounds if it is 2 \* ( [ChangeUpPoint](SCarReference.md#ChangeUpPoint) + [IdleRPM](SCarReference.md#IdleRPM) ).
+`var() float EngineRPMSoundRange`The current engine RPMs are added to [IdleRPM](SCarReference.md#idlerpm) and this value is divided by *EngineRPMSoundRange* and multiplied by 255. The pitch of the engine [IdleSound](SCarReference.md#idlesound) is then set to this value. In general, you want adjust *EngineRPMSoundRange* so that the pitch of the sound varies between 16 (which is half the default pitch) and 128 (which is twice the default pitch). This value works best for engine sounds if it is 2 \* ( [ChangeUpPoint](SCarReference.md#changeuppoint) + [IdleRPM](SCarReference.md#idlerpm) ).
 
 #### IdleSound
 
-`var() sound IdleSound`This is the ambient sound of the SCar actor. It is increased and decreased in pitch based on the speed of the engine. See [EngineRPMSoundRange](SCarReference.md#EngineRPMSoundRange).
+`var() sound IdleSound`This is the ambient sound of the SCar actor. It is increased and decreased in pitch based on the speed of the engine. See [EngineRPMSoundRange](SCarReference.md#enginerpmsoundrange).
 
 ### Suspension
 
-These variables override the suspension settings for all the wheels defined in the [Wheels](SVehicleReference.md#Wheels) array of SVehicle.
+These variables override the suspension settings for all the wheels defined in the [Wheels](SVehicleReference.md#wheels) array of SVehicle.
 
 #### WheelSoftness
 
-`var() float WheelSoftness`This is the "softness" for the suspension of this wheel. The larger this number is the more the suspension will compress. Setting *Softness* to zero, however, does not prevent the suspension from compressing. Softness is used partly for when the car turns and the weight shifts from one side to the other. See [SuspensionTravel](SCarReference.md#SuspensionTravel) for more details on turning suspension. Softness is also a measure of forgivingness of the suspension; if there is no softness the car will drive more roughly. A reasonable value for softness is 0.01 (this of course depends on the mass of your car and the other suspension settings).
+`var() float WheelSoftness`This is the "softness" for the suspension of this wheel. The larger this number is the more the suspension will compress. Setting *Softness* to zero, however, does not prevent the suspension from compressing. Softness is used partly for when the car turns and the weight shifts from one side to the other. See [SuspensionTravel](SCarReference.md#suspensiontravel) for more details on turning suspension. Softness is also a measure of forgivingness of the suspension; if there is no softness the car will drive more roughly. A reasonable value for softness is 0.01 (this of course depends on the mass of your car and the other suspension settings).
 
 #### WheelPenScale
 
@@ -118,7 +118,7 @@ These variables override the suspension settings for all the wheels defined in t
 
 #### WheelSuspensionTravel
 
-`var() float WheelSuspensionTravel`*SuspensionTravel* affects the suspension of this wheel when turning. The larger this number is the more the vehicle will list from side to side while turning. This value works with [WheelSoftness](SCarReference.md#WheelSoftness) so if either are too small you will not be able to see the effect of the other.
+`var() float WheelSuspensionTravel`*SuspensionTravel* affects the suspension of this wheel when turning. The larger this number is the more the vehicle will list from side to side while turning. This value works with [WheelSoftness](SCarReference.md#wheelsoftness) so if either are too small you will not be able to see the effect of the other.
 
 #### WheelSuspensionOffset
 
@@ -134,7 +134,7 @@ These variables override the suspension settings for all the wheels defined in t
 
 ### Friction and Brakes
 
-Friction in this simulation of cars is not based on traditional models of friction. For example, in the real world, tires don't have different coefficients of friction in different directions ([WheelLongFrictionScale](SCarReference.md#WheelLongFrictionScale) and [WheelLatFrictionScale](SCarReference.md#WheelLatFrictionScale)). But in the real world tires (like any object) have two different coefficients of friction for static and kinetic friction which is a concept not represented here. Also the idea of "slip" is a computationally efficient cheat for sliding as opposed to "real physics" as taught by most physics classes. This is not to say that *SCars* can not be made to seem like real cars, on the contrary quite realistic simulations can be created. It is just worth noting that the parameters to set up friction may be unfamiliar.
+Friction in this simulation of cars is not based on traditional models of friction. For example, in the real world, tires don't have different coefficients of friction in different directions ([WheelLongFrictionScale](SCarReference.md#wheellongfrictionscale) and [WheelLatFrictionScale](SCarReference.md#wheellatfrictionscale)). But in the real world tires (like any object) have two different coefficients of friction for static and kinetic friction which is a concept not represented here. Also the idea of "slip" is a computationally efficient cheat for sliding as opposed to "real physics" as taught by most physics classes. This is not to say that *SCars* can not be made to seem like real cars, on the contrary quite realistic simulations can be created. It is just worth noting that the parameters to set up friction may be unfamiliar.
 
 #### WheelLongFrictionFunc
 
@@ -142,7 +142,7 @@ Friction in this simulation of cars is not based on traditional models of fricti
 
 #### WheelLongFrictionScale
 
-`var() float WheelLongFrictionScale`This is a scale for the amount of longitudinal friction (in the direction of roll). Think of this as a coefficient of friction for the tires in the longitudinal direction. This allows you to easily change the amount of friction wheels have without altering the way wheels have friction which is represented by the [WheelLongFrictionFunc](SCarReference.md#WheelLongFrictionFunc).
+`var() float WheelLongFrictionScale`This is a scale for the amount of longitudinal friction (in the direction of roll). Think of this as a coefficient of friction for the tires in the longitudinal direction. This allows you to easily change the amount of friction wheels have without altering the way wheels have friction which is represented by the [WheelLongFrictionFunc](SCarReference.md#wheellongfrictionfunc).
 
 #### WheelLatFrictionScale
 
@@ -150,31 +150,31 @@ Friction in this simulation of cars is not based on traditional models of fricti
 
 #### WheelLatSlipFunc
 
-`var() InterpCurve WheelLatSlipFunc`This is the lateral (perpendicular to the direction of roll) slip curve. For more details on slip, see the *KCar* section of [KarmaCarCreation](KarmaCarCreation.md#KCar). The input to this curve is either the rotational velocity of the wheel in radian per second. The larger slip is, the more the wheels will slide sideways when turning. This makes it harder to turn but also harder to flip while turning.
+`var() InterpCurve WheelLatSlipFunc`This is the lateral (perpendicular to the direction of roll) slip curve. For more details on slip, see the *KCar* section of [KarmaCarCreation](KarmaCarCreation.md#kcar). The input to this curve is either the rotational velocity of the wheel in radian per second. The larger slip is, the more the wheels will slide sideways when turning. This makes it harder to turn but also harder to flip while turning.
 
 #### WheelLongSlip
 
-`var() float WheelLongSlip`*WheelLongSlip* is the longitudinal slip (in the direction of roll) for this wheel. Unlike [longitudinal friction](SCarReference.md#WheelLongFrictionFunc) and [lateral slip](SCarReference.md#WheelLatSlipFunc) this is not a function but a constant value. For more details on slip, see the *KCar* section of [KarmaCarCreation](KarmaCarCreation.md#KCar).
+`var() float WheelLongSlip`*WheelLongSlip* is the longitudinal slip (in the direction of roll) for this wheel. Unlike [longitudinal friction](SCarReference.md#wheellongfrictionfunc) and [lateral slip](SCarReference.md#wheellatslipfunc) this is not a function but a constant value. For more details on slip, see the *KCar* section of [KarmaCarCreation](KarmaCarCreation.md#kcar).
 
 #### MinBrakeFriction
 
-`var() float MinBrakeFriction`There are two methods for braking using in *SCars*. Wheels can have friction which slows the cars down. *MinBrakeFriction* is this friction. The other methods of braking is applying a counter torque to the wheel (see [MaxBrakeTorque](SCarReference.md#MaxBrakeTorque)).
+`var() float MinBrakeFriction`There are two methods for braking using in *SCars*. Wheels can have friction which slows the cars down. *MinBrakeFriction* is this friction. The other methods of braking is applying a counter torque to the wheel (see [MaxBrakeTorque](SCarReference.md#maxbraketorque)).
 
 #### MaxBrakeTorque
 
-`var() float MaxBrakeTorque`There are two methods for braking using in *SCars*. Wheels can have friction which slows the cars down (see [MinBrakeFriction](SCarReference.md#MinBrakeFriction)). The other method of braking is applying a counter torque to the wheel which is what *MaxBrakeTorque* is. If the full application of *MaxBrakeTorque* would cause the wheel to start spinning in the opposite direction, an amount less than *MaxBrakeTorque* will be applied.
+`var() float MaxBrakeTorque`There are two methods for braking using in *SCars*. Wheels can have friction which slows the cars down (see [MinBrakeFriction](SCarReference.md#minbrakefriction)). The other method of braking is applying a counter torque to the wheel which is what *MaxBrakeTorque* is. If the full application of *MaxBrakeTorque* would cause the wheel to start spinning in the opposite direction, an amount less than *MaxBrakeTorque* will be applied.
 
 #### HandbrakeThresh
 
-`var() float HandbrakeThresh`If the velocity of the *SCar* is greater than *HandbrakeThresh* and the brakes are being pressed and then car is turning, the "handbrake" is pulled. When the handbrake is on, the friction and slip of those wheels with [bHandbrakeWheel](SVehicleReference.md#bHandbrakeWheel) set to true will be adjusted by [WheelHandbrakeFriction](SCarReference.md#WheelHandbrakeFriction) and [WheelHandbrakeSlip](SCarReference.md#WheelHandbrakeSlip).
+`var() float HandbrakeThresh`If the velocity of the *SCar* is greater than *HandbrakeThresh* and the brakes are being pressed and then car is turning, the "handbrake" is pulled. When the handbrake is on, the friction and slip of those wheels with [bHandbrakeWheel](SVehicleReference.md#bhandbrakewheel) set to true will be adjusted by [WheelHandbrakeFriction](SCarReference.md#wheelhandbrakefriction) and [WheelHandbrakeSlip](SCarReference.md#wheelhandbrakeslip).
 
 #### WheelHandbrakeFriction
 
-`var() float WheelHandbrakeFriction`*WheelHandbrakeFriction* is a multiplier for the lateral friction of those wheels in the *SVehicle's* [Wheels array](SVehicleReference.md#Wheels) with [bHandbrakeWheel](SVehicleReference.md#bHandbrakeWheel) set to true. In most cases you want to set this less than 1.0 so that the handbrake wheels slide more when the handbrake is on.
+`var() float WheelHandbrakeFriction`*WheelHandbrakeFriction* is a multiplier for the lateral friction of those wheels in the *SVehicle's* [Wheels array](SVehicleReference.md#wheels) with [bHandbrakeWheel](SVehicleReference.md#bhandbrakewheel) set to true. In most cases you want to set this less than 1.0 so that the handbrake wheels slide more when the handbrake is on.
 
 #### WheelHandbrakeSlip
 
-`var() float WheelHandbrakeSlip`*HandbrakeSlipFactor* is a multiplier for the lateral slip of those wheels in the *SVehicle's* [Wheels array](SVehicleReference.md#Wheels) with [bHandbrakeWheel](SVehicleReference.md#bHandbrakeWheel) set to true. In most cases you want to set this larger than 1.0 so that the handbrake wheels slip more when the handbrake is on.
+`var() float WheelHandbrakeSlip`*HandbrakeSlipFactor* is a multiplier for the lateral slip of those wheels in the *SVehicle's* [Wheels array](SVehicleReference.md#wheels) with [bHandbrakeWheel](SVehicleReference.md#bhandbrakewheel) set to true. In most cases you want to set this larger than 1.0 so that the handbrake wheels slip more when the handbrake is on.
 
 #### FTScale
 
@@ -184,15 +184,15 @@ Friction in this simulation of cars is not based on traditional models of fricti
 
 #### MaxSteerAngle
 
-`var() float MaxSteerAngle`This is the maximum angle in degrees which the steered wheels turn. Steered wheels are those that do not have [SteerType](SVehicleReference.md#SteerType) equal to *ST\_Fixed*. The wheels do not instantly turn to this angle, instead they approach it at a rate given by [SteerSpeed](SCarReference.md#SteerSpeed). (v2226 only, replaced with [MaxSteerAngleCurve](SCarReference.md#MaxSteerAngleCurve) in newer builds)
+`var() float MaxSteerAngle`This is the maximum angle in degrees which the steered wheels turn. Steered wheels are those that do not have [SteerType](SVehicleReference.md#steertype) equal to *ST\_Fixed*. The wheels do not instantly turn to this angle, instead they approach it at a rate given by [SteerSpeed](SCarReference.md#steerspeed). (v2226 only, replaced with [MaxSteerAngleCurve](SCarReference.md#maxsteeranglecurve) in newer builds)
 
 #### MaxSteerAngleCurve
 
-`var() InterpCurve MaxSteerAngleCurve`Defines the maximum steer angle (in degrees) as function of the current speed. This way the current speed has an influence on the steering ability. (v3323 and up, replaces [MaxSteerAngle](SCarReference.md#MaxSteerAngle))
+`var() InterpCurve MaxSteerAngleCurve`Defines the maximum steer angle (in degrees) as function of the current speed. This way the current speed has an influence on the steering ability. (v3323 and up, replaces [MaxSteerAngle](SCarReference.md#maxsteerangle))
 
 #### SteerSpeed
 
-`var() float SteerSpeed`This is the rate at which the wheels turn to [MaxSteerAngle](SCarReference.md#MaxSteerAngle) in degrees per second when a turning button is pressed. This is also the rate at which the wheels return to centered if no turning button is pressed.
+`var() float SteerSpeed`This is the rate at which the wheels turn to [MaxSteerAngle](SCarReference.md#maxsteerangle) in degrees per second when a turning button is pressed. This is also the rate at which the wheels return to centered if no turning button is pressed.
 
 #### SteerBoneName
 
@@ -200,17 +200,17 @@ Friction in this simulation of cars is not based on traditional models of fricti
 
 #### SteerBoneAxis
 
-`var() EAxis SteerBoneAxis`*SteerBoneAxis* is the axis about which to rotate the steering wheel bone given by [SteerBoneName](SCarReference.md#SteerBoneName).
+`var() EAxis SteerBoneAxis`*SteerBoneAxis* is the axis about which to rotate the steering wheel bone given by [SteerBoneName](SCarReference.md#steerbonename).
 
 #### SteerBoneMaxAngle
 
-`var() float SteerBoneMaxAngle`This is the maximum angle to which the steering wheel bone given by [SteerBoneName](SCarReference.md#SteerBoneName) will rotated to.
+`var() float SteerBoneMaxAngle`This is the maximum angle to which the steering wheel bone given by [SteerBoneName](SCarReference.md#steerbonename) will rotated to.
 
 ### Misc
 
 #### WheelInertia
 
-`var() float WheelInertia`*WheelInertia* is the inertia for the wheels of this car. The larger this number is, the harder it will be both to stop and start this wheel spinning. Large values for this number will also cause the chassis of the vehicle to be torqued more by the wheels (see also [ChassisTorqueScale](SCarReference.md#ChassisTorqueScale)). There are some cases where wheel inertia behaves very oddly. The most problematic is when the inertial is large and you brake, the car will come to stop **before** the wheels stop spinning. The larger the inertia and the lower the brake power the more obvious this problem is; you can have all the wheels of the car spinning on the ground while the car is stopped for several seconds. The wheels will however change speed instantly in a few cases. When you change from any forward gear to reverse or visa versa, the wheels will stop instantly. This change in motion will not torque the chassis at all.
+`var() float WheelInertia`*WheelInertia* is the inertia for the wheels of this car. The larger this number is, the harder it will be both to stop and start this wheel spinning. Large values for this number will also cause the chassis of the vehicle to be torqued more by the wheels (see also [ChassisTorqueScale](SCarReference.md#chassistorquescale)). There are some cases where wheel inertia behaves very oddly. The most problematic is when the inertial is large and you brake, the car will come to stop **before** the wheels stop spinning. The larger the inertia and the lower the brake power the more obvious this problem is; you can have all the wheels of the car spinning on the ground while the car is stopped for several seconds. The wheels will however change speed instantly in a few cases. When you change from any forward gear to reverse or visa versa, the wheels will stop instantly. This change in motion will not torque the chassis at all.
 
 #### ChassisTorqueScale
 
@@ -226,7 +226,7 @@ Friction in this simulation of cars is not based on traditional models of fricti
 
 #### AirTurnTorque
 
-`var() float AirTurnTorque;`Controls the amouth of turning force to apply when steering the vehicle in the air. The result of the following function will be added to the initial air control force calculated by [AirPitchTorque](SCarReference.md#AirPitchTorque): `worldUp * Steering * -AirTurnTorque`, but only if `bIsWalking` is false.
+`var() float AirTurnTorque;`Controls the amouth of turning force to apply when steering the vehicle in the air. The result of the following function will be added to the initial air control force calculated by [AirPitchTorque](SCarReference.md#airpitchtorque): `worldUp * Steering * -AirTurnTorque`, but only if `bIsWalking` is false.
 
 #### AirPitchTorque
 
@@ -238,11 +238,11 @@ Friction in this simulation of cars is not based on traditional models of fricti
 
 #### AirRollTorque
 
-`var() float AirRollTorque;`This is the 3rd variable that will have an effect on the air control force to apply, together with [AirTurnTorque](SCarReference.md#AirTurnTorque) and [AirPitchTorque](SCarReference.md#AirPitchTorque). This variable is only used if `bIsWalking` is true. It will add the result of the following function to the final force `worldForward * Steering * -AirRollTorque`.
+`var() float AirRollTorque;`This is the 3rd variable that will have an effect on the air control force to apply, together with [AirTurnTorque](SCarReference.md#airturntorque) and [AirPitchTorque](SCarReference.md#airpitchtorque). This variable is only used if `bIsWalking` is true. It will add the result of the following function to the final force `worldForward * Steering * -AirRollTorque`.
 
 #### AirRollDamping
 
-`var() float AirRollDamping;`Just like [AirPitchDamping](SCarReference.md#AirPitchDamping) this will apply some damping force but on the roll angle. This variable is also used even if bAllowAirControl is false.
+`var() float AirRollDamping;`Just like [AirPitchDamping](SCarReference.md#airpitchdamping) this will apply some damping force but on the roll angle. This variable is also used even if bAllowAirControl is false.
 
 #### MinAirControlDamping
 
@@ -256,7 +256,7 @@ Friction in this simulation of cars is not based on traditional models of fricti
 
 #### MaxJumpForce
 
-`var() float MaxJumpForce;`The maximum up force of a jump, this force will be reached after [JumpChargeTime](SCarReference.md#JumpChargeTime) as passed (while charging the jump). Otherwise a percentage of this force will be applied.
+`var() float MaxJumpForce;`The maximum up force of a jump, this force will be reached after [JumpChargeTime](SCarReference.md#jumpchargetime) as passed (while charging the jump). Otherwise a percentage of this force will be applied.
 
 #### MaxJumpSpin
 
@@ -264,7 +264,7 @@ Friction in this simulation of cars is not based on traditional models of fricti
 
 #### JumpChargeTime
 
-`var() float JumpChargeTime;`The time required to reach the [MaxJumpForce](SCarReference.md#MaxJumpForce).
+`var() float JumpChargeTime;`The time required to reach the [MaxJumpForce](SCarReference.md#maxjumpforce).
 
 #### Jump HUD notification
 
@@ -312,9 +312,9 @@ For now this section will be short because SVehicles in 2226 are not completely 
 
 The console command "KDraw" is very useful for debugging what is going on with an *SCar*. These commands can be typed at the console.
 
-| [Command](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=0;table=2;up=0#sorted_table "Sort by this column") | [Description](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=1;table=2;up=0#sorted_table "Sort by this column") |
+| [Command](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=0;table=2;up=0#sorted_table-sort-by-this-column) | [Description](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=1;table=2;up=0#sorted_table-sort-by-this-column) |
 | --- | --- |
-| KDraw Collision | This shows the collision information used by karma. This is only collision information for the chassis; the wheels in *SCars* do not use karma collision. See the [KarmaCarCreation](KarmaCarCreation.md#Step_2_Add_Karma_Collision_Volum) document for adding collision. |
+| KDraw Collision | This shows the collision information used by karma. This is only collision information for the chassis; the wheels in *SCars* do not use karma collision. See the [KarmaCarCreation](KarmaCarCreation.md#step_2_add_karma_collision_volum) document for adding collision. |
 | KDraw Contacts | This shows karma contact position and penetration as well as roll and lateral directions. |
 | KDraw Triangles | This shows the triangles (with normals) currently considered by karma collision. |
 | KDraw Com | This shows the center of mass as purple star. |

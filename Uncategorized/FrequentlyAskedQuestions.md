@@ -2,16 +2,16 @@
 
 *Document Summary: Here you will find a FAQ page for people just starting to use the Unreal Engine 2.**Document Changelog: Last updated by Michiel Hendriks, link to mod community page. Updated by Andrew Moise (DemiurgeStudios?), removed link to dead document. Original Author - Jason Lentz (DemiurgeStudios?)*
 
-* [Frequently Asked Questions](FrequentlyAskedQuestions.md#Frequently Asked Questions) 
-  + [Content Creation](FrequentlyAskedQuestions.md#Content Creation)
-    - [How do I make outdoor areas?](FrequentlyAskedQuestions.md#How do I make outdoor areas?)
-    - [How do I add moving parts to my level?](FrequentlyAskedQuestions.md#How do I add moving parts to my level?)
-    - [How can I create complex scenes and/or improve the performance of my level?](FrequentlyAskedQuestions.md#How can I create complex scenes and/or improve the performance of my level?)
-    - [What kinds of special effects can be created?](FrequentlyAskedQuestions.md#What kinds of special effects can be created?)
-    - [How can I make my level react to players?](FrequentlyAskedQuestions.md#How can I make my level react to players?)
-    - [How can I add characters to a level?](FrequentlyAskedQuestions.md#How can I add characters to a level?)
-  + [Technical and Programming](FrequentlyAskedQuestions.md#Technical and Programming)
-    - [How can I build menus a HUD, and import fonts for my project?](FrequentlyAskedQuestions.md#How can I build menus a HUD, and import fonts for my project?)
+* [Frequently Asked Questions](FrequentlyAskedQuestions.md#frequently-asked-questions) 
+  + [Content Creation](FrequentlyAskedQuestions.md#content-creation)
+    - [How do I make outdoor areas?](FrequentlyAskedQuestions.md#how-do-i-make-outdoor-areas)
+    - [How do I add moving parts to my level?](FrequentlyAskedQuestions.md#how-do-i-add-moving-parts-to-my-level)
+    - [How can I create complex scenes and/or improve the performance of my level?](FrequentlyAskedQuestions.md#how-can-i-create-complex-scenes-andor-improve-the-performance-of-my-level)
+    - [What kinds of special effects can be created?](FrequentlyAskedQuestions.md#what-kinds-of-special-effects-can-be-created)
+    - [How can I make my level react to players?](FrequentlyAskedQuestions.md#how-can-i-make-my-level-react-to-players)
+    - [How can I add characters to a level?](FrequentlyAskedQuestions.md#how-can-i-add-characters-to-a-level)
+  + [Technical and Programming](FrequentlyAskedQuestions.md#technical-and-programming)
+    - [How can I build menus a HUD, and import fonts for my project?](FrequentlyAskedQuestions.md#how-can-i-build-menus-a-hud-and-import-fonts-for-my-project)
 
 ## Content Creation
 

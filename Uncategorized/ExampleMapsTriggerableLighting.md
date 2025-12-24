@@ -2,13 +2,13 @@
 
 *Document Summary: An example of how to set up lights that can be triggered in sequence. Requires limited information on triggers and lights. Novice to intermediate level.**Document Changelog: Last updated by Tom Lin (DemiurgeStudios?), for document summary. Original author was Jason Lentz (DemiurgeStudios?).*
 
-* [Triggerable Lights](ExampleMapsTriggerableLighting.md#Triggerable Lights)
-  + [Introduction](ExampleMapsTriggerableLighting.md#Introduction)
-  + [Ingredients](ExampleMapsTriggerableLighting.md#Ingredients)
-  + [Setting up a TriggerLight](ExampleMapsTriggerableLighting.md#Setting up a _TriggerLight)
-  + [TriggerLight Effects](ExampleMapsTriggerableLighting.md#TriggerLight Effects)
-    - [Running Lights](ExampleMapsTriggerableLighting.md#Running Lights)
-  + [Downloads](ExampleMapsTriggerableLighting.md#Downloads)
+* [Triggerable Lights](ExampleMapsTriggerableLighting.md#triggerable-lights)
+  + [Introduction](ExampleMapsTriggerableLighting.md#introduction)
+  + [Ingredients](ExampleMapsTriggerableLighting.md#ingredients)
+  + [Setting up a TriggerLight](ExampleMapsTriggerableLighting.md#setting-up-a-_triggerlight)
+  + [TriggerLight Effects](ExampleMapsTriggerableLighting.md#triggerlight-effects)
+    - [Running Lights](ExampleMapsTriggerableLighting.md#running-lights)
+  + [Downloads](ExampleMapsTriggerableLighting.md#downloads)
 
 ## Introduction
 

@@ -7,13 +7,13 @@ Revision history:
 3. Updated to add another example class.
 4. Updated by Michiel Hendriks, little note about the existing DynamicProjector?.
 
-* [Projector Tricks](ProjectorTricks.md#Projector Tricks)
-  + [Introduction](ProjectorTricks.md#Introduction)
-  + [Projectors at a glance](ProjectorTricks.md#Projectors at a glance)
-  + [Dynamic Projector](ProjectorTricks.md#Dynamic Projector)
-  + [Expanding Projector](ProjectorTricks.md#Expanding Projector)
-  + [Triggered Projector](ProjectorTricks.md#Triggered Projector)
-  + [Summary](ProjectorTricks.md#Summary)
+* [Projector Tricks](ProjectorTricks.md#projector-tricks)
+  + [Introduction](ProjectorTricks.md#introduction)
+  + [Projectors at a glance](ProjectorTricks.md#projectors-at-a-glance)
+  + [Dynamic Projector](ProjectorTricks.md#dynamic-projector)
+  + [Expanding Projector](ProjectorTricks.md#expanding-projector)
+  + [Triggered Projector](ProjectorTricks.md#triggered-projector)
+  + [Summary](ProjectorTricks.md#summary)
 
 ## Introduction
 

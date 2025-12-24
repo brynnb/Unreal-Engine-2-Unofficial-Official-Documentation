@@ -10,41 +10,41 @@
 
 ## Contents
 
-* [Strings In UnrealScript](StringsInUnrealScript.md#Strings In _UnrealScript)
-  + [Related documents](StringsInUnrealScript.md#Related documents)
-  + [Contents](StringsInUnrealScript.md#Contents)
-  + [Intro](StringsInUnrealScript.md#Intro)
-  + [Operators](StringsInUnrealScript.md#Operators)
-    - [$ (dollar sign)](StringsInUnrealScript.md#$ (dollar sign))
-    - [$=](StringsInUnrealScript.md#$=)
-    - [@ (at)](StringsInUnrealScript.md#@ (at))
-    - [@=](StringsInUnrealScript.md#@=)
-    - [< (less-than)](StringsInUnrealScript.md#(less-than))
-    - [> (greater-than)](StringsInUnrealScript.md#(greater-than))
-    - [<= (less-than-or-equal-to)](StringsInUnrealScript.md#= (less-than-or-equal-to))
-    - [>= (greater-than-or-equal-to)](StringsInUnrealScript.md#= (greater-than-or-equal-to))
-    - [== (equal-equal)](StringsInUnrealScript.md#== (equal-equal))
-    - [= (not-equal)](StringsInUnrealScript.md#!= (not-equal))
-    - [~= (tilde-equal)](StringsInUnrealScript.md#~= (tilde-equal))
-    - [-= (minus-equal)](StringsInUnrealScript.md#-= (minus-equal))
-  + [Functions](StringsInUnrealScript.md#Functions)
-    - [Len](StringsInUnrealScript.md#Len)
-    - [InStr](StringsInUnrealScript.md#InStr)
-    - [Mid](StringsInUnrealScript.md#Mid)
-    - [Left](StringsInUnrealScript.md#Left)
-    - [Right](StringsInUnrealScript.md#Right)
-    - [Caps](StringsInUnrealScript.md#Caps)
-    - [Locs](StringsInUnrealScript.md#Locs)
-    - [Chr](StringsInUnrealScript.md#Chr)
-    - [Asc](StringsInUnrealScript.md#Asc)
-    - [Divide](StringsInUnrealScript.md#Divide)
-    - [Split](StringsInUnrealScript.md#Split)
-    - [StrCmp](StringsInUnrealScript.md#StrCmp)
-    - [Repl](StringsInUnrealScript.md#Repl)
-    - [Eval](StringsInUnrealScript.md#Eval)
-    - [ReplaceText](StringsInUnrealScript.md#ReplaceText)
-    - [EatStr](StringsInUnrealScript.md#EatStr)
-    - [GetItemName](StringsInUnrealScript.md#GetItemName)
+* [Strings In UnrealScript](StringsInUnrealScript.md#strings-in-_unrealscript)
+  + [Related documents](StringsInUnrealScript.md#related-documents)
+  + [Contents](StringsInUnrealScript.md#contents)
+  + [Intro](StringsInUnrealScript.md#intro)
+  + [Operators](StringsInUnrealScript.md#operators)
+    - [$ (dollar sign)](StringsInUnrealScript.md#-dollar-sign))
+    - [$=](StringsInUnrealScript.md#)
+    - [@ (at)](StringsInUnrealScript.md#-at))
+    - [@=](StringsInUnrealScript.md#)
+    - [< (less-than)](StringsInUnrealScript.md#less-than))
+    - [> (greater-than)](StringsInUnrealScript.md#greater-than))
+    - [<= (less-than-or-equal-to)](StringsInUnrealScript.md#-less-than-or-equal-to))
+    - [>= (greater-than-or-equal-to)](StringsInUnrealScript.md#-greater-than-or-equal-to))
+    - [== (equal-equal)](StringsInUnrealScript.md#-equal-equal))
+    - [= (not-equal)](StringsInUnrealScript.md#-not-equal))
+    - [~= (tilde-equal)](StringsInUnrealScript.md#-tilde-equal))
+    - [-= (minus-equal)](StringsInUnrealScript.md#--minus-equal))
+  + [Functions](StringsInUnrealScript.md#functions)
+    - [Len](StringsInUnrealScript.md#len)
+    - [InStr](StringsInUnrealScript.md#instr)
+    - [Mid](StringsInUnrealScript.md#mid)
+    - [Left](StringsInUnrealScript.md#left)
+    - [Right](StringsInUnrealScript.md#right)
+    - [Caps](StringsInUnrealScript.md#caps)
+    - [Locs](StringsInUnrealScript.md#locs)
+    - [Chr](StringsInUnrealScript.md#chr)
+    - [Asc](StringsInUnrealScript.md#asc)
+    - [Divide](StringsInUnrealScript.md#divide)
+    - [Split](StringsInUnrealScript.md#split)
+    - [StrCmp](StringsInUnrealScript.md#strcmp)
+    - [Repl](StringsInUnrealScript.md#repl)
+    - [Eval](StringsInUnrealScript.md#eval)
+    - [ReplaceText](StringsInUnrealScript.md#replacetext)
+    - [EatStr](StringsInUnrealScript.md#eatstr)
+    - [GetItemName](StringsInUnrealScript.md#getitemname)
 
 ## Intro
 
@@ -70,15 +70,15 @@ The primary purpose of this document is to cover the workings and use of strings
 
 ### < (less-than)
 
-`bool < ( string A, string B )`Takes two strings and returns true if the first string is alphabetically before the second string. Note that capital letters are always alphabetically before lower case letters; consider [Caps](StringsInUnrealScript.md#Caps) if case does not matter.Example: `("Monkey" < "Robot") //this is TRUE.`
+`bool < ( string A, string B )`Takes two strings and returns true if the first string is alphabetically before the second string. Note that capital letters are always alphabetically before lower case letters; consider [Caps](StringsInUnrealScript.md#caps) if case does not matter.Example: `("Monkey" < "Robot") //this is TRUE.`
 
 ### > (greater-than)
 
-`bool > ( string A, string B )`Takes two strings and returns true if the first string is alphabetically after the second string. Note that capital letters are always alphabetically before lower case letters; consider [Caps](StringsInUnrealScript.md#Caps) if case does not matter.Example: `("Batman" > "Aquaman") //this is TRUE.`
+`bool > ( string A, string B )`Takes two strings and returns true if the first string is alphabetically after the second string. Note that capital letters are always alphabetically before lower case letters; consider [Caps](StringsInUnrealScript.md#caps) if case does not matter.Example: `("Batman" > "Aquaman") //this is TRUE.`
 
 ### <= (less-than-or-equal-to)
 
-`bool <= ( string A, string B )`Takes two strings and returns true if the first string is alphabetically before or the same as the second string. Note that capital letters are always alphabetically before lower case letters; consider [Caps](StringsInUnrealScript.md#Caps) if case does not matter.Example:
+`bool <= ( string A, string B )`Takes two strings and returns true if the first string is alphabetically before or the same as the second string. Note that capital letters are always alphabetically before lower case letters; consider [Caps](StringsInUnrealScript.md#caps) if case does not matter.Example:
 
 ```
 
@@ -88,7 +88,7 @@ The primary purpose of this document is to cover the workings and use of strings
 
 ### >= (greater-than-or-equal-to)
 
-`bool >= ( string A, string B )`Takes two strings and returns true if the first string is alphabetically after or the same as the second string. Note that capital letters are always alphabetically before lower case letters; consider [Caps](StringsInUnrealScript.md#Caps) if case does not matter.Example:
+`bool >= ( string A, string B )`Takes two strings and returns true if the first string is alphabetically after or the same as the second string. Note that capital letters are always alphabetically before lower case letters; consider [Caps](StringsInUnrealScript.md#caps) if case does not matter.Example:
 
 ```
 
@@ -148,7 +148,7 @@ log(MyString); // prints: ": this is a ";
 
 ### InStr
 
-`int InStr ( coerce string S, coerce string t )`*InStr* returns the position of the first occurrence of substring *t* in *S*. If the substring is not found, *InStr* returns -1. Note that the search is case sensitive and so consider calling [Caps](StringsInUnrealScript.md#Caps) before using *InStr* if you are not concerned about case.Example:
+`int InStr ( coerce string S, coerce string t )`*InStr* returns the position of the first occurrence of substring *t* in *S*. If the substring is not found, *InStr* returns -1. Note that the search is case sensitive and so consider calling [Caps](StringsInUnrealScript.md#caps) before using *InStr* if you are not concerned about case.Example:
 
 ```
 

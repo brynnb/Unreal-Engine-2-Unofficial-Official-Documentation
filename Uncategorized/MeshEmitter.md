@@ -2,29 +2,29 @@
 
 *Document Summary: A reference to properties-based emitter editing and creation. (non UDN build).**Document Changelog: Updated by Tom Lin for 2226 build and reorganization. Original Author: Lode Vandevenne.*
 
-* [Mesh Emitters](MeshEmitter.md#Mesh Emitters)
-  + [Introduction](MeshEmitter.md#Introduction)
-  + [Acceleration](MeshEmitter.md#Acceleration)
-  + [Collision](MeshEmitter.md#Collision)
-  + [Color](MeshEmitter.md#Color)
-  + [Fading](MeshEmitter.md#Fading)
-  + [Force](MeshEmitter.md#Force)
-  + [Mesh](MeshEmitter.md#Mesh)
-    - [Use Mesh Blend Mode](MeshEmitter.md#Use Mesh Blend Mode)
-    - [Render Two Sided](MeshEmitter.md#Render Two Sided)
-    - [Use Particle Color](MeshEmitter.md#Use Particle Color)
-  + [MeshSpawning](MeshEmitter.md#MeshSpawning)
-  + [Revolution](MeshEmitter.md#Revolution)
-  + [Rotation](MeshEmitter.md#Rotation)
-  + [Size](MeshEmitter.md#Size)
-  + [SkeletalMesh](MeshEmitter.md#SkeletalMesh)
-  + [Spawning](MeshEmitter.md#Spawning)
-  + [Texture](MeshEmitter.md#Texture)
-  + [Tick](MeshEmitter.md#Tick)
-  + [Time](MeshEmitter.md#Time)
-  + [Trigger](MeshEmitter.md#Trigger)
-  + [Velocity](MeshEmitter.md#Velocity)
-  + [Warmup](MeshEmitter.md#Warmup)
+* [Mesh Emitters](MeshEmitter.md#mesh-emitters)
+  + [Introduction](MeshEmitter.md#introduction)
+  + [Acceleration](MeshEmitter.md#acceleration)
+  + [Collision](MeshEmitter.md#collision)
+  + [Color](MeshEmitter.md#color)
+  + [Fading](MeshEmitter.md#fading)
+  + [Force](MeshEmitter.md#force)
+  + [Mesh](MeshEmitter.md#mesh)
+    - [Use Mesh Blend Mode](MeshEmitter.md#use-mesh-blend-mode)
+    - [Render Two Sided](MeshEmitter.md#render-two-sided)
+    - [Use Particle Color](MeshEmitter.md#use-particle-color)
+  + [MeshSpawning](MeshEmitter.md#meshspawning)
+  + [Revolution](MeshEmitter.md#revolution)
+  + [Rotation](MeshEmitter.md#rotation)
+  + [Size](MeshEmitter.md#size)
+  + [SkeletalMesh](MeshEmitter.md#skeletalmesh)
+  + [Spawning](MeshEmitter.md#spawning)
+  + [Texture](MeshEmitter.md#texture)
+  + [Tick](MeshEmitter.md#tick)
+  + [Time](MeshEmitter.md#time)
+  + [Trigger](MeshEmitter.md#trigger)
+  + [Velocity](MeshEmitter.md#velocity)
+  + [Warmup](MeshEmitter.md#warmup)
 
 ## Introduction
 
@@ -34,7 +34,7 @@ This document will cover mesh emitters, one of four different possible emitters 
 
 ## Acceleration
 
-You may want to use acceleration if you use a mesh emitter. Note that acceleration is just what it sounds like - the increase in particle speed over time. If you want your particles to move with a consistent speed, then you should be looking at the [Velocity](MeshEmitter.md#VelocitY) field.Also note that acceleration isn't given in a range of values, so all your particles will accelerate at the same rate. To get some noise into your particle motions, use varying [velocities](MeshEmitter.md#VelocitY).
+You may want to use acceleration if you use a mesh emitter. Note that acceleration is just what it sounds like - the increase in particle speed over time. If you want your particles to move with a consistent speed, then you should be looking at the [Velocity](MeshEmitter.md#velocity) field.Also note that acceleration isn't given in a range of values, so all your particles will accelerate at the same rate. To get some noise into your particle motions, use varying [velocities](MeshEmitter.md#velocity).
 
 ## Collision
 
@@ -42,7 +42,7 @@ When using mesh emitters, you will usually want collision enabled. One of the bi
 
 ## Color
 
-This field affects mesh emitters, somewhat surprisingly. Simply change the multiplier values to change the color of your spawned meshes. Note, however, that you must go to the [Mesh](MeshEmitter.md#MesH) field and toggle the variable *UseParticleColor* to `true' to see the effects of your changes in this field.
+This field affects mesh emitters, somewhat surprisingly. Simply change the multiplier values to change the color of your spawned meshes. Note, however, that you must go to the [Mesh](MeshEmitter.md#mesh) field and toggle the variable *UseParticleColor* to `true' to see the effects of your changes in this field.
 
 ## Fading
 
@@ -62,7 +62,7 @@ Here you can choose the StaticMesh that gets used for the particles, as long as 
 
 ![staticmesh.jpg](../assets/staticmesh.jpg)
 
-Now you won't see anything yet, not even if you give some Velocity, because the particles are displayed WAY too big: the StartSizeRange settings in Size are 100 by default, and for the [MeshEmitter](MeshEmitter.md#MeshEmitter) this means the StaticMesh is 100 times as big as it should be. Set all the X(Min), X(Max), Y(Min), Y(Max), Z(Min) and Z(Max) settings to something very low, for example 0.5, or for the huge Static Mesh that's used here: 0.03. More about the Size for [MeshEmitter](MeshEmitter.md#MeshEmitter)s is in the section Size][. If you now give also some velocity you might see something like the screenshot.
+Now you won't see anything yet, not even if you give some Velocity, because the particles are displayed WAY too big: the StartSizeRange settings in Size are 100 by default, and for the [MeshEmitter](MeshEmitter.md#meshemitter) this means the StaticMesh is 100 times as big as it should be. Set all the X(Min), X(Max), Y(Min), Y(Max), Z(Min) and Z(Max) settings to something very low, for example 0.5, or for the huge Static Mesh that's used here: 0.03. More about the Size for [MeshEmitter](MeshEmitter.md#meshemitter)s is in the section Size][. If you now give also some velocity you might see something like the screenshot.
 
 ![meshparticles.gif](../assets/meshparticles.gif)
 
@@ -76,15 +76,15 @@ If this set, the mesh will render all triangles two sided. This is useful only i
 
 ### Use Particle Color
 
-If this is set, the mesh will use the settings in the [Color](MeshEmitter.md#ColoR) field. This is only useful if UseMeshBlendMode is true.
+If this is set, the mesh will use the settings in the [Color](MeshEmitter.md#color) field. This is only useful if UseMeshBlendMode is true.
 
 ## MeshSpawning
 
-MeshSpawning allows you to use a static mesh as a framework for spawning Emitters. The vertices in the static mesh are used to calculate emitter properties, such as velocity and color of the spawned particles. For more information, see the [Emitter Reference](../Content Creation/Effects/EmittersReference.md#MeshSpawning) doc.
+MeshSpawning allows you to use a static mesh as a framework for spawning Emitters. The vertices in the static mesh are used to calculate emitter properties, such as velocity and color of the spawned particles. For more information, see the [Emitter Reference](../Content Creation/Effects/EmittersReference.md#meshspawning) doc.
 
 ## Revolution
 
-You may want to add revolutions to your mesh emitter. For a more in-depth review of revolution, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#Revolution) document.
+You may want to add revolutions to your mesh emitter. For a more in-depth review of revolution, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#revolution) document.
 
 ## Rotation
 
@@ -98,13 +98,13 @@ You may want to add rotations to your mesh emitter. This works in almost the sam
 
 ![rotationZ.gif](../assets/rotationz.gif)
 
-For a more in-depth review of rotation, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#Rotation) document.
+For a more in-depth review of rotation, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#rotation) document.
 
 ## Size
 
 ![size.jpg](../assets/size.jpg)
 
-The Size settings for the [MeshEmitter](MeshEmitter.md#MeshEmitter) are exactly the same as the Size setting of the ParticleEmitter (explained in the section Size), only now you can change the X, Y and Z Size of the StaticMesh particles independently. X and Y resize the width and breadth of the particles, Z resizes the height of it. Again, you can set a different Min and Max value for a random Size. On the first screenshot, the X Size is larger than Y and Z. On the second screen, the Y Size is larger than X and Z.
+The Size settings for the [MeshEmitter](MeshEmitter.md#meshemitter) are exactly the same as the Size setting of the ParticleEmitter (explained in the section Size), only now you can change the X, Y and Z Size of the StaticMesh particles independently. X and Y resize the width and breadth of the particles, Z resizes the height of it. Again, you can set a different Min and Max value for a random Size. On the first screenshot, the X Size is larger than Y and Z. On the second screen, the Y Size is larger than X and Z.
 
 ![size21.jpg](../assets/size21.jpg)
 
@@ -112,19 +112,19 @@ The Size settings for the [MeshEmitter](MeshEmitter.md#MeshEmitter) are exactly 
 
 ![size23.jpg](../assets/size23.jpg)
 
-![size24.jpg](../assets/size24.jpg)The SizeScale works exactly the same as the one for the [SpriteEmitter](MeshEmitter.md#SpriteEmitter) and is explained in the section Size. This time, X, Y and Z are locked to each other: the RelativeSize value resizes them all at the same time.
+![size24.jpg](../assets/size24.jpg)The SizeScale works exactly the same as the one for the [SpriteEmitter](MeshEmitter.md#spriteemitter) and is explained in the section Size. This time, X, Y and Z are locked to each other: the RelativeSize value resizes them all at the same time.
 
 ![sizescale2.jpg](../assets/sizescale2.jpg)
 
-For a more on Size, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#Size) document.
+For a more on Size, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#size) document.
 
 ## SkeletalMesh
 
-Skeletal Mesh emitters allows you to attach particles to the bones of a skeletal mesh. The mesh is used to determine the spawn location of the particles and can also be used to determine the movement the particles. For a more in-depth review of Skeletal Mesh emitters, see the [Particle Systems](../Content Creation/Effects/ParticleSystems.md#Skeletal_Mesh) document.
+Skeletal Mesh emitters allows you to attach particles to the bones of a skeletal mesh. The mesh is used to determine the spawn location of the particles and can also be used to determine the movement the particles. For a more in-depth review of Skeletal Mesh emitters, see the [Particle Systems](../Content Creation/Effects/ParticleSystems.md#skeletal_mesh) document.
 
 ## Spawning
 
-Make sure to set appropriate values in the Spawning fields. These figures will affect how quickly particles are created, over the lifetime of your emitter. For a more in-depth review of Spawning, see the [Particle Systems](../Content Creation/Effects/EmittersReference.md#Spawning) document.
+Make sure to set appropriate values in the Spawning fields. These figures will affect how quickly particles are created, over the lifetime of your emitter. For a more in-depth review of Spawning, see the [Particle Systems](../Content Creation/Effects/EmittersReference.md#spawning) document.
 
 ## Texture
 
@@ -138,24 +138,24 @@ If in Mesh you set UseMeshBlendMode to False, the DrawStyle in Texture will be u
 
 ![seethrough1.jpg](../assets/seethrough1.jpg)
 
-![seethrough2.jpg](../assets/seethrough2.jpg)The Subdivision settings are useless on MeshParticles, because they use a StaticMesh and not a texture.For more information on the texture field, see the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#Texture_).
+![seethrough2.jpg](../assets/seethrough2.jpg)The Subdivision settings are useless on MeshParticles, because they use a StaticMesh and not a texture.For more information on the texture field, see the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#texture_).
 
 ## Tick
 
-This functions normally. See the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#Tick) for more information.
+This functions normally. See the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#tick) for more information.
 
 ## Time
 
-This functions normally. See the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#Time) for more information.
+This functions normally. See the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#time) for more information.
 
 ## Trigger
 
-This functions normally. See the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#Trigger) for more information.
+This functions normally. See the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#trigger) for more information.
 
 ## Velocity
 
-This is the initial velocity of your particles. Since this is given in a range, the value chosen for the particle velocities will be random. It's a good idea to give a fairly wide range for a mesh emitter, to avoid uniformity when the mesh pieces are spawned.See the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#Velocity) for more information.
+This is the initial velocity of your particles. Since this is given in a range, the value chosen for the particle velocities will be random. It's a good idea to give a fairly wide range for a mesh emitter, to avoid uniformity when the mesh pieces are spawned.See the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#velocity) for more information.
 
 ## Warmup
 
-This functions normally. See the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#Warmup) for more information.
+This functions normally. See the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#warmup) for more information.

@@ -4,26 +4,26 @@
   
 *Updated on 9/30/03 by Chris Linder (DemiurgeStudios?), first public release. Updated on 2004-12-22 by Michiel Hendriks, update for v3323.*
 
-* [Helicopter Tutorial](HelicopterTutorial.md#Helicopter Tutorial)
-  + [Related Documents](HelicopterTutorial.md#Related Documents)
-  + [Introduction](HelicopterTutorial.md#Introduction)
-  + [Design Goals](HelicopterTutorial.md#Design Goals)
-  + [Accomplishing the Design Goals](HelicopterTutorial.md#Accomplishing the Design Goals)
-    - [Getting Started](HelicopterTutorial.md#Getting Started)
-    - [Designing the Physics (Goal 1)](HelicopterTutorial.md#Designing the Physics (Goal 1))
-    - [Designing the Control Scheme (Goal 2)](HelicopterTutorial.md#Designing the Control Scheme (Goal 2))
-    - [Balancing the Difficulty (Goal 3)](HelicopterTutorial.md#Balancing the Difficulty (Goal 3))
-    - [Aiming (Goal 4)](HelicopterTutorial.md#Aiming (Goal 4))
-  + [Debugging](HelicopterTutorial.md#Debugging)
-    - [Show Graph](HelicopterTutorial.md#Show Graph)
-    - [KDraw](HelicopterTutorial.md#KDraw)
-    - [Defaultproperties are Tricky](HelicopterTutorial.md#Defaultproperties are Tricky)
-  + [Installing the Helicopter Code](HelicopterTutorial.md#Installing the Helicopter Code)
-    - [v3323 and up](HelicopterTutorial.md#v3323 and up)
-  + [Flying the Helicopter](HelicopterTutorial.md#Flying the Helicopter)
-    - [Rotor](HelicopterTutorial.md#Rotor)
-    - [Movement](HelicopterTutorial.md#Movement)
-    - [Turning](HelicopterTutorial.md#Turning)
+* [Helicopter Tutorial](HelicopterTutorial.md#helicopter-tutorial)
+  + [Related Documents](HelicopterTutorial.md#related-documents)
+  + [Introduction](HelicopterTutorial.md#introduction)
+  + [Design Goals](HelicopterTutorial.md#design-goals)
+  + [Accomplishing the Design Goals](HelicopterTutorial.md#accomplishing-the-design-goals)
+    - [Getting Started](HelicopterTutorial.md#getting-started)
+    - [Designing the Physics (Goal 1)](HelicopterTutorial.md#designing-the-physics-goal-1))
+    - [Designing the Control Scheme (Goal 2)](HelicopterTutorial.md#designing-the-control-scheme-goal-2))
+    - [Balancing the Difficulty (Goal 3)](HelicopterTutorial.md#balancing-the-difficulty-goal-3))
+    - [Aiming (Goal 4)](HelicopterTutorial.md#aiming-goal-4))
+  + [Debugging](HelicopterTutorial.md#debugging)
+    - [Show Graph](HelicopterTutorial.md#show-graph)
+    - [KDraw](HelicopterTutorial.md#kdraw)
+    - [Defaultproperties are Tricky](HelicopterTutorial.md#defaultproperties-are-tricky)
+  + [Installing the Helicopter Code](HelicopterTutorial.md#installing-the-helicopter-code)
+    - [v3323 and up](HelicopterTutorial.md#v3323-and-up)
+  + [Flying the Helicopter](HelicopterTutorial.md#flying-the-helicopter)
+    - [Rotor](HelicopterTutorial.md#rotor)
+    - [Movement](HelicopterTutorial.md#movement)
+    - [Turning](HelicopterTutorial.md#turning)
 
 ## Related Documents
 
@@ -56,7 +56,7 @@ The first thing I needed to do was create my own *SVehicle* class (both in C++ a
 KAddForces(Force, Torque);
 ```
 
-To make physics for a helicopter, [SCopter](SCopterReference.md) seemed like a good place to start, but it was not enough of a helicopter simulation. For example, *SCopter* does not apply forces in local helicopter space. This means that if the *SCopter* is nosed down completely vertically and you press the raise button (jump), the helicopter will move up tail first. Also, the only implementation of *SCopter*, *COGChopper*, is not affected by gravity.The first decision I made was that the helicopter would be affected by gravity. To accomplish this goal I set [KActorGravScale](../Content Creation/Physics/KarmaReference.md#KarmaParams) to 1.0 as opposed to 0.0. I set this value in *CTLChopper.uc* which is the only place that a *KarmaParams* is defined for *SHelicopter*.The second decision I made when designing my helicopter was that the main rotor would be the only thing to apply a force to helicopter. To fly forward one would have tilt the helicopter forward so the force of the rotor would be divided between keeping the helicopter in the air and moving it forward. To do this I would need to apply a force in local helicopter space as opposed to world space. I got the local coordinate system of the helicopter and applied the rotor force as follows:
+To make physics for a helicopter, [SCopter](SCopterReference.md) seemed like a good place to start, but it was not enough of a helicopter simulation. For example, *SCopter* does not apply forces in local helicopter space. This means that if the *SCopter* is nosed down completely vertically and you press the raise button (jump), the helicopter will move up tail first. Also, the only implementation of *SCopter*, *COGChopper*, is not affected by gravity.The first decision I made was that the helicopter would be affected by gravity. To accomplish this goal I set [KActorGravScale](../Content Creation/Physics/KarmaReference.md#karmaparams) to 1.0 as opposed to 0.0. I set this value in *CTLChopper.uc* which is the only place that a *KarmaParams* is defined for *SHelicopter*.The second decision I made when designing my helicopter was that the main rotor would be the only thing to apply a force to helicopter. To fly forward one would have tilt the helicopter forward so the force of the rotor would be divided between keeping the helicopter in the air and moving it forward. To do this I would need to apply a force in local helicopter space as opposed to world space. I got the local coordinate system of the helicopter and applied the rotor force as follows:
 
 ```
 
@@ -108,11 +108,11 @@ And that is pretty much it for the physics of the helicopter. All in all, it is 
 
 ### Designing the Control Scheme (Goal 2)
 
-*Design a control scheme for the helicopter that is logical and accessible.*I wanted to make flying an *SHelicopter* reasonably similar to walking around in an FPS. Or at least more similar than really flying a helicopter and really walking around which I imagine are fairly different. I also wanted to do this without giving up the [first design goal](HelicopterTutorial.md#Designing_the_Physics_Goal_1_).I decided to work on the general scheme that pressing forward and back would make you go forward and back respectively; that pressing left and right would make you strafe/slide left and right; that jumping would make you go up; that crouching would make you go down; that moving the mouse left and right would affect which way you were aiming; and that mouse up and down would affect which way you were looking but would not affect the movement direction or orientation of your avatar. This control scheme is similar to that of a standard FPS.The control scheme of an [SCopter](SCopterReference.md) was very close to what I wanted but given that I drastically changed the physics, I also had to greatly change the control code. Given that the only linear force on the *SHelicopter* was the main rotator blade, all control of the helicopter would have to come from torquing the body to aim the rotor in a different direction.
+*Design a control scheme for the helicopter that is logical and accessible.*I wanted to make flying an *SHelicopter* reasonably similar to walking around in an FPS. Or at least more similar than really flying a helicopter and really walking around which I imagine are fairly different. I also wanted to do this without giving up the [first design goal](HelicopterTutorial.md#designing_the_physics_goal_1_).I decided to work on the general scheme that pressing forward and back would make you go forward and back respectively; that pressing left and right would make you strafe/slide left and right; that jumping would make you go up; that crouching would make you go down; that moving the mouse left and right would affect which way you were aiming; and that mouse up and down would affect which way you were looking but would not affect the movement direction or orientation of your avatar. This control scheme is similar to that of a standard FPS.The control scheme of an [SCopter](SCopterReference.md) was very close to what I wanted but given that I drastically changed the physics, I also had to greatly change the control code. Given that the only linear force on the *SHelicopter* was the main rotator blade, all control of the helicopter would have to come from torquing the body to aim the rotor in a different direction.
 
 #### Pitching and Rolling
 
-Pitching and rolling are very simple because all this involves is mapping an input variable to a local torque axis. For example, the *OutputThrust* variable (which is the same as the [Throttle](SVehicleReference.md#Throttle) in *SVehicles*) is mapped to the pitch axis and *OutputStrafe* (same as [Steering](SVehicleReference.md#Steering)) is mapped to the roll axis. This is done as follows:
+Pitching and rolling are very simple because all this involves is mapping an input variable to a local torque axis. For example, the *OutputThrust* variable (which is the same as the [Throttle](SVehicleReference.md#throttle) in *SVehicles*) is mapped to the pitch axis and *OutputStrafe* (same as [Steering](SVehicleReference.md#steering)) is mapped to the roll axis. This is done as follows:
 
 ```
 
@@ -127,7 +127,7 @@ The torque is applied on local axes *DirX* and *DirY*, not the global axis *Forw
 
 #### Rotor Speed
 
-The speed of the main rotor uses *OutputRise* (which is the same as [Rise](SVehicleReference.md#Rise) in *SVehicles*) but is not bound directly to *OutputRise*. Mainly this is that so people who have no means of analog input can set the speed at a level between full on and off. The faster the rotors spin the more lift they provide. The speed can remain were you set it or it can slow down if you are not pressing anything based on *RoterSpeedDecelRate*. For more details on controlling the rotor speed the see [Rotor](HelicopterTutorial.md#Rotor) section. The rotor speed and the thrust is calculated as follows:
+The speed of the main rotor uses *OutputRise* (which is the same as [Rise](SVehicleReference.md#rise) in *SVehicles*) but is not bound directly to *OutputRise*. Mainly this is that so people who have no means of analog input can set the speed at a level between full on and off. The faster the rotors spin the more lift they provide. The speed can remain were you set it or it can slow down if you are not pressing anything based on *RoterSpeedDecelRate*. For more details on controlling the rotor speed the see [Rotor](HelicopterTutorial.md#rotor) section. The rotor speed and the thrust is calculated as follows:
 
 ```
 
@@ -142,7 +142,7 @@ Force += RotorForce * DirZ;
 
 #### Yawing
 
-Yawing is much trickier. This is mainly because we have used all the [three input variables](SVehicleReference.md#Controls) for *SVehicles*. Yawing, therefore, will not be directly controlled by the player; yaw torque will be calculated based on where the view is looking and which way the helicopter is facing. This is done exactly the way *SCopters* calculate yaw torque. Yaw torque is applied on the global Z axis because it made a bit more intuitive sense when flying the helicopter than a local axis. While this is less realistic, local torque made the helicopter harder to fly. Yaw torque is calculated as follows:
+Yawing is much trickier. This is mainly because we have used all the [three input variables](SVehicleReference.md#controls) for *SVehicles*. Yawing, therefore, will not be directly controlled by the player; yaw torque will be calculated based on where the view is looking and which way the helicopter is facing. This is done exactly the way *SCopters* calculate yaw torque. Yaw torque is applied on the global Z axis because it made a bit more intuitive sense when flying the helicopter than a local axis. While this is less realistic, local torque made the helicopter harder to fly. Yaw torque is calculated as follows:
 
 ```
 
@@ -173,11 +173,11 @@ Torque += ( TurnTorqueMag * Up );
 
 #### KStayUpRight
 
-*bKStayUpright* in [KarmaParams](../Content Creation/Physics/KarmaReference.md#KarmaParams) along with *UprightStiffness* and *UprightDamping* probably affect the balance and easy of flight of the helicopter more than any other variables. If *bKStayUpright* is true, the helicopter will always be trying to turn itself upright and level. *UprightStiffness* and *UprightDamping* set *StayUprightStiffness* and *StayUprightDamping* in [KarmaParams](../Content Creation/Physics/KarmaReference.md#KarmaParams) which affect how strongly the helicopter will try to stay upright. If these variables are large the helicopter will level out easily but be hard to turn or bank sharply. By default in *CTLChopper*, *bKStayUpright* is true, *UprightStiffness* is 7.5, and *UprightDamping* is 5.0.
+*bKStayUpright* in [KarmaParams](../Content Creation/Physics/KarmaReference.md#karmaparams) along with *UprightStiffness* and *UprightDamping* probably affect the balance and easy of flight of the helicopter more than any other variables. If *bKStayUpright* is true, the helicopter will always be trying to turn itself upright and level. *UprightStiffness* and *UprightDamping* set *StayUprightStiffness* and *StayUprightDamping* in [KarmaParams](../Content Creation/Physics/KarmaReference.md#karmaparams) which affect how strongly the helicopter will try to stay upright. If these variables are large the helicopter will level out easily but be hard to turn or bank sharply. By default in *CTLChopper*, *bKStayUpright* is true, *UprightStiffness* is 7.5, and *UprightDamping* is 5.0.
 
 #### Linear Damping
 
-To affect linear damping you should change *LongDamping*, *LatDamping*, and *UpDamping*. Damping takes place in local helicopter space but as mentioned in the [Designing the Physics](HelicopterTutorial.md#Designing_the_Physics_Goal_1_) section, you can change the code to use global space easily.Damping acts to slow the helicopter in the direction it is moving. It is helpful because it allows you to stop in one place more easily. It also prevents the helicopter from picking up too much speed in one direction. Damping is like air resistance in that the faster you are moving the more force damping applies in the opposite direction. Because of this, damping acts like a terminal velocity. If the helicopter has too much *UpDamping* for example, it will never be able to plummet from the sky in an exciting manner. If *LongDamping* is too large, the helicopter will never be able to go very fast. By default in *CTLChopper*, all linear damping is set to 0.03.
+To affect linear damping you should change *LongDamping*, *LatDamping*, and *UpDamping*. Damping takes place in local helicopter space but as mentioned in the [Designing the Physics](HelicopterTutorial.md#designing_the_physics_goal_1_) section, you can change the code to use global space easily.Damping acts to slow the helicopter in the direction it is moving. It is helpful because it allows you to stop in one place more easily. It also prevents the helicopter from picking up too much speed in one direction. Damping is like air resistance in that the faster you are moving the more force damping applies in the opposite direction. Because of this, damping acts like a terminal velocity. If the helicopter has too much *UpDamping* for example, it will never be able to plummet from the sky in an exciting manner. If *LongDamping* is too large, the helicopter will never be able to go very fast. By default in *CTLChopper*, all linear damping is set to 0.03.
 
 #### Rotational Toque and Damping
 
@@ -204,7 +204,7 @@ See the [GraphsAndMemory](https://udn.epicgames.com/Two/GraphsAndMemory) UDN for
 
 ### KDraw
 
-KDraw is a useful command for drawing what is going on with karma objects. It is documented in the [SCarReference](SCarReference.md#KDraw).
+KDraw is a useful command for drawing what is going on with karma objects. It is documented in the [SCarReference](SCarReference.md#kdraw).
 
 ### Defaultproperties are Tricky
 

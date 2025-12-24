@@ -2,28 +2,28 @@
 
 *Document Summary: An introduction to using the Karma Authoring Tool (KAT) for setting up ragdolls.**Document Changelog: Last Updated by Chris Linder (DemiurgeStudios?) to update and also add step-by-step importing instructions. Original Author was Ian Tierney.*
 
-* [KarmaAuthoringTool](KarmaAuthoringTool.md#KarmaAuthoringTool)
-  + [Related Documents](KarmaAuthoringTool.md#Related Documents)
-  + [Overview](KarmaAuthoringTool.md#Overview)
-  + [Support](KarmaAuthoringTool.md#Support)
-  + [Getting KAT](KarmaAuthoringTool.md#Getting KAT)
-  + [Using KAT](KarmaAuthoringTool.md#Using KAT)
-    - [Using Physic assets](KarmaAuthoringTool.md#Using Physic assets)
-    - [Ragdoll Example](KarmaAuthoringTool.md#Ragdoll Example)
-    - [Detailed Step-by-Step Ragdoll Importing](KarmaAuthoringTool.md#Detailed Step-by-Step Ragdoll Importing)
-      * [Step 1: Making a Model](KarmaAuthoringTool.md#Step 1: Making a Model)
-      * [Step 2: Exporting the PSK](KarmaAuthoringTool.md#Step 2: Exporting the PSK)
-      * [Step 3: Importing the PSK into UnrealEd](KarmaAuthoringTool.md#Step 3: Importing the PSK into _UnrealEd)
-      * [Step 4: Importing the PSK into KAT](KarmaAuthoringTool.md#Step 4: Importing the PSK into KAT)
-      * [Step 5: Editing your Asset](KarmaAuthoringTool.md#Step 5: Editing your Asset)
-      * [Step 6: Making a Class For Your Ragdoll](KarmaAuthoringTool.md#Step 6: Making a Class For Your Ragdoll)
-      * [Step 7: Placing your Ragdoll in a Level in UnrealEd](KarmaAuthoringTool.md#Step 7: Placing your Ragdoll in a Level in _UnrealEd)
-      * [Step 8: Look, Pretty... Mostly](KarmaAuthoringTool.md#Step 8: Look, Pretty... Mostly)
-      * [Step 9: With What the Ragdoll Will Collide](KarmaAuthoringTool.md#Step 9: With What the Ragdoll Will Collide)
-    - [Things to watch out for](KarmaAuthoringTool.md#Things to watch out for)
-      * [Scale](KarmaAuthoringTool.md#Scale)
-      * [Ragdolls Falling Through the World](KarmaAuthoringTool.md#Ragdolls Falling Through the World)
-  + [Conclusion](KarmaAuthoringTool.md#Conclusion)
+* [KarmaAuthoringTool](KarmaAuthoringTool.md#karmaauthoringtool)
+  + [Related Documents](KarmaAuthoringTool.md#related-documents)
+  + [Overview](KarmaAuthoringTool.md#overview)
+  + [Support](KarmaAuthoringTool.md#support)
+  + [Getting KAT](KarmaAuthoringTool.md#getting-kat)
+  + [Using KAT](KarmaAuthoringTool.md#using-kat)
+    - [Using Physic assets](KarmaAuthoringTool.md#using-physic-assets)
+    - [Ragdoll Example](KarmaAuthoringTool.md#ragdoll-example)
+    - [Detailed Step-by-Step Ragdoll Importing](KarmaAuthoringTool.md#detailed-step-by-step-ragdoll-importing)
+      * [Step 1: Making a Model](KarmaAuthoringTool.md#step-1-making-a-model)
+      * [Step 2: Exporting the PSK](KarmaAuthoringTool.md#step-2-exporting-the-psk)
+      * [Step 3: Importing the PSK into UnrealEd](KarmaAuthoringTool.md#step-3-importing-the-psk-into-_unrealed)
+      * [Step 4: Importing the PSK into KAT](KarmaAuthoringTool.md#step-4-importing-the-psk-into-kat)
+      * [Step 5: Editing your Asset](KarmaAuthoringTool.md#step-5-editing-your-asset)
+      * [Step 6: Making a Class For Your Ragdoll](KarmaAuthoringTool.md#step-6-making-a-class-for-your-ragdoll)
+      * [Step 7: Placing your Ragdoll in a Level in UnrealEd](KarmaAuthoringTool.md#step-7-placing-your-ragdoll-in-a-level-in-_unrealed)
+      * [Step 8: Look, Pretty... Mostly](KarmaAuthoringTool.md#step-8-look-pretty-mostly)
+      * [Step 9: With What the Ragdoll Will Collide](KarmaAuthoringTool.md#step-9-with-what-the-ragdoll-will-collide)
+    - [Things to watch out for](KarmaAuthoringTool.md#things-to-watch-out-for)
+      * [Scale](KarmaAuthoringTool.md#scale)
+      * [Ragdolls Falling Through the World](KarmaAuthoringTool.md#ragdolls-falling-through-the-world)
+  + [Conclusion](KarmaAuthoringTool.md#conclusion)
 
 ## Related Documents
 
@@ -131,7 +131,7 @@ Now we need to change the joint types from "Ball and socket" to "Skeletal". This
 
 #### Step 6: Making a Class For Your Ragdoll
 
-Below is an example class for the KarmaTube ragdoll. To use a different model and karma asset simply change the *Mesh* to a mesh you want, and change the *KSkeleton* to an appropriate karma asset generated in KAT that matches the mesh. You of course, can also change the collision and physics properties; these are just some defaults that work well. (For more details on collision see the [Actor Variables](ActorVariables.md#Collision) document.)
+Below is an example class for the KarmaTube ragdoll. To use a different model and karma asset simply change the *Mesh* to a mesh you want, and change the *KSkeleton* to an appropriate karma asset generated in KAT that matches the mesh. You of course, can also change the collision and physics properties; these are just some defaults that work well. (For more details on collision see the [Actor Variables](ActorVariables.md#collision) document.)
 
 ```
 
@@ -181,7 +181,7 @@ Now play the level and watch the ragdoll fun. Things will work pretty well but t
 
 #### Step 9: With What the Ragdoll Will Collide
 
-The ragdoll we have created so far will collide with BSP, Blocking Volumes, and static meshes with karma collision set up properly. (See the [CollisionTutorial](../Content Creation/Physics/CollisionTutorial.md#Collision_Models) for more details on creating and setting up collision for a static mesh. You do not need collision volumes for the static mesh to collide with a ragdoll, you just need to set the static mesh properties correctly.)The ragdoll we have created will not collide with other *KActors* or karma objects such as vehicles. This ragdoll will also not collide with the player or any pawns in the game.
+The ragdoll we have created so far will collide with BSP, Blocking Volumes, and static meshes with karma collision set up properly. (See the [CollisionTutorial](../Content Creation/Physics/CollisionTutorial.md#collision_models) for more details on creating and setting up collision for a static mesh. You do not need collision volumes for the static mesh to collide with a ragdoll, you just need to set the static mesh properties correctly.)The ragdoll we have created will not collide with other *KActors* or karma objects such as vehicles. This ragdoll will also not collide with the player or any pawns in the game.
 
 ### Things to watch out for
 

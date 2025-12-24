@@ -2,11 +2,11 @@
 
 *Document Summary: A detailed description on how use Antiportals to optimize your level.**Document Changelog: Last updated by Jason Lentz (DemiurgeStudios?), to break up in to smaller docs. Original authors were Tomasz Jachimczak ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)) and Jason Lentz (DemiurgeStudios?).*
 
-* [Level Optimization - Antiportals](LevelOptimizationAntiportals.md#Level Optimization - Antiportals)
-  + [Introduction](LevelOptimizationAntiportals.md#Introduction)
-  + [Limitations](LevelOptimizationAntiportals.md#Limitations)
-  + [Examples](LevelOptimizationAntiportals.md#Examples)
-  + [Guidelines for Antiportals Outdoors](LevelOptimizationAntiportals.md#Guidelines for Antiportals Outdoors)
+* [Level Optimization - Antiportals](LevelOptimizationAntiportals.md#level-optimization---antiportals)
+  + [Introduction](LevelOptimizationAntiportals.md#introduction)
+  + [Limitations](LevelOptimizationAntiportals.md#limitations)
+  + [Examples](LevelOptimizationAntiportals.md#examples)
+  + [Guidelines for Antiportals Outdoors](LevelOptimizationAntiportals.md#guidelines-for-antiportals-outdoors)
 
 ## Introduction
 

@@ -5,17 +5,17 @@
 *Updated on 9/16/03 by Chris Linder (DemiurgeStudios?), first public release.*
 *Updated on 2005-03-23 by Michiel Hendriks, v3323 update.*
 
-* [SCopter Reference](SCopterReference.md#SCopter Reference)
-  + [Related Documents](SCopterReference.md#Related Documents)
-  + [Introduction](SCopterReference.md#Introduction)
-  + [Editable SCopter Variables](SCopterReference.md#Editable SCopter Variables)
-    - [Thrust and Linear Damping](SCopterReference.md#Thrust and Linear Damping)
-    - [Turning](SCopterReference.md#Turning)
-    - [Pitching](SCopterReference.md#Pitching)
-    - [Rolling](SCopterReference.md#Rolling)
-    - [Hovering](SCopterReference.md#Hovering)
-    - [MPH meter](SCopterReference.md#MPH meter)
-    - [Not Used](SCopterReference.md#Not Used)
+* [SCopter Reference](SCopterReference.md#scopter-reference)
+  + [Related Documents](SCopterReference.md#related-documents)
+  + [Introduction](SCopterReference.md#introduction)
+  + [Editable SCopter Variables](SCopterReference.md#editable-scopter-variables)
+    - [Thrust and Linear Damping](SCopterReference.md#thrust-and-linear-damping)
+    - [Turning](SCopterReference.md#turning)
+    - [Pitching](SCopterReference.md#pitching)
+    - [Rolling](SCopterReference.md#rolling)
+    - [Hovering](SCopterReference.md#hovering)
+    - [MPH meter](SCopterReference.md#mph-meter)
+    - [Not Used](SCopterReference.md#not-used)
 
 ## Related Documents
 
@@ -36,7 +36,7 @@
 
 #### MaxThrustForce
 
-`var() float MaxThrustForce`This is the max forward (or back) thrust applied when you press forward (or back). The amount of thrust is based on how much the "throttle" is pressed (see the [Controls](SVehicleReference.md#Controls) sections of the *SVehicle* doc). The thrust is applied in the direction the copter is facing on the X-Y plane.
+`var() float MaxThrustForce`This is the max forward (or back) thrust applied when you press forward (or back). The amount of thrust is based on how much the "throttle" is pressed (see the [Controls](SVehicleReference.md#controls) sections of the *SVehicle* doc). The thrust is applied in the direction the copter is facing on the X-Y plane.
 
 #### LongDamping
 
@@ -44,7 +44,7 @@
 
 #### MaxStrafeForce
 
-`var() float MaxStrafeForce`This is the max sideways thrust applied when you press left or right. The amount of thrust is based on how far the "steering" is turned (see the [Controls](SVehicleReference.md#Controls) sections of the *SVehicle* doc). The thrust is applied perpendicular to the direction the copter is facing on the X-Y plane.
+`var() float MaxStrafeForce`This is the max sideways thrust applied when you press left or right. The amount of thrust is based on how far the "steering" is turned (see the [Controls](SVehicleReference.md#controls) sections of the *SVehicle* doc). The thrust is applied perpendicular to the direction the copter is facing on the X-Y plane.
 
 #### LatDamping
 
@@ -52,7 +52,7 @@
 
 #### MaxRiseForce
 
-`var() float MaxRiseForce`This is the max vertical thrust applied when you press up or down. The amount of thrust is based on how far the "rise" input (see the [Controls](SVehicleReference.md#Controls) sections of the *SVehicle* doc). The thrust is applied on the world Z axis (up and down).
+`var() float MaxRiseForce`This is the max vertical thrust applied when you press up or down. The amount of thrust is based on how far the "rise" input (see the [Controls](SVehicleReference.md#controls) sections of the *SVehicle* doc). The thrust is applied on the world Z axis (up and down).
 
 #### UpDamping
 
@@ -64,15 +64,15 @@ You turn *SCopters* by pointing the player's view (using the mouse or thumb-stic
 
 #### TurnTorqueFactor
 
-`var() float TurnTorqueFactor`*TurnTorqueFactor* will be multiplied by a number from -1 to 1 based on if the copter is turning as hard as it can either left or right (note: in most cases the turning multiplier will be much closer to 0 than 1 or -1. This is because [MaxYawRate](SCopterReference.md#MaxYawRate) is usually small). The result of this multiply is the torque with which the copter will try to turn (before it is clamped by [TurnTorqueMax](SCopterReference.md#TurnTorqueMax)).
+`var() float TurnTorqueFactor`*TurnTorqueFactor* will be multiplied by a number from -1 to 1 based on if the copter is turning as hard as it can either left or right (note: in most cases the turning multiplier will be much closer to 0 than 1 or -1. This is because [MaxYawRate](SCopterReference.md#maxyawrate) is usually small). The result of this multiply is the torque with which the copter will try to turn (before it is clamped by [TurnTorqueMax](SCopterReference.md#turntorquemax)).
 
 #### TurnTorqueMax
 
-`var() float TurnTorqueMax`This is the maximum amount of torque (either positive or negative) that will be applied to turn the copter. See [TurnTorqueFactor](SCopterReference.md#TurnTorqueFactor) for an explanation of how the amount of torque is calculated.
+`var() float TurnTorqueMax`This is the maximum amount of torque (either positive or negative) that will be applied to turn the copter. See [TurnTorqueFactor](SCopterReference.md#turntorquefactor) for an explanation of how the amount of torque is calculated.
 
 #### MaxYawRate
 
-`var() float MaxYawRate`This is maximum rate, in radians per second, at which the copter can turn. The larger this number is, the less effect it will have clamping the rotation and consequently, the copter will use more torque to turn (see [TurnTorqueFactor](SCopterReference.md#TurnTorqueFactor)). Making this rate larger will allow the copter to turn faster and also use more torque but if [TurnTorqueMax](SCopterReference.md#TurnTorqueMax) is too small, this effect might be hard to notice.
+`var() float MaxYawRate`This is maximum rate, in radians per second, at which the copter can turn. The larger this number is, the less effect it will have clamping the rotation and consequently, the copter will use more torque to turn (see [TurnTorqueFactor](SCopterReference.md#turntorquefactor)). Making this rate larger will allow the copter to turn faster and also use more torque but if [TurnTorqueMax](SCopterReference.md#turntorquemax) is too small, this effect might be hard to notice.
 
 #### TurnDamping
 
@@ -80,15 +80,15 @@ You turn *SCopters* by pointing the player's view (using the mouse or thumb-stic
 
 ### Pitching
 
-*SCopters* pitch based on the "throttle". (see the [Controls](SVehicleReference.md#Controls) sections of the *SVehicle* doc). This means that if the throttle is pressed forward, the copter will point its nose down. The pitch of the copter is purely cosmetic.
+*SCopters* pitch based on the "throttle". (see the [Controls](SVehicleReference.md#controls) sections of the *SVehicle* doc). This means that if the throttle is pressed forward, the copter will point its nose down. The pitch of the copter is purely cosmetic.
 
 #### PitchTorqueFactor
 
-`var() float PitchTorqueFactor`*PitchTorqueFactor* will be multiplied by the "throttle" of *SCopter* (see the [Controls](SVehicleReference.md#Controls) sections of the *SVehicle* doc). The result of this multiply is the torque used to pitch the copter. The copter only pitches forward so far and does not spin about the Y axis because the Karma properties for *SCopters* have [bKStayUpright](../Content Creation/Physics/KarmaReference.md#KarmaParams) set to true.
+`var() float PitchTorqueFactor`*PitchTorqueFactor* will be multiplied by the "throttle" of *SCopter* (see the [Controls](SVehicleReference.md#controls) sections of the *SVehicle* doc). The result of this multiply is the torque used to pitch the copter. The copter only pitches forward so far and does not spin about the Y axis because the Karma properties for *SCopters* have [bKStayUpright](../Content Creation/Physics/KarmaReference.md#karmaparams) set to true.
 
 #### PitchTorqueMax
 
-`var() float PitchTorqueMax`This is the maximum amount of torque (either positive or negative) that will be applied to pitch the copter. See [PitchTorqueFactor](SCopterReference.md#PitchTorqueFactor) for an explanation of how the amount of torque is calculated.
+`var() float PitchTorqueMax`This is the maximum amount of torque (either positive or negative) that will be applied to pitch the copter. See [PitchTorqueFactor](SCopterReference.md#pitchtorquefactor) for an explanation of how the amount of torque is calculated.
 
 #### PitchDamping
 
@@ -96,19 +96,19 @@ You turn *SCopters* by pointing the player's view (using the mouse or thumb-stic
 
 ### Rolling
 
-*SCopters* roll based on two things; the first is if they are turning, and the second is if they are strafing, a.k.a. "steering". (see the [Controls](SVehicleReference.md#Controls) sections of the *SVehicle* doc). The roll of the copter is purely cosmetic.
+*SCopters* roll based on two things; the first is if they are turning, and the second is if they are strafing, a.k.a. "steering". (see the [Controls](SVehicleReference.md#controls) sections of the *SVehicle* doc). The roll of the copter is purely cosmetic.
 
 #### RollTorqueTurnFactor
 
-`var() float RollTorqueTurnFactor`*RollTorqueTurnFactor* is very similar to [TurnTorqueFactor](SCopterReference.md#TurnTorqueFactor) because both are multiplied by a number which represent how hard the copter is turning. The result of this multiply is used to roll in the direction of the turn. The copter only rolls so far and does not spin about the X axis because the Karma properties for *SCopters* have [bKStayUpright](../Content Creation/Physics/KarmaReference.md#KarmaParams) set to true.
+`var() float RollTorqueTurnFactor`*RollTorqueTurnFactor* is very similar to [TurnTorqueFactor](SCopterReference.md#turntorquefactor) because both are multiplied by a number which represent how hard the copter is turning. The result of this multiply is used to roll in the direction of the turn. The copter only rolls so far and does not spin about the X axis because the Karma properties for *SCopters* have [bKStayUpright](../Content Creation/Physics/KarmaReference.md#karmaparams) set to true.
 
 #### RollTorqueStrafeFactor
 
-`var() float RollTorqueStrafeFactor`This is used to roll the copter when it is strafing. Strafing is based on the "steering" (see the [Controls](SVehicleReference.md#Controls) sections of the *SVehicle* doc) input of the *SCopter*. *RollTorqueStrafeFactor* is very simlar to [PitchTorqueFactor](SCopterReference.md#PitchTorqueFactor).
+`var() float RollTorqueStrafeFactor`This is used to roll the copter when it is strafing. Strafing is based on the "steering" (see the [Controls](SVehicleReference.md#controls) sections of the *SVehicle* doc) input of the *SCopter*. *RollTorqueStrafeFactor* is very simlar to [PitchTorqueFactor](SCopterReference.md#pitchtorquefactor).
 
 #### RollTorqueMax
 
-`var() float RollTorqueMax`This is the maximum amount of torque (either positive or negative) that will be applied to roll the copter. See [RollTorqueTurnFactor](SCopterReference.md#RollTorqueTurnFactor) and [RollTorqueStrafeFactor](SCopterReference.md#RollTorqueStrafeFactor) for an explanation of how the amount of torque is calculated.
+`var() float RollTorqueMax`This is the maximum amount of torque (either positive or negative) that will be applied to roll the copter. See [RollTorqueTurnFactor](SCopterReference.md#rolltorqueturnfactor) and [RollTorqueStrafeFactor](SCopterReference.md#rolltorquestrafefactor) for an explanation of how the amount of torque is calculated.
 
 #### RollDamping
 

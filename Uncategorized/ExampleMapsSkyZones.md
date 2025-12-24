@@ -2,19 +2,19 @@
 
 *Last updated by Jason Lentz (DemiurgeStudios?), for creation purposes. Original author was Jason Lentz (DemiurgeStudios?).*
 
-* [SkyZones](ExampleMapsSkyZones.md#SkyZones)
-  + [Introduction](ExampleMapsSkyZones.md#Introduction)
-  + [Setting up a basic Sky Box](ExampleMapsSkyZones.md#Setting up a basic Sky Box)
-    - [Setting Up Your Level](ExampleMapsSkyZones.md#Setting Up Your Level)
-    - [Placing the SkyZoneInfo](ExampleMapsSkyZones.md#Placing the _SkyZoneInfo)
-    - [Lighting the SkyZone](ExampleMapsSkyZones.md#Lighting the _SkyZone)
-    - [Adding Fog to the SkyZone](ExampleMapsSkyZones.md#Adding Fog to the _SkyZone)
-  + [Different Types SkyZones](ExampleMapsSkyZones.md#Different Types _SkyZones)
-    - [Sky Boxes](ExampleMapsSkyZones.md#Sky Boxes)
-    - [Sky Cylinders](ExampleMapsSkyZones.md#Sky Cylinders)
-    - [Sky Spheres](ExampleMapsSkyZones.md#Sky Spheres)
-  + [Other Effects](ExampleMapsSkyZones.md#Other Effects)
-  + [Downloads](ExampleMapsSkyZones.md#Downloads)
+* [SkyZones](ExampleMapsSkyZones.md#skyzones)
+  + [Introduction](ExampleMapsSkyZones.md#introduction)
+  + [Setting up a basic Sky Box](ExampleMapsSkyZones.md#setting-up-a-basic-sky-box)
+    - [Setting Up Your Level](ExampleMapsSkyZones.md#setting-up-your-level)
+    - [Placing the SkyZoneInfo](ExampleMapsSkyZones.md#placing-the-_skyzoneinfo)
+    - [Lighting the SkyZone](ExampleMapsSkyZones.md#lighting-the-_skyzone)
+    - [Adding Fog to the SkyZone](ExampleMapsSkyZones.md#adding-fog-to-the-_skyzone)
+  + [Different Types SkyZones](ExampleMapsSkyZones.md#different-types-_skyzones)
+    - [Sky Boxes](ExampleMapsSkyZones.md#sky-boxes)
+    - [Sky Cylinders](ExampleMapsSkyZones.md#sky-cylinders)
+    - [Sky Spheres](ExampleMapsSkyZones.md#sky-spheres)
+  + [Other Effects](ExampleMapsSkyZones.md#other-effects)
+  + [Downloads](ExampleMapsSkyZones.md#downloads)
 
 ## Introduction
 

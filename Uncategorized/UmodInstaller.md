@@ -2,22 +2,22 @@
 
 *Last updated by Richard 'vajuras' Osborne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)) to apply code corrections. Original author was Richard 'vajuras' Osborne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).*
 
-* [Creating UMODs](UmodInstaller.md#Creating UMODs)
-  + [UMods](UmodInstaller.md#UMods)
-  + [The Composition](UmodInstaller.md#The Composition)
-  + [Building the INI File](UmodInstaller.md#Building the INI File)
-    - [The Setup Group](UmodInstaller.md#The Setup Group)
-    - [Requirement Section](UmodInstaller.md#Requirement Section)
-    - [Group Section](UmodInstaller.md#Group Section)
-    - [Shortcut Section](UmodInstaller.md#Shortcut Section)
-  + [Building the INT File](UmodInstaller.md#Building the INT File)
-    - [Requirement Section](UmodInstaller.md#Requirement Section)
-    - [Shortcut Section](UmodInstaller.md#Shortcut Section)
-    - [Group Section](UmodInstaller.md#Group Section)
-  + [Multiple Language Support](UmodInstaller.md#Multiple Language Support)
-  + [Creating a Total Conversion Umod](UmodInstaller.md#Creating a Total Conversion Umod)
-  + [Wrapping it all up](UmodInstaller.md#Wrapping it all up)
-  + [Umod Generation Tools](UmodInstaller.md#Umod Generation Tools)
+* [Creating UMODs](UmodInstaller.md#creating-umods)
+  + [UMods](UmodInstaller.md#umods)
+  + [The Composition](UmodInstaller.md#the-composition)
+  + [Building the INI File](UmodInstaller.md#building-the-ini-file)
+    - [The Setup Group](UmodInstaller.md#the-setup-group)
+    - [Requirement Section](UmodInstaller.md#requirement-section)
+    - [Group Section](UmodInstaller.md#group-section)
+    - [Shortcut Section](UmodInstaller.md#shortcut-section)
+  + [Building the INT File](UmodInstaller.md#building-the-int-file)
+    - [Requirement Section](UmodInstaller.md#requirement-section)
+    - [Shortcut Section](UmodInstaller.md#shortcut-section)
+    - [Group Section](UmodInstaller.md#group-section)
+  + [Multiple Language Support](UmodInstaller.md#multiple-language-support)
+  + [Creating a Total Conversion Umod](UmodInstaller.md#creating-a-total-conversion-umod)
+  + [Wrapping it all up](UmodInstaller.md#wrapping-it-all-up)
+  + [Umod Generation Tools](UmodInstaller.md#umod-generation-tools)
 
 ## UMods
 

@@ -2,8 +2,8 @@
 
 *Document Summary: Download links for the Impersonator Tools and Samples**Document Changelog: Added by Joe Wilcox 6/16/2004*
 
-* [Impersonator Tools and Samples!](LipSyncDownload.md#Impersonator Tools and Samples!)
-  + [Files](LipSyncDownload.md#Files)
+* [Impersonator Tools and Samples!](LipSyncDownload.md#impersonator-tools-and-samples)
+  + [Files](LipSyncDownload.md#files)
 
 ## Files
 

@@ -2,11 +2,11 @@
 
 Note that this document refers to UE2, and has not been updated for UE2.5.Revision history:*Last updated by Chris Sturgill (Demiurge Studios?) 23 March 2004 for nomenclature.**Updated by Joe Graf to fix some grammar, Twiki-ness, and add a caveat.**Updated by Carlos Cuello to fix setbonedirection. (Thx Carlos for fixing my burg--I mean bug)*
 
-* [Unreal Skeletal Animation 102](SkelAnim2.md#Unreal Skeletal Animation 102)
-  + [Introduction](SkelAnim2.md#Introduction)
-  + [Scaling Bones](SkelAnim2.md#Scaling Bones)
-  + [Bone Rotation](SkelAnim2.md#Bone Rotation)
-  + [Summary](SkelAnim2.md#Summary)
+* [Unreal Skeletal Animation 102](SkelAnim2.md#unreal-skeletal-animation-102)
+  + [Introduction](SkelAnim2.md#introduction)
+  + [Scaling Bones](SkelAnim2.md#scaling-bones)
+  + [Bone Rotation](SkelAnim2.md#bone-rotation)
+  + [Summary](SkelAnim2.md#summary)
 
 ## Introduction
 
@@ -23,7 +23,7 @@ whole character appear to be a different size only the player's head changed siz
 way lesser players would run around with shrunken heads and elite players would have
 giant sized heads. Players with the tiny heads would be hard to "head shot", but players
 with lots of frags would be relatively easy to hit.In the old vertex based animation code such a concept was not possible. However, with
-the skeletal animation system this is relatively easy (see caveat below). If you refer back to [Table 5](https://udn.epicgames.com/Two/SkelAnim#SkelMeshVars) of
+the skeletal animation system this is relatively easy (see caveat below). If you refer back to [Table 5](https://udn.epicgames.com/Two/SkelAnim#skelmeshvars) of
 the previous article, [SkelAnim](https://udn.epicgames.com/Two/SkelAnim), you will see the Scalers array. This array
 is used to scale skeletal bones during rendering. Setting the scale of a bone is done
 by calling SetBoneScale(), taking three parameters. The first parameter specifies

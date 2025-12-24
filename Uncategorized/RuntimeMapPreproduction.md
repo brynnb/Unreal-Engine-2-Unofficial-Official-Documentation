@@ -1,12 +1,12 @@
 # Runtime Map Process
 
-* [Runtime Map Process](RuntimeMapPreproduction.md#Runtime Map Process)
-  + [Introduction](RuntimeMapPreproduction.md#Introduction)
-  + [Know Your Audience](RuntimeMapPreproduction.md#Know Your Audience)
-  + [Determine Goals](RuntimeMapPreproduction.md#Determine Goals)
-  + [Laying it Out on Paper](RuntimeMapPreproduction.md#Laying it Out on Paper)
-  + [Determining Necessary Art Assets](RuntimeMapPreproduction.md#Determining Necessary Art Assets)
-  + [Signing Off on the Design](RuntimeMapPreproduction.md#Signing Off on the Design)
+* [Runtime Map Process](RuntimeMapPreproduction.md#runtime-map-process)
+  + [Introduction](RuntimeMapPreproduction.md#introduction)
+  + [Know Your Audience](RuntimeMapPreproduction.md#know-your-audience)
+  + [Determine Goals](RuntimeMapPreproduction.md#determine-goals)
+  + [Laying it Out on Paper](RuntimeMapPreproduction.md#laying-it-out-on-paper)
+  + [Determining Necessary Art Assets](RuntimeMapPreproduction.md#determining-necessary-art-assets)
+  + [Signing Off on the Design](RuntimeMapPreproduction.md#signing-off-on-the-design)
 
 ![process.gif](../assets/process.gif)
 

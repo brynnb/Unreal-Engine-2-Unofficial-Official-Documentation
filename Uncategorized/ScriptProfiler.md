@@ -2,15 +2,15 @@
 
 *Document Summary: This is an overview on how to read the data displayed within the UnrealScript? Profiler utility.**Document Changelog: Original author: [Warren Marshall](https://udn.epicgames.com/Main/WarrenMarshall). Ported to UE2 by [Steve Polge](https://udn.epicgames.com/Main/StevePolge).*
 
-* [UnrealScript Profiler](ScriptProfiler.md#UnrealScript Profiler)
-  + [Introduction](ScriptProfiler.md#Introduction)
-  + [Creating a Profile](ScriptProfiler.md#Creating a Profile)
-  + [Output](ScriptProfiler.md#Output)
-    - [Call Graph](ScriptProfiler.md#Call Graph)
-    - [Expensive Functions](ScriptProfiler.md#Expensive Functions)
-    - [Incl/Excl Time](ScriptProfiler.md#Incl/Excl Time)
-  + [How the Profiler Works](ScriptProfiler.md#How the Profiler Works)
-  + [Summary](ScriptProfiler.md#Summary)
+* [UnrealScript Profiler](ScriptProfiler.md#unrealscript-profiler)
+  + [Introduction](ScriptProfiler.md#introduction)
+  + [Creating a Profile](ScriptProfiler.md#creating-a-profile)
+  + [Output](ScriptProfiler.md#output)
+    - [Call Graph](ScriptProfiler.md#call-graph)
+    - [Expensive Functions](ScriptProfiler.md#expensive-functions)
+    - [Incl/Excl Time](ScriptProfiler.md#inclexcl-time)
+  + [How the Profiler Works](ScriptProfiler.md#how-the-profiler-works)
+  + [Summary](ScriptProfiler.md#summary)
 
 ## Introduction
 

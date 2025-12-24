@@ -2,9 +2,9 @@
 
 *Document Summary: A reference for how to use the Vertex Editing mode.**Document Changelog: Last updated by Tony Garcia ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)), for version 829. Original author was Tony Garcia ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).*
 
-* [Vertex Editing](VertexEditing.md#Vertex Editing)
-  + [Introduction](VertexEditing.md#Introduction)
-  + [Vertex Editing Mode](VertexEditing.md#Vertex Editing Mode)
+* [Vertex Editing](VertexEditing.md#vertex-editing)
+  + [Introduction](VertexEditing.md#introduction)
+  + [Vertex Editing Mode](VertexEditing.md#vertex-editing-mode)
 
 ## Introduction
 

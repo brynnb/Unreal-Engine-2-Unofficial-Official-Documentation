@@ -2,12 +2,12 @@
 
 *Created by Chris Linder (DemiurgeStudios?) on 11-12-03 for the Unreal Runtime version 2226.19.03. Last Updated by Khaled Shariff (ProjectWhitecardInc?.).*
 
-* [Runtime SVehicles](RuntimeSVehicles.md#Runtime SVehicles)
-  + [Related Documents](RuntimeSVehicles.md#Related Documents)
-  + [Introduction](RuntimeSVehicles.md#Introduction)
-  + [Installing SVehicle Support.](RuntimeSVehicles.md#Installing SVehicle Support.)
-  + [Compiling new SVehicles](RuntimeSVehicles.md#Compiling new SVehicles)
-  + [Recompiling - Additional Note - If running into compilation error.](RuntimeSVehicles.md#Recompiling - Additional Note - If running into compilation error.)
+* [Runtime SVehicles](RuntimeSVehicles.md#runtime-svehicles)
+  + [Related Documents](RuntimeSVehicles.md#related-documents)
+  + [Introduction](RuntimeSVehicles.md#introduction)
+  + [Installing SVehicle Support.](RuntimeSVehicles.md#installing-svehicle-support)
+  + [Compiling new SVehicles](RuntimeSVehicles.md#compiling-new-svehicles)
+  + [Recompiling - Additional Note - If running into compilation error.](RuntimeSVehicles.md#recompiling---additional-note---if-running-into-compilation-error)
 
 ## Related Documents
 

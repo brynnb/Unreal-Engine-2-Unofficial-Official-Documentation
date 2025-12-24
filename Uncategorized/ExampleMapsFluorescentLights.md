@@ -2,9 +2,9 @@
 
 *Last updated by Jason Lentz (DemiurgeStudios?), to separate from the main [ExampleMaps](../Content Creation/Techniques/ExampleMaps.md) doc. Original author was Lode Vandevenne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).*
 
-* [Fluorescent Lights Example Map](ExampleMapsFluorescentLights.md#Fluorescent Lights Example Map)
-  + [Introduction](ExampleMapsFluorescentLights.md#Introduction)
-  + [Downloads](ExampleMapsFluorescentLights.md#Downloads)
+* [Fluorescent Lights Example Map](ExampleMapsFluorescentLights.md#fluorescent-lights-example-map)
+  + [Introduction](ExampleMapsFluorescentLights.md#introduction)
+  + [Downloads](ExampleMapsFluorescentLights.md#downloads)
 
 ## Introduction
 

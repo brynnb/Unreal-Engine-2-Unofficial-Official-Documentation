@@ -260,7 +260,7 @@ This lightning uses a range from -4000 to 4000 for both X and Y with Z held at 0
 
 #### Beam
 
-A thorough explanation of beam branching can be found in the [ParticleSystems](ParticleSystems.md#Beam_Branching) doc. This lightning is very similar to the examples discussed in the doc which also has three levels of branching that get increasing random and smaller.The color on the beams is one of few simple things in this emitter. Each beam has a quick fade in and then a slow fade out. Each beam also has a color scale which goes from almost white (255, 251, 255), to a yellowish color (238, 185, 62). The texture on each beam is different but all are white, narrow, and a little wavy. The textures get skinnier from main beam to smallest branch.
+A thorough explanation of beam branching can be found in the [ParticleSystems](ParticleSystems.md#beam_branching) doc. This lightning is very similar to the examples discussed in the doc which also has three levels of branching that get increasing random and smaller.The color on the beams is one of few simple things in this emitter. Each beam has a quick fade in and then a slow fade out. Each beam also has a color scale which goes from almost white (255, 251, 255), to a yellowish color (238, 185, 62). The texture on each beam is different but all are white, narrow, and a little wavy. The textures get skinnier from main beam to smallest branch.
 
 ![Lightning3.jpg](../../assets/lightning3.jpg)
 

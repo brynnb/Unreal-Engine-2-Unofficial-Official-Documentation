@@ -2,23 +2,23 @@
 
 *Last updated by Michiel Hendriks, completed more of the documentation. Previous update by Vito Miliano ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)), for tweaks and corrections. Original author was Albert Reed (DemiurgeStudios?).*
 
-* [UnrealScript Debugger Users Manual](UnrealScriptDebugger.md#UnrealScript Debugger Users Manual)
-  + [Getting Started](UnrealScriptDebugger.md#Getting Started)
-  + [Basic Debugging](UnrealScriptDebugger.md#Basic Debugging)
-  + [UDebugger Window](UnrealScriptDebugger.md#UDebugger Window)
-    - [Menu](UnrealScriptDebugger.md#Menu)
-  + [Information Tabs](UnrealScriptDebugger.md#Information Tabs)
-    - [Local Variables](UnrealScriptDebugger.md#Local Variables)
-    - [Global Variables](UnrealScriptDebugger.md#Global Variables)
-    - [Watches](UnrealScriptDebugger.md#Watches)
-    - [Breakpoints](UnrealScriptDebugger.md#Breakpoints)
-    - [Log](UnrealScriptDebugger.md#Log)
-  + [Breakpoint Points](UnrealScriptDebugger.md#Breakpoint Points)
-  + [Call Stack](UnrealScriptDebugger.md#Call Stack)
-  + [Break On Access None](UnrealScriptDebugger.md#Break On Access None)
-  + [Pausing](UnrealScriptDebugger.md#Pausing)
-  + [Toolbar Buttons](UnrealScriptDebugger.md#Toolbar Buttons)
-  + [Not Yet Documented](UnrealScriptDebugger.md#Not Yet Documented)
+* [UnrealScript Debugger Users Manual](UnrealScriptDebugger.md#unrealscript-debugger-users-manual)
+  + [Getting Started](UnrealScriptDebugger.md#getting-started)
+  + [Basic Debugging](UnrealScriptDebugger.md#basic-debugging)
+  + [UDebugger Window](UnrealScriptDebugger.md#udebugger-window)
+    - [Menu](UnrealScriptDebugger.md#menu)
+  + [Information Tabs](UnrealScriptDebugger.md#information-tabs)
+    - [Local Variables](UnrealScriptDebugger.md#local-variables)
+    - [Global Variables](UnrealScriptDebugger.md#global-variables)
+    - [Watches](UnrealScriptDebugger.md#watches)
+    - [Breakpoints](UnrealScriptDebugger.md#breakpoints)
+    - [Log](UnrealScriptDebugger.md#log)
+  + [Breakpoint Points](UnrealScriptDebugger.md#breakpoint-points)
+  + [Call Stack](UnrealScriptDebugger.md#call-stack)
+  + [Break On Access None](UnrealScriptDebugger.md#break-on-access-none)
+  + [Pausing](UnrealScriptDebugger.md#pausing)
+  + [Toolbar Buttons](UnrealScriptDebugger.md#toolbar-buttons)
+  + [Not Yet Documented](UnrealScriptDebugger.md#not-yet-documented)
 
 ## Getting Started
 
@@ -34,9 +34,9 @@ The fundamentals of the UnrealScript debugger closely resemble those of Develope
 
 1. Class tree; by default it only shows the actors, uncheck (6) to use Object as root
 2. Source code; shows the source code of the class currently being debugged. Break points and the current execution line are highlighted (in red and aqua respectively).
-3. [Information Tabs](UnrealScriptDebugger.md#InformationTabs) shows various details about the current debug process.
-4. [Call stack](UnrealScriptDebugger.md#CallStack)
-5. [Toolbar buttons](UnrealScriptDebugger.md#ToolbarButtons)
+3. [Information Tabs](UnrealScriptDebugger.md#informationtabs) shows various details about the current debug process.
+4. [Call stack](UnrealScriptDebugger.md#callstack)
+5. [Toolbar buttons](UnrealScriptDebugger.md#toolbarbuttons)
 6. Set\unset the root of the class tree to actor.
 
 ### Menu

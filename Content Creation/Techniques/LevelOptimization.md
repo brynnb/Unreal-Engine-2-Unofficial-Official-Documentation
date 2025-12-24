@@ -137,7 +137,7 @@ DistanceFogEnd
 DistanceFogStart
 :   This sets the distance from which the geometry will begin to get saturated with the fog color.
 
-With the above setting the fog starts at 2,500 Unreal units from the player and beyond 13,000 Unreal units, geometry is totally occluded. Other than the aesthetic cautions in using Distance Fog, there are practically no optimization drawbacks to using it, as it puts less strain on the processor.A little bit mofr on distance fog can be found [here](../../Uncategorized/AdditionalTerrainTips.md#DistanceFog).
+With the above setting the fog starts at 2,500 Unreal units from the player and beyond 13,000 Unreal units, geometry is totally occluded. Other than the aesthetic cautions in using Distance Fog, there are practically no optimization drawbacks to using it, as it puts less strain on the processor.A little bit mofr on distance fog can be found [here](../../Uncategorized/AdditionalTerrainTips.md#distancefog).
 
 ## Plan Ahead
 

@@ -478,7 +478,7 @@ This section has a list of all the different material IDs used in your mesh.Whil
 The double-underscore naming convention allows you to specify the materialname tags that are recommended to order the skins ( skin00, skin01, alpha, etc.) without confusing the texture match-up - the editor will only look at the part before the double underscore.
 So, a material named bodyarmor\_\_skin00\_translucent will be linked up
 at PSK-import time to a material named bodyarmor, if that material
-is present in the editor at that time (i.e., anywhere in the texture browser.)Materials are assigned by going to the Texture browser and selecting the desired skin material to make it the 'current' material, then pressing 'use current' in the appropriate slot. If desired for skin-linkup work, the Animation and/or Texture browser window can be undocked to put them side by side. For a more complete explanation of the process, see the [AnimBrowserTutorial](AnimBrowserTutorial.md#Texture_Assignment) document.
+is present in the editor at that time (i.e., anywhere in the texture browser.)Materials are assigned by going to the Texture browser and selecting the desired skin material to make it the 'current' material, then pressing 'use current' in the appropriate slot. If desired for skin-linkup work, the Animation and/or Texture browser window can be undocked to put them side by side. For a more complete explanation of the process, see the [AnimBrowserTutorial](AnimBrowserTutorial.md#texture_assignment) document.
 
 ### Animation Set
 

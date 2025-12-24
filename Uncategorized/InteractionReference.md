@@ -2,33 +2,33 @@
 
 *Last updated by Michiel Hendriks, small v3323 update. Previously updated by Chris Linder (DemiurgeStudios?). Original author was Chris Linder ([chris@demiurgestudios.com](mailto:chris@demiurgestudios.com)) working off a prior document by Richard 'vajuras' Osborne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).*
 
-* [Interaction Reference](InteractionReference.md#Interaction Reference)
-  + [Introduction](InteractionReference.md#Introduction)
-  + [Interactions.uc](InteractionReference.md#Interactions.uc)
-  + [InteractionMaster.uc](InteractionReference.md#InteractionMaster.uc)
-    - [User Functions](InteractionReference.md#User Functions)
-      * [AddInteraction](InteractionReference.md#AddInteraction)
-      * [RemoveInteraction](InteractionReference.md#RemoveInteraction)
-      * [SetFocusTo](InteractionReference.md#SetFocusTo)
-      * [Travel](InteractionReference.md#Travel)
-  + [Interaction.uc](InteractionReference.md#Interaction.uc)
-    - [Global Interactions](InteractionReference.md#Global Interactions)
-    - [Local Interactions](InteractionReference.md#Local Interactions)
-    - [Functions to Call](InteractionReference.md#Functions to Call)
-      * [Initialize](InteractionReference.md#Initialize)
-      * [ConsoleCommand](InteractionReference.md#ConsoleCommand)
-      * [WorldToScreen](InteractionReference.md#WorldToScreen)
-      * [ScreenToWorld](InteractionReference.md#ScreenToWorld)
-      * [SetFocus](InteractionReference.md#SetFocus)
-    - [Functions to Override](InteractionReference.md#Functions to Override)
-      * [Initialized](InteractionReference.md#Initialized)
-      * [Message](InteractionReference.md#Message)
-      * [KeyType](InteractionReference.md#KeyType)
-      * [KeyEvent](InteractionReference.md#KeyEvent)
-      * [PreRender](InteractionReference.md#PreRender)
-      * [PostRender](InteractionReference.md#PostRender)
-      * [Tick](InteractionReference.md#Tick)
-  + [Example](InteractionReference.md#Example)
+* [Interaction Reference](InteractionReference.md#interaction-reference)
+  + [Introduction](InteractionReference.md#introduction)
+  + [Interactions.uc](InteractionReference.md#interactionsuc)
+  + [InteractionMaster.uc](InteractionReference.md#interactionmasteruc)
+    - [User Functions](InteractionReference.md#user-functions)
+      * [AddInteraction](InteractionReference.md#addinteraction)
+      * [RemoveInteraction](InteractionReference.md#removeinteraction)
+      * [SetFocusTo](InteractionReference.md#setfocusto)
+      * [Travel](InteractionReference.md#travel)
+  + [Interaction.uc](InteractionReference.md#interactionuc)
+    - [Global Interactions](InteractionReference.md#global-interactions)
+    - [Local Interactions](InteractionReference.md#local-interactions)
+    - [Functions to Call](InteractionReference.md#functions-to-call)
+      * [Initialize](InteractionReference.md#initialize)
+      * [ConsoleCommand](InteractionReference.md#consolecommand)
+      * [WorldToScreen](InteractionReference.md#worldtoscreen)
+      * [ScreenToWorld](InteractionReference.md#screentoworld)
+      * [SetFocus](InteractionReference.md#setfocus)
+    - [Functions to Override](InteractionReference.md#functions-to-override)
+      * [Initialized](InteractionReference.md#initialized)
+      * [Message](InteractionReference.md#message)
+      * [KeyType](InteractionReference.md#keytype)
+      * [KeyEvent](InteractionReference.md#keyevent)
+      * [PreRender](InteractionReference.md#prerender)
+      * [PostRender](InteractionReference.md#postrender)
+      * [Tick](InteractionReference.md#tick)
+  + [Example](InteractionReference.md#example)
 
 ## Introduction
 
@@ -43,7 +43,7 @@ class Interactions extends Object
       native;
 ```
 
-(Note: Given the unfortunate name of this class we will use italics to denote this class, *Interactions*, while the word Interactions without italics will be used to talk about multiple instances of the class *Interaction*.)*Interactions* is the base class for both [Interaction](InteractionReference.md#Interaction_uc) and [InteractionMaster](InteractionReference.md#InteractionMaster_uc). It defines input keys in the enum *EInputKey* and input states in the enum *EInputAction*. Every key that the user can possibly press has an IK equivalent defined within *EInputKey*. The input states defined in *EInputAction* usually accompany a key input event. The states are as follows:
+(Note: Given the unfortunate name of this class we will use italics to denote this class, *Interactions*, while the word Interactions without italics will be used to talk about multiple instances of the class *Interaction*.)*Interactions* is the base class for both [Interaction](InteractionReference.md#interaction_uc) and [InteractionMaster](InteractionReference.md#interactionmaster_uc). It defines input keys in the enum *EInputKey* and input states in the enum *EInputAction*. Every key that the user can possibly press has an IK equivalent defined within *EInputKey*. The input states defined in *EInputAction* usually accompany a key input event. The states are as follows:
 
 |  |  |
 | --- | --- |
@@ -64,7 +64,7 @@ class InteractionMaster extends Interactions
       Native;
 ```
 
-The InteractionMaster has only one single instance on the client machine. During intialization (refer to UnGame.cpp), the game engine creates a global instance of the InteractionMaster. The InteractionsMaster is responsible for delegating all key and render events to all other Interactions on the client. The interaction master maintains a list of [global interactions](InteractionReference.md#Global_Interactions) in the *GlobalInteraction* array as well as references to the *BaseMenu* Interaction and the *Console* Interaction. The class of *Console* is specified in UT2004.ini (`[Engine.Engine]`) and it is created at startup and put in the *GlobalInteraction* array. *BaseMenu* will be associated with the *GUIController* instance defined in the UT2004.ini, this is done right before creation of the console (Note: pre-v3323 *BaseMenu* is not set). The *BaseMenu* is also put in the *GlobalInteraction* array. The InteractionMaster is also responsible for [local interactions](InteractionReference.md#Local_Interactions) but it does not maintain a list of these people they are stored per player viewport.
+The InteractionMaster has only one single instance on the client machine. During intialization (refer to UnGame.cpp), the game engine creates a global instance of the InteractionMaster. The InteractionsMaster is responsible for delegating all key and render events to all other Interactions on the client. The interaction master maintains a list of [global interactions](InteractionReference.md#global_interactions) in the *GlobalInteraction* array as well as references to the *BaseMenu* Interaction and the *Console* Interaction. The class of *Console* is specified in UT2004.ini (`[Engine.Engine]`) and it is created at startup and put in the *GlobalInteraction* array. *BaseMenu* will be associated with the *GUIController* instance defined in the UT2004.ini, this is done right before creation of the console (Note: pre-v3323 *BaseMenu* is not set). The *BaseMenu* is also put in the *GlobalInteraction* array. The InteractionMaster is also responsible for [local interactions](InteractionReference.md#local_interactions) but it does not maintain a list of these people they are stored per player viewport.
 
 ### User Functions
 
@@ -88,11 +88,11 @@ These are functions you would want to call yourself while working with interacti
 
 ## Interaction.uc
 
-Unlike the [InteractionMaster](InteractionReference.md#InteractionMaster_uc), there can be many interactions. These classes provide the actual implementation functions that are called by the InteractionMaster during events. Interaction objects can be attached to a specific viewport (PlayerController.Player for example) in which case they are local interaction or to the InteractionMaster itself in which case they are global interaction.Input travels from the client to the engine where it is routed to the InteractionMaster. First, all registered global interactions are notified of the key event via their [KeyEvent(...)](InteractionReference.md#KeyEvent) or [KeyType(...)](InteractionReference.md#KeyType) function if *bActive* is true. If none of the global interactions returns a true indicating that the key input was handled, then the InteractionMaster proceeds to pass the event to local interactions. At any point, in any interaction, the key event can be interrupted by an interaction returning true indicating that it processed the event. [Messages](InteractionReference.md#Message) follow a similar process with the difference being is that they cannot be interrupted by other interactions and the message is therefore sent to all interactions even if *bActive* is false.By default, interactions do not get tick notifications but if you set *bRequiresTick* they will.
+Unlike the [InteractionMaster](InteractionReference.md#interactionmaster_uc), there can be many interactions. These classes provide the actual implementation functions that are called by the InteractionMaster during events. Interaction objects can be attached to a specific viewport (PlayerController.Player for example) in which case they are local interaction or to the InteractionMaster itself in which case they are global interaction.Input travels from the client to the engine where it is routed to the InteractionMaster. First, all registered global interactions are notified of the key event via their [KeyEvent(...)](InteractionReference.md#keyevent) or [KeyType(...)](InteractionReference.md#keytype) function if *bActive* is true. If none of the global interactions returns a true indicating that the key input was handled, then the InteractionMaster proceeds to pass the event to local interactions. At any point, in any interaction, the key event can be interrupted by an interaction returning true indicating that it processed the event. [Messages](InteractionReference.md#message) follow a similar process with the difference being is that they cannot be interrupted by other interactions and the message is therefore sent to all interactions even if *bActive* is false.By default, interactions do not get tick notifications but if you set *bRequiresTick* they will.
 
 ### Global Interactions
 
-Global interactions have two major advantages. First, they get to process input first and draw last and second, they can implement certain functions natively without calling anything in script. (See [Functions to Override](InteractionReference.md#Functions_to_Override)). A menu would be a good thing to do with a global interacation.
+Global interactions have two major advantages. First, they get to process input first and draw last and second, they can implement certain functions natively without calling anything in script. (See [Functions to Override](InteractionReference.md#functions_to_override)). A menu would be a good thing to do with a global interacation.
 
 ### Local Interactions
 

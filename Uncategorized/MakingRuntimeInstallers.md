@@ -1,14 +1,14 @@
 # Making Runtime Installers
 
-* [Making Runtime Installers](MakingRuntimeInstallers.md#Making Runtime Installers)
-  + [Overview](MakingRuntimeInstallers.md#Overview)
-  + [Mastering](MakingRuntimeInstallers.md#Mastering)
-    - [Step 1: Setup](MakingRuntimeInstallers.md#Step 1: Setup)
-    - [Step 2: Making Your First Installer](MakingRuntimeInstallers.md#Step 2: Making Your First Installer)
-    - [Step 3: Changing Essential Fields](MakingRuntimeInstallers.md#Step 3: Changing Essential Fields)
-      * [SetupYourProject.INT](MakingRuntimeInstallers.md#SetupYourProject.INT)
-      * [SetupYourProject.INI](MakingRuntimeInstallers.md#SetupYourProject.INI)
-      * [SetupStrings.INT](MakingRuntimeInstallers.md#SetupStrings.INT)
+* [Making Runtime Installers](MakingRuntimeInstallers.md#making-runtime-installers)
+  + [Overview](MakingRuntimeInstallers.md#overview)
+  + [Mastering](MakingRuntimeInstallers.md#mastering)
+    - [Step 1: Setup](MakingRuntimeInstallers.md#step-1-setup)
+    - [Step 2: Making Your First Installer](MakingRuntimeInstallers.md#step-2-making-your-first-installer)
+    - [Step 3: Changing Essential Fields](MakingRuntimeInstallers.md#step-3-changing-essential-fields)
+      * [SetupYourProject.INT](MakingRuntimeInstallers.md#setupyourprojectint)
+      * [SetupYourProject.INI](MakingRuntimeInstallers.md#setupyourprojectini)
+      * [SetupStrings.INT](MakingRuntimeInstallers.md#setupstringsint)
 
 ## Overview
 

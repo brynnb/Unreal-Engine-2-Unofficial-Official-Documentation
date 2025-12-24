@@ -2,8 +2,8 @@
 
 *Document Summary: Download links for the latest UT2004 UnrealScript .UC Source Files**Document Changelog: Updated by [Joe Wilcox](https://udn.epicgames.com/Main/JoeWilcox) 12/02/2005 - added 3369 source. Maintained by Richard Nalezynski?.*
 
-* [UnrealScript Source Files](USCRIPTDownload.md#UnrealScript Source Files)
-  + [Files](USCRIPTDownload.md#Files)
+* [UnrealScript Source Files](USCRIPTDownload.md#unrealscript-source-files)
+  + [Files](USCRIPTDownload.md#files)
 
 ## Files
 

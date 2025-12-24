@@ -2,8 +2,8 @@
 
 *Document Summary: Download location for the Maya Complete versions of the PLE plugin that shipped with UT2004**Document Changelog: Created 5/27/04 by Erik de Neve. Updated 9/20/04 fixed plug-ins by Erik de Neve. Updated on 2005-04-25 by Michiel Hendriks, fixed download links. Updated 2/06 to add support for v7.*
 
-* [UT2004 Maya Complete Plugins](MayaCompletePlugins.md#UT2004 Maya Complete Plugins)
-  + [Files](MayaCompletePlugins.md#Files)
+* [UT2004 Maya Complete Plugins](MayaCompletePlugins.md#ut2004-maya-complete-plugins)
+  + [Files](MayaCompletePlugins.md#files)
 
 ## Files
 

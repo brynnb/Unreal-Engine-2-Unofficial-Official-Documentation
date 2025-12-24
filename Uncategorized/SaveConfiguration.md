@@ -2,11 +2,11 @@
 
 *Last updated by Richard 'vajuras' Osborne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)) for document creation.*
 
-* [Saving Object Configurations to ini Files](SaveConfiguration.md#Saving Object Configurations to ini Files)
-  + [Save Object Configurations](SaveConfiguration.md#Save Object Configurations)
-  + [Declaring the Ini Filename](SaveConfiguration.md#Declaring the Ini Filename)
-  + [Ini Configurations and Inheritance](SaveConfiguration.md#Ini Configurations and Inheritance)
-  + [Dynamic vs Static Configuration](SaveConfiguration.md#Dynamic vs Static Configuration)
+* [Saving Object Configurations to ini Files](SaveConfiguration.md#saving-object-configurations-to-ini-files)
+  + [Save Object Configurations](SaveConfiguration.md#save-object-configurations)
+  + [Declaring the Ini Filename](SaveConfiguration.md#declaring-the-ini-filename)
+  + [Ini Configurations and Inheritance](SaveConfiguration.md#ini-configurations-and-inheritance)
+  + [Dynamic vs Static Configuration](SaveConfiguration.md#dynamic-vs-static-configuration)
 
 ## Save Object Configurations
 

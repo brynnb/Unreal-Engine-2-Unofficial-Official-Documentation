@@ -2,14 +2,14 @@
 
 *Document Summary: These examples show how to make rising water in two ways; with a mover and a fluid surface. Recommended for intermediate to advanced users; requires .ini editing and UCC Make.**Document Changelog: Last updated by Tom Lin (DemiurgeStudios?), for document summary. Original author was Lode Vandevenne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).*
 
-* [Rising Water Example Maps](ExampleMapsRisingWater.md#Rising Water Example Maps)
-  + [Introduction](ExampleMapsRisingWater.md#Introduction)
-  + [Rising Water 1](ExampleMapsRisingWater.md#Rising Water 1) 
-    - [The bStatic problem](ExampleMapsRisingWater.md#The bStatic problem)
-    - [The Waterfall](ExampleMapsRisingWater.md#The Waterfall)
-    - [Possible Improvements](ExampleMapsRisingWater.md#Possible Improvements)
-  + [Rising Water 2](ExampleMapsRisingWater.md#Rising Water 2)
-  + [Downloads](ExampleMapsRisingWater.md#Downloads)
+* [Rising Water Example Maps](ExampleMapsRisingWater.md#rising-water-example-maps)
+  + [Introduction](ExampleMapsRisingWater.md#introduction)
+  + [Rising Water 1](ExampleMapsRisingWater.md#rising-water-1) 
+    - [The bStatic problem](ExampleMapsRisingWater.md#the-bstatic-problem)
+    - [The Waterfall](ExampleMapsRisingWater.md#the-waterfall)
+    - [Possible Improvements](ExampleMapsRisingWater.md#possible-improvements)
+  + [Rising Water 2](ExampleMapsRisingWater.md#rising-water-2)
+  + [Downloads](ExampleMapsRisingWater.md#downloads)
 
 ## Introduction
 

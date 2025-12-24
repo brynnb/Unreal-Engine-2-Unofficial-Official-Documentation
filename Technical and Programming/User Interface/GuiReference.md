@@ -237,7 +237,7 @@ ISTY\_Tiled,
 
 |  |  |
 | --- | --- |
-| ISTY\_Stretched | This is the default. It corresponds to the [DrawTileStretched](CanvasReference.md#DrawTileStretched) function in [Canvas](CanvasReference.md) and will stretch the image to fit the dimensions of the *GUIComponent*. |
+| ISTY\_Stretched | This is the default. It corresponds to the [DrawTileStretched](CanvasReference.md#drawtilestretched) function in [Canvas](CanvasReference.md) and will stretch the image to fit the dimensions of the *GUIComponent*. |
 | ISTY\_Normal | This draws the image without any scaling or stretching. |
 | ISTY\_Scaled | This will draw the image scaled to fit the dimensions of the *GUIComponent*. |
 | ISTY\_Bound | image doesn't seem to draw |

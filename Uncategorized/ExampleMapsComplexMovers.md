@@ -2,19 +2,19 @@
 
 *Document Summary: Two detailed examples of more complicated movers. Requires some familiarity with the basics of movers, suitable for intermediate skill levels.**Document Changelog: Last updated by Tom Lin (DemiurgeStudios?), for document summary. Original author was Jason Lentz (DemiurgeStudios?).*
 
-* [Complex Movers](ExampleMapsComplexMovers.md#Complex Movers)
-  + [Introduction](ExampleMapsComplexMovers.md#Introduction)
-  + [Raising Prison Cell](ExampleMapsComplexMovers.md#Raising Prison Cell)
-    - [Ingredients](ExampleMapsComplexMovers.md#Ingredients)
-    - [Building the Cell](ExampleMapsComplexMovers.md#Building the Cell)
-    - [Setting the Mover Properties](ExampleMapsComplexMovers.md#Setting the Mover Properties)
-    - [Assigning the KeyFrames](ExampleMapsComplexMovers.md#Assigning the _KeyFrames)
-  + [More Than 8 KeyFrames](ExampleMapsComplexMovers.md#More Than 8 _KeyFrames)
-    - [Ingredients](ExampleMapsComplexMovers.md#Ingredients)
-    - [Setting up Mover Guides](ExampleMapsComplexMovers.md#Setting up Mover Guides)
-    - [Setting up the Main Mover](ExampleMapsComplexMovers.md#Setting up the Main Mover)
-  + [Additional Resources](ExampleMapsComplexMovers.md#Additional Resources)
-  + [Downloads](ExampleMapsComplexMovers.md#Downloads)
+* [Complex Movers](ExampleMapsComplexMovers.md#complex-movers)
+  + [Introduction](ExampleMapsComplexMovers.md#introduction)
+  + [Raising Prison Cell](ExampleMapsComplexMovers.md#raising-prison-cell)
+    - [Ingredients](ExampleMapsComplexMovers.md#ingredients)
+    - [Building the Cell](ExampleMapsComplexMovers.md#building-the-cell)
+    - [Setting the Mover Properties](ExampleMapsComplexMovers.md#setting-the-mover-properties)
+    - [Assigning the KeyFrames](ExampleMapsComplexMovers.md#assigning-the-_keyframes)
+  + [More Than 8 KeyFrames](ExampleMapsComplexMovers.md#more-than-8-_keyframes)
+    - [Ingredients](ExampleMapsComplexMovers.md#ingredients)
+    - [Setting up Mover Guides](ExampleMapsComplexMovers.md#setting-up-mover-guides)
+    - [Setting up the Main Mover](ExampleMapsComplexMovers.md#setting-up-the-main-mover)
+  + [Additional Resources](ExampleMapsComplexMovers.md#additional-resources)
+  + [Downloads](ExampleMapsComplexMovers.md#downloads)
 
 ## Introduction
 

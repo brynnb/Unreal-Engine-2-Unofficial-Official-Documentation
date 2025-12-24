@@ -2,8 +2,8 @@
 
 *Document Summary: Download links for the latest UT2004 Debug .U Package Files**Document Changelog: Updated by [Joe Wilcox](https://udn.epicgames.com/Main/JoeWilcox) 12/02/2005. Maintained by Richard Nalezynski?.*
 
-* [UnrealScript Debug Package Files](UDEBUGDownload.md#UnrealScript Debug Package Files)
-  + [Files](UDEBUGDownload.md#Files)
+* [UnrealScript Debug Package Files](UDEBUGDownload.md#unrealscript-debug-package-files)
+  + [Files](UDEBUGDownload.md#files)
 
 ## Files
 
