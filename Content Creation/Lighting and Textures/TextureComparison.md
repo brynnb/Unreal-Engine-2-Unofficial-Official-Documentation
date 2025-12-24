@@ -25,7 +25,9 @@ The purpose of this document is to enlighten you, the content creator, on when i
 
 ### DXTC Fundamentals
 
-The portion of the DXTC algorithm that concerns us for this document is the part that compresses color information, because this is done the same way in **ALL DXTC variants (DXT1-5)**. Color information is stored in a similar fashion as standard palettized bitmaps, but instead of storing a 256 color palette for the whole image, DXTC stores a small palette for every 4x4 block of pixels. Each of these mini-palettes can represent up to four colors, but two of the colors are interpolated from the other two and are not actually stored with the file. This allows you to compress a bitmap that would have normally been 65k into merely 32k, and therefore allows you to store twice the amount of textures in video memory, or store the same amount of textures but at double the resolution.![colourtable.gif](../../assets/colourtable.gif)
+The portion of the DXTC algorithm that concerns us for this document is the part that compresses color information, because this is done the same way in **ALL DXTC variants (DXT1-5)**. Color information is stored in a similar fashion as standard palettized bitmaps, but instead of storing a 256 color palette for the whole image, DXTC stores a small palette for every 4x4 block of pixels. Each of these mini-palettes can represent up to four colors, but two of the colors are interpolated from the other two and are not actually stored with the file. This allows you to compress a bitmap that would have normally been 65k into merely 32k, and therefore allows you to store twice the amount of textures in video memory, or store the same amount of textures but at double the resolution.
+
+![colourtable.gif](../../assets/colourtable.gif)
 
 ### NVIDIA DXT1 Issue
 

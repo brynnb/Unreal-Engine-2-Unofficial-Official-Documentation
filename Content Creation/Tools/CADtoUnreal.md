@@ -23,13 +23,13 @@ To find this document useful, you should already be familiar with AutoCAD or one
 
 Here's a short guide of the steps to take to convert models from the various application.
 
-* Inventor -> MAX, then [MAXtoUnreal](MAXtoUnreal.md), then [Import Into UnrealEd](StaticMeshesTutorial.md#Importing_a_Static_Mesh)
+* Inventor -> MAX, then [MAXtoUnreal](../../Uncategorized/MAXtoUnreal.md), then [Import Into UnrealEd](../Primitives/StaticMeshesTutorial.md#Importing_a_Static_Mesh)
 
-* AutoCAD 2002 -> MAX, then [MAXtoUnreal](MAXtoUnreal.md), then [Import Into UnrealEd](StaticMeshesTutorial.md#Importing_a_Static_Mesh)
+* AutoCAD 2002 -> MAX, then [MAXtoUnreal](../../Uncategorized/MAXtoUnreal.md), then [Import Into UnrealEd](../Primitives/StaticMeshesTutorial.md#Importing_a_Static_Mesh)
 
-* Architectural Desktop -> VIZ, then VIZ -> MAX, then [MAXtoUnreal](MAXtoUnreal.md), then [Import Into UnrealEd](StaticMeshesTutorial.md#Importing_a_Static_Mesh)
+* Architectural Desktop -> VIZ, then VIZ -> MAX, then [MAXtoUnreal](../../Uncategorized/MAXtoUnreal.md), then [Import Into UnrealEd](../Primitives/StaticMeshesTutorial.md#Importing_a_Static_Mesh)
 
-* VIZ -> MAX, then [MAXtoUnreal](MAXtoUnreal.md), then [Import Into UnrealEd](StaticMeshesTutorial.md#Importing_a_Static_Mesh)
+* VIZ -> MAX, then [MAXtoUnreal](../../Uncategorized/MAXtoUnreal.md), then [Import Into UnrealEd](../Primitives/StaticMeshesTutorial.md#Importing_a_Static_Mesh)
 
-* [MAXtoUnreal](MAXtoUnreal.md), then [Import Into UnrealEd](StaticMeshesTutorial.md#Importing_a_Static_Mesh)
+* [MAXtoUnreal](../../Uncategorized/MAXtoUnreal.md), then [Import Into UnrealEd](../Primitives/StaticMeshesTutorial.md#Importing_a_Static_Mesh)
 

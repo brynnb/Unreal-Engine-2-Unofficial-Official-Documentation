@@ -9,7 +9,7 @@
 
 ## Related Documents
 
-[UnrealScriptReference](UnrealScriptReference.md), [MyFirstCode](MyFirstCode.md), [GameAndAIHandout](GameAndAIHandout.md)
+[UnrealScriptReference](UnrealScriptReference.md), [MyFirstCode](../../Uncategorized/MyFirstCode.md), [GameAndAIHandout](../../Uncategorized/GameAndAIHandout.md)
 
 ## Introduction
 

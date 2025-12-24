@@ -18,11 +18,11 @@
 
 ## Related Documents
 
-[GuiReference](GuiReference.md), [RuntimeExampleRestrictedMenu](RuntimeExampleRestrictedMenu.md), [LocalizationReference](LocalizationReference.md)
+[GuiReference](GuiReference.md), [RuntimeExampleRestrictedMenu](../../Uncategorized/RuntimeExampleRestrictedMenu.md), [LocalizationReference](LocalizationReference.md)
 
 ## Introduction
 
-This example will go over how to create and use GUIStyles. To do so, we will redo the [RuntimeExampleRestrictedMenu](RuntimeExampleRestrictedMenu.md) with new styles. This will include new fonts, new button images, and new UI elements. The look and feel of the interface will change but almost no code changes in the existing menus are needed. This document will discuss both the creation of the art needed for the styles and the code needed to support the art. This example is based on the Unreal Runtime but it can be used in any 2226 or higher build of the engine.
+This example will go over how to create and use GUIStyles. To do so, we will redo the [RuntimeExampleRestrictedMenu](../../Uncategorized/RuntimeExampleRestrictedMenu.md) with new styles. This will include new fonts, new button images, and new UI elements. The look and feel of the interface will change but almost no code changes in the existing menus are needed. This document will discuss both the creation of the art needed for the styles and the code needed to support the art. This example is based on the Unreal Runtime but it can be used in any 2226 or higher build of the engine.
 
 ## How to Use GUIStyles
 
@@ -44,7 +44,7 @@ End Object
 
 ### Creating a GUIFont
 
-Before you can create *GUIStyles* you will need a *GUIFont*. To create a font in GUI you need to create a class that extends *GUIFont*. Special font classes are needed in GUI to accommodate different resolutions. The reason is that fonts in Unreal are based on images (they are stored in texture packs) and are not designed to be scaled. To account for this, different resolutions use different Unreal fonts. A *GUIFont* specifies a list of fonts and a corresponding list of resolutions that dictate when each font should be used. In general most *GUIFonts* use the same typeface at different sizes for the list of fonts.To create a set of Unreal fonts see the [FontTutorial](FontTutorial.md). In general, you should create 5 fonts with the same typeface. The first should be appropriate for resolutions widths less than 800 pixels, the next less than 1024, the next less than 1600, and the last for resolutions greater than 1600.If you find that 5 fonts are not enough control over text size, you can override the *GetFont* function in your *GUIFont*. You can override *GetFont* natively or in script. *RTInterface.fntMidGameFont* is an example of overriding *GetFont* in script. The class is shown below:
+Before you can create *GUIStyles* you will need a *GUIFont*. To create a font in GUI you need to create a class that extends *GUIFont*. Special font classes are needed in GUI to accommodate different resolutions. The reason is that fonts in Unreal are based on images (they are stored in texture packs) and are not designed to be scaled. To account for this, different resolutions use different Unreal fonts. A *GUIFont* specifies a list of fonts and a corresponding list of resolutions that dictate when each font should be used. In general most *GUIFonts* use the same typeface at different sizes for the list of fonts.To create a set of Unreal fonts see the [FontTutorial](../../Uncategorized/FontTutorial.md). In general, you should create 5 fonts with the same typeface. The first should be appropriate for resolutions widths less than 800 pixels, the next less than 1024, the next less than 1600, and the last for resolutions greater than 1600.If you find that 5 fonts are not enough control over text size, you can override the *GetFont* function in your *GUIFont*. You can override *GetFont* natively or in script. *RTInterface.fntMidGameFont* is an example of overriding *GetFont* in script. The class is shown below:
 
 ```
 
@@ -217,7 +217,25 @@ Note: As of Runtime-2226.19.03 (code drop 2226) there is a problem with *BorderO
 
 ## How to Create Textures for GUIStyles
 
-Creating textures for GUIStyles is a fairly straightforward process, with a few particularies to keep in mind:Separate textures are created for the various buttons in their various behavior states (watched, blurry, etc) so that one button has five different versions.These textures will be used for buttons and frames whose dimensions will be defined by code. Therefore the textures you create will be most likely be resized. This is a great flexibility in the Unreal GUI system, but it also affects the way textures should be made. Unreal will use one of two methods to resize your textures. In the first, they are merely stretched, which can cause warping, just as changing the Image Size in Photoshop would:![Stretching1.jpg](../../assets/Stretching1.jpg)A more complicated method of pixel repeating can be used. This is done by repeating pixels in the middle of the image to fill the sections between the corners if the stretch size is larger than the image. If the stretch size is smaller the corners are cropped in the middle and refitted together. This is well illustrated in the following images:This is the original 128 x 128 image:![Stretch128.jpg](../../assets/Stretch128.jpg)This is the image resized to 100 x 100 pixels:![Stretch100.jpg](../../assets/Stretch100.jpg)This is the image resized to 300 x 300 pixels:![Stretch300.jpg](../../assets/Stretch300.jpg)Note that the corners are unaffected while the central areas are. This means that your textures can have detail in the corners while the central parts should be relatively plain. This will inevitably result in some iterations with your textures, but it will be worth it in the end. For more information on this, check out the [CanvasReference](CanvasReference.md#DrawTileStretched) document.While these textures can be reused throughout your new GUIStyle, there are some limitations. Note that button textures can't easily be mirrored. In the case of this example, the mid game menu consists of two buttons (one for Continue and one for Close Map). These buttons are identical except they are mirrored horizontally. This required the creation of two different sets of button textures--one with the curlycues on the left and one on the right.![MirrorButtons.jpg](../../assets/MirrorButtons.jpg)
+Creating textures for GUIStyles is a fairly straightforward process, with a few particularies to keep in mind:Separate textures are created for the various buttons in their various behavior states (watched, blurry, etc) so that one button has five different versions.These textures will be used for buttons and frames whose dimensions will be defined by code. Therefore the textures you create will be most likely be resized. This is a great flexibility in the Unreal GUI system, but it also affects the way textures should be made. Unreal will use one of two methods to resize your textures. In the first, they are merely stretched, which can cause warping, just as changing the Image Size in Photoshop would:
+
+![Stretching1.jpg](../../assets/Stretching1.jpg)
+
+A more complicated method of pixel repeating can be used. This is done by repeating pixels in the middle of the image to fill the sections between the corners if the stretch size is larger than the image. If the stretch size is smaller the corners are cropped in the middle and refitted together. This is well illustrated in the following images:This is the original 128 x 128 image:
+
+![Stretch128.jpg](../../assets/Stretch128.jpg)
+
+This is the image resized to 100 x 100 pixels:
+
+![Stretch100.jpg](../../assets/Stretch100.jpg)
+
+This is the image resized to 300 x 300 pixels:
+
+![Stretch300.jpg](../../assets/Stretch300.jpg)
+
+Note that the corners are unaffected while the central areas are. This means that your textures can have detail in the corners while the central parts should be relatively plain. This will inevitably result in some iterations with your textures, but it will be worth it in the end. For more information on this, check out the [CanvasReference](CanvasReference.md#DrawTileStretched) document.While these textures can be reused throughout your new GUIStyle, there are some limitations. Note that button textures can't easily be mirrored. In the case of this example, the mid game menu consists of two buttons (one for Continue and one for Close Map). These buttons are identical except they are mirrored horizontally. This required the creation of two different sets of button textures--one with the curlycues on the left and one on the right.
+
+![MirrorButtons.jpg](../../assets/MirrorButtons.jpg)
 
 ## Installing the Example
 

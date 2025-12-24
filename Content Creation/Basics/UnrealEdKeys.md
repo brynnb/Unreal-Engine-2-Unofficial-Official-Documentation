@@ -366,5 +366,35 @@ If non-orthographic viewport (3D view)
 
 ## UnrealEd Bugs (found while creating the above document)
 
-![ctrl.gif](../../assets/ctrl.gif) N assigned to both "New" and "Intersect"![shift.gif](../../assets/shift.gif) S assigned to both "Select all surfaces" and "select adj. slants""Select None" mislabelled as ![shift.gif](../../assets/shift.gif) Z, should be ![shift.gif](../../assets/shift.gif) N"Select Adj. Slanted" should be ![shift.gif](../../assets/shift.gif) Y, not ![shift.gif](../../assets/shift.gif) S"Intersect" should be ![ctrl.gif](../../assets/ctrl.gif) I, not ![ctrl.gif](../../assets/ctrl.gif) N"Save As" should have "Ctrl-E" listed in the menu
+![ctrl.gif](../../assets/ctrl.gif)
+
+N assigned to both "New" and "Intersect"
+
+![shift.gif](../../assets/shift.gif)
+
+S assigned to both "Select all surfaces" and "select adj. slants""Select None" mislabelled as
+
+![shift.gif](../../assets/shift.gif)
+
+Z, should be
+
+![shift.gif](../../assets/shift.gif)
+
+N"Select Adj. Slanted" should be
+
+![shift.gif](../../assets/shift.gif)
+
+Y, not
+
+![shift.gif](../../assets/shift.gif)
+
+S"Intersect" should be
+
+![ctrl.gif](../../assets/ctrl.gif)
+
+I, not
+
+![ctrl.gif](../../assets/ctrl.gif)
+
+N"Save As" should have "Ctrl-E" listed in the menu
 

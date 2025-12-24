@@ -89,7 +89,7 @@
 
 ## Intro
 
-Despite the size of this document, the HUD is not that complicated. You will spend most of your time working with the HUD in the [DrawHUD](#drawhud) function. Here you will uses [Canvas](CanvasReference.md) functions to draw on the HUD. Also remember that pawns have their own *DrawHud(...)* function that will be called before the normal *DrawHUD(...)* function and you can use this to add specialized things to a given pawns HUD. Other than that you might want to check out the slightly old [HeadsUpDisplayTutorial](HeadsUpDisplayTutorial.md) which goes over the HUD on a higher level than this reference.
+Despite the size of this document, the HUD is not that complicated. You will spend most of your time working with the HUD in the [DrawHUD](#drawhud) function. Here you will uses [Canvas](CanvasReference.md) functions to draw on the HUD. Also remember that pawns have their own *DrawHud(...)* function that will be called before the normal *DrawHUD(...)* function and you can use this to add specialized things to a given pawns HUD. Other than that you might want to check out the slightly old [HeadsUpDisplayTutorial](../../Uncategorized/HeadsUpDisplayTutorial.md) which goes over the HUD on a higher level than this reference.
 
 ## Structs
 

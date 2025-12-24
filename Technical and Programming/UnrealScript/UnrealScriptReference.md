@@ -1,6 +1,6 @@
 # UnrealScript Language Reference
 
-*Last updated by Ron Prestenback, fixed typos and removed references to a few deprecated unrealscript constructs. Previous update by Michiel Hendriks, made [UnrealEngine2](WebHome.md) the base for this document. Original author was Tim Sweeney ([EpicGames](https://udn.epicgames.com/Main/EpicGames)).*
+*Last updated by Ron Prestenback, fixed typos and removed references to a few deprecated unrealscript constructs. Previous update by Michiel Hendriks, made [UnrealEngine2](../../Uncategorized/WebHome.md) the base for this document. Original author was Tim Sweeney ([EpicGames](https://udn.epicgames.com/Main/EpicGames)).*
 
 * [UnrealScript Language Reference](#unrealscript-language-reference)
   + [Introduction](#introduction)
@@ -295,7 +295,7 @@ Here I am declaring a new class named "MyClass", which inherets the functionalit
 :   all structs declared in this class will be exported to the header file. Without this only structs declared `native export` will be exported to the header file.
 
 **CacheExempt**
-:   this class will be exempt for exporting to a cache file. Read more about this in the [UnrealCacheLists](UnrealCacheLists.md) document. (v3323 and up).
+:   this class will be exempt for exporting to a cache file. Read more about this in the [UnrealCacheLists](../../Uncategorized/UnrealCacheLists.md) document. (v3323 and up).
 
 **HideDropDown**
 :   the class won't show up in various dropdown menus in UnrealEd (v3323 and up).
@@ -348,7 +348,7 @@ Here are the basic variable types supported in UnrealScript:
 * **int**: A 32-bit integer value.
 * **bool**: A boolean value: either `true` or `false`.
 * **float**: A 32-bit floating point number.
-* **string**: A string of characters. (see [Unreal Strings](StringsInUnrealScript.md))
+* **string**: A string of characters. (see [Unreal Strings](../../Uncategorized/StringsInUnrealScript.md))
 * **constant**: A variable that cannot be modified.
 * **Enumeration**: A variable that can take on one of several predefined name values. For example, the ELightType enumeration defined in the Actor script describes a dynamic light and takes on a value like `LT_None`, `LT_Pulse`, `LT_Strobe`, and so on.
 
@@ -412,7 +412,7 @@ Variables may also contain additional specifiers such as `const` that further de
 :   Advanced. Only meaningful for the Brush variable in Actor classes. ([More details](https://udn.epicgames.com/lists/showpost/php?list=unprog&id=1197)).
 
 **localized**
-:   The value of this variable will have a localized value defined. Mostly used for strings. Read more about this in the [LocalizationReference](LocalizationReference.md).
+:   The value of this variable will have a localized value defined. Mostly used for strings. Read more about this in the [LocalizationReference](../User Interface/LocalizationReference.md).
 
 ### Arrays
 

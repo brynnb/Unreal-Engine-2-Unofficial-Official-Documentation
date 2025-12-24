@@ -13,7 +13,7 @@ The pipeline for creating static, textured geometry for levels or objects in Unr
 
 ## Maya plugin commands for static mesh export
 
-Activate the static mesh exporter by typing `axmesh` at the command prompt. The window that pops up is largely self-explanatory.Maya-style 'hard edges' are automatically converted to smoothing groups in the ASE file, and you can export your mesh with multiple simplified-collision-geometry primitives just like with 3DS Max, by using the MCD\*\*\_name naming convention as documented in e.g. the [CollisionTutorial](CollisionTutorial.md).For any single mesh object in the scene, vertex colors and multiple UV channel mapping data are automatically exported whenever they have been applied to them. For details on using shaders with vertex coloring(alpha) and multiple UV channels, consult the [VertexBlendingTutorial](VertexBlendingTutorial.md).
+Activate the static mesh exporter by typing `axmesh` at the command prompt. The window that pops up is largely self-explanatory.Maya-style 'hard edges' are automatically converted to smoothing groups in the ASE file, and you can export your mesh with multiple simplified-collision-geometry primitives just like with 3DS Max, by using the MCD\*\*\_name naming convention as documented in e.g. the [CollisionTutorial](../Physics/CollisionTutorial.md).For any single mesh object in the scene, vertex colors and multiple UV channel mapping data are automatically exported whenever they have been applied to them. For details on using shaders with vertex coloring(alpha) and multiple UV channels, consult the [VertexBlendingTutorial](../Techniques/VertexBlendingTutorial.md).
 
 ## Troubleshooting
 

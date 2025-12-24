@@ -230,7 +230,7 @@ More information about this can be found in the [DemoRecording](https://udn.epic
 * RELAUNCH - flushes the engine and then relaunchs the executable
 * SAVEGAME - tells the engine to save the current game state. See [SavingAndLoadingGames](https://udn.epicgames.com/Two/SavingAndLoadingGames) for more info.
 * SAY - GUI server only
-* SET - this one is the most powerful of them all. It takes as the first parameter string a class name, the second string a variable name, and the third string, a value. All objects of the given class (including subclasses) will have the given variable set to the given value. For example "set Pawn CollisionRadius 200" will make all pawns have a collision radius of 200. (See [PawnTricksAndTips](PawnTricksAndTips.md#The_Set_Command) for more details). In v3323 the `set` command has limited functionality when using online, this is to limit cheating.
+* SET - this one is the most powerful of them all. It takes as the first parameter string a class name, the second string a variable name, and the third string, a value. All objects of the given class (including subclasses) will have the given variable set to the given value. For example "set Pawn CollisionRadius 200" will make all pawns have a collision radius of 200. (See [PawnTricksAndTips](../../Uncategorized/PawnTricksAndTips.md#The_Set_Command) for more details). In v3323 the `set` command has limited functionality when using online, this is to limit cheating.
 * SETMOUSE x y - warp mouse to X,Y
 * TTS [text] - feed [text] to the Text To Speech engine
 

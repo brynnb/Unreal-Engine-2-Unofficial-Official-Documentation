@@ -153,7 +153,7 @@ Version notes for XSI 4.x plugins:
 
 ## ActorX Tutorials
 
-* [ActorXMaxTutorial](ActorXMaxTutorial.md)
-* [ActorXMayaTutorial](ActorXMayaTutorial.md)
-* [ActorXXSITutorial](ActorXXSITutorial.md)
+* [ActorXMaxTutorial](../../Uncategorized/ActorXMaxTutorial.md)
+* [ActorXMayaTutorial](../../Uncategorized/ActorXMayaTutorial.md)
+* [ActorXXSITutorial](../../Uncategorized/ActorXXSITutorial.md)
 

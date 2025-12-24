@@ -18,7 +18,7 @@
 
 ## Related Documents
 
-[StaticMeshCollisionReference](StaticMeshCollisionReference.md), [KarmaReference](KarmaReference.md), [StaticMeshesTutorial](StaticMeshesTutorial.md),
+[StaticMeshCollisionReference](../../Uncategorized/StaticMeshCollisionReference.md), [KarmaReference](KarmaReference.md), [StaticMeshesTutorial](../Primitives/StaticMeshesTutorial.md),
 
 ## Collision Overview
 
@@ -34,7 +34,9 @@ There are two main tools for tweaking collision in your level, [Blocking Volumes
 
 ### Blocking Volume
 
-These are invisible actors which the player will collide against in game. First make the builder brush the correct shape, then press the 'Volume' button in the editor and select 'BlockingVolume' from the list. These can also be useful for preventing players getting to certain areas of the level eg. over walls.![volume_tool.jpg](../../assets/volume_tool.jpg)
+These are invisible actors which the player will collide against in game. First make the builder brush the correct shape, then press the 'Volume' button in the editor and select 'BlockingVolume' from the list. These can also be useful for preventing players getting to certain areas of the level eg. over walls.
+
+![volume_tool.jpg](../../assets/volume_tool.jpg)
 
 ### Collision Models
 
@@ -51,7 +53,7 @@ You can easily tell the difference between these types of collision models by tu
 | *UseSimpleBoxCollision* | *TRUE* | *Type 1* | If this is *TRUE*, the collision model (if present) will be used for 'non-zero extent' line checks. This includes things like player movement, but not weapon fire. No per triangle collision will be used if this is *TRUE* and there is a collision model. If you set *UseSimpleBoxCollision* to *TRUE* when you do not have a collision model or if you set *UseSimpleBoxCollision* to *FALSE*, per triangle collision will be used based on the material. You can turn off collision for a material by pulling down the *Materials* array and setting *EnableCollision* to *FALSE*. |
 | *UseSimpleLineCollision* | *FALSE* | *Type 1* | If this is *TRUE*, collision model (if present) will be used for 'zero extent' line checks. This includes most weapon fire, corona traces etc. If you set *UseSimpleLineCollision* to *TRUE* when you do not have a collision model or if you set *UseSimpleLineCollision* to *FALSE*, per triangle collision will be used based on the material. You can turn off collision for a material by pulling down the *Materials* array and setting *EnableCollision* to *FALSE*. |
 
-For more details on static mesh collision see the [Static Mesh Collision Reference](StaticMeshCollisionReference.md)An additional bonus of using collision models is that if you set all of the settings to true and you turn off the collision of every material, the static mesh will use much less memory.
+For more details on static mesh collision see the [Static Mesh Collision Reference](../../Uncategorized/StaticMeshCollisionReference.md)An additional bonus of using collision models is that if you set all of the settings to true and you turn off the collision of every material, the static mesh will use much less memory.
 
 ## Creating Collision Models
 
@@ -59,11 +61,17 @@ There are several ways to create a collision model for a static mesh. After addi
 
 ### Save Brush As Collision
 
-Place the static mesh that you want to add a collision model to into a level. Then place the builder brush around it in the shape you want the collision model to be. Keep it as simple as possible! Then select the static mesh, right click and choose 'Save Brush As Collision'. This will take into account any scaling you may have applied to the static mesh.![save_brush_as_collision.jpg](../../assets/save_brush_as_collision.jpg)It is very important to note that this collision will be added to ALL instances of the static mesh you have selected. To see the effect of saving the brush as collision you will have to save the package that contains the static mesh.
+Place the static mesh that you want to add a collision model to into a level. Then place the builder brush around it in the shape you want the collision model to be. Keep it as simple as possible! Then select the static mesh, right click and choose 'Save Brush As Collision'. This will take into account any scaling you may have applied to the static mesh.
+
+![save_brush_as_collision.jpg](../../assets/save_brush_as_collision.jpg)
+
+It is very important to note that this collision will be added to ALL instances of the static mesh you have selected. To see the effect of saving the brush as collision you will have to save the package that contains the static mesh.
 
 ### K-DOP
 
-![K-DOP.gif](../../assets/K-DOP.gif)K-DOP is a tool in the static mesh browser for generating simple *Type 1* [collision models](#collision-models). K-DOP stands for 'K discrete oriented polytope' but that doesn't really matter :). Basically it takes 'k' axis-aligned planes and pushes them as close to the mesh as it can. The resulting shape is used as a collision model. In the editor k can be:
+![K-DOP.gif](../../assets/K-DOP.gif)
+
+K-DOP is a tool in the static mesh browser for generating simple *Type 1* [collision models](#collision-models). K-DOP stands for 'K discrete oriented polytope' but that doesn't really matter :). Basically it takes 'k' axis-aligned planes and pushes them as close to the mesh as it can. The resulting shape is used as a collision model. In the editor k can be:
 
 |  |  |
 | --- | --- |
@@ -72,11 +80,15 @@ Place the static mesh that you want to add a collision model to into a level. Th
 | *18* | Box with all edges bevelled. |
 | *26* | Box with all edges and corners bevelled. |
 
-See below for an example. This util is quite handy for .usx's full of pipes, pillars and railings.![kdop_sizes.jpg](../../assets/kdop_sizes.jpg)
+See below for an example. This util is quite handy for .usx's full of pipes, pillars and railings.
+
+![kdop_sizes.jpg](../../assets/kdop_sizes.jpg)
 
 ### Fit Karma Primitive
 
-![FitKarma.gif](../../assets/FitKarma.gif)*Fit Karma Primitive* is a tool in the static mesh browser for generating simple *Type 2* [collision models](#collision-models). You can fit Spheres or Cylinders.
+![FitKarma.gif](../../assets/FitKarma.gif)
+
+*Fit Karma Primitive* is a tool in the static mesh browser for generating simple *Type 2* [collision models](#collision-models). You can fit Spheres or Cylinders.
 
 ### Create in a Modeling Program (3D Studio Max or Maya)
 
@@ -97,11 +109,19 @@ You can create [collision models](#collision-models) of *Type 1* and *Type 2* in
 
 * Convex objects can be any completely closed convex 3D shape. A box for example can also be a convex object. The diagram below illustrates what is convex and what is not:
 
-![Convex.gif](../../assets/Convex.gif)Objects created with the *MCDCX* tag behave differently than the others; please see the [collision models](#collision-models) parts of this document for more details. In general you probably want to create *MCDCX* primitives. Once your collision objects are set up you can export both the graphics and collision mesh in the same .ASE. When you import the .ASE into UnrealEd it should find the collision mesh, remove it from the graphic, and turn it into the collision model.Note: In the case of an object whose collision is defined by multiple convex hulls, results are best when the hulls do not intersect with one another. For example, if the collision for a lollipop were defined by two convex hulls, one for the candy and one for the stick, a gap should be left between the two as in the following illustration:![lollipop.jpg](../../assets/lollipop.jpg)
+![Convex.gif](../../assets/Convex.gif)
+
+Objects created with the *MCDCX* tag behave differently than the others; please see the [collision models](#collision-models) parts of this document for more details. In general you probably want to create *MCDCX* primitives. Once your collision objects are set up you can export both the graphics and collision mesh in the same .ASE. When you import the .ASE into UnrealEd it should find the collision mesh, remove it from the graphic, and turn it into the collision model.Note: In the case of an object whose collision is defined by multiple convex hulls, results are best when the hulls do not intersect with one another. For example, if the collision for a lollipop were defined by two convex hulls, one for the candy and one for the stick, a gap should be left between the two as in the following illustration:
+
+![lollipop.jpg](../../assets/lollipop.jpg)
 
 ## Collision For Karma
 
-The way that Karma works is to generate 'contact points' each frame for where things are touching. This is a more complicated process than performing a line check, so it is important to keep the geometry that karma objects (such as a ragdoll) collide with as simple as possible, both for speed and behavior. For example, a lot of small triangles can lead to Karma objects getting 'snagged', and will take a long time to process.First, for an actor to block karma actors, it must have the 'bBlockKarma' flag set to true. This is the default for static meshes and blocking volumes.If 'UseSimpleKarmaCollision' is true (see [Collision Models](#collision-models) above for more details), Karma will take the collision model and turn it into a set of convex hull primitives for contact generation. If you choose 'Show Karma Primitives' from the 'View' menu, it will show you each hull that was generated in a different colour, as well as giving you an overall count (indicated in the shot below). You ideally want to keep that count below 10, certainly under 100.![show_karma_prims.jpg](../../assets/show_karma_prims.jpg)Karma actors collide against BSP and terrain per-triangle. For this reason, you should make sure your BSP and terrain do not have very small triangles in them. For small details, use a blocking volume/collision model.
+The way that Karma works is to generate 'contact points' each frame for where things are touching. This is a more complicated process than performing a line check, so it is important to keep the geometry that karma objects (such as a ragdoll) collide with as simple as possible, both for speed and behavior. For example, a lot of small triangles can lead to Karma objects getting 'snagged', and will take a long time to process.First, for an actor to block karma actors, it must have the 'bBlockKarma' flag set to true. This is the default for static meshes and blocking volumes.If 'UseSimpleKarmaCollision' is true (see [Collision Models](#collision-models) above for more details), Karma will take the collision model and turn it into a set of convex hull primitives for contact generation. If you choose 'Show Karma Primitives' from the 'View' menu, it will show you each hull that was generated in a different colour, as well as giving you an overall count (indicated in the shot below). You ideally want to keep that count below 10, certainly under 100.
+
+![show_karma_prims.jpg](../../assets/show_karma_prims.jpg)
+
+Karma actors collide against BSP and terrain per-triangle. For this reason, you should make sure your BSP and terrain do not have very small triangles in them. For small details, use a blocking volume/collision model.
 
 ## Reviewing Collision In-Game
 

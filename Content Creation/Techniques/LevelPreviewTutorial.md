@@ -12,11 +12,16 @@
 ## Introduction
 
 This document describes the various ways you can set up Level Preview information in some of the various builds of the Unreal Engine, including how to set up elaborate Level Preview Screenshots. This document assumes that you are familiar with the Texture Browser and know how to create and use new Materials.
+
 ![levelpreview.jpg](../../assets/levelpreview.jpg)
 
 ## Level Preview Information
 
-To access the Level Preview information go to the *View* menu at the top of the editor and open the Level Properties (or hit F6).![level_prop.gif](../../assets/level_prop.gif)Under **LevelSummary** you can enter the basic information for your level. The *Author* and *Title* fields will show up in the Level Preview screen on the right when the map file name is highlighted on the left (see above [image](#levelprevimage) for an example).The *HideFromMenus* and *RecommendedNumPlayers* fields appear to have no affect, but other fields should be able to be integrated into your build if you so desire and your programmers are willing.Under the **LevelInfo** tab you can enter a brief descriptive paragraph into the *LevelEnterText* field. This will be shown directly beneath the Title and Author of the map in the Level Preview screen. You may also need to set the *DefaultGameType* in order for your map to show up in the Level Preview screen (for instance DeathMatch in a UT2K3 map).
+To access the Level Preview information go to the *View* menu at the top of the editor and open the Level Properties (or hit F6).
+
+![level_prop.gif](../../assets/level_prop.gif)
+
+Under **LevelSummary** you can enter the basic information for your level. The *Author* and *Title* fields will show up in the Level Preview screen on the right when the map file name is highlighted on the left (see above [image](#levelprevimage) for an example).The *HideFromMenus* and *RecommendedNumPlayers* fields appear to have no affect, but other fields should be able to be integrated into your build if you so desire and your programmers are willing.Under the **LevelInfo** tab you can enter a brief descriptive paragraph into the *LevelEnterText* field. This will be shown directly beneath the Title and Author of the map in the Level Preview screen. You may also need to set the *DefaultGameType* in order for your map to show up in the Level Preview screen (for instance DeathMatch in a UT2K3 map).
 
 ## Screen Shot Preview
 
@@ -38,6 +43,16 @@ To create an animated Screenshot you will need to import a series of 256x512 Tex
 
 ### Fade Transition Screenshots
 
-![matseq.jpg](../../assets/matseq.jpg)To create a Level Preview Screenshot that fades between different images, you will need to create a MaterialSequence Material. To do so, bring the Texture Browser to the front, click on "New," and then select "MaterialSequence" from the MaterialClass pulldown.![materialsequence.gif](../../assets/materialsequence.gif)Next, open your new MaterialSequence's properties window and "Add" twice as many "SequenceItems" as you have frames that you want to fade between. The first of each image pair will be used to fade from the preview image, so be sure to set the "Action" in the properties of the MaterialSequence to *MSA FadeToMaterial.* Also you will need to set the "Time" of each SequenceItem. 2 seconds for the fading images and 4 seconds
-[Above](#matseq) you can see three images combined to form a MaterialSequence that fades between them. Directly below you can see the properties for that MaterialSequence.![matseq_prop.gif](../../assets/matseq_prop.gif)Once you have your MaterialSequence set up to your liking, just assign it to the Screenshots section in the Level Properties.
+![matseq.jpg](../../assets/matseq.jpg)
+
+To create a Level Preview Screenshot that fades between different images, you will need to create a MaterialSequence Material. To do so, bring the Texture Browser to the front, click on "New," and then select "MaterialSequence" from the MaterialClass pulldown.
+
+![materialsequence.gif](../../assets/materialsequence.gif)
+
+Next, open your new MaterialSequence's properties window and "Add" twice as many "SequenceItems" as you have frames that you want to fade between. The first of each image pair will be used to fade from the preview image, so be sure to set the "Action" in the properties of the MaterialSequence to *MSA FadeToMaterial.* Also you will need to set the "Time" of each SequenceItem. 2 seconds for the fading images and 4 seconds
+[Above](#matseq) you can see three images combined to form a MaterialSequence that fades between them. Directly below you can see the properties for that MaterialSequence.
+
+![matseq_prop.gif](../../assets/matseq_prop.gif)
+
+Once you have your MaterialSequence set up to your liking, just assign it to the Screenshots section in the Level Properties.
 

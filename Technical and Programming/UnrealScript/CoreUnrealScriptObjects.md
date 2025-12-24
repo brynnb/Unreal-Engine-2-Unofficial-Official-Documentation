@@ -74,7 +74,7 @@
 
 ## Related Documents
 
-[UnrealScriptReference](UnrealScriptReference.md)[StringsInUnrealScript](StringsInUnrealScript.md)These are the base classes, functions and structures on which all UnrealScript objects are built.
+[UnrealScriptReference](UnrealScriptReference.md)[StringsInUnrealScript](../../Uncategorized/StringsInUnrealScript.md)These are the base classes, functions and structures on which all UnrealScript objects are built.
 
 ## Base Object
 
@@ -278,7 +278,7 @@ struct Range
 
 ### Range Vector
 
-Range vectors, in general can specify any 3D rectangle, having an Min and Max for X, Y and Z. They're usually used to define an area in the map where something is or is not happening, such as an area where it is raining or where you can hear music. They are also used in the [particle systems](ParticleSystems.md) as a randomly chosen value in this range for the number/velocity of particles moving in each direction. [Bounding Boxes](#bounding-box) are similar.Examples:
+Range vectors, in general can specify any 3D rectangle, having an Min and Max for X, Y and Z. They're usually used to define an area in the map where something is or is not happening, such as an area where it is raining or where you can hear music. They are also used in the [particle systems](../../Content Creation/Effects/ParticleSystems.md) as a randomly chosen value in this range for the number/velocity of particles moving in each direction. [Bounding Boxes](#bounding-box) are similar.Examples:
 
 ```
 
@@ -337,7 +337,7 @@ struct Scale
 
 ### Camera orientations for Matinee
 
-This is used in [Matinee](MatineeTopics.md) to specify the desired orientation of the camera and how to get there.
+This is used in [Matinee](../../Uncategorized/MatineeTopics.md) to specify the desired orientation of the camera and how to get there.
 
 ```
 
@@ -382,7 +382,7 @@ struct Color
 
 ### Bounding Box
 
-This is a 3D Box to contain something, like a system of particles, for example. See: [Particle Systems](ParticleSystems.md).This is similar to a [Range Vector](#range-vector).
+This is a 3D Box to contain something, like a system of particles, for example. See: [Particle Systems](../../Content Creation/Effects/ParticleSystems.md).This is similar to a [Range Vector](#range-vector).
 
 ```
 
@@ -1083,7 +1083,7 @@ native      static final operator(24) bool ClockwiseFrom( int A, int B );
 
 ### String operators and functions
 
-Extensive documentation on string operators and functions is available here:  [StringsInUnrealScript](StringsInUnrealScript.md)
+Extensive documentation on string operators and functions is available here:  [StringsInUnrealScript](../../Uncategorized/StringsInUnrealScript.md)
 
 ```
 
@@ -1317,7 +1317,7 @@ native static final function object FindObject( string ObjectName, class ObjectC
 
 ### Configuration
 
-See  [SaveConfiguration](SaveConfiguration.md)
+See  [SaveConfiguration](../../Uncategorized/SaveConfiguration.md)
 
 ```
 

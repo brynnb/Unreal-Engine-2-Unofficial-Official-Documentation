@@ -26,7 +26,9 @@
 
 ## Introduction
 
-![PausedArabic.jpg](../../assets/PausedArabic.jpg)The purpose of localization is to make it easy to translate your game without rewriting any code. You can use localization files (.int, .frt, .etc) to replace the properties of any variable declared as *localized*, at runtime. This is used mainly for strings, but can also be integers, floating point values, and any other variable type in Unrealscript. This modular design not only allows games to be translated without taking programmer or level designer time but also very easily allows games to be updated for new languages after they have been released.
+![PausedArabic.jpg](../../assets/PausedArabic.jpg)
+
+The purpose of localization is to make it easy to translate your game without rewriting any code. You can use localization files (.int, .frt, .etc) to replace the properties of any variable declared as *localized*, at runtime. This is used mainly for strings, but can also be integers, floating point values, and any other variable type in Unrealscript. This modular design not only allows games to be translated without taking programmer or level designer time but also very easily allows games to be updated for new languages after they have been released.
 
 ## How Localization Works
 
@@ -154,7 +156,7 @@ var localized string PauseMessage;
 
 [LocalHUD]
 PauseMessage=paused
-```**LocalHUD used *LocalFonts.BigFont* as its font. This font was created by making the following text file (*LocalFonts.exec*) and then typing "exec LocalFonts.exec" in the log in Unrealed. This created the *LocalFonts.utx* textures package. See the [Font Tutorial](FontTutorial.md) for more information on creating fonts.**```
+```**LocalHUD used *LocalFonts.BigFont* as its font. This font was created by making the following text file (*LocalFonts.exec*) and then typing "exec LocalFonts.exec" in the log in Unrealed. This created the *LocalFonts.utx* textures package. See the [Font Tutorial](../../Uncategorized/FontTutorial.md) for more information on creating fonts.**```
 
 new truetypefontfactory package=LocalFonts name=BigFont
 fontname="Arial Unicode MS" height=30

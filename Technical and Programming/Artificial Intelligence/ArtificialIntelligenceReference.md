@@ -73,7 +73,7 @@ This will cycle the *ViewTarget* between all pawns in the game. This will put a 
 
 ### Use the UnrealScript Debugger
 
-The [UnrealScript Debugger](UnrealScriptDebugger.md) is a great help when trying to figure out the flow of code in an AI. This will allow you to set break points anywhere in script including latent code. You can then step though the code and see what is happening. The debugger also lets you watch variables, view the call stack, and perform many other debugging actions.
+The [UnrealScript Debugger](../../Uncategorized/UnrealScriptDebugger.md) is a great help when trying to figure out the flow of code in an AI. This will allow you to set break points anywhere in script including latent code. You can then step though the code and see what is happening. The debugger also lets you watch variables, view the call stack, and perform many other debugging actions.
 
 ## How to Control a Pawn
 
@@ -213,7 +213,7 @@ Initially the ScriptedController does nothing. There is no code in any \*BeginPl
 
 #### Begin
 
-At the Begin: label the next [action](ScriptedSequenceActions.md) is chosen from the [ScriptedSequence](#scriptedsequence) by calling *InitforNextAction()*. This function sets the *CurrentAction* which will be used to determine what to do next. A few things are also done to setup weapons and shooting. Next the Pawn is made ready to move by calling:
+At the Begin: label the next [action](../../Content Creation/Scripted Sequences/ScriptedSequenceActions.md) is chosen from the [ScriptedSequence](#scriptedsequence) by calling *InitforNextAction()*. This function sets the *CurrentAction* which will be used to determine what to do next. A few things are also done to setup weapons and shooting. Next the Pawn is made ready to move by calling:
 
 ```
 
@@ -235,7 +235,7 @@ Now the ScriptedController asks if the current *MoveTarget* is the ultimate goal
 
 #### Other Cases
 
-As mentioned above this example on goes over the basics of movements. To investigate the other actions carried out by ScriptedController, I highly suggest using the [UnrealScript Debugger](UnrealScriptDebugger.md). This will allow you to step though the state code and easily see what is happening.
+As mentioned above this example on goes over the basics of movements. To investigate the other actions carried out by ScriptedController, I highly suggest using the [UnrealScript Debugger](../../Uncategorized/UnrealScriptDebugger.md). This will allow you to step though the state code and easily see what is happening.
 
 ## AIScript
 
@@ -247,7 +247,7 @@ In most cases AIScripts are placed in Unrealed and are associated with Pawns als
 
 ## ScriptedSequence
 
-ScriptedSequence extends [AIScript](#aiscript) and adds the ability to store a list of [Actions](ScriptedSequenceActions.md) which a [ScriptedController](#scriptedcontroller) can read from. When SpawnControllerFor(...) is called in a ScriptedSequence, it also calls TakeOver(...) so as soon as Pawn starts in a level and is associate with a ScriptedSequence, it will be controlled immediately by ScriptedController.Once a ScriptedController exists it can be assigned new ScriptedSequences with the the SetNewScript(ScriptedSequence NewScript) function in ScriptedController. Scripts can also be changed with the [ChangeScript](ScriptedSequenceActions.md#ChangeScript) action within the ScriptedSequence. This means that ScriptedSequences can not only be used to control multiple pawns but can also be used modularly and fit together to form more complex behaviors.For example you could have a ScriptedSequence for every area in a map and have controllers switch scripts as the pawn moves between areas. ScriptedSequences can also be used to temporarily control more complex AI. Any class that extends ScriptedSequences can simply call SetNewScript(...) and it will perform the script. When the script is over or when the [LeaveSequence](ScriptedSequenceActions.md#LeaveSequence) action is called the AI will resume its normal behavior.
+ScriptedSequence extends [AIScript](#aiscript) and adds the ability to store a list of [Actions](../../Content Creation/Scripted Sequences/ScriptedSequenceActions.md) which a [ScriptedController](#scriptedcontroller) can read from. When SpawnControllerFor(...) is called in a ScriptedSequence, it also calls TakeOver(...) so as soon as Pawn starts in a level and is associate with a ScriptedSequence, it will be controlled immediately by ScriptedController.Once a ScriptedController exists it can be assigned new ScriptedSequences with the the SetNewScript(ScriptedSequence NewScript) function in ScriptedController. Scripts can also be changed with the [ChangeScript](../../Content Creation/Scripted Sequences/ScriptedSequenceActions.md#ChangeScript) action within the ScriptedSequence. This means that ScriptedSequences can not only be used to control multiple pawns but can also be used modularly and fit together to form more complex behaviors.For example you could have a ScriptedSequence for every area in a map and have controllers switch scripts as the pawn moves between areas. ScriptedSequences can also be used to temporarily control more complex AI. Any class that extends ScriptedSequences can simply call SetNewScript(...) and it will perform the script. When the script is over or when the [LeaveSequence](../../Content Creation/Scripted Sequences/ScriptedSequenceActions.md#LeaveSequence) action is called the AI will resume its normal behavior.
 
 ## Dynamic AI - Bot as an Example
 
@@ -255,5 +255,5 @@ Dynamic AI can be done in many many ways. To narrow the scope of the general pro
 
 ## Related Documents
 
-These are documents on the content side of things.[AIControllers](AIControllers.md) - This document goes over all the types of AIControllers as well as how to set up AIControllers in Unrealed.[ScriptedSequenceTutorial](ScriptedSequenceTutorial.md) - This is a document about how to use ScriptedSequences.[ScriptedSequenceActions](ScriptedSequenceActions.md) - This document talks about the types of actions ScriptedSequences can do.
+These are documents on the content side of things.[AIControllers](../../Content Creation/Scripted Sequences/AIControllers.md) - This document goes over all the types of AIControllers as well as how to set up AIControllers in Unrealed.[ScriptedSequenceTutorial](../../Content Creation/Scripted Sequences/ScriptedSequenceTutorial.md) - This is a document about how to use ScriptedSequences.[ScriptedSequenceActions](../../Content Creation/Scripted Sequences/ScriptedSequenceActions.md) - This document talks about the types of actions ScriptedSequences can do.
 

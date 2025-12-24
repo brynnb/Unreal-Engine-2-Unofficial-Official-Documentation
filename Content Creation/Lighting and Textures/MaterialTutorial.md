@@ -16,19 +16,67 @@
 
 ## Introduction
 
-Materials allow for all sorts of special effects through modifying textures. This doc is a guide on how to use the different material classes and create various effects using Materials. While at first glance Materials may seem unwieldy and confusing, the can be very powerful tools once you know how to use them.![demo1.jpg](../../assets/demo1.jpg) ![demo2.jpg](../../assets/demo2.jpg)Below is a description on how to use the Material Properties and links to more in depth descriptions of the various types of Materials available.
+Materials allow for all sorts of special effects through modifying textures. This doc is a guide on how to use the different material classes and create various effects using Materials. While at first glance Materials may seem unwieldy and confusing, the can be very powerful tools once you know how to use them.
+
+![demo1.jpg](../../assets/demo1.jpg)
+
+![demo2.jpg](../../assets/demo2.jpg)Below is a description on how to use the Material Properties and links to more in depth descriptions of the various types of Materials available.
 
 ## Using the Material Browser
 
-To bring up the Material Properties, right click on any texture in the Texture Browser and select the properties option. You should see something like this (the various sections are described below):![textureproperties.jpg](../../assets/textureproperties.jpg)**1 -Material Window-** This is displays the selected material in the Material.**2 -Material Tree-** This displays the entire tree of Materials. You can select the various Materials in the tree to see their own properties.**3 -Material Display Buttons-** These buttons change the display in the Material Window. The ![clearbutton.gif](../../assets/clearbutton.gif) button has no effect.This button, ![checkerbutton.jpg](../../assets/checkerbutton.jpg) , will display a checkered MaterialBackdrop texture behind the texture.![checkerboard.jpg](../../assets/checkerboard.jpg)The ![layerbutton.jpg](../../assets/layerbutton.jpg) button will display the resulting Material (the Material at the top of the Material Tree) when it is pressed. Otherwise it will display whichever Material is selected.These three buttons ![flatbutton.jpg](../../assets/flatbutton.jpg) , ![cubebutton.jpg](../../assets/cubebutton.jpg) , and ![spherebutton.jpg](../../assets/spherebutton.jpg) , will display the texture in the Material Window as a flat texture, texture on a cube, and texture on a sphere respectively. Below you can see the Cube and Sphere display modes of the above Material:![cube.jpg](../../assets/cube.jpg) ![sphere.jpg](../../assets/sphere.jpg)**4 -Properties-** Here you find a text version of the Material Tree where you can alter the individual properties of each Material in the tree. Note that depending on what Material you have selected in the Material Tree window, properties available to change may vary.
+To bring up the Material Properties, right click on any texture in the Texture Browser and select the properties option. You should see something like this (the various sections are described below):
+
+![textureproperties.jpg](../../assets/textureproperties.jpg)
+
+**1 -Material Window-** This is displays the selected material in the Material.**2 -Material Tree-** This displays the entire tree of Materials. You can select the various Materials in the tree to see their own properties.**3 -Material Display Buttons-** These buttons change the display in the Material Window. The
+
+![clearbutton.gif](../../assets/clearbutton.gif)
+
+button has no effect.This button,
+
+![checkerbutton.jpg](../../assets/checkerbutton.jpg)
+
+, will display a checkered MaterialBackdrop texture behind the texture.
+
+![checkerboard.jpg](../../assets/checkerboard.jpg)
+
+The
+
+![layerbutton.jpg](../../assets/layerbutton.jpg)
+
+button will display the resulting Material (the Material at the top of the Material Tree) when it is pressed. Otherwise it will display whichever Material is selected.These three buttons
+
+![flatbutton.jpg](../../assets/flatbutton.jpg)
+
+,
+
+![cubebutton.jpg](../../assets/cubebutton.jpg)
+
+, and
+
+![spherebutton.jpg](../../assets/spherebutton.jpg)
+
+, will display the texture in the Material Window as a flat texture, texture on a cube, and texture on a sphere respectively. Below you can see the Cube and Sphere display modes of the above Material:
+
+![cube.jpg](../../assets/cube.jpg)
+
+![sphere.jpg](../../assets/sphere.jpg)**4 -Properties-** Here you find a text version of the Material Tree where you can alter the individual properties of each Material in the tree. Note that depending on what Material you have selected in the Material Tree window, properties available to change may vary.
 
 ## Creating a New Material
 
-To create a new Material go back to the Texture Browser and from the File menu select "New." You will see a "New Material" window come up. In this window you will need to set the appropriate package, group, and name as well as determine what sort of Material you will create.![new.gif](../../assets/new.gif)There are many different types of MaterialClasses you can choose from. Note that you can choose *Raw Material* or *Real-time Procedural Texture* from the "Class" menu, but you will want to leave this set to *Raw Material*. The next section outlines the various types of MaterialClasses and links to documents that describe each of the types in greater detail.
+To create a new Material go back to the Texture Browser and from the File menu select "New." You will see a "New Material" window come up. In this window you will need to set the appropriate package, group, and name as well as determine what sort of Material you will create.
+
+![new.gif](../../assets/new.gif)
+
+There are many different types of MaterialClasses you can choose from. Note that you can choose *Raw Material* or *Real-time Procedural Texture* from the "Class" menu, but you will want to leave this set to *Raw Material*. The next section outlines the various types of MaterialClasses and links to documents that describe each of the types in greater detail.
 
 ### Raw Material Class
 
-As for the Raw Material class, which is what you will be using most of the time, there are many more sub classes to choose from. These sub classes are separated into five different categories for clarification only (outlined below). Note that many of the subclasses are not included because they are either no longer functional or they are not intended to be used by level designers.Unreal Ed also separates different Materials into classes and distinguishes between these classes in the Texture Browser. Here are some different kinds of materials grouped together in the Texture Browser:![texturebrowser.jpg](../../assets/texturebrowser.jpg)In the menu Filter you can choose to view only certain types of materials for a better overview.Not all of the Raw Material classes have colored borders, but here is a brief description of the ones that do:
+As for the Raw Material class, which is what you will be using most of the time, there are many more sub classes to choose from. These sub classes are separated into five different categories for clarification only (outlined below). Note that many of the subclasses are not included because they are either no longer functional or they are not intended to be used by level designers.Unreal Ed also separates different Materials into classes and distinguishes between these classes in the Texture Browser. Here are some different kinds of materials grouped together in the Texture Browser:
+
+![texturebrowser.jpg](../../assets/texturebrowser.jpg)
+
+In the menu Filter you can choose to view only certain types of materials for a better overview.Not all of the Raw Material classes have colored borders, but here is a brief description of the ones that do:
 
 | [Raw Material Class](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=0;table=1;up=0#sorted_table "Sort by this column") | [Description](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=1;table=1;up=0#sorted_table "Sort by this column") | [Border](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=2;table=1;up=0#sorted_table "Sort by this column") |
 | --- | --- | --- |
@@ -43,27 +91,29 @@ For more detailed information on each of these Raw Material classes, click on th
 
 #### Shaders
 
-[MaterialsShaders](MaterialsShaders.md)These are the most commonly used Material classes. In this document, the **Shader** Material class is described. With Shaders you can use different textures together to achieve some simple effects.
+[MaterialsShaders](../../Uncategorized/MaterialsShaders.md)These are the most commonly used Material classes. In this document, the **Shader** Material class is described. With Shaders you can use different textures together to achieve some simple effects.
 
 #### Modifier
 
-[MaterialsModifiers](MaterialsModifiers.md)These Material classes perform specific modifications to the textures and allow for non-standard modifications to your base texture. The subclasses described in this document are the **ColorModifier, ConstantColor, TexEnvMap, TexOscillator, TexPanner, TexRotator,** and **TexScaler.**
+[MaterialsModifiers](../../Uncategorized/MaterialsModifiers.md)These Material classes perform specific modifications to the textures and allow for non-standard modifications to your base texture. The subclasses described in this document are the **ColorModifier, ConstantColor, TexEnvMap, TexOscillator, TexPanner, TexRotator,** and **TexScaler.**
 
 #### Combiner
 
-[MaterialsCombiners](MaterialsCombiners.md)The **Combiner** Material class is good for taking two other materials and combining them to produce a third. With Combiners, very complex Material Trees can be created to intricate layered effects.
+[MaterialsCombiners](../../Uncategorized/MaterialsCombiners.md)The **Combiner** Material class is good for taking two other materials and combining them to produce a third. With Combiners, very complex Material Trees can be created to intricate layered effects.
 
 #### CubeMaps and TexEnvMaps
 
-[MaterialsEnvironmentMaps](MaterialsEnvironmentMaps.md)Here you will see how to create Environment Maps using the **CubeMap** and **TexEnvMap** Material classes.
+[MaterialsEnvironmentMaps](../../Uncategorized/MaterialsEnvironmentMaps.md)Here you will see how to create Environment Maps using the **CubeMap** and **TexEnvMap** Material classes.
 
 #### FinalBlend
 
-[MaterialsFinalBlend](MaterialsFinalBlend.md)The **FinalBlend** Material applies a blending effect to a texture. This linked to document describes how to use this Material subclass.
+[MaterialsFinalBlend](../../Uncategorized/MaterialsFinalBlend.md)The **FinalBlend** Material applies a blending effect to a texture. This linked to document describes how to use this Material subclass.
 
 ---
 
 ## Example Map
 
-![EPICmaterials1.jpg](../../assets/EPICmaterials1.jpg)For an example map that shows many different complex Materials in action, take a look at this document:[ExampleMapsEPIC#Materials\_Example\_Map](ExampleMapsEPIC.md#Materials_Example_Map) *(The example map is at the bottom of the page)*
+![EPICmaterials1.jpg](../../assets/EPICmaterials1.jpg)
+
+For an example map that shows many different complex Materials in action, take a look at this document:[ExampleMapsEPIC#Materials\_Example\_Map](../../Uncategorized/ExampleMapsEPIC.md#Materials_Example_Map) *(The example map is at the bottom of the page)*
 

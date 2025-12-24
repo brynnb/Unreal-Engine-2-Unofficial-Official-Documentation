@@ -6,7 +6,7 @@
   
 *Updated by Chris Linder ( DemiurgeStudios? ) on 7-9-2003 to add more robust comments for StayUprightStiffness and StayUprightDamping.*
   
-*Updated by Chris Linder ( DemiurgeStudios? ) on 8-5-2003 to add more robust comments for KInertiaTensor.*Note - this reference is for 2226 based builds of the Unreal Engine, NOT for UT2003. Much of this information will be useful for UT2003 but there are some small differences.For additional information about Karma see also:[ImportingKarmaActors](ImportingKarmaActors.md)[UsingKarmaActors](UsingKarmaActors.md)[ExampleMapsKarmaColosseum](ExampleMapsKarmaColosseum.md)[CollisionTutorial](CollisionTutorial.md)[KarmaAuthoringTool](KarmaAuthoringTool.md)Karma User Guide: [KarmaUserGuide.pdf](rsrc/Two/KarmaReference/KarmaUserGuide.pdf)
+*Updated by Chris Linder ( DemiurgeStudios? ) on 8-5-2003 to add more robust comments for KInertiaTensor.*Note - this reference is for 2226 based builds of the Unreal Engine, NOT for UT2003. Much of this information will be useful for UT2003 but there are some small differences.For additional information about Karma see also:[ImportingKarmaActors](../../Uncategorized/ImportingKarmaActors.md)[UsingKarmaActors](../../Uncategorized/UsingKarmaActors.md)[ExampleMapsKarmaColosseum](../../Uncategorized/ExampleMapsKarmaColosseum.md)[CollisionTutorial](CollisionTutorial.md)[KarmaAuthoringTool](../../Uncategorized/KarmaAuthoringTool.md)Karma User Guide: [KarmaUserGuide.pdf](rsrc/Two/KarmaReference/KarmaUserGuide.pdf)
 
 ## Contents
 
@@ -194,7 +194,11 @@ The parameters that are used to configure the hinge are given below.
 | *KUseAltDesired* | Use KAltDesiredAngle instead of KDesiredAngle for desired angle. (65535 = 360 degrees) | False |
 | *KProportionalGap* | HT\_Controlled only. | 8200 |
 
-The 'controlled' option uses a simple controller to drive the hinge motor to a particular angle. This is useful for driving pieces of machinery (cranes etc.). It does this by setting the desired velocity for each timestep to achieve the desired orientation. If the current error is more than KProportionalGap, the velocity will be KDesiredAngVel. Once the error is between 0 and KProportionalGap, the velocity will slowly ramp down until it achieves the desired angle.![propgap.gif](../../assets/propgap.gif)KHinges can be also be triggered in the same way as movers etc. By setting the initial state of the KHinge, different behaviors can be achieved.
+The 'controlled' option uses a simple controller to drive the hinge motor to a particular angle. This is useful for driving pieces of machinery (cranes etc.). It does this by setting the desired velocity for each timestep to achieve the desired orientation. If the current error is more than KProportionalGap, the velocity will be KDesiredAngVel. Once the error is between 0 and KProportionalGap, the velocity will slowly ramp down until it achieves the desired angle.
+
+![propgap.gif](../../assets/propgap.gif)
+
+KHinges can be also be triggered in the same way as movers etc. By setting the initial state of the KHinge, different behaviors can be achieved.
 
 |  |  |
 | --- | --- |

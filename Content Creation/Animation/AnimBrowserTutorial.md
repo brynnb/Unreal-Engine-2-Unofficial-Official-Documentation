@@ -32,13 +32,22 @@ Before you dive into the animation browser, it's a good idea to make sure that y
 
 ## The Animation Browser
 
-When you first launch Unreal, the texture browser will already be opened for you. The animation browser is accessible from the same location - just click the `Animations' tab to open it up. It is also possible to open it with the `View' drop down menu from the main Unreal window.![openbrowser.jpg](../../assets/openbrowser.jpg)
+When you first launch Unreal, the texture browser will already be opened for you. The animation browser is accessible from the same location - just click the `Animations' tab to open it up. It is also possible to open it with the `View' drop down menu from the main Unreal window.
+
+![openbrowser.jpg](../../assets/openbrowser.jpg)
 
 ### Importing the Model and Rig (.PSK)
 
 This is very straightforward. Go to `File' > `Mesh import' in the animation browser. Locate your .PSK file, then import it into the browser. You could also use the mesh import button
-![p1.png](../../assets/p1.png) in the toolbar.
-When you select the .PSK, you'll see a window like this one.![importmesh.jpg](../../assets/importmesh.jpg)There are a few fields here that could use some explanation.
+
+![p1.png](../../assets/p1.png)
+
+in the toolbar.
+When you select the .PSK, you'll see a window like this one.
+
+![importmesh.jpg](../../assets/importmesh.jpg)
+
+There are a few fields here that could use some explanation.
 
 * **Package:** This will be the name of the .UKX file itself, which can hold many different models and their associated animations. For example, if I were making a military game, I could have put the rifleman, scout, and sniper models in one .UKX file, under the overriding package name, "Soldiers." A non-existing package name will result in the creation of a new one.
 
@@ -49,11 +58,21 @@ This is VERY important; **never** name your .UKX (mesh/animation) package with t
 
 * **Name:** This is what your individual models will be called once they are imported into the .UKX file. In other words, this will be the Sniper/Scout/Rifleman, who resides within the larger Soldiers package. Note that it is possible to name two models with the same name, if they are in different packages. For example, `Scout' in package `AmericanTroops.UKX' and `Scout' in package `RussianSoldiers.UKX.' Confusing, but possible.
 
-For now, just name your package and model appropriately. If you are importing into an existing package, make sure all contents of the package are loaded before changing anything (use the load-all button). The same goes for any other importing or tweaking.If you are using Maya, use the checkbox, "Assume Maya coordinates." If this works correctly, you will get a window like the one shown below. After closing that window, your model will appear in the browser.![newobject.jpg](../../assets/newobject.jpg)If your browser crashes when you try to import a .PSK model, make sure that you have a texture applied to it in your 3D modeling package. This is a fairly common problem - it doesn't matter what texture you apply, since you can change it later. Just having UVW mapping coordinates isn't enough, so make sure that you've applied a texture.
+For now, just name your package and model appropriately. If you are importing into an existing package, make sure all contents of the package are loaded before changing anything (use the load-all button). The same goes for any other importing or tweaking.If you are using Maya, use the checkbox, "Assume Maya coordinates." If this works correctly, you will get a window like the one shown below. After closing that window, your model will appear in the browser.
+
+![newobject.jpg](../../assets/newobject.jpg)
+
+If your browser crashes when you try to import a .PSK model, make sure that you have a texture applied to it in your 3D modeling package. This is a fairly common problem - it doesn't matter what texture you apply, since you can change it later. Just having UVW mapping coordinates isn't enough, so make sure that you've applied a texture.
 
 ### Importing the Animations (.PSA)
 
-The next step is to import the suite of animations that will be linked to the model. Use the Import/Append animation buttons ![p2.png](../../assets/p2.png) or go to `File' > `Animation import' and find the .PSA file that corresponds to your model. You'll see an import window open up.![importanim.jpg](../../assets/importanim.jpg)
+The next step is to import the suite of animations that will be linked to the model. Use the Import/Append animation buttons
+
+![p2.png](../../assets/p2.png)
+
+or go to `File' > `Animation import' and find the .PSA file that corresponds to your model. You'll see an import window open up.
+
+![importanim.jpg](../../assets/importanim.jpg)
 
 * **Package:** Make sure that the package name is correct, it should be the same name you just used when you imported your .PSK.
 
@@ -67,11 +86,23 @@ If this is your first time importing a .PSA, then don't worry about the bottom t
 
 ### Linking the Mesh and Animation
 
-So you have your mesh and your animation, both loaded and ready to go. Before you can play the animations, there is one last step. In the `Edit' menu choose `Linkup anim and mesh' to (you guessed it) link the animations to the mesh. If this worked correctly, you should see the model snap into the first frame of your selected animation.![linkup.jpg](../../assets/linkup.jpg)Once this is done, you can hit the `Play' button at the bottom of the window to see the animation in action.
+So you have your mesh and your animation, both loaded and ready to go. Before you can play the animations, there is one last step. In the `Edit' menu choose `Linkup anim and mesh' to (you guessed it) link the animations to the mesh. If this worked correctly, you should see the model snap into the first frame of your selected animation.
+
+![linkup.jpg](../../assets/linkup.jpg)
+
+Once this is done, you can hit the `Play' button at the bottom of the window to see the animation in action.
 
 ### Texture Assignment
 
-Upon importing your model, you may find that it doesn't have the right texture on it - it's got that grayish default texture on instead. Fixing this is pretty simple. First of all, go to the texture browser and open the appropriate .UTX file. Click on the desired texture (or if you have several materials, any of them will do) so that you see a border appear around it in the browser window.![selectedtexture.jpg](../../assets/selectedtexture.jpg)With the texture still selected, go back to the animation browser. On the right side of the window, there are a number of tabs - select the first one, `Mesh.' At the bottom of the window you'll see `Skin,' which will open up to a list of the different material IDs that are contained in your model. Click one of the ID numbers and then click the `Use' button that appears. You should see your model update with the previously selected texture from the material browser.![skinmaterial.jpg](../../assets/skinmaterial.jpg)It's possible that you may choose the wrong texture for the material ID you've got selected. In this case, simply go back to the texture browser, select the correct skin and reassign it.
+Upon importing your model, you may find that it doesn't have the right texture on it - it's got that grayish default texture on instead. Fixing this is pretty simple. First of all, go to the texture browser and open the appropriate .UTX file. Click on the desired texture (or if you have several materials, any of them will do) so that you see a border appear around it in the browser window.
+
+![selectedtexture.jpg](../../assets/selectedtexture.jpg)
+
+With the texture still selected, go back to the animation browser. On the right side of the window, there are a number of tabs - select the first one, `Mesh.' At the bottom of the window you'll see `Skin,' which will open up to a list of the different material IDs that are contained in your model. Click one of the ID numbers and then click the `Use' button that appears. You should see your model update with the previously selected texture from the material browser.
+
+![skinmaterial.jpg](../../assets/skinmaterial.jpg)
+
+It's possible that you may choose the wrong texture for the material ID you've got selected. In this case, simply go back to the texture browser, select the correct skin and reassign it.
 
 ### Minor Tweaks
 
@@ -94,7 +125,9 @@ If you have more than one person making models, or if you don't have a strict sc
 
 #### Changing Animation Names
 
-This one is nice and easy. One of the tabs on the right side is `Sequence.' Inside of this is a field, `SequenceProperties.' Change the value in `SequenceName' to rename an animation.![name.jpg](../../assets/name.jpg)
+This one is nice and easy. One of the tabs on the right side is `Sequence.' Inside of this is a field, `SequenceProperties.' Change the value in `SequenceName' to rename an animation.
+
+![name.jpg](../../assets/name.jpg)
 
 #### Changing Animation Rate
 
@@ -102,5 +135,5 @@ This is another simple one. In almost the exact same location as the SequenceNam
 
 ## Summation
 
-With the information outlined in this doc, you shouldn't have any problems making a .UKX file - that is, provided you already have a .PSK, .PSA, and .UTX. If you need information on how to create these files, see the [ModelingTableOfContents](ModelingTableOfContents.md), which will link to individual sections that explain how to create the files. In particular, see the [ActorXMaxTutorial](ActorXMaxTutorial.md) or the [ActorXMayaTutorial](ActorXMayaTutorial.md).
+With the information outlined in this doc, you shouldn't have any problems making a .UKX file - that is, provided you already have a .PSK, .PSA, and .UTX. If you need information on how to create these files, see the [ModelingTableOfContents](../../Uncategorized/ModelingTableOfContents.md), which will link to individual sections that explain how to create the files. In particular, see the [ActorXMaxTutorial](../../Uncategorized/ActorXMaxTutorial.md) or the [ActorXMayaTutorial](../../Uncategorized/ActorXMayaTutorial.md).
 

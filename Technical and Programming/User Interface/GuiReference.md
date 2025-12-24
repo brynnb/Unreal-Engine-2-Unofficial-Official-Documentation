@@ -59,7 +59,7 @@
 
 ## Introduction
 
-The GUI system is flexible toolkit for making menus. It provides tools for laying out buttons, labels, combo boxes, tabs, images, lists, and other basic UI elements in a resolution independent manner. All of the text is independent of the images so menus made with the GUI system can be easily localized. The GUI system also has the advantage of being laid out entirely in default properties so it is fairly easy to change and reorganize. Using GUI does not require the game to be paused so it can also be used for in-game menu overlays though it is not best suited for this. For the most part GUI is well documented so if you have questions about a particular variable or function, checking the source is a good thing to do. This document is designed to give a general overview of how to use GUI, not to go over the details of all variables and functions.The GUI system works by having a *GUIController* which distributes messages to *GUIComponents*. *GUIController* extends *BaseGUIController* which is an [Interaction](InteractionReference.md) which is how the controller gets all its input events and also how it can draw to the screen. At the same time, because the controller is based on an interaction, other interactions can disrupt the GUI system by stealing events. Beware particularly of the *DefaultPlayerMenu* interaction which is defined in <YourGame >.ini under the [Engine.Engine] heading.The type of *GUIController* you have is also defined in <YourGame>.ini. For the GUI system to work GUIController=GUI.GUIController must be set. If you want an initial menu to appear when you launch the game you can set the *InitialMenuClass* under the [Engine.GameEngine] heading in <YourGame>.ini. For example:
+The GUI system is flexible toolkit for making menus. It provides tools for laying out buttons, labels, combo boxes, tabs, images, lists, and other basic UI elements in a resolution independent manner. All of the text is independent of the images so menus made with the GUI system can be easily localized. The GUI system also has the advantage of being laid out entirely in default properties so it is fairly easy to change and reorganize. Using GUI does not require the game to be paused so it can also be used for in-game menu overlays though it is not best suited for this. For the most part GUI is well documented so if you have questions about a particular variable or function, checking the source is a good thing to do. This document is designed to give a general overview of how to use GUI, not to go over the details of all variables and functions.The GUI system works by having a *GUIController* which distributes messages to *GUIComponents*. *GUIController* extends *BaseGUIController* which is an [Interaction](../../Uncategorized/InteractionReference.md) which is how the controller gets all its input events and also how it can draw to the screen. At the same time, because the controller is based on an interaction, other interactions can disrupt the GUI system by stealing events. Beware particularly of the *DefaultPlayerMenu* interaction which is defined in <YourGame >.ini under the [Engine.Engine] heading.The type of *GUIController* you have is also defined in <YourGame>.ini. For the GUI system to work GUIController=GUI.GUIController must be set. If you want an initial menu to appear when you launch the game you can set the *InitialMenuClass* under the [Engine.GameEngine] heading in <YourGame>.ini. For example:
 
 ```
 
@@ -69,7 +69,7 @@ InitialMenuClass=GUI.MyMainMenu
 
 ## GUIController
 
-As mentioned above, *GUIController* is an [Interaction](InteractionReference.md). It implements all the *Interaction* functions natively and uses these functions to send its own set of events to the current menu. The *GUIController* is a simple FILO menu stack. You have 3 things you can do. You can open a menu which adds the menu to the top of the stack. You can replace a menu which replaces the current menu with the new menu. And you can close a menu, which returns you to the last menu on the stack. *GUIController* also provides some useful functions and variables for menu layout and design.
+As mentioned above, *GUIController* is an [Interaction](../../Uncategorized/InteractionReference.md). It implements all the *Interaction* functions natively and uses these functions to send its own set of events to the current menu. The *GUIController* is a simple FILO menu stack. You have 3 things you can do. You can open a menu which adds the menu to the top of the stack. You can replace a menu which replaces the current menu with the new menu. And you can close a menu, which returns you to the last menu on the stack. *GUIController* also provides some useful functions and variables for menu layout and design.
 
 ### OpenMenu
 
@@ -153,12 +153,12 @@ Almost everything in GUI, from [GUIPages](#guipage) to [GUIButtons](#guibutton),
 
 ### OnOpen
 
-`delegate OnOpen()`This [delegate](UnrealScriptDelegates.md) is called from [Opened](#opened). This delegate is called by the [GUIController](#guicontroller).
+`delegate OnOpen()`This [delegate](../../Uncategorized/UnrealScriptDelegates.md) is called from [Opened](#opened). This delegate is called by the [GUIController](#guicontroller).
 Pre-v3223 tis delegated is called by the *Opened* event and the default delegate calls [PageLoadINI](#pageloadini).
 
 ### OnClose
 
-`delegate OnClose(optional Bool bCancelled)`This [delegate](UnrealScriptDelegates.md) is called from [Closed](#closed). Pre-v3323 the default calls [PageSaveINI](#pagesaveini) if bCancelled is false.
+`delegate OnClose(optional Bool bCancelled)`This [delegate](../../Uncategorized/UnrealScriptDelegates.md) is called from [Closed](#closed). Pre-v3323 the default calls [PageSaveINI](#pagesaveini) if bCancelled is false.
 
 ### OnCanClose
 
@@ -199,7 +199,10 @@ Pre-v3323 *Opened* calls [OnOpen](#onopen).
 
 ## GUIStyles
 
-*GUIStyles* is a class that provides support for making different drawing styles for *GUIComponents*. When the *GUIComponent* is drawn, the *Style* variable which is a *GUIStyles*, is used to draw the component. The style determines the image to draw, the color of the image, how to draw that image, the text to draw, the color of the text, and the font of the test. The style determines each of these things for all five states of the component (Blurry, Watched, Focused, Pressed, and Disabled). This gives a great deal of flexibility for creating whatever sort of look and feel you might want.Below is an example of the same button drawn with two different styles:![GUIButton.jpg](../../assets/GUIButton.jpg)
+*GUIStyles* is a class that provides support for making different drawing styles for *GUIComponents*. When the *GUIComponent* is drawn, the *Style* variable which is a *GUIStyles*, is used to draw the component. The style determines the image to draw, the color of the image, how to draw that image, the text to draw, the color of the text, and the font of the test. The style determines each of these things for all five states of the component (Blurry, Watched, Focused, Pressed, and Disabled). This gives a great deal of flexibility for creating whatever sort of look and feel you might want.Below is an example of the same button drawn with two different styles:
+
+![GUIButton.jpg](../../assets/GUIButton.jpg)
+
 ![GUIButtonStyle2.jpg](../../assets/GUIButtonStyle2.jpg)
 
 ### States
@@ -274,7 +277,9 @@ These are basic controls built on [GUIComponent](#guicomponent).
 
 #### GUIButton
 
-![GUIButton](../../assets/GUIButton.png)To use buttons you must use the *OnClick* [delegate](UnrealScriptDelegates.md) of *GUIComponent*. This Delegate is defined as follows:
+![GUIButton](../../assets/GUIButton.png)
+
+To use buttons you must use the *OnClick* [delegate](../../Uncategorized/UnrealScriptDelegates.md) of *GUIComponent*. This Delegate is defined as follows:
 
 ```
 
@@ -326,11 +331,15 @@ defaultproperties
 
 #### GUIListBox
 
-![GUIListBox.jpg](../../assets/GUIListBox.jpg)This box will simply display a *GUIList*. The delegates of *GUIListBox* pass on the *OnClick* and *OnChange* events to the *GUIList* itself.
+![GUIListBox.jpg](../../assets/GUIListBox.jpg)
+
+This box will simply display a *GUIList*. The delegates of *GUIListBox* pass on the *OnClick* and *OnChange* events to the *GUIList* itself.
 
 #### GUISlider
 
-![GUISlider.jpg](../../assets/GUISlider.jpg)A *GUISlider* is a slider between *float MinValue* and *float MaxValue* which are specified in defaultproperties. If *bIntSlider* is true, the slider will have only Int values. You can get the value of the slider by querying *float Value*; there is not getter function. Two useful functions are:
+![GUISlider.jpg](../../assets/GUISlider.jpg)
+
+A *GUISlider* is a slider between *float MinValue* and *float MaxValue* which are specified in defaultproperties. If *bIntSlider* is true, the slider will have only Int values. You can get the value of the slider by querying *float Value*; there is not getter function. Two useful functions are:
 
 ```
 
@@ -346,11 +355,15 @@ function Adjust(float amount)
 
 #### GUICheckBoxButton / moCheckBox
 
-![moCheckBox.jpg](../../assets/moCheckBox.jpg)These classes are very simple. Unfortunately, they don't have the same API. *GUICheckBoxButton* has the function *SetChecked(bool bNewChecked)* to set the checkedness of the box and to examine the checkedness you just look at *bCheckBox*. *moCheckBox* has the function *Checked(bool C)* to set the checkedness and the function *bool IsChecked()* to examine the checkedness.
+![moCheckBox.jpg](../../assets/moCheckBox.jpg)
+
+These classes are very simple. Unfortunately, they don't have the same API. *GUICheckBoxButton* has the function *SetChecked(bool bNewChecked)* to set the checkedness of the box and to examine the checkedness you just look at *bCheckBox*. *moCheckBox* has the function *Checked(bool C)* to set the checkedness and the function *bool IsChecked()* to examine the checkedness.
 
 #### GUIComboBox / moComboBox
 
-![GUIComboBox.jpg](../../assets/GUIComboBox.jpg)There are two types of combo boxes, *GUIComboBox* and *moComboBox*. Both behave in very similar ways. The main function of interest in both of these classes are *SetText* , *GetText*, and *Find*.
+![GUIComboBox.jpg](../../assets/GUIComboBox.jpg)
+
+There are two types of combo boxes, *GUIComboBox* and *moComboBox*. Both behave in very similar ways. The main function of interest in both of these classes are *SetText* , *GetText*, and *Find*.
 
 ```
 
@@ -363,15 +376,21 @@ function string Find(string Test, bool bExact)
 
 #### GUIEditBox / moEditBox
 
-![moEditBox.jpg](../../assets/moEditBox.jpg)These are boxes that display text and that you can type in if *bReadOnly* is false. They can be configured to only display numbers but maybe you would want to use a [GUIFloatEdit](#guifloatedit-mofloatedit) or a [GUINumericEdit](#guinumericedit-monumericedit) instead for that. *GUIEditBox* and *moEditBox* both have the *SetText(string NewText)* function. *GUIEditBox* can inspect the value of *TextStr* to get the current value of the edit while *moEditBox* has the *string GetText()* function.
+![moEditBox.jpg](../../assets/moEditBox.jpg)
+
+These are boxes that display text and that you can type in if *bReadOnly* is false. They can be configured to only display numbers but maybe you would want to use a [GUIFloatEdit](#guifloatedit-mofloatedit) or a [GUINumericEdit](#guinumericedit-monumericedit) instead for that. *GUIEditBox* and *moEditBox* both have the *SetText(string NewText)* function. *GUIEditBox* can inspect the value of *TextStr* to get the current value of the edit while *moEditBox* has the *string GetText()* function.
 
 #### GUIFloatEdit / moFloatEdit
 
-![moFloatEdit.jpg](../../assets/moFloatEdit.jpg)This is an edit for entering floats. The floats can be either left or right justified based on *bLeftJustified* in *GUIFloatEdit*. Based on the general pattern we are seeing here both of these classes have setter functions, *SetValue(float V)*, but only *moFloatEdit* has a getter, *float GetValue()*. *GUIFloatEdit \_ must inspect \_string Value* and cast it to a float.
+![moFloatEdit.jpg](../../assets/moFloatEdit.jpg)
+
+This is an edit for entering floats. The floats can be either left or right justified based on *bLeftJustified* in *GUIFloatEdit*. Based on the general pattern we are seeing here both of these classes have setter functions, *SetValue(float V)*, but only *moFloatEdit* has a getter, *float GetValue()*. *GUIFloatEdit \_ must inspect \_string Value* and cast it to a float.
 
 #### GUINumericEdit / moNumericEdit
 
-![moNumericEdit.jpg](../../assets/moNumericEdit.jpg)These classes are almost exactly like [FloatEdits](#guifloatedit-mofloatedit) but with Ints.
+![moNumericEdit.jpg](../../assets/moNumericEdit.jpg)
+
+These classes are almost exactly like [FloatEdits](#guifloatedit-mofloatedit) but with Ints.
 
 ## Laying out Components
 
@@ -432,7 +451,9 @@ CancelMapButton.Caption="L�schen"
 
 ## Tabs
 
-![GUITabs.jpg](../../assets/GUITabs.jpg)The *GUITabControl* and *GUITitleBar* classes can be used to make tabs in the UI. Strictly speaking *GUITitleBar* does not need to be used to make the tabs but it has support for linking the title bar to the tabs so the tabs are not just floating in space.*GUITabControl* has a function:
+![GUITabs.jpg](../../assets/GUITabs.jpg)
+
+The *GUITabControl* and *GUITitleBar* classes can be used to make tabs in the UI. Strictly speaking *GUITitleBar* does not need to be used to make the tabs but it has support for linking the title bar to the tabs so the tabs are not just floating in space.*GUITabControl* has a function:
 
 ```
 
