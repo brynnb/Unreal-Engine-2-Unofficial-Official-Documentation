@@ -217,7 +217,7 @@ function SetMovementPhysics()
 
 ### Unreal Runtime
 
-If you are using the Runtime, simply download the [ExamplePawns.zip](rsrc/Two/MyFirstPawn/ExamplePawns.zip), unzip it and run *ExamplePawns.urm*. If you can not simply run *ExamplePawns.urm* this probably means you unchecked the "Runtime modification association" box when installing the Runtime. In that case you will have to follow the steps below:
+If you are using the Runtime, simply download the [ExamplePawns.zip](../assets/ExamplePawns.zip), unzip it and run *ExamplePawns.urm*. If you can not simply run *ExamplePawns.urm* this probably means you unchecked the "Runtime modification association" box when installing the Runtime. In that case you will have to follow the steps below:
 
 1. Open ExamplePawns.zip and extract *ExamplePawns.urm* to the `"System"` directory of the Runtime.
 2. Open a command prompt in the `"System"` directory of the Runtime.
@@ -242,7 +242,7 @@ You can also run the game from the command prompt with either of the following l
 
 ### Code Drop, UDNBuild, UDNBuildOff
 
-If you are using the UDNBuild or UDNBuildOff, download [MyFirstPawn\_UDNBuild.zip](rsrc/Two/MyFirstPawn/MyFirstPawn_UDNBuild.zip) and unzip it in your build of the engine.If you are using the 2226 code drop, download [MyFirstPawn\_CodeDrop.zip](rsrc/Two/MyFirstPawn/MyFirstPawn_CodeDrop.zip) and unzip it in your build of the engine. For 3323 and up use download [MyFirstExample\_CodeDrop3323.zip](rsrc/Two/MyFirstCode/MyFirstExample_CodeDrop3323.zip)At this point you can play with the new pawn by altering your *User.ini* to specify the type of pawn. In the `[DefaultPlayer]` section of *User.ini* set *Class* as follows:
+If you are using the UDNBuild or UDNBuildOff, download [MyFirstPawn\_UDNBuild.zip](../assets/MyFirstPawn_UDNBuild.zip) and unzip it in your build of the engine.If you are using the 2226 code drop, download [MyFirstPawn\_CodeDrop.zip](../assets/MyFirstPawn_CodeDrop.zip) and unzip it in your build of the engine. For 3323 and up use download [MyFirstExample\_CodeDrop3323.zip](../assets/MyFirstExample_CodeDrop3323.zip)At this point you can play with the new pawn by altering your *User.ini* to specify the type of pawn. In the `[DefaultPlayer]` section of *User.ini* set *Class* as follows:
 
 ```
 

@@ -71,7 +71,7 @@ This map demonstrates how sounds can be used in a variety of ways including with
 
 Click the links to download compressed archives of the example maps discussed in this document:
 
-* [EPIC\_DemoMapFiles.zip](rsrc/Two/ExampleMapsEPIC/EPIC_DemoMapFiles.zip) - example maps.
-* [EPIC\_CINDollyExampleMap\_RT.zip](rsrc/Two/ExampleMapsEPIC/EPIC_CINDollyExampleMap_RT.zip) - runtime version of the CIN\_DollyExampleMap.
+* [EPIC\_DemoMapFiles.zip](../assets/EPIC_DemoMapFiles.zip) - example maps.
+* [EPIC\_CINDollyExampleMap\_RT.zip](../assets/EPIC_CINDollyExampleMap_RT.zip) - runtime version of the CIN\_DollyExampleMap.
 
 The various packages have been divvied up into appropriate subfolders. There are a lot of them, so you might want to back up your original folders to make it easier to remove just the example map Textures and StaticMeshes. You may also get some warnings about missing textures when you open the maps, but as of this writing, the maps still work fine.

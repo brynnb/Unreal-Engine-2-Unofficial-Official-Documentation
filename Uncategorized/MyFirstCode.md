@@ -48,7 +48,7 @@ There are two installs for the MyFirstCode example. The pawns in [MyFirstPawn](M
 
 ### Unreal Runtime
 
-If you are using the Runtime, simply download the [MyFirstExample.zip](rsrc/Two/MyFirstCode/MyFirstExample.zip), unzip it and run *MyFirstExample.urm*. If you can not simply run *MyFirstExample.urm* this probably means you unchecked the "Runtime modification association" box when installing the Runtime. In that case you will have to follow the steps below:
+If you are using the Runtime, simply download the [MyFirstExample.zip](../assets/MyFirstExample.zip), unzip it and run *MyFirstExample.urm*. If you can not simply run *MyFirstExample.urm* this probably means you unchecked the "Runtime modification association" box when installing the Runtime. In that case you will have to follow the steps below:
 
 1. Open MyFirstExample.zip and extract *MyFirstExample.urm* to the `"System"` directory of the Runtime.
 2. Open a command prompt in the `"System"` directory of the Runtime.
@@ -75,7 +75,7 @@ You don't need to change *DefaultServerGame* if you are only using single player
 
 ### Code Drop, UDNBuild, UDNBuildOff
 
-If you are using the UDNBuild or UDNBuildOff, download [MyFirstExample\_UDNBuild.zip](rsrc/Two/MyFirstCode/MyFirstExample_UDNBuild.zip) and unzip it in your build of the engine.If you are using the 2226 code drop, download [MyFirstExample\_CodeDrop.zip](rsrc/Two/MyFirstCode/MyFirstExample_CodeDrop.zip) and unzip it in your build of the engine, or the [MyFirstExample\_CodeDrop3323.zip](rsrc/Two/MyFirstCode/MyFirstExample_CodeDrop3323.zip) for newer builds.Once the example is unzipped you must edit INI files to use the example. First edit *User.ini* to specify the type of pawn to use. In the `[DefaultPlayer]` section of *User.ini* set *Class* as follows:
+If you are using the UDNBuild or UDNBuildOff, download [MyFirstExample\_UDNBuild.zip](../assets/MyFirstExample_UDNBuild.zip) and unzip it in your build of the engine.If you are using the 2226 code drop, download [MyFirstExample\_CodeDrop.zip](../assets/MyFirstExample_CodeDrop.zip) and unzip it in your build of the engine, or the [MyFirstExample\_CodeDrop3323.zip](../assets/MyFirstExample_CodeDrop3323.zip) for newer builds.Once the example is unzipped you must edit INI files to use the example. First edit *User.ini* to specify the type of pawn to use. In the `[DefaultPlayer]` section of *User.ini* set *Class* as follows:
 
 ```
 

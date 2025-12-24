@@ -159,7 +159,7 @@ The scaling code works in net play as well as single player. For more details on
 
 ### Runtime Install
 
-If you are using the Runtime, you can simply download [ScalePawns.zip](rsrc/Two/PawnTricksAndTips/ScalePawns.zip) and install the contained UMOD. If you have trouble installing the UMOD see the [MyFirstCode](MyFirstCode.md) document. Once the UMOD is installed you can then start the Runtime, bring up the console by pressing `"~"`, and type:`Open EM_Runtime?Class=ScalePawns.ScaleBoy`
+If you are using the Runtime, you can simply download [ScalePawns.zip](../assets/ScalePawns.zip) and install the contained UMOD. If you have trouble installing the UMOD see the [MyFirstCode](MyFirstCode.md) document. Once the UMOD is installed you can then start the Runtime, bring up the console by pressing `"~"`, and type:`Open EM_Runtime?Class=ScalePawns.ScaleBoy`
   
 - or -  
 `Open EM_Runtime?Class=ScalePawns.ScaleGirl`This will put you in a map with the new scalable pawns.

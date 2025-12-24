@@ -89,4 +89,4 @@ For more information on WarpZones, see the [MirrorsAndWarpZones](MirrorsAndWarpZ
 
 Below you can download a compressed archive that contains the content for this example:
 
-* [EM\_WarpZones.zip](rsrc/Two/ExampleMapsWarpZones/EM_WarpZones.zip) (for Unreal Engine 2 build 2226)
+* [EM\_WarpZones.zip](../assets/EM_WarpZones.zip) (for Unreal Engine 2 build 2226)

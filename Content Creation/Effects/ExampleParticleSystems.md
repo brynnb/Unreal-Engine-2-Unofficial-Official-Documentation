@@ -342,5 +342,5 @@ This system is composed of 18 relatively large alpha blended particles that have
 
 Below you can download a compressed archive that contains the content for this example:
 
-* [EM\_ParticleSystems.zip](rsrc/Two/ExampleParticleSystems/EM_ParticleSystems.zip) (for Unreal Engine 2 build 2226)
+* [EM\_ParticleSystems.zip](../../assets/EM_ParticleSystems.zip) (for Unreal Engine 2 build 2226)
 

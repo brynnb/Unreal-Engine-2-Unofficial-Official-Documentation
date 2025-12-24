@@ -120,4 +120,4 @@ Blank Actions or improperly set actions will cause a script to break. Delete emp
 
 ## Downloads
 
-In the [EM\_ScriptedSequencesRT.zip](rsrc/Two/ExampleMapsScriptedSequencesRT/EM_ScriptedSequencesRT.zip) file is the map file for this example. Be sure that you have downloaded and installed the *ExamplePawns.zip* from the [MyFirstPawn](MyFirstPawn.md) page.
+In the [EM\_ScriptedSequencesRT.zip](../assets/EM_ScriptedSequencesRT.zip) file is the map file for this example. Be sure that you have downloaded and installed the *ExamplePawns.zip* from the [MyFirstPawn](MyFirstPawn.md) page.

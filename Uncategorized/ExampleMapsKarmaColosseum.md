@@ -256,4 +256,4 @@ This will allow Karma Actors to react to this Mover, but only activated Karma Ac
 
 Below you can download a compressed archive that contains the content for this example:
 
-* [EM\_KarmaColosseum.zip](rsrc/Two/ExampleMapsKarmaColosseum/EM_KarmaColosseum.zip) (for Unreal Engine 2 build 2226)
+* [EM\_KarmaColosseum.zip](../assets/EM_KarmaColosseum.zip) (for Unreal Engine 2 build 2226)

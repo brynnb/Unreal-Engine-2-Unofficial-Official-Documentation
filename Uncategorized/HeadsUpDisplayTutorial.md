@@ -199,4 +199,4 @@ The Scoreboard is instantiated by the HUD and is simply used to show the current
 
 This tutorial covered all the basics with the HUD and Canvas classes. When you get ready to build your HUD, of course keep in mind that gamers are likely to use any resolution ranging from 640x400 to 1600x1200, etc. Therefore, you should stay away from using absolute sizes. Try to always scale all of your textures to receive the best results across the board.We also covered network issues such as iterating through all the controllers on the level using *AllActor(...)* searches and displaying bad connection symbols.Lastly, always remember to reset the HUD in order to keep consistent results.
 
-* [TestHUD.zip](rsrc/Two/HeadsUpDisplayTutorial/TestHUD.zip): Includes the example HUD code and test texture
+* [TestHUD.zip](../assets/TestHUD.zip): Includes the example HUD code and test texture

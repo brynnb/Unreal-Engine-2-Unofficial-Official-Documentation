@@ -57,5 +57,5 @@ This is an example using the techniques above only using the new fluid surface i
 
 Below you can download a compressed archive that contains the content for this example:
 
-* [927-risingwater.zip](rsrc/Two/ExampleMapsRisingWater/927-risingwater.zip) (for Unreal Engine 2 build 927)
-* [2136-risingwater.zip](rsrc/Two/ExampleMapsRisingWater/2136-risingwater.zip) (for Unreal Engine 2 build 2136)
+* [927-risingwater.zip](../assets/927-risingwater.zip) (for Unreal Engine 2 build 927)
+* [2136-risingwater.zip](../assets/2136-risingwater.zip) (for Unreal Engine 2 build 2136)

@@ -239,7 +239,7 @@ Note that the corners are unaffected while the central areas are. This means tha
 
 ## Installing the Example
 
-Download the [attached zip file](rsrc/Two/GUIStylesExample/ExampleGUIStyles.zip) and unzip it in your Runtime directory. Next you will need to alter your INI file settings to use the new menus and console. In *UE2Runtime.ini*, (or *<your\_game>.ini*) in the `[Engine.Engine]` section, change the console and the GUIController as follows (note: you can comment out lines by starting them with a ';'):
+Download the [attached zip file](../../assets/ExampleGUIStyles.zip) and unzip it in your Runtime directory. Next you will need to alter your INI file settings to use the new menus and console. In *UE2Runtime.ini*, (or *<your\_game>.ini*) in the `[Engine.Engine]` section, change the console and the GUIController as follows (note: you can comment out lines by starting them with a ';'):
 
 ```
 

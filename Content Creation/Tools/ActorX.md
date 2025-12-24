@@ -24,30 +24,30 @@ The ActorX plugins are used to export skeletal meshes and their animations to bi
 
 | [Version](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=0;table=1;up=0#sorted_table "Sort by this column") | [Download](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=1;table=1;up=0#sorted_table "Sort by this column") |
 | --- | --- |
-| 3ds Max 2011 (32-bit) | [ActorX\_249\_Max2011\_32bit.zip](rsrc/Two/ActorX/ActorX_249_Max2011_32bit.zip) |
-| 3ds Max 2011 (64-bit) | [ActorX\_249\_Max2011\_64bit.zip](rsrc/Two/ActorX/ActorX_249_Max2011_64bit.zip) |
-| 3ds Max 2010 (32-bit) | [ActorX\_249\_Max2010\_32bit.zip](rsrc/Two/ActorX/ActorX_249_Max2010_32bit.zip) |
-| 3ds Max 2010 (64-bit) | [ActorX\_249\_Max2010\_64bit.zip](rsrc/Two/ActorX/ActorX_249_Max2010_64bit.zip) |
-| 3ds Max 2009 (32-bit) | [ActorX\_249\_Max2009\_32bit.zip](rsrc/Two/ActorX/ActorX_249_Max2009_32bit.zip) |
-| 3ds Max 2009 (64-bit) | [ActorX\_249\_Max2009\_64bit.zip](rsrc/Two/ActorX/ActorX_249_Max2009_64bit.zip) |
-| 3ds Max 2008 (32-bit) | [ActorX\_249\_Max2008\_32bit.zip](rsrc/Two/ActorX/ActorX_249_Max2008_32bit.zip) |
-| 3ds Max 2008 (64-bit) | [ActorX\_249\_Max2008\_64bit.zip](rsrc/Two/ActorX/ActorX_249_Max2008_64bit.zip) |
-| 3ds Max 9 (32-bit) | [ActorX\_249\_Max90\_32bit.zip](rsrc/Two/ActorX/ActorX_249_Max90_32bit.zip) |
-| 3ds Max 9 (64-bit) | [ActorX\_249\_Max90\_64bit.zip](rsrc/Two/ActorX/ActorX_249_Max90_64bit.zip) |
+| 3ds Max 2011 (32-bit) | [ActorX\_249\_Max2011\_32bit.zip](../../assets/ActorX_249_Max2011_32bit.zip) |
+| 3ds Max 2011 (64-bit) | [ActorX\_249\_Max2011\_64bit.zip](../../assets/ActorX_249_Max2011_64bit.zip) |
+| 3ds Max 2010 (32-bit) | [ActorX\_249\_Max2010\_32bit.zip](../../assets/ActorX_249_Max2010_32bit.zip) |
+| 3ds Max 2010 (64-bit) | [ActorX\_249\_Max2010\_64bit.zip](../../assets/ActorX_249_Max2010_64bit.zip) |
+| 3ds Max 2009 (32-bit) | [ActorX\_249\_Max2009\_32bit.zip](../../assets/ActorX_249_Max2009_32bit.zip) |
+| 3ds Max 2009 (64-bit) | [ActorX\_249\_Max2009\_64bit.zip](../../assets/ActorX_249_Max2009_64bit.zip) |
+| 3ds Max 2008 (32-bit) | [ActorX\_249\_Max2008\_32bit.zip](../../assets/ActorX_249_Max2008_32bit.zip) |
+| 3ds Max 2008 (64-bit) | [ActorX\_249\_Max2008\_64bit.zip](../../assets/ActorX_249_Max2008_64bit.zip) |
+| 3ds Max 9 (32-bit) | [ActorX\_249\_Max90\_32bit.zip](../../assets/ActorX_249_Max90_32bit.zip) |
+| 3ds Max 9 (64-bit) | [ActorX\_249\_Max90\_64bit.zip](../../assets/ActorX_249_Max90_64bit.zip) |
 
 Older Versions (not actively maintained.)
 
 | [Version](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=0;table=2;up=0#sorted_table "Sort by this column") | [Download](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=1;table=2;up=0#sorted_table "Sort by this column") |
 | --- | --- |
-| 3ds Max 8 | [ActorX\_220\_Max8.zip](rsrc/Two/ActorX/ActorX_220_Max8.zip) |
-| 3ds Max 7 | [ActorX\_220\_Max7.zip](rsrc/Two/ActorX/ActorX_220_Max7.zip) |
-| 3ds Max 6, CStudio 4.2 | [ActorX\_220\_Max6.zip](rsrc/Two/ActorX/ActorX_220_Max6.zip) |
-| 3ds Max 5.0,5.1, CStudio 3.4 & 4.0 | [ActorX\_220\_Max5.zip](rsrc/Two/ActorX/ActorX_220_Max5.zip) |
-| 3ds Max 4.2, CStudio 3.2 | [ActorX\_220\_Max42.zip](rsrc/Two/ActorX/ActorX_220_Max42.zip) |
-| 3ds Max 4, CStudio 3.x | [ActorX\_220\_Max40.zip](rsrc/Two/ActorX/ActorX_220_Max40.zip) |
-| 3ds Max 3.1, CStudio 2.2 | [Actorx31CS22.zip](rsrc/Two/ActorX/Actorx31CS22.zip) |
-| 3ds Max 3.1, CStudio 3.0 ( update 1.99h ) | [ActorX31CS30h.zip](rsrc/Two/ActorX/ActorX31CS30h.zip) |
-| 3ds Max 3.1, CStudio 3.0 | [Actorx31CS30.zip](rsrc/Two/ActorX/Actorx31CS30.zip) |
+| 3ds Max 8 | [ActorX\_220\_Max8.zip](../../assets/ActorX_220_Max8.zip) |
+| 3ds Max 7 | [ActorX\_220\_Max7.zip](../../assets/ActorX_220_Max7.zip) |
+| 3ds Max 6, CStudio 4.2 | [ActorX\_220\_Max6.zip](../../assets/ActorX_220_Max6.zip) |
+| 3ds Max 5.0,5.1, CStudio 3.4 & 4.0 | [ActorX\_220\_Max5.zip](../../assets/ActorX_220_Max5.zip) |
+| 3ds Max 4.2, CStudio 3.2 | [ActorX\_220\_Max42.zip](../../assets/ActorX_220_Max42.zip) |
+| 3ds Max 4, CStudio 3.x | [ActorX\_220\_Max40.zip](../../assets/ActorX_220_Max40.zip) |
+| 3ds Max 3.1, CStudio 2.2 | [Actorx31CS22.zip](../../assets/Actorx31CS22.zip) |
+| 3ds Max 3.1, CStudio 3.0 ( update 1.99h ) | [ActorX31CS30h.zip](../../assets/ActorX31CS30h.zip) |
+| 3ds Max 3.1, CStudio 3.0 | [Actorx31CS30.zip](../../assets/Actorx31CS30.zip) |
 
 Version notes:
 
@@ -69,28 +69,28 @@ Version notes:
 
 | [Version](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=0;table=3;up=0#sorted_table "Sort by this column") | [Download](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=1;table=3;up=0#sorted_table "Sort by this column") |
 | --- | --- |
-| Maya 2011 (32-bit) | [ActorX\_249\_Maya2011\_32bit.zip](rsrc/Two/ActorX/ActorX_249_Maya2011_32bit.zip) |
-| Maya 2011 (64-bit) | [ActorX\_249\_Maya2011\_64bit.zip](rsrc/Two/ActorX/ActorX_249_Maya2011_64bit.zip) |
-| Maya 2010 (32-bit) | [ActorX\_249\_Maya2010\_32bit.zip](rsrc/Two/ActorX/ActorX_249_Maya2010_32bit.zip) |
-| Maya 2010 (64-bit) | [ActorX\_249\_Maya2010\_64bit.zip](rsrc/Two/ActorX/ActorX_249_Maya2010_64bit.zip) |
-| Maya 2009 (32-bit) | [ActorX\_249\_Maya2009\_32bit.zip](rsrc/Two/ActorX/ActorX_249_Maya2009_32bit.zip) |
-| Maya 2009 (64-bit) | [ActorX\_249\_Maya2009\_64bit.zip](rsrc/Two/ActorX/ActorX_249_Maya2009_64bit.zip) |
-| Maya 2008 (32-bit) | [ActorX\_249\_Maya2008\_32bit.zip](rsrc/Two/ActorX/ActorX_249_Maya2008_32bit.zip) |
-| Maya 2008 (64-bit) | [ActorX\_249\_Maya2008\_64bit.zip](rsrc/Two/ActorX/ActorX_249_Maya2008_64bit.zip) |
-| Maya 8.5 (32-bit) | [ActorX\_249\_Maya85\_32bit.zip](rsrc/Two/ActorX/ActorX_249_Maya85_32bit.zip) |
-| Maya 8.5 (64-bit) | [ActorX\_249\_Maya85\_64bit.zip](rsrc/Two/ActorX/ActorX_249_Maya85_64bit.zip) |
+| Maya 2011 (32-bit) | [ActorX\_249\_Maya2011\_32bit.zip](../../assets/ActorX_249_Maya2011_32bit.zip) |
+| Maya 2011 (64-bit) | [ActorX\_249\_Maya2011\_64bit.zip](../../assets/ActorX_249_Maya2011_64bit.zip) |
+| Maya 2010 (32-bit) | [ActorX\_249\_Maya2010\_32bit.zip](../../assets/ActorX_249_Maya2010_32bit.zip) |
+| Maya 2010 (64-bit) | [ActorX\_249\_Maya2010\_64bit.zip](../../assets/ActorX_249_Maya2010_64bit.zip) |
+| Maya 2009 (32-bit) | [ActorX\_249\_Maya2009\_32bit.zip](../../assets/ActorX_249_Maya2009_32bit.zip) |
+| Maya 2009 (64-bit) | [ActorX\_249\_Maya2009\_64bit.zip](../../assets/ActorX_249_Maya2009_64bit.zip) |
+| Maya 2008 (32-bit) | [ActorX\_249\_Maya2008\_32bit.zip](../../assets/ActorX_249_Maya2008_32bit.zip) |
+| Maya 2008 (64-bit) | [ActorX\_249\_Maya2008\_64bit.zip](../../assets/ActorX_249_Maya2008_64bit.zip) |
+| Maya 8.5 (32-bit) | [ActorX\_249\_Maya85\_32bit.zip](../../assets/ActorX_249_Maya85_32bit.zip) |
+| Maya 8.5 (64-bit) | [ActorX\_249\_Maya85\_64bit.zip](../../assets/ActorX_249_Maya85_64bit.zip) |
 
 Older Versions (not actively maintained.)
 
 | [Version](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=0;table=4;up=0#sorted_table "Sort by this column") | [Download](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=1;table=4;up=0#sorted_table "Sort by this column") |
 | --- | --- |
-| Maya 8 | [ActorXTool\_Maya80\_244.zip](rsrc/Two/ActorX/ActorXTool_Maya80_244.zip) |
-| Maya 7 | [ActorXTool\_Maya70\_244.zip](rsrc/Two/ActorX/ActorXTool_Maya70_244.zip) |
-| Maya 6.5 | [ActorXTool\_Maya65\_244.zip](rsrc/Two/ActorX/ActorXTool_Maya65_244.zip) |
-| Maya 6 | [ActorXTool\_Maya60\_244.zip](rsrc/Two/ActorX/ActorXTool_Maya60_244.zip) |
-| Maya 5.0/5.0.1 | [ActorXTool\_Maya50\_244.zip](rsrc/Two/ActorX/ActorXTool_Maya50_244.zip) |
-| Maya 4.5 | [ActorXTool\_Maya45\_244.zip](rsrc/Two/ActorX/ActorXTool_Maya45_244.zip) |
-| Maya 4 | [ActorXTool\_Maya40\_244.zip](rsrc/Two/ActorX/ActorXTool_Maya40_244.zip) |
+| Maya 8 | [ActorXTool\_Maya80\_244.zip](../../assets/ActorXTool_Maya80_244.zip) |
+| Maya 7 | [ActorXTool\_Maya70\_244.zip](../../assets/ActorXTool_Maya70_244.zip) |
+| Maya 6.5 | [ActorXTool\_Maya65\_244.zip](../../assets/ActorXTool_Maya65_244.zip) |
+| Maya 6 | [ActorXTool\_Maya60\_244.zip](../../assets/ActorXTool_Maya60_244.zip) |
+| Maya 5.0/5.0.1 | [ActorXTool\_Maya50\_244.zip](../../assets/ActorXTool_Maya50_244.zip) |
+| Maya 4.5 | [ActorXTool\_Maya45\_244.zip](../../assets/ActorXTool_Maya45_244.zip) |
+| Maya 4 | [ActorXTool\_Maya40\_244.zip](../../assets/ActorXTool_Maya40_244.zip) |
 | Maya 3 (legacy) | [ActorxTool3.mll](rsrc/Two/ActorX/ActorxTool3.mll) |
 
 Version notes:
@@ -122,12 +122,12 @@ NOTE: support for the XSI exporter plugins is provided by XSI themselves.You can
 
 | [Version](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=0;table=5;up=0#sorted_table "Sort by this column") | [Download](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=1;table=5;up=0#sorted_table "Sort by this column") |
 | --- | --- |
-| XSI 6.5 (32 bit) **beta** 2.01 | [ActorX\_XSI65\_beta2\_32bit.zip](rsrc/Two/ActorX/ActorX_XSI65_beta2_32bit.zip) |
-| XSI 6.5 (64 bit) **beta** 2.01 | [ActorX\_XSI65\_beta2\_64bit.zip](rsrc/Two/ActorX/ActorX_XSI65_beta2_64bit.zip) |
-| XSI 5.0-5.1 | [ActorX.05012006.zip](rsrc/Two/ActorX/ActorX.05012006.zip) |
-| XSI 5.0 | [ActorX.01202006.zip](rsrc/Two/ActorX/ActorX.01202006.zip) |
-| XSI 4.0 and 4.2 | [ActorX\_XSI40\_101.zip](rsrc/Two/ActorX/ActorX_XSI40_101.zip) |
-| XSI 4.0 and 4.2 | [ActorX\_XSI40\_100e.zip](rsrc/Two/ActorX/ActorX_XSI40_100e.zip) |
+| XSI 6.5 (32 bit) **beta** 2.01 | [ActorX\_XSI65\_beta2\_32bit.zip](../../assets/ActorX_XSI65_beta2_32bit.zip) |
+| XSI 6.5 (64 bit) **beta** 2.01 | [ActorX\_XSI65\_beta2\_64bit.zip](../../assets/ActorX_XSI65_beta2_64bit.zip) |
+| XSI 5.0-5.1 | [ActorX.05012006.zip](../../assets/ActorX.05012006.zip) |
+| XSI 5.0 | [ActorX.01202006.zip](../../assets/ActorX.01202006.zip) |
+| XSI 4.0 and 4.2 | [ActorX\_XSI40\_101.zip](../../assets/ActorX_XSI40_101.zip) |
+| XSI 4.0 and 4.2 | [ActorX\_XSI40\_100e.zip](../../assets/ActorX_XSI40_100e.zip) |
 
 Version notes for XSI 6.5 plugins:
 

@@ -129,8 +129,8 @@ If you want to use the UDN rigging with a new model, so you can take advantage o
 
 There are a lot of zips at the end of this document. Included are all the source files used to create the UDN models, as well as .PSK and .PSA files that you can use to import them directly into UnrealEd?. Here is the content breakdown:
 
-* [UDNMale.zip](rsrc/Two/UnrealDemoModels/UDNMale.zip): Contains the rigged .max model, the .PSA and .PSK, and the three textures you'll need to view it in 3DS Max.
-* [UDNFemale.zip](rsrc/Two/UnrealDemoModels/UDNFemale.zip): Contains the rigged .max model, the .PSA and .PSK, and the three textures you'll need to view it in 3DS Max.
-* [UDNMaleSourceAnims.zip](rsrc/Two/UnrealDemoModels/UDNMaleSourceAnims.zip): All the source .max files that comprise the animation/viseme sets. Caution: file size is large.
-* [UDNFemaleSourceAnims.zip](rsrc/Two/UnrealDemoModels/UDNFemaleSourceAnims.zip): All the source .max files that comprise the animation/viseme sets. Caution: file size is large.
+* [UDNMale.zip](../assets/UDNMale.zip): Contains the rigged .max model, the .PSA and .PSK, and the three textures you'll need to view it in 3DS Max.
+* [UDNFemale.zip](../assets/UDNFemale.zip): Contains the rigged .max model, the .PSA and .PSK, and the three textures you'll need to view it in 3DS Max.
+* [UDNMaleSourceAnims.zip](../assets/UDNMaleSourceAnims.zip): All the source .max files that comprise the animation/viseme sets. Caution: file size is large.
+* [UDNFemaleSourceAnims.zip](../assets/UDNFemaleSourceAnims.zip): All the source .max files that comprise the animation/viseme sets. Caution: file size is large.
 * UDNMapping.zip: The layout for the texture maps that are provided in UDNMale.zip and UDNFemale.zip

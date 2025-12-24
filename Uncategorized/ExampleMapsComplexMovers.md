@@ -147,5 +147,5 @@ Now, place a Trigger on the Main Mover or wherever you want the Trigger to be. S
 
 Below you can download a compressed archive that contains the content for this example:
 
-* [2110EM\_ComplexMovers.zip](rsrc/Two/ExampleMapsComplexMovers/2110EM_ComplexMovers.zip) (for Unreal Engine 2 build 2110)
-* [EM-ComplexMovers.zip](rsrc/Two/ExampleMapsComplexMovers/EM-ComplexMovers.zip) (for Unreal Engine 2 build 2226)
+* [2110EM\_ComplexMovers.zip](../assets/2110EM_ComplexMovers.zip) (for Unreal Engine 2 build 2110)
+* [EM-ComplexMovers.zip](../assets/EM-ComplexMovers.zip) (for Unreal Engine 2 build 2226)

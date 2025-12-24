@@ -109,7 +109,7 @@ This section to be added later.
 
 Below you can download a compressed archive that contains the content for this example:
 
-* [SoundsDemo.zip](rsrc/Two/ExampleMapsSounds/SoundsDemo.zip) (for Unreal Engine 2 build 2226)
-* [EM\_SoundsDemo\_RT.zip](rsrc/Two/ExampleMapsSounds/EM_SoundsDemo_RT.zip) (for Unreal Engine 2 build 2226)
+* [SoundsDemo.zip](../assets/SoundsDemo.zip) (for Unreal Engine 2 build 2226)
+* [EM\_SoundsDemo\_RT.zip](../assets/EM_SoundsDemo_RT.zip) (for Unreal Engine 2 build 2226)
 
 To run this example map just download the appropriate zip file and put the packages in their appropriate folders. Also see the [Epic Sounds ExampleMap](ExampleMapsEPIC.md#Sound_Example_Map) (build 2110).
