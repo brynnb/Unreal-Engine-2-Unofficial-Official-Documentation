@@ -37,7 +37,7 @@ When holding `Ctrl+Alt` the component will be resized with larger steps.After yo
 Here's a list of all editor hotkeys. Can also see this list by holding `F1` while in design mode.
 Legenda: (Key) only when holding this key; [Key] only required when not in *interactive* mode.
 
-| [Key](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=0;table=2;up=0#sorted_table-sort-by-this-column) | [Meaning](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=1;table=2;up=0#sorted_table-sort-by-this-column) |
+| Key | Meaning |
 | --- | --- |
 | (F1) | View this help screen. |
 | Ctrl + Alt + D | Toggles design mode. |

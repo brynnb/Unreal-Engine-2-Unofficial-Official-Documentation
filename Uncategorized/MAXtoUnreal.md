@@ -17,7 +17,7 @@ This document covers preparing your geometry in 3D Studio MAX R4.26 or R5, for I
 
 ## Do's and Don'ts
 
-| [Do](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=0;table=1;up=0#sorted_table-sort-by-this-column) | [Don't](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=1;table=1;up=0#sorted_table-sort-by-this-column) |
+| Do | Don't |
 | --- | --- |
 | **Do** convert 2D lines to *Editable Mesh*, especially when using a *Thickness* variable, and make sure you have *Display Render Mesh* checked.    [editablemesh_small.jpg](rsrc/Two/MAXtoUnreal/editablemesh.jpg) | **Don't** export 2D lines/splines from MAX; this will likely crash UnrealEd during import of the ASE file. Either delete or extrude all 2D lines/splines. |
 | **Do** clear *Smoothing Groups* when geometry does not need them, meaning geometry that is primarily made up of flat surfaces. This helps to reduce odd lighting behavior in Unreal.    [smoothinggroups_small.jpg](rsrc/Two/MAXtoUnreal/smoothinggroups.jpg) |  |

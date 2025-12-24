@@ -312,7 +312,7 @@ For now this section will be short because SVehicles in 2226 are not completely 
 
 The console command "KDraw" is very useful for debugging what is going on with an *SCar*. These commands can be typed at the console.
 
-| [Command](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=0;table=2;up=0#sorted_table-sort-by-this-column) | [Description](https://udn.epicgames.com/bin/publish/WebHome?webs=Main%2CTwo%2CThree%2CPowered&amp;inclusions=%2A&amp;exclusions=&amp;filter=&amp;inclfilter=%5C%25META%5C%3AFIELD%5C%7Bname%5C%3D%5C%22Documentavailability%5C%22.%2Avalue%5C%3D%5C%22General%20public%5C%22&amp;filterbymeta=yes&amp;skin=static_udn3&amp;restrictedclass=restricted&amp;format=&amp;sortcol=1;table=2;up=0#sorted_table-sort-by-this-column) |
+| Command | Description |
 | --- | --- |
 | KDraw Collision | This shows the collision information used by karma. This is only collision information for the chassis; the wheels in *SCars* do not use karma collision. See the [KarmaCarCreation](KarmaCarCreation.md#step_2_add_karma_collision_volum) document for adding collision. |
 | KDraw Contacts | This shows karma contact position and penetration as well as roll and lateral directions. |
