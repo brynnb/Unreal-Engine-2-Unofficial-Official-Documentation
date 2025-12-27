@@ -42,7 +42,7 @@ This document assumes that you have already created & rigged your actor and are 
 1. Download the [ActorX](../Content Creation/Tools/ActorX.md) plug-in for Max and copy it to your plug-ins directory.
 2. Launch Max, and [ActorX](../Content Creation/Tools/ActorX.md) should load automatically. You can find it under the utilities tab. (If this is the first time you are using it, you'll find it when you click the *more* button)
 
-![utilities.jpg](../assets/utils.jpg)
+![utils.jpg](../assets/utils.jpg)
 
 If activating the plugin results in an error message - the most common one is "failed to initialize", verify your system is up to date with the latest Windows system updates, and download and install the latest Microsoft .Net framework update, available via <http://www.microsoft.com/downloads> ( choose .net in the download product/technology box and press [go]). If this doesn't fix it, get msvcr71.dll from the [ActorX](../Content Creation/Tools/ActorX.md) page and manually place it either in your windows\system32 folder or in the plug-ins folder alongside the [ActorX](../Content Creation/Tools/ActorX.md) plugin.
 

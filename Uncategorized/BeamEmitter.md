@@ -151,15 +151,15 @@ This option determines how many sheets the beam has. 0 and 1 mean the same: only
 
 This allows your beam to trigger another Actor. It is usable only when the  [DetermineEndpointBy](BeamEmitter.md#determineendpointby) is set to  [PTEP\_Actor](BeamEmitter.md#ptepactor). If the Actor in question is something that can be triggered, ie. another particle system or a mover, then when the beam EndPoint will activate the trigger when it strikes.In the following example, a BeamEmitter is set to strike a SpriteEmitter with the Tag "ParticleActor" and a Mover with the Tag "MoveActor".
 
-![TriggerExample.jpg](../assets/triggerexample.jpg)
+![triggerexample.jpg](../assets/triggerexample.jpg)
 
 When the beam hits the SpriteEmitter, it emits it's particles.
 
-![LightningSpark1.jpg](../assets/lightningspark1.jpg)
+![lightningspark1.jpg](../assets/lightningspark1.jpg)
 
 When the beam hits the Mover, it's animation is triggered and it rotates through the wall.
 
-![MoverSeries.jpg](../assets/moverseries.jpg)
+![moverseries.jpg](../assets/moverseries.jpg)
 
 Note that while the BeamEmitter will play in UnrealEd, it won't trigger anything in the editor. You have to be actually playing the map to see these results.
 

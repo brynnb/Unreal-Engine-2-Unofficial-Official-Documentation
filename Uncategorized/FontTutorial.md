@@ -109,15 +109,15 @@ Now just draw text to the screen with your fine new font. (See the [CanvasRefere
 
 This example will show how to make a fancy font for numbers. First we start the font creation process by making the following text file *NumFont.exec* in the system directory.**new truetypefontfactory package=NumFonts name=NumFontBasic fontname="Impact" height=30 antialias=1 Chars="1234567890"new truetypefontfactory package=NumFonts name=NumFont fontname="Impact" height=30 antialias=1 Chars="1234567890" XPad=10 YPad=10 ExtendBoxRight=10 ExtendBoxBottom=10obj savepackage package="NumFonts" file="..\textures\NumFonts.utx"***Note: There should be only 3 lines in this file; the lines are wrapping here because they are long.*The NumFont has an XPad/YPad and an ExtendBoxRight/ ExtendBoxBottom so that when we edit the font in Photoshop and add a glow, the numbers will not overlap. (It turns out 10 was a bit too large, 6 would have been better). Next we open Unrealed and type **"exec NumFont.exec"** in the Command text box or in the log. This will create the font texture package. Now we open the *NumFonts.utx* package in the editor and [export](FontTutorial.md#exporting_fonts) the "NumFont\_PageA.tga" image as a tga file to the c:\temp\Fonts directory. After closing Unrealed and opening the exported file in Photoshop we find both the RGB channel and the Alpha channel look like this:
 
-![OrigNumFont.jpg](../assets/orignumfont.jpg)
+![orignumfont.jpg](../assets/orignumfont.jpg)
 
 After messing with the image for a bit the RGB and Alpha channels look like this respectively.
 
-![NumFontRGB.jpg](../assets/numfontrgb.jpg)
+![numfontrgb.jpg](../assets/numfontrgb.jpg)
 
-![NumFontAlpha.jpg](../assets/numfontalpha.jpg)Save the image and now it is time to import the image back into the font. One way to do this is by using the [FontUpdater](https://udn.epicgames.com/Two/FontUpdater) described [above](FontTutorial.md#templink1). In that case you would open a command prompt in your system directory and type the line below. If you are using the "font update" command, see the instructions [above](FontTutorial.md#templink2).**```
+![numfontalpha.jpg](../assets/numfontalpha.jpg)Save the image and now it is time to import the image back into the font. One way to do this is by using the [FontUpdater](https://udn.epicgames.com/Two/FontUpdater) described [above](FontTutorial.md#templink1). In that case you would open a command prompt in your system directory and type the line below. If you are using the "font update" command, see the instructions [above](FontTutorial.md#templink2).**```
 
 C:\UDNBuildDev\System>ucc fontupdate ..\Textures\NumFonts.utx c:\temp\Fonts NumFont_PageA.tga
 ```**Now the can use the font. The image below show the font in game as well of the basic version of the font to which we did nothing. It is spaced too widely as mentioned above but this simple font illustrated the important points and is good enough for an example.
 
-![FinalNumFont.jpg](../assets/finalnumfont.jpg)
+![finalnumfont.jpg](../assets/finalnumfont.jpg)

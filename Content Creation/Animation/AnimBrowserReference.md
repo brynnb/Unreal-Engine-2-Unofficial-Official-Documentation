@@ -404,7 +404,7 @@ An approximate value between 0 and 1, indicating how many vertices to collapse. 
 
 ###### Rigidize
 
-![RigidizeFlak.jpg](../../assets/rigidizeflak.jpg)
+![rigidizeflak.jpg](../../assets/rigidizeflak.jpg)
 
 With the release of UnrealEd 3.0, you have the option of automatically converting parts of your skeletal mesh to 'rigid parts' - sections of a mesh that are influenced only by a single bone. These parts - as far as the hardware is concerned - can be rendered like static meshes, in that they are uploaded to graphics memory once, without a CPU-intensive multi-bone skin blending step. When suitable meshes are converted in the right way, this can give very significant rendering speedups. This is a per-LOD-level option, and disabled by default. In wireframe mode, all rigid parts show up as red, while software skinned polygons remain yellow.To enable it, in a LOD-level's "rigidize" subsection, first specify the following parameters (see screenshot):
 
@@ -432,7 +432,7 @@ Instead of using the Unreal-generated levels of detail for your individual LOD l
 3. Click on the [Import a Single LOD Mesh button](#import-a-single-lod-mesh). You'll receive a window prompting you to choose a .PSK file. Select your prepared, simplified mesh.
 4. You're done. You should see your new mesh in the browser window. Below, you can see an example, along with some animation set info.
 
-![ lodcompare.jpg](../../assets/lodcompare.jpg)
+![ ![lodcompare.jpg](../../assets/lodcompare.jpg)
 
 #### Mesh
 

@@ -78,7 +78,7 @@ Below are additional descriptions of the actor collision variables as they apply
 
 The static mesh collision properties discussed in this section will not be used if the object is not set to collide based on the actor collision properties described in [Step 1](StaticMeshCollisionReference.md#step_1_actor_collision_properties).This section discussed some of the properties that are in the Static Mesh Browser window. It uses charts to illustrate the relation between [collision models](../Content Creation/Physics/CollisionTutorial.md#collision_models) and the "UseSimple" properties in the Static Mesh Browser, which can be seen in the image below.
 
-![StaticMeshCollisionProps.gif](../assets/staticmeshcollisionprops.gif)
+![staticmeshcollisionprops.gif](../assets/staticmeshcollisionprops.gif)
 
 There is a different chart for each of the collision model types; [None](StaticMeshCollisionReference.md#no_collision_models), [Type 1](StaticMeshCollisionReference.md#type_1), and [Type 2](StaticMeshCollisionReference.md#type_2). In each chart, all possible settings of *UseSimpleKarmaCollision*, *UseSimpleBoxCollision*, and *UseSimpleLineCollision*, are represented in the **Karma**, **Box**, and **Line** columns respectively.The **Karma Objects** column indicates what the mesh will use to block Karma objects. The **Non-Zero Extent Traces (ie Pawn Movement)** column indicates what the mesh will use to block non-zero extent traces which are used by things such as pawn movement and cylinder collision. The **Zero Extent Traces (ie Weapon Fire)** column indicates what the mesh will use to block zero extent traces which are used by things like weapon fire.
 
@@ -131,7 +131,7 @@ This chart goes over how a static mesh will collide if it has a **Type 2** [coll
 
 Material collision is only used when no collision model is being used. See the above charts from [Step 2](StaticMeshCollisionReference.md#step_2_static_mesh_collision_properties) to determine if material collision is relevant to your static mesh.Collision can be set per material in the Static Mesh Browser. Sometimes it is very useful to only make some of the materials in the mesh collide. Setting the material collision is done by expanding the *Materials* array and setting *EnableCollision* for each material as shown in the image below.
 
-![StaticMeshCollisionPropsMat.gif](../assets/staticmeshcollisionpropsmat.gif)
+![staticmeshcollisionpropsmat.gif](../assets/staticmeshcollisionpropsmat.gif)
 
 When *EnableCollision* is True for a material, all the triangles of the mesh that are textured with that material will be used for collision calculations. This means that the collision calculations will be based on exactly the triangles you see. This will sometimes be the same speed as but in most cases slower than using simplified [collision models](../Content Creation/Physics/CollisionTutorial.md#collision_models) because there will be more triangles to calculate collision for.
 

@@ -97,7 +97,7 @@ In this example map the LineOfSight Trigger is set up to trigger an explosion pa
 
 In the map, the LineOfSight Trigger is hidden around a corner. When you go down the corridor to the LineOfSight Trigger, the particle system will trigger as soon as you see the LineOfSight Trigger.
 
-![LOSexplosion.jpg](../assets/losexplosion.jpg)
+![losexplosion.jpg](../assets/losexplosion.jpg)
 
 ### MusicTrigger
 

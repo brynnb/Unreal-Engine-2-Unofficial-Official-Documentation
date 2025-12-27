@@ -69,30 +69,30 @@ These options two fields determine the blending operation between the material b
 
 | FrameBufferBlendingOp = None | \_ |
 | --- | --- |
-| FrameN_MaterialN.jpg | FrameN_MaterialM.jpg |
+| ![FrameN_MaterialN.jpg](../assets/FrameN_MaterialN.jpg) | ![FrameN_MaterialM.jpg](../assets/FrameN_MaterialM.jpg) |
 | MaterialBlendingOp = None | MaterialBlendingOp = Modulated |
-| FrameN_MaterialB.jpg | FrameN_MaterialA.jpg |
+| ![FrameN_MaterialB.jpg](../assets/FrameN_MaterialB.jpg) | ![FrameN_MaterialA.jpg](../assets/FrameN_MaterialA.jpg) |
 | MaterialBlendingOp = AlphaBlend | MaterialBlendingOp = Add |
 
 | FrameBufferBlendingOp = Modulated | \_ |
 | --- | --- |
-| FrameM_MaterialN.jpg | FrameM_MaterialM.jpg |
+| ![FrameM_MaterialN.jpg](../assets/FrameM_MaterialN.jpg) | ![FrameM_MaterialM.jpg](../assets/FrameM_MaterialM.jpg) |
 | MaterialBlendingOp = None | MaterialBlendingOp = Modulated |
-| FrameM_MaterialB.jpg | FrameM_MaterialA.jpg |
+| ![FrameM_MaterialB.jpg](../assets/FrameM_MaterialB.jpg) | ![FrameM_MaterialA.jpg](../assets/FrameM_MaterialA.jpg) |
 | MaterialBlendingOp = AlphaBlend | MaterialBlendingOp = Add |
 
 | FrameBufferBlendingOp = AlphaBlend | \_ |
 | --- | --- |
-| FrameB_MaterialN.jpg | FrameB_MaterialM.jpg |
+| ![FrameB_MaterialN.jpg](../assets/FrameB_MaterialN.jpg) | ![FrameB_MaterialM.jpg](../assets/FrameB_MaterialM.jpg) |
 | MaterialBlendingOp = None | MaterialBlendingOp = Modulated |
-| FrameB_MaterialB.jpg | FrameB_MaterialA.jpg |
+| ![FrameB_MaterialB.jpg](../assets/FrameB_MaterialB.jpg) | ![FrameB_MaterialA.jpg](../assets/FrameB_MaterialA.jpg) |
 | MaterialBlendingOp = AlphaBlend | MaterialBlendingOp = Add |
 
 | FrameBufferBlendingOp = Add | \_ |
 | --- | --- |
-| FrameA_MaterialN.jpg | FrameA_MaterialM.jpg |
+| ![FrameA_MaterialN.jpg](../assets/FrameA_MaterialN.jpg) | ![FrameA_MaterialM.jpg](../assets/FrameA_MaterialM.jpg) |
 | MaterialBlendingOp = None | MaterialBlendingOp = Modulated |
-| FrameA_MaterialB.jpg | FrameA_MaterialA.jpg |
+| ![FrameA_MaterialB.jpg](../assets/FrameA_MaterialB.jpg) | ![FrameA_MaterialA.jpg](../assets/FrameA_MaterialA.jpg) |
 | MaterialBlendingOp = AlphaBlend | MaterialBlendingOp = Add |
 
 ## Guidelines for Creating ProjTextures

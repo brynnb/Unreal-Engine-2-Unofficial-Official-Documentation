@@ -22,15 +22,15 @@ A Mover is a special StaticMesh that can move during game play. With Movers you 
 
 Movers can only be created with static meshes, so you must first open a StaticMesh Browser and select the name of the StaticMesh you wish to use.
 
-![SMeshBrowser.jpg](../../assets/smeshbrowser.jpg)
+![smeshbrowser.jpg](../../assets/smeshbrowser.jpg)
 
 Then to place the Mover in the world, click on the "Add Mover" button.
 
-![MoverButton.jpg](../../assets/moverbutton.jpg)
+![moverbutton.jpg](../../assets/moverbutton.jpg)
 
 The Mover will then appear at the position of the builder brush. The Mover will look like any other static mesh except its brush will be purple.
 
-![Mover2D.jpg](../../assets/mover2d.jpg)
+![mover2d.jpg](../../assets/mover2d.jpg)
 
 Once you have the Mover where you want it, you are then ready to set the KeyFrames of that Mover.
 
@@ -38,7 +38,7 @@ Once you have the Mover where you want it, you are then ready to set the KeyFram
 
 KeyFrames are the different positions that the mover will transition between. The base KeyFrame, or KeyFrame 0, is by default set to be the position of the mover before the other KeyFrames are set, so to set KeyFrame 0 just place the mover where you want it to start. To assign the first position you want to move it to, right click on the mover and pull down the mover option.
 
-![KeyFrames.jpg](../../assets/keyframes.jpg)
+![keyframes.jpg](../../assets/keyframes.jpg)
 
 By selecting "Key 1" you are recording the location and orientation you want to move the KeyFrame to for its first new position. Be aware though that it is actually recording the total rotation of that KeyFrame not just the final orientation so that if you rotate it 480� it will not just turn 120� but rather it will make a full 360� revolution and continue for another 120�.To create more KeyFrames just repeat this process by selecting the KeyFrame you want to assign by right clicking and then moving the Mover to the desired position of that KeyFrame. If you want to reset the position of a KeyFrame, you can do so by reselecting the KeyFrame by right clicking and then moving the Mover to the correct KeyFrame position.Once you've assigned your KeyFrames, you can check them by right clicking on the mover and selecting the KeyFrame you wish to see (just as if you were going to assign that KeyFrame). If you already assigned that KeyFrame, the mover will then jump to that position. If it did not, then simply move it to that position and you will have just assigned that KeyFrame. Alternatively, KeyFrames may be assigned or checked through the "Movers" tab in the "Mover Properties" window. Just type in the number of the KeyFrame you wish to set, and then move the Mover to the position of the desired KeyFrame.After your KeyFrames are all assigned then you must let the editor know how many of your KeyFrames you wish to use. Open the Properties window of the Mover, expand the "Mover" tab, and set "NumKeys" to how many KeyFrames you wish to use. If you have created more KeyFrames than you care to use, this will prevent the Mover from going to your extra KeyFrames.
 

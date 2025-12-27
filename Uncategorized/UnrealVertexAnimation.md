@@ -81,6 +81,6 @@ Save your script file and compile the package as you normally would. You will se
 
 To view the imported mesh in UnrealEd open the Mesh browser by clicking on the Mesh Browser button:
 
-![MeshBrowser.jpg](../assets/meshbrowser.jpg)
+![meshbrowser.jpg](../assets/meshbrowser.jpg)
 
 .

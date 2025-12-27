@@ -52,6 +52,6 @@ You can use TexEnvMap materials on Static Meshes as well as on BSP Surfaces. A T
 
 ## Example Map and Other Material Classes
 
-![EPICmaterials1.jpg](../assets/epicmaterials1.jpg)
+![epicmaterials1.jpg](../assets/epicmaterials1.jpg)
 
 For an example map that shows many different complex Materials in action, take a look at this document:[ExampleMapsEPIC](ExampleMapsEPIC.md#materials_example_map) *(The example map is at the bottom of the page)*To return back the main Materials page, click [here](../Content Creation/Lighting and Textures/MaterialTutorial.md) <--

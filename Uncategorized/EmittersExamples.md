@@ -293,11 +293,11 @@ For the Lighting effect: open the properties of the Emitter, go to Lighting -> `
 
 Map: `PT-Break` (739 version does load, but has missing content)
 
-![Shot0198.jpg](../assets/shot0198.jpg)
+![shot0198.jpg](../assets/shot0198.jpg)
 
-![Shot0199.jpg](../assets/shot0199.jpg)
+![shot0199.jpg](../assets/shot0199.jpg)
 
-![Shot0201.jpg](../assets/shot0201.jpg)
+![shot0201.jpg](../assets/shot0201.jpg)
 
 In this map is a mover that represents a window, and when you shoot it the mover moves away and at the same time triggers a spawn thing that spawns a BreakingGlassEmitter. This BreakingGlassEmitter is nothing more than a SpriteEmitter with some properties set. Here the whole window explodes when you shoot it, but if you want only the part you shoot to break, just make the window out of different movers, all with their own spawner etc...There's no weapon in the map, but if you type loaded in the console you should get some so you can shoot the window.To begin add a SpriteEmitter in the center of the window. Later you'll add the thing that spawns the BreakingGlassEmitter here, but it's easier to do it with an Emitter now so you can preview in the editor what you're doing. Open the properties of the SpriteEmitter.In the example map, a `SubdivisionScale` is used for the Texture. The texture has 2 \* 2 Subdivisions:
 

@@ -62,9 +62,7 @@ Here you can choose the StaticMesh that gets used for the particles, as long as 
 
 ![staticmesh.jpg](../assets/staticmesh.jpg)
 
-Now you won't see anything yet, not even if you give some Velocity, because the particles are displayed WAY too big: the StartSizeRange settings in Size are 100 by default, and for the [MeshEmitter](MeshEmitter.md#meshemitter) this means the StaticMesh is 100 times as big as it should be. Set all the X(Min), X(Max), Y(Min), Y(Max), Z(Min) and Z(Max) settings to something very low, for example 0.5, or for the huge Static Mesh that's used here: 0.03. More about the Size for [MeshEmitter](MeshEmitter.md#meshemitter)s is in the section Size][. If you now give also some velocity you might see something like the screenshot.
-
-![meshparticles.gif](../assets/meshparticles.gif)
+Now you won't see anything yet, not even if you give some Velocity, because the particles are displayed WAY too big: the StartSizeRange settings in Size are 100 by default, and for the [MeshEmitter](MeshEmitter.md#meshemitter) this means the StaticMesh is 100 times as big as it should be. Set all the X(Min), X(Max), Y(Min), Y(Max), Z(Min) and Z(Max) settings to something very low, for example 0.5, or for the huge Static Mesh that's used here: 0.03. More about the Size for [MeshEmitter](MeshEmitter.md#meshemitter)s is in the section Size]![meshparticles.gif](../assets/meshparticles.gif)
 
 ### Use Mesh Blend Mode
 
@@ -92,11 +90,11 @@ You may want to add revolutions to your mesh emitter. For a more in-depth review
 
 You may want to add rotations to your mesh emitter. This works in almost the same way as in the sprite rotation, only you can now set 3 independent Spins in X, Y and Z direction: each have their own SpinsPerSecondRange and SpinCCWorCW.These screenshots show respectively Rotation in X, Y and Z direction. (the last two are animated)
 
-![rotationX.jpg](../assets/rotationx.jpg)
+![rotationx.jpg](../assets/rotationx.jpg)
 
-![rotationY.gif](../assets/rotationy.gif)
+![rotationy.gif](../assets/rotationy.gif)
 
-![rotationZ.gif](../assets/rotationz.gif)
+![rotationz.gif](../assets/rotationz.gif)
 
 For a more in-depth review of rotation, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#rotation) document.
 

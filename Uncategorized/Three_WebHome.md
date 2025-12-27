@@ -46,42 +46,42 @@ Welcome to the UE3 section of this documentation, with all the details you need 
 
 *
 
-[![ue3.jpg](../assets/ue3.jpg)](UE3Basics.html)
+![ue3.jpg](../assets/ue3.jpg)](UE3Basics.html)
 
 [Unreal Engine 3 Basics](UE3Basics.md)
 
   General Information about developing games with Unreal Engine 3. Minimum Specs - Recommended Hardware and Software - Workflow - Frequently Asked Questions - Console Commands - Commandline Arguments - Confirguration Files - Blogs
 *
 
-[![gs_main.jpg](../assets/gs_main.jpg)](GettingStartedOverview.html)
+![gs_main.jpg](../assets/gs_main.jpg)](GettingStartedOverview.html)
 
 [Getting Started](GettingStartedOverview.md)
 
   Information for developers new to Unreal Engine 3 and Unreal Development Kit (UDK). Covers all aspects of the development process: Production Planning - Programming - Content Creation - Level Creation - Profiling & Optimization - Packaging & Distribution
 *
 
-[![tech.jpg](../assets/tech.jpg)](TechnicalHome.html)
+![tech.jpg](../assets/tech.jpg)](TechnicalHome.html)
 
 [Technical & Programming Home](TechnicalHome.md)
 
   Information over setting up the engine, extending the Unreal Editor and creating new tools, and general programming with native code and UnrealScript in Unreal Engine 3.
 *
 
-[![content.jpg](../assets/content.jpg)](ContentHome.html)
+![content.jpg](../assets/content.jpg)](ContentHome.html)
 
 [Content Creation Home](ContentHome.md)
 
   Information involving the creation of art assets and other content such as static meshes, skeletal meshes, materials, etc. in Unreal Engine 3.
 *
 
-[![level.jpg](../assets/level.jpg)](LevelEditingHome.html)
+![level.jpg](../assets/level.jpg)](LevelEditingHome.html)
 
 [Level Editing Home](LevelEditingHome.md)
 
   Information about the creation of levels and environments including adding scripted gameplay and dynamic interactive and animated events in Unreal Engine 3.
 *
 
-[![depot.jpg](../assets/depot.jpg)](ResourceDepot.html)
+![depot.jpg](../assets/depot.jpg)](ResourceDepot.html)
 
 [Resource Depot](ResourceDepot.md)
 

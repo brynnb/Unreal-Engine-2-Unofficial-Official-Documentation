@@ -162,7 +162,7 @@ Now place the Projector near the floor centering the bright portion of the `Proj
 
 The majority of the work is in creating a compelling water caustics Shader, and there are a number of ways to create a caustics texture. Feel free to use your own method, but the method used to create the caustics in this example map are described here.First start with an image of reflected light on water.
 
-![Caustics1.jpg](../assets/caustics1.jpg)
+![caustics1.jpg](../assets/caustics1.jpg)
 
 This texture was quickly created using a few layers of the various stained glass texture filters blended together and then made to be tileable. It is important that you do not have an alpha channel for your texture as it will not properly blend with Combiner Materials that you will later be using.Once imported into Unreal Ed, you will base several different Shaders on this texture. Here you see the texture browser material tree of the final material followed by the settings for each material (in the order that you would create them)
 

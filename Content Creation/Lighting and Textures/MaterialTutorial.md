@@ -81,11 +81,11 @@ In the menu Filter you can choose to view only certain types of materials for a 
 | Raw Material Class | Description | Border |
 | --- | --- | --- |
 | Texture | These are normal Textures with nothing special, or Procedural Textures. All the other materials use normal textures as a base from which to build. | None |
-| Shaders | These can add effects such as Opacity, Specularity, SelfIllumination among others to a texture. | red.gif |
-| Modifiers | These materials apply specific modifications to other materials or textures. For example, the TexRotate Material rotates a texture and the TexScaler changes the scale of a texture. | blue.gif |
-| CubeMaps | These take six textures and apply them in an array so as to texture cubes in a specific manner. These can be used to create EnvironmentMaps. | brown.gif |
-| Combiners | These materials combine two other materials together in a way you choose. | green.gif |
-| FinalBlends | These add simple effects to your resultant Material or Texture including translucency, darkening, and alpha blending | yellow.gif |
+| Shaders | These can add effects such as Opacity, Specularity, SelfIllumination among others to a texture. | ![red.gif](../../assets/red.gif) |
+| Modifiers | These materials apply specific modifications to other materials or textures. For example, the TexRotate Material rotates a texture and the TexScaler changes the scale of a texture. | ![blue.gif](../../assets/blue.gif) |
+| CubeMaps | These take six textures and apply them in an array so as to texture cubes in a specific manner. These can be used to create EnvironmentMaps. | ![brown.gif](../../assets/brown.gif) |
+| Combiners | These materials combine two other materials together in a way you choose. | ![green.gif](../../assets/green.gif) |
+| FinalBlends | These add simple effects to your resultant Material or Texture including translucency, darkening, and alpha blending | ![yellow.gif](../../assets/yellow.gif) |
 
 For more detailed information on each of these Raw Material classes, click on the appropriate links below:
 
@@ -113,7 +113,7 @@ For more detailed information on each of these Raw Material classes, click on th
 
 ## Example Map
 
-![EPICmaterials1.jpg](../../assets/epicmaterials1.jpg)
+![epicmaterials1.jpg](../../assets/epicmaterials1.jpg)
 
 For an example map that shows many different complex Materials in action, take a look at this document:[ExampleMapsEPIC#Materials\_Example\_Map](../../Uncategorized/ExampleMapsEPIC.md#materials_example_map) *(The example map is at the bottom of the page)*
 

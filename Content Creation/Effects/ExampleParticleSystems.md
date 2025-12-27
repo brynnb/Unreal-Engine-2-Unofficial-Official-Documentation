@@ -110,19 +110,19 @@ Time is an important section for sparks, in a common sense way. My particles don
 
 I set out to make a simple impact explosion that used only about 20 particles and not too much texture memory. This sort of explosion could be used for things ranging from a rocket explosion to the clashing of swords. The main drawback of this particle system is that the main explosion is only a few billboarded sprites so if the explosion is near a wall clipping can be seen (see image below). This problem could be solved by building the main explosion out of many smaller sprites and using particle collision to deal with the walls. This however would be a greater load on the system.
 
-![ExplodeClip.jpg](../../assets/explodeclip.jpg)
+![explodeclip.jpg](../../assets/explodeclip.jpg)
 
 #### Explosion Emitter
 
 There are two sprite emitters in this particle system, one for the explosion and one for the sparks. The first emitter, the explosion emitter, is fairly simple with a few complex tweaks to make it just right. All the particles start in the default location at the center and don't move. There are only three particles and they are all spawned at nearly the same time. The particles are spawned at the same time by turning off automatic initial spawning and setting particles per second to be 100. I also turned off respawn dead particles so that the explosion would not keep repeating. The lifetime of the particles is also very short (0.64 seconds) so as to capture the brief nature of explosions.The "motion" of the explosion is handled with adjusting the size particles. Four size scale points create a smooth non-linear motion for the expansion of the explosion. In the first 1/20 of a second the particle quadruples in size; from then until the end of the life it only doubles in size. With only three size scale points the motion looked very jerky because the very fast expand transitioned directly into the smooth gradual expand. By adding a scale point after the first expand, the transition looked gentler. I also used a size range as opposed to a fixed size because that seemed to capture the nature of an explosion better.Rotation and subdivision fading also greatly helped the feel of movement in the particle system. The particles start with a random starting rotation and have a mild spin. The spins per second range from 0.05 to 0.1 with a 50% chance of spinning in either direction. I found this method works much better than having the spin range from -0.1 to 0.1 because it ensures that all particles are spinning at least at 0.05. As the particles overlap with this mild rotation it gives the impression of motion within the explosion. Subdivision fading helps with the decay at the end of the explosion. The particle system looks okay without it and if one were really pressed for texture memory it could be removed but everything looks much better with the subdivision fading. The two images look fairly similar but one is more decayed looking and a bit darker.
 
-![Explode2Sub.jpg](../../assets/explode2sub.jpg)
+![explode2sub.jpg](../../assets/explode2sub.jpg)
 
 I use the subdivision scale to make the emitter fade to the second image at the end of the lifetime as opposed to the middle. There was one problem where I needed to add a third subdivision scale to make the first two work. The third value did not need to have any particular value but if it was 0.000 the value was not saved on export or cut and paste so I set it to 0.001.Colorscale and fading are essential to the look of the particle system. I used fade in but not fade out because I used the color scale to fade the emitter out. The important difference between fading and color scale is that fading works on absolute times and color scale works on relative times. In this case I used the same min and max for lifetime but if one were to use different values this would ensure that all the particles fading in at the same time and the same rate but would fade out at their own rate. I also find that color scale seems to yield more consistent smooth results than fading. The color scale used for the explosion is the result of trail and error adjusting when I thought the system was too bright or too dark at different points in time. I also used a color multiplier with a small range to give the explosion of bit of variety and more "depth" by having slightly different colors on the same texture.
 
 #### Sparks Emitter
 
-![ExplodeSparkDocImages.jpg](../../assets/explodesparkdocimages.jpg)
+![explodesparkdocimages.jpg](../../assets/explodesparkdocimages.jpg)
 
 The sparks emitter is slightly more complicated. First off, it is important to note that it is not a Spark-Emitter but a Sprite-Emitter. It relies mainly on velocity, acceleration, and particle facing direction to achieve its look. The motion of the particle is simple but the emitter adjusts many other things at the same to work well with this motion.There are 17 particles in this emitter and like the explosion automatic initial spawning is turned off and the particles per second is turned very high. The respawning of dead particles is also disabled. The lifetime of the particles is very short for obvious reasons. One of the most important things about this particle system is that collision is enabled. The damping factors are all left at the defaults so it is not complicated but helps the look greatly.The velocity of the particles is set to have a wide spread between the mins and maxes so the particles start heading in all directions. The values are symmetric about 0 for X and Y so the system does not "lean" in one particular direction. The Z values are not symmetric to account for the downward acceleration of gravity. If the values were symmetric, the system would look as it were moving down too much even though it might be more "accurate". Acceleration has a large -Z value which mimics gravity. This value is not set to correspond to Unreal's world gravity; it is just adjusted to look right. To make the particles of this emitter look like sparks as opposed to chunks of flying debris the facing direction is set to along movement direction facing camera. This means that the particle rotates so that the "up" of the texture is always facing the direction the particle is moving. The particle tries its best to also face the camera at the same time but it is hard at certain angles like looking along the direction the particle is moving.Like the explosion emitter this emitter uses a color scale, a color multiplier range, a size scale, and a size range. All these work together to make the sparks give off a strong initial flash, which is the base of the impact effect. The color multiplier range has more variance than the explosion emitter to give the sparks more visual impact when they are created. Using the color scale the sparks fade to orange very quickly and therefore lose their visual dominance. The size scale also works to augment the initial impact of the sparks. The particles start off relatively very large and shrink to a reasonable size very quickly. After that the particles slowly get smaller as they fade out. The size range has noticeable variance that helps to make the flash look less symmetric and more like an explosion.Subdivision blending is an additional effect enabled to improve the look of the emitter. It is not critical by any means because the blending is very fast given that the emitter has such a short lifetime. I found that it made the particles look better because they seemed less like moving textures where they were blending. Also it helps that the texture becomes more ball like and less sprite like at the end, which cannot be done with size scale.
 
@@ -134,21 +134,21 @@ This is a simple system that looks good almost all the time. It could use less t
 
 *By Chris Linder*
 
-![MuzzleFastBig.jpg](../../assets/muzzlefastbig.jpg)
+![muzzlefastbig.jpg](../../assets/muzzlefastbig.jpg)
 
 #### Initial Concerns
 
 One of the trickiest things about making a muzzle flash is that under normal circumstances it last about 1/20 of a second. The eye can detect what look right and wrong at this speed but unfortunately it is very hard to see what is going on in any sort of detail so correcting the problems is difficult. To get around this I first made a slow-mo muzzle flash, speeded it up and then did some final adjustments. Other than dealing with the speed issue, I wanted to make a system with very few particles because gunfire is conceivably something one could have a great deal of at one time. It is also a concern for overdraw (the number of times the same pixel is drawn to, which is limited by video card fillrate) in first person games where the particle system is used directly in front of the camera because it will be several alpha images drawn over a large part of the scene. Even with only 16 particles there is noticeable about of overdraw which can be seen in the images below.
 
-![MuzzleBehindBoth.jpg](../../assets/muzzlebehindboth.jpg)
+![muzzlebehindboth.jpg](../../assets/muzzlebehindboth.jpg)
 
 *The image on the right was created with rendering mode set to `Depth Complexity' which can be turned on with a button on the right part of the top of the perspective viewport in UnrealEd*.
 
-![UnrealedDepth.jpg](../../assets/unrealeddepth.jpg)
+![unrealeddepth.jpg](../../assets/unrealeddepth.jpg)
 
 Many games use a single sprite or animated sprite for the first person view and only use a particle system for other players to avoid this problem.From a distance, overdraw is not much of a problem because the area that is drawn to mulptiple times is not large. Also, when the system is seen from the side, you can more "bang for you buck" because it looks larger but is drawing the same number of tranparent triangles. This can be seen in the image below.
 
-![MuzzleSideFill.jpg](../../assets/muzzlesidefill.jpg)
+![muzzlesidefill.jpg](../../assets/muzzlesidefill.jpg)
 
 #### Flash Emitters (first three emitters)
 
@@ -160,7 +160,7 @@ It may seem odd to use three emitters, two emitters of which only have 2 particl
 
 Instead of making lots of particles I use one texture that has many fragments of muzzle "fire".
 
-![Muzzle1.jpg](../../assets/muzzle1.jpg)
+![muzzle1.jpg](../../assets/muzzle1.jpg)
 
 I also used subdivision fading and scale to animate the fading of the texture over time. (For a better description of this see the impact explosion tutorial) To make the fragments on the texture appear as if they were moving outwards I used the size scale to make the particles expand outwards from a size of zero. The first emitter, the biggest and slowest, uses two size scale points to expand from zero to full size over the course of its lifetime. The second emitter uses three size scale points to expand quickly at first and then gradually to the end of its life. The third emitter, the smallest and fastest, uses three points to expand out quickly and then shrink gradually. I also started all the particles with a random rotation and a slight spin. This makes it look as if the "fire" fragments on the texture are interacting with each other and moving independently with the system. All these factors work together to give the impression of one single flash made of many small bits that evolve to look basically tear shaped.
 
@@ -170,7 +170,7 @@ Color and fading are not very complicated in this particle system. Fading is not
 
 #### Smoke Emitter
 
-![MuzzleSmoke.jpg](../../assets/muzzlesmoke.jpg)
+![muzzlesmoke.jpg](../../assets/muzzlesmoke.jpg)
 
 This emitter is very simple. It is 3 particles of smoke with slightly random start location and velocity spread. The particles have a large X start velocity but they also have a wide range the start velocity so that they are not tightly cluster together but instead spread out along the direction of movement. A velocity loss range is also used. This makes it so that the particles slow down in the specified direction like friction or air resistance. I only use the X loss range because that the only direction particles are significantly moving in. A wide size range is used so make the smoke look varied both within one flash and also between flashes.
 
@@ -194,7 +194,7 @@ You need this rotation for two things: the LightEffect LE\_SpotLight needs it to
 
 ![lightconebright.jpg](../../assets/lightconebright.jpg)This texture is white, so you can use it for any color of SpotLight: just give it a ColorScale. For example for a green light this would be an appropriate ColorScale?:
 
-![LightConeColorScale.jpg](../../assets/lightconecolorscale.jpg)
+![lightconecolorscale.jpg](../../assets/lightconecolorscale.jpg)
 
 As you can see, the first and last colors are the same: now the particle color will remain constant for the entire LifeTime.These is a very short *Fade In* and a long *Fade Out* to make the particles disappear gradually over time but also not start too abruptly. There is also a very small *Max Particles* = 20 (this depends on the size of your light cone), *Start Size* --> X(Min) and X(Max) = 50 (this also depends on the size of your light cone). In *Rotation* set *Use Rotation From* to **Actor**, so the axes will be rotated by the rotation of the Emitter actor. This is very important: otherwise it's very difficult to set the correct direction of the Velocity. Give it a *Size Scale* like this:
 
@@ -214,11 +214,11 @@ For the Lighting effect: open the properties of the Emitter, go to Lighting --> 
 
 *by Lode Vandevenne, modified/updated by Chris Linder*
 
-![Shot0198.jpg](../../assets/shot0198.jpg)
+![shot0198.jpg](../../assets/shot0198.jpg)
 
-![Shot0199.jpg](../../assets/shot0199.jpg)
+![shot0199.jpg](../../assets/shot0199.jpg)
 
-![Shot0201.jpg](../../assets/shot0201.jpg)
+![shot0201.jpg](../../assets/shot0201.jpg)
 
 In this map there is a mover that represents a window. When shot, the mover moves away and simultaneously triggers a spawn thing that spawns a BreakingGlassEmitter. This BreakingGlassEmitter is nothing more than a SpriteEmitter with some properties set. Here the whole window explodes when you shoot it, but if you want only the part you shoot to break, just make the window out of different movers, all with their own spawner etc...There's no weapon in the map, but if you type loaded in the console you should get some so you can shoot the window.To begin, add a SpriteEmitter in the center of the window. Later you'll add the thing that spawns the BreakingGlassEmitter here, but it's easier to do it with an Emitter now so you can preview in the editor what you're doing.In the example map, the texture has 2 \* 2 subdivisions:
 
@@ -246,7 +246,7 @@ But of course this small script isn't perfect.Add this BreakingGlassSpawner in t
 
 *by Epic Games, doc by Chris Linder*
 
-![Lightning1.jpg](../../assets/lightning1.jpg)
+![lightning1.jpg](../../assets/lightning1.jpg)
 
 This is a fairly complicated lightning example. It includes three beam emitters to do the branching beam, one sprite emitter for the source mark, and one sprite emitter for the cloud light effect which also serves as a delay timer for the whole system.
 
@@ -254,7 +254,7 @@ This is a fairly complicated lightning example. It includes three beam emitters 
 
 The oddest thing about this particle system is that it is offset by the *GlobalOffsetRange* which is a setting for the whole particles system *(what Unreal calls "Emitters" but what we call "particle systems")* and is therefore not in the *Particle System Editor* which edits properties of individual sprite, spark, beam, and mesh emitters. This setting can be found by double clicking on the particle system and expanding the *Global* category.
 
-![Lightning2.jpg](../../assets/lightning2.jpg)
+![lightning2.jpg](../../assets/lightning2.jpg)
 
 This lightning uses a range from -4000 to 4000 for both X and Y with Z held at 0. What this means is that the origin *(X=0, Y=0, Z=0)* of each emitter is moved this amount. The point of all this is that it will create the lighting and source mark at the same random place. Another way to consider doing this would be to use the *Add Location From Other Emitter* setting in *Location*.The *GlobalOffsetRange* is reset every 0.25 seconds which is specified by *TimeTillResetRange*. *TimeTillResetRange* not only resets the range but the whole particle system as well. In all the emitters *Respawn Dead Particle* is unchecked. The only reason the system keeps going is because of the reset. It is also worth noting that the system will not reset until all the particles are dead, so if *Respawn Dead Particle* is checked the system will never pick a new location.Using *TimeTillResetRange* also allows one to use a particle system like a timer because none of the systems will reset until all the systems are dead. The cloud light effect serves as the timer in this case because it lasts longer than all the other systems. Because its lifetime is somewhat sporadic, it gives a random feel to the lightning. Another way to do this would be to give *TimeTillResetRange* a larger range and then you would not need a timer system.
 
@@ -262,7 +262,7 @@ This lightning uses a range from -4000 to 4000 for both X and Y with Z held at 0
 
 A thorough explanation of beam branching can be found in the [ParticleSystems](ParticleSystems.md#beam_branching) doc. This lightning is very similar to the examples discussed in the doc which also has three levels of branching that get increasing random and smaller.The color on the beams is one of few simple things in this emitter. Each beam has a quick fade in and then a slow fade out. Each beam also has a color scale which goes from almost white (255, 251, 255), to a yellowish color (238, 185, 62). The texture on each beam is different but all are white, narrow, and a little wavy. The textures get skinnier from main beam to smallest branch.
 
-![Lightning3.jpg](../../assets/lightning3.jpg)
+![lightning3.jpg](../../assets/lightning3.jpg)
 
 This is why the main beam looks bold and bright while the branches look smaller and ... branchier. All the beam sizes are the same because they rely on the texture to adjust size.
 
@@ -270,7 +270,7 @@ This is why the main beam looks bold and bright while the branches look smaller 
 
 The particles in the emitter are aligned with the ground, not facing the camera, by setting *Facing Direction* to **Normal**. This emitter uses a 3x3 subdivision texture and fades between the subdivisions to get an explosion type effect which is enhanced by the fact that all the particles are spawned at the same time using *Particles Per Second*.
 
-![Lightning4.jpg](../../assets/lightning4.jpg)
+![lightning4.jpg](../../assets/lightning4.jpg)
 
 A size scale is also used to expand the particles over their lifetime which contributes to the exploding effect. Lastly, a color scale fades the particles to a reddish color as they fade out. The lifetime of the particles varies in the same way as the lifetime of the beam (between 0.25 and 0.5 seconds).
 
@@ -282,15 +282,15 @@ The cloud light effect is fairly interesting. It serves as the timer for the sys
 
 *by Chris Linder*
 
-![Fog1.jpg](../../assets/fog1.jpg)
+![fog1.jpg](../../assets/fog1.jpg)
 
 This low ground fog is a very simple particle system. It consists of 18 particles that are aligned with a vertical normal. This is done by setting *Facing Direction* in *Rotation* to **Specified Normal** and setting the *Projection Normal* to (X=0, Y=0, Z=1). *Use Rotation From* is set to **Actor** so that the particle system can be rotated in the world to align with the enviroment. In this case the *Start Location Box* is much longer in the X direction (+/- 1400) than in Y direction (+- 25). (The particles also have some small variation in Z *(+/- 5)* to give the system more depth) This particles system is rotated to fit in the valley which is not aligned with any axis.
 
-![Fog2.jpg](../../assets/fog2.jpg)
+![fog2.jpg](../../assets/fog2.jpg)
 
 The particle uses an alpha texture with *Draw Style* set to **Alpha Blend**. The texture itself has a fairly opaque center so the *Opacity* of the system is turned down to 20% so as not to white out the whole scene. The particles also fade in and fade out, but for most of their lifetime they are not fading. The particles also have a very large size of X and Y = +/- 825 so the texture covers a very large area.The ground fog particles have a life time of 20 seconds. This makes it so that all the fading is slow and not very noticiable. The system also have *Relative Warmup Time* and *Warmup Ticks Per Second* = 1 so you don't see the system warmup. Also all the motion is very slow so that nothing apears jerky or sudden. The particles have have an X and Y *Start Velocity* of +/- 2.5 and a Z velocity of min=1, max=3.5. The particles also start with a random rotation and have a *Spins Per Second* of min=0.05, max=0.08. All these combine to form a gently swirling, overlapping fog system.One of the biggest problems with making a particle system fog is overdraw. *(Overdraw is the number of times the same pixel is drawn to, which is limited by video card fillrate)* The overdraw in this system is not so bad because it uses few large particles so there is not that much overlap.
 
-![Fog3.jpg](../../assets/fog3.jpg)
+![fog3.jpg](../../assets/fog3.jpg)
 
 Still, considerable overdraw remains, and anyone making or using fog with particle systems must recognize this.
 
@@ -298,15 +298,15 @@ Still, considerable overdraw remains, and anyone making or using fog with partic
 
 *by Chris Linder*
 
-![Waterfall1.jpg](../../assets/waterfall1.jpg)
+![waterfall1.jpg](../../assets/waterfall1.jpg)
 
 This example is fairly complicated and also moderately expensive in terms of rendering time. At the same time, it looks better and is more flexible than almost all sheet based waterfalls (the inexpensive way to create waterfalls). You can be in front of, to the side, behind, and looking up through this waterfall.
 
-![Waterfall2.jpg](../../assets/waterfall2.jpg)
+![waterfall2.jpg](../../assets/waterfall2.jpg)
 
-![Waterfall3.jpg](../../assets/waterfall3.jpg)
+![waterfall3.jpg](../../assets/waterfall3.jpg)
 
-![Waterfall4.jpg](../../assets/waterfall4.jpg)
+![waterfall4.jpg](../../assets/waterfall4.jpg)
 
 The effect is composed of three emitters. The first emitter is the waterfall itself, the next is the base where the falls hit the surface of the water, and the third is the misty fog surrounding the falls.
 
@@ -314,11 +314,11 @@ The effect is composed of three emitters. The first emitter is the waterfall its
 
 The falls are composed of four emitters: The 'main water' emitter which makes up the bulk of the falling water; the 'fast water' emitter which is in front of and less dense than the main water, and falls at a faster rate to give the appearance of different layers and speeds of water; the 'drops' emitter which captures the effect of water droplets on the edges and around waterfalls; and the 'side water' which is a system so the waterfall does not just look like a thin sheet from the side.The 'main water' is a system composed of 29 alpha sprites. The texture is a 2x1 subdivision texture and a random subdivision is chosen for each sprite. The 'right' thing to do would be *Blend Between Subdivisions* but for some reason that does not work with alpha or fading of any kind. This is inconvenient because it would look better if the texture changed on the way down but fading is more important. The particles fade with a color scale that has an alpha value on both ends and two non-alpha values in the middle. This is done instead of fading because color scale is calculated per particle while fading is absolute times. At one point in time I tested the system with different lifetimes for the particles so this was necessary, but now that the lifetime is fixed at 2.5 seconds it doesn't matter; fading could have been used. The texture is slightly tinted with the *Color Multiplier* to make it more blue. These seemed to fit the level better, which has the lighting of late afternoon, and blue is used to darken/shadow the system.The texture itself is fairly large (256x512) and it you wanted to save texture memory, shrinking it could be done without much of a loss in quality. It is important to note that the texture is not pure white. With no color variation in color on texture, the water looked very flat and unconvincing. Just a little bit of color improved the look of the water greatly. Below is RGB of the texture, followed by its alpha channel, followed by the texture as it looks in UnrealEd.
 
-![Waterfall7.jpg](../../assets/waterfall7.jpg)
+![waterfall7.jpg](../../assets/waterfall7.jpg)
 
-![Waterfall8.jpg](../../assets/waterfall8.jpg)
+![waterfall8.jpg](../../assets/waterfall8.jpg)
 
-![Waterfall9.jpg](../../assets/waterfall9.jpg)
+![waterfall9.jpg](../../assets/waterfall9.jpg)
 
 The system is aligned with the actor so it can easily be rotated to match the environment. The width of the falls is set with the Y range of the *Start Location Box* which, in this case is about +/- 133. X and Z are both 0 in the start location. All particles start with the same velocity which is heading out mostly (X = 242), and a little bit down (Z = -60). *Acceleration* is down at a rate of about Z = -800. As the particles fall and move more quickly, they get longer and skinnier because the *Facing Direction* is **Along Movement Facing Normal**. To compensate for getting thinner, a size scale is used to make the particles larger over time. The final size in the scale was tweaked till the system stayed the same width. This also resulted in the particles becoming even more stretched vertically as they fell, which looks good visually. The size of the particles starts with almost the same X and Y, but not quite. X = +/-140 and Y = +/-134. The particles do not spin because with *Facing Direction* as **Along Movement Facing Normal** spinning does very odd things to the particles.The 'fast water' was created by duplicating the 'main water' and making the system faster using the *Scale Speed* tool in *General*. The emitter was then moved up and forward a little with *Start Location Offset*. There are fewer particles in this emitter and the *Start Size* is slightly different. Also, the *Start Location Box* Y range is more narrow (Y = +/- 100) so that fast particles do not show up on the edge and look obviously like single sprites.The 'drops' emitter was also created by duplicating the 'main water' and making the system faster but not quite as fast as 'fast water'. The texture is different and has many little drops of water that are more opaque. This system also has the *Start Size* and *Start Location Box* adjusted a bit, but the main difference is that these particles have a small amount of spin. This spin does not rotate on the normal of the sprite however because the *Facing Direction* is **Along Movement Facing Normal**; they spin on some other axis which makes them stick up and out, which works very well for random drops of water from a waterfall because they are no longer part of the waterfall plane.The 'side water' emitter is also a duplicate of the 'main water' but it has a *Facing Direction* of **Along Movement Facing Camera**. This is how the waterfall can look good from the side. This *Facing Direction* does not stretch the particles do the size scale was removed from this emitter. The *Start Size* was also adjusted a lot to make the system work from the side and not be too obtrusive in the front view. If you are dealing with a waterfall that will not be seen from the side, save the particles and disable this system.
 
@@ -326,11 +326,11 @@ The system is aligned with the actor so it can easily be rotated to match the en
 
 The waterfall base splash is composed of two emitters, one for the main water splashing and one for the little droplets on the edge of the main splash. This is designed to look as if the entire splash effect is made of the little tiny droplets that are just very dense in the center. The main water splashing emitter uses a dense texture with 2 subdivisions that are chosen randomly.
 
-![Waterfall5.jpg](../../assets/waterfall5.jpg)
+![waterfall5.jpg](../../assets/waterfall5.jpg)
 
 It would be preferable to blend between them, but as mentioned above, this blending does not work with alpha. The texture is an alpha texture so that when the base splash is seen from the side, it does not get brighter, which it would if *Draw Style* was **Translucent** or **Brighten**. The droplet texture:
 
-![Waterfall6.jpg](../../assets/waterfall6.jpg)
+![waterfall6.jpg](../../assets/waterfall6.jpg)
 
 also uses subdivision and **Alpha Blend** for the same reasons. The drops of water are far less dense and are nor clustered in the center of this texture for obvious reasons. The main emitter, that uses the dense texture, is also more dense because it uses 44 particles compared to the drops emitter's. The main emitter uses an *Opacity* of 40% though, so the systems are more balanced and do not white out in the center. Another difference between the main texture and the drops texture is that the main splash particles are larger (size = 106) than the ones in the drops system (size = 66).Both these emitters spin the particles and and start with a random rotation to make the drops look more like individual drops and less like a single texture of many drops. A *Facing Direction* of **Facing Camera** is used because the splash is supposed to be a volume and so always facing the camera makes the most sense.*Start Location Box* is used to position the particles in a line at the base of the waterfall. The system has *Use Rotation From* set to **Actor** so it can easily be rotated in the world to match things such as the waterfall base. The particles start mainly along the Y axis (Y = +/- 155) with a little bit of play on the X axis (X = +/- 25). A *Start Location Offset* (Z=-150) is used to start the splash below the surface of the water. This is done so the fade in happens when only part of the particles is seen above the surface of the water. If the particle were to fade in when it was entirely above the water, it would look even more like a single sprite appearing which is allready a problem with this system.The particles in both these emitters start moving quickly up (+Z) and out some (+/- Y) and even a little bit forward (+X). The droplets move up a little bit faster and out much faster than the main splash. *Acceleration* in the -Z direction (Z=-1260) plays a large part of in the motion of the these particles. The particles have all have a *Lifetime* of about 0.9 seconds so they have just enough time to slow down and start heading back down before they fade out.The fading on these particle system is perhaps overly complicated. The particles use *Color Scale* with alpha to fade in, stay full bright for a little bit, and then fade out. *Fading* is also used to increase the fade out rate at the end of the particles' life by setting the *Fade-Out Start Time* to part way through the *Color Scale* fade out. Really just *Fading* could be used and things would look fine, but it is worth mentioning how two different fading rates can be used together.
 

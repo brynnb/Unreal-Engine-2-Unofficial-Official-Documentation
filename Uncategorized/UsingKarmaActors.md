@@ -17,7 +17,7 @@ In this example we'll again create and import a Karma Actor (see [ImportingKarma
 
 * We'll show you how to motorize a hinge joint
 
-![HingedFan.jpg](../assets/hingedfan.jpg)
+![hingedfan.jpg](../assets/hingedfan.jpg)
 
 ## Getting Started
 
@@ -40,11 +40,11 @@ Constraints restrict the motion of physics bodies. There are three major KConstr
 The hinge joint restricts bodies so that they may only rotate about a single axis. For example doors are hinged to walls so that the door may only rotate about one axis. We're going to attach a fan to the world using a hinge joint and then we're going to shoot it up real good.From the Actor Browser, browse down the hierarchy to select the KHinge constraint.
 Actor>KActor>KConstraint>Khinge.Once the KHinge is selected you can add one into the world by right clicking on a viewport and selecting "Add KHinge here"You should see a small billboard icon representing the hinge.But Wait! This hinge will do nothing yet, as there is nothing attached for it to constraint.We could hinge up to two KActors together, but we only want to fix our fan to the world, so we only need to attach it to the fan KActor.Double Click the KHinge icon to view the KHinge properties.
 
-![HingeProperties.gif](../assets/hingeproperties.gif)
+![hingeproperties.gif](../assets/hingeproperties.gif)
 
 Under the Karmaconstraint properties you see KConstraintActor1 and KConstraintActor2. These are the two bodies that can be constrained by the KHinge.Type in the fan objects name in the Karma Constraint Actor1 (an objects name can be found by double clicking it to bring up its properties and selecting Object > Name), or click the "Find" button and then select the KActor in the level.Although the KHinge can join two Actors, if you only fill in one, that object will be hinged to the world at the position of the Hinge.Rebuild your level. If you shoot the fan, it should only rotate about a single axis.The hinge axis is represented by a red line that appears when you select the hinge icon. You can rotate and move this axis in Unreal Editor.
 
-![HingeAxis.jpg](../assets/hingeaxis.jpg)
+![hingeaxis.jpg](../assets/hingeaxis.jpg)
 
 ## Motorizing The Hinge
 

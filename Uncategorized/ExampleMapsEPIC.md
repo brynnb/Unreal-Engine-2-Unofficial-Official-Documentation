@@ -16,13 +16,13 @@ This document contains the old EPIC Demo Maps updated to the 2110 build. As of y
 
 ## CIN Dolly Example Map
 
-![EPICdolly1.jpg](../assets/epicdolly1.jpg)
+![epicdolly1.jpg](../assets/epicdolly1.jpg)
 
 This map demonstrates some of the things you can do with Matinee. Upon playing the map you will see a brief cinematic where you slowly fly by a sphere, fade to black, start again in a new position and then the camera will track the sphere as it flies by.
 
-![EPICdolly2.jpg](../assets/epicdolly2.jpg)
+![epicdolly2.jpg](../assets/epicdolly2.jpg)
 
-![EPICdolly3.jpg](../assets/epicdolly3.jpg)For more information on how to use Matinee, see the following docs:
+![epicdolly3.jpg](../assets/epicdolly3.jpg)For more information on how to use Matinee, see the following docs:
 
 * [MatineeTutorial](../Content Creation/Matinee/MatineeTutorial.md)
 * [MatineeExample](../Content Creation/Matinee/MatineeExample.md)
@@ -32,40 +32,40 @@ This map demonstrates some of the things you can do with Matinee. Upon playing t
 
 ## Materials Example Map
 
-![EPICmaterials1.jpg](../assets/epicmaterials1.jpg)
+![epicmaterials1.jpg](../assets/epicmaterials1.jpg)
 
 In this map you can see several examples of how materials can be used in various ways. This map will eventually have Karma Physics integrated back into it, but for now you can use it to see some effects that can be achieved with different materials
 
-![EPICmaterials2.jpg](../assets/epicmaterials2.jpg)
+![epicmaterials2.jpg](../assets/epicmaterials2.jpg)
 
 For more information on how to use Materials, see the [MaterialTutorial](../Content Creation/Lighting and Textures/MaterialTutorial.md).
 
 ## Particles Example Map
 
-![EPICparticles1.jpg](../assets/epicparticles1.jpg)
+![epicparticles1.jpg](../assets/epicparticles1.jpg)
 
 In the Particles map you will see a myriad of effects ranging from sweeping laser scans, vented steam, pouring molten fiery stuff, bouncing blue balls electric fuzz, and just general explosions.
 
-![EPICparticles2.jpg](../assets/epicparticles2.jpg)
+![epicparticles2.jpg](../assets/epicparticles2.jpg)
 
-![EPICparticles3.jpg](../assets/epicparticles3.jpg)Also you can see various outdoor effects such as lighting (both the ground striking variety and the cloud-lighting-up variety), tornados with debris, and rising smoke clouds.
+![epicparticles3.jpg](../assets/epicparticles3.jpg)Also you can see various outdoor effects such as lighting (both the ground striking variety and the cloud-lighting-up variety), tornados with debris, and rising smoke clouds.
 
-![EPICparticles5.jpg](../assets/epicparticles5.jpg)
+![epicparticles5.jpg](../assets/epicparticles5.jpg)
 
-![EPICparticles4.jpg](../assets/epicparticles4.jpg)For more information on how to create such effects, see the following docs:
+![epicparticles4.jpg](../assets/epicparticles4.jpg)For more information on how to create such effects, see the following docs:
 
 * [ParticleSystems](../Content Creation/Effects/ParticleSystems.md)
 * [ExampleParticleSystems](../Content Creation/Effects/ExampleParticleSystems.md)
 
 ## Sound Example Map
 
-![EPICsounds3.jpg](../assets/epicsounds3.jpg)
+![epicsounds3.jpg](../assets/epicsounds3.jpg)
 
 This map demonstrates how sounds can be used in a variety of ways including with zones, particle systems, and AmbientSoundActors aplenty.
 
-![EPICsounds2.jpg](../assets/epicsounds2.jpg)
+![epicsounds2.jpg](../assets/epicsounds2.jpg)
 
-![EPICsounds1.jpg](../assets/epicsounds1.jpg)For more information on how to use sounds, see the [ExampleMapsSounds](ExampleMapsSounds.md) document.
+![epicsounds1.jpg](../assets/epicsounds1.jpg)For more information on how to use sounds, see the [ExampleMapsSounds](ExampleMapsSounds.md) document.
 
 ## Downloads
 

@@ -220,7 +220,7 @@ defaultproperties
 }
 ```
 
-![SimpleTrace.jpg](../assets/simpletrace.jpg)
+![simpletrace.jpg](../assets/simpletrace.jpg)
 
 Notice the BIG Green crosshair that is positioned over the character's back
 The code to add this TestInteraction should ideally go in the PlayerController subclass at the point at which the player needs the interaction. If you want the interaction to exist from the beginning however, *PostBeginPlay()* of the PlayerController will not work because *Player* is not initialized at this point yet. *PostLogin(...)* in your subclass of GameInfo would be a very good place to add the interaction.

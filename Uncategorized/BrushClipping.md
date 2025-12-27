@@ -13,15 +13,15 @@
 
 Brush clipping is the term used to describe the operation of cutting a brush with a plane. This is a powerful tool when properly understood, and should become a staple in any level designers toolbox.Here's a quick example of a simple clip.
 
-![wpeC.jpg](../assets/wpec.jpg)
+![wpec.jpg](../assets/wpec.jpg)
 
 Here's a simple subtracted cube, before any clipping is done to it.
 
-![wpeB.jpg](../assets/wpeb.jpg)
+![wpeb.jpg](../assets/wpeb.jpg)
 
 In the "Top" 2D viewport, we place 2 clipping points which define the clipping plane.
 
-![wpeA.jpg](../assets/wpea.jpg)
+![wpea.jpg](../assets/wpea.jpg)
 
 The resulting brush after the clip is performed.The first thing to understand is how to place the clipping points and what the various markers and symbols mean. To do that, let's run through a simple clip, step by step ...
 
@@ -73,27 +73,27 @@ OK, let's keep going with that same brush. Let's clip it again, but this time we
 
 Now, add a third point ... something like this ...
 
-![wpe1A.jpg](../assets/wpe1a.jpg)
+![wpe1a.jpg](../assets/wpe1a.jpg)
 
 You'll notice that the perpendicular line has vanished. Well, it hasn't actually vanished, rather it's pointing straight at us since all the clipping points are on the same plane. Let's use the 3D window for the rest of this exercise. You should see this in the 3D window ...
 
-![wpe1B.jpg](../assets/wpe1b.jpg)
+![wpe1b.jpg](../assets/wpe1b.jpg)
 
 There's the line, pointing straight down. Now, you can play with the orientation of the plane in 3D by moving the clipping markers around. The markers behave just like regular actors, so move them around like you normally move actors. Play with them a bit and you'll see how it works. Try to set up something like this before proceeding ...
 
-![wpe1C.jpg](../assets/wpe1c.jpg)
+![wpe1c.jpg](../assets/wpe1c.jpg)
 
 It doesn't matter if you get this exactly or not ... just get the plane so that it's not laying flat. Now, click the clip button. You notice that clip lies exactly along the plane you defined ...
 
-![wpe1D.jpg](../assets/wpe1d.jpg)
+![wpe1d.jpg](../assets/wpe1d.jpg)
 
 Move the camera around and you'll see the relationship between the clipping plane and the clip we performed. Now, click the undo button on the toolbar. We'll take a quick look at the split function. Once you have your original shape back again, click the split button:
 
-![wpe1E.jpg](../assets/wpe1e.jpg)
+![wpe1e.jpg](../assets/wpe1e.jpg)
 
 This breaks the brush in 2 pieces, along the clipping plane. You'll have something like this ...
 
-![wpe1F.jpg](../assets/wpe1f.jpg)
+![wpe1f.jpg](../assets/wpe1f.jpg)
 
 Now there are 2 pieces instead of one. I'll move the pieces apart so you can see them better.
 

@@ -324,15 +324,15 @@ Example words: *Cage, Get, Key*
 
 ### Targets (Eyebrow Up Left) - "EB\_Up\_L" Frame 160 and (Eyebrow Up Right) - "EB\_Up\_R" Frame 170
 
-![Eb_Up_L.jpg](../assets/eb_up_l.jpg)
+![eb_up_l.jpg](../assets/eb_up_l.jpg)
 
-![Eb_Up_R.jpg](../assets/eb_up_r.jpg)The "EB\_Up\_L" will move the Left eyebrow up to its maximum position. Nothing else should move. Same rules apply for "Blink\_R"
+![eb_up_r.jpg](../assets/eb_up_r.jpg)The "EB\_Up\_L" will move the Left eyebrow up to its maximum position. Nothing else should move. Same rules apply for "Blink\_R"
 
 ### Targets (Blink Left) - "Blink\_L" Frame 180 and (Blink Right) - "Blink\_R" Frame 190
 
-![blink_L.jpg](../assets/blink_l.jpg)
+![blink_l.jpg](../assets/blink_l.jpg)
 
-![Blink_R.jpg](../assets/blink_r.jpg)The "Blink\_L" will move the Left eyelid down over the eyeball. Nothing else should move. If you like you can pull the Left Cheek up a bit in towards the eye to exaggerate the blink. Same rules apply for "Blink\_R"
+![blink_r.jpg](../assets/blink_r.jpg)The "Blink\_L" will move the Left eyelid down over the eyeball. Nothing else should move. If you like you can pull the Left Cheek up a bit in towards the eye to exaggerate the blink. Same rules apply for "Blink\_R"
 
 ![select_bones_1.gif](../assets/select_bones_1.gif)
 

@@ -91,7 +91,7 @@ A .UTX file is a repository for a group of textures, and files derived from such
 
 This lets you add more textures to a package.
 
-![ImportWindow.jpg](../assets/importwindow.jpg)
+![importwindow.jpg](../assets/importwindow.jpg)
 
 * **Package:** The name of the package you will import into.
 * **Group:** The group within the package the texture will be classified under. This field can be left blank, if no group is desired.

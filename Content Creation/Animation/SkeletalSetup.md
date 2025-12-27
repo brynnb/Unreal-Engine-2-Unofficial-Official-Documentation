@@ -84,7 +84,7 @@ Any mesh can benefit from being tweaked for use in game, no matter how good it l
 
 ## Initializing Physique
 
-![PhysiqueInit.jpg](../../assets/physiqueinit.jpg)
+![physiqueinit.jpg](../../assets/physiqueinit.jpg)
 
 When linking a mesh to a biped (or any hierarchy for that matter) you must initialize with Rigid Vertex Link Assignments. If you do not, what you see in Max will be different from what you see in the engine. This is because Max's Deformable mode computes vertex deformation in a special way which is not duplicated in the engine. The image to the right shows the correct initialization settings, along with the recommended 3 link maximum. Remember, you want to use these options:
 
@@ -93,7 +93,7 @@ When linking a mesh to a biped (or any hierarchy for that matter) you must initi
 
 All of the other settings can be left as their default, or set to whatever you normally would use. Editing vertex weights may be done by adjusting envelopes or by assigning vertices manually (or even typing in values).When exported, all weights are normalized so they add up to 100% influence automatically.No bulges, tendons, or other special Physique tools may be used. This is necessary so that meshes will deform in Max exactly as they will in the game engine.Often people report differences between what they see in Max and what they see in the engine. Usually this indicates a problem with the initial setup. An easy way to see if a model is set up wrong is to toggle between the Physique Level of Detail settings while the model is in a non-reference pose. If the mesh surface 'shifts' in any way, it has been linked up incorrectly. Below, you can see an image of the radio buttons to toggle between to check a model.
 
-![PhysiqueLOD.jpg](../../assets/physiquelod.jpg)
+![physiquelod.jpg](../../assets/physiquelod.jpg)
 
 ## Other Issues
 
@@ -170,11 +170,11 @@ Animations can be blended together in code to make transitions fluid, as well as
 
 Objects can be attached to bones in the skeleton. Weapons are attached to models in this manner. In most cases you will want to make a special attach bone to attach the object in the correct location with the correct orientation. If you do not make a specific bone, one of your existing bones must be aligned for the attachment, or an offset rotation and location must be set in code. The following images illustrate how to align objects to bones.If the object is aligned in 3DS MAX like this:
 
-![WeaponAlign.jpg](../../assets/weaponalign.jpg)
+![weaponalign.jpg](../../assets/weaponalign.jpg)
 
 The attach bone should be aligned like this:
 
-![ModelBoneAlign.jpg](../../assets/modelbonealign.jpg)
+![modelbonealign.jpg](../../assets/modelbonealign.jpg)
 
 The Z axis of the alignment bone orientation corresponds to the Y axis of the object orientation. The X axis of the alignment bone orientation corresponds to the negative Z axis of the object orientation.Objects are attached to bones by using the bone names. It is best to use the same bones names for attach bones for all models; for example, all of Epic's models that comes with the CodeDrops ([CodeDrop2226](https://udn.epicgames.com/Two/CodeDrop2226) for example), have a bone called "weapon\_bone" that is used for attaching the weapon.
 

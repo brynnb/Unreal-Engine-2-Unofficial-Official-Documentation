@@ -40,21 +40,21 @@ Documentation including references, technical guides, and tutorials covering set
 
 *
 
-[![ue3.jpg](../assets/ue3.jpg)](UE3Basics.html)
+![ue3.jpg](../assets/ue3.jpg)](UE3Basics.html)
 
 [Unreal Engine 3 Basics](UE3Basics.md)
 
   General Information about developing games with Unreal Engine 3. Minimum Specs - Recommended Hardware - Recommended Software - Workflow - Frequently Asked Questions - Console Commands - Commandline Arguments - Confirguration Files - Blogs
 *
 
-[![gs_main.jpg](../assets/gs_main.jpg)](GettingStartedOverview.html)
+![gs_main.jpg](../assets/gs_main.jpg)](GettingStartedOverview.html)
 
 [Getting Started](GettingStartedOverview.md)
 
   Information for developers new to Unreal Engine 3 and Unreal Development Kit (UDK). Covers all aspects of the development process: Production Planning - Programming - Content Creation - Level Creation - Profiling & Optimization - Packaging & Distribution
 *
 
-[![gs_prog.jpg](../assets/gs_prog.jpg)](UnrealScriptHome.html)
+![gs_prog.jpg](../assets/gs_prog.jpg)](UnrealScriptHome.html)
 
 [UnrealScript](UnrealScriptHome.md)
 

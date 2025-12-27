@@ -108,7 +108,7 @@ I wanted a mesh to rotate, I'm betting that you will as well. There are two fiel
 
 To make this mesh rotate, we'll be using the Matinee mode to control it. First, open up the Matinee window, and create a new scene. Right away, we need to change some fields. In the **SceneManager** category, change the field **Affect** from *AFFECT\_ViewportCamera* to *AFFECT\_Actor*. Next, make sure your moveable static mesh is selected, and go to the field **AffectedActor**. Hit the **Use** button.To trigger the scene, I'm using the **StartGame** scene we created earlier; there is a **SceneManager** > **EventStart** field in the scene's properties. Put the name of the new scene in that field, it's called *rotaterockets* in this example.Go to the **Tools** tab in the Matinee window. Insert two **Interpolation point** & **Actions**. You should see these appear in your viewports as camera icons. Go to the top viewport and rotate one of the icons 360 degrees, so that the red arrow points in the SAME direction. Your mesh and Interpolation Points should look something like this.
 
-![Interpolations1.jpg](../../assets/interpolations1.jpg)
+![interpolations1.jpg](../../assets/interpolations1.jpg)
 
 Now, go to the **Actions** tab, select the first action and go to the **SubActions** tab. Add a **SubActionOrientation** to it, and change the **CamOrientation** Field to *CAMORIENT\_Interpolate*. Repeat for the second interpolation point.
 

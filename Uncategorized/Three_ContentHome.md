@@ -40,21 +40,21 @@ Documentation including references, guides, and tutorials covering the creation 
 
 *
 
-[![ue3.jpg](../assets/ue3.jpg)](UE3Basics.html)
+![ue3.jpg](../assets/ue3.jpg)](UE3Basics.html)
 
 [Unreal Engine 3 Basics](UE3Basics.md)
 
   General Information about developing games with Unreal Engine 3. Minimum Specs - Recommended Hardware - Recommended Software - Workflow - Frequently Asked Questions - Console Commands - Commandline Arguments - Confirguration Files - Blogs
 *
 
-[![gs_content.jpg](../assets/gs_content.jpg)](GettingStartedContent.html)
+![gs_content.jpg](../assets/gs_content.jpg)](GettingStartedContent.html)
 
 [Getting Started: Content Creation](GettingStartedContent.md)
 
   First steps for asset creation, including environments, characters, materials, textures, and more. FBX Content Pipeline - Static Meshes - Skeletal Meshes - Physics Assets - Animations - Materials - Textures - Particles & Effects - Post Processes - Audio & Sound
 *
 
-[![fbx.jpg](../assets/fbx.jpg)](FBXPipeline.html)
+![fbx.jpg](../assets/fbx.jpg)](FBXPipeline.html)
 
 [FBX Content Pipeline](FBXPipeline.md)
 
