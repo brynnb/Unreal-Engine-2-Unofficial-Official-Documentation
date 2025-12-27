@@ -22,13 +22,13 @@ This example will go over how to create an example menu that limits access to th
 
 ![mainmenu.jpg](../assets/mainmenu.jpg)
 
-The main menu was designed to be very simple. It does not have any tabs, any game settings, any controller settings, or even a button to exit the game. The game can be exited by closing the window. (If the game is fullscreen, press "alt-enter" to make the game not fullscreen, and then you can close it.)The menu has a title, a map list with a heading, and a load button. The up and down arrows can be used to select the map. To load the map either the load button can be click, enter can be pressed, or the map name can be double clicked. The last map loaded is saved and is highlighted when the main menu is shown again. This includes between map loads and exiting the game and re-launching it. See the [well documented code](../assets/[examplemenurestricted.zip](../assets/examplemenurestricted.zip)) for implementation details.
+The main menu was designed to be very simple. It does not have any tabs, any game settings, any controller settings, or even a button to exit the game. The game can be exited by closing the window. (If the game is fullscreen, press "alt-enter" to make the game not fullscreen, and then you can close it.)The menu has a title, a map list with a heading, and a load button. The up and down arrows can be used to select the map. To load the map either the load button can be click, enter can be pressed, or the map name can be double clicked. The last map loaded is saved and is highlighted when the main menu is shown again. This includes between map loads and exiting the game and re-launching it. See the [examplemenurestricted.zip](../assets/examplemenurestricted.zip) for implementation details.
 
 ## Creating the In-Game Menu
 
 ![midgamemenu.jpg](../assets/midgamemenu.jpg)
 
-The mid-game menu was also designed to be very simple. It pauses the game and gives you the choice to either continue the game, or close the map and return to the main menu. You can continue the game and close the mid-game menu by either clicking the "CONTINUE" button, selecting the "CONTINUE" button with the keyboard and pressing 'Enter', or hitting 'Esc'. You can close the map and return to the main menu by either clicking the button or moving the selection to that button and pressing 'Enter'. See the [well documented code](../assets/[examplemenurestricted.zip](../assets/examplemenurestricted.zip)) for implementation details.
+The mid-game menu was also designed to be very simple. It pauses the game and gives you the choice to either continue the game, or close the map and return to the main menu. You can continue the game and close the mid-game menu by either clicking the "CONTINUE" button, selecting the "CONTINUE" button with the keyboard and pressing 'Enter', or hitting 'Esc'. You can close the map and return to the main menu by either clicking the button or moving the selection to that button and pressing 'Enter'. See the [examplemenurestricted.zip](../assets/examplemenurestricted.zip) for implementation details.
 
 ## Creating the Restricted Console
 
@@ -36,7 +36,7 @@ The mid-game menu was also designed to be very simple. It pauses the game and gi
 
 ## Installing the Example
 
-Download the [attached zip file](../assets/[examplemenurestricted.zip](../assets/examplemenurestricted.zip)) and unzip it in your Runtime directory. Next you will need to alter your INI file settings to use the new menus and console. In *UE2Runtime.ini*, in the `[Engine.Engine]` section, change the console to:
+Download the [examplemenurestricted.zip](../assets/examplemenurestricted.zip) and unzip it in your Runtime directory. Next you will need to alter your INI file settings to use the new menus and console. In *UE2Runtime.ini*, in the `[Engine.Engine]` section, change the console to:
 
 ```
 

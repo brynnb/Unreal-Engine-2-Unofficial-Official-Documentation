@@ -1,10 +1,10 @@
 # Legacy Unreal Engine Documentation
 
-[![china_flag.jpg](../assets/china_flag.jpg)](WebHomeCH.html)
+![china_flag.jpg](../assets/china_flag.jpg)
 
-[![japan_flag.jpg](../assets/japan_flag.jpg)](WebHomeJP.html)
+![japan_flag.jpg](../assets/japan_flag.jpg)
 
-[![korea_flag.jpg](../assets/korea_flag.jpg)](WebHomeKR.html)
+![korea_flag.jpg](../assets/korea_flag.jpg)
 
 ---
 
@@ -39,6 +39,6 @@ Information to get started licensing Unreal Engine technology and other legal an
 * [Home](../Three/BusinessAndLegalHome.md)
 * [Technology Roadmap](../Three/UnrealTechnologyRoadmap.md)
 
-[![logo_epic-new.jpg](../assets/logo_epic-new.jpg)](http://www.epicgames.com/)
+![logo_epic-new.jpg](../assets/logo_epic-new.jpg)
 
 *By contributing information to Epic's Unreal Engine support outlets, including but not limited to **Unreal Developer Network** websites and mailing lists, you agree that any information you, your employees, assignees, sub-licensees, or representatives post shall become the sole property of Epic.*

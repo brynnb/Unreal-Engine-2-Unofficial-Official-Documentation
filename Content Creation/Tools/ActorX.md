@@ -24,30 +24,30 @@ The ActorX plugins are used to export skeletal meshes and their animations to bi
 
 | Version | Download |
 | --- | --- |
-| 3ds Max 2011 (32-bit) | [ActorX\_249\_Max2011\_32bit.zip](../../assets/[actorx_249_max2011_32bit.zip](../../assets/actorx_249_max2011_32bit.zip)) |
-| 3ds Max 2011 (64-bit) | [ActorX\_249\_Max2011\_64bit.zip](../../assets/[actorx_249_max2011_64bit.zip](../../assets/actorx_249_max2011_64bit.zip)) |
-| 3ds Max 2010 (32-bit) | [ActorX\_249\_Max2010\_32bit.zip](../../assets/[actorx_249_max2010_32bit.zip](../../assets/actorx_249_max2010_32bit.zip)) |
-| 3ds Max 2010 (64-bit) | [ActorX\_249\_Max2010\_64bit.zip](../../assets/[actorx_249_max2010_64bit.zip](../../assets/actorx_249_max2010_64bit.zip)) |
-| 3ds Max 2009 (32-bit) | [ActorX\_249\_Max2009\_32bit.zip](../../assets/[actorx_249_max2009_32bit.zip](../../assets/actorx_249_max2009_32bit.zip)) |
-| 3ds Max 2009 (64-bit) | [ActorX\_249\_Max2009\_64bit.zip](../../assets/[actorx_249_max2009_64bit.zip](../../assets/actorx_249_max2009_64bit.zip)) |
-| 3ds Max 2008 (32-bit) | [ActorX\_249\_Max2008\_32bit.zip](../../assets/[actorx_249_max2008_32bit.zip](../../assets/actorx_249_max2008_32bit.zip)) |
-| 3ds Max 2008 (64-bit) | [ActorX\_249\_Max2008\_64bit.zip](../../assets/[actorx_249_max2008_64bit.zip](../../assets/actorx_249_max2008_64bit.zip)) |
-| 3ds Max 9 (32-bit) | [ActorX\_249\_Max90\_32bit.zip](../../assets/[actorx_249_max90_32bit.zip](../../assets/actorx_249_max90_32bit.zip)) |
-| 3ds Max 9 (64-bit) | [ActorX\_249\_Max90\_64bit.zip](../../assets/[actorx_249_max90_64bit.zip](../../assets/actorx_249_max90_64bit.zip)) |
+| 3ds Max 2011 (32-bit) | [actorx_249_max2011_32bit.zip](../../assets/actorx_249_max2011_32bit.zip) |
+| 3ds Max 2011 (64-bit) | [actorx_249_max2011_64bit.zip](../../assets/actorx_249_max2011_64bit.zip) |
+| 3ds Max 2010 (32-bit) | [actorx_249_max2010_32bit.zip](../../assets/actorx_249_max2010_32bit.zip) |
+| 3ds Max 2010 (64-bit) | [actorx_249_max2010_64bit.zip](../../assets/actorx_249_max2010_64bit.zip) |
+| 3ds Max 2009 (32-bit) | [actorx_249_max2009_32bit.zip](../../assets/actorx_249_max2009_32bit.zip) |
+| 3ds Max 2009 (64-bit) | [actorx_249_max2009_64bit.zip](../../assets/actorx_249_max2009_64bit.zip) |
+| 3ds Max 2008 (32-bit) | [actorx_249_max2008_32bit.zip](../../assets/actorx_249_max2008_32bit.zip) |
+| 3ds Max 2008 (64-bit) | [actorx_249_max2008_64bit.zip](../../assets/actorx_249_max2008_64bit.zip) |
+| 3ds Max 9 (32-bit) | [actorx_249_max90_32bit.zip](../../assets/actorx_249_max90_32bit.zip) |
+| 3ds Max 9 (64-bit) | [actorx_249_max90_64bit.zip](../../assets/actorx_249_max90_64bit.zip) |
 
 Older Versions (not actively maintained.)
 
 | Version | Download |
 | --- | --- |
-| 3ds Max 8 | [ActorX\_220\_Max8.zip](../../assets/[actorx_220_max8.zip](../../assets/actorx_220_max8.zip)) |
-| 3ds Max 7 | [ActorX\_220\_Max7.zip](../../assets/[actorx_220_max7.zip](../../assets/actorx_220_max7.zip)) |
-| 3ds Max 6, CStudio 4.2 | [ActorX\_220\_Max6.zip](../../assets/[actorx_220_max6.zip](../../assets/actorx_220_max6.zip)) |
-| 3ds Max 5.0,5.1, CStudio 3.4 & 4.0 | [ActorX\_220\_Max5.zip](../../assets/[actorx_220_max5.zip](../../assets/actorx_220_max5.zip)) |
-| 3ds Max 4.2, CStudio 3.2 | [ActorX\_220\_Max42.zip](../../assets/[actorx_220_max42.zip](../../assets/actorx_220_max42.zip)) |
-| 3ds Max 4, CStudio 3.x | [ActorX\_220\_Max40.zip](../../assets/[actorx_220_max40.zip](../../assets/actorx_220_max40.zip)) |
-| 3ds Max 3.1, CStudio 2.2 | [[actorx31cs22.zip](../../assets/actorx31cs22.zip)](../../assets/[actorx31cs22.zip](../../assets/actorx31cs22.zip)) |
-| 3ds Max 3.1, CStudio 3.0 ( update 1.99h ) | [[actorx31cs30h.zip](../../assets/actorx31cs30h.zip)](../../assets/[actorx31cs30h.zip](../../assets/actorx31cs30h.zip)) |
-| 3ds Max 3.1, CStudio 3.0 | [[actorx31cs30.zip](../../assets/actorx31cs30.zip)](../../assets/[actorx31cs30.zip](../../assets/actorx31cs30.zip)) |
+| 3ds Max 8 | [actorx_220_max8.zip](../../assets/actorx_220_max8.zip) |
+| 3ds Max 7 | [actorx_220_max7.zip](../../assets/actorx_220_max7.zip) |
+| 3ds Max 6, CStudio 4.2 | [actorx_220_max6.zip](../../assets/actorx_220_max6.zip) |
+| 3ds Max 5.0,5.1, CStudio 3.4 & 4.0 | [actorx_220_max5.zip](../../assets/actorx_220_max5.zip) |
+| 3ds Max 4.2, CStudio 3.2 | [actorx_220_max42.zip](../../assets/actorx_220_max42.zip) |
+| 3ds Max 4, CStudio 3.x | [actorx_220_max40.zip](../../assets/actorx_220_max40.zip) |
+| 3ds Max 3.1, CStudio 2.2 | [actorx31cs22.zip](../../assets/actorx31cs22.zip)) |
+| 3ds Max 3.1, CStudio 3.0 ( update 1.99h ) | [actorx31cs30h.zip](../../assets/actorx31cs30h.zip)) |
+| 3ds Max 3.1, CStudio 3.0 | [actorx31cs30.zip](../../assets/actorx31cs30.zip)) |
 
 Version notes:
 
@@ -69,28 +69,28 @@ Version notes:
 
 | Version | Download |
 | --- | --- |
-| Maya 2011 (32-bit) | [ActorX\_249\_Maya2011\_32bit.zip](../../assets/[actorx_249_maya2011_32bit.zip](../../assets/actorx_249_maya2011_32bit.zip)) |
-| Maya 2011 (64-bit) | [ActorX\_249\_Maya2011\_64bit.zip](../../assets/[actorx_249_maya2011_64bit.zip](../../assets/actorx_249_maya2011_64bit.zip)) |
-| Maya 2010 (32-bit) | [ActorX\_249\_Maya2010\_32bit.zip](../../assets/[actorx_249_maya2010_32bit.zip](../../assets/actorx_249_maya2010_32bit.zip)) |
-| Maya 2010 (64-bit) | [ActorX\_249\_Maya2010\_64bit.zip](../../assets/[actorx_249_maya2010_64bit.zip](../../assets/actorx_249_maya2010_64bit.zip)) |
-| Maya 2009 (32-bit) | [ActorX\_249\_Maya2009\_32bit.zip](../../assets/[actorx_249_maya2009_32bit.zip](../../assets/actorx_249_maya2009_32bit.zip)) |
-| Maya 2009 (64-bit) | [ActorX\_249\_Maya2009\_64bit.zip](../../assets/[actorx_249_maya2009_64bit.zip](../../assets/actorx_249_maya2009_64bit.zip)) |
-| Maya 2008 (32-bit) | [ActorX\_249\_Maya2008\_32bit.zip](../../assets/[actorx_249_maya2008_32bit.zip](../../assets/actorx_249_maya2008_32bit.zip)) |
-| Maya 2008 (64-bit) | [ActorX\_249\_Maya2008\_64bit.zip](../../assets/[actorx_249_maya2008_64bit.zip](../../assets/actorx_249_maya2008_64bit.zip)) |
-| Maya 8.5 (32-bit) | [ActorX\_249\_Maya85\_32bit.zip](../../assets/[actorx_249_maya85_32bit.zip](../../assets/actorx_249_maya85_32bit.zip)) |
-| Maya 8.5 (64-bit) | [ActorX\_249\_Maya85\_64bit.zip](../../assets/[actorx_249_maya85_64bit.zip](../../assets/actorx_249_maya85_64bit.zip)) |
+| Maya 2011 (32-bit) | [actorx_249_maya2011_32bit.zip](../../assets/actorx_249_maya2011_32bit.zip) |
+| Maya 2011 (64-bit) | [actorx_249_maya2011_64bit.zip](../../assets/actorx_249_maya2011_64bit.zip) |
+| Maya 2010 (32-bit) | [actorx_249_maya2010_32bit.zip](../../assets/actorx_249_maya2010_32bit.zip) |
+| Maya 2010 (64-bit) | [actorx_249_maya2010_64bit.zip](../../assets/actorx_249_maya2010_64bit.zip) |
+| Maya 2009 (32-bit) | [actorx_249_maya2009_32bit.zip](../../assets/actorx_249_maya2009_32bit.zip) |
+| Maya 2009 (64-bit) | [actorx_249_maya2009_64bit.zip](../../assets/actorx_249_maya2009_64bit.zip) |
+| Maya 2008 (32-bit) | [actorx_249_maya2008_32bit.zip](../../assets/actorx_249_maya2008_32bit.zip) |
+| Maya 2008 (64-bit) | [actorx_249_maya2008_64bit.zip](../../assets/actorx_249_maya2008_64bit.zip) |
+| Maya 8.5 (32-bit) | [actorx_249_maya85_32bit.zip](../../assets/actorx_249_maya85_32bit.zip) |
+| Maya 8.5 (64-bit) | [actorx_249_maya85_64bit.zip](../../assets/actorx_249_maya85_64bit.zip) |
 
 Older Versions (not actively maintained.)
 
 | Version | Download |
 | --- | --- |
-| Maya 8 | [ActorXTool\_Maya80\_244.zip](../../assets/[actorxtool_maya80_244.zip](../../assets/actorxtool_maya80_244.zip)) |
-| Maya 7 | [ActorXTool\_Maya70\_244.zip](../../assets/[actorxtool_maya70_244.zip](../../assets/actorxtool_maya70_244.zip)) |
-| Maya 6.5 | [ActorXTool\_Maya65\_244.zip](../../assets/[actorxtool_maya65_244.zip](../../assets/actorxtool_maya65_244.zip)) |
-| Maya 6 | [ActorXTool\_Maya60\_244.zip](../../assets/[actorxtool_maya60_244.zip](../../assets/actorxtool_maya60_244.zip)) |
-| Maya 5.0/5.0.1 | [ActorXTool\_Maya50\_244.zip](../../assets/[actorxtool_maya50_244.zip](../../assets/actorxtool_maya50_244.zip)) |
-| Maya 4.5 | [ActorXTool\_Maya45\_244.zip](../../assets/[actorxtool_maya45_244.zip](../../assets/actorxtool_maya45_244.zip)) |
-| Maya 4 | [ActorXTool\_Maya40\_244.zip](../../assets/[actorxtool_maya40_244.zip](../../assets/actorxtool_maya40_244.zip)) |
+| Maya 8 | [actorxtool_maya80_244.zip](../../assets/actorxtool_maya80_244.zip) |
+| Maya 7 | [actorxtool_maya70_244.zip](../../assets/actorxtool_maya70_244.zip) |
+| Maya 6.5 | [actorxtool_maya65_244.zip](../../assets/actorxtool_maya65_244.zip) |
+| Maya 6 | [actorxtool_maya60_244.zip](../../assets/actorxtool_maya60_244.zip) |
+| Maya 5.0/5.0.1 | [actorxtool_maya50_244.zip](../../assets/actorxtool_maya50_244.zip) |
+| Maya 4.5 | [actorxtool_maya45_244.zip](../../assets/actorxtool_maya45_244.zip) |
+| Maya 4 | [actorxtool_maya40_244.zip](../../assets/actorxtool_maya40_244.zip) |
 | Maya 3 (legacy) | [ActorxTool3.mll](rsrc/Two/ActorX/ActorxTool3.mll) |
 
 Version notes:
@@ -122,12 +122,12 @@ NOTE: support for the XSI exporter plugins is provided by XSI themselves.You can
 
 | Version | Download |
 | --- | --- |
-| XSI 6.5 (32 bit) **beta** 2.01 | [ActorX\_XSI65\_beta2\_32bit.zip](../../assets/[actorx_xsi65_beta2_32bit.zip](../../assets/actorx_xsi65_beta2_32bit.zip)) |
-| XSI 6.5 (64 bit) **beta** 2.01 | [ActorX\_XSI65\_beta2\_64bit.zip](../../assets/[actorx_xsi65_beta2_64bit.zip](../../assets/actorx_xsi65_beta2_64bit.zip)) |
-| XSI 5.0-5.1 | [[actorx.05012006.zip](../../assets/actorx.05012006.zip)](../../assets/[actorx.05012006.zip](../../assets/actorx.05012006.zip)) |
-| XSI 5.0 | [[actorx.01202006.zip](../../assets/actorx.01202006.zip)](../../assets/[actorx.01202006.zip](../../assets/actorx.01202006.zip)) |
-| XSI 4.0 and 4.2 | [ActorX\_XSI40\_101.zip](../../assets/[actorx_xsi40_101.zip](../../assets/actorx_xsi40_101.zip)) |
-| XSI 4.0 and 4.2 | [ActorX\_XSI40\_100e.zip](../../assets/[actorx_xsi40_100e.zip](../../assets/actorx_xsi40_100e.zip)) |
+| XSI 6.5 (32 bit) **beta** 2.01 | [actorx_xsi65_beta2_32bit.zip](../../assets/actorx_xsi65_beta2_32bit.zip) |
+| XSI 6.5 (64 bit) **beta** 2.01 | [actorx_xsi65_beta2_64bit.zip](../../assets/actorx_xsi65_beta2_64bit.zip) |
+| XSI 5.0-5.1 | [actorx.05012006.zip](../../assets/actorx.05012006.zip)) |
+| XSI 5.0 | [actorx.01202006.zip](../../assets/actorx.01202006.zip)) |
+| XSI 4.0 and 4.2 | [actorx_xsi40_101.zip](../../assets/actorx_xsi40_101.zip) |
+| XSI 4.0 and 4.2 | [actorx_xsi40_100e.zip](../../assets/actorx_xsi40_100e.zip) |
 
 Version notes for XSI 6.5 plugins:
 

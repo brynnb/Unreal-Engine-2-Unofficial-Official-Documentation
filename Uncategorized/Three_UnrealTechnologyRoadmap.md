@@ -2,13 +2,13 @@
 
 ---
 
-[![homeicon_con.gif](../assets/homeicon_con.gif)](https://www.unrealengine.com/)
+![homeicon_con.gif](../assets/homeicon_con.gif)
 
 [Unreal Engine 4](https://www.unrealengine.com/)
 
 Unreal Engine 4 (UE4) is Epic's next-generation technology, released in 2014. It provides a complete suite of game development tools made by game developers, for game developers. From 2D mobile games to console blockbusters, Unreal Engine 4 gives you everything you need to start, ship, grow and stand out from the crowd.
 
-[![homeicon_con.gif](../assets/homeicon_con.gif)](WebHome.html)
+![homeicon_con.gif](../assets/homeicon_con.gif)
 
 [Unreal Engine 3](WebHome.md)
 
@@ -21,7 +21,7 @@ Unreal Engine 2.5
 
 Unreal Engine 2.5 (UE2.5) was the latest UE2 engine version for previous generation hardware. This code has been proven in *Unreal Tournament 2004*.
 
-[![homeicon_tec.gif](../assets/homeicon_tec.gif)](../Two/WebHome.html)
+![homeicon_tec.gif](../assets/homeicon_tec.gif)
 
 [Unreal Engine 2](WebHome.md)
 

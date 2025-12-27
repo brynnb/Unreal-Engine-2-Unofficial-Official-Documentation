@@ -8,7 +8,7 @@
 
 ## Alan Willard writes...
 
-"Here's how I hacked cellshading into the base Unreal Engine.Create a cubemap with mostly white sides, one black sides, and a thin black border on every white side where it touches the black. For 'lighting' I put a mid-grey on the bottom face of the cubemap.This cubemap, when placed inside a texenvmap set to cameracoords, is then multiplied with a texture or color in the diffuse channel of a shader. For no lighting, put the same combiner in the self-illumination channel.[Attached](../assets/[ut2004celshadingexample.zip](../assets/ut2004celshadingexample.zip)) is an example texture package and map. Place in the appropriate directories in UT2004 and enjoy.- Alan Willard   
+"Here's how I hacked cellshading into the base Unreal Engine.Create a cubemap with mostly white sides, one black sides, and a thin black border on every white side where it touches the black. For 'lighting' I put a mid-grey on the bottom face of the cubemap.This cubemap, when placed inside a texenvmap set to cameracoords, is then multiplied with a texture or color in the diffuse channel of a shader. For no lighting, put the same combiner in the self-illumination channel.[ut2004celshadingexample.zip](../assets/ut2004celshadingexample.zip) is an example texture package and map. Place in the appropriate directories in UT2004 and enjoy.- Alan Willard   
 - Level Designer   
 - Epic Games"
 

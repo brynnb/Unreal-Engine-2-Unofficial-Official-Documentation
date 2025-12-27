@@ -32,11 +32,11 @@ Contact the [UDN Staff](../Main/ContactUDNStaff.md)
 
 UE3 Home
 
-[![china_flag.jpg](../assets/china_flag.jpg)](WebHomeCH.html)
+![china_flag.jpg](../assets/china_flag.jpg)
 
-[![japan_flag.jpg](../assets/japan_flag.jpg)](WebHomeJP.html)
+![japan_flag.jpg](../assets/japan_flag.jpg)
 
-[![korea_flag.jpg](../assets/korea_flag.jpg)](WebHomeKR.html)
+![korea_flag.jpg](../assets/korea_flag.jpg)
 
 ---
 

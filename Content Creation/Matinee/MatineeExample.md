@@ -33,7 +33,7 @@ To start with load a fresh UnrealEd.
 * Add it
 * Select all surfaces and mark them as unlit
 
-Rebuild the level. This gives us a playground to build this example level with. Or if you're lazy, you can download a UNR to start with here : [https://udn.epicgames.com/pub/Two/MatineeExample/[matineeexample1.zip](../../assets/matineeexample1.zip)](../../assets/[matineeexample1.zip](../../assets/matineeexample1.zip)) .When you're done, you should have a level that looks like this:
+Rebuild the level. This gives us a playground to build this example level with. Or if you're lazy, you can download a UNR to start with here : [matineeexample1.zip](../../assets/matineeexample1.zip)) .When you're done, you should have a level that looks like this:
 
 ![viewport1.jpg](../../assets/viewport1.jpg)
 
@@ -146,5 +146,5 @@ OK, it's time to leave the editor and see this path run in the game engine. To d
 
 ## In Closing
 
-If you're having problems getting your scene to work, you can download a working version of what we just built here:[https://udn.epicgames.com/pub/Two/MatineeExample/[matineeexample2.zip](../../assets/matineeexample2.zip)](../../assets/[matineeexample2.zip](../../assets/matineeexample2.zip))Good luck!
+If you're having problems getting your scene to work, you can download a working version of what we just built here:[matineeexample2.zip](../../assets/matineeexample2.zip))Good luck!
 

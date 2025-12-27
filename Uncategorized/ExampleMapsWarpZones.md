@@ -89,4 +89,4 @@ For more information on WarpZones, see the [MirrorsAndWarpZones](MirrorsAndWarpZ
 
 Below you can download a compressed archive that contains the content for this example:
 
-* [EM\_WarpZones.zip](../assets/[em_warpzones.zip](../assets/em_warpzones.zip)) (for Unreal Engine 2 build 2226)
+* [em_warpzones.zip](../assets/em_warpzones.zip) (for Unreal Engine 2 build 2226)

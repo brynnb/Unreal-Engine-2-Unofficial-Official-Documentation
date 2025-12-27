@@ -22,11 +22,11 @@
 
 ## Introduction
 
-Triggers are actors in the level that send out "alerts" letting the game know that something has happened. There is a wide variety of types of Triggers and some Triggers are set up in special ways. This document will step you through the process of setting up each of the various types of Triggers.Note that there are two maps to download. The first map - [EM\_Triggers1.zip](../assets/[em_triggers1.zip](../assets/em_triggers1.zip)) - demonstrates the basic triggers you can use and is designed for any 2226 build (such as UDNBuild2226 or [CodeDrop2226](https://udn.epicgames.com/Two/CodeDrop2226)). The second map - [EM\_Triggers2.zip](../assets/[em_triggers2.zip](../assets/em_triggers2.zip)) - demonstrates TriggerConditions and will require Epic content from the [CodeDrop2226](https://udn.epicgames.com/Two/CodeDrop2226) build.For more information on Triggers, see the [TriggersTutorial](TriggersTutorial.md).
+Triggers are actors in the level that send out "alerts" letting the game know that something has happened. There is a wide variety of types of Triggers and some Triggers are set up in special ways. This document will step you through the process of setting up each of the various types of Triggers.Note that there are two maps to download. The first map - [em_triggers1.zip](../assets/em_triggers1.zip) - demonstrates the basic triggers you can use and is designed for any 2226 build (such as UDNBuild2226 or [CodeDrop2226](https://udn.epicgames.com/Two/CodeDrop2226)). The second map - [em_triggers2.zip](../assets/em_triggers2.zip) - demonstrates TriggerConditions and will require Epic content from the [CodeDrop2226](https://udn.epicgames.com/Two/CodeDrop2226) build.For more information on Triggers, see the [TriggersTutorial](TriggersTutorial.md).
 
 ## Example One: Triggers Map
 
-The [EM\_Triggers1.zip](../assets/[em_triggers1.zip](../assets/em_triggers1.zip)) file is a compressed archive that includes all of the triggers that do not require a pawn with some sort of firing weapon.It is designed for any 2226 build (such as UDNBuild2226 or [CodeDrop2226](https://udn.epicgames.com/Two/CodeDrop2226)).
+The [em_triggers1.zip](../assets/em_triggers1.zip) file is a compressed archive that includes all of the triggers that do not require a pawn with some sort of firing weapon.It is designed for any 2226 build (such as UDNBuild2226 or [CodeDrop2226](https://udn.epicgames.com/Two/CodeDrop2226)).
 
 ### Trigger
 
@@ -184,7 +184,7 @@ Earthquake:
 
 ## Example Two: Triggers Map
 
-The [EM\_Triggers1.zip](../assets/[em_triggers2.zip](../assets/em_triggers2.zip)) file is a compressed archive that contains a map which demonstrates TriggerConditions and will require Epic content from the [CodeDrop2226](https://udn.epicgames.com/Two/CodeDrop2226) build.As mentioned above, this map (created by Chris Linder) requires Epic content from the [CodeDrop2226](https://udn.epicgames.com/Two/CodeDrop2226) build.
+The [em_triggers2.zip](../assets/em_triggers2.zip) file is a compressed archive that contains a map which demonstrates TriggerConditions and will require Epic content from the [CodeDrop2226](https://udn.epicgames.com/Two/CodeDrop2226) build.As mentioned above, this map (created by Chris Linder) requires Epic content from the [CodeDrop2226](https://udn.epicgames.com/Two/CodeDrop2226) build.
 
 ### TriggerCondition
 
@@ -230,4 +230,4 @@ Lastly make sure that you have a regular Trigger to activate the TriggerConditio
 
 ## Downloads
 
-To run the first map you will need to download the [EM\_Triggers1.zip](../assets/[em_triggers1.zip](../assets/em_triggers1.zip)) file and extract and put the map and texture package into the appropriate folders of your build. This map is for any 2226 build (such as UDNBuild2226 or [CodeDrop2226](https://udn.epicgames.com/Two/CodeDrop2226)).To run the second map, you will need to download the [EM\_Triggers2.zip](../assets/[em_triggers2.zip](../assets/em_triggers2.zip)) file and extract and put the map into the Maps folder of a build that has Epic content from [CodeDrop2226](https://udn.epicgames.com/Two/CodeDrop2226).
+To run the first map you will need to download the [em_triggers1.zip](../assets/em_triggers1.zip) file and extract and put the map and texture package into the appropriate folders of your build. This map is for any 2226 build (such as UDNBuild2226 or [CodeDrop2226](https://udn.epicgames.com/Two/CodeDrop2226)).To run the second map, you will need to download the [em_triggers2.zip](../assets/em_triggers2.zip) file and extract and put the map into the Maps folder of a build that has Epic content from [CodeDrop2226](https://udn.epicgames.com/Two/CodeDrop2226).

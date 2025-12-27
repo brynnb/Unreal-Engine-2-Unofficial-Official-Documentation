@@ -92,5 +92,5 @@ There are many more effects that can be achieved with SkyZones. Other geometry c
 
 Below you can download a compressed archive that contains the content for this example:
 
-* [EM\_SkyZone.zip](../assets/[em_skyzone.zip](../assets/em_skyzone.zip)) (for Unreal Engine 2 build 2226)
-* [EM\_SkyZones\_RT.zip](../assets/[em_skyzones_rt.zip](../assets/em_skyzones_rt.zip)) (for Unreal Engine 2 Runtime)
+* [em_skyzone.zip](../assets/em_skyzone.zip) (for Unreal Engine 2 build 2226)
+* [em_skyzones_rt.zip](../assets/em_skyzones_rt.zip) (for Unreal Engine 2 Runtime)

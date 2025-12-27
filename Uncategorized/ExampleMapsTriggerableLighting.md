@@ -65,4 +65,4 @@ Now go through each one and set the ChangeTimes for each one incrementally. In t
 Below you can download a compressed archive that contains the content for this example:
 
 * EM\_TriggerableLights.zip (for Unreal Engine 2 build 2226)
-* [EM\_TriggerableLights\_RT.zip](../assets/[em_triggerablelights_rt.zip](../assets/em_triggerablelights_rt.zip)) (for Unreal Engine 2 Runtime)
+* [em_triggerablelights_rt.zip](../assets/em_triggerablelights_rt.zip) (for Unreal Engine 2 Runtime)

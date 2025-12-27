@@ -59,11 +59,7 @@
 
 ## Introduction
 
-This document will cover Beam Emitters, one of five different possible emitters available in the 3323 build. For more information on general emitter properties, see  [EmittersReference](../Content%20Creation/Effects/EmittersReference.md). For more information on the other three emitter types, see  [SpriteEmitter](https://udn.epicgames.com/Two/SpriteEmitter),  [SparkEmitter](SparkEmitter.md),  [MeshEmitter](MeshEmitter.md) and [TrailEmitter?.This Emitter is very useful to create lightning and electrical effects. It stretches the chosen texture into a beam with HighFrequencyPoints and LowFrequencyPoints. There must be at least two of each to make the lightning work. Each beam is one particle. Normally, the beam is only one angular line, but you can also give it branches.As previously stated, we will be discussing Beam Emitters a property at a time, with most of our attention on those properties unique to, or especially relevant to, these Emitters.
-
-## Acceleration
-
-Applies acceleration to the beam particles. This is probably not going to be useful as real-world lightning bolts are not visibly affected by gravity. Probably better results will result in changes to  [StartVelocityRange](BeamEmitter.md#velocity). For more information on Acceleration check out the [Emitters Reference](../Content%20Creation/Effects/EmittersReference.md#acceleration) document.
+This document will cover Beam Emitters, one of five different possible emitters available in the 3323 build. For more information on general emitter properties, see  [EmittersReference](../Content%20Creation/Effects/EmittersReference.md). For more information on the other three emitter types, see  [SpriteEmitter](https://udn.epicgames.com/Two/SpriteEmitter),  [SparkEmitter](SparkEmitter.md),  [MeshEmitter](MeshEmitter.md) and [StartVelocityRange](BeamEmitter.md#velocity) document.
 
 ## Beam
 

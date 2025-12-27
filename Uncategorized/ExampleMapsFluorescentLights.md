@@ -22,4 +22,4 @@ NOTE: if you use TriggerToggle, please set the ReTriggerDelay of the trigger to 
 
 Below you can download a compressed archive that contains the content for this example:
 
-* [[tl.zip](../assets/tl.zip)](../assets/[tl.zip](../assets/tl.zip))
+* [tl.zip](../assets/tl.zip))

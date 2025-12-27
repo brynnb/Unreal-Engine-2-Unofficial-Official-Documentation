@@ -129,8 +129,8 @@ If you want to use the UDN rigging with a new model, so you can take advantage o
 
 There are a lot of zips at the end of this document. Included are all the source files used to create the UDN models, as well as .PSK and .PSA files that you can use to import them directly into UnrealEd?. Here is the content breakdown:
 
-* [[udnmale.zip](../assets/udnmale.zip)](../assets/[udnmale.zip](../assets/udnmale.zip)): Contains the rigged .max model, the .PSA and .PSK, and the three textures you'll need to view it in 3DS Max.
-* [[udnfemale.zip](../assets/udnfemale.zip)](../assets/[udnfemale.zip](../assets/udnfemale.zip)): Contains the rigged .max model, the .PSA and .PSK, and the three textures you'll need to view it in 3DS Max.
-* [[udnmalesourceanims.zip](../assets/udnmalesourceanims.zip)](../assets/[udnmalesourceanims.zip](../assets/udnmalesourceanims.zip)): All the source .max files that comprise the animation/viseme sets. Caution: file size is large.
-* [[udnfemalesourceanims.zip](../assets/udnfemalesourceanims.zip)](../assets/[udnfemalesourceanims.zip](../assets/udnfemalesourceanims.zip)): All the source .max files that comprise the animation/viseme sets. Caution: file size is large.
+* [udnmale.zip](../assets/udnmale.zip)): Contains the rigged .max model, the .PSA and .PSK, and the three textures you'll need to view it in 3DS Max.
+* [udnfemale.zip](../assets/udnfemale.zip)): Contains the rigged .max model, the .PSA and .PSK, and the three textures you'll need to view it in 3DS Max.
+* [udnmalesourceanims.zip](../assets/udnmalesourceanims.zip)): All the source .max files that comprise the animation/viseme sets. Caution: file size is large.
+* [udnfemalesourceanims.zip](../assets/udnfemalesourceanims.zip)): All the source .max files that comprise the animation/viseme sets. Caution: file size is large.
 * UDNMapping.zip: The layout for the texture maps that are provided in [udnmale.zip](../assets/udnmale.zip) and [udnfemale.zip](../assets/udnfemale.zip)

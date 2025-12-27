@@ -68,4 +68,4 @@ For testing this portion of the map, I've included another one way teleporter th
 
 Click the links to download compressed archives of the example maps and content discussed in this document:
 
-* [EM\_Teleporters.zip](../assets/[em_teleporters.zip](../assets/em_teleporters.zip))
+* [em_teleporters.zip](../assets/em_teleporters.zip)

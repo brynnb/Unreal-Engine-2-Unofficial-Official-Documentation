@@ -99,4 +99,4 @@ To add further ambience, you can also set a different DistanceFog within this zo
 
 Below you can download a compressed archive that contains the content for this example:
 
-* [EM\_UndergroundCaverns.zip](../assets/[em_undergroundcaverns.zip](../assets/em_undergroundcaverns.zip)) (for Unreal Engine 2 build 2226)
+* [em_undergroundcaverns.zip](../assets/em_undergroundcaverns.zip) (for Unreal Engine 2 build 2226)
