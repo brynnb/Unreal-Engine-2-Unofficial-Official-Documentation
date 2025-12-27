@@ -1474,11 +1474,11 @@ UnrealScript provides a wide variety of C/C++/Java-style operators for such oper
 | /= | byte, int, float, vector, rotation | Divide and assign |
 | += | byte, int, float, vector | Add and assign |
 | -= | byte, int, float, vector | Subtract and assign |
-| || | bool | Logical or |
+| \|\| | bool | Logical or |
 | && | bool | Logical and |
 | ^^ | bool | Exclusive or |
 | & | int | Bitwise and |
-| | | int | Bitwise or |
+| \| | int | Bitwise or |
 | ^ | int | Bitwise exlusive or (XOR) |
 | = | All | Compare for inequality |
 | == | All | Compare for equality |
