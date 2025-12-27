@@ -212,7 +212,7 @@ Be careful when you change settings in defaultproperties and also change propert
 
 ## Installing the Helicopter Code
 
-[Download](../assets/helicopter.zip) the attached zip file and extract it into a CodeDrop2226 build. I have only tested this with a clean 2226 but it should work with most builds that have SVehicles. Make sure you have a build that has the executables such as uw.exe and ucc.exe built.Next open Dev Studio and go to the "Vehicles" project and add *SHelicopter.cpp* to the "Src" folder. Now delete the *Vehicles.u* file and rebuild it by typing "ucc make" or "uccdepend" in the system directory. Now build the solution and you should be ready to go. You can open up any map and drop in a *Pawn->SVehicle->SHelicopter->CTLChopper*. Or you can load *HelicopterMapBig.unr* which has helicopter spawners and a terrain to fly around in.
+[Download](../assets/[helicopter.zip](../assets/helicopter.zip)) the attached zip file and extract it into a CodeDrop2226 build. I have only tested this with a clean 2226 but it should work with most builds that have SVehicles. Make sure you have a build that has the executables such as uw.exe and ucc.exe built.Next open Dev Studio and go to the "Vehicles" project and add *SHelicopter.cpp* to the "Src" folder. Now delete the *Vehicles.u* file and rebuild it by typing "ucc make" or "uccdepend" in the system directory. Now build the solution and you should be ready to go. You can open up any map and drop in a *Pawn->SVehicle->SHelicopter->CTLChopper*. Or you can load *HelicopterMapBig.unr* which has helicopter spawners and a terrain to fly around in.
 
 ### v3323 and up
 

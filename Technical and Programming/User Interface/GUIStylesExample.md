@@ -219,27 +219,27 @@ Note: As of Runtime-2226.19.03 (code drop 2226) there is a problem with *BorderO
 
 Creating textures for GUIStyles is a fairly straightforward process, with a few particularies to keep in mind:Separate textures are created for the various buttons in their various behavior states (watched, blurry, etc) so that one button has five different versions.These textures will be used for buttons and frames whose dimensions will be defined by code. Therefore the textures you create will be most likely be resized. This is a great flexibility in the Unreal GUI system, but it also affects the way textures should be made. Unreal will use one of two methods to resize your textures. In the first, they are merely stretched, which can cause warping, just as changing the Image Size in Photoshop would:
 
-![stretching1.jpg](../../assets/stretching1.jpg)
+![stretching1.jpg](../../assets/![stretching1.jpg](../../assets/stretching1.jpg))
 
 A more complicated method of pixel repeating can be used. This is done by repeating pixels in the middle of the image to fill the sections between the corners if the stretch size is larger than the image. If the stretch size is smaller the corners are cropped in the middle and refitted together. This is well illustrated in the following images:This is the original 128 x 128 image:
 
-![stretch128.jpg](../../assets/stretch128.jpg)
+![stretch128.jpg](../../assets/![stretch128.jpg](../../assets/stretch128.jpg))
 
 This is the image resized to 100 x 100 pixels:
 
-![stretch100.jpg](../../assets/stretch100.jpg)
+![stretch100.jpg](../../assets/![stretch100.jpg](../../assets/stretch100.jpg))
 
 This is the image resized to 300 x 300 pixels:
 
-![stretch300.jpg](../../assets/stretch300.jpg)
+![stretch300.jpg](../../assets/![stretch300.jpg](../../assets/stretch300.jpg))
 
 Note that the corners are unaffected while the central areas are. This means that your textures can have detail in the corners while the central parts should be relatively plain. This will inevitably result in some iterations with your textures, but it will be worth it in the end. For more information on this, check out the [CanvasReference](CanvasReference.md#drawtilestretched) document.While these textures can be reused throughout your new GUIStyle, there are some limitations. Note that button textures can't easily be mirrored. In the case of this example, the mid game menu consists of two buttons (one for Continue and one for Close Map). These buttons are identical except they are mirrored horizontally. This required the creation of two different sets of button textures--one with the curlycues on the left and one on the right.
 
-![mirrorbuttons.jpg](../../assets/mirrorbuttons.jpg)
+![mirrorbuttons.jpg](../../assets/![mirrorbuttons.jpg](../../assets/mirrorbuttons.jpg))
 
 ## Installing the Example
 
-Download the [attached zip file](../../assets/exampleguistyles.zip) and unzip it in your Runtime directory. Next you will need to alter your INI file settings to use the new menus and console. In *UE2Runtime.ini*, (or *<your\_game>.ini*) in the `[Engine.Engine]` section, change the console and the GUIController as follows (note: you can comment out lines by starting them with a ';'):
+Download the [attached zip file](../../assets/[exampleguistyles.zip](../../assets/exampleguistyles.zip)) and unzip it in your Runtime directory. Next you will need to alter your INI file settings to use the new menus and console. In *UE2Runtime.ini*, (or *<your\_game>.ini*) in the `[Engine.Engine]` section, change the console and the GUIController as follows (note: you can comment out lines by starting them with a ';'):
 
 ```
 

@@ -34,20 +34,20 @@ Contact the [UDN Staff](../Main/ContactUDNStaff.md)
 
 ---
 
-![level.jpg](../assets/level.jpg)
+![level.jpg](../assets/![level.jpg](../assets/level.jpg))
 
 Documentation including references, guides, and tutorials covering the creation of levels and environments including adding scripted gameplay and dynamic interactive animationed events in Unreal Engine 3.
 
 *
 
-![ue3.jpg](../assets/ue3.jpg)](UE3Basics.html)
+![ue3.jpg](../assets/![ue3.jpg](../assets/ue3.jpg))](UE3Basics.html)
 
 [Unreal Engine 3 Basics](UE3Basics.md)
 
   General Information about developing games with Unreal Engine 3. Minimum Specs - Recommended Hardware - Recommended Software - Workflow - Frequently Asked Questions - Console Commands - Commandline Arguments - Confirguration Files - Blogs
 *
 
-![gs_level.jpg](../assets/gs_level.jpg)](GettingStartedLevels.html)
+![gs_level.jpg](../assets/![gs_level.jpg](../assets/gs_level.jpg))](GettingStartedLevels.html)
 
 [Getting Started: Level Creation](GettingStartedLevels.md)
 

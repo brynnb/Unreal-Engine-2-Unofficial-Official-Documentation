@@ -8,7 +8,7 @@
   + [Determining Necessary Art Assets](RuntimeMapPreproduction.md#determining-necessary-art-assets)
   + [Signing Off on the Design](RuntimeMapPreproduction.md#signing-off-on-the-design)
 
-![process.gif](../assets/process.gif)
+![process.gif](../assets/![process.gif](../assets/process.gif))
 
 ## Introduction
 
@@ -31,13 +31,13 @@ Once the audience is known and you have a general idea of the purpose of your le
 
 Now you're ready to start designing. Diving straight into the editor without a laid out plan can often end up taking more time than it saves. It's well worth your time to spend a few minutes laying out where you want everything to go and drawing it roughly to scale. Graph paper divided in powers of 2 blocks is highly recommended for helping figure out how big your level will need to be. Below is the initial sketch with notes for the EM\_RunTime map
 
-![runtime_sketch.gif](../assets/runtime_sketch.gif)
+![runtime_sketch.gif](../assets/![runtime_sketch.gif](../assets/runtime_sketch.gif))
 
 This sketch was useful in maintaining a consistent scale. Also note that it is somewhat rough and not designed down to the detail. It's important to find the right balance of detail so that you have enough to lay out the level, but not so detailed that designing the map takes as long as building it. A good plan minimizes the amount of stuff you will have to redesign, but know that there will probably be some minor details that will require redesigning along the way.
 
 ## Determining Necessary Art Assets
 
-![art_assets.jpg](../assets/art_assets.jpg)
+![art_assets.jpg](../assets/![art_assets.jpg](../assets/art_assets.jpg))
 
 After your sketch is finished, you can very easily see what art assets you will need. Directly from the map you've drawn you can make a list of the assets you'll need, and then the level designer and the artist can start working in tandem. Here is the list of art assets that were needed at the start of the EM\_RunTime map:
 

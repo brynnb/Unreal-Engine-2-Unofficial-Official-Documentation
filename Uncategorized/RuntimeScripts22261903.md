@@ -1,6 +1,6 @@
 # UnrealEngine2 Runtime UnrealScript Source Code (version 2226.19.03)
 
-![urt_logo.jpg](../assets/urt_logo.jpg)
+![urt_logo.jpg](../assets/![urt_logo.jpg](../assets/urt_logo.jpg))
 
 *Document Summary: Introduction to the [UnrealEngine2Runtime](UnrealEngine2Runtime.md) UnrealScript source code, including release information.**Document Changelog: Created and updated; maintained over time.*
 

@@ -25,7 +25,7 @@ This document is a guide to all the docs related to getting artwork into the Unr
 
 ## Modeling
 
-![Modeling Doc](../assets/modeling.jpg)
+![Modeling Doc](../assets/![modeling.jpg](../assets/modeling.jpg))
 
 This section includes information on how to efficiently model for the Unreal engine. It also contains useful information about Unreal-specific quirks, such as smoothing, refpose, etc.[UnrealModeling](UnrealModeling.md)
   
@@ -48,7 +48,7 @@ This section includes information on how to efficiently model for the Unreal eng
 
 ## Example Models
 
-![Example Models](../assets/udnmodel.jpg)
+![Example Models](../assets/![udnmodel.jpg](../assets/udnmodel.jpg))
 
 This document contains information about two mid poly models created for the Unreal Engine. The document details the creation of these models, explains why design decisions were made, and links to .zip files that contain all of the models, textures, animations, .PSK/.PSA files, etc.[UnrealDemoModels](UnrealDemoModels.md)
   
@@ -70,7 +70,7 @@ This document contains information about two mid poly models created for the Unr
 
 ## Texturing
 
-![Texturing Doc](../assets/texturing.jpg)
+![Texturing Doc](../assets/![texturing.jpg](../assets/texturing.jpg))
 
 This doc includes information on the range of texture formats that Unreal will accept, as well as when how best to use them. Links to tools that can be used to create certain formats are also included.[UnrealTexturing](UnrealTexturing.md)
   
@@ -94,7 +94,7 @@ This doc includes information on the range of texture formats that Unreal will a
 
 ## Rigging/Animation
 
-![Rigging Doc](../assets/skeleton.jpg)
+![Rigging Doc](../assets/![skeleton.jpg](../assets/skeleton.jpg))
 
 This document contains general information about setting up a skeleton in your finished models, with specific information dealing with correct initialization and Unreal capabilities.[SkeletalSetup](../Content%20Creation/Animation/SkeletalSetup.md)
   
@@ -146,7 +146,7 @@ Karma Physics (Ragdoll) is also an option in the Unreal Engine. For a thorough d
 
 [ActorX](../Content%20Creation/Tools/ActorX.md) is the plugin that sends model and animation data from your 3D modeling package into a format that Unreal can understand. These documents will walk you through the exporting process, as well as explain the tool windows in depth.
 
-![ActorX Docs](../assets/actorx.jpg)
+![ActorX Docs](../assets/![actorx.jpg](../assets/actorx.jpg))
 
 This document will simply point you to current versions of the [ActorX](../Content%20Creation/Tools/ActorX.md) plugin for Max and Maya.[ActorX](../Content%20Creation/Tools/ActorX.md)
 

@@ -47,7 +47,7 @@ This document will contain links to Demos and Example Maps. Feel free to create 
 
 [ExampleMapsAdvLighting](../../Uncategorized/ExampleMapsAdvLighting.md)This map shows how to create various light effects using different combinations of projectors, staticmeshes, shaders, and lights.
 
-![advanced_lighting.jpg](../../assets/advanced_lighting.jpg)
+![advanced_lighting.jpg](../../assets/![advanced_lighting.jpg](../../assets/advanced_lighting.jpg))
 
 ---
 
@@ -55,7 +55,7 @@ This document will contain links to Demos and Example Maps. Feel free to create 
 
 [ExampleMapsLightBeams](../../Uncategorized/ExampleMapsLightBeams.md)This map, submitted by a licensee, shows a way to create close to realistic lightbeams with a SpriteEmitter and a Projector.
 
-![lightbeam.jpg](../../assets/lightbeam.jpg)
+![lightbeam.jpg](../../assets/![lightbeam.jpg](../../assets/lightbeam.jpg))
 
 ---
 
@@ -63,7 +63,7 @@ This document will contain links to Demos and Example Maps. Feel free to create 
 
 [ExampleMapsTriggerableLighting](../../Uncategorized/ExampleMapsTriggerableLighting.md)Here you can find the basics on how to create triggerable lights and even see how to create a couple of effects including an illuminated path and (coming soon) how to create fluorescent lights.
 
-![running_lights.jpg](../../assets/running_lights.jpg)
+![running_lights.jpg](../../assets/![running_lights.jpg](../../assets/running_lights.jpg))
 
 ---
 
@@ -87,7 +87,7 @@ This document will contain links to Demos and Example Maps. Feel free to create 
 
 [ExampleMapsComplexMovers](../../Uncategorized/ExampleMapsComplexMovers.md)This map shows how to set up complicated movers that work together to create more spectacular effects including a rising-self cealing prison chamber and a roller coaster that uses more than 8 KeyFrames.
 
-![complex_movers.jpg](../../assets/complex_movers.jpg)
+![complex_movers.jpg](../../assets/![complex_movers.jpg](../../assets/complex_movers.jpg))
 
 ---
 
@@ -99,11 +99,11 @@ This document will contain links to Demos and Example Maps. Feel free to create 
 
 [ExampleMapsRisingWater](../../Uncategorized/ExampleMapsRisingWater.md) (this document also includes maps for the 927 and 2136 builds)There are two example maps here. The first map shows that it's possible to move WaterVolumes, and a way to move the bottom of a waterfall emitter.
 
-![movingwater2.jpg](../../assets/movingwater2.jpg)
+![movingwater2.jpg](../../assets/![movingwater2.jpg](../../assets/movingwater2.jpg))
 
 The second map is a small room that fills with water and then drains, but the water surface is a fluid surface that reacts to encroaching players.
 
-![2136rw1.jpg](../../assets/2136rw1.jpg)
+![2136rw1.jpg](../../assets/![2136rw1.jpg](../../assets/2136rw1.jpg))
 
 ---
 
@@ -115,7 +115,7 @@ The second map is a small room that fills with water and then drains, but the wa
 
 [ExampleMapsSkyZones](../../Uncategorized/ExampleMapsSkyZones.md)In this document you will see how to create various types of SkyZones using sky boxes, sky cylinders, and sky spheres. It also points out the advantages and disadvantages of each type as well as describes some of the effects that can be achieved with SkyZones.
 
-![fogblend1.jpg](../../assets/fogblend1.jpg)
+![fogblend1.jpg](../../assets/![fogblend1.jpg](../../assets/fogblend1.jpg))
 
 ---
 
@@ -123,7 +123,7 @@ The second map is a small room that fills with water and then drains, but the wa
 
 [ExampleMapsCaverns](../../Uncategorized/ExampleMapsCaverns.md)Here you will see how to create murky caverns quickly and easily using mainly just two terrains.
 
-![cave_fog.jpg](../../assets/cave_fog.jpg)
+![cave_fog.jpg](../../assets/![cave_fog.jpg](../../assets/cave_fog.jpg))
 
 ---
 
@@ -135,7 +135,7 @@ The second map is a small room that fills with water and then drains, but the wa
 
 [ExampleMapsWarpZones](../../Uncategorized/ExampleMapsWarpZones.md)This example map demonstrates how to create such effects as rooms that are larger on the inside than they are on the outside, infinite rooms, and ring worlds.
 
-![tardis_outside.jpg](../../assets/tardis_outside.jpg)
+![tardis_outside.jpg](../../assets/![tardis_outside.jpg](../../assets/tardis_outside.jpg))
 
 ---
 
@@ -143,7 +143,7 @@ The second map is a small room that fills with water and then drains, but the wa
 
 [ExampleMapsTeleporters](../../Uncategorized/ExampleMapsTeleporters.md)Here you will see how to use the various Teleporter Actor propterties to teleport within levels as well as teleporting to other maps. Included in this document are two example maps to play with.
 
-![teleporters_map.jpg](../../assets/teleporters_map.jpg)
+![teleporters_map.jpg](../../assets/![teleporters_map.jpg](../../assets/teleporters_map.jpg))
 
 ---
 
@@ -151,9 +151,9 @@ The second map is a small room that fills with water and then drains, but the wa
 
 [ExampleParticleSystems](../Effects/ExampleParticleSystems.md)This example map shows how to set up a variety of different emitters to create all sorts of cool effects including but not limitted to water falls, sparklers, spot lights, fire, and explosions.
 
-![arc1.jpg](../../assets/arc1.jpg)
+![arc1.jpg](../../assets/![arc1.jpg](../../assets/arc1.jpg))
 
-![spellring.jpg](../../assets/spellring.jpg)
+![spellring.jpg](../../assets/![spellring.jpg](../../assets/spellring.jpg))
 
 ---
 
@@ -161,7 +161,7 @@ The second map is a small room that fills with water and then drains, but the wa
 
 [ExampleMapsExpandingPool](../../Uncategorized/ExampleMapsExpandingPool.md) (this map is for the 927 build)This map shows an expanding pool: when you walk on a trigger, wine starts flowing out of a barrel, and creates the pool on the ground. The pool is done with a Projector with an expanding DrawScale. There's also an emitter for the wine spouting out of the barrel.
 
-![projection.jpg](../../assets/projection.jpg)
+![projection.jpg](../../assets/![projection.jpg](../../assets/projection.jpg))
 
 ---
 
@@ -173,9 +173,9 @@ The second map is a small room that fills with water and then drains, but the wa
 
 [ExampleMapsScriptedSequencesRT](../../Uncategorized/ExampleMapsScriptedSequencesRT.md) - [ExampleMapsScriptedSequencesCD](https://udn.epicgames.com/Two/ExampleMapsScriptedSequencesCD)These two docs demonstrate how to use Scripted Sequences to set up a scene. The Runtime version (the link on the left) is available to the general public, and the link on the right is only available for licensees.
 
-![rtversion.jpg](../../assets/rtversion.jpg)
+![rtversion.jpg](../../assets/![rtversion.jpg](../../assets/rtversion.jpg))
 
-![wfversion.jpg](../../assets/wfversion.jpg)
+![wfversion.jpg](../../assets/![wfversion.jpg](../../assets/wfversion.jpg))
 
 ---
 
@@ -183,7 +183,7 @@ The second map is a small room that fills with water and then drains, but the wa
 
 [ExampleMapsTriggers](../../Uncategorized/ExampleMapsTriggers.md)This document includes two maps. One demonstrates all of the basic Triggers while the other shows how to use TriggerCondition.
 
-![materialtrigger.jpg](../../assets/materialtrigger.jpg)
+![materialtrigger.jpg](../../assets/![materialtrigger.jpg](../../assets/materialtrigger.jpg))
 
 ---
 
@@ -191,7 +191,7 @@ The second map is a small room that fills with water and then drains, but the wa
 
 [ExampleMapsSounds](../../Uncategorized/ExampleMapsSounds.md)In this map, one can see the various ways in which sounds can be used within your level.
 
-![ambientsound_actor.jpg](../../assets/ambientsound_actor.jpg)
+![ambientsound_actor.jpg](../../assets/![ambientsound_actor.jpg](../../assets/ambientsound_actor.jpg))
 
 ---
 
@@ -199,7 +199,7 @@ The second map is a small room that fills with water and then drains, but the wa
 
 [UsingHardwareShaders](https://udn.epicgames.com/Two/UsingHardwareShaders)This document (from the Technical section) shows how to create your own Hardware Shaders. Note that this example map is not included in the below attachmented files, but it can be downloaded from its own page.
 
-![shaderimported.jpg](../../assets/shaderimported.jpg)
+![shaderimported.jpg](../../assets/![shaderimported.jpg](../../assets/shaderimported.jpg))
 
 ---
 
@@ -207,7 +207,7 @@ The second map is a small room that fills with water and then drains, but the wa
 
 [ExampleMapsKarmaColosseum](../../Uncategorized/ExampleMapsKarmaColosseum.md)In this map you will see how to create a variety of Karma Objects ranging from simple Karma primitives, to more complex objects made of multiple parts including KConstraints and destructible geometry.
 
-![karmacolosseum.jpg](../../assets/karmacolosseum.jpg)
+![karmacolosseum.jpg](../../assets/![karmacolosseum.jpg](../../assets/karmacolosseum.jpg))
 
 ---
 
@@ -215,7 +215,7 @@ The second map is a small room that fills with water and then drains, but the wa
 
 [KarmaExampleUT2003](../../Uncategorized/KarmaExampleUT2003.md) (NOTE: this map is for the 2107 UT2K3 build)This map shows how Karma can be used to create a catapult, swinging door, and a rotating fan with dangling poles.
 
-![karma_map2107.jpg](../../assets/karma_map2107.jpg)
+![karma_map2107.jpg](../../assets/![karma_map2107.jpg](../../assets/karma_map2107.jpg))
 
 ---
 
@@ -223,13 +223,13 @@ The second map is a small room that fills with water and then drains, but the wa
 
 [ExampleMapsEPIC](../../Uncategorized/ExampleMapsEPIC.md)This document contains a variety of old example maps by EPIC. This document has very little explanantion, but you can play with the downloadable maps which include a matinee map, materials map, a particle systems map, and a sounds map.
 
-![epicdolly3.jpg](../../assets/epicdolly3.jpg)
+![epicdolly3.jpg](../../assets/![epicdolly3.jpg](../../assets/epicdolly3.jpg))
 
-![epicmaterials1.jpg](../../assets/epicmaterials1.jpg)
+![epicmaterials1.jpg](../../assets/![epicmaterials1.jpg](../../assets/epicmaterials1.jpg))
 
-![epicparticles1.jpg](../../assets/epicparticles1.jpg)
+![epicparticles1.jpg](../../assets/![epicparticles1.jpg](../../assets/epicparticles1.jpg))
 
-![epicsounds2.jpg](../../assets/epicsounds2.jpg)
+![epicsounds2.jpg](../../assets/![epicsounds2.jpg](../../assets/epicsounds2.jpg))
 
 ---
 

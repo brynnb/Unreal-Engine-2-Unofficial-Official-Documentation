@@ -23,15 +23,15 @@ For the DropShip landing sequence, we're going to use two camera shots. The firs
 
 ### DropShip Touch-Down
 
-![landing.jpg](../assets/landing.jpg)
+![landing.jpg](../assets/![landing.jpg](../assets/landing.jpg))
 
 As the DropShip approaches the ground, we want it to lower it's landing gear, in preparation for landing. This is as simple as triggering the ship itself. You should really trigger the landing sequence when the DropShip is already moving vertically. This is because triggering it will both start the landing gear extending, and the engines pointing straight down. As the DropShip moves normally, the engines point in the appropriate direction, so triggering the landing sequence when the engines are not pointing down will cause a jump in the engine position. This trigger will also cause dust to be blown up at the point on the ground where the engines are pointing (the amount depending on how far from the ground the engines are).
 
-![baydoor.jpg](../assets/baydoor.jpg)
+![baydoor.jpg](../assets/![baydoor.jpg](../assets/baydoor.jpg))
 
 To get the bay door to open, it's as simple as triggering the DropShip again. This opens the bay door, and then opens the cockpit canopy.
 
-![canopy.jpg](../assets/canopy.jpg)
+![canopy.jpg](../assets/![canopy.jpg](../assets/canopy.jpg))
 
 #### Timing
 

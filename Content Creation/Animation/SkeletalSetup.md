@@ -48,7 +48,7 @@ Neck areas are also sometimes tricky. A neck segmented many times looks smooth, 
 
 If you're reading this and scoffing at the very *idea* of saving resources by eliminating useless bones, then this section is for you. As games have become more complex, the expected level of detail in models has skyrocketed. If your game will have any sort of close-up, facial camerawork then some thought must be given to adding additional bones for a facial structure.The following pictures illustrate an inordinately high-count bone structure.
 
-![facecompare.jpg](../../assets/facecompare.jpg)
+![facecompare.jpg](../../assets/![facecompare.jpg](../../assets/facecompare.jpg))
 
 This skeletal structure is complex enough for simple emotion, blinking, eye tracking, and phonemes/visemes.The skeleton is composed of approximately 50 bones. They break down as follows:
 
@@ -62,13 +62,13 @@ This skeletal structure is complex enough for simple emotion, blinking, eye trac
 
 These numbers are slightly misleading, as they include the bone substructure that places the surface bones in the correct area. Below is an image with the terminating ends of the bone chains highlighted. Note that it is certainly possible to make facial rigs with a fraction of these numbers, though in that case the bones would likely not deform in an anatomically correct fashion.
 
-![bonechain.jpg](../../assets/bonechain.jpg)
+![bonechain.jpg](../../assets/![bonechain.jpg](../../assets/bonechain.jpg))
 
 #### Procedural Facial Control
 
 If your model will have a large number of facial animations, you may want to consider setting up your skeletal rig to take advantage of procedural controls over the animations. A programmer can choose to play multiple animations at once, and over selected branches of the facial tree.For this reason, it's a good idea to have one root bone that comes off of the main skeleton, which controls all the other bones lower in the hierarchy. This allows ALL the hair to be blended at once, since you have a single bone parent. This is much cleaner than having each string of bones (strands of hair, fingers) connect to a part of the skeleton that you don't wish to receive blending information (hand, head).
 
-![bones illustration](../../assets/bones.jpg)
+![bones illustration](../../assets/![bones.jpg](../../assets/bones.jpg))
 
 For example, imagine an animation exists for 'happy' and 'sad' faces on a correctly set up facial rig. A new animation could be created, 'talking,' which can be selectively played on certain bones during either the 'happy' or 'sad' animations. This saves animators from having to create separate 'talking while happy' and 'talking while sad' animations. For a rough diagram of a facial system that would be suited to procedural animation, see the [PawnAnimation](https://udn.epicgames.com/Two/PawnAnimation#setting_up_the_face_of_the_model)
 doc.The most important concept to keep in mind is that procedural control works for bones along the tree structure; if you'd like to be able to play an entire facial animation at once **or** be able to break the mouth out into another animation, then have the entire face link off of the root head bone, and then branch off another section for the mouth.You can download this model with the completed facial rig. The source files are attached to this doc page: [UnrealDemoModels](../../Uncategorized/UnrealDemoModels.md).Tools exist to help streamline the facial control process. You may want to consider using *Impersonator* for lip synch on your models. To get started, take a look at these documents.[ImpersonatorHeadRigging](../../Uncategorized/ImpersonatorHeadRigging.md)
@@ -84,7 +84,7 @@ Any mesh can benefit from being tweaked for use in game, no matter how good it l
 
 ## Initializing Physique
 
-![physiqueinit.jpg](../../assets/physiqueinit.jpg)
+![physiqueinit.jpg](../../assets/![physiqueinit.jpg](../../assets/physiqueinit.jpg))
 
 When linking a mesh to a biped (or any hierarchy for that matter) you must initialize with Rigid Vertex Link Assignments. If you do not, what you see in Max will be different from what you see in the engine. This is because Max's Deformable mode computes vertex deformation in a special way which is not duplicated in the engine. The image to the right shows the correct initialization settings, along with the recommended 3 link maximum. Remember, you want to use these options:
 
@@ -93,7 +93,7 @@ When linking a mesh to a biped (or any hierarchy for that matter) you must initi
 
 All of the other settings can be left as their default, or set to whatever you normally would use. Editing vertex weights may be done by adjusting envelopes or by assigning vertices manually (or even typing in values).When exported, all weights are normalized so they add up to 100% influence automatically.No bulges, tendons, or other special Physique tools may be used. This is necessary so that meshes will deform in Max exactly as they will in the game engine.Often people report differences between what they see in Max and what they see in the engine. Usually this indicates a problem with the initial setup. An easy way to see if a model is set up wrong is to toggle between the Physique Level of Detail settings while the model is in a non-reference pose. If the mesh surface 'shifts' in any way, it has been linked up incorrectly. Below, you can see an image of the radio buttons to toggle between to check a model.
 
-![physiquelod.jpg](../../assets/physiquelod.jpg)
+![physiquelod.jpg](../../assets/![physiquelod.jpg](../../assets/physiquelod.jpg))
 
 ## Other Issues
 
@@ -139,11 +139,11 @@ A complete analysis of the Karma Physics tools is beyond the scope of this docum
 
 Here is a side by side comparison of the skeletons to be found in the UDN models and a typical skeleton in UT2K3.
 
-![udnskel.gif](../../assets/udnskel.gif)
+![udnskel.gif](../../assets/![udnskel.gif](../../assets/udnskel.gif))
 
 The UDN Skeleton.
 
-![juggskel.gif](../../assets/juggskel.gif)
+![juggskel.gif](../../assets/![juggskel.gif](../../assets/juggskel.gif))
 
 The UT2K3 skeleton.As you can see, there is a large discrepancy in the number of total bones between the two skeletons. The UDN model has as many bones in the hands alone as the 2K3 models have in their entire bodies. Let's not even mention the respective heads - as you may have noticed above, the UDN model is stuffed full of bones. Interestingly enough, much of the body looks relatively similar in terms of bone density; the legs, torso, and arms have minor differences in numbers, if at all.The point between the comparison is that your needs for a skeleton may vary wildy between the stripped down framework of the 2K3 rigs and the overweight UDN models. There isn't a perfect number of bones, it all depends on what you want your models to do.If you want:
 
@@ -170,11 +170,11 @@ Animations can be blended together in code to make transitions fluid, as well as
 
 Objects can be attached to bones in the skeleton. Weapons are attached to models in this manner. In most cases you will want to make a special attach bone to attach the object in the correct location with the correct orientation. If you do not make a specific bone, one of your existing bones must be aligned for the attachment, or an offset rotation and location must be set in code. The following images illustrate how to align objects to bones.If the object is aligned in 3DS MAX like this:
 
-![weaponalign.jpg](../../assets/weaponalign.jpg)
+![weaponalign.jpg](../../assets/![weaponalign.jpg](../../assets/weaponalign.jpg))
 
 The attach bone should be aligned like this:
 
-![modelbonealign.jpg](../../assets/modelbonealign.jpg)
+![modelbonealign.jpg](../../assets/![modelbonealign.jpg](../../assets/modelbonealign.jpg))
 
 The Z axis of the alignment bone orientation corresponds to the Y axis of the object orientation. The X axis of the alignment bone orientation corresponds to the negative Z axis of the object orientation.Objects are attached to bones by using the bone names. It is best to use the same bones names for attach bones for all models; for example, all of Epic's models that comes with the CodeDrops ([CodeDrop2226](https://udn.epicgames.com/Two/CodeDrop2226) for example), have a bone called "weapon\_bone" that is used for attaching the weapon.
 

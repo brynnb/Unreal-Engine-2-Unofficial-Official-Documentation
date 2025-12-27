@@ -71,15 +71,15 @@ DesignerMenu=GUIDesigner.PropertyManager
 
 Now when you press `Ctrl+Alt+E` or every time you select a new component the property editor window will show up. You will have to switch to windowed mode for this to be usefull. The property editor is in fact normal more that the normal property editor that you'll also find in UnrealEd. With this you will be able to change pretty much every variable of the GUI components.The changes you make will be directly visible in the game, after you've made the changes you can export the whole GUI object by pressing `Ctrl+X`, you can simply paste this in the *defaultproperties* section.
 
-![guiedit01.png](../../assets/guiedit01.png)
+![guiedit01.png](../../assets/![guiedit01.png](../../assets/guiedit01.png))
 
 It's also possible to add new components on the fly. To do this select a GUIMultiComponent (this is usually a GUIPage) and open the Menu section in the property editor. There you will find an entry **Controls**, when you select it you can press the **Add** button to add a new control.
 
-![guiedit02.png](../../assets/guiedit02.png)
+![guiedit02.png](../../assets/![guiedit02.png](../../assets/guiedit02.png))
 
 It is possible to reuse an existing component, however this doesn't always work well. It's best you select a new component class and press the **New** button.
 
-![guiedit03.png](../../assets/guiedit03.png)
+![guiedit03.png](../../assets/![guiedit03.png](../../assets/guiedit03.png))
 
 After you created the button, you will have to initialize it before it will show up on screen, you can do this by selecting the new entry in the controls list and press the **Init** button. After you made the changes you can press `Ctrl+X` or press the **Export** button to export the component to the clipboard. Note: you will still have to hook up the class variable for the new component.There are a few things you can not edit, one of them being the context popup windows.
 

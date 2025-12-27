@@ -43,14 +43,14 @@ The section above talks about adding ragdolls for use when a character dies. How
 5. In the KActor Properties window, open up the Display section, choose Mesh and hit Use. That should insert the name of your selected skeletal mesh.
 6. Also inside Draw, change DrawType to DT\_Mesh, you should see your KActor change to look like your desired skeletal mesh in the reference pose. Also set the StaticMesh field of the KActor to None (empty), as we are not using it.
 
-![level_ragdoll_1.jpg](../assets/level_ragdoll_1.jpg)
+![level_ragdoll_1.jpg](../assets/![level_ragdoll_1.jpg](../assets/level_ragdoll_1.jpg))
 
 7. Inside the Movement section, change Physics from PHYS\_Karma to PHYS\_KarmaRagDoll
 8. Now open up the Karma section of the Actor, and hit Clear button next to the KParams section to remove the old KarmaParams structure.
 9. Now drop down the KParams slot, choose KarmaParamsSkel and hit new to create a new one.
 10. Now open that up, open up the KarmaParamsSkel sub-section, and in the KSkeleton slot enter the name of the physics asset that you want to use for this ragdoll. This is the same as the name you would use in the species or .upl file to specify your ragdoll asset from a .ka file.
 
-![level_ragdoll_2.jpg](../assets/level_ragdoll_2.jpg)
+![level_ragdoll_2.jpg](../assets/![level_ragdoll_2.jpg](../assets/level_ragdoll_2.jpg))
 
 11. Inside the KarmaParams sub-section, change KStartEnabled from False to True. This means the ragdoll will start to simulate the moment the level begins.
 
@@ -60,7 +60,7 @@ That should get your guy basically working. See the [KarmaReference](../Content%
 
 The most useful tool for profiling how fast your ragdoll is running in-game is the 'stat game' console command. You should get a screen full of numbers that looks like this:
 
-![ragdoll_stats.jpg](../assets/ragdoll_stats.jpg)
+![ragdoll_stats.jpg](../assets/![ragdoll_stats.jpg](../assets/ragdoll_stats.jpg))
 
 Here is an outline of what those stats in the 'Karma' section mean:
 

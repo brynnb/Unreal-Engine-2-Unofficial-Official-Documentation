@@ -33,35 +33,35 @@ Here you will see how to create your own DecoLayers and the various ways you can
 
 DecoLayers generate Static Meshes everywhere on the terrain. You can only see the ones that are inside a radius you can set, to save resources. Also, the StaticMeshes from a DecoLayer are able do not impede players, so using them for trees isn't realistic, but DecoLayers are better used for grass, flowers and ferns.
 
-![decolayers.jpg](../assets/decolayers.jpg)
+![decolayers.jpg](../assets/![decolayers.jpg](../assets/decolayers.jpg))
 
 To create a new DecoLayer on a Terrain go to the Terrain Editor and click on the Decorations tab and press
 
-![new.gif](../assets/new.gif)
+![new.gif](../assets/![new.gif](../assets/new.gif))
 
 .You can also add more than one DecoLayer if you like. Before the DecoLayer works, you have to set a lot of settings. First give it a StaticMesh by right clicking on the newly created DecoLayer. This tells the DecoLayer what it will be rendering.
 
-![add_decolayer.png](../assets/add_decolayer.png)
+![add_decolayer.png](../assets/![add_decolayer.png](../assets/add_decolayer.png))
 
 Then you must create a new Terrain Layer. Get a texture that is very different from your terrain (for instance an checked texture -although make sure it's an RGBA8 texture with an alpha channel or a P8 texture). Create a new Terrain Layer by clicking on the "Layer" tab of the Terrain Editor, then click the
 
-![new.gif](../assets/new.gif)
+![new.gif](../assets/![new.gif](../assets/new.gif))
 
 button. Be sure to enter the texture's correct dimensions in the AlphaHeight and AlphaWidth fields. Also you should create this layer at the bottom of the layer stack. If you did not, you can move it to the bottom by selecting the layer and using the
 
-![shift_layer.gif](../assets/shift_layer.gif)
+![shift_layer.gif](../assets/![shift_layer.gif](../assets/shift_layer.gif))
 
 buttons.Next, select the Layer Texture that was created in the Texture Package "MyLevel" in the Texture Browser (Decoalpha1 in this example). Go back to the Decorations Tab and then right-click on the DecoLayer and choose the "Set Density Texture from Current." This tells the DecoLayer where to lay the decorations using an alpha channel. The white parts of the alpha channel, or the highest places in the palette of the P8 texture, will become the places where the most Static Meshes will be generated.You can also create your own textures maps to use as a Density Texture. If you just want the whole terrain to be grassy, you can use for example a white Density Texture, but if you want the grass to be only in the NW corner of the terrain, make the Density Map black everywhere, except in one corner. For example, you can create a crop circle with it. The picture on the left shows the alpha channel of the Density Texture that was used:
 
-![cropalpha.jpg](../assets/cropalpha.jpg)
+![cropalpha.jpg](../assets/![cropalpha.jpg](../assets/cropalpha.jpg))
 
-![cropcircle.jpg](../assets/cropcircle.jpg)The next options to set are in the Properties window of the Terrain Info. To open this, just double click on the TerrainInfo name in the Terrains tab of the Terrain Editor. Go to the TerrainInfo rollout within the Properties window and then expand the DecoLayers section.
+![cropcircle.jpg](../assets/![cropcircle.jpg](../assets/cropcircle.jpg))The next options to set are in the Properties window of the Terrain Info. To open this, just double click on the TerrainInfo name in the Terrains tab of the Terrain Editor. Go to the TerrainInfo rollout within the Properties window and then expand the DecoLayers section.
 
-![prop_terraininfo.gif](../assets/prop_terraininfo.gif)
+![prop_terraininfo.gif](../assets/![prop_terraininfo.gif](../assets/prop_terraininfo.gif))
 
 Then expand the DecoLayer enumerated as "[0]", and under the FadeoutRadius enter a large value for the Max, and a smaller value of for the Min. Between each Min and Max FadeOutRadius, the Static Meshes will become more and more transparent, until they become invisible. For example in the screenshot the Min FadeOutRadius is 500 and the Max is 1200. Both radii are marked with a yellow circle on the screenshot. Everything inside the smallest circle is opaque, everything between both circles is translucent, and outside the circles everything becomes invisible.
 
-![decofadeout.jpg](../assets/decofadeout.jpg)
+![decofadeout.jpg](../assets/![decofadeout.jpg](../assets/decofadeout.jpg))
 
 The last in adding the DecoLayer Meshes to your map is to paint them on to your map. To do this, go back to the Layers tab of the Terrain Editor and select the layer you created (Decoalpha1 for this example). If the checkered texture you selected as the Density Texture is showing up when you paint on the DecoLayer Meshes simply go to the Layer tab in the Terrain Editor and move the Layer one below the rest of the Layers in the stack. This causes the terrain to no longer render the texture; however you can still select that layer and paint with it.NOTE: Do NOT paint while you have the DecoLayer selected under the *Decorations tab*. This can create holes in the Density map which prevent you from painting on StaticMeshes anywhere on those holes.
 
@@ -73,17 +73,17 @@ There are other options for adjusting the DecoLayers within the TerrainInfo roll
 
 If this is set to [1], this setting will cause the DecoLayer to rotate the StaticMeshes to align with the normal of the quad that the mesh is sitting on. If left at [0] the StaticMeshes will all be vertical.
 
-![align2.jpg](../assets/align2.jpg)
+![align2.jpg](../assets/![align2.jpg](../assets/align2.jpg))
 
-![align1.jpg](../assets/align1.jpg)Aligning to the terrain can be useful for such things as rocks and debris, but when used on trees and grass it can look out of place.
+![align1.jpg](../assets/![align1.jpg](../assets/align1.jpg))Aligning to the terrain can be useful for such things as rocks and debris, but when used on trees and grass it can look out of place.
 
 ### ColorMap
 
 This map changes the color of the decorations on different locations. It has to be a RGBA8 texture; otherwise all decorations will become black. This effect is best visible on white or very bright Static Meshes. For example, white Static Meshes become like this if you use a colorful ColorMap:
 
-![scalemap1.jpg](../assets/scalemap1.jpg)
+![scalemap1.jpg](../assets/![scalemap1.jpg](../assets/scalemap1.jpg))
 
-![coloredtrees.jpg](../assets/coloredtrees.jpg)You can also paint a color on the DecoLayer manually: go to the Terrain Editing Window, select the tool "Color", pick a color with the Color button, and then go to the Decorations tab and select the DecoLayer you want to paint on. Then you should be able to paint on the terrain in the 3D View.
+![coloredtrees.jpg](../assets/![coloredtrees.jpg](../assets/coloredtrees.jpg))You can also paint a color on the DecoLayer manually: go to the Terrain Editing Window, select the tool "Color", pick a color with the Color button, and then go to the Decorations tab and select the DecoLayer you want to paint on. Then you should be able to paint on the terrain in the 3D View.
 
 ### DensityMap
 
@@ -105,9 +105,9 @@ Setting this value to 1 will force the deco meshes to ignore the lighting value 
 
 The DrawOrder allows you to set in what order the decorations should be drawn. SORT\_BackToFront draws the ones far away first and then the ones close to the camera, and SORT\_FrontToBack does the opposite. SORT\_NoSort uses no specific order. You can use this setting to prevent problems with AlphaTextures: if the near trees are drawn first, and after that the distant trees, the engine may forget to draw these behind semi-transparent parts of the AlphaTexture if AlphaTest is on. This is shown on the first screenshot. If you now set DrawOrder to SORT\_BackToFront, the distant trees are drawn first, and the AlphaTexture from the near trees is blended correctly over them.
 
-![fronttoback.jpg](../assets/fronttoback.jpg)
+![fronttoback.jpg](../assets/![fronttoback.jpg](../assets/fronttoback.jpg))
 
-![backtofront.jpg](../assets/backtofront.jpg)Since there are only three different settings, it is pretty easy to experiment with each of the settings to see which works best for your situation if you're not sure which one to use.
+![backtofront.jpg](../assets/![backtofront.jpg](../assets/backtofront.jpg))Since there are only three different settings, it is pretty easy to experiment with each of the settings to see which works best for your situation if you're not sure which one to use.
 
 ### FadeOutRadius
 
@@ -129,9 +129,9 @@ If this is set to 1, the StaticMeshes will be randomly rotated along the Z axis 
 
 You can add a ScaleMap on the DecoLayer, this is a RGBA8 texture that determines what size the decorations have on different locations on the terrain. This is done for X, Y and Z independently: the red and green channel determine the width and length, and the blue channel the height. For example if you use the texture from the left picture as ScaleMap, and the DecoLayer is a forest, the forest will look like the screenshot on the right:
 
-![scalemap1.jpg](../assets/scalemap1.jpg)
+![scalemap1.jpg](../assets/![scalemap1.jpg](../assets/scalemap1.jpg))
 
-![scalemap2.jpg](../assets/scalemap2.jpg)
+![scalemap2.jpg](../assets/![scalemap2.jpg](../assets/scalemap2.jpg))
 
 ### ScaleMultiplier
 

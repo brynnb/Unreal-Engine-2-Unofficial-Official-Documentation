@@ -24,7 +24,7 @@ This document is designed to introduce you to using Lights in Unreal Ed. Below a
 
 ## Using Lights
 
-![addlight2.jpg](../../assets/addlight2.jpg)
+![addlight2.jpg](../../assets/![addlight2.jpg](../../assets/addlight2.jpg))
 
 [Link to this doc here.](../../Uncategorized/UsingLights.md)Here you will find the basics of lighting. This document shows how to place lights and describes the various features that allow you more easily and accurately asses the lighting within your level.
 
@@ -40,7 +40,7 @@ This document is designed to introduce you to using Lights in Unreal Ed. Below a
 
 ## Types of Lights
 
-![lightclasses.gif](../../assets/lightclasses.gif)
+![lightclasses.gif](../../assets/![lightclasses.gif](../../assets/lightclasses.gif))
 
 [Link to this doc here.](../../Uncategorized/TypesOfLights.md)The most common light of course is the basic light you can add by right clicking in your level, but there are a variety of other ways to add lighting to your level. Here you will see what these alternatives are and how best to use them.
 
@@ -55,7 +55,7 @@ This document is designed to introduce you to using Lights in Unreal Ed. Below a
 
 ## Lighting Reference
 
-![lightcolor.jpg](../../assets/lightcolor.jpg)
+![lightcolor.jpg](../../assets/![lightcolor.jpg](../../assets/lightcolor.jpg))
 
 [Link to this doc here.](../../Uncategorized/LightingReference.md)Here you'll find a complete list of all the Lighting properties, both for the LightColor section and Lighting Section. These properties can be used in not only LightActors, but in all Actors. Some of the properties have more in depth descriptions after the tables
 
@@ -68,7 +68,7 @@ This document is designed to introduce you to using Lights in Unreal Ed. Below a
 
 ## Lighting on Surfaces
 
-![hwvsbsp.jpg](../../assets/hwvsbsp.jpg)
+![hwvsbsp.jpg](../../assets/![hwvsbsp.jpg](../../assets/hwvsbsp.jpg))
 
 [Link to this doc here.](../../Uncategorized/LightingOnSurfaces.md)Lights affect different types of geometries in different ways. This document outlines how each of these cases differ to help you avoid unwanted artifacts as well as take full advantage of other features available.
 
@@ -85,7 +85,7 @@ This document is designed to introduce you to using Lights in Unreal Ed. Below a
 
 ## Special Lighting Features
 
-![projective.jpg](../../assets/projective.jpg)
+![projective.jpg](../../assets/![projective.jpg](../../assets/projective.jpg))
 
 [Link to this doc here.](../../Uncategorized/SpecialLightingFeatures.md)This section of the Lighting Tutorials describes more advanced uses of Lights and how to achieve various Lighting Effects. These methods require you to use properties outside of the Lighting and LightColor properties, but with a little extra work, you can achieve some nice effects.
 

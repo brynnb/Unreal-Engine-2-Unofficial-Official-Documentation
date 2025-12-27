@@ -118,7 +118,7 @@ We'll start by creating the bones while using UTRef.max as our reference. Take a
 
 The diagram below shows the 21-bone rig we used for the UT-male character. The majority of the bones have been labeled and color-coded for your convenience. You may use this as a reference while rigging your character. "Display links" has been turned on to help visualize the hierarchy. If you have any questions relating to the reasoning behind this bone setup please refer to UDN for more detailed information regarding "Additional bones" setup.
 
-![bone-rig.gif](../assets/bone-rig.gif)
+![bone-rig.gif](../assets/![bone-rig.gif](../assets/bone-rig.gif))
 
 ## Seting up your rig
 
@@ -158,13 +158,13 @@ Once the bone setup is complete, run the Maxscript, "Reset Xform" on all the bon
 
 ### Neutral Pose - "Silent" Frame 0
 
-![silent.jpg](../assets/silent.jpg)
+![silent.jpg](../assets/![silent.jpg](../assets/silent.jpg))
 
 "Silent" is the relaxed and neutral position of the face, and the reference for all morph targets/poses. Since there is no way of knowing what the manner of speech will be, we recommend making the neutral target expressionless. At most, a slight upturning of the lips can be used to give the character a pleasant or alert expression. The purpose of a neutral pose is so that when the character stops talking, the blending of the targets will look natural.
 
 ### Pose (EE) - "Eat" Frame 10
 
-![eat.jpg](../assets/eat.jpg)
+![eat.jpg](../assets/![eat.jpg](../assets/eat.jpg))
 
 Example words: *Eat*
 
@@ -174,7 +174,7 @@ Example words: *Eat*
 
 ### Pose (Er) - "Earth" Frame 20
 
-![earth.jpg](../assets/earth.jpg)
+![earth.jpg](../assets/![earth.jpg](../assets/earth.jpg))
 
 Example words: *EARth, bIRd, buttER*
 
@@ -186,7 +186,7 @@ Example words: *EARth, bIRd, buttER*
 
 ### Pose (Ih) - "If" Frame 30
 
-![if.jpg](../assets/if.jpg)
+![if.jpg](../assets/![if.jpg](../assets/if.jpg))
 
 Example words: *If, bIt, bEt, bAIt, bAt, bOUt, bIte, bUt*
 
@@ -198,7 +198,7 @@ Example words: *If, bIt, bEt, bAIt, bAt, bOUt, bIte, bUt*
 
 ### Pose (Oh) - "Ox" Frame 40
 
-![ox.jpg](../assets/ox.jpg)
+![ox.jpg](../assets/![ox.jpg](../assets/ox.jpg))
 
 Example words: *OAt, bOY, boat*
 
@@ -210,7 +210,7 @@ Example words: *OAt, bOY, boat*
 
 ### Pose (Oh) - "Oat" Frame 50
 
-![oat.jpg](../assets/oat.jpg)
+![oat.jpg](../assets/![oat.jpg](../assets/oat.jpg))
 
 Example words: *OAt, bOY, boat*
 
@@ -220,7 +220,7 @@ Example words: *OAt, bOY, boat*
 
 ### Pose (W/OO) - "Wet" Frame 60
 
-![wet.jpg](../assets/wet.jpg)
+![wet.jpg](../assets/![wet.jpg](../assets/wet.jpg))
 
 Example words: *Wet, Way, Yacht, bOOk, bOOt, toot*
 
@@ -230,7 +230,7 @@ Example words: *Wet, Way, Yacht, bOOk, bOOt, toot*
 
 ### Pose (S/Z) - "Size" Frame 70
 
-![size.jpg](../assets/size.jpg)
+![size.jpg](../assets/![size.jpg](../assets/size.jpg))
 
 Example words: *SiZe, Sea, Zone*
 
@@ -242,7 +242,7 @@ Example words: *SiZe, Sea, Zone*
 
 ### Pose (Ch/J) - "Church" Frame 80
 
-![church.jpg](../assets/church.jpg)
+![church.jpg](../assets/![church.jpg](../assets/church.jpg))
 
 Example words: *Church, She, Azure, Joke, Choke*In this case only a small amount of jaw open is necessary.
 
@@ -252,7 +252,7 @@ Example words: *Church, She, Azure, Joke, Choke*In this case only a small amount
 
 ### Pose (F/V) - "Fave" Frame 90
 
-![fave.jpg](../assets/fave.jpg)
+![fave.jpg](../assets/![fave.jpg](../assets/fave.jpg))
 
 Example words: *faVorite, Fin, Van*Fave is different from any of the other targets, but is very important.
 
@@ -262,7 +262,7 @@ Example words: *faVorite, Fin, Van*Fave is different from any of the other targe
 
 ### Pose (Th) - "Though" Frame 100
 
-![though.jpg](../assets/though.jpg)
+![though.jpg](../assets/![though.jpg](../assets/though.jpg))
 
 Example words: *THough, THin, Then*
 
@@ -272,7 +272,7 @@ Example words: *THough, THin, Then*
 
 ### Pose (T/L/D) - "Told" Frame 110
 
-![told.jpg](../assets/told.jpg)
+![told.jpg](../assets/![told.jpg](../assets/told.jpg))
 
 Example words: *ToLD, Lay, boTTLe, Day, muDDy, baT*
 
@@ -284,7 +284,7 @@ Example words: *ToLD, Lay, boTTLe, Day, muDDy, baT*
 
 ### Pose (B/M/P) - "Bump" Frame 120
 
-![bump.jpg](../assets/bump.jpg)
+![bump.jpg](../assets/![bump.jpg](../assets/bump.jpg))
 
 Example words: *BuMP, MoM, bottoM, Bee, Pea*
 
@@ -292,7 +292,7 @@ Example words: *BuMP, MoM, bottoM, Bee, Pea*
 
 ### Pose (N/NG) - "New" Frame 130
 
-![new.jpg](../assets/new.jpg)
+![new.jpg](../assets/![new.jpg](../assets/new.jpg))
 
 Example words: *NooN, siNG, buttoN, washINGton, winner*
 
@@ -304,7 +304,7 @@ Example words: *NooN, siNG, buttoN, washINGton, winner*
 
 ### Pose (R) - "Roar" Frame 140
 
-![roar.jpg](../assets/roar.jpg)
+![roar.jpg](../assets/![roar.jpg](../assets/roar.jpg))
 
 Example words: *Roar, Ray*
 
@@ -314,7 +314,7 @@ Example words: *Roar, Ray*
 
 ### Pose (K/G) - "Cage" Frame 150
 
-![cage.jpg](../assets/cage.jpg)
+![cage.jpg](../assets/![cage.jpg](../assets/cage.jpg))
 
 Example words: *Cage, Get, Key*
 
@@ -324,19 +324,19 @@ Example words: *Cage, Get, Key*
 
 ### Targets (Eyebrow Up Left) - "EB\_Up\_L" Frame 160 and (Eyebrow Up Right) - "EB\_Up\_R" Frame 170
 
-![eb_up_l.jpg](../assets/eb_up_l.jpg)
+![eb_up_l.jpg](../assets/![eb_up_l.jpg](../assets/eb_up_l.jpg))
 
-![eb_up_r.jpg](../assets/eb_up_r.jpg)The "EB\_Up\_L" will move the Left eyebrow up to its maximum position. Nothing else should move. Same rules apply for "Blink\_R"
+![eb_up_r.jpg](../assets/![eb_up_r.jpg](../assets/eb_up_r.jpg))The "EB\_Up\_L" will move the Left eyebrow up to its maximum position. Nothing else should move. Same rules apply for "Blink\_R"
 
 ### Targets (Blink Left) - "Blink\_L" Frame 180 and (Blink Right) - "Blink\_R" Frame 190
 
-![blink_l.jpg](../assets/blink_l.jpg)
+![blink_l.jpg](../assets/![blink_l.jpg](../assets/blink_l.jpg))
 
-![blink_r.jpg](../assets/blink_r.jpg)The "Blink\_L" will move the Left eyelid down over the eyeball. Nothing else should move. If you like you can pull the Left Cheek up a bit in towards the eye to exaggerate the blink. Same rules apply for "Blink\_R"
+![blink_r.jpg](../assets/![blink_r.jpg](../assets/blink_r.jpg))The "Blink\_L" will move the Left eyelid down over the eyeball. Nothing else should move. If you like you can pull the Left Cheek up a bit in towards the eye to exaggerate the blink. Same rules apply for "Blink\_R"
 
-![select_bones_1.gif](../assets/select_bones_1.gif)
+![select_bones_1.gif](../assets/![select_bones_1.gif](../assets/select_bones_1.gif))
 
-![select_bones_2.gif](../assets/select_bones_2.gif)**That's it! Export you Characters poses to an LBP file and save the Max scene.**
+![select_bones_2.gif](../assets/![select_bones_2.gif](../assets/select_bones_2.gif))**That's it! Export you Characters poses to an LBP file and save the Max scene.**
 
 ## Downloads
 

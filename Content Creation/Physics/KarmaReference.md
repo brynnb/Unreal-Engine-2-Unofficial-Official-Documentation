@@ -196,7 +196,7 @@ The parameters that are used to configure the hinge are given below.
 
 The 'controlled' option uses a simple controller to drive the hinge motor to a particular angle. This is useful for driving pieces of machinery (cranes etc.). It does this by setting the desired velocity for each timestep to achieve the desired orientation. If the current error is more than KProportionalGap, the velocity will be KDesiredAngVel. Once the error is between 0 and KProportionalGap, the velocity will slowly ramp down until it achieves the desired angle.
 
-![propgap.gif](../../assets/propgap.gif)
+![propgap.gif](../../assets/![propgap.gif](../../assets/propgap.gif))
 
 KHinges can be also be triggered in the same way as movers etc. By setting the initial state of the KHinge, different behaviors can be achieved.
 

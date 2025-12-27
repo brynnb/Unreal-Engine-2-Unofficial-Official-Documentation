@@ -1,6 +1,6 @@
 # UnrealEngine2 Runtime Native Source Code Headers
 
-![urt_logo.jpg](../assets/urt_logo.jpg)
+![urt_logo.jpg](../assets/![urt_logo.jpg](../assets/urt_logo.jpg))
 
 *Document Summary: Introduction to the native source code headers for the [UnrealEngine2Runtime](UnrealEngine2Runtime.md), including release information.*
 

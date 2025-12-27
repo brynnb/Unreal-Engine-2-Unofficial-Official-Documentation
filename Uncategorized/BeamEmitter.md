@@ -67,7 +67,7 @@ Applies acceleration to the beam particles. This is probably not going to be use
 
 ## Beam
 
-![beamnew.jpg](../assets/beamnew.jpg)
+![beamnew.jpg](../assets/![beamnew.jpg](../assets/beamnew.jpg))
 
 ### BeamDistanceRange
 
@@ -82,17 +82,17 @@ Add one or more to specify either an offset range or an ActorTag. This is furthe
 
 Scales the particle's texture in the U dimension, which lies along the length of the beam. Note that the texture used will need to be laid out horizontally like the image below in order to be displayed correctly.
 
-![lightning8.jpg](../assets/lightning8.jpg)
+![lightning8.jpg](../assets/![lightning8.jpg](../assets/lightning8.jpg))
 
 The default value is 1, which means the texture is repeated one time. A higher value yields results like the one below, with a BeamTextureUScale of 4.
 
-![lightning12.jpg](../assets/lightning12.jpg)
+![lightning12.jpg](../assets/![lightning12.jpg](../assets/lightning12.jpg))
 
 ### BeamTextureVScale
 
 Scales the particle's texture in the V dimension, which is the width of the beam. A value of 4 would repeat the texture twice horizontally like the image below.
 
-![lightning13.jpg](../assets/lightning13.jpg)
+![lightning13.jpg](../assets/![lightning13.jpg](../assets/lightning13.jpg))
 
 ### DetermineEndPointBy
 
@@ -102,7 +102,7 @@ A very important field. This, not surprisingly, determines the method by which y
 
 With the default setting PTEP\_Velocity, the EndPoint is determined by the Velocity of the particle (that is a combination of StartVelocityRange in Velocity, and Acceleration). The length of the beam is then determined by the StartVelocityRange values and the LifeTime of the particles. The direction of it is determined by the X, Y and Z values of the StartVelocityRange. You can again use random values, so for example if X(Max) = Y(Max) = Z(Max) = +1000 and X(Min) = Y(Min) = Z(Min) = -1000, each beam will be anything random between this. It'll do almost exactly the same as on this animated gif below. You'll be able to see more than one beam now, because MaxParticles in General is set to 10 by default. Also, lightning normally only goes straight towards the ground, so only using negative Z values for StartVelocityRange is useful.
 
-![lightning1.gif](../assets/lightning1.gif)
+![lightning1.gif](../assets/![lightning1.gif](../assets/lightning1.gif))
 
 #### PTEP\_Distance
 
@@ -112,20 +112,20 @@ This does the same as PTEP\_Velocity, but now only the direction of the beams is
 
 This allows you to determinate the EndPoint in relative coordinates. You have to enter these coordinates in Offset, inside BeamEndPoints[0]. To get this, first click on BeamEndPoints and press the Add button. Then there should appear a [0]. If you expand it, you can see the properties inside [0].
 
-![beam3.jpg](../assets/beam3.jpg)
+![beam3.jpg](../assets/![beam3.jpg](../assets/beam3.jpg))
 
-![beam4.jpg](../assets/beam4.jpg)In there, in Offset, enter the X, Y and Z coordinates for the EndPoint of the beam. The coordinates are relative to the StartPoint (most of the times this is the Emitter actor), so for example X = 0, Y = 0, Z = -1000 means the EndPoint will be 1000 units below the StartPoint. Before it works, you also have to set Weight to something larger than 0. You can again use different Min and Max values if you want a random location for the EndPoint. You can add more BeamEndPoints, for example [1] and [2]. Then the beam will use one of these BeamEndPoints by random. With Weight, you can set the importance of each BeamEndPoint, this is the probability that it'll be used. If you give all the BeamEndPoints a Weight of 1, the chances will be equally divided. If for the Offset X = Y = Z = 0, the EndPoint and the StartPoint the same, so there won't be a beam. You can use this if you want the lightning to strike only a few times and to be invisible for the rest of the time. Then you can give the BeamEndPoint with this 0-Offset a high Weight, so the lightning is most of the times invisible.
+![beam4.jpg](../assets/![beam4.jpg](../assets/beam4.jpg))In there, in Offset, enter the X, Y and Z coordinates for the EndPoint of the beam. The coordinates are relative to the StartPoint (most of the times this is the Emitter actor), so for example X = 0, Y = 0, Z = -1000 means the EndPoint will be 1000 units below the StartPoint. Before it works, you also have to set Weight to something larger than 0. You can again use different Min and Max values if you want a random location for the EndPoint. You can add more BeamEndPoints, for example [1] and [2]. Then the beam will use one of these BeamEndPoints by random. With Weight, you can set the importance of each BeamEndPoint, this is the probability that it'll be used. If you give all the BeamEndPoints a Weight of 1, the chances will be equally divided. If for the Offset X = Y = Z = 0, the EndPoint and the StartPoint the same, so there won't be a beam. You can use this if you want the lightning to strike only a few times and to be invisible for the rest of the time. Then you can give the BeamEndPoint with this 0-Offset a high Weight, so the lightning is most of the times invisible.
 
 #### PTEP\_Actor
 
 With this, you can make the lightning go to a certain actor. This also uses BeamEndPoints[0], but this time, you have to fill in the ActorTag property (and not the Offset property). The lightning will go towards the actor you gave that Tag (in the Event properties of that actor). If you want the lightning to go randomly towards different actors, you have to add more BeamEndPoints, for example [1], [2], etc..., and in each BeamEndPoint enter a different ActorTag. Of course also give the actors these Tags. If you'd give three trees the SAME tag and use only BeamEndPoints[0], it won't work, the lightning will go to only one of the trees then. Again you have to give each of the BeamEndPoints a Weight higher than 0, that is the chance this BeamEndPoint will be used.
 For example if there are three trees, with Tags FullTree, FullTree2 and FullTree3, and you want the lightning to strike each of the trees randomly, but to strike FullTree3 twice as much as the other trees, give the following properties to the BeamEmitter:
 
-![beam2.jpg](../assets/beam2.jpg)
+![beam2.jpg](../assets/![beam2.jpg](../assets/beam2.jpg))
 
-![lightning2.gif](../assets/lightning2.gif)If the actor is moving, the beam will follow it:
+![lightning2.gif](../assets/![lightning2.gif](../assets/lightning2.gif))If the actor is moving, the beam will follow it:
 
-![lightning4.jpg](../assets/lightning4.jpg)
+![lightning4.jpg](../assets/![lightning4.jpg](../assets/lightning4.jpg))
 
 Note: In the event that you have competed the above steps and your beam is still not recognizing that it's endpoint should be your determined actor, try adding a new BeamEndPoint. Things should now begin working and you can feel free to delete this extra BeamEndPoint.
 
@@ -145,27 +145,27 @@ Does the same as [PTEP\_Distance](BeamEmitter.md#ptep_distance) except that the 
 
 This option determines how many sheets the beam has. 0 and 1 mean the same: only one sheet. The screenshots show 0, 3 and 10.
 
-![sheets.jpg](../assets/sheets.jpg)
+![sheets.jpg](../assets/![sheets.jpg](../assets/sheets.jpg))
 
 ### TriggerEndpoint
 
 This allows your beam to trigger another Actor. It is usable only when the  [DetermineEndpointBy](BeamEmitter.md#determineendpointby) is set to  [PTEP\_Actor](BeamEmitter.md#ptep_actor). If the Actor in question is something that can be triggered, ie. another particle system or a mover, then when the beam EndPoint will activate the trigger when it strikes.In the following example, a BeamEmitter is set to strike a SpriteEmitter with the Tag "ParticleActor" and a Mover with the Tag "MoveActor".
 
-![triggerexample.jpg](../assets/triggerexample.jpg)
+![triggerexample.jpg](../assets/![triggerexample.jpg](../assets/triggerexample.jpg))
 
 When the beam hits the SpriteEmitter, it emits it's particles.
 
-![lightningspark1.jpg](../assets/lightningspark1.jpg)
+![lightningspark1.jpg](../assets/![lightningspark1.jpg](../assets/lightningspark1.jpg))
 
 When the beam hits the Mover, it's animation is triggered and it rotates through the wall.
 
-![moverseries.jpg](../assets/moverseries.jpg)
+![moverseries.jpg](../assets/![moverseries.jpg](../assets/moverseries.jpg))
 
 Note that while the BeamEmitter will play in UnrealEd, it won't trigger anything in the editor. You have to be actually playing the map to see these results.
 
 ## BeamBranching
 
-![beambranchingnew.jpg](../assets/beambranchingnew.jpg)
+![beambranchingnew.jpg](../assets/![beambranchingnew.jpg](../assets/beambranchingnew.jpg))
 
 To make good looking lightning, you can give it branches. It works like this: you have to create more than one BeamEmitter (inside the same Emitter). Click in the Emitters field and click Add. Then choose BeamEmitter type and click New.Then you can set the first BeamEmitter to use the second BeamEmitter for the branches. Going further, you can tell the second BeamEmitter to use a third one for sub-branches, and so on. The MaxParticles setting is also the maximum number of branches.A few tips on the settings of your branch emitter: You will want to make the branch BeamEmitter smaller than your main beam, and it should have a higher MaxParticles value (your main beam should probably have a very low MaxParticles value). In Local, set RespawnDeadParticles to False for all branches, and set AutomaticInitialSpawning in Spawning to False, otherwise the branches might get spawned at the StartPoint of the emitter itself instead of the new StartPoint they get when they become branch. Also, make sure your main beam has a lot of BeamNoise. The branches will appear in the bends only, so if there aren't enough HF and LF points, there isn't place enough for all the branches! You can of course make the noise very subtle, so you won't notice it. Only the number of HF points is important--the more the better.
 
@@ -189,11 +189,11 @@ In BranchSpawnAmountRange, both Min and Max have to be larger than 1, as soon as
 
 If LinkupLifetime is False, the branches may stay behind while the large beam is somewhere else already. This happens when the branch has a bigger LifeTime, than the large beam. Setting LinkupLifetime to True, solves problems because the branches will live as long as the main beam, no matter their LifeTime value.Note: Make sure RespawnDeadParticles is False for the branches in this case, otherwise they get spawned at the wrong place.Here is an example of BeamBranching: The main beam is red. It has 12 LowFrequencyPoints and 60 very small HighFrequencyPoints that can be used as spawn points for the 25 green branches.
 
-![branchemitter1.jpg](../assets/branchemitter1.jpg)
+![branchemitter1.jpg](../assets/![branchemitter1.jpg](../assets/branchemitter1.jpg))
 
 You can also make the branch emitters have branches. In branch emitter's setting, if you set UseBranching to True, and set BranchEmitter to 2, the branches get sub-branches themselves. Note that if MaxParticles is 10 for the sub-branches, there will be 10 sub-branches total, and not 10 for every branch. For example, this emitter has 10 sub-branches (pink).
 
-![branchemitter2.jpg](../assets/branchemitter2.jpg)
+![branchemitter2.jpg](../assets/![branchemitter2.jpg](../assets/branchemitter2.jpg))
 
 ### UseBranching
 
@@ -201,9 +201,9 @@ Setting this value to True will allow beam branching.
 
 ## BeamNoise
 
-![lightning5.gif](../assets/lightning5.gif)
+![lightning5.gif](../assets/![lightning5.gif](../assets/lightning5.gif))
 
-![beamnoise2.jpg](../assets/beamnoise2.jpg)A word about Dynamic High Frequency Noise: Dynamic HF Noise is used to make the beam actually wiggle over the course of its lifetime. The only drawback of dynamic noise is that it only works on the first beam in a Beam Emitter. If you have more than one beam, the dynamic noise will not apply to the additional beams. The functions of the specific properties are described below.
+![beamnoise2.jpg](../assets/![beamnoise2.jpg](../assets/beamnoise2.jpg))A word about Dynamic High Frequency Noise: Dynamic HF Noise is used to make the beam actually wiggle over the course of its lifetime. The only drawback of dynamic noise is that it only works on the first beam in a Beam Emitter. If you have more than one beam, the dynamic noise will not apply to the additional beams. The functions of the specific properties are described below.
 
 ### DynamicHFNoisePointsRange
 
@@ -221,17 +221,17 @@ This determines the time the engine waits before updating the Dynamic Noise. If 
 
 Insert these to create a High Frequency Scale, similar to the ColorScale explained in the [EmittersReference](../Content%20Creation/Effects/EmittersReference.md#color) document.For example, let's say you have a beam with 100 HighFrequencyPoints. Without the HFScale, the whole Beam has the same NoiseRange everywhere, as in the image below.
 
-![noise.jpg](../assets/noise.jpg)
+![noise.jpg](../assets/![noise.jpg](../assets/noise.jpg))
 
 To enable the HFScale, first set HighFrequencyScale to True, and then add HFScales in HFScaleFactors, the same way as you might add ColorScales: click on HFScales and press the Add button until you have enough HFScaleFactors. In there, FrequencyScale multiplies the HighFrequencyNoiseRange (X, Y and Z separately), and RelativeLength determines the Location of the beam where you want this multiplier to happen. 1 represents the length of the whole beam. If you set for HFScaleFactor[0] the RelativeLength to 0.7, the first 70% of the beam will have the FrequencyScale of that HFScaleFactor, and if you then set the RelativeLength of HFScaleFactor[1] to 1, the remaining 30% will get multiplied by the FrequencyScale of HFScaleFactor[1]. On the screenshot the FrequencyScale of [0] is 1 for X, Y and Z, and the FrequencyScale of [1] is 10 for X, Y and Z.
 
-![freqscale.jpg](../assets/freqscale.jpg)
+![freqscale.jpg](../assets/![freqscale.jpg](../assets/freqscale.jpg))
 
 ### HFScaleRepeats
 
 This allows you to repeat the HFScale you have created using HFScaleFactors. A value of 1 repeats the scale one time, resulting in the image below.
 
-![freqscale2.jpg](../assets/freqscale2.jpg)
+![freqscale2.jpg](../assets/![freqscale2.jpg](../assets/freqscale2.jpg))
 
 ### HighFrequencyNoiseRange
 
@@ -245,7 +245,7 @@ There must be at least 2 HighFrequencyPoints which define, along with 2 LowFrequ
 
 This works exactly like  [HFScaleFactors](BeamEmitter.md#hfscalefactors) (check there for a thorough explanation), except that it applies to Low Frequency Noise. Low frequency and high frequency noise work independently from each other, and can be used "through" each other. For example, you can use a lot of small High Frequency Points, and a few, very large, Low Frequency Points. Then the beam will have a few large bends, and a lot of small bends at the same time, as shown on the screenshot:
 
-![lightning6.jpg](../assets/lightning6.jpg)
+![lightning6.jpg](../assets/![lightning6.jpg](../assets/lightning6.jpg))
 
 ### LFScaleRepeats
 
@@ -279,7 +279,7 @@ Beam Emitters do not work with collision *per se*. However, the beam can be inte
 
 The best way to make the lightning to flash realistically is to use a color scale. This will make the whole beam change it's color during it's LifeTime. On the animated screenshot, there are two color scales] orange and yellow and the lifetime of the particles is 0.6 seconds. You can also use Fade In and Fade Out to make a flashing effect.
 
-![lightning14.gif](../assets/lightning14.gif)
+![lightning14.gif](../assets/![lightning14.gif](../assets/lightning14.gif))
 
 The use of ColorScale is further explained in the [EmittersReference](../Content%20Creation/Effects/EmittersReference.md#color) document.
 

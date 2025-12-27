@@ -19,11 +19,11 @@ In this document you will learn how to place and use AmbientSounds, ZoneInfo Sou
 
 To place an AmbientSound, you must open up the Actors Browser and go to Actor --> KeyPoint --> AmbientSound. Then just simply right click in your level to place the AmbientSound actor.
 
-![ambientsound_actor.jpg](../assets/ambientsound_actor.jpg)
+![ambientsound_actor.jpg](../assets/![ambientsound_actor.jpg](../assets/ambientsound_actor.jpg))
 
 All of the settings for this sound are found in the properties window.
 
-![ambientsound_properties.gif](../assets/ambientsound_properties.gif)
+![ambientsound_properties.gif](../assets/![ambientsound_properties.gif](../assets/ambientsound_properties.gif))
 
 The following is a description of what each setting controls:
 
@@ -40,7 +40,7 @@ The following is a description of what each setting controls:
 
 In my map, I'll place a few AmbientSound Actors in a forest of ferns using a the sound files *insect\_noise02,* *creature\_amb03,* and *creature\_amb04.* The sounds will fade out into each other as you leave one and approach the others.
 
-![forest_sounds.jpg](../assets/forest_sounds.jpg)
+![forest_sounds.jpg](../assets/![forest_sounds.jpg](../assets/forest_sounds.jpg))
 
 ## ZoneInfo Sounds
 
@@ -50,11 +50,11 @@ An additional way to add sounds to your map is to add them through a ZoneInfo Ac
 
 Under the ZoneSound tab though, you can select a ZoneEffect. Using these will act as a filter on any sounds you can hear from that zone. To use a ZoneEffect, select an effect that is similar to the effect you want and then click the "New" button.
 
-![zoneeffect.gif](../assets/zoneeffect.gif)
+![zoneeffect.gif](../assets/![zoneeffect.gif](../assets/zoneeffect.gif))
 
 **NOTE:** These settings will only work with an EAX 3.0 SoundBlaster Audigy card, and you will need to make sure that Unreal Ed is set to use EAX sound and to use 3DSound (these can be set in your UW.ini file in the System folder).By clicking on "New" you are telling the ZoneInfo to use that setting. There are a myriad of default settings here that include such ZoneEffects as a Hallway, a medium sized room of an ice palace, the effect of driving in a luxury car, everything in between and then some. However, if you cannot find your desired ZoneEffect, you can create your own. Just start with a ZoneEffect that is close to the effect you are looking for and then press the "NEW" button. Three tabs will appear, but you can only change the settings in the middle one "I3DL2Listener." Expand this tab.
 
-![i3dl2listener.gif](../assets/i3dl2listener.gif)
+![i3dl2listener.gif](../assets/![i3dl2listener.gif](../assets/i3dl2listener.gif))
 
 Below are descriptions of what each of these settings control:
 
@@ -97,7 +97,7 @@ The effects that each of the ZoneEffects are very subtle, and the exact effect c
 
 Sounds can also be concealed in StaticMeshes through the same way of setting an AmbientSound Actor's properties, or assigning a Sound in a ZoneInfo. All Actors have the ability to have a sound assigned to them, simple open up the Sound rollout in their properties window and set the sound as desired. Movers have a little more flexibility though as they have their own special rollout called **MoverSounds**.
 
-![moversounds.gif](../assets/moversounds.gif)
+![moversounds.gif](../assets/![moversounds.gif](../assets/moversounds.gif))
 
 These are explained in greater detail in the [MoversTutorial](../Content%20Creation/Primitives/MoversTutorial.md), but their names are fairly self explanatory of how they work. These are useful for setting the sounds for doors opening and closing, elevators moving, and any other sound that would be associated with moving geometry.
 
@@ -109,7 +109,7 @@ This section to be added later.
 
 Below you can download a compressed archive that contains the content for this example:
 
-* [SoundsDemo.zip](../assets/soundsdemo.zip) (for Unreal Engine 2 build 2226)
-* [EM\_SoundsDemo\_RT.zip](../assets/em_soundsdemo_rt.zip) (for Unreal Engine 2 build 2226)
+* [[soundsdemo.zip](../assets/soundsdemo.zip)](../assets/[soundsdemo.zip](../assets/soundsdemo.zip)) (for Unreal Engine 2 build 2226)
+* [EM\_SoundsDemo\_RT.zip](../assets/[em_soundsdemo_rt.zip](../assets/em_soundsdemo_rt.zip)) (for Unreal Engine 2 build 2226)
 
 To run this example map just download the appropriate zip file and put the packages in their appropriate folders. Also see the [Epic Sounds ExampleMap](ExampleMapsEPIC.md#sound-example-map) (build 2110).

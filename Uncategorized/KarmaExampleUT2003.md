@@ -29,4 +29,4 @@ This again uses a KHinge to hold the fan up, but this time we set KHingeType to 
 
 Below you can download a compressed archive that contains the content for this example:
 
-* [KarmaExample.zip](../assets/karmaexample.zip) (for UT2003)
+* [[karmaexample.zip](../assets/karmaexample.zip)](../assets/[karmaexample.zip](../assets/karmaexample.zip)) (for UT2003)

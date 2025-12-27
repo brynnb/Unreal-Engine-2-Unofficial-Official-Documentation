@@ -15,15 +15,15 @@
 
 With Projective Textures you can project a texture on anything (walls, floors, actors, Static Meshes, Particle Systems, etc...) to create effects such as shadows, light effects or decals.For example, the shadow of this tree is made with a Projective Texture, it's an artist created shadow texture; it wasn't raytraced by the editor. This creates a much sharper shadow. You can see every leave of the tree in there. Also, the Projective Texture will look the same on BSP, Terrain, Static Meshes or anything else, so the player can't see an unrealistic difference anymore.
 
-![treeshadow.jpg](../assets/treeshadow.jpg)
+![treeshadow.jpg](../assets/![treeshadow.jpg](../assets/treeshadow.jpg))
 
 Another example is light shining through a stained glass window: because the raytracer doesn't support multicolored light through a translucent surface, you can create the effect yourself with a colored Projective Texture:
 
-![stainedglass.jpg](../assets/stainedglass.jpg)
+![stainedglass.jpg](../assets/![stainedglass.jpg](../assets/stainedglass.jpg))
 
 Projective Textures can also be used for decals, for example bloodsplatters or bulletholes:
 
-![bloodsplat.jpg](../assets/bloodsplat.jpg)
+![bloodsplat.jpg](../assets/![bloodsplat.jpg](../assets/bloodsplat.jpg))
 
 ## Projector Documents
 

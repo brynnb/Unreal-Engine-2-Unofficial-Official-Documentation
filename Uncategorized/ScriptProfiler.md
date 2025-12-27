@@ -16,7 +16,7 @@
 
 UnrealScript can be a confusing place, not only in terms of what is executing when but also in terms of what is taking the biggest bite out of your frame rate. This is where the profiler utility can help the most!
 
-![uscriptprofiler.jpg](../assets/uscriptprofiler.jpg)
+![uscriptprofiler.jpg](../assets/![uscriptprofiler.jpg](../assets/uscriptprofiler.jpg))
 
 ## Creating a Profile
 

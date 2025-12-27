@@ -35,45 +35,45 @@ The purpose of this document is to introduce Level Designers to the Unreal Edito
 
 Probably the best way to think of the world space in Unreal Ed is to imagine it as an infinite solid mass of clay from which you carve your own world. Everything you create in your world will exist in pockets of subtracted space. After subtracting, then you add world geometry and later effects and before long, you've got a detailed environment for your characters to frolic about it. This approach of starting with a solid world space minimizes the opportunity to introduce nasty BSP holes into your level.BSP Holes are gaps between the subtractive world space and the additive world space that can cause unwanted rendering effects (such as Hall Of Mirror effects, a.k.a. HOM effect) as well as slow down rendering times. Below is an image of an HOM effect:
 
-![hom.jpg](../../assets/hom.jpg)
+![hom.jpg](../../assets/![hom.jpg](../../assets/hom.jpg))
 
 ## Creating the Basic World Space
 
 The tools you will be using to carve out your subtracted space are called "Builder Brushes." Brushes are basic geometric primitives that you can manipulate to shape into various forms in your level by adding them and subtracting them from the world space. On the left side of the tool bar you will see the Brush Builder buttons:
 
-![brushbuilderbuttons.jpg](../../assets/brushbuilderbuttons.jpg)
+![brushbuilderbuttons.jpg](../../assets/![brushbuilderbuttons.jpg](../../assets/brushbuilderbuttons.jpg))
 
 As you can see, there are a variety of Brush Primitives to work with and it is also possible to create your own custom shapes with the [ShapeEditor](../../Uncategorized/ShapeEditor.md) -although this tool is not always reliable and should be used with caution. For almost every level, you will want to start with one large subtracted box, so *right* click on the Cube Builder Brush and it will pop up the CubeBuilder window.
 
-![cubebuilder.gif](../../assets/cubebuilder.gif)
+![cubebuilder.gif](../../assets/![cubebuilder.gif](../../assets/cubebuilder.gif))
 
 Here you can set its dimensions and various other attributes. For this initial subtraction, you need only make a really large cube (large enough to encompass your entire level). You will be able to see the red Builder Brush change size once you push the "Build" button in the CubeBuilder window.
 
-![redbuilderbrush.gif](../../assets/redbuilderbrush.gif)
+![redbuilderbrush.gif](../../assets/![redbuilderbrush.gif](../../assets/redbuilderbrush.gif))
 
 Once you have the brush in position, use the subtract button to carve out your space and it will create a Constructed Solid Geometry (CSG) but it is more commonly referred to as BSP (Binary Space Partition). For a more in depth description of these terms see the [BspBrushesTutorial](../Primitives/BspBrushesTutorial.md#bsp-brush-introduction).
 
-![subtract.gif](../../assets/subtract.gif)
+![subtract.gif](../../assets/![subtract.gif](../../assets/subtract.gif))
 
 ### Changing Surface Textures
 
 Chances are that you now have a large box with the default grey bubble texture repeated across it. Subtracted and added BSP geometry will display whatever texture is selected in the Texture Browser. To change this, select all of the surfaces of your newly created BSP box (*Shortcut:* Select one surface then press SHIFT + b), then open up the Texture Browser and select the desired texture. To open the Texture Browser, you can open any of the browsers and click on the "Textures" tab, or you can just click on the picture icon on the top menu bar.
 
-![texturebrowserbutton.gif](../../assets/texturebrowserbutton.gif)
+![texturebrowserbutton.gif](../../assets/![texturebrowserbutton.gif](../../assets/texturebrowserbutton.gif))
 
 ### Testing your Level
 
 Before you run your level you will need to add a PlayerStart so that you have somewhere to spawn in. You can add one by right clicking in the location you want to place it and then select "Add Player Start" from the list. You will then see a joystick appear in your level; this is the PlayerStart. Make sure that the PlayerStart is relatively close to a level surface -otherwise the level will throw up errors when it compiles.
 
-![playerstart.gif](../../assets/playerstart.gif)
+![playerstart.gif](../../assets/![playerstart.gif](../../assets/playerstart.gif))
 
 Now is also a good time to add some lights to your environment. Just right click where you want the light to be and select the "Add Light" option. Alternatively you can just left click while holding down the "L" key. You can open the properties of any Actor (which is the term for just about anything you place in the level) by pressing F4. Under the LightColor rollout you can adjust the basic settings of the light.
 
-![lightproperties.gif](../../assets/lightproperties.gif)
+![lightproperties.gif](../../assets/![lightproperties.gif](../../assets/lightproperties.gif))
 
 Now you are almost ready to run your level. Just hit the rebuild all button, wait for everything to compile as it calculates the lighting and new geometry, and then hit the "Play Map!" button.
 
-![buildandplay.gif](../../assets/buildandplay.gif)
+![buildandplay.gif](../../assets/![buildandplay.gif](../../assets/buildandplay.gif))
 
 ## Adding to the Level
 
@@ -91,9 +91,9 @@ This is not only conducive to modular design, but it also reduces the chances of
 
 The engine does not deal well with overlapping added or overlapping subtracted spaces. Before you Subtract a BSP Brush from your level, be sure that you hit the Intersect button, and likewise, before you Add a BSP Brush to your level, be sure that you hit the Deintersect button.
 
-![intersectsubtract.gif](../../assets/intersectsubtract.gif)
+![intersectsubtract.gif](../../assets/![intersectsubtract.gif](../../assets/intersectsubtract.gif))
 
-![deintersectadd.gif](../../assets/deintersectadd.gif)You can also quickly create some more complex Builder Brushes using the Intersect and Deintersect buttons. Just remember that the Intersect deletes the portion of the Builder Brush in Subtracted space, and Deintersect deletes the portion of the Builder Brush that is in the Added space.
+![deintersectadd.gif](../../assets/![deintersectadd.gif](../../assets/deintersectadd.gif))You can also quickly create some more complex Builder Brushes using the Intersect and Deintersect buttons. Just remember that the Intersect deletes the portion of the Builder Brush in Subtracted space, and Deintersect deletes the portion of the Builder Brush that is in the Added space.
 
 * Rebuild the map before running the game.
 
@@ -101,11 +101,11 @@ If you add, subtract, move a BSP Brush (not the Builder Brush), or add a new lig
 
 ### Placing StaticMeshes
 
-![staticmesh.jpg](../../assets/staticmesh.jpg)
+![staticmesh.jpg](../../assets/![staticmesh.jpg](../../assets/staticmesh.jpg))
 
 StaticMeshes are geometry created in a 3rd party package such as 3DS Max, Maya, or Lightwave, that can be added into your level. StaticMeshes are used as the major decorative elements in the level for various reasons. To place a StaticMesh, first you must open the StaticMesh Browser by clicking clicking on the "StaticMesh" Tab of the browser window, or by clicking on the StaticMesh Browser button in the top menu bar.
 
-![staticmeshbrowser.gif](../../assets/staticmeshbrowser.gif)
+![staticmeshbrowser.gif](../../assets/![staticmeshbrowser.gif](../../assets/staticmeshbrowser.gif))
 
 Then you need to select your StaticMesh on the right side of the StaticMesh Browser. Once selected you can either right click and add one.StaticMeshes are very versatile as they can be easily moved, rotated, scaled, and even have their textures swapped in Unreal Ed. To learn more about using StaticMeshes take a look at these documents
 
@@ -114,7 +114,7 @@ Then you need to select your StaticMesh on the right side of the StaticMesh Brow
 
 ### Creating Terrains
 
-![terrain.jpg](../../assets/terrain.jpg)
+![terrain.jpg](../../assets/![terrain.jpg](../../assets/terrain.jpg))
 
 Terrains are another handy type of geometry that you can in building your level. They are very useful for quickly and easily creating the framework for large outdoor environments. For more information on how to create Terrains take a look at these documents:
 
@@ -126,11 +126,11 @@ Terrains are another handy type of geometry that you can in building your level.
 
 To select Ators you can simply click on them, although you can also select multiple Actors with a selection box. This action is the same no matter what other mode the editor is in. Hold down the **CTRL** and **ALT** keys. Then, left click and drag in any of the 2D viewports (this doesn't work in the 3D viewport). As you drag you should see a box being drawn, starting from where you first clicked and ending at the current mouse location. For example:
 
-![wpe1.jpg](../../assets/wpe1.jpg)
+![wpe1.jpg](../../assets/![wpe1.jpg](../../assets/wpe1.jpg))
 
 When you let go of the buttons, you would see this ...
 
-![wpe2.jpg](../../assets/wpe2.jpg)
+![wpe2.jpg](../../assets/![wpe2.jpg](../../assets/wpe2.jpg))
 
 And that's that. Those actors were selected because they were inside the box when you let go of the buttons.
 
@@ -138,11 +138,11 @@ And that's that. Those actors were selected because they were inside the box whe
 
 If you want to select more actors, but don't want to lose your current selections, simply hold the **SHIFT** button down while you perform your normal box selection. So you would be holding down **CTRL,** **ALT** and **SHIFT** down at the same time while you create your box.Using the example, from above, I'll draw a new box while adding the SHIFT button into the procedure ...
 
-![wpe3.jpg](../../assets/wpe3.jpg)
+![wpe3.jpg](../../assets/![wpe3.jpg](../../assets/wpe3.jpg))
 
 It looks the same on the screen, but when I let go of it, it will select the new actors AND leave the old ones still selected. Like this:
 
-![wpe4.jpg](../../assets/wpe4.jpg)
+![wpe4.jpg](../../assets/![wpe4.jpg](../../assets/wpe4.jpg))
 
 Brushes will be selected when their origin falls within the box. This is important since you might think that if any of the vertices are in there it will select the brush, but it only works on the origin. The vertices come into play in vertex manipulation mode.
 
@@ -150,15 +150,15 @@ Brushes will be selected when their origin falls within the box. This is importa
 
 Where this feature comes in most handy is when using vertex manipulation. Selecting all the vertices on one side of a brush to move them would be very inconvenient without box selection. This is what we start with:
 
-![wpe5.jpg](../../assets/wpe5.jpg)
+![wpe5.jpg](../../assets/![wpe5.jpg](../../assets/wpe5.jpg))
 
 Now, let's say I want to select all the vertices on the right side of the cube so I can drag that face. I create my box like so:
 
-![wpe6.jpg](../../assets/wpe6.jpg)
+![wpe6.jpg](../../assets/![wpe6.jpg](../../assets/wpe6.jpg))
 
 And I end up with this when I release the buttons:
 
-![wpe7.jpg](../../assets/wpe7.jpg)
+![wpe7.jpg](../../assets/![wpe7.jpg](../../assets/wpe7.jpg))
 
 Now I can drag those vertices like normal and effectively drag that face of the brush.
 
@@ -178,13 +178,13 @@ If you've just created a StaticMesh package and the StaticMeshes do not show up 
 
 If your Animations aren't showing up in the game and/or disappearing from the Animation Browser you may have forgotten the step of linking your animations to the mesh. Again, this fix is simple, just click on the "Link animation to mesh" button (shown below).
 
-![linkanims.png](../../assets/linkanims.png)
+![linkanims.png](../../assets/![linkanims.png](../../assets/linkanims.png))
 
 ### Getting Sun Light to Show Up.
 
 So you've placed a SunLight and no matter how bright you set its properties, the level doesn't get any brighter. The problem may be that you've forgotten to set the surfaces of your initial BSP subtraction to "Fake Backdrop." To correct this, just select all the faces of your initial BSP subtraction and bring up the Surface Properties window (hot key = F5) and check the "Fake Backdrop" box.
 
-![fakebackdrop.gif](../../assets/fakebackdrop.gif)
+![fakebackdrop.gif](../../assets/![fakebackdrop.gif](../../assets/fakebackdrop.gif))
 
 If this is not set, then the SunLight will be obstructed by the BSP subtraction leaving everything in shadow.
 

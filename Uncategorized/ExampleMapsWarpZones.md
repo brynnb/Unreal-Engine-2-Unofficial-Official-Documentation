@@ -12,7 +12,7 @@
   + [Downloads](ExampleMapsWarpZones.md#downloads)
   + [Downloads](ExampleMapsWarpZones.md#downloads)
 
-![warpzone_map.jpg](../assets/warpzone_map.jpg)
+![warpzone_map.jpg](../assets/![warpzone_map.jpg](../assets/warpzone_map.jpg))
 
 ## Introduction
 
@@ -33,49 +33,49 @@ For more detailed information, see the [MirrorsAndWarpZones](MirrorsAndWarpZones
 
 The first example demonstrates how to create a room that is bigger on the inside than it is on the outside. The PlayerStart is placed within an octagonal room and at one side is a doorway leading to an outdoor environment.
 
-![tardis_inside.jpg](../assets/tardis_inside.jpg)
+![tardis_inside.jpg](../assets/![tardis_inside.jpg](../assets/tardis_inside.jpg))
 
 Upon entering and turning around, the player will see that the entire octagonal room with hallways leading off of it is entirely contained within a phone booth.
 
-![tardis_outside.jpg](../assets/tardis_outside.jpg)
+![tardis_outside.jpg](../assets/![tardis_outside.jpg](../assets/tardis_outside.jpg))
 
 This effect is accomplished by creating a BSP Zone within the phone booth that warps to a BSP Zone that is on the other side of the doorway to the octagonal room.
 
-![tardis_warpzones.gif](../assets/tardis_warpzones.gif)
+![tardis_warpzones.gif](../assets/![tardis_warpzones.gif](../assets/tardis_warpzones.gif))
 
-![tardis_warpzoneinfos.gif](../assets/tardis_warpzoneinfos.gif)Note that there is some popping as the player warps from one Zone to the other. This can be minimized by making the depth of the WarpZone equal to slightly larger that the radius of the player. The center of the collision of the player is what triggers the warping.
+![tardis_warpzoneinfos.gif](../assets/![tardis_warpzoneinfos.gif](../assets/tardis_warpzoneinfos.gif))Note that there is some popping as the player warps from one Zone to the other. This can be minimized by making the depth of the WarpZone equal to slightly larger that the radius of the player. The center of the collision of the player is what triggers the warping.
 
 ## Infinite Rooms
 
 The simplest effect with WarpZones is to create a series of rooms that loop back on themselves.
 
-![infinite_rooms.jpg](../assets/infinite_rooms.jpg)
+![infinite_rooms.jpg](../assets/![infinite_rooms.jpg](../assets/infinite_rooms.jpg))
 
 The important thing to note about these WarpZones is that each pair of connecting WarpZones face in opposite directions. If the WarpZones are not oriented in this manner, the WarpZone Portals may become confused and not draw the Zone on the other side correctly.The below image shows how the zones are set up to face each other.
 
-![facing_zones.gif](../assets/facing_zones.gif)
+![facing_zones.gif](../assets/![facing_zones.gif](../assets/facing_zones.gif))
 
 These WarpZones also have the popping problem, but as above this can be minimized by reducing the depth of the WarpZonesm or, due to the layout of these zones, another approach can be used. The popping is caused by the camera seeing into the WarpZone before the Player is warped to the connecting Zone. In this map, the WarpZones are small chambers without any lights, however they don't need to be. They could be a reproduction of the Zone you are warping to. It need not be a full reproduction of the room complete with all of the hallways that may lead off from it, but just enough to give the appearance that the room the camera sees on the other side, is the same as the room that the player is warping to.
 
-![fake_rooms.gif](../assets/fake_rooms.gif)
+![fake_rooms.gif](../assets/![fake_rooms.gif](../assets/fake_rooms.gif))
 
 This method requires a little more planning since it will require there to be enough space on the other side of the WarpZone to place the fake room, and in some cases it will not be possible (for instance in creating spaces that are bigger on the inside than on the outside).
 
 ## Ring Worlds
 
-![ringworld.jpg](../assets/ringworld.jpg)
+![ringworld.jpg](../assets/![ringworld.jpg](../assets/ringworld.jpg))
 
 Another effect achievable through the use of WarpZones are "Ring Worlds," or levels that allow you walk on the inside of a ring as if gravity was pulling you towards the ring whether you are on the top side or bottom side of the ring.
 
-![ringworld_gavity.gif](../assets/ringworld_gavity.gif)
+![ringworld_gavity.gif](../assets/![ringworld_gavity.gif](../assets/ringworld_gavity.gif))
 
 How this effect works is that each section of the ring is a Zone that you use a WarpZone to warp back and forth from. In this example there are 5 sections that make up the ring and they are placed side by side as shown:
 
-![sections.gif](../assets/sections.gif)
+![sections.gif](../assets/![sections.gif](../assets/sections.gif))
 
 The trick here is that the WarpZone Portals are at an angle:
 
-![section_portals.gif](../assets/section_portals.gif)
+![section_portals.gif](../assets/![section_portals.gif](../assets/section_portals.gif))
 
 The angel creates the illusion that the next section is on an incline when seen through the WarpZone Portal.And as also described in the above example, the [popping problem](ExampleMapsWarpZones.md#poppingproblem) can be solved by making the WarpZone leading to next section be identical in appearance to the next section the player would warp to.
 
@@ -89,4 +89,4 @@ For more information on WarpZones, see the [MirrorsAndWarpZones](MirrorsAndWarpZ
 
 Below you can download a compressed archive that contains the content for this example:
 
-* [EM\_WarpZones.zip](../assets/em_warpzones.zip) (for Unreal Engine 2 build 2226)
+* [EM\_WarpZones.zip](../assets/[em_warpzones.zip](../assets/em_warpzones.zip)) (for Unreal Engine 2 build 2226)

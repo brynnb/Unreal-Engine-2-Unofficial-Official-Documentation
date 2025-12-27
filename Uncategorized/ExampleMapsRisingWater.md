@@ -33,9 +33,9 @@ defaultproperties
 
 Then make sure there is no YourPackage.u file that contains the MovingWaterVolume in the system folder, and in UW.ini add the line EditPackages=YourPackage under [Editor.EditorEngine]. Then in a console go to the System folder and run the command "ucc make". Normally, there now should be a new YourPackage.u file in the system folder. Import it in the editor, and the MovingWaterVolume should now have bStatic=False. Because I wanted the MovingWaterVolume to be in MyLevel, I renamed the package YourName.u to MyLevel.u after ucc made it, and imported that one into the editor. If bStatic is really False, the MovingWaterVolume should now be able to follow the mover, if it doesn't follow, it may still have bStatic=True for some reason.This is what the surface-mover and the MovingWaterVolume look like when the water is low and high:
 
-![movingwater1.jpg](../assets/movingwater1.jpg)
+![movingwater1.jpg](../assets/![movingwater1.jpg](../assets/movingwater1.jpg))
 
-![movingwater2.jpg](../assets/movingwater2.jpg)
+![movingwater2.jpg](../assets/![movingwater2.jpg](../assets/movingwater2.jpg))
 
 ### The Waterfall
 
@@ -49,13 +49,13 @@ If you are standing on the ground while the volume rises, the engine won't detec
 
 This is an example using the techniques above only using the new fluid surface in 2136. This gives more realistic water effects. The problem of standing still while the water volume moves over you still applies. If you stand still and look at the ground it won't register that you are now in a water volume.
 
-![2136rw2.jpg](../assets/2136rw2.jpg)
+![2136rw2.jpg](../assets/![2136rw2.jpg](../assets/2136rw2.jpg))
 
-![2136rw1.jpg](../assets/2136rw1.jpg)
+![2136rw1.jpg](../assets/![2136rw1.jpg](../assets/2136rw1.jpg))
 
 ## Downloads
 
 Below you can download a compressed archive that contains the content for this example:
 
-* [927-risingwater.zip](../assets/927-risingwater.zip) (for Unreal Engine 2 build 927)
-* [2136-risingwater.zip](../assets/2136-risingwater.zip) (for Unreal Engine 2 build 2136)
+* [[927-risingwater.zip](../assets/927-risingwater.zip)](../assets/[927-risingwater.zip](../assets/927-risingwater.zip)) (for Unreal Engine 2 build 927)
+* [[2136-risingwater.zip](../assets/2136-risingwater.zip)](../assets/[2136-risingwater.zip](../assets/2136-risingwater.zip)) (for Unreal Engine 2 build 2136)

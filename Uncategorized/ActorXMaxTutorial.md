@@ -42,7 +42,7 @@ This document assumes that you have already created & rigged your actor and are 
 1. Download the [ActorX](../Content%20Creation/Tools/ActorX.md) plug-in for Max and copy it to your plug-ins directory.
 2. Launch Max, and [ActorX](../Content%20Creation/Tools/ActorX.md) should load automatically. You can find it under the utilities tab. (If this is the first time you are using it, you'll find it when you click the *more* button)
 
-![utils.jpg](../assets/utils.jpg)
+![utils.jpg](../assets/![utils.jpg](../assets/utils.jpg))
 
 If activating the plugin results in an error message - the most common one is "failed to initialize", verify your system is up to date with the latest Windows system updates, and download and install the latest Microsoft .Net framework update, available via <http://www.microsoft.com/downloads> ( choose .net in the download product/technology box and press [go]). If this doesn't fix it, get msvcr71.dll from the [ActorX](../Content%20Creation/Tools/ActorX.md) page and manually place it either in your windows\system32 folder or in the plug-ins folder alongside the [ActorX](../Content%20Creation/Tools/ActorX.md) plugin.
 
@@ -60,11 +60,11 @@ This not only affects the order of slots for skeletal meshes, but can be used to
    * **Mesh file name**: enter the name for the .PSK file. We recommend the name of your actor.
 4. Click the "Save mesh/refpose button. You can do this with any frame of the animation. It is recommended that your model's reference pose be in a relaxed, spread eagle pose for ease of use.
 
-![PSK name me](../assets/namepsk.jpg)
+![PSK name me](../assets/![namepsk.jpg](../assets/namepsk.jpg))
 
 After you save the mesh/refpose, a few windows will pop up if all went well.
 
-![2 dialog boxes](../assets/unsmooth.jpg)
+![2 dialog boxes](../assets/![unsmooth.jpg](../assets/unsmooth.jpg))
 
 ## Export your animations
 
@@ -80,7 +80,7 @@ There are two steps for exporting animations. First, load the scene containing y
    * **Animation sequence name**: put the name you want your animation to have within the .PSA file.
    * **Animation range**: specify the frames in the current scene that define this animation. (Format is `4-45'; number, hyphen, number)
 
-![PSA name me](../assets/namepsa.jpg)
+![PSA name me](../assets/![namepsa.jpg](../assets/namepsa.jpg))
 
 1. Make sure that the range slider and the time slider show 0 as the first frame. (Note: this is a superstitious behavior on our part to avoid a periodic crashing bug in [ActorX](../Content%20Creation/Tools/ActorX.md). Skip this step at your own peril)
 2. Click *Digest Animation*. When it is done, you will **not** get a window telling you that it was/was not successful.
@@ -90,7 +90,7 @@ There are two steps for exporting animations. First, load the scene containing y
 
 Once you have digested one or more animations you are ready to add them to a .PSA file.
 
-![anim-manager.gif](../assets/anim-manager.gif)
+![anim-manager.gif](../assets/![anim-manager.gif](../assets/anim-manager.gif))
 
 1. Bring up the [ActorX](../Content%20Creation/Tools/ActorX.md) dialog if it is not already displayed.
 2. Click the *animation manager* button to display the animation manager.
@@ -99,7 +99,7 @@ Once you have digested one or more animations you are ready to add them to a .PS
 5. Select your new animations and click *-->* to add your animations to the output package.
 6. Click *Save* to save the .PSA file back out. (assumes you already provided the name of the animation file previously)
 
-![psa saved](../assets/mypsa.jpg)
+![psa saved](../assets/![mypsa.jpg](../assets/mypsa.jpg))
 
 ## Batch Processing
 
@@ -113,7 +113,7 @@ Before batch-processing you will need to format your animations.
 * All of the animations that are to be processed together need to reside in a single directory
 * Each file must have its start and end time set properly. Click the *Time Configuration* button
 
-![time configuration](../assets/timeconfig.jpg)
+![time configuration](../assets/![timeconfig.jpg](../assets/timeconfig.jpg))
 
 in 3D-Studio to set this up properly.
 * The files should have the same name as the desired animation name once in the engine.

@@ -74,7 +74,7 @@ A .UTX file is a repository for a group of textures, and files derived from such
 
 ## Browser Layout
 
-![utxbrowser.jpg](../assets/utxbrowser.jpg)
+![utxbrowser.jpg](../assets/![utxbrowser.jpg](../assets/utxbrowser.jpg))
 
 * 1: [Pull down Menus](TextureBrowserReference.md#pull-down-menus). These duplicate the functionality of the buttons, and sometimes extend them.
 * 2: Browser tabs. *Textures* should be selected, of course.
@@ -91,7 +91,7 @@ A .UTX file is a repository for a group of textures, and files derived from such
 
 This lets you add more textures to a package.
 
-![importwindow.jpg](../assets/importwindow.jpg)
+![importwindow.jpg](../assets/![importwindow.jpg](../assets/importwindow.jpg))
 
 * **Package:** The name of the package you will import into.
 * **Group:** The group within the package the texture will be classified under. This field can be left blank, if no group is desired.
@@ -165,7 +165,7 @@ This allows you to selectively show the textures that are applied to different t
 
 ## Toolbar Buttons
 
-![toolbar.gif](../assets/toolbar.gif)
+![toolbar.gif](../assets/![toolbar.gif](../assets/toolbar.gif))
 
 These buttons have some of the more commonly used functionality from the pull-down menus.
 
@@ -179,11 +179,11 @@ Pretty self-explanatory. If you change your package, make sure to save it - not 
 
 ### Texture Properties
 
-![properties.gif](../assets/properties.gif)
+![properties.gif](../assets/![properties.gif](../assets/properties.gif))
 
 Clicking the Properties button will lead to you the texture properties window.
 
-![properties.jpg](../assets/properties.jpg)
+![properties.jpg](../assets/![properties.jpg](../assets/properties.jpg))
 
 #### Buttons
 
@@ -291,19 +291,19 @@ This indicates what compression type the texture has been stored as. For more on
 
 ### Load Entire Package
 
-![loadentire.gif](../assets/loadentire.gif)
+![loadentire.gif](../assets/![loadentire.gif](../assets/loadentire.gif))
 
 The texture browser is somewhat unintuitive at times - when a .UTX package is loaded, not every texture in that package will necessarily be displayed. Only those textures in use will be shown; to force all the textures in the package to appear, use this button.
 
 ### Previous Group
 
-![previous.gif](../assets/previous.gif)
+![previous.gif](../assets/![previous.gif](../assets/previous.gif))
 
 This will navigate backwards through all the available groups in a package. You can also navigate through groups by using the pull-down.
 
 ### Next Group
 
-![next.gif](../assets/next.gif)
+![next.gif](../assets/![next.gif](../assets/next.gif))
 
 This will navigate backwards through all the available groups in a package. You can also navigate through groups by using the pull-down.
 
@@ -323,15 +323,15 @@ On import of a texture in to a .UTX, you are given the option of assigning it to
 
 #### ! Button
 
-![epoint.gif](../assets/epoint.gif)
+![epoint.gif](../assets/![epoint.gif](../assets/epoint.gif))
 
 This is the realtime preview button. This lets you see the result of textures with additional layers of effects over the base layer of texture. For example, a texture may have a panner attached to it, which will animate in the browser.
 
-![texpan.gif](../assets/texpan.gif)
+![texpan.gif](../assets/![texpan.gif](../assets/texpan.gif))
 
 #### All Button
 
-![all.gif](../assets/all.gif)
+![all.gif](../assets/![all.gif](../assets/all.gif))
 
 This button will show all the loaded textures spread among all the different groups.
 

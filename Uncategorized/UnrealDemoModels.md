@@ -22,7 +22,7 @@ This is a document that will explain design choices and pitfalls involved in cre
 
 ## Goals
 
-![two character models](../assets/models.jpg)
+![two character models](../assets/![models.jpg](../assets/models.jpg))
 
 The goals for these models were as follows:
 
@@ -49,7 +49,7 @@ For the models I made, most of the answers are cut and dry. I had a budget of 40
 I used a planar sheet of polygons for the eyes in my models. This method is a polygon efficient way to create eyes that will require eye tracking. For a more thorough explanation, see the [UnrealModeling](UnrealModeling.md#movable-eyes)
 doc.
 
-![eye motion range](../assets/eyelimits.jpg)
+![eye motion range](../assets/![eyelimits.jpg](../assets/eyelimits.jpg))
 
 This image shows the range of motion possible with the sheet method. The biggest difficulty with this method is finding the best placement for the bone that will control the iris. Placing the base of the bone correctly is very, very important, as the curve of the iris must match the curve of the eye white for the entire travel range of motion. This will likely require a large amount of minute tweaks, both in the rigging and in the model itself.
 
@@ -57,7 +57,7 @@ This image shows the range of motion possible with the sheet method. The biggest
 
 Since the hands demanded a large amount of motion (sign-language capable), they took up a fairly large portion of the total polygons. Each hand has approximately 420 polys, out of a model that has a total count of about 4400. This is about 20% of the complete model, a fairly large portion.
 
-![hand wireframe](../assets/handwire.jpg)
+![hand wireframe](../assets/![handwire.jpg](../assets/handwire.jpg))
 
 You can see in the picture above that each finger joint has two segments around each joint, which is important in keeping the deformation to a minimum when they are bent. If I was to make the models again, I might budget even more resources to the hands; the knuckles are not clearly defined when the hand is closed and the thumb could use more geometry where it joins with the hand.
 
@@ -66,7 +66,7 @@ You can see in the picture above that each finger joint has two segments around 
 I experimented a little bit when making the feet. As explained in the [UnrealModeling](UnrealModeling.md#in-game-perspective)
 doc, perspective in games often makes 'normal' human proportions seem wrong. This is especially the case with feet, where the camera point of view is often looking down at your models from a position above and behind your character. To compensate for this effect, I made the feet on the male model much larger than is normal. I made the girl's feet normal sized, so that evaluating the appropriateness of both sizes is possible.
 
-![foot size comparison](../assets/sidefeet.jpg)
+![foot size comparison](../assets/![sidefeet.jpg](../assets/sidefeet.jpg))
 
 ## Mapping/Texturing
 
@@ -81,7 +81,7 @@ doc. In a nutshell, when two triangles cross that both have textures with alpha 
 
 I created the three textures for each model. Two are at the same size that Unreal Tournament 2003 uses by defualt: 1024x1024. The third texture map I reserved for the parts of the model that require transparency in an alpha channel. This division allows you to save the oapque textures out at 24 bit, which will save a litle memory, and also makes life a bit easier for the person who has to mess with the alpha settings in UnrealEd. This third texture was larger for the girl model than the guy model; her hair required more texture resolution.
 
-![alpha texture separation](../assets/alphatexture.jpg)
+![alpha texture separation](../assets/![alphatexture.jpg](../assets/alphatexture.jpg))
 
 In the above image you can see that on the alpha texture map there is hair, teeth, and eyes. The other texture map contains solid parts of the model, such as the face and arms, as well as the base layer of hair.
 
@@ -89,19 +89,19 @@ In the above image you can see that on the alpha texture map there is hair, teet
 
 This topic is pretty straightforward, though there are some subtleties. The general rule to keep in mind is that if you want to have total flexibiity to switch between different textures, make sure that every triangle that has skin tone on it is restricted to one texture, and that every cloth triangle is on another. The male model is an example of this technique, which lets us swap out all the skin at once.
 
-![skin color swap](../assets/skinchangemale.jpg)
+![skin color swap](../assets/![skinchangemale.jpg](../assets/skinchangemale.jpg))
 
 However, if we wanted to do something similar for the girl's current texture, we quickly run into problems.
 
-![skin color swap](../assets/skinchangefemale.jpg)
+![skin color swap](../assets/![skinchangefemale.jpg](../assets/skinchangefemale.jpg))
 
 If we wanted to make the cloth texture interchangeable, we would have to go back to the clothing texture, and make the girl's shirt extend up to her neck.
 
-![retexturing skin](../assets/skinchangefemale2.jpg)
+![retexturing skin](../assets/![skinchangefemale2.jpg](../assets/skinchangefemale2.jpg))
 
 In the picture above the girl's clothing texture has been altered so that it can be made completely interchangable with different skins.If you don't mind working with this division of triangles across textures, then this solution will work fine. However, many models are flexible enough to receive a variety of textures well. For example, this girl model will look fine with a high collar, but will also look good with the original lower cut neckline. What do you do if you want to be able to swap textures (and save texture memory), but you want to put some skin on the cloth? If you are willing to keep the skin tones that run across one texture to the next uniform, then you are free to create as many swappable skins as you want. Below is an example of this; the heads use two entirely different texture maps, but since the skin tones remain the same, there isn't the jarring visual break in the neck, as was seen previously.
 
-![retexturing skin](../assets/faceswap.jpg)
+![retexturing skin](../assets/![faceswap.jpg](../assets/faceswap.jpg))
 
 ## Bones/Enveloping
 
@@ -129,8 +129,8 @@ If you want to use the UDN rigging with a new model, so you can take advantage o
 
 There are a lot of zips at the end of this document. Included are all the source files used to create the UDN models, as well as .PSK and .PSA files that you can use to import them directly into UnrealEd?. Here is the content breakdown:
 
-* [UDNMale.zip](../assets/udnmale.zip): Contains the rigged .max model, the .PSA and .PSK, and the three textures you'll need to view it in 3DS Max.
-* [UDNFemale.zip](../assets/udnfemale.zip): Contains the rigged .max model, the .PSA and .PSK, and the three textures you'll need to view it in 3DS Max.
-* [UDNMaleSourceAnims.zip](../assets/udnmalesourceanims.zip): All the source .max files that comprise the animation/viseme sets. Caution: file size is large.
-* [UDNFemaleSourceAnims.zip](../assets/udnfemalesourceanims.zip): All the source .max files that comprise the animation/viseme sets. Caution: file size is large.
-* UDNMapping.zip: The layout for the texture maps that are provided in UDNMale.zip and UDNFemale.zip
+* [[udnmale.zip](../assets/udnmale.zip)](../assets/[udnmale.zip](../assets/udnmale.zip)): Contains the rigged .max model, the .PSA and .PSK, and the three textures you'll need to view it in 3DS Max.
+* [[udnfemale.zip](../assets/udnfemale.zip)](../assets/[udnfemale.zip](../assets/udnfemale.zip)): Contains the rigged .max model, the .PSA and .PSK, and the three textures you'll need to view it in 3DS Max.
+* [[udnmalesourceanims.zip](../assets/udnmalesourceanims.zip)](../assets/[udnmalesourceanims.zip](../assets/udnmalesourceanims.zip)): All the source .max files that comprise the animation/viseme sets. Caution: file size is large.
+* [[udnfemalesourceanims.zip](../assets/udnfemalesourceanims.zip)](../assets/[udnfemalesourceanims.zip](../assets/udnfemalesourceanims.zip)): All the source .max files that comprise the animation/viseme sets. Caution: file size is large.
+* UDNMapping.zip: The layout for the texture maps that are provided in [udnmale.zip](../assets/udnmale.zip) and [udnfemale.zip](../assets/udnfemale.zip)

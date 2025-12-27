@@ -59,7 +59,7 @@ Once you determine what the general scale of your levels and static mesh pieces,
 
 ### The Grid
 
-![gridcompare.gif](../assets/gridcompare.gif)
+![gridcompare.gif](../assets/![gridcompare.gif](../assets/gridcompare.gif))
 
 Ah, the grid. The grid, from a level designer's point of view, is fundamentally important. An artist, on the other hand, might not even know what it is. What it all boils down to is this: if objects don't sit perfectly on the grid, problems upon problems start squirming out of the woodwork. Making two set pieces line up becomes incredibly tedious, and you may start to see obvious artifacting because of gaps in between models (such as walls). It's analogous to the difference between building a house out of legos, versus building one out of cards. Artists, take note: give your level designers legos. If your work snaps together nicely, they will thank you for it. If they require tiny, tiny adjustments in 3 axes of movement every time they need to be moved, your level designers will hate you. No joking.
 
@@ -73,15 +73,15 @@ So, now that we know that the grid is vitally important, how do we work effectiv
 
 Max doesn't make staying on the grid very easy or intuitive. It's certainly possible, but it's still very easy to accidentally pull your model off of your makeshift grid. I'll outline the very bare essentials for keeping objects on the grid in Max, but for a more complete picture, take a look through the help documents that come with Max.First of all, familiarize yourself with this button:
 
-![2dsnap.gif](../assets/2dsnap.gif)
+![2dsnap.gif](../assets/![2dsnap.gif](../assets/2dsnap.gif))
 
 You'll need to have this button activated to make anything snap at all. To get it to the 2D snap, hold down on the button until the 3 options flyout, like so:
 
-![snapbuttons.gif](../assets/snapbuttons.gif)
+![snapbuttons.gif](../assets/![snapbuttons.gif](../assets/snapbuttons.gif))
 
 You're halfway there. Now, right-click on those magnet buttons, and the *Grid and Snap Settings* window will pop up. Open the *Home Grid* tab, and set the *Grid Spacing* field to an appropriate value. Now, when you put your cursor in one of the viewports, you'll see that your icon is surrounded by a blue box that looks like this:
 
-![snapicon.gif](../assets/snapicon.gif)
+![snapicon.gif](../assets/![snapicon.gif](../assets/snapicon.gif))
 
 Now, when you move your mesh, if you begin to move from within that blue box, it will try to snap to the grid intersections. Caution: if you try to move your mesh while not in the blue square, it will still snap, but now it will snap your mesh right off of the grid.
 
@@ -89,11 +89,11 @@ Now, when you move your mesh, if you begin to move from within that blue box, it
 
 Staying on the grid in Maya is a fairly simple process. First you should make sure your grid is set to the right scale. To change the grid scale, click the Grid options box under the Display menu.
 
-![mayagridoptions.jpg](../assets/mayagridoptions.jpg)
+![mayagridoptions.jpg](../assets/![mayagridoptions.jpg](../assets/mayagridoptions.jpg))
 
 Once the grid is correct, you can begin snapping. The simplest is probably to toggle on the Grid Snap button, which is located in the tool bar at the top of the screen. It looks something like this.
 
-![mayasnaptoggle.jpg](../assets/mayasnaptoggle.jpg)
+![mayasnaptoggle.jpg](../assets/![mayasnaptoggle.jpg](../assets/mayasnaptoggle.jpg))
 
 However, this will make everything snap to the grid...good for placing meshes, but bad for subltly tweaking verts. Grid snapping is also enabled whenever you hold down the "X" key. Using this method you can easily toggle snapping on and off as you go.
 
@@ -101,12 +101,12 @@ However, this will make everything snap to the grid...good for placing meshes, b
 
 To use the grid in Unreal, you need only select the grid button at the bottom of the Unreal Ed interface:
 
-![grids.gif](../assets/grids.gif)
+![grids.gif](../assets/![grids.gif](../assets/grids.gif))
 
 Note that there are two types of grids, and for just about all cases, you should NEVER TURN THE CARTESIAN GRID OFF. When geometry falls off the grid, it can become nearly impossible to realign the grid without manually typing in new location coordinates in the Movement tab of the geometry's properties.Turning off the grid can be exceptionally dangerous when dealing with BSP geometry as one of the major causes of BSP holes even if BSP is off the grid by a mere fraction of an unreal unit.The *Rotation Grid* is not as dangerous, and can sometimes be useful to turn off when arranging more organic things (such as trees). For modular design though, it can be helpful to not only turn on the *Rotation Grid* but to also increase its *gird size.* To set this, open up the Advanced Options menu (under view) and expand the following tabs:
 **Editor** --> **Rotation Grid** --> **RotGridSize**
 
-![rotgrid_size.gif](../assets/rotgrid_size.gif)
+![rotgrid_size.gif](../assets/![rotgrid_size.gif](../assets/rotgrid_size.gif))
 
 The values for the *Pitch, Roll,* and *Yaw* are given in Urus (Unreal Units), so to set the Rotation Grid at 90� you will need to enter a value of 16384. Using a 90� Rotation Grid will make lining up orthogonal pieces at right angels very easy. And if you want a set of pieces on a 45� angle, you can manually adjust the Yaw in the Movement properties by 8192 Urus (16384 / 2) and then use the Rotation Grid to rotate it in a viewport.
 
@@ -122,7 +122,7 @@ One good rule of thumb when creating items that will lie on the grid is to imagi
 * Bookcase: Bookcases can have other objects resting on top of them, so remember to make the top of it on the grid. Don't forget the shelves though - since items can be placed on them as well, try to make every shelf be aligned with the grid as well.
 * Cinder Blocks: blocks or bricks of any type require a little bit more thought, since they are stackable. If you create a brick, it should of course be stackable - the top should fall on the grid, as well as the bottom. But what if you turned it on its end? If the brick also fell on the grid that way as well, then it would be much more flexible and useful.
 
-![candelabra.jpg](../assets/candelabra.jpg)
+![candelabra.jpg](../assets/![candelabra.jpg](../assets/candelabra.jpg))
 
 In the above picture, all the red and blue lines indicate areas that should be made to fall on the grid, vertically and horizontally.
 
@@ -145,7 +145,7 @@ There are a few things to keep in mind when reusing your set pieces.
 
 Even with judicious use of your modular pieces, you will start to see patterns and repetition in your levels. One way to alleviate this is to mirror your meshes when you place them, this alone can help to break up similarities. If you are working with a piece that is heavily patterned (such as a wall section), then consider mirroring the pieces that are side by side.
 
-![ferns.jpg](../assets/ferns.jpg)
+![ferns.jpg](../assets/![ferns.jpg](../assets/ferns.jpg))
 
 In the picture above, you can already begin to see the repetition of the static meshes in the picture on the left. If these were used without mirroring, one would be able to see obvious patterning. On the right, the mesh has been mirrored and rotated, breaking up the mirroring.
 
@@ -161,11 +161,11 @@ This is pretty obvious, once you think about it. If you're building something to
 
 When making modular parts, a nice trick to help speed up the workflow process is to make subtle variations on designs, whether they are in the model or the texture. Since they are already in the creation pipeline, it's often faster to make several variants of a single mesh/texture than to try to create three separate meshes at different times. With these slightly different pieces, a much more visually interesting level can be built. In this way, efficiency levels for artists and level designers can rise concurrently.This can also help with flesh out the design of a level, since you can build a major theme and support it with your next two or three variants.If the artists' variant Meshes and/or Textures line up with each other, the level design can easily swap in and out different art assets using the Skins array and StaticMesh field found under the Display menu of a mesh's properties.
 
-![display_arrays1.gif](../assets/display_arrays1.gif)
+![display_arrays1.gif](../assets/![display_arrays1.gif](../assets/display_arrays1.gif))
 
 A StaticMesh can easily be swapped out with this StaticMesh field. If you just want to swap textures, the process is mildly more complicated. First you must add as many array fields as you have textures in the mesh up to the texture you wish to change. For example, say the StaticMesh you are using has five textures and you only want to change the third one, you will have to add three texture fields. Then select your new texture in the Texture Browser and hit the "Use" button in field of the Skins array to change that texture.
 
-![display_arrays2.gif](../assets/display_arrays2.gif)
+![display_arrays2.gif](../assets/![display_arrays2.gif](../assets/display_arrays2.gif))
 
 The rest of the textures, including the ones label as "None" in the Skins array will be left at their default textures as set in the Materials array in the StaticMesh Browser.
 
@@ -177,11 +177,11 @@ This is one of those `common-sense' tips, but it bears mentioning. If you give l
 
 If you haven't already begun to manage your origin location, now is the time to begin. Getting objects to line up on the grid depends on this to such a degree, it's hard to overstress its importance. Note: in Max and Maya the pivot point will not translate to the pivot point in UnrealEd. The pivot in UnrealEd will always be set relative to the exported mesh, directly at the origin (0,0,0) in your modeling package. This means that if you want your pivot point offset, you will have to move your mesh away from the origin, as opposed to moving your pivot point (within your package) away.
 
-![origin.gif](../assets/origin.gif)
+![origin.gif](../assets/![origin.gif](../assets/origin.gif))
 
 For many meshes, origin placement should be in one of the lower corners of the mesh, as opposed to in the center of the model (which is what modeling packages tend to give you). When the origin is placed in the corner, this allows for more flexible rotation and stretching, since one corner will always stay on the grid. If the origin is in the center of a mesh, rotating it will pull both corners off of the grid, which will require re-alignment of both corners at once.
 
-![stretch.jpg](../assets/stretch.jpg)
+![stretch.jpg](../assets/![stretch.jpg](../assets/stretch.jpg))
 
 1. We would like to fill this angled gap.
 2. If the origin is in the center, we'll have to move the object off of the grid, rotate it, stretch it in 2 directions, and guess at correct placement. This is time consuming and messy.
@@ -206,15 +206,15 @@ If you'll be making pieces that never will be visible to the player (such as wal
 
 T-junctions are visual glitches that appear when two modular setpieces are put next to each other with vertices that are stuck alongside an edge, as opposed to next to another vertex. It's a bit difficult to explain, see the following picture for an illustration.
 
-![tjunct.jpg](../assets/tjunct.jpg)
+![tjunct.jpg](../assets/![tjunct.jpg](../assets/tjunct.jpg))
 
 The presence of T-junctions can sometimes be blamed on an artist - if your meshes that are destined to sit alongside each other simply don't have vertices that match up in appropriate ways. This is a pretty annoying problem to have to deal with, so listen up, artists: plan ahead thoroughly before you make your modular sections. Walls and floors are prime offenders here.Level designers can just as easily cause T-junctions, even with perfectly good meshes. For example, if an artset has a 512x512 floor section to fit with a 512x512 section of wall, there won't be any glitches. However, if the LD decides to cut the size of the floor tile in half, and use twice as many tiles, the end result will be t-junctions in the middle of the wall.
 
-![3dtjunct.jpg](../assets/3dtjunct.jpg)
+![3dtjunct.jpg](../assets/![3dtjunct.jpg](../assets/3dtjunct.jpg))
 
 If you end up with these in your level, don't panic. They're ugly, but they won't cause any fatal errors in your map. Also, you have a few options available to you. First of all, you could try fixing your meshes. An ugly solution is to tessellate a face of one of your meshes, so that the vertices will match.
 
-![fixtjunct.jpg](../assets/fixtjunct.jpg)
+![fixtjunct.jpg](../assets/![fixtjunct.jpg](../assets/fixtjunct.jpg))
 
 Another option is to use other static meshes to hide your seams. Doorways, columns, pillars etc. can all be used to obscure these visual artifacts. Finally, your last remaining option is to change the background color of the world space behind your meshes (and T-junctions). Since you are really looking through a gap in between your meshes when you see a T-junction, if you set the background to something innocuous the gap will be much more difficult to spot.
 

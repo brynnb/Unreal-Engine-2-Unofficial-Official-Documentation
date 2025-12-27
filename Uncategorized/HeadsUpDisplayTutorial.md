@@ -78,7 +78,7 @@ function RenderIcons( Canvas Canvas )
 }
 ```
 
-![normal.jpg](../assets/normal.jpg)
+![normal.jpg](../assets/![normal.jpg](../assets/normal.jpg))
 
 The engine automatically arranges the images to appear side-by-side when this code executes (`UnCanvas.cpp` increases the `Canvas.CurX` position by the texture width). Always keep in mind the Canvas will always store the last setting that was applied to it- even if it was set in another method, subclass, etc.Therefore, if you wish for the images to overlay one another, all you have to do is explicitly specify where the images should appear by doing a *Canvas.SetPos()* before each *Canvas.DrawIcon()* call.The following code will overlay the two images:
 
@@ -99,7 +99,7 @@ function OverlayIcons( Canvas Canvas )
 }
 ```
 
-![overlay.jpg](../assets/overlay.jpg)
+![overlay.jpg](../assets/![overlay.jpg](../assets/overlay.jpg))
 
 Notice that the HUD overlaps the images perfectly because of the explicit *Canvas.SetPos()* call we did to set the cursor. Also, note how the HUD draws the image with a green hue. This because this is the last known color the Canvas was set to. In order to get the image to show up in it's default hue, we would either need to reset the Canvas or set the Draw Color to the Canvas's default color.
 
@@ -135,7 +135,7 @@ function RenderSection( Canvas C )
 }
 ```
 
-![drawtile.jpg](../assets/drawtile.jpg)
+![drawtile.jpg](../assets/![drawtile.jpg](../assets/drawtile.jpg))
 
 The Canvas will render the 128x128 section to the screen.
 
@@ -187,7 +187,7 @@ defaultproperties
 }
 ```
 
-![fullscreen.jpg](../assets/fullscreen.jpg)
+![fullscreen.jpg](../assets/![fullscreen.jpg](../assets/fullscreen.jpg))
 
 When you run the code, you'll notice the engine stretches the image to fit the screen.
 
@@ -199,4 +199,4 @@ The Scoreboard is instantiated by the HUD and is simply used to show the current
 
 This tutorial covered all the basics with the HUD and Canvas classes. When you get ready to build your HUD, of course keep in mind that gamers are likely to use any resolution ranging from 640x400 to 1600x1200, etc. Therefore, you should stay away from using absolute sizes. Try to always scale all of your textures to receive the best results across the board.We also covered network issues such as iterating through all the controllers on the level using *AllActor(...)* searches and displaying bad connection symbols.Lastly, always remember to reset the HUD in order to keep consistent results.
 
-* [TestHUD.zip](../assets/testhud.zip): Includes the example HUD code and test texture
+* [[testhud.zip](../assets/testhud.zip)](../assets/[testhud.zip](../assets/testhud.zip)): Includes the example HUD code and test texture
