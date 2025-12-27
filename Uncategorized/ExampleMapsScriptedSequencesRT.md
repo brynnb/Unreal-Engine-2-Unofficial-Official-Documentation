@@ -20,7 +20,7 @@
 
 This example map demonstrates how to set up and use Scripted Sequences in the Runtime version of the Unreal Engine and uses the UDN character models. You will first need to download the *[examplepawns.zip](../assets/examplepawns.zip)* from the [MyFirstPawn](MyFirstPawn.md) site in the Technical section. Follow the instructions for setting up the example pawns in the Runtime and then you will be able to view this Example Map.
 
-![dancing.jpg](../assets/![dancing.jpg](../assets/dancing.jpg))
+![dancing.jpg](../assets/dancing.jpg)
 
 ### The Plan
 
@@ -30,15 +30,15 @@ In this example, there are a series of characters all with their own scripted se
 
 After you've place a pawn in the level and a Scripted Sequence Actor in the level you will need to link the two. This is done by giving a unique tag to the Scripted Sequence and then entering that tag into the AIScriptTag under the AI tab of the pawn. Here you can see the AIScriptTag of AudienceBoyA is set to match the Tag of the Scripted Sequence.
 
-![aiscripttag.gif](../assets/![aiscripttag.gif](../assets/aiscripttag.gif))
+![aiscripttag.gif](../assets/aiscripttag.gif)
 
 When you have your pawn selected, you will now see a blue line connecting the pawn to the AIScript.
 
-![bluelines.jpg](../assets/![bluelines.jpg](../assets/bluelines.jpg))
+![bluelines.jpg](../assets/bluelines.jpg)
 
 Before you start adding Actions, you will need to set the proper ControllerClass. Below Actions in the AIScript tab of the Scripted Sequence properties, use the pull down menu to select **ScriptedController.**
 
-![controllerclass.gif](../assets/![controllerclass.gif](../assets/controllerclass.gif))
+![controllerclass.gif](../assets/controllerclass.gif)
 
 Now you are ready to give this Scripted Sequence some Actions!
 
@@ -46,15 +46,15 @@ Now you are ready to give this Scripted Sequence some Actions!
 
 After the Scripted Sequence is correctly link to the pawn, the next thing you will want to set up is Physics type of the pawn. You can set this either under Movement tab or within Scripted Sequence Actions. In this example the dancing pawns have their physics set to Walking under their Movement tab like so:
 
-![physics1.gif](../assets/![physics1.gif](../assets/physics1.gif))
+![physics1.gif](../assets/physics1.gif)
 
 The pawns in the audience all have their physics set in their Scripted Sequence within the Actions section of their AIScript tab like so:
 
-![physics2.gif](../assets/![physics2.gif](../assets/physics2.gif))
+![physics2.gif](../assets/physics2.gif)
 
 If a pawn does not have its physics set, it will just float in the air (or wherever it has been placed) until it is activated and then it will fall to the ground and start doing whatever it is supposed to be doing.Note that in the level is appears as that all of the pawns have their feet embedded in the ground, but this is not the case. If you turn on Radii View in the view port you will see the collision center is all above the floor and this is where the pawn will appear when the game loads.
 
-![radiiview.jpg](../assets/![radiiview.jpg](../assets/radiiview.jpg))
+![radiiview.jpg](../assets/radiiview.jpg)
 
 ### Setting up Actions
 
@@ -70,7 +70,7 @@ Action 21 - MoveToPoint ==> Destination: Right
 Action 22 - MoveToPoint ==> Destination: Center  
 Action 23 - MoveToPoint ==> Destination: LeftIn the top down view, their paths look like this:
 
-![helperpathnodes.gif](../assets/![helperpathnodes.gif](../assets/helperpathnodes.gif))
+![helperpathnodes.gif](../assets/helperpathnodes.gif)
 
 While using the MoveToPoint action, the pawns will by default run from Destination to Destination. If you want the pawns to walk, then you must precede the MoveToPoint Action with a Walk Action. This is done for the audience members on the left of the room. Each of the three pawns have their Action 6 set to Walk so that once they leave their first table, they will walk to their second.
 
@@ -98,15 +98,15 @@ In the dancer's Scripted Sequences, IfConditions are used to determine if the Da
 
 All of these actions work together like so. Once the IfCondition is reached, it will look for the TriggeredCondition with the tag that is set to the TriggeredConditionTag in the Scripted Sequence.
 
-![triggeredconditiontag.gif](../assets/![triggeredconditiontag.gif](../assets/triggeredconditiontag.gif))
+![triggeredconditiontag.gif](../assets/triggeredconditiontag.gif)
 
 If that TriggeredCondition is set to bEnabled = False under the TriggeredCondition tab, the Scripted Sequence will skip to the EndSection Action not doing any of the Actions between the IfCondition and the EndSection. However if the TriggeredCondition is set to True, then it will follow through the all the Actions as if the IfCondition and EndSection were not there at all.In this example, the TriggeredCondition is initially set up to be True, but within the IfCondition is a GotoAction that sends the Scripted Sequence back to Action 7 thus causing the pawn to loop through a series of Actions until the TriggeredCondition is triggered.Below the floor is a second Mover and Trigger combination that is activated when the Dancers begin their show, but delayed for 30 seconds before it pushes its trigger through the floor. This Trigger has its collision radius set so that if the player is in the audience, he/she will activate this Trigger.
 
-![movertriggers.jpg](../assets/![movertriggers.jpg](../assets/movertriggers.jpg))
+![movertriggers.jpg](../assets/movertriggers.jpg)
 
 This Trigger (the one attached to the Mover on the right in the above picture) calls the event *ShowsNotOver* which causes the TriggeredCondition to toggle and thus the IfCondition in the Scripted Sequence skips to the EndSection allowing the dancers to start wrapping up their performance.
 
-![triggeredconditiontoggle.gif](../assets/![triggeredconditiontoggle.gif](../assets/triggeredconditiontoggle.gif))
+![triggeredconditiontoggle.gif](../assets/triggeredconditiontoggle.gif)
 
 Each dancer must still go through their own sequence of Actions before they get to their own IfCondition though, so one more WaitForEvent was put in so that they wait for Dancer1 to finish his somewhat longer finale and then they all finish in unison.
 

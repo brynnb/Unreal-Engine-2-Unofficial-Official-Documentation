@@ -29,7 +29,7 @@
     - [Sky Zone](BreakAwayExample.md#sky-zone)
     - [Distance Fog](BreakAwayExample.md#distance-fog)
 
-![runtime_map.jpg](../assets/![runtime_map.jpg](../assets/runtime_map.jpg))
+![runtime_map.jpg](../assets/runtime_map.jpg)
 
 ## Introduction
 
@@ -39,7 +39,7 @@ The map being referenced in this example is the EM\_Runtime map that comes with 
 
 ## Order of Operations
 
-![ba_order_operations.gif](../assets/![ba_order_operations.gif](../assets/ba_order_operations.gif))
+![ba_order_operations.gif](../assets/ba_order_operations.gif)
 
 The creation of the level can be broken down into six stages:
 
@@ -58,7 +58,7 @@ There is also of course a *zeroth* step which is the designing of your level but
 
 Next in the process for creating the Runtime map a rough Terrain was added. In this step the layout of the entire level was quickly set up and tested to see if everything was to the right scale. Initially, a 64x64 size Terrain was used to save on memory and then place holder models for trees and buildings to get a sense of scale.
 
-![place_holder.jpg](../assets/![place_holder.jpg](../assets/place_holder.jpg))
+![place_holder.jpg](../assets/place_holder.jpg)
 
 ### Adding/Subtracting secondary BSP zones
 
@@ -80,11 +80,11 @@ And last but definitely not least is the polish. After everything is laid out yo
 
 ## Creating the BSP Space
 
-![bsp_space.jpg](../assets/![bsp_space.jpg](../assets/bsp_space.jpg))
+![bsp_space.jpg](../assets/bsp_space.jpg)
 
 Many many moons ago, entire levels were constructed entirely out of BSP. Now things are done differently. BSP is still necessary for setting up Zones, the general world space, and some special effects that require BSP surfaces. The main world that the player sees though should be made up of StaticMeshes?. This section of this document will explain how the underground area was set up in the EM\_RunTime map.Below you can see a break away image showing each of the zones that the BSP area is divided into with the StaticMesh, Mover, Light, and Emitter Actors raised above the sections in which they reside.
 
-![ba_bsp_space.gif](../assets/![ba_bsp_space.gif](../assets/ba_bsp_space.gif))
+![ba_bsp_space.gif](../assets/ba_bsp_space.gif)
 
 ### Setting up the Zones
 
@@ -94,7 +94,7 @@ The zones are set up simply at each corner or space that will block a line of si
 
 Since the BSP area of the EM\_RunTime map is underground it required special attention to connect it to the Terrain. This was done with carefully placed meshes, and carefully cut zones. Below you can see a breakaway image of how the entrance was put together.
 
-![ba_bsp_entrance.jpg](../assets/![ba_bsp_entrance.jpg](../assets/ba_bsp_entrance.jpg))
+![ba_bsp_entrance.jpg](../assets/ba_bsp_entrance.jpg)
 
 The same technique is used for the exit at the top of the spiral staircase in the BSP area. You may also find that blocking volumes are necessary to smoothly transition between the StaticMesh and the Terrain and/or BSP floor.
 
@@ -102,7 +102,7 @@ The same technique is used for the exit at the top of the spiral staircase in th
 
 While using BSP for everything is no longer a viable option (not only because it can be unwieldy to work with but also because it does not render as fast as StaticMeshes), it still has many advantages. Among the most obvious advantage, aside from zoning, is how it handles lighting. When you rebuild lights it ray traces the lighting onto all of the BSP surfaces from the light source taking into account any geometry that might be blocking it and creates very slick baked in lighting.
 
-![bsp_lighting.jpg](../assets/![bsp_lighting.jpg](../assets/bsp_lighting.jpg))
+![bsp_lighting.jpg](../assets/bsp_lighting.jpg)
 
 Another advantage of BSP is that it calculates collision much faster than StaticMesh geometry. Because of this BSP is often used as the floor for an area where StaticMeshes make up the walls, ceilings, and other details of the environment.
 
@@ -110,11 +110,11 @@ Another advantage of BSP is that it calculates collision much faster than Static
 
 A variety of initial temporary builder brushes were used in the process for creating the BSP section. Note that this method works best if you are keeping your designs modular so you can get as much reuse out of your core builder brush as you can. The core builder brush for the BSP section in the EM\_RunTime map was the hallway piece which was created in the following order:
 
-![builder_brush1.gif](../assets/![builder_brush1.gif](../assets/builder_brush1.gif))
+![builder_brush1.gif](../assets/builder_brush1.gif)
 
 Then this resulting brush was intersected with a new Builder brush and then Added to the world so that it could be used later to create more complex shapes such as intersections, sloped hallways, and turns (as seen below).
 
-![builder_brush2.gif](../assets/![builder_brush2.gif](../assets/builder_brush2.gif))
+![builder_brush2.gif](../assets/builder_brush2.gif)
 
 The above sections were created through a combination of intersecting and deintersecting new brushes made from our core hallway piece as well as using the Vertex Editing tool to manually select and move certain faces to the right place. This modular and incremental design of the BSP makes it much easier to modify your BSP based sections as well as expand the area by adding new rooms based on your core pieces. Virtually every part of the BSP section in the EM\_RunTime map is based off of the one core hallway piece that was initially created as described above.
 
@@ -147,17 +147,17 @@ Also taking a look at any UT2K3 map will be a good example to look out to see ho
 
 You can just let Unreal cast its default shadows for StaticMesh geometry as it roughly ray traces the shadow cast by the geometry, or you can set the mesh to bCastShadow = *False* and create your own more detailed shadows.
 
-![tree_shadow.jpg](../assets/![tree_shadow.jpg](../assets/tree_shadow.jpg))
+![tree_shadow.jpg](../assets/tree_shadow.jpg)
 
 Here is how the trees were set up in the EM\_RunTime including not only their waiving shadows, but also their waving leaves.
 
-![ba_tree.jpg](../assets/![ba_tree.jpg](../assets/ba_tree.jpg))
+![ba_tree.jpg](../assets/ba_tree.jpg)
 
 ### Basic Tree StaticMesh
 
 For the trees in EM\_RunTime, only one tree mesh was used. It's roughly 890 units tall, and has 820 triangles and 4 materials (2 branch/leaf textures, 1 bark, and 1 detail texture for the bark) assigned to it.
 
-![tree.jpg](../assets/![tree.jpg](../assets/tree.jpg))
+![tree.jpg](../assets/tree.jpg)
 
 To create the appearance of several different similar types of trees and avoid obvious repetition, each copy of the tree was scaled and rotated differently so no obvious patterns would stand out. Not that for this method to work, the basic mesh must also be some what regular in its randomness, or in other words, you can't have on really characteristic branch that sticks out. If you do, then this branch will be still be able to be noticed after rotating and/or scaling and thus the illusion breaks down.
 
@@ -169,7 +169,7 @@ To set up a more elaborate shadow, a projector is used in conjunction with the t
 
 To make the tree seem more alive and in a living world, the leaves have a subtle waiving motion to them as if wind was steadily passing across them. To achieve this affect, all that is necessary is a TexOscillator. The base texture for the leave textures is passed into a TexOscillator with the following properties:
 
-![leaves.gif](../assets/![leaves.gif](../assets/leaves.gif))
+![leaves.gif](../assets/leaves.gif)
 
 And then the new TexOscillator is assigned to the tree StaticMesh in the StaticMesh browser so that all the trees will have the waiving leaves.
 
@@ -177,11 +177,11 @@ And then the new TexOscillator is assigned to the tree StaticMesh in the StaticM
 
 ### Assembling the Torches
 
-![torch.jpg](../assets/![torch.jpg](../assets/torch.jpg))
+![torch.jpg](../assets/torch.jpg)
 
 The torches in the EM\_RunTime map are made up of four parts, the StaticMesh, the fire emitter, and the light, and an AmbientSound.
 
-![ba_torch.jpg](../assets/![ba_torch.jpg](../assets/ba_torch.jpg))
+![ba_torch.jpg](../assets/ba_torch.jpg)
 
 The AmbientSound, for simplicities sake was set in the Sound property of the Fire Emitter -this way if you need to copy or move a torch set up you have one less object to select. The light is best left as a separate actor as the lighting looks much better if it is actually set apart from the wall some and thus the apparent light source. And of course the Emitter and StaticMesh must be separate actors.One helpful tool used in organizing this torch set is the Groups Browser. By creating a group that has just the lights for the torch you can then go back later if you want to tweak the lighting to adjust the hue or brightness. You could even create a hidden mover that constantly wiggles back and forth, attach all the lights to it at once, and set them to bDynamicLight = *True* to create a shimmering effect consistent with flickering flame. If the lights were not in their own group, this task would be as many times more time consuming as you have lights, and there's always the chance you might miss one.For more on using the Groups Browser, see the [GroupsBrowser](GroupsBrowser.md) document. Also you can see more cool effects that you can add to your torch in the [Advanced Lighting Example Map doc](ExampleMapsAdvLighting.md#wavering-torch-light). If you are curious about how to create your own fire emitter, check out the this example in the [Emitters Examples doc](EmittersExamples.md#the-torches).
 
@@ -189,11 +189,11 @@ The AmbientSound, for simplicities sake was set in the Sound property of the Fir
 
 ## Giving Atmosphere to the Level
 
-![atmoshpere.jpg](../assets/![atmoshpere.jpg](../assets/atmoshpere.jpg))
+![atmoshpere.jpg](../assets/atmoshpere.jpg)
 
 There are several tools that one can use to create a sense of atmosphere and a real feel of place in your level. In the EM\_RunTime map, **Sun Light**, a **Sky Zone**, **Distance Fog**, and a **Projector** casting rolling clouds over the level all work together to give a sense of atmosphere to the level. Below are brief descriptions on how each of these elements are set up in the level.
 
-![ba_atmoshpere.jpg](../assets/![ba_atmoshpere.jpg](../assets/ba_atmoshpere.jpg))
+![ba_atmoshpere.jpg](../assets/ba_atmoshpere.jpg)
 
 ### Sun Light
 
@@ -211,7 +211,7 @@ To create a rolling clouds all you really need is a panning cloud texture and a 
 
 Having a SkyZone in your level will also go a long way to creating a feeling of space. There are of course a number of different ways in which a SkyZone can be set up. To see three examples of different SkyZones see the [Sky Zones Example Map doc](ExampleMapsSkyZones.md). Here is how the SkyZone in the EM\_RunTime map was set up:
 
-![ba_skyzone.jpg](../assets/![ba_skyzone.jpg](../assets/ba_skyzone.jpg))
+![ba_skyzone.jpg](../assets/ba_skyzone.jpg)
 
 As you can see, the SkyZone is constructed out of four StaticMeshes -or rather two meshes each used twice: Two cylinders and two planes. The two planes are used to create a greater sense of depth in the clouds and the inner cylinder is there to blend more smoothly into the Distance Fog (described below). Each of the StaticMeshes are set to bUnlit = *True* since there is not light source in the SkyZone itself. The subtraxted BSP box that the SkyZone resides in is textured with just a solid sky blue texture. Once all the StaticMeshes and the SkyZoneInfo are set up in place, then your SkyZone is ready to go.
 

@@ -23,11 +23,11 @@ This map demonstrates how to create triggerable lights. Below you will see how t
 
 To place a TriggerLight, simply open up your Actors Browser and expand the following roll outs: *Actor --> Lights --> TriggerLights.* Then right click in a viewport and select the Add TriggerLight option.
 
-![triggerlight_actor.gif](../assets/![triggerlight_actor.gif](../assets/triggerlight_actor.gif))
+![triggerlight_actor.gif](../assets/triggerlight_actor.gif)
 
 It will look like a regular light actor, except in its properties window you will have a few more options (namely under the TriggerLight rollout).
 
-![triggerlight_properties.gif](../assets/![triggerlight_properties.gif](../assets/triggerlight_properties.gif))
+![triggerlight_properties.gif](../assets/triggerlight_properties.gif)
 
 These fields control the following things:
 
@@ -56,7 +56,7 @@ Some of the more basic effects you can do with TriggerLights flashing red lights
 
 For this example, set up a new Trigger and TriggerLight pair and once you have the appropriate effect chosen for you TriggerLight, you will be ready to lay them out in your desired path. In this example map, the TriggerLight is set to be a dim blue light with a shorter radius and given the LightType: LT\_Pulse. The bDelayFullOn has been set to False so that the TriggerLights gradually turn on and lead into the next one.Next lay out your first set (some factor of ten would probably be best) TriggerLights by copying your first one and setting them in the path you wish them to follow. It is a good idea to make sure that they are in their own unique group to facilitate selecting them all at once if you wish to change something later.
 
-![running_lights.jpg](../assets/![running_lights.jpg](../assets/running_lights.jpg))
+![running_lights.jpg](../assets/running_lights.jpg)
 
 Now go through each one and set the ChangeTimes for each one incrementally. In this example they are set at .5 second intervals, with the first one starting at 0. Now you can copy and paste this initial set as a group and only have to alter the first digit of the ChangeTime of the following TriggerLights.Once triggered, these TriggerLights will turn on in sequence. When you toggle the trigger, the TriggerLights will then begin to turn off in sequence.
 

@@ -40,11 +40,11 @@ the slot number. This tells the method to zero out the scaling factor and the bo
 HeadScaler. Figure 1 shows the player's head as if they were suffering from gigantism.
 Figure 2 yeilds an effect similar to the shrunken heads seen in the movie Beetlejuice.
 
-![jumbohead_small.jpg](../assets/![jumbohead_small.jpg](../assets/jumbohead_small.jpg))
+![jumbohead_small.jpg](../assets/jumbohead_small.jpg)
 
 Figure 1 - A large headed player
 
-![shrunkenhead_small.jpg](../assets/![shrunkenhead_small.jpg](../assets/shrunkenhead_small.jpg))
+![shrunkenhead_small.jpg](../assets/shrunkenhead_small.jpg)
 
 Figure 2 - Tiny, tiny headThe code to produce this effect is very simple. I overloaded the PlayFiring() method
 so that when the primary fire is used the head is increased in size by 10%, while the
@@ -82,7 +82,7 @@ the upper body inversely proportional to the lower body. The upper body is speci
 the mid\_back and all higher bones connected to it. The lower body is comprised of the
 pelvis and all bones beneath it. The effect is extremely weird as seen in Figure 3.
 
-![largelowersmallupper_small.jpg](../assets/![largelowersmallupper_small.jpg](../assets/largelowersmallupper_small.jpg))
+![largelowersmallupper_small.jpg](../assets/largelowersmallupper_small.jpg)
 
 Figure 3 - Morphology run amokAs with the HeadScaler sample, the HierarchicalScaling1 performs scaling operations
 in the PlayFiring() method. For primary fire the lower body increases. The alternate
@@ -121,11 +121,11 @@ the first sample. However, it leaves the majority of the body in its reference s
 Only the legs are manipulated with one leg growing and the other shrinking proportionally.
 Figures 4 and 5 show this in action.
 
-![largerightsmallleft_small.jpg](../assets/![largerightsmallleft_small.jpg](../assets/largerightsmallleft_small.jpg))
+![largerightsmallleft_small.jpg](../assets/largerightsmallleft_small.jpg)
 
 Figure 4 - Leg torture
 
-![largeleftsmallright_small.jpg](../assets/![largeleftsmallright_small.jpg](../assets/largeleftsmallright_small.jpg))
+![largeleftsmallright_small.jpg](../assets/largeleftsmallright_small.jpg)
 
 Figure 5 - More leg tortureThe code to achieve the results seen in Figures 4 and 5 is the same as
 HierarchicalScaling1's PlayFiring() method with two small changes,
@@ -149,11 +149,11 @@ that feature. As an example of this, I created a class, ShoulderHitSimulator, th
 twists the torso as if a bullet hit the left or right shoulder. It forces the back to
 bend back slightly and turn to the side the bullet hit (see Figures 6-8).
 
-![leftshoulderhit_small.jpg](../assets/![leftshoulderhit_small.jpg](../assets/leftshoulderhit_small.jpg))
+![leftshoulderhit_small.jpg](../assets/leftshoulderhit_small.jpg)
 
-![normalpose_small.jpg](../assets/![normalpose_small.jpg](../assets/normalpose_small.jpg))
+![normalpose_small.jpg](../assets/normalpose_small.jpg)
 
-![rightshoulderhit_small.jpg](../assets/![rightshoulderhit_small.jpg](../assets/rightshoulderhit_small.jpg))
+![rightshoulderhit_small.jpg](../assets/rightshoulderhit_small.jpg)
 
 Figures 6 through 8 - Left shoulder hit, normal pose, right shoulder hitBecause this effect is done using bone rotation, it works with all animations. The code to
 do this is very similar to the scaling code, as seen below:
@@ -195,11 +195,11 @@ incrementing/decrementing the alpha value over time, you get a simple tweening
 mechanism, though probably not your best choice due to performance issues. Setting the
 alpha value to 0.0 disables the rotator, though doesn't delete it.
 
-![bonerotation_small.jpg](../assets/![bonerotation_small.jpg](../assets/bonerotation_small.jpg))
+![bonerotation_small.jpg](../assets/bonerotation_small.jpg)
 
 Figure 9 - SetBoneRotation() with Rotator(0.0, 0.0, 0.0)
 
-![bonedirection_small.jpg](../assets/![bonedirection_small.jpg](../assets/bonedirection_small.jpg))
+![bonedirection_small.jpg](../assets/bonedirection_small.jpg)
 
 Figure 10 - SetBoneDirection() with Rotator(0.0, 0.0, 0.0)
 

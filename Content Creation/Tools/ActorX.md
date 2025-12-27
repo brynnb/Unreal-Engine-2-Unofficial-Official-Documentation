@@ -12,7 +12,7 @@ Contents
     - [XSI Exporter Plugins](#xsi-exporter-plugins)
   + [ActorX Tutorials](#actorx-tutorials)
 
-![ActorX](../../assets/![actorx_splash.jpg](../../assets/actorx_splash.jpg))
+![actorx_splash.jpg](../../assets/actorx_splash.jpg)
 
 ## Overview
 

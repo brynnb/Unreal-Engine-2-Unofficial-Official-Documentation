@@ -28,23 +28,23 @@ Triggers are basically just 'alarms' that- once triggered, can cause a series of
 
 Let's go through the process of adding a simple trigger to the level that will display a message when a player enters its proximity. Open the Unreal Editor and construct a basic level. After you add a PlayerStart, you'll notice that Unreal Ed has a list of different types of triggers that you can select from.
 
-![triggersbrowser.gif](../assets/![triggersbrowser.gif](../assets/triggersbrowser.gif))
+![triggersbrowser.gif](../assets/triggersbrowser.gif)
 
 Select the *Trigger* actor and place it in your map. A simple sprite will appear where you added the trigger actor. Right click on the Trigger and go to *Properties*. Expand the *Advanced* section and change the **bHidden** attribute to *false* as shown in the image below. Now we will be able to see the trigger when we run the sample map.
 
-![triggerproperties.jpg](../assets/![triggerproperties.jpg](../assets/triggerproperties.jpg))
+![triggerproperties.jpg](../assets/triggerproperties.jpg)
 
 Close the advanced tree. Next, expand the Trigger property section. In the **Message** field, enter the text that will be displayed when the player enters the trigger's proximity. For this example, the Message text is "Hi, You have entered my proximity." Note, that the default type for a generic trigger is TT\_PlayerProximity.
 
-![triggerproperties2.jpg](../assets/![triggerproperties2.jpg](../assets/triggerproperties2.jpg))
+![triggerproperties2.jpg](../assets/triggerproperties2.jpg)
 
 Now we must setup the collision bounds of the trigger. This way, the trigger will be able to detect the player whenever they enter their field. Expand the **Collision** section. Note by default, the trigger's collision fields are set. *bCollideActors* is set to true and the CollisionHeight and CollisionRadius are set to 40. The engine will notify this trigger when the actor encroaches, its collision bounds if they are within a distance of 40.Now save the level and run your map. If you placed your trigger close to the PlayerStart, you should see it right in front of you (because we set *bHidden* attribute to false).
 
-![test1.jpg](../assets/![test1.jpg](../assets/test1.jpg))
+![test1.jpg](../assets/test1.jpg)
 
 Walk to the trigger. The text you entered into the *Message* field will be displayed.
 
-![test2.jpg](../assets/![test2.jpg](../assets/test2.jpg))
+![test2.jpg](../assets/test2.jpg)
 
 ### Breaking it Down
 
@@ -54,15 +54,15 @@ This section describes all the properties of a trigger:
 
 a) TT\_PlayerProximity - any pawn that is controlled by AI or an actual player.b) TT\_PawnProximity - by default this means any pawn.c) TT\_ClassProximity - means this trigger is activated by any actor that belongs to the **ClassProximityType** argument (it can be a subclass of the argument as well). For example, Engine.Pawn would apply to any pawn.
 
-![classproximity.jpg](../assets/![classproximity.jpg](../assets/classproximity.jpg))
+![classproximity.jpg](../assets/classproximity.jpg)
 
 Picking a parent type such as *Inventory* will be applicable to any children classes that fall under that type. For instance, looking at the Actor Browser- you can see all the child classes that conform to the Inventory type. All of these child classes are also affected when you set their parent type as the ClassProximityType. In this example, *Weapon*, *Powerups*, and many other child types are affected as shown in the picture below.
 
-![inventory.jpg](../assets/![inventory.jpg](../assets/inventory.jpg))
+![inventory.jpg](../assets/inventory.jpg)
 
 d) TT\_AnyProximity - any game entity (actor) within the proximity. This applies to weapons, inventory, pawns, and just basically any solid object in the game. Note, particles are not actual game entities and so- won't activate the trigger.e) TT\_Shoot - when the trigger is impacted by a projectile. If **DamageThreshold** is set for the trigger, then the damage inflicted by the projectile must be greater than this number. Note that if the trigger is set to this type, the engine will automatically set the drawtype of the trigger to None- even though the *bHidden* attribute is set to false.
 
-![tt_shoot.jpg](../assets/![tt_shoot.jpg](../assets/tt_shoot.jpg))
+![tt_shoot.jpg](../assets/tt_shoot.jpg)
 
 Other properties of a Trigger:
 
@@ -82,11 +82,11 @@ There are many other types of Triggers that provide more specialized functions t
 
 When this actor is triggered, it plays the song specified by it's default settings. If this trigger is 'triggered' again, it will stop the current song that's playing. Unlike a generic Trigger, this special trigger must be triggered by another event. For instance, setup a generic trigger that uses TT\_PlayerProximity for the *TriggerType* and set its Event/Event property to *MusicPlay* (this will be the EventName).
 
-![eventtrigger.gif](../assets/![eventtrigger.gif](../assets/eventtrigger.gif))
+![eventtrigger.gif](../assets/eventtrigger.gif)
 
 Next, select a MusicTrigger in the Actor Browser and add it to the level. Set the Event/Tag property of this actor to the *MusicPlay* event name.
 
-![musictrigger.gif](../assets/![musictrigger.gif](../assets/musictrigger.gif))
+![musictrigger.gif](../assets/musictrigger.gif)
 
 Now when the player encroaches, the generic trigger's radius, it will trigger the MusicTrigger.The MusicTrigger has a few easy to understand properties. Let's break this class down:
 
@@ -99,7 +99,7 @@ Now when the player encroaches, the generic trigger's radius, it will trigger th
 
 The Line Of Sight trigger was designed for single player games for situations the mapper may desire to trigger an event when a PlayerController (human game player) views the user defined object. Hence, this unique trigger does not work in multiplayer mode (only for the human player that either owns a local or listen server). The LineOfSightTrigger can be used with any group of actors and is very straight forward to use. You should not use it for the trigger itself but instead for an entity in the level. For example, if the player sees just the LOS trigger, an event isn't triggered *unless* the actor associated with the trigger via the **SeenActorTag** is in view. Pawns controlled by an AIController will not trigger this actor.To use a Line Of Sight Trigger, simply add the trigger to the level. Next, adjust the **SeenActorTag** property to match the **Tag** property of the actor you want to trigger the LOS event.Below is an example of a Trigger with the **SeenActorTag** set followed by explanations of each of the properties:
 
-![losproperty.jpg](../assets/![losproperty.jpg](../assets/losproperty.jpg))
+![losproperty.jpg](../assets/losproperty.jpg)
 
 * bEnabled - Disables this trigger. Internally, a LineOfSightTrigger does not disable itself. However, if the trigger is disabled, the engine will stop running LOS checks.
 * MaxViewAngle - this is the *angle* in degrees that the player must view the **SeenActor** in order to trigger Line Of Sight.
@@ -108,17 +108,17 @@ The Line Of Sight trigger was designed for single player games for situations th
 
 During initialization, the trigger searches the level for the indicated actor. Thus, you do not want to set the trigger to point to an actor that does not exist in the level until after gameplay has started. The LineOfSightTrigger should ideally be linked to an actor/decoration that is saved into the actual map.**NOTE: Currently LineOfSight Triggers only work in single player mode and they can only be activated once. Also, as described in the above properties, the SeenActorTag should be set to the tag of the LineOfSight Actor's Tag.**
 
-![loslevel.jpg](../assets/![loslevel.jpg](../assets/loslevel.jpg))
+![loslevel.jpg](../assets/loslevel.jpg)
 
 ### MaterialTrigger
 
 The **MaterialTrigger** is one of the most unique triggers. Unlike the others that have been described, this trigger works with a **MaterialSwitch** material. A MaterialSwitch material simply iterates through an internal list of materials whenever it is triggered. Note, you can actually trigger any material using a MaterialTrigger in which will proceed to trigger it's **FallbackMaterial** material. However, only the MaterialSwitch material will actually do *something* once triggered by default.First, create a MaterialSwitch material in unrealed. Open up the texture browser and click New. Create a new package or simply use the included UDNMat.utx file which contains an example MaterialSwitch material.
 
-![materialswitch1.jpg](../assets/![materialswitch1.jpg](../assets/materialswitch1.jpg))
+![materialswitch1.jpg](../assets/materialswitch1.jpg)
 
 Configure the material using the desired shaders. Personally, in version 927, I've found the only type of materials that tend to crash unrealed are **Combiners** but most other shaders seem okay. For this example, I have chosen two very simple shaders.
 
-![materialswitch3.jpg](../assets/![materialswitch3.jpg](../assets/materialswitch3.jpg))
+![materialswitch3.jpg](../assets/materialswitch3.jpg)
 
 As you can tell from the screenshot, a MaterialSwitch has only two basic properties:
 
@@ -127,21 +127,21 @@ As you can tell from the screenshot, a MaterialSwitch has only two basic propert
 
 Next, you should setup the MaterialTrigger. A MaterialTrigger CANNOT be triggered alone. It must be triggered by an external event (like a Player Proximity trigger) like most of the other specialized triggers. For the pictured example, a generic player proximity trigger is added to the level with the *bHidden* property set to false. Additionally, a message will appear when the player activates the trigger. The **Event** property is set to equal *MaterialSwitch*. The event name is of course not important, as long as it matches the **Tag** property in the MaterialTrigger.
 
-![materialswitch2.gif](../assets/![materialswitch2.gif](../assets/materialswitch2.gif))
+![materialswitch2.gif](../assets/materialswitch2.gif)
 
 In this example, you would notice the bubble texture displayed by default (because it was at the **Current** index 0). When you walk up to the trigger, a message is displayed and the **MaterialSwitch** activates. The action may happen really fast- so you will want to set a delay in the generic trigger so the materials don't change so fast.
 
-![materialswitch4.jpg](../assets/![materialswitch4.jpg](../assets/materialswitch4.jpg))
+![materialswitch4.jpg](../assets/materialswitch4.jpg)
 
 ### UseTrigger
 
 This is one of the most straight forward triggers to use. If a human controlled pawn is within the proximity of this trigger and hits their **USE** key, it activates this trigger. In turn, this trigger will alert all actors whose **Tag** matches the *Event* property set by this trigger.Note that it is also possible to send a message to the screen with this trigger. In the **UseTrigger** section, there is a *Message* field. This will send a message to the screen when a player comes within the proximity of the trigger, which can be changed in the **Collision** section, in the *CollisionHeight* and *CollisionRadius* fields.
 
-![usetrigger1.jpg](../assets/![usetrigger1.jpg](../assets/usetrigger1.jpg))
+![usetrigger1.jpg](../assets/usetrigger1.jpg)
 
 ### ViewShaker
 
-![viewshaker.jpg](../assets/![viewshaker.jpg](../assets/viewshaker.jpg))
+![viewshaker.jpg](../assets/viewshaker.jpg)
 
 The ViewShaker is a Trigger that affects the players. Once activated by a generic Trigger or some other event, the ViewShaker will cause all the player cameras within a specified radius to shake for a specified amount of time. Here are the variables that determine how the ViewShaker will shake the player cameras.
 
@@ -163,7 +163,7 @@ When this actor is touched, the event is triggered for all *ZoneInfo* actors tha
 
 * bTriggerOnceOnly - turns the trigger off after it's been activated.
 
-![zonetrigger1.jpg](../assets/![zonetrigger1.jpg](../assets/zonetrigger1.jpg))
+![zonetrigger1.jpg](../assets/zonetrigger1.jpg)
 
 ### Timed Trigger
 
@@ -184,15 +184,15 @@ This trigger performs the simple purpose of counting down from a user defined nu
 
 The image below is an example of how to setup the properties of a Counter:
 
-![counter.jpg](../assets/![counter.jpg](../assets/counter.jpg))
+![counter.jpg](../assets/counter.jpg)
 
 Below is an image of what happens during a countdown:
 
-![counter-countdown.jpg](../assets/![counter-countdown.jpg](../assets/counter-countdown.jpg))
+![counter-countdown.jpg](../assets/counter-countdown.jpg)
 
 The image below shows the **CompletedMessage** that gets displayed when the count equals zero.
 
-![counter-completed.jpg](../assets/![counter-completed.jpg](../assets/counter-completed.jpg))
+![counter-completed.jpg](../assets/counter-completed.jpg)
 
 ### RedirectionTrigger
 
@@ -214,7 +214,7 @@ As you can tell, this trigger is useful to help exclude events from being proces
 
 Below is an example of how to setup a TeamTrigger. Notice how it also includes a *Trigger* property section.
 
-![teamtrigger1.jpg](../assets/![teamtrigger1.jpg](../assets/teamtrigger1.jpg))
+![teamtrigger1.jpg](../assets/teamtrigger1.jpg)
 
 ## Triggers can be used for many purposes
 

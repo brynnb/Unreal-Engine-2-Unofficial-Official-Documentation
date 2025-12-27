@@ -20,11 +20,11 @@ In this document you will see how to create various effects with BSP geometry us
 
 You can turn any BSP surface into a mirror. To do so simply select the surface and then bring up the Surface Properties window (Hotkey: F5), and then check the "Mirror" box.
 
-![mirror.gif](../assets/![mirror.gif](../assets/mirror.gif))
+![mirror.gif](../assets/mirror.gif)
 
 Now that surface will act as a mirror, duplicating everything that is facing it, but with Unreal Ed's default settings, this effect will only take place in the editor. To have it take place in game you must open up your .ini file and set the "UseStencil" setting to *True*.
 
-![usestencil.gif](../assets/![usestencil.gif](../assets/usestencil.gif))
+![usestencil.gif](../assets/usestencil.gif)
 
 **NOTE:** Changing this setting may cause your game to not work on some graphics cards (such as a Geforce 1).
 
@@ -41,7 +41,7 @@ A WarpZone are small zones that appear to look into other Zones and allow Pawns 
 
 These WarpZones must be of a certain size to function while avoiding unwanted rendering artifacts. The right size is determined by the Pawn's CollisionCylinder. The Warpzone must be slightly larger than the largest Pawn's CollisionRadius or else any Pawn that cannot get its center into the WarpZone will not be teleported. To access a Pawn's Collision settings, place one in the level from the Actors Browser and then open up its properties window expanding the collision rollout. You may want to double check with your programmers though to make sure that the Pawn's collision properties are not being changed in code.
 
-![pawncollision.gif](../assets/![pawncollision.gif](../assets/pawncollision.gif))
+![pawncollision.gif](../assets/pawncollision.gif)
 
 It is also a good idea to not make the WarpZone too large. If the WarpZone is too large, players may be able to "peak" inside and witness a HOM (Hall of Mirrors) effect or just view a dark empty box causing the entire illusion to break down.**NOTE:** If you are placing vertical WarpZones in the floor or the ceiling, instead of using the largest Pawn's Collision *Radius* you will want to make the depth/height slightly larger than 1/2 the tallest Pawn's Collision *Height*.
 
@@ -49,11 +49,11 @@ It is also a good idea to not make the WarpZone too large. If the WarpZone is to
 
 Once you've created your Zone for the WarpZone, you will need to place a WarpZoneInfo from the Actors Browser.
 
-![warpzoneinfo.gif](../assets/![warpzoneinfo.gif](../assets/warpzoneinfo.gif))
+![warpzoneinfo.gif](../assets/warpzoneinfo.gif)
 
 Next, open up the WarpZoneInfo's properties, and you will want to set the *ThisTag* and the 0th *Destination* to the name of this WarpZone and where it sends the pawns respectively.
 
-![prop_warpzoneinfo.gif](../assets/![prop_warpzoneinfo.gif](../assets/prop_warpzoneinfo.gif))
+![prop_warpzoneinfo.gif](../assets/prop_warpzoneinfo.gif)
 
 WarpZones seem to have lost some of their functionality as you can no longer set multiple *Destinations* nor can you use the "\_OtherSideURL\_" (the OtherSideURL was for teleporting players between different .unr files).
 
@@ -61,7 +61,7 @@ WarpZones seem to have lost some of their functionality as you can no longer set
 
 Now you should have a functioning WarpZone that will transport you from one zone to the next, but your WarpZone ZonePortal may not be acting properly and instead of showing the next Zone, the texture shows up as whatever texture you assigned to it in the editor. To fix this you will need to create a special Shader.To create this Shader you will need to make two new Materials, a **Shader** and a **ConstantColor.** For the ConstantColor Material the only important setting is that its Alpha value must be 0. Then Open up the properties for the Shader and assign this ConstantColor Material to the Diffuse and Opacity channels.
 
-![zoneportalmaterial.gif](../assets/![zoneportalmaterial.gif](../assets/zoneportalmaterial.gif))
+![zoneportalmaterial.gif](../assets/zoneportalmaterial.gif)
 
 The ZonePortal will not show up properly in the editor, but it will show the next Zone in game.
 

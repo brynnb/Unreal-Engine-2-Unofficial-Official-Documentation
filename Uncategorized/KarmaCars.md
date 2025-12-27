@@ -101,7 +101,7 @@ The variables are defined on the content creation page [here](KarmaCarCreation.m
 
 ### Bulldog.uc
 
-![bulldog1.jpg](../assets/![bulldog1.jpg](../assets/bulldog1.jpg))
+![bulldog1.jpg](../assets/bulldog1.jpg)
 
 **Bulldog** extends **GenericCar** and adds headlights and a weapon. The headlights turn on when a player gets in the Bulldog and turn off when he or she gets out. The weapon fires a projectile, in this case a grenade, at a constant angle relative to the vehicle when the player presses fire.
 

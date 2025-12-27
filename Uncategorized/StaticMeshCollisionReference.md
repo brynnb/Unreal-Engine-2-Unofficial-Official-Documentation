@@ -38,7 +38,7 @@ If you have the actor collision properties (the "Collision" category in properti
 
 ### Collision Variables
 
-![collision.gif](../assets/![collision.gif](../assets/collision.gif))
+![collision.gif](../assets/collision.gif)
 
 This section explains the actor collision variables for static meshes. What makes this tricky is that based on if *bWorldGeometry* is TRUE or FALSE, the collision variables behave differently. When you place a static mesh in the level in UnrealEd by right clicking and selecting `Add Static Mesh: '....'` this type of static has *bWorldGeometry* TRUE. Other types of Actors that have a *DrawType* of *DT\_StaticMesh* might have *bWorldGeometry* FALSE. The value of *bWorldGeometry* cannot be changed or even viewed in UnrealEd; it can only be seen and changed in UnrealScript. In general if something is world geometry in that it doesn't ever move or change, it is probably *bWorldGeometry* TRUE. If an Actor which is drawn with a static mesh ever moves or changes, it is probably *bWorldGeometry* FALSE.It is also worth noting that some actors change some of their collision variables in code overwriting that values specified in UnrealEd so watch out for that. This is the case with *Triggers*, *Teleporters*, and *WarfareStationaryWeapons* for example.
 
@@ -78,7 +78,7 @@ Below are additional descriptions of the actor collision variables as they apply
 
 The static mesh collision properties discussed in this section will not be used if the object is not set to collide based on the actor collision properties described in [Step 1](StaticMeshCollisionReference.md#step-1-actor-collision-properties).This section discussed some of the properties that are in the Static Mesh Browser window. It uses charts to illustrate the relation between [collision models](../Content%20Creation/Physics/CollisionTutorial.md#collision-models) and the "UseSimple" properties in the Static Mesh Browser, which can be seen in the image below.
 
-![staticmeshcollisionprops.gif](../assets/![staticmeshcollisionprops.gif](../assets/staticmeshcollisionprops.gif))
+![staticmeshcollisionprops.gif](../assets/staticmeshcollisionprops.gif)
 
 There is a different chart for each of the collision model types; [None](StaticMeshCollisionReference.md#no-collision-models), [Type 1](StaticMeshCollisionReference.md#type-1), and [Type 2](StaticMeshCollisionReference.md#type-2). In each chart, all possible settings of *UseSimpleKarmaCollision*, *UseSimpleBoxCollision*, and *UseSimpleLineCollision*, are represented in the **Karma**, **Box**, and **Line** columns respectively.The **Karma Objects** column indicates what the mesh will use to block Karma objects. The **Non-Zero Extent Traces (ie Pawn Movement)** column indicates what the mesh will use to block non-zero extent traces which are used by things such as pawn movement and cylinder collision. The **Zero Extent Traces (ie Weapon Fire)** column indicates what the mesh will use to block zero extent traces which are used by things like weapon fire.
 
@@ -131,7 +131,7 @@ This chart goes over how a static mesh will collide if it has a **Type 2** [coll
 
 Material collision is only used when no collision model is being used. See the above charts from [Step 2](StaticMeshCollisionReference.md#step-2-static-mesh-collision-properties) to determine if material collision is relevant to your static mesh.Collision can be set per material in the Static Mesh Browser. Sometimes it is very useful to only make some of the materials in the mesh collide. Setting the material collision is done by expanding the *Materials* array and setting *EnableCollision* for each material as shown in the image below.
 
-![staticmeshcollisionpropsmat.gif](../assets/![staticmeshcollisionpropsmat.gif](../assets/staticmeshcollisionpropsmat.gif))
+![staticmeshcollisionpropsmat.gif](../assets/staticmeshcollisionpropsmat.gif)
 
 When *EnableCollision* is True for a material, all the triangles of the mesh that are textured with that material will be used for collision calculations. This means that the collision calculations will be based on exactly the triangles you see. This will sometimes be the same speed as but in most cases slower than using simplified [collision models](../Content%20Creation/Physics/CollisionTutorial.md#collision-models) because there will be more triangles to calculate collision for.
 

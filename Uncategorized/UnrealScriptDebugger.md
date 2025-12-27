@@ -30,7 +30,7 @@ The fundamentals of the UnrealScript debugger closely resemble those of Develope
 
 ## UDebugger Window
 
-![UnrealScript Debugger](../assets/![udebugger_shot.png](../assets/udebugger_shot.png))
+![udebugger_shot.png](../assets/udebugger_shot.png)
 
 1. Class tree; by default it only shows the actors, uncheck (6) to use Object as root
 2. Source code; shows the source code of the class currently being debugged. Break points and the current execution line are highlighted (in red and aqua respectively).
@@ -106,35 +106,35 @@ You can pause the execution at any time by pressing the *break* button. The curr
 
 ## Toolbar Buttons
 
-![Continue](../assets/![btn_continue.png](../assets/btn_continue.png))
+![btn_continue.png](../assets/btn_continue.png)
 
 Continue execution. (F5)
 
-![Break](../assets/![btn_break.png](../assets/btn_break.png))
+![btn_break.png](../assets/btn_break.png)
 
 Pause the execution
 
-![Trace into](../assets/![btn_traceinto.png](../assets/btn_traceinto.png))
+![btn_traceinto.png](../assets/btn_traceinto.png)
 
 Trace into the current function. (F11)
 
-![Jump over](../assets/![btn_jumpover.png](../assets/btn_jumpover.png))
+![btn_jumpover.png](../assets/btn_jumpover.png)
 
 Jump over (F10)
 
-![Trace out](../assets/![btn_traceout.png](../assets/btn_traceout.png))
+![btn_traceout.png](../assets/btn_traceout.png)
 
 Exit the current debug level to the calling function. (Shift+F11)
 
-![show call stack](../assets/![btn_showcallstack.png](../assets/btn_showcallstack.png))
+![btn_showcallstack.png](../assets/btn_showcallstack.png)
 
 Shows a broken call stack window. Use the call stack next to the class tree.
 
-![Search](../assets/![btn_search.png](../assets/btn_search.png))
+![btn_search.png](../assets/btn_search.png)
 
 Search field (Ctrl+F) and search next (F3). This will search in the currently opened file.
 
-![Jump to current line](../assets/![btn_tocurrent.png](../assets/btn_tocurrent.png))
+![btn_tocurrent.png](../assets/btn_tocurrent.png)
 
 Jump to the current line of execution.
 

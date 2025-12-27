@@ -201,9 +201,9 @@ Pre-v3323 *Opened* calls [OnOpen](#onopen).
 
 *GUIStyles* is a class that provides support for making different drawing styles for *GUIComponents*. When the *GUIComponent* is drawn, the *Style* variable which is a *GUIStyles*, is used to draw the component. The style determines the image to draw, the color of the image, how to draw that image, the text to draw, the color of the text, and the font of the test. The style determines each of these things for all five states of the component (Blurry, Watched, Focused, Pressed, and Disabled). This gives a great deal of flexibility for creating whatever sort of look and feel you might want.Below is an example of the same button drawn with two different styles:
 
-![guibutton.jpg](../../assets/![guibutton.jpg](../../assets/guibutton.jpg))
+![guibutton.jpg](../../assets/guibutton.jpg)
 
-![guibuttonstyle2.jpg](../../assets/![guibuttonstyle2.jpg](../../assets/guibuttonstyle2.jpg))
+![guibuttonstyle2.jpg](../../assets/guibuttonstyle2.jpg)
 
 ### States
 
@@ -245,7 +245,7 @@ ISTY\_Tiled,
 | ISTY\_PartialScaled | Combination between scaling and stretching. |
 | ISTY\_Tiled | The image is repeated. |
 
-![ISTY chart](../../assets/![isty_chart.png](../../assets/isty_chart.png))
+![isty_chart.png](../../assets/isty_chart.png)
 
 ### ImgColors
 
@@ -277,7 +277,7 @@ These are basic controls built on [GUIComponent](#guicomponent).
 
 #### GUIButton
 
-![GUIButton](../../assets/![guibutton.png](../../assets/guibutton.png))
+![guibutton.png](../../assets/guibutton.png)
 
 To use buttons you must use the *OnClick* [delegate](../../Uncategorized/UnrealScriptDelegates.md) of *GUIComponent*. This Delegate is defined as follows:
 
@@ -331,13 +331,13 @@ defaultproperties
 
 #### GUIListBox
 
-![guilistbox.jpg](../../assets/![guilistbox.jpg](../../assets/guilistbox.jpg))
+![guilistbox.jpg](../../assets/guilistbox.jpg)
 
 This box will simply display a *GUIList*. The delegates of *GUIListBox* pass on the *OnClick* and *OnChange* events to the *GUIList* itself.
 
 #### GUISlider
 
-![guislider.jpg](../../assets/![guislider.jpg](../../assets/guislider.jpg))
+![guislider.jpg](../../assets/guislider.jpg)
 
 A *GUISlider* is a slider between *float MinValue* and *float MaxValue* which are specified in defaultproperties. If *bIntSlider* is true, the slider will have only Int values. You can get the value of the slider by querying *float Value*; there is not getter function. Two useful functions are:
 
@@ -355,13 +355,13 @@ function Adjust(float amount)
 
 #### GUICheckBoxButton / moCheckBox
 
-![mocheckbox.jpg](../../assets/![mocheckbox.jpg](../../assets/mocheckbox.jpg))
+![mocheckbox.jpg](../../assets/mocheckbox.jpg)
 
 These classes are very simple. Unfortunately, they don't have the same API. *GUICheckBoxButton* has the function *SetChecked(bool bNewChecked)* to set the checkedness of the box and to examine the checkedness you just look at *bCheckBox*. *moCheckBox* has the function *Checked(bool C)* to set the checkedness and the function *bool IsChecked()* to examine the checkedness.
 
 #### GUIComboBox / moComboBox
 
-![guicombobox.jpg](../../assets/![guicombobox.jpg](../../assets/guicombobox.jpg))
+![guicombobox.jpg](../../assets/guicombobox.jpg)
 
 There are two types of combo boxes, *GUIComboBox* and *moComboBox*. Both behave in very similar ways. The main function of interest in both of these classes are *SetText* , *GetText*, and *Find*.
 
@@ -376,19 +376,19 @@ function string Find(string Test, bool bExact)
 
 #### GUIEditBox / moEditBox
 
-![moeditbox.jpg](../../assets/![moeditbox.jpg](../../assets/moeditbox.jpg))
+![moeditbox.jpg](../../assets/moeditbox.jpg)
 
 These are boxes that display text and that you can type in if *bReadOnly* is false. They can be configured to only display numbers but maybe you would want to use a [GUIFloatEdit](#guifloatedit-mofloatedit) or a [GUINumericEdit](#guinumericedit-monumericedit) instead for that. *GUIEditBox* and *moEditBox* both have the *SetText(string NewText)* function. *GUIEditBox* can inspect the value of *TextStr* to get the current value of the edit while *moEditBox* has the *string GetText()* function.
 
 #### GUIFloatEdit / moFloatEdit
 
-![mofloatedit.jpg](../../assets/![mofloatedit.jpg](../../assets/mofloatedit.jpg))
+![mofloatedit.jpg](../../assets/mofloatedit.jpg)
 
 This is an edit for entering floats. The floats can be either left or right justified based on *bLeftJustified* in *GUIFloatEdit*. Based on the general pattern we are seeing here both of these classes have setter functions, *SetValue(float V)*, but only *moFloatEdit* has a getter, *float GetValue()*. *GUIFloatEdit \_ must inspect \_string Value* and cast it to a float.
 
 #### GUINumericEdit / moNumericEdit
 
-![monumericedit.jpg](../../assets/![monumericedit.jpg](../../assets/monumericedit.jpg))
+![monumericedit.jpg](../../assets/monumericedit.jpg)
 
 These classes are almost exactly like [FloatEdits](#guifloatedit-mofloatedit) but with Ints.
 
@@ -451,7 +451,7 @@ CancelMapButton.Caption="L�schen"
 
 ## Tabs
 
-![guitabs.jpg](../../assets/![guitabs.jpg](../../assets/guitabs.jpg))
+![guitabs.jpg](../../assets/guitabs.jpg)
 
 The *GUITabControl* and *GUITitleBar* classes can be used to make tabs in the UI. Strictly speaking *GUITitleBar* does not need to be used to make the tabs but it has support for linking the title bar to the tabs so the tabs are not just floating in space.*GUITabControl* has a function:
 

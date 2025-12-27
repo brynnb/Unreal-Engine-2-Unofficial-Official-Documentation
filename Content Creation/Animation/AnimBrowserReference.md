@@ -87,7 +87,7 @@ The script-based art-path of linking in animation and mesh data using script #ex
 
 ## Browser Layout
 
-![browserdiagram.jpg](../../assets/![browserdiagram.jpg](../../assets/browserdiagram.jpg))
+![browserdiagram.jpg](../../assets/browserdiagram.jpg)
 
 * 1: [Pull down Menus](#pull-down-menu). These duplicate the functionality of the buttons, and sometimes extend them.
 * 2: Browser tabs. *Animations* should be selected, of course.
@@ -102,31 +102,31 @@ The script-based art-path of linking in animation and mesh data using script #ex
 
 ## Toolbar Buttons
 
-![all buttons](../../assets/![allbuttons.png](../../assets/allbuttons.png))
+![allbuttons.png](../../assets/allbuttons.png)
 
 ### Import Buttons
 
 #### Import Skeletal Mesh
 
-![ meshimport.gif ](../../assets/![meshimport.gif](../../assets/meshimport.gif))
+![meshimport.gif](../../assets/meshimport.gif)
 
 Use this button to import .PSK files into the browser. .PSKs hold model and rigging information. The functionality of this button is also duplicated in the top pull-down menus under *File*.
 
 #### Import Skeletal Animation
 
-![ animationimport.gif ](../../assets/![animationimport.gif](../../assets/animationimport.gif))
+![animationimport.gif](../../assets/animationimport.gif)
 
 This will import .PSA files into the browser. A .PSA holds animation information. The functionality of this button is also duplicated in the top pull-down menus under *File*.
 
 #### Import Additional Animation Data
 
-![ animationappend.gif ](../../assets/![animationappend.gif](../../assets/animationappend.gif))
+![animationappend.gif](../../assets/animationappend.gif)
 
 Use this button to append new animations from a .PSA into an already extant list of animations. The functionality of this button is also duplicated in the top pull-down menus under *File*.
 
 #### Link Animation to Mesh
 
-![ linkmeshanim.gif ](../../assets/![linkmeshanim.gif](../../assets/linkmeshanim.gif))
+![linkmeshanim.gif](../../assets/linkmeshanim.gif)
 
 This button will link together a mesh and a set of animations. This step is very important, as your mesh will remain immobile until it is told which animations to hook to. The functionality of this button is also duplicated in the top pull-down menus under *Edit*.
 
@@ -134,13 +134,13 @@ This button will link together a mesh and a set of animations. This step is very
 
 #### Animation Set Information
 
-![ animsetinfo.gif ](../../assets/![animsetinfo.gif](../../assets/animsetinfo.gif))
+![animsetinfo.gif](../../assets/animsetinfo.gif)
 
 This will bring up a window that has lots of nitty-gritty details about the model. The list includes information such as LOD size, facecount, vertex count, joint number, influences, etc. The functionality of this button is also duplicated in the top pull-down menus under *View*.
 
 #### View Bounds
 
-![viewbounds.gif](../../assets/![viewbounds.gif](../../assets/viewbounds.gif))
+![viewbounds.gif](../../assets/viewbounds.gif)
 
 This will show the view visibility bounding box. The visibility boundaries for skeletal meshes are static relative to the mesh's zero-point, and don't depend on any animations.
 This bounding box determines visibility. If any part of this box is visible ( if any part of it falls in the view frustrum, and is not totally occluded by the anti-portals etcetera ), then the render code for its mesh will be executed. It has no bearing whatsoever on collision.
@@ -149,7 +149,7 @@ It is possible to change the size of the bounding box in the mesh properties. Go
 
 #### View Bones
 
-![ viewbones.gif ](../../assets/![viewbones.gif](../../assets/viewbones.gif))
+![viewbones.gif](../../assets/viewbones.gif)
 
 This will turn off the mesh and show the bone structure, instead. Three different views are possible with repeated presses.
 
@@ -159,13 +159,13 @@ This will turn off the mesh and show the bone structure, instead. Three differen
 
 #### View Bone Names
 
-![ viewbonenames.gif ](../../assets/![viewbonenames.gif](../../assets/viewbonenames.gif))
+![viewbonenames.gif](../../assets/viewbonenames.gif)
 
 This toggles the names of individual bones on/off in the viewport. Note that this button must be used in conjunction with the `View Bones' button. If the viewport is showing only the bones or the `mesh with bones' views, then the bone names will also appear. If the mesh is drawn without bones, then the bone names will also not be shown.
 
 #### View Reference Pose
 
-![ viewrefpose.gif ](../../assets/![viewrefpose.gif](../../assets/viewrefpose.gif))
+![viewrefpose.gif](../../assets/viewrefpose.gif)
 
 This will pop the mesh into the reference pose ( the default pose that resided in the PSK). Can be toggled on/off. A few strange behaviors are associated with this button.
 
@@ -177,7 +177,7 @@ If you'd like to `reset' the reference pose button to it's normal state (up off,
 
 #### View Influences
 
-![ viewinfluences.gif ](../../assets/![viewinfluences.gif](../../assets/viewinfluences.gif))
+![viewinfluences.gif](../../assets/viewinfluences.gif)
 
 View normals and influences. Small color-coded normal vectors originate at each vertex, where the coloring signifies the number of bone influences acting on that vertex as follows:
 
@@ -191,13 +191,13 @@ If you ever see light blue or white normals, then your model is using too many i
 
 #### Toggle Raw Offset Display
 
-![ viewrawoffset.gif ](../../assets/![viewrawoffset.gif](../../assets/viewrawoffset.gif))
+![viewrawoffset.gif](../../assets/viewrawoffset.gif)
 
 View at original mesh-space offset. Draws the mesh without any additional translation (see Mesh properties) Specially useful since (at least in UT) the desired mesh-displacement is such that its 'middle' sits at zero-Z - which is a UnrealEngine? specific gameplay code convention, not a renderer issue.
 
 #### View Wireframe
 
-![ viewwireframe.gif ](../../assets/![viewwireframe.gif](../../assets/viewwireframe.gif))
+![viewwireframe.gif](../../assets/viewwireframe.gif)
 
 This lets you view the mesh in wireframe mode.
 
@@ -207,13 +207,13 @@ The Mesh Properties are located in the right tabbed section of the animation bro
 
 #### Copy Mesh Properties
 
-![ copymeshproperties.gif ](../../assets/![copymeshproperties.gif](../../assets/copymeshproperties.gif))
+![copymeshproperties.gif](../../assets/copymeshproperties.gif)
 
 This button will let you copy all of the mesh properties in the tabbed properties section.
 
 #### Paste Mesh Properties
 
-![ pastemeshproperties.gif ](../../assets/![pastemeshproperties.gif](../../assets/pastemeshproperties.gif))
+![pastemeshproperties.gif](../../assets/pastemeshproperties.gif)
 
 This button will let you paste all of the mesh properties in the tabbed properties section.
 
@@ -223,57 +223,57 @@ It's possible to set levels of detail, depending on distance from the camera. To
 
 #### Cycle Through LOD Mesh Levels
 
-![CycleLOD.gif ](../../assets/![cyclelod.gif](../../assets/cyclelod.gif))
+![cyclelod.gif](../../assets/cyclelod.gif)
 
 This button will cycle through all the levels of mesh detail. There can be a maximum of eight levels
 
 #### Import a Single LOD Mesh
 
-![ImportLOD.gif ](../../assets/![importlod.gif](../../assets/importlod.gif))
+![importlod.gif](../../assets/importlod.gif)
 
 This allows you to import a .PSK as a static LOD level, which gives much finer control over the appearance of a simplified mesh. Creating these simplified meshes is more time intensive, of course, and so the advantage of a better looking simple mesh must be weighed against the cost.
 
 #### Redigest LOD Levels
 
-![RedigestLOD.gif ](../../assets/![redigestlod.gif](../../assets/redigestlod.gif))
+![redigestlod.gif](../../assets/redigestlod.gif)
 
 This button forces the engine to re-evaluate your LOD settings when you change them.
 
 #### Recompress Animation Data
 
-![RecompressAnim.gif ](../../assets/![recompressanim.gif](../../assets/recompressanim.gif))
+![recompressanim.gif](../../assets/recompressanim.gif)
 
 *In version 3323 this button is no longer available, see [Animation Set](#animation-set) section for more information about this.*If you've made changes to your animations in the browser that might make them smaller, you'll want to hit this button. You have the option of recompressing an entire set at a time, or individual animations. It will perform a task based on which tab is open in the tabbed properties section, `Animation Set' or `Sequence,' so make sure the right one is picked.It is important to keep in mind that any compression performed on the data with this button is a one-way process - if you over-compressed and need to go back to the original raw animation, you'll need to re-import the .PSA source data - so, be sure to always backup .PSA data files - and of course the 3DS Max or Maya files from which they were created.You'll receive one of two confirmation windows:
 
-![recompress1.jpg ](../../assets/![recompress1.jpg](../../assets/recompress1.jpg))
+![recompress1.jpg](../../assets/recompress1.jpg)
 
 or
 
-![recompress2.jpg ](../../assets/![recompress2.jpg](../../assets/recompress2.jpg))
+![recompress2.jpg](../../assets/recompress2.jpg)
 
 #### Forced Synchronous In-Level Animation
 
-![InLevelPreview.gif ](../../assets/![inlevelpreview.gif](../../assets/inlevelpreview.gif))
+![inlevelpreview.gif](../../assets/inlevelpreview.gif)
 
 Animation of skeletal meshes can now be previewed in the editor, to check lighting or placement in relation to animation, if actors displaying them have been placed in a level. It's fairly easy to do, but there are a number of steps along the way that you'll have to keep in mind.*This example uses content in the 3323 code drop.*1. First of all, open a level in UnrealEd. Turn on the realtime preview button.
 
-![ realtimepreview.jpg ](../../assets/![realtimepreview.jpg](../../assets/realtimepreview.jpg))
+![realtimepreview.jpg](../../assets/realtimepreview.jpg)
 
 2. Next, go back to the browser window and open the actor browser tab. For testing purposes, we need to first drop in any existing skeletal actor mesh. Find *\*Pawn* and open up that category. Under *\*UnrealPawn* select \*xPawn.
 
-![Actor Browser](../../assets/![animbrowser_1.png](../../assets/animbrowser_1.png))
+![animbrowser_1.png](../../assets/animbrowser_1.png)
 
 3. Go back to the animation browser. Select the animated mesh and the sequence that you want to test out in the level.4. Go back to your level and bring up the right-click menu. You should see an option like, "Add xPawn Here." Add the trooper into the level.
 
-![Add xPawn](../../assets/![animbrowser_2.png](../../assets/animbrowser_2.png))
+![animbrowser_2.png](../../assets/animbrowser_2.png)
 
 5. Once the trooper is in the world, right-click on it and bring up its actor properties. Under the section *Display* there is a field *Mesh*. It should show a packagename and a meshname. Now, if you have already selected the mesh you want to test out, just click the field and hit the `Use" button.
 
-![xPawn properties](../../assets/![animbrowser_3.png](../../assets/animbrowser_3.png))
+![animbrowser_3.png](../../assets/animbrowser_3.png)
 
 6. Your mesh should have updated to reflect the new mesh. Now, go back to the animation browser. Finally, you can hit the "Forced Synchronous In-Level Animation" button. Now any instance of the browser's active mesh in the level will move in sync with the animbrowser's mesh. You can use the scrub bar from the animation browser, loop the animation, select different sequences, etc.
 
-![Both animated](../../assets/![animbrowser_4.png](../../assets/animbrowser_4.png))
+![animbrowser_4.png](../../assets/animbrowser_4.png)
 
 Note that the "Forced Synchronous In-Level Animation" button needs to be re-clicked if you change the mesh you're previewing or place new actors with a mesh you want to animate in the level, because that's how the editor is spurred to search for any instances of the mesh in the level an forces them to animate in sync with the current browser mesh.
 
@@ -294,7 +294,7 @@ In this 'Attach' section there is an interactive array of 'Sockets'. The array i
 
 ##### Attach Fields
 
-![socket.jpg](../../assets/![socket.jpg](../../assets/socket.jpg))
+![socket.jpg](../../assets/socket.jpg)
 
 There are quite a few fields to fill out. We'll take them in order.
 
@@ -329,7 +329,7 @@ This category allows you to add collision information that can be used by Karma.
 * Offset: Translates the location of the collision sphere.
 * Radius: This is the value for the sphere size.
 
-![ collisions.jpg ](../../assets/![collisions.jpg](../../assets/collisions.jpg))
+![collisions.jpg](../../assets/collisions.jpg)
 
 This image shows the collision hulls that can be added in this section. The green wireframes are the hulls themselves, while the purple wireframe encompasses all the hulls on a mesh.
 
@@ -337,7 +337,7 @@ This image shows the collision hulls that can be added in this section. The gree
 
 Imposter is the last step in the LOD system. Before you read this section, you may want to familiarize yourself with the workings of the LOD, in the section below.
 
-![imposterswap.jpg](../../assets/![imposterswap.jpg](../../assets/imposterswap.jpg))
+![imposterswap.jpg](../../assets/imposterswap.jpg)
 
 Imposter takes the mesh LOD one step further, and allows artists to swap in an image to stand in for meshes. If you are using Imposter, you'll find that it appears after the distance from the camera falls below the DistanceFactor (see image) that is set in the last LOD level. This number is set in the field, *Mesh > LOD > LODLevels > (LOD Level number) > DistanceFactor*. In the above image, the DistanceFactor is set to 1.3; when the number is above (closer) 1.3, the mesh appears. When it falls below (further away), the Imposter kicks in.
 There are a few values you need to fill in to use Imposter correctly:
@@ -347,7 +347,7 @@ There are a few values you need to fill in to use Imposter correctly:
 * ImpDrawMode: This has two possible values, IDM\_Normal (default) and IDM\_Fading.
 * ImpLightMode: There are 3 choices, ILM\_Unlit, ILM\_Pseudoshaded and ILM\_Uniform.
 
-![ilmcompare.jpg](../../assets/![ilmcompare.jpg](../../assets/ilmcompare.jpg))
+![ilmcompare.jpg](../../assets/ilmcompare.jpg)
 
 * ImpSpaceMode: This controls how the texture will appear to the user as they walk around it. There are 4 options:
 
@@ -378,7 +378,7 @@ This is an overall factor to scale the internal distance-detail factor; it is di
 
 The smooth vertex-collapse level-of-detail rendering code has been replaced with a static LOD scheme, which gives the artist more control and is ultimately much faster for the same amount of displayed detail than the older, variable-level-of-detail code.The new scheme is backward compatible with existing .UKXs, and uses the collapse data already precomputed inside the .UKX mesh data to generate four static levels of detail, which can be adjusted by artists to find the right trade-off between speed and detail. You can add a variable number of levels of detail - the maximum is 8.The levels-of-detail will kick in when you move away from the model in the central view window, just as it does in the game. This allows quick interactive adjustment of the detail meshes. Alternatively, you can use the `Cycle Through the LOD Mesh Levels' button. The active level of detail is shown in the viewport as 'lod n', - when you force the level of detail (using the orange cycle-LOD button with the little squares ) you'll see it in upper case like 'LOD [n]'.
 
-![ lod.jpg ](../../assets/![lod.jpg](../../assets/lod.jpg))
+![lod.jpg](../../assets/lod.jpg)
 
 ###### DistanceFactor
 
@@ -404,7 +404,7 @@ An approximate value between 0 and 1, indicating how many vertices to collapse. 
 
 ###### Rigidize
 
-![rigidizeflak.jpg](../../assets/![rigidizeflak.jpg](../../assets/rigidizeflak.jpg))
+![rigidizeflak.jpg](../../assets/rigidizeflak.jpg)
 
 With the release of UnrealEd 3.0, you have the option of automatically converting parts of your skeletal mesh to 'rigid parts' - sections of a mesh that are influenced only by a single bone. These parts - as far as the hardware is concerned - can be rendered like static meshes, in that they are uploaded to graphics memory once, without a CPU-intensive multi-bone skin blending step. When suitable meshes are converted in the right way, this can give very significant rendering speedups. This is a per-LOD-level option, and disabled by default. In wireframe mode, all rigid parts show up as red, while software skinned polygons remain yellow.To enable it, in a LOD-level's "rigidize" subsection, first specify the following parameters (see screenshot):
 
@@ -432,7 +432,7 @@ Instead of using the Unreal-generated levels of detail for your individual LOD l
 3. Click on the [Import a Single LOD Mesh button](#import-a-single-lod-mesh). You'll receive a window prompting you to choose a .PSK file. Select your prepared, simplified mesh.
 4. You're done. You should see your new mesh in the browser window. Below, you can see an example, along with some animation set info.
 
-![ ![lodcompare.jpg](../../assets/![lodcompare.jpg](../../assets/lodcompare.jpg))
+![lodcompare.jpg](../../assets/lodcompare.jpg)
 
 #### Mesh
 
@@ -442,7 +442,7 @@ Lots of important values are stored in this category. Bounding boxes, mesh scale
 
 These values determine the vertices that are used to define the mesh visibility bounding box. The visibility boundaries for skeletal meshes are static relative to the mesh's zero-point, and don't depend on any animations.If any part of this box is visible ( if any part of it falls in the view frustrum, and is not totally occluded by the anti-portals etcetera ), then the render code for its mesh will be executed. It has no bearing whatsoever on collision.
 
-![bounding.jpg](../../assets/![bounding.jpg](../../assets/bounding.jpg))
+![bounding.jpg](../../assets/bounding.jpg)
 
 You'll want to make this as conservative as possible, otherwise characters that are not visible may waste a lot of resources, for example large bounding boxes can poke down through floors causing them to get rendered in vain as they get completely overwritten,
 or z-buffered away by the scenery again in the same frame. If for certain animations a hand, spike or whatever (or conceivably an attached weapon) pokes through the boundaries occasionally, it isn't a big deal since the cases where only that part of a mesh determines the visibility check outcome are usually rare (e.g. it would have to be just that part poking around the edge of a doorway at that exact moment in its animation. )
@@ -492,7 +492,7 @@ This defines the compression ratio before additional lossy compression is applie
 
 This controls how much compression is applied to animations on import of .PSA files. The default is 1.0, which means that there is no compression at all. You may find it easier to think of it as 100% true to the original animation, whereas .25 is only 25% the quality of the original.This is a very quick and dirty way of trimming some fat associated with the animations, but it is of somewhat limited utility. If this number is set too low, then animations will be truncated or they may develop artifacts that detract from the motion. Be sure that your animations all work well with your chosen GlobalCompression value before you commit to it.Keep in mind that this number is not retroactive; meaning that if you change the value, it will not affect all of your existing animations in the .UKX, only those you import or re-import with the changed value from your .PSA file.There is a way to use this value without having to re-import your data: if you set this value, then use the
 
-![RecompressAnim.gif ](../../assets/![recompressanim.gif](../../assets/recompressanim.gif))
+![recompressanim.gif](../../assets/recompressanim.gif)
 
 *Recompress Animation Data* button from the toolbar, it will recompress all of your animation data to the specified level.
 

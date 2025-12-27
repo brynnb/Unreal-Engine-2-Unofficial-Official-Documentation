@@ -42,19 +42,19 @@ We're at the point in videogames where just running and jumping isn't enough for
 
 *This method requires that you use alpha channels on your animated mesh.*For eyes in a model, one might think that a sphere in a socket, textured to look like an eyeball is the best/only solution. If you choose to use alpha channels/masks on a texture, however, a much more efficient method is possible. instead of creating a complete eyeball, think of the eye as being divided into two parts: the white and the iris. If the white is created to be part of the smooth-skinned face (it will never move) and the iris is floating above it on a sheet of polygons, it is possible to make only the iris move along the surface of the 'eyeball.' This is a serviceable simulation of an eyeball, and is used in UT2003 and UT2004.
 
-![eye.jpg](../assets/![eye.jpg](../assets/eye.jpg))
+![eye.jpg](../assets/eye.jpg)
 
 ### Eyelids
 
 *This requires a facial bone structure that character studio does not supply by default.*Eyelids can be 'faked' to some degree with smooth skinning. An easy way to make them is to bind a single bone to a row of vertices that simply rotates up and down, and drags the skin immediately above the eye down in a stretched sheet of polygons. For the modeling side of things, just make sure there is a row of vertices that can be safely stretched without altering too much facial geometry.
 
-![eyelid.jpg](../assets/![eyelid.jpg](../assets/eyelid.jpg))
+![eyelid.jpg](../assets/eyelid.jpg)
 
 ### Tongue
 
 *This requires a facial bone structure that character studio does not supply by default.*A tongue seems fairly self explanatory, and depending on how much movement you'll require, it could be. If you'd like to have major tongue extension outside of the mouth, however - sticking out the tongue at someone, or licking lips - you'll need a slightly unorthodox bone structure. Unreal **CAN NOT** deal with bones that stretch over time - it can only understand orientation and position of bones. I found that having the bones fold on themselves worked best for the tongue. Since it's not possible to stretch the existing bones, we unfold them, like an accordion.
 
-![tonguebone.jpg](../assets/![tonguebone.jpg](../assets/tonguebone.jpg))
+![tonguebone.jpg](../assets/tonguebone.jpg)
 
 For the modeling side of things, it's enough to make a standard looking tongue; just make sure that it is set fairly far back in the mouth so that when it stretches out, most of the stretching will be confined to the mouth interior.
 
@@ -62,13 +62,13 @@ For the modeling side of things, it's enough to make a standard looking tongue; 
 
 One of the first concepts to wrap your head around when modeling for the Unreal engine is the division between the refpose ("reference pose") and the animations. The reference pose, which will go into the .PSK, has only the model and bone information, none of the animation information. This is where you set the influence of the bones that will affect the assorted vertices in your model, whether by envelopes or locked verts. Conversely, the animations to be stored in .PSA files hold only information relating to the movement of the bone structure, and none of the weighting information.This is pertinent now, since the refpose is essentially what you will be modeling, the character in a stance that is appropriate and easy to rig.[ActorX](../Content%20Creation/Tools/ActorX.md) is the plugin that generates these filetypes, see the [ActorXMaxTutorial](ActorXMaxTutorial.md) or [ActorXMayaTutorial](ActorXMayaTutorial.md) doc for a more thorough explanation.Many artists model with the standard refpose, character standing with legs splayed, arms out at the side as far as possible. Recently, I've started to model characters with the arms at more of a 45 degree angle. Since the arms will be down at least half of the time, it's important for the model to look good with the arms at rest, as well as straight out (a much more unnatural pose to take). This makes rigging a shade harder, perhaps, but it may be worth it to have less deformed shoulders.
 
-![refpose.jpg](../assets/![refpose.jpg](../assets/refpose.jpg))
+![refpose.jpg](../assets/refpose.jpg)
 
 ## Smoothing Groups
 
 Smoothing static meshes using smoothing groups works without any problems. Smooth away.Smoothing is not *truly* supported for skeletal (character) models with the [ActorX](../Content%20Creation/Tools/ActorX.md) tool, but if you import your models, subdivided into smoothing groups, you may find that it appears the smoothing groups are working. What's happening? It turns out that [ActorX](../Content%20Creation/Tools/ActorX.md) is faking the smoothing by splitting the vertices along the smoothed edges, and then smoothing each separate 'piece' of the model individually. This will mimic smoothing, but it also doubles the amount of vertices in your model along the smoothed edges. Each split vertex adds to the memory and rendering overhead, so splitting skeletal models into groups is discouraged.If you decide you do want to use the smoothing anyways, make sure the "bake smoothing groups" box is checked on the [ActorX](../Content%20Creation/Tools/ActorX.md) panel.
 
-![bakesmoothing.jpg](../assets/![bakesmoothing.jpg](../assets/bakesmoothing.jpg))
+![bakesmoothing.jpg](../assets/bakesmoothing.jpg)
 
 ## In-Game Perspective
 
@@ -82,15 +82,15 @@ A few last pointers that will make your life easier and your models better.
 
 Polygons that clip directly into each other are generally ugly, on a smooth-skinned model. If you are adding details that will hide the junction to the smooth areas however, clipping the polygons is a good way to save triangles and time. Clipping polygons works extremely well when combined with the above tips for making eyes (irises) on sheets. Clipping polys now works perfectly in UnrealEd.
 
-![eye clipping](../assets/![eyeclip.jpg](../assets/eyeclip.jpg))
+![eyeclip.jpg](../assets/eyeclip.jpg)
 
 On looking at the eye, one can see that the iris portion of the eye is on a roughly square sheet of polys. I have transparency information in the texture's alpha channel that will make the iris appear circular when viewed in Unreal.
 
-![eye alpha texture](../assets/![eyealpha.jpg](../assets/eyealpha.jpg))
+![eyealpha.jpg](../assets/eyealpha.jpg)
 
 The only time clipping triangles are problematic is if the material assigned to both triangles uses the alpha channel of the texture. This is not a small detail problem, it's very apparent that something is broken.The eye works fine, because only the iris has alpha information. That which it clips into (the surrounding eye socket) uses no alpha channel, so there is no fighting for draw order. Therefore, early on in the planning phase for your model, identify where you will be using alpha on your model and make sure that two alpha triangles do not cross. If there is chance of crossing (hair, for example), then try to minimize the angle at which the triangles meet - perpendicular is the worst, with the severity dropping as the faces get closer to parallel.
 
-![clipping illustration](../assets/![clipping.jpg](../assets/clipping.jpg))
+![clipping.jpg](../assets/clipping.jpg)
 
 ### Single-sided polygons
 
@@ -100,11 +100,11 @@ If you enable double sided textures in UnrealEd, single-sided polys are another 
 
 Making a smooth-skinned mesh doesn't mean that the surface has to be completely closed. If you'd like, you can just leave the mesh incomplete in areas to save on polygons. Of course, you should make sure that the gap won't be put directly in front of the camera for some reason. You could also leave a hole in a surface, then 'fill' the hole by placing polygons that block the view through the back of the model.
 
-![eye hole](../assets/![eyehole.jpg](../assets/eyehole.jpg))
+![eyehole.jpg](../assets/eyehole.jpg)
 
 Once again, the eye is a great example of this technique. The pink area is actually a large triangle, set far back in the head. This prevents you from seeing straight through the model, which has gaps in the face for the white to be set in.
 
-![eye inside](../assets/![eyeinside.jpg](../assets/eyeinside.jpg))
+![eyeinside.jpg](../assets/eyeinside.jpg)
 
 ## Comparative Detail Levels
 

@@ -69,9 +69,9 @@ Next, model the various components of the car (chassis, wheels, suspension strut
 Once the skeleton is created and the joints are correctly placed, bind the geometry to the skeleton using Smooth Bind. Then, in the Component Editor, set the influence of each vehicle part to it's respective joint. It's a very good idea to bind all the verts of a given vehicle part to a single bone, to keep things rigid. For example, all the verts of a tire should be influenced only by the Right Tire joint.
 Finally, export the geometry using the Actor X skeletal exporter to a .PSK file.The following images show the vehicle in Maya:
 
-![mayacarrender.gif](../assets/![mayacarrender.gif](../assets/mayacarrender.gif))
+![mayacarrender.gif](../assets/mayacarrender.gif)
 
-![mayacarwireframe.gif](../assets/![mayacarwireframe.gif](../assets/mayacarwireframe.gif))You can download the [MayaCar.mb](rsrc/Two/SVehicleCreation/MayaCar.mb) file to see the car described in this example.
+![mayacarwireframe.gif](../assets/mayacarwireframe.gif)You can download the [MayaCar.mb](rsrc/Two/SVehicleCreation/MayaCar.mb) file to see the car described in this example.
 
 #### Bone Orientation
 
@@ -97,11 +97,11 @@ Making a vehicle in max is pretty easy. No bones/weighting/etc is necessary at a
 
 There are no hard limits on the number of suspension struts or how many tires you can have on a vehicle. In general you want to link each individual piece to the main body of the vehicle. You could link to an intermediary bone that links back to the main body, but at least when making a car, this serves no purpose. Make sure you don't link the tires to the suspension struts.
 
-![link.jpg](../assets/![link.jpg](../assets/link.jpg))
+![link.jpg](../assets/link.jpg)
 
 Your hierarchy should look like this if you've done the linking correctly.
 
-![goodlink.jpg](../assets/![goodlink.jpg](../assets/goodlink.jpg))
+![goodlink.jpg](../assets/goodlink.jpg)
 
 #### Naming
 
@@ -111,22 +111,22 @@ This will change depending on your vehicle, and your programmers. If there is al
 
 To make sure that the import process goes smoothly, make sure your model is oriented facing in the positive X direction.
 
-![max1.jpg](../assets/![max1.jpg](../assets/max1.jpg))
+![max1.jpg](../assets/max1.jpg)
 
 #### Pivot Points
 
 When you set up your car, you will need to change the pivot points for some of the components. The struts shown on the mockup car (see image, below) demonstrate where the pivots should be placed; the logical connection between the struts and the chassis of the car.
 
-![max2.jpg](../assets/![max2.jpg](../assets/max2.jpg))
+![max2.jpg](../assets/max2.jpg)
 
 The orientation of the pivots is also important because it affects which way the tires and suspension rotate. You can see the alignment of the pivots by going to hierarchy and clicking "Affect Pivot Only". You should be able to freely rotate the pivots with this selected. If for some reason you can not rotate the pivot without affecting the object, you need to [Reset Pivots](SVehicleCreation.md#reset-pivots).In the example car all the pivots are oriented with the world coordinate system. This means that X (red) is forward, Y (green) is left, and Z (blue) is up. In most cases, this is what you want. You can set all the pivots by selecting all the objects, making sure "Affect Pivot Only" is selected and then typing 0.0 in all the "Absolute:World" rotation dialog. (You can set the car to a Maya coordinate system by typing 90 in X and 90 in Z.)Now that we have the pivots set to world orientation, we can easily see
 we want the wheels to rotate around the Y axis.
 
-![pivot1.jpg](../assets/![pivot1.jpg](../assets/pivot1.jpg))
+![pivot1.jpg](../assets/pivot1.jpg)
 
 The suspension can rotate about either the Y axis or the X axis depending on what you want (they look different but both look good).
 
-![pivot2.jpg](../assets/![pivot2.jpg](../assets/pivot2.jpg))
+![pivot2.jpg](../assets/pivot2.jpg)
 
 If you want the suspension or the wheels to rotate around a non-world axis, you can simply rotate the pivot till it is oriented with one of the axes pointed along the axis about which you want to rotate.
 
@@ -138,7 +138,7 @@ A word of caution: mirroring pieces of your car will also result in mirroring of
 
 If you find that your coordinate system is broken in some way, you may need to reset your pivot points. If you are rotating your pivot points and you see something like this happening, you'll want to fix them.
 
-![skewbad.jpg](../assets/![skewbad.jpg](../assets/skewbad.jpg))
+![skewbad.jpg](../assets/skewbad.jpg)
 
 To fix this, I've found an ugly set of steps that works. If you find a better system, please let me know.
 

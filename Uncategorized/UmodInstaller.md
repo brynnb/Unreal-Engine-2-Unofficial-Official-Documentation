@@ -110,7 +110,7 @@ A group section defines which files will be installed to the target location. Yo
 
 * **Optional** - If you defined the *Tree* atrribute in the global Setup section, this option is used to determine whether this group is required or not. If it's required, clients can't deselect this group option.
 
-![groups.jpg](../assets/![groups.jpg](../assets/groups.jpg))
+![groups.jpg](../assets/groups.jpg)
 
 * **Selected** - defines the default state of the group (checkbox). If it's set to True, the group is automatically selected.
 * **Selectable** - defines whether the group can be selected/changed.

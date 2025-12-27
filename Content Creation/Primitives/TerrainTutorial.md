@@ -24,7 +24,7 @@ Welcome to the Terrain Tutorial. This document guides you to each of the differe
 
 ## Creating Terrain
 
-![terrainediting.jpg](../../assets/![terrainediting.jpg](../../assets/terrainediting.jpg))
+![terrainediting.jpg](../../assets/terrainediting.jpg)
 
 This section explains how to go about creating a Terrain starting from an empty level. The subsections of this document include...[CreatingTerrain](../../Uncategorized/CreatingTerrain.md)
 
@@ -38,7 +38,7 @@ This section explains how to go about creating a Terrain starting from an empty 
 
 ## Editing Terrain Maps
 
-![terrainmap.jpg](../../assets/![terrainmap.jpg](../../assets/terrainmap.jpg))
+![terrainmap.jpg](../../assets/terrainmap.jpg)
 
 This section shows how to use the various Tools in the Terrain Editor to modify the TerrainMap. The following tools are described in detail...[EditingTerrainMaps](../../Uncategorized/EditingTerrainMaps.md)
 
@@ -55,7 +55,7 @@ This section shows how to use the various Tools in the Terrain Editor to modify 
 
 ## Editing Terrain Layers
 
-![alphamapediting.jpg](../../assets/![alphamapediting.jpg](../../assets/alphamapediting.jpg))
+![alphamapediting.jpg](../../assets/alphamapediting.jpg)
 
 This section includes a more detailed explanation of what a TerrainMap is and how it is manifested in the level. It also describes how to create and alter the separate Layers within the Terrain. Here are the specific sections that are found within this document:[EditingTerrainLayers](../../Uncategorized/EditingTerrainLayers.md)
 
@@ -72,7 +72,7 @@ This section includes a more detailed explanation of what a TerrainMap is and ho
 
 ## Creating DecoLayers
 
-![decolayers.jpg](../../assets/![decolayers.jpg](../../assets/decolayers.jpg))
+![decolayers.jpg](../../assets/decolayers.jpg)
 
 Here you will learn how to create your own DecoLayers. These are useful for populating your map with StaticMeshes quickly with a random yet controlled. The bulk of the document focuses on describing each of the properties and how to use them. Below are the major sections of this document.[CreatingDecoLayers](../../Uncategorized/CreatingDecoLayers.md)
 
@@ -99,11 +99,11 @@ Here you will learn how to create your own DecoLayers. These are useful for popu
 
 ## Additional Terrain Tips
 
-![before.jpg](../../assets/![before.jpg](../../assets/before.jpg))
+![before.jpg](../../assets/before.jpg)
 
 **==>**
 
-![after.jpg](../../assets/![after.jpg](../../assets/after.jpg))
+![after.jpg](../../assets/after.jpg)
 
 This document has several ways in which you can greatly improve the appearance as well as the efficiency of your Terrain. Not all of the tips are part of the Terrain Editing tools, but they will all help you to create the best Terrain you can. Here are some of the sections you will find in this document:[AdditionalTerrainTips](../../Uncategorized/AdditionalTerrainTips.md)
 

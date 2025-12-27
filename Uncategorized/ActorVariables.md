@@ -66,11 +66,11 @@ Collision is a very tricky topic and has many interrelated variables. Not only a
 
 CollisionHeight (see above) is a funny variable. The height that you enter into this field isn't actually the height that your actior will get, it's exactly one-half of the height. However, this does not mean that your actor can enter a door that is exactly the height of the actor. So, if your actor height is 44, and you have a door with a height of 88, you might run into the following problem:
 
-![collide.jpg](../assets/![collide.jpg](../assets/collide.jpg))
+![collide.jpg](../assets/collide.jpg)
 
 Therefore, when you are making your levels, keep in mind that the collisionheight should be doubled and increased a bit past the doubled amount, to approximate the actual collision size of an actor.
 
-![explain.jpg](../assets/![explain.jpg](../assets/explain.jpg))
+![explain.jpg](../assets/explain.jpg)
 
 ## Display
 

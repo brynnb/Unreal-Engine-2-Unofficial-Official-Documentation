@@ -17,35 +17,35 @@
 
 This Material combines two other Materials together. Below are descriptions of what each of the fields do and how to use the Combiner Material.
 
-![prop_combiner.gif](../assets/![prop_combiner.gif](../assets/prop_combiner.gif))
+![prop_combiner.gif](../assets/prop_combiner.gif)
 
 ### CombineOperation
 
 This determines field determines how the two materials will be blended together. The following demonstrates how two materials will look under the various blending conditions. Material1 and Material2 look like this:
 
-![material1.jpg](../assets/![material1.jpg](../assets/material1.jpg))
+![material1.jpg](../assets/material1.jpg)
 
-![material2.jpg](../assets/![material2.jpg](../assets/material2.jpg))CO\_Use\_Color\_From\_Material1 and CO\_Use\_Color\_From\_Material2 both only show one of the materials and completely hide the other one.CO\_Multiply multiplies the colors of both textures with each other:
+![material2.jpg](../assets/material2.jpg)CO\_Use\_Color\_From\_Material1 and CO\_Use\_Color\_From\_Material2 both only show one of the materials and completely hide the other one.CO\_Multiply multiplies the colors of both textures with each other:
 
-![multiply.jpg](../assets/![multiply.jpg](../assets/multiply.jpg))
+![multiply.jpg](../assets/multiply.jpg)
 
 CO\_Add adds the colors of both textures to each other:
 
-![add.jpg](../assets/![add.jpg](../assets/add.jpg))
+![add.jpg](../assets/add.jpg)
 
 CO\_Substract substracts the colors:
 
-![substract.jpg](../assets/![substract.jpg](../assets/substract.jpg))
+![substract.jpg](../assets/substract.jpg)
 
 CO\_AlphaBlend\_With\_Mask: this operation uses the alphachannel of a third texture as a mask. You can set this texture in Mask. Material2 will be in front of Material1, or if you set InvertMask to True Material1 will be in front of Material2. The white parts of the mask make the upper material opaque so you can't see the other material behind it, but the more grey the alphachannel becomes, the more transparent the upper material becomes.
 
-![mask1.jpg](../assets/![mask1.jpg](../assets/mask1.jpg))
+![mask1.jpg](../assets/mask1.jpg)
 
-![mask2.jpg](../assets/![mask2.jpg](../assets/mask2.jpg))CO\_Add\_With\_Mask\_Modulation: this doesn't use the Mask, but instead uses the alphachannel of Material2, or if it hasn't got one modulates it on Material1.On the first screenshot, the platecaution texture is Material1 (this texture has an alphachannel) and the lion is Material2. On the second screenshot, the lion is Material1 and the platecaution Material2. Here the alphachannel becomes visible.
+![mask2.jpg](../assets/mask2.jpg)CO\_Add\_With\_Mask\_Modulation: this doesn't use the Mask, but instead uses the alphachannel of Material2, or if it hasn't got one modulates it on Material1.On the first screenshot, the platecaution texture is Material1 (this texture has an alphachannel) and the lion is Material2. On the second screenshot, the lion is Material1 and the platecaution Material2. Here the alphachannel becomes visible.
 
-![modulation1.jpg](../assets/![modulation1.jpg](../assets/modulation1.jpg))
+![modulation1.jpg](../assets/modulation1.jpg)
 
-![modulation2.jpg](../assets/![modulation2.jpg](../assets/modulation2.jpg))
+![modulation2.jpg](../assets/modulation2.jpg)
 
 ### AlphaOperation
 
@@ -75,6 +75,6 @@ Here you can set a Texture that the Engine will default to if for whatever reaso
 
 ## Example Map and Other Material Classes
 
-![epicmaterials1.jpg](../assets/![epicmaterials1.jpg](../assets/epicmaterials1.jpg))
+![epicmaterials1.jpg](../assets/epicmaterials1.jpg)
 
 For an example map that shows many different complex Materials in action, take a look at this document:[ExampleMapsEPIC](ExampleMapsEPIC.md#materials-example-map) *(The example map is at the bottom of the page)*To return back the main Materials page, click [here](../Content%20Creation/Lighting%20and%20Textures/MaterialTutorial.md) <--

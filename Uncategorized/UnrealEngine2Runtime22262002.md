@@ -1,6 +1,6 @@
 # UnrealEngine2 Runtime 2226.20.02
 
-![urt_logo.jpg](../assets/![urt_logo.jpg](../assets/urt_logo.jpg))
+![urt_logo.jpg](../assets/urt_logo.jpg)
 
 *Document Summary: Introduction to version 2226.20.02 of the UnrealEngine2 Runtime edition of the second-generation Unreal engine, including release information.**Document Changelog: Created; maintained over time.*
 

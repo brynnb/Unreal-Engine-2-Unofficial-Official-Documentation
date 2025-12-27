@@ -36,7 +36,7 @@
 
 This document will cover spark emitters, one of four different possible emitters available in the 2226 build. For more information on general emitter properties, see [EmittersReference](../Content%20Creation/Effects/EmittersReference.md). For more information on the other three emitter types, see [SpriteEmitter](https://udn.epicgames.com/Two/SpriteEmitter), [MeshEmitter](MeshEmitter.md) and [BeamEmitter](BeamEmitter.md).Spark Emitters are perhaps the least-used of the four emitter types. They're not nearly as flexible as sprite emitters or mesh emitters, and not as flashy as the beam emitter. The effect is similar to the kind of sparks you might see during welding. This emitter turns its source texture into one thin line with the colors of the texture. Settings such as Acceleration and Velocity still work on it, but many (Collision, Spin, SizeScale, etc.) don't work on it because the particles are limited to be lines.Perhaps because they are so limited in use, spark emitters don't have many class-specific fields to worry about.
 
-![spark.jpg](../assets/![spark.jpg](../assets/spark.jpg))
+![spark.jpg](../assets/spark.jpg)
 
 ## Acceleration
 
@@ -106,9 +106,9 @@ This section is of course central to the spark emitter. There aren't many fields
 
 This will control how long your spark segments will be. Take care not to make them too large, otherwise it'll be easy to see the individual, straight segments. You can also make the length random if you enter a different Min and Max value. If you make this setting too high or too low (depending on other settings), the SparkEmitter will not work. The first screenshot has Min = Max = 5, the second screen has Min = Max = 3.
 
-![spark1.jpg](../assets/![spark1.jpg](../assets/spark1.jpg))
+![spark1.jpg](../assets/spark1.jpg)
 
-![spark2.jpg](../assets/![spark2.jpg](../assets/spark2.jpg))
+![spark2.jpg](../assets/spark2.jpg)
 
 ### TimeBeforeVisibleRange
 
@@ -118,13 +118,13 @@ This field doesn't seem to work, bringing the amount of useful spark emitter fie
 
 The effect of this setting is most visible if the path your particles take is curved, when you use some acceleration. The value in this range determines in how many segments the line should be divided into. If TimeBetweenSegmentsRange is low, for example 0.1, the line will be divided into a lot of segments so the curve looks smooth (first screenshot). If it's high (for example 0.5), you'll see the line broken into segments. (second screenshot). A higher TimeBetweenSegmentsRange means less particles and thus better performance, but it doesn't look as good.
 
-![spark3.jpg](../assets/![spark3.jpg](../assets/spark3.jpg))
+![spark3.jpg](../assets/spark3.jpg)
 
-![spark4.jpg](../assets/![spark4.jpg](../assets/spark4.jpg))For low TimeBetweenSegmentsRange settings, there will have to be created more particles (every segment of the line is a particle), so you might have to set MaxParticles (In General) and InitialParticlesPerSecond (In Spawning) to something higher before it looks good. A very high MaxParticles and InitialParticlesPerSecond might create something like this (again with low and high TimeBetweenSegmentsRange)
+![spark4.jpg](../assets/spark4.jpg)For low TimeBetweenSegmentsRange settings, there will have to be created more particles (every segment of the line is a particle), so you might have to set MaxParticles (In General) and InitialParticlesPerSecond (In Spawning) to something higher before it looks good. A very high MaxParticles and InitialParticlesPerSecond might create something like this (again with low and high TimeBetweenSegmentsRange)
 
-![spark5.jpg](../assets/![spark5.jpg](../assets/spark5.jpg))
+![spark5.jpg](../assets/spark5.jpg)
 
-![spark6.jpg](../assets/![spark6.jpg](../assets/spark6.jpg))
+![spark6.jpg](../assets/spark6.jpg)
 
 ## Spawning
 
@@ -135,9 +135,9 @@ Make sure to set appropriate values in the Spawning fields. These figures will a
 Texture is a funny topic with spark emitters. It's already been mentioned that the spark color is drawn from which texture is chosen, but it's worth mentioning again that your texture will be used only as a 1-pixel wide line for each spark particle. As you might imagine, most of the texture fields are ignored when dealing with spark emitters (or might as well be).Having said that, your choice of texture **will** have an impact on your particle system.
 The picture on the left is using the standard `five colored balls' icon that is used to represent particle systems, and on the right a fiery texture is used.
 
-![spark8.jpg](../assets/![spark8.jpg](../assets/spark8.jpg))
+![spark8.jpg](../assets/spark8.jpg)
 
-![spark9.jpg](../assets/![spark9.jpg](../assets/spark9.jpg))
+![spark9.jpg](../assets/spark9.jpg)
 
 ## Tick
 

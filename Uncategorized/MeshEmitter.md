@@ -30,7 +30,7 @@
 
 This document will cover mesh emitters, one of four different possible emitters available in the 2226 build. For more information on general emitter properties, see [EmittersReference](../Content%20Creation/Effects/EmittersReference.md). For more information on the other three emitter types, see [SpriteEmitter](https://udn.epicgames.com/Two/SpriteEmitter), [SparkEmitter](SparkEmitter.md) and [BeamEmitter](BeamEmitter.md).Mesh emitters are somewhat expensive, compared to the other available types. In some cases however, there is simply no replacement for a good mesh emitter. In particular, explosions that kick up debris are helped a good deal if some meshes bounce about post-impact. Also, rotation of particles in more than one plane of motion is best handled with mesh emitters, so tumbling actions will practically always demand them.There are a large amount of variables that control the behaviors of a mesh emitter. Most of these are covered in depth in the [EmittersReference](../Content%20Creation/Effects/EmittersReference.md) document. Fields of special interest will be pointed out in this document. The fields will be addressed in the order they appear in the properties window. (see image below)
 
-![meshproperties.jpg](../assets/![meshproperties.jpg](../assets/meshproperties.jpg))
+![meshproperties.jpg](../assets/meshproperties.jpg)
 
 ## Acceleration
 
@@ -56,13 +56,13 @@ This doesn't often need to be set with mesh emitters.
 
 This is one of two fields that specifically affects only the mesh emitter type. There are only a few options to consider, but they tie into other fields, so it's not as simple as it first appears.
 
-![mesh.jpg](../assets/![mesh.jpg](../assets/mesh.jpg))
+![mesh.jpg](../assets/mesh.jpg)
 
 Here you can choose the StaticMesh that gets used for the particles, as long as you leave this empty the particles are invisible. To choose a StaticMesh first select it in the Static Mesh Browser, then click on StaticMesh in the Mesh properties and press the Use button.
 
-![staticmesh.jpg](../assets/![staticmesh.jpg](../assets/staticmesh.jpg))
+![staticmesh.jpg](../assets/staticmesh.jpg)
 
-Now you won't see anything yet, not even if you give some Velocity, because the particles are displayed WAY too big: the StartSizeRange settings in Size are 100 by default, and for the [MeshEmitter](MeshEmitter.md#size) this means the StaticMesh is 100 times as big as it should be. Set all the X(Min), X(Max), Y(Min), Y(Max), Z(Min) and Z(Max) settings to something very low, for example 0.5, or for the huge Static Mesh that's used here: 0.03. More about the Size for [MeshEmitter](MeshEmitter.md#size)s is in the section Size]![meshparticles.gif](../assets/![meshparticles.gif](../assets/meshparticles.gif))
+Now you won't see anything yet, not even if you give some Velocity, because the particles are displayed WAY too big: the StartSizeRange settings in Size are 100 by default, and for the [MeshEmitter](MeshEmitter.md#size) this means the StaticMesh is 100 times as big as it should be. Set all the X(Min), X(Max), Y(Min), Y(Max), Z(Min) and Z(Max) settings to something very low, for example 0.5, or for the huge Static Mesh that's used here: 0.03. More about the Size for [MeshEmitter](MeshEmitter.md#size)s is in the section Size]![meshparticles.gif](../assets/meshparticles.gif)
 
 ### Use Mesh Blend Mode
 
@@ -86,33 +86,33 @@ You may want to add revolutions to your mesh emitter. For a more in-depth review
 
 ## Rotation
 
-![rotation.jpg](../assets/![rotation.jpg](../assets/rotation.jpg))
+![rotation.jpg](../assets/rotation.jpg)
 
 You may want to add rotations to your mesh emitter. This works in almost the same way as in the sprite rotation, only you can now set 3 independent Spins in X, Y and Z direction: each have their own SpinsPerSecondRange and SpinCCWorCW.These screenshots show respectively Rotation in X, Y and Z direction. (the last two are animated)
 
-![rotationx.jpg](../assets/![rotationx.jpg](../assets/rotationx.jpg))
+![rotationx.jpg](../assets/rotationx.jpg)
 
-![rotationy.gif](../assets/![rotationy.gif](../assets/rotationy.gif))
+![rotationy.gif](../assets/rotationy.gif)
 
-![rotationz.gif](../assets/![rotationz.gif](../assets/rotationz.gif))
+![rotationz.gif](../assets/rotationz.gif)
 
 For a more in-depth review of rotation, see the [EmittersReference](../Content%20Creation/Effects/EmittersReference.md#rotation) document.
 
 ## Size
 
-![size.jpg](../assets/![size.jpg](../assets/size.jpg))
+![size.jpg](../assets/size.jpg)
 
 The Size settings for the [MeshEmitter](MeshEmitter.md#meshemitter) are exactly the same as the Size setting of the ParticleEmitter (explained in the section Size), only now you can change the X, Y and Z Size of the StaticMesh particles independently. X and Y resize the width and breadth of the particles, Z resizes the height of it. Again, you can set a different Min and Max value for a random Size. On the first screenshot, the X Size is larger than Y and Z. On the second screen, the Y Size is larger than X and Z.
 
-![size21.jpg](../assets/![size21.jpg](../assets/size21.jpg))
+![size21.jpg](../assets/size21.jpg)
 
-![size22.jpg](../assets/![size22.jpg](../assets/size22.jpg))You can give the particles a random X, Y and Z Size. On the first screenshot, X and Y are the same, but Z(Min) = 0.03 and Z(Max) = 0.3 so the height is random. Where the resize happens (what part gets stretched) depends on the StaticMesh, here the bottom of the StaticMeshes is stretched but the top keeps the same height. On the second screenshot, all the X, Y and Z values have a Min of 0.03 and a Max of 0.2 so they're all random. If UniformSize = False, the proportions of the particles will not be kept, but if you set UniformSize to True, the proportions are kept and only the total Size is random. Only the X values are used then, Y and Z are ignored.
+![size22.jpg](../assets/size22.jpg)You can give the particles a random X, Y and Z Size. On the first screenshot, X and Y are the same, but Z(Min) = 0.03 and Z(Max) = 0.3 so the height is random. Where the resize happens (what part gets stretched) depends on the StaticMesh, here the bottom of the StaticMeshes is stretched but the top keeps the same height. On the second screenshot, all the X, Y and Z values have a Min of 0.03 and a Max of 0.2 so they're all random. If UniformSize = False, the proportions of the particles will not be kept, but if you set UniformSize to True, the proportions are kept and only the total Size is random. Only the X values are used then, Y and Z are ignored.
 
-![size23.jpg](../assets/![size23.jpg](../assets/size23.jpg))
+![size23.jpg](../assets/size23.jpg)
 
-![size24.jpg](../assets/![size24.jpg](../assets/size24.jpg))The SizeScale works exactly the same as the one for the [SpriteEmitter](MeshEmitter.md#spriteemitter) and is explained in the section Size. This time, X, Y and Z are locked to each other: the RelativeSize value resizes them all at the same time.
+![size24.jpg](../assets/size24.jpg)The SizeScale works exactly the same as the one for the [SpriteEmitter](MeshEmitter.md#spriteemitter) and is explained in the section Size. This time, X, Y and Z are locked to each other: the RelativeSize value resizes them all at the same time.
 
-![sizescale2.jpg](../assets/![sizescale2.jpg](../assets/sizescale2.jpg))
+![sizescale2.jpg](../assets/sizescale2.jpg)
 
 For a more on Size, see the [EmittersReference](../Content%20Creation/Effects/EmittersReference.md#size) document.
 
@@ -126,17 +126,17 @@ Make sure to set appropriate values in the Spawning fields. These figures will a
 
 ## Texture
 
-![texture2.jpg](../assets/![texture2.jpg](../assets/texture2.jpg))
+![texture2.jpg](../assets/texture2.jpg)
 
 If in Mesh you set UseMeshBlendMode to False, the DrawStyle in Texture will be used. This does the same on the mesh as it does on sprites, for more go to the section Texture. If in Mesh RenderTwoSided is True as well, the textures on the other side of the mesh will be visible as well. The first screenshot shows the DrawStyle PTDS\_Brighten, the second screen shows the same DrawStyle but this time with RenderTwoSided to True.
 
-![brighten21.jpg](../assets/![brighten21.jpg](../assets/brighten21.jpg))
+![brighten21.jpg](../assets/brighten21.jpg)
 
-![brighten22.jpg](../assets/![brighten22.jpg](../assets/brighten22.jpg))If the StaticMesh is opaque and UseMeshBlendMode is True, the StaticMeshes will of course look opaque (first screenshot). If you now set UseMeshBlendMode to False, and set DrawStyle to PTDS\_Regular, they will be opaque as well, but something weird will be going on: you can see the other particles through the opaque walls of the particles (second screenshot).
+![brighten22.jpg](../assets/brighten22.jpg)If the StaticMesh is opaque and UseMeshBlendMode is True, the StaticMeshes will of course look opaque (first screenshot). If you now set UseMeshBlendMode to False, and set DrawStyle to PTDS\_Regular, they will be opaque as well, but something weird will be going on: you can see the other particles through the opaque walls of the particles (second screenshot).
 
-![seethrough1.jpg](../assets/![seethrough1.jpg](../assets/seethrough1.jpg))
+![seethrough1.jpg](../assets/seethrough1.jpg)
 
-![seethrough2.jpg](../assets/![seethrough2.jpg](../assets/seethrough2.jpg))The Subdivision settings are useless on MeshParticles, because they use a StaticMesh and not a texture.For more information on the texture field, see the [Emitters Reference](../Content%20Creation/Effects/EmittersReference.md#texture).
+![seethrough2.jpg](../assets/seethrough2.jpg)The Subdivision settings are useless on MeshParticles, because they use a StaticMesh and not a texture.For more information on the texture field, see the [Emitters Reference](../Content%20Creation/Effects/EmittersReference.md#texture).
 
 ## Tick
 

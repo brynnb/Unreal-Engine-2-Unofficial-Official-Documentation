@@ -53,7 +53,7 @@ Below are brief descriptions of the six example SVehicles. Please keep in mind t
 
 ### Buggy
 
-![buggy.jpg](../../assets/![buggy.jpg](../../assets/buggy.jpg))
+![buggy.jpg](../../assets/buggy.jpg)
 
 This is your basic car with suspension. When you go over bumps or around turns you will see the wheels and suspension compress and expand.**Controls**
 
@@ -66,7 +66,7 @@ This is your basic car with suspension. When you go over bumps or around turns y
 
 ### Tank
 
-![tank.jpg](../../assets/![tank.jpg](../../assets/tank.jpg))
+![tank.jpg](../../assets/tank.jpg)
 
 This is your basic tank. This is fairly similar to a heavy car but the suspension and "wheel" movement are handled differently. Unfortunately the thank doesn't shoot.**Controls**
 
@@ -79,7 +79,7 @@ This is your basic tank. This is fairly similar to a heavy car but the suspensio
 
 ### APC
 
-![apc.jpg](../../assets/![apc.jpg](../../assets/apc.jpg))
+![apc.jpg](../../assets/apc.jpg)
 
 The APC is a half track in that it is half normal wheels and half track / treads. Half tracks do not seem to work well yet and this vehicle does not drive well in many cases.**Controls**
 
@@ -92,7 +92,7 @@ The APC is a half track in that it is half normal wheels and half track / treads
 
 ### HoverBike
 
-![hoverbike.jpg](../../assets/![hoverbike.jpg](../../assets/hoverbike.jpg))
+![hoverbike.jpg](../../assets/hoverbike.jpg)
 
 The HoverBike is a hovering device that floats a short distance above the ground. This version is pretty bouncy but that is because it is more fun this way.**Controls**
 
@@ -105,7 +105,7 @@ The HoverBike is a hovering device that floats a short distance above the ground
 
 ### PodChopper
 
-![podchopper.jpg](../../assets/![podchopper.jpg](../../assets/podchopper.jpg))
+![podchopper.jpg](../../assets/podchopper.jpg)
 
 The PodChopper is a funny little pod helicopter. It is probably the hardest vehicle to operate but it is also one of the most fun once you get the hang of it.**Controls**
 
@@ -122,7 +122,7 @@ The PodChopper is a funny little pod helicopter. It is probably the hardest vehi
 
 ### FlyingSaucer
 
-![flyingsaucer.jpg](../../assets/![flyingsaucer.jpg](../../assets/flyingsaucer.jpg))
+![flyingsaucer.jpg](../../assets/flyingsaucer.jpg)
 
 The FlyingSaucer is a hovering flying spaceship vehicle. It will stay floating in the air even if you get out. This vehicle is very forgiving to fly. Don't forget to try surfing on the top of the saucer when you get out of the vehicle when it is still moving fast.**Controls**
 

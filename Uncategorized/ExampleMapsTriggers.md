@@ -39,7 +39,7 @@ This is the most basic trigger which you will most likely be using for most of y
 
 ### MaterialTrigger
 
-![materialtrigger.jpg](../assets/![materialtrigger.jpg](../assets/materialtrigger.jpg))
+![materialtrigger.jpg](../assets/materialtrigger.jpg)
 
 The first Trigger you will find in the map is a MaterialTrigger. Using this type of Trigger will cause a MaterialSwitch material to advance through textures in a predefined array. To use a MaterialTrigger, you will need 5 things:
 
@@ -53,11 +53,11 @@ The first Trigger you will find in the map is a MaterialTrigger. Using this type
 
 After gathering the textures you want to cycle through, you will need to add them to a MaterialSwitch material. To create this material open the Texture Browser and select "MaterialSwitch" from the Properties pull down.
 
-![new_matswitch.gif](../assets/![new_matswitch.gif](../assets/new_matswitch.gif))
+![new_matswitch.gif](../assets/new_matswitch.gif)
 
 Then in the Properties window of the MaterialSwitch Add as many fields as you have textures your textures to those fields.
 
-![prop_matswitch.gif](../assets/![prop_matswitch.gif](../assets/prop_matswitch.gif))
+![prop_matswitch.gif](../assets/prop_matswitch.gif)
 
 Whichever field number is displayed as "Current" will be the texture that is first shown as the game loads. Now you are ready to set up the triggers.
 
@@ -97,7 +97,7 @@ In this example map the LineOfSight Trigger is set up to trigger an explosion pa
 
 In the map, the LineOfSight Trigger is hidden around a corner. When you go down the corridor to the LineOfSight Trigger, the particle system will trigger as soon as you see the LineOfSight Trigger.
 
-![losexplosion.jpg](../assets/![losexplosion.jpg](../assets/losexplosion.jpg))
+![losexplosion.jpg](../assets/losexplosion.jpg)
 
 ### MusicTrigger
 
@@ -107,7 +107,7 @@ The MusicTrigger also must be activated by a generic Trigger. A MusicTrigger has
 * a generic Trigger (or something that calls out an Event)
 * an .ogg file located in the Music folder
 
-![musictrigger.jpg](../assets/![musictrigger.jpg](../assets/musictrigger.jpg))
+![musictrigger.jpg](../assets/musictrigger.jpg)
 
 In this example the MusicTrigger is set up to play the StageMusic.ogg file from UT2K3. Once triggered the .ogg file will fade in over two seconds and if triggered again, it will fade out over 5 seconds. The properties for the MusicTrigger are set up like so:
 
@@ -131,7 +131,7 @@ After you have these two Triggers in your level and the .ogg file in your Music 
 
 The Counter Trigger is another trigger that requires additionally generic Tiggers to activate it. A Counter Trigger will wait until it hears so many other trigger activations until it activates its own event. Here you can see the three generic Triggers that all send out an event to the Counter Trigger
 
-![counter1.jpg](../assets/![counter1.jpg](../assets/counter1.jpg))
+![counter1.jpg](../assets/counter1.jpg)
 
 The generic Triggers all have the following properties:
 
@@ -150,11 +150,11 @@ The Counter Trigger has is set up like this:
 
 The Counter Trigger in the example map is located in the middle of the raised platforms. It is activated only after all three generic Triggers are activated (in any order). Here is the path a player must follow to navigate through all the Triggers
 
-![counter2.jpg](../assets/![counter2.jpg](../assets/counter2.jpg))
+![counter2.jpg](../assets/counter2.jpg)
 
 Note that there is a fourth generic Trigger that activates two Movers that rotate in place once to create a loop.
 
-![counter3.jpg](../assets/![counter3.jpg](../assets/counter3.jpg))
+![counter3.jpg](../assets/counter3.jpg)
 
 Once all of the Triggers are activated, the Counter Trigger activates a third mover that lifts the player over everything.
 
@@ -162,25 +162,25 @@ Once all of the Triggers are activated, the Counter Trigger activates a third mo
 
 A UseTrigger is a trigger that allows the player to determine when they want to activate something as long as they are in the collision cylinder of the UseTrigger. In this example map, a UseTrigger is used to activate a Mover causing it to move from one side of the room to the other. All that is need is the UseTrigger and the Mover.
 
-![usetrigger.jpg](../assets/![usetrigger.jpg](../assets/usetrigger.jpg))
+![usetrigger.jpg](../assets/usetrigger.jpg)
 
 By default the "use" key is assigned to the "Enter" and "f" keys in build 2226. To find out what your "use" key is in your game (or to change it) open up your User.ini file in the game's System folder and search for "=Use".
 
 ### ViewShaker
 
-![viewshakers.jpg](../assets/![viewshakers.jpg](../assets/viewshakers.jpg))
+![viewshakers.jpg](../assets/viewshakers.jpg)
 
 A ViewShaker, once activated by a generic trigger or some other event will cause all player cameras within a specified radius from the ViewShaker to shake. In this example map, three ViewShakers have been set up to show the different ways in which you can use them.The first example demonstrates a ViewShaker that shakes the player's camera as if something heavy has just been dropped. The second slowly rolls and shakes the camera making the player feel very unbalanced. The third simulates a brief yet fierce earthquake. Here is how each of the properties are set up (all of the properties below can be found under the *ViewShaker* property at the bottom of the Properties window of the ViewShaker Actor):Something heavy dropping:
 
-![prop_vs1.gif](../assets/![prop_vs1.gif](../assets/prop_vs1.gif))
+![prop_vs1.gif](../assets/prop_vs1.gif)
 
 Unbalanced, drunken camera:
 
-![prop_vs2.gif](../assets/![prop_vs2.gif](../assets/prop_vs2.gif))
+![prop_vs2.gif](../assets/prop_vs2.gif)
 
 Earthquake:
 
-![prop_vs3.gif](../assets/![prop_vs3.gif](../assets/prop_vs3.gif))
+![prop_vs3.gif](../assets/prop_vs3.gif)
 
 ## Example Two: Triggers Map
 
@@ -192,7 +192,7 @@ TriggerConditions allow you to control AI with Triggers. In this example there a
 
 #### TriggerCondition 1
 
-![triggercondition1.jpg](../assets/![triggercondition1.jpg](../assets/triggercondition1.jpg))
+![triggercondition1.jpg](../assets/triggercondition1.jpg)
 
 In this room the Pawn will remain stationary until the player stands within the trigger collision. While the player is standing within the trigger collision, the Pawn will run back and forth. The following actors were required to set up this simple scene:
 
@@ -204,11 +204,11 @@ In this room the Pawn will remain stationary until the player stands within the 
 
 The AIScript is set up as follows:
 
-![aiscript1.gif](../assets/![aiscript1.gif](../assets/aiscript1.gif))
+![aiscript1.gif](../assets/aiscript1.gif)
 
 And the TriggerCondition Trigger is set up as follows:
 
-![prop_tc1.gif](../assets/![prop_tc1.gif](../assets/prop_tc1.gif))
+![prop_tc1.gif](../assets/prop_tc1.gif)
 
 Lastly make sure that you have a regular Trigger to activate the TriggerCondition.
 
@@ -216,15 +216,15 @@ Lastly make sure that you have a regular Trigger to activate the TriggerConditio
 
 In the second room, the Pawn will continue to run back and forth between the two PathNodes until the player toggles the trigger. When the Trigger is turned on, a TriggerLight is activated and the Pawn will pause and play an animation when it is under that light. The Pawn will continue to run back and forth playing this animation until the Trigger is toggled back, then the TriggerLight will turn off and the Pawn well return to just running back and forth without playing the animation. All that is needed for this is everything listed [above](ExampleMapsTriggers.md#triggerconditionstuff) and a TriggerLight. Below you can see how the AIScript and TriggerCondition are set up for this example.
 
-![triggercondition2.jpg](../assets/![triggercondition2.jpg](../assets/triggercondition2.jpg))
+![triggercondition2.jpg](../assets/triggercondition2.jpg)
 
 The AIScript is set up as follows:
 
-![aiscript2.gif](../assets/![aiscript2.gif](../assets/aiscript2.gif))
+![aiscript2.gif](../assets/aiscript2.gif)
 
 And the TriggerCondition Trigger is set up as follows:
 
-![prop_tc2.gif](../assets/![prop_tc2.gif](../assets/prop_tc2.gif))
+![prop_tc2.gif](../assets/prop_tc2.gif)
 
 Lastly make sure that you have a regular Trigger to activate the TriggerCondition.
 

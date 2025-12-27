@@ -28,23 +28,23 @@ NumPad5=set playercontroller bZeroRoll False | set playercontroller rotation (pi
 NumPad6=set playercontroller bZeroRoll False | set playercontroller rotation (pitch=0,yaw=0,roll=0)
 ```
 
-![texenvmap.jpg](../assets/![texenvmap.jpg](../assets/texenvmap.jpg))
+![texenvmap.jpg](../assets/texenvmap.jpg)
 
 If you took screenshots, make sure the textures are rotated correctly, and for a better overview give their names the same number as the numbers used in the Cubemap Properties. [0] to [3] are the 4 sides, [4] is the sky or ceiling and [5] is the ground or floor. This screenshot shows how to rotate and number the textures:
 
-![environment.jpg](../assets/![environment.jpg](../assets/environment.jpg))
+![environment.jpg](../assets/environment.jpg)
 
-![faces.jpg](../assets/![faces.jpg](../assets/faces.jpg))
+![faces.jpg](../assets/faces.jpg)
 
 ## TexEnvMap
 
 A Cubemap isn't an EnvironmentMap yet, it's just a placeholder for 6 textures. The TexEnvMap uses the Cubemap for an EnvironmentMap. When you create a new TexEnvMap, select a Cubemap in the Texture Browser, and then click on Material and press the Use button. To preview the EnvironmentMap click the cube or sphere button of the preview window.
 
-![texenvmap2.jpg](../assets/![texenvmap2.jpg](../assets/texenvmap2.jpg))
+![texenvmap2.jpg](../assets/texenvmap2.jpg)
 
 If the EnvMapType is EM\_CameraSpace, the ground will be in front of you, but if you set it to EM\_WorldSpace it'll be at the bottom:
 
-![worldspace.jpg](../assets/![worldspace.jpg](../assets/worldspace.jpg))
+![worldspace.jpg](../assets/worldspace.jpg)
 
 You can use TexEnvMap materials on Static Meshes as well as on BSP Surfaces. A TexEnvMap looks very shiny because it only has the EnvironmentMap, with other materials, for example Shaders, you can blend the EnvironmentMap on a flat texture.
 
@@ -52,6 +52,6 @@ You can use TexEnvMap materials on Static Meshes as well as on BSP Surfaces. A T
 
 ## Example Map and Other Material Classes
 
-![epicmaterials1.jpg](../assets/![epicmaterials1.jpg](../assets/epicmaterials1.jpg))
+![epicmaterials1.jpg](../assets/epicmaterials1.jpg)
 
 For an example map that shows many different complex Materials in action, take a look at this document:[ExampleMapsEPIC](ExampleMapsEPIC.md#materials-example-map) *(The example map is at the bottom of the page)*To return back the main Materials page, click [here](../Content%20Creation/Lighting%20and%20Textures/MaterialTutorial.md) <--

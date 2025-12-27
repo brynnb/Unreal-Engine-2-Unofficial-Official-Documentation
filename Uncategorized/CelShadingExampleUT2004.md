@@ -16,4 +16,4 @@
 
 Open the map up in UnrealEd; it's not a DM map or anything, there's no playerstart, it's just a room with a cel-shaded object for you to see it in use.
 
-![Default Alternate Text.](../assets/![celshading.jpg](../assets/celshading.jpg))
+![celshading.jpg](../assets/celshading.jpg)

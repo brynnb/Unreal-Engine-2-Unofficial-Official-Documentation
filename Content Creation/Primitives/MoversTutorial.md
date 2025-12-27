@@ -22,15 +22,15 @@ A Mover is a special StaticMesh that can move during game play. With Movers you 
 
 Movers can only be created with static meshes, so you must first open a StaticMesh Browser and select the name of the StaticMesh you wish to use.
 
-![smeshbrowser.jpg](../../assets/![smeshbrowser.jpg](../../assets/smeshbrowser.jpg))
+![smeshbrowser.jpg](../../assets/smeshbrowser.jpg)
 
 Then to place the Mover in the world, click on the "Add Mover" button.
 
-![moverbutton.jpg](../../assets/![moverbutton.jpg](../../assets/moverbutton.jpg))
+![moverbutton.jpg](../../assets/moverbutton.jpg)
 
 The Mover will then appear at the position of the builder brush. The Mover will look like any other static mesh except its brush will be purple.
 
-![mover2d.jpg](../../assets/![mover2d.jpg](../../assets/mover2d.jpg))
+![mover2d.jpg](../../assets/mover2d.jpg)
 
 Once you have the Mover where you want it, you are then ready to set the KeyFrames of that Mover.
 
@@ -38,17 +38,17 @@ Once you have the Mover where you want it, you are then ready to set the KeyFram
 
 KeyFrames are the different positions that the mover will transition between. The base KeyFrame, or KeyFrame 0, is by default set to be the position of the mover before the other KeyFrames are set, so to set KeyFrame 0 just place the mover where you want it to start. To assign the first position you want to move it to, right click on the mover and pull down the mover option.
 
-![keyframes.jpg](../../assets/![keyframes.jpg](../../assets/keyframes.jpg))
+![keyframes.jpg](../../assets/keyframes.jpg)
 
 By selecting "Key 1" you are recording the location and orientation you want to move the KeyFrame to for its first new position. Be aware though that it is actually recording the total rotation of that KeyFrame not just the final orientation so that if you rotate it 480� it will not just turn 120� but rather it will make a full 360� revolution and continue for another 120�.To create more KeyFrames just repeat this process by selecting the KeyFrame you want to assign by right clicking and then moving the Mover to the desired position of that KeyFrame. If you want to reset the position of a KeyFrame, you can do so by reselecting the KeyFrame by right clicking and then moving the Mover to the correct KeyFrame position.Once you've assigned your KeyFrames, you can check them by right clicking on the mover and selecting the KeyFrame you wish to see (just as if you were going to assign that KeyFrame). If you already assigned that KeyFrame, the mover will then jump to that position. If it did not, then simply move it to that position and you will have just assigned that KeyFrame. Alternatively, KeyFrames may be assigned or checked through the "Movers" tab in the "Mover Properties" window. Just type in the number of the KeyFrame you wish to set, and then move the Mover to the position of the desired KeyFrame.After your KeyFrames are all assigned then you must let the editor know how many of your KeyFrames you wish to use. Open the Properties window of the Mover, expand the "Mover" tab, and set "NumKeys" to how many KeyFrames you wish to use. If you have created more KeyFrames than you care to use, this will prevent the Mover from going to your extra KeyFrames.
 
-![properties_mover_numkeys.jpg](../../assets/![properties_mover_numkeys.jpg](../../assets/properties_mover_numkeys.jpg))
+![properties_mover_numkeys.jpg](../../assets/properties_mover_numkeys.jpg)
 
 ### Assigning Activators
 
 Now you've got your Mover and the Mover knows where to go, but it doesn't know when it should go there. You must first assign an activator and the first place to do this is in the "Properties" window under the "Object" tab in the "InitialState" pull down.
 
-![properties_object_initialst.gif](../../assets/![properties_object_initialst.gif](../../assets/properties_object_initialst.gif))
+![properties_object_initialst.gif](../../assets/properties_object_initialst.gif)
 
 These settings determine what type of Mover you'll have and how it will react to things in the world. Many of the Mover types require Triggers to be placed in to the world to activate them. For more information on Triggers, see the [TriggersTutorial](../../Uncategorized/TriggersTutorial.md) doc. Below are descriptions of what each setting does:
 
@@ -67,7 +67,7 @@ These settings determine what type of Mover you'll have and how it will react to
 
 Movers can also be activated by taking damage or they can also be made to automatically rotate (like a fan) through setting additional values in the Mover tab. Below are descriptions of all the different settings in the Mover tab of the Mover Properties:
 
-![properties_mover.gif](../../assets/![properties_mover.gif](../../assets/properties_mover.gif))
+![properties_mover.gif](../../assets/properties_mover.gif)
 
 * AntiPortalTag - See below section on [Antiportal Movers](#antiportal-movers)
 * bDamageTriggered = If set to True, the Mover can be activated by weapons fire. Note that the Mover's InitialState must be set to a trigger activated state. Each state will have a different effect if the Mover is set to be Damage Triggered.
@@ -110,7 +110,7 @@ Movers can also be activated by taking damage or they can also be made to automa
 
 Not only can Movers be triggered to do actions on their own, Movers can trigger other events in the level. To set these events open the MoverEvents tab.
 
-![properties_moverevents.jpg](../../assets/![properties_moverevents.jpg](../../assets/properties_moverevents.jpg))
+![properties_moverevents.jpg](../../assets/properties_moverevents.jpg)
 
 These events can call anything from TriggerLights to scripted events, or even other Movers. Below is a description of each event type:
 
@@ -124,7 +124,7 @@ These events can call anything from TriggerLights to scripted events, or even ot
 
 Movers also have special sound settings. Beneath the following diagram are descriptions of each of the settings.
 
-![properties_moversounds.jpg](../../assets/![properties_moversounds.jpg](../../assets/properties_moversounds.jpg))
+![properties_moversounds.jpg](../../assets/properties_moversounds.jpg)
 
 * ClosedSound = This sound is played when the Mover arrives at its last KeyFrame.
 * ClosingSound = This sound is played when it starts moving towards its last KeyFrame.
@@ -136,7 +136,7 @@ Movers also have special sound settings. Beneath the following diagram are descr
 
 Under the AI tab there are additional settings specific to Movers. The AI settings effect
 
-![properties_ai.jpg](../../assets/![properties_ai.jpg](../../assets/properties_ai.jpg))
+![properties_ai.jpg](../../assets/properties_ai.jpg)
 
 * bAutoDoor = If this is set to True, a Door path node is automatically generated for that mover.
 * bNoAIRelevance = All Movers have an appropriate NavigationPoint associated with them. If this is set to True, the NavigationPoint will be disabled.
@@ -145,7 +145,7 @@ Under the AI tab there are additional settings specific to Movers. The AI settin
 
 These settings will allow you to control other Movers when this Mover is activated.
 
-![properties_returngroup.jpg](../../assets/![properties_returngroup.jpg](../../assets/properties_returngroup.jpg))
+![properties_returngroup.jpg](../../assets/properties_returngroup.jpg)
 
 First you must have two movers. Set the following properties on the first Mover:
 

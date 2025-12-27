@@ -263,15 +263,15 @@ DrawPortal renders the scene another time from a different perspective and draws
 
 `DrawTileStretched(material Mat, float XL, float YL)`This function takes a Material stretches it to the given size (XL, YL) without scaling it. This is done by repeating pixels in the middle of the image to fill the sections between the corners if the stretch size is larger than the image. If the stretch size is smaller the corners are cropped in the middle and refitted together. The following images illustrate DrawTileStretched called on a 128x128 image:Canvas.DrawTileStretched(TestTexture, 128, 128);
 
-![stretch128.jpg](../../assets/![stretch128.jpg](../../assets/stretch128.jpg))
+![stretch128.jpg](../../assets/stretch128.jpg)
 
 Canvas.DrawTileStretched(TestTexture, 100, 100);
 
-![stretch100.jpg](../../assets/![stretch100.jpg](../../assets/stretch100.jpg))
+![stretch100.jpg](../../assets/stretch100.jpg)
 
 Canvas.DrawTileStretched(TestTexture, 300, 300);
 
-![stretch300.jpg](../../assets/![stretch300.jpg](../../assets/stretch300.jpg))
+![stretch300.jpg](../../assets/stretch300.jpg)
 
 |  |  |
 | --- | --- |
@@ -378,9 +378,9 @@ These are script functions. Some functions adjust the state of the Canvas while 
 
 `final function SetDrawColor(byte R, byte G, byte B, optional byte A)`This function sets the draw color with an optional alpha. The color is very straight forward; it will tint whatever is drawn with that color. The alpha is not so simple mainly because it is not used in all cases. It will be used if Canvas.Style is ERenderStyle.Normal, ERenderStyle.STY\_Masked, ERenderStyle.STY\_Alpha, ERenderStyle.STY\_Additive, ERenderStyle.STY\_Particle, or ERenderStyle.STY\_AlphaZ.These two simple diagrams illustrate the effect of alpha on different draw styles.
 
-![blendmodes255.jpg](../../assets/![blendmodes255.jpg](../../assets/blendmodes255.jpg))
+![blendmodes255.jpg](../../assets/blendmodes255.jpg)
 
-![blendmodes32.jpg](../../assets/![blendmodes32.jpg](../../assets/blendmodes32.jpg))
+![blendmodes32.jpg](../../assets/blendmodes32.jpg)
 
 ### MakeColor
 

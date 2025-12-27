@@ -27,7 +27,7 @@ This document describes how to set up navigation networks in a level so that NPC
 
 Level designers place `PathNodes` (a subclass of `NavigationPoint`) in their levels on surfaces which NPCs can walk on, or in volumes which NPCs can swim in. `PlayerStarts` are also `NavigationPoints`, and they perform the same navigation function. In addition, `InventorySpots` are automatically placed at the location of every pickup in the level when building paths (they are invisible, but you will be able to see path connections to them).For `PathNodes` to connect, they should be less than **1200** Unreal units apart (programmers can modify **MAXPATHDIST** in `UnPath.h` to change this value). Having two `NavigationPoints` too close together (overlapping) can cause AI navigation problems and should be avoided. When placing `PathNodes`, the goal is to make sure that every area of the level is covered by a `PathNode` or some other `NavigationPoint`. An area is covered if an NPC could walk to some `PathNode` less than 1200 units away completely unobstructed (i.e. without having to step around anything).
 
-![small-naviga1.gif](../../assets/![small-naviga1.gif](../../assets/small-naviga1.gif))
+![small-naviga1.gif](../../assets/small-naviga1.gif)
 
 *([larger version](rsrc/Two/NavigationAI/naviga1.gif))*
 

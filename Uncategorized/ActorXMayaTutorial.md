@@ -43,7 +43,7 @@ This document assumes that you have already created and rigged your actor and ar
 1. Download the [ActorX](../Content%20Creation/Tools/ActorX.md) plug-in for Maya and copy it to your plug-ins directory.
 2. Launch Maya, then enable the plug-in (go to Settings->Plug-In Manager) by checking the "loaded" check-box. Check "auto load" if you want it to be automatically loaded every time you run Maya.
 
-![plug-in-manager.gif](../assets/![plug-in-manager.gif](../assets/plug-in-manager.gif))
+![plug-in-manager.gif](../assets/plug-in-manager.gif)
 
 ## Setting up your scene
 
@@ -60,11 +60,11 @@ This not only affects the order of slots for skeletal (and static) meshes, but c
    * **Mesh file name**: enter the name for the .PSK file. We recommend the name of your actor.
 4. Click the "Save mesh/refpose button. You can do this with any frame of the animation. It is recommended that your model's reference pose be in a relaxed, spread eagle pose for ease of use.
 
-![exporting a mesh](../assets/![namepskmaya.jpg](../assets/namepskmaya.jpg))
+![namepskmaya.jpg](../assets/namepskmaya.jpg)
 
 After you save the mesh/refpose, a few windows will pop up if all went well.
 
-![2 dialog boxes](../assets/![unsmoothmaya.jpg](../assets/unsmoothmaya.jpg))
+![unsmoothmaya.jpg](../assets/unsmoothmaya.jpg)
 
 ## Export your animations
 
@@ -80,13 +80,13 @@ There are two steps for exporting animations. First, load the scene containing y
    * **Animation sequence name**: this is how the animation will be identified within the .PSA file.
    * **Animation range**: specify the frames in the current scene that define this animation. (Format is `4-45'; number, hyphen, number)
 
-![exporting an animation](../assets/![namepsamaya.jpg](../assets/namepsamaya.jpg))
+![namepsamaya.jpg](../assets/namepsamaya.jpg)
 
 1. Make sure that the range slider and the time slider show 0 as the first frame. (Note: this is a superstitious behavior on our part to avoid a periodic crashing bug in [ActorX](../Content%20Creation/Tools/ActorX.md). Skip this step at your own peril)
 2. Click "Digest Animation". When it is done, you should see a pop-up message box describing the animation. If you don't see this pop-up then something went wrong and we recommend restarting Maya at this point because the plug-in is most likely now in a corrupted state.
 3. Repeat steps 1-5 for as many animations as you would like to export this session. We recommend not trying to do too many at once in case [ActorX](../Content%20Creation/Tools/ActorX.md) crashes and you have to start over.
 
-![exporting an animation](../assets/![animdigested.jpg](../assets/animdigested.jpg))
+![animdigested.jpg](../assets/animdigested.jpg)
 
 ### Add your animations to a .PSA file
 
@@ -99,7 +99,7 @@ Once you have digested one or more animations you are ready to add them to a .PS
 5. Select your new animations and click "-->" to add your animations to the output package.
 6. Click "Save" to save the .PSA file back out. (assumes you already provided the name of the animation file previously)
 
-![anim-manager.gif](../assets/![anim-manager.gif](../assets/anim-manager.gif))
+![anim-manager.gif](../assets/anim-manager.gif)
 
 ## Batch Processing
 

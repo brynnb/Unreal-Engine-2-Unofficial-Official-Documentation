@@ -598,7 +598,7 @@ Before playing animation on any channel, you need to call *AnimBlendParams* to s
 * `BoneName` -- This is the name of the start bone from which the blending is to take effect, down the hierarchy. All the bones down in the hierarchy from the specified bone and including the specified bone are used when animations are played on this channel. See the SkeletalSetup? and [PawnAnimation](https://udn.epicgames.com/Two/PawnAnimation#setting_up_the_face_of_the_model) documents for more details about setting up skeletons in a way that *AnimBlendParams* can be used effectively. If *BoneName* is not specified, this channel will effect the whole skeleton.
 * `bGlobalPose` -- Normally *bGlobalPose* is `FALSE`. If *bGlobalPose* is `TRUE`, use the global orientations for the bones this channel affects. This means that the hierarchy of bones before *BoneName* will not affect the rotation of the bones in this channel. The previous bones will still affect the location of the bones for this channel however. Refer to the picture below to see how different settings of *bGlobalPose* can effect animation. To create the picture, a swimming animation was played on the whole body and then a hands-on-desk animation was played on the upper part of the body. *bGlobalPose* defaults to `FALSE`,
 
-![blend_bglobalpose.jpg](../assets/![blend_bglobalpose.jpg](../assets/blend_bglobalpose.jpg))
+![blend_bglobalpose.jpg](../assets/blend_bglobalpose.jpg)
 
 In v3323 this function can be used for all meshes, not just skeletal meshes.
 

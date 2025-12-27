@@ -24,15 +24,15 @@ Volumes are invisible brushes that "know" when actors or players enter or leave 
 
 To add a Volume, first give your red brush the shape and location you want, then press the Volume Button
 
-![volumebutton.jpg](../../assets/![volumebutton.jpg](../../assets/volumebutton.jpg))
+![volumebutton.jpg](../../assets/volumebutton.jpg)
 
 in the left toolbar. Then you get a list where you can choose what Volume you want to add. The Volume and the PhysicsVolume are the motherclasses, the others are subclasses of the PhysicsVolume, some of them with extra features added in the script, others are only PhysicsVolumes with modified properties. If you want to know more about these types of physics volumes, see the [PhysicsVolumes](https://udn.epicgames.com/Two/PhysicsVolumes) document.
 
-![volumes.jpg](../../assets/![volumes.jpg](../../assets/volumes.jpg))
+![volumes.jpg](../../assets/volumes.jpg)
 
 When you add a volume in the editor and move away the red brush, it looks like a pink brush (selected) or a purple brush (unselected).
 
-![selected.jpg](../../assets/![selected.jpg](../../assets/selected.jpg))
+![selected.jpg](../../assets/selected.jpg)
 
 After you have added the Volume, you may freely rotate, resize and relocate it. Volumes are invisible when playing the game, so you might consider representing where a volume is with visible geometry when you are testing.
 
@@ -48,11 +48,11 @@ Setting this to the tag of a particular actor will cause the "Touch" and "UnTouc
 
 You can use your volume to define the boundaries for a DecorationList actor. This is fairly straightforward, if you know the basics of Unreal editing.First of all , in the Actor list, go to Actor > Keypoint > DecorationList. Add a Decoraration List to your level.
 
-![decolisticon.jpg](../../assets/![decolisticon.jpg](../../assets/decolisticon.jpg))
+![decolisticon.jpg](../../assets/decolisticon.jpg)
 
 The properties for the decoration list are pretty self-explanatory.
 
-![decolistproperties.jpg](../../assets/![decolistproperties.jpg](../../assets/decolistproperties.jpg))
+![decolistproperties.jpg](../../assets/decolistproperties.jpg)
 
 * **bAlign:** This will align your static meshes to the floor below them. Therefore, if your floor is tilted, the decoration meshes will follow that tilt as well.
 * **bRandomPitch:** This is a true/false toggle for a random pitch.
@@ -62,11 +62,11 @@ The properties for the decoration list are pretty self-explanatory.
 * **DrawScale:** Min and Max values determine the sizes of the static mesh decorations.
 * **StaticMesh:** Choose which mesh to use for your decoration mesh.
 
-![volumeprops.jpg](../../assets/![volumeprops.jpg](../../assets/volumeprops.jpg))
+![volumeprops.jpg](../../assets/volumeprops.jpg)
 
 Now, in your Volume properties, select the DecoList line. You need to use the `Find' button to fill in this field, and not the `Use' button. Just click on the Find button, and then click the DecorationList icon. Rebuild, and if all went correctly, you should see your volume filled with meshes when you load the level.
 
-![gunbox.jpg](../../assets/![gunbox.jpg](../../assets/gunbox.jpg))
+![gunbox.jpg](../../assets/gunbox.jpg)
 
 Notice that this filled volume generates all the meshes on a plane, even though the volume is nonplanar. The meshes will spawn at the vertical center of the volume.
 
@@ -74,7 +74,7 @@ Notice that this filled volume generates all the meshes on a plane, even though 
 
 You can give all of the Volumes a LocationName. Enter it in the Volume Properties --> Volume --> LocationName.
 
-![locationname.jpg](../../assets/![locationname.jpg](../../assets/locationname.jpg))
+![locationname.jpg](../../assets/locationname.jpg)
 
 You can use this LocationName for example to appear next to the player's name when he gives a team message while he's inside this Volume, so the other players know where he is. If you want an area in your map to have a name, but the area doesn't need any of the physics properties, you should use the normal Volume class.
 
@@ -86,11 +86,11 @@ If an actor is in more than one volume, the actor's volume will be set to the vo
 
 A BlockingVolume is simply an invisible, blocking, brush. A blocking volume blocks players and other actors, but it allows zero extent traces (projectiles, rockets, ...) to go through. Players will be able to walk on this invisible staircase, but you can shoot through it:
 
-![blockingstairs.jpg](../../assets/![blockingstairs.jpg](../../assets/blockingstairs.jpg))
+![blockingstairs.jpg](../../assets/blockingstairs.jpg)
 
 BlockingVolumes provide faster and better collision than Static Meshes: they add BSP to the map, but they won't cut any other BSP from the level and they can't create BSP-holes because they aren't rendered.To use a BlockingVolume around a Static Mesh, just add a BlockingVolume around it, and then in the properties of the Static Mesh, in Collision, set bBlockNonZeroExtendTraces to False: now the Static Mesh will stop bullets, but will let players walk through. Now, the players are blocked by the BlockingVolume instead.
 
-![blockingvolume.jpg](../../assets/![blockingvolume.jpg](../../assets/blockingvolume.jpg))
+![blockingvolume.jpg](../../assets/blockingvolume.jpg)
 
 #### bClampFluid
 

@@ -30,13 +30,13 @@ This document is mostly done but is not finalized!
 
 ## Introduction
 
-![hotrodontrailer.jpg](../assets/![hotrodontrailer.jpg](../assets/hotrodontrailer.jpg))
+![hotrodontrailer.jpg](../assets/hotrodontrailer.jpg)
 
 This tutorial is designed to show how to build a hotrod muscle car, a trailer on which to carry the car, and a vehicle to pull the trailer. This tutorial assumes you have read or at least glanced at the [KarmaCars](KarmaCars.md) tutorial. The code in this document requires the [code](KarmaCars.md#download) from [KarmaCars](KarmaCars.md) to work.The hotrod, in this case a 1970 Plymouth Barracuda, has a large blower that protrudes from the hood and vibrates with the speed of the engine, has flames that shoot out of the tail pipes, and has the sound of gears shifting. The Cuda improves upon **GenericCar** in many ways such as better tire squealing, front and rear tires that have different physics properties, and adding brake lights and reverse lights that are independent of each other.The trailer, given that it only has two wheels and you can not drive it, is not a **KVehicle** at all; it extends **KActor**. The trailer can be attached to a **KCar** and towed. When the towing car brakes, the trailer will also brake, its brake lights lighting up in the process. The ramps on the back of the trailer can be raised and lowered by triggering a lever on the back left near the ramps. Once the ramps are down, a car can be driven on or off the trailer.The vehicle that pulls the trailer in this tutorial is just a very heavy version on the Bulldog with a lot of power and a low top speed. The link between the trailer and the towing vehicle is built in Unrealed; it is not created dynamically.
 
 ## Cuda
 
-![hotrod.jpg](../assets/![hotrod.jpg](../assets/hotrod.jpg))
+![hotrod.jpg](../assets/hotrod.jpg)
 
 The Cuda (**Cuda.uc**) is based on **GenericCar** but is heavily modified. One of the most dramatic changes is that *Tick* was entirely rewritten and the Super is not called. This enabled the lights, the engine sounds, and the tire sounds to be handled in an improved manner. Another major change was adding different tire physics and suspension for the front and rear of the car. This allows for more control of how the car drives. The camera was also changed adding a chase cam and a 1st person driving cam which greatly improved usability and the driving experience.There is also **CudaEasyFun.uc** which is a subclass of **Cuda** but has it parameters tweaked to make it easier to turn, easier to stop, less likely to flip over, and it accelerates faster.
 
@@ -122,7 +122,7 @@ if(Gear == -1)
 
 ### Tail Pipe Flames
 
-![tailpipeflames.jpg](../assets/![tailpipeflames.jpg](../assets/tailpipeflames.jpg))
+![tailpipeflames.jpg](../assets/tailpipeflames.jpg)
 
 The tail pipe flames are fairly easy. Two particle systems of class **TailPipeFireClass** are spawned with offsets defined in **TailPipeFireOffset[]** and with rotational offsets defined in **TailPipeFireRotOffset[]**. I placed them to look as though they were coming out of the two rear muffler exhausts. These particle systems are then turned on or off depending if how and when the gas is pressed. The longer the gas is not pressed the longer the flames will burn when the gas is finally pressed. The rate at which flames recharge is set with **FireRebuildRate** and the max burn time is set with **MaxFireTime**. There are no flames in reverse. When the fire is on, the **TailPipeFireSound** is played. All this is done with the following code in *Tick*:*(**StopThreshold** is the speed under which the car is considered to be stopped. **PotentialFireTime** is used to store how long pipe flames can burn. EnablePipeFire?(bool FireOn) turns the pipe flames on or off. **Throttle** is 0 if the player is not pressing the gas and > 0 otherwise. **rearRight** is the right rear tire and its **AmbientSound** is set because actors can only have one ambient sound and we have already used the ambient sound for the Cuda.)*
 
@@ -320,9 +320,9 @@ simulated function bool CalcInsideView(out actor ViewActor,
 
 ## Trailer
 
-![trailer1.jpg](../assets/![trailer1.jpg](../assets/trailer1.jpg))
+![trailer1.jpg](../assets/trailer1.jpg)
 
-![trailer2.jpg](../assets/![trailer2.jpg](../assets/trailer2.jpg))The Trailer (**Trailer.uc**) is based on KActor. Given that you never drive the trailer it did not need to be a KVehicle.One of major issues with the trailer revolves around a bug in Karma in 2110 based builds. The contract between Karma Spheres and Karma Convex objects does not work. This bug has been corrected and new libraries are available for download on the udnftp site in UnEdit/Misc/Karma, starting t-stevet-030110\_. They should just be able to replace the ones in 2110. I chose not to force everyone to get these new libs so I made the parts of the trailer you drive on Karma Boxes which work fine.Another major issue with the trailer is that is does not work in net play.
+![trailer2.jpg](../assets/trailer2.jpg)The Trailer (**Trailer.uc**) is based on KActor. Given that you never drive the trailer it did not need to be a KVehicle.One of major issues with the trailer revolves around a bug in Karma in 2110 based builds. The contract between Karma Spheres and Karma Convex objects does not work. This bug has been corrected and new libraries are available for download on the udnftp site in UnEdit/Misc/Karma, starting t-stevet-030110\_. They should just be able to replace the ones in 2110. I chose not to force everyone to get these new libs so I made the parts of the trailer you drive on Karma Boxes which work fine.Another major issue with the trailer is that is does not work in net play.
 
 ### Tires and Suspension
 
@@ -404,7 +404,7 @@ The brakes use a **MinBrakeTorque** that might be greater than 0 (5 in this case
 
 ## Towing Vehicle
 
-![trailerpull.jpg](../assets/![trailerpull.jpg](../assets/trailerpull.jpg))
+![trailerpull.jpg](../assets/trailerpull.jpg)
 
 As mentioned before this a modified Bulldog that is much heavier and more powerful than a normal Bulldog. It is not much faster though. The suspension is also stronger to take into account not only the increased mass of the Bulldog but also the weight of the trailer and the car. Other than that everything is very straight forward.
 

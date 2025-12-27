@@ -47,11 +47,11 @@ This document is part of a series. [SpriteEmitter](https://udn.epicgames.com/Two
 
 Emitters are actors you can drop into your level that will spawn particles. Using a huge amount of properties, you can tell the emitter what kind of particles to make, how many, how the particles will move and more. Almost any effect you can think of is possible with particles, given the right parameters. You can make fire, rain, snow, waterfalls, smoke, fireworks, lightning and much more. This is the fun stuff!
 
-![demo1.jpg](../../assets/![demo1.jpg](../../assets/demo1.jpg))
+![demo1.jpg](../../assets/demo1.jpg)
 
-![demo2.gif](../../assets/![demo2.gif](../../assets/demo2.gif))
+![demo2.gif](../../assets/demo2.gif)
 
-![demo3.jpg](../../assets/![demo3.jpg](../../assets/demo3.jpg))
+![demo3.jpg](../../assets/demo3.jpg)
 
 From now on, the actor you add in the map that looks like 5 colored dots will be referred to as an "Emitter." A "ParticleEmitter" is the component piece of an Emitter. There are 4 kinds of ParticleEmitters: [SpriteEmitter](https://udn.epicgames.com/Two/SpriteEmitter), [SparkEmitter](../../Uncategorized/SparkEmitter.md), [MeshEmitter](../../Uncategorized/MeshEmitter.md) and [BeamEmitter](../../Uncategorized/BeamEmitter.md). A single Emitter can be made of many ParticleEmitters. Each ParticleEmitter has a doc that explains the fields that are specific to that class, but many of the properties are shared by all the emitter types.This document covers the theory about Emitters, what they are, the common properties, how to add them in your map, etc... There will be a lot of references from one section to another, since often to achieve certain effects, you must use fields that are widely separated. Other documents cover how you can make cool effects with it, example maps, and the properties specific to the individual ParticleEmitter types. To fully understand those documents, you will probably want to refer back to this document.
 
@@ -59,67 +59,67 @@ From now on, the actor you add in the map that looks like 5 colored dots will be
 
 To add a working Emitter in your map, first you have to select the Emitter in the Actor Class Browser, it's directly in the Actors list.
 
-![actorclasses.jpg](../../assets/![actorclasses.jpg](../../assets/actorclasses.jpg))
+![actorclasses.jpg](../../assets/actorclasses.jpg)
 
 Add the Emitter in your map at the place where you want the effect. In the editor, the Emitter looks like 5 colored dots.
 
-![5dots.jpg](../../assets/![5dots.jpg](../../assets/5dots.jpg))
+![5dots.jpg](../../assets/5dots.jpg)
 
 This Emitter will not do a lot on it's own, it's just a placeholder for one or more sub- emitters, called ParticleEmitters. This is slightly confusing. The `Emitter' itself is simply a convenient way to group one or more `ParticleEmitters' that do the actual work. Open the properties of the Emitter and expand the `Emitter' field. Click on Emitters (you can't expand this yet, because it's empty now) and press the Add button that appears. Now Emitter[0] (which is one of the aforementioned ParticleEmitters gets created in the list.
 
-![add1.jpg](../../assets/![add1.jpg](../../assets/add1.jpg))
+![add1.jpg](../../assets/add1.jpg)
 
-![add2.jpg](../../assets/![add2.jpg](../../assets/add2.jpg))But it's not done yet! Expand Emitters and expand [0]. There you have to choose between [SpriteEmitter](https://udn.epicgames.com/Two/SpriteEmitter), [SparkEmitter](../../Uncategorized/SparkEmitter.md), [MeshEmitter](../../Uncategorized/MeshEmitter.md) or [BeamEmitter](../../Uncategorized/BeamEmitter.md). When you made your choice, press the New button and there will be the new ParticleEmitter in the flavor of your choice, with all its properties.
+![add2.jpg](../../assets/add2.jpg)But it's not done yet! Expand Emitters and expand [0]. There you have to choose between [SpriteEmitter](https://udn.epicgames.com/Two/SpriteEmitter), [SparkEmitter](../../Uncategorized/SparkEmitter.md), [MeshEmitter](../../Uncategorized/MeshEmitter.md) or [BeamEmitter](../../Uncategorized/BeamEmitter.md). When you made your choice, press the New button and there will be the new ParticleEmitter in the flavor of your choice, with all its properties.
 
-![add3.jpg](../../assets/![add3.jpg](../../assets/add3.jpg))
+![add3.jpg](../../assets/add3.jpg)
 
-![add4.jpg](../../assets/![add4.jpg](../../assets/add4.jpg))
+![add4.jpg](../../assets/add4.jpg)
 
 ## ParticleEmitters
 
 As you've seen, you have to add a ParticleEmitter inside the properties of the Emitter. You can also add two or more ParticleEmitters in one Emitter. Each of these ParticleEmitters works completely independent, but they are inside the same actor. The ParticleEmitters are automatically stored in the MyLevel package, with names like "BeamEmitter0" or "MeshEmitter8". In the previous section of this tutorial, you had to do 2 things to add a new ParticleEmitter: first you had to make a new place for the ParticleEmitter by pressing the Add button, and then you had to fill that new place with an actual ParticleEmitter. To fill that space, you pressed the New button, so a new ParticleEmitter was created in the MyLevel package. You can also copy the name of an already existing ParticleEmitter in there.For example, this is an Emitter with 6 total emitter slots in it. 2 of the places are filled (one with a SparkEmitter and one with a MeshEmitter), and the other 4 are still empty.
 
-![particleemitters.jpg](../../assets/![particleemitters.jpg](../../assets/particleemitters.jpg))
+![particleemitters.jpg](../../assets/particleemitters.jpg)
 
 ### Add a new ParticleEmitter
 
 To add a new ParticleEmitter, for example a SpriteEmitter, press the button next to the [2], choose `SpriteEmitter' from the pull-down and press the `New' button. Now *SpriteEmitter'MyLevel.MyLevel.SpriteEmitter0'* should appear in the textfield, assuming this is the first SpriteEmitter in your map.
 
-![new.jpg](../../assets/![new.jpg](../../assets/new.jpg))
+![new.jpg](../../assets/new.jpg)
 
 ### Remove a ParticleEmitter
 
 To remove this SpriteEmitter, press the `Clear' button next to the [2]. Now place [2] will be empty again. Then it'll be the same again as it was before you added the [SpriteEmitter](https://udn.epicgames.com/Two/SpriteEmitter).
 
-![clear.jpg](../../assets/![clear.jpg](../../assets/clear.jpg))
+![clear.jpg](../../assets/clear.jpg)
 
 ### Remove an empty slot
 
 To delete a placeholder, for example place[5], press the Delete button next to the [5]. Now the Emitter will have 5 placeholders left.
 
-![delete.jpg](../../assets/![delete.jpg](../../assets/delete.jpg))
+![delete.jpg](../../assets/delete.jpg)
 
 ### Add or Insert
 
 To add place[5] again, press the Insert button at any of the other placeholders, or press the Add button next to Emitters. If you use the Insert button, the new place will be inserted before the one with the Insert button. This means if you pressed the Insert button of place [4], the new place will become place [4] and the one where you pressed the button becomes place [5].
 
-![insert.jpg](../../assets/![insert.jpg](../../assets/insert.jpg))
+![insert.jpg](../../assets/insert.jpg)
 
 ### Linked ParticleEmitters
 
 If you want to give place [2] exactly the same [SparkEmitter](../../Uncategorized/SparkEmitter.md) as the one in place [0], first select the name of the [SparkEmitter](../../Uncategorized/SparkEmitter.md) in [0] and copy it (press CTRL + c), then click on the word "None" in place [2] and paste the name of the [SparkEmitter](../../Uncategorized/SparkEmitter.md) there (Press CTRL + v). Now the ParticleEmitter of place [0] and place [2] share the same data, so if you change a property (for example the Velocity) in place [0], this property is also automatically changed in place [2].This is **not** useful for 2 ParticleEmitters that are in the same Emitter: two identical ParticleEmitters that emit their particles at the same [Location](#location), look like one ParticleEmitter. However, you can also copy the name in one Emitter, and paste it into another Emitter somewhere else in your map. This way, you can link ParticleEmitters that are used in more than one Emitter. For example, you can make 4 fires in a room, that use the same ParticleEmitter, so when you change the properties of one of the fires, the others change as well. This way you don't have to change the properties of the 4 fires separately.
 
-![copy.jpg](../../assets/![copy.jpg](../../assets/copy.jpg))
+![copy.jpg](../../assets/copy.jpg)
 
-![paste.jpg](../../assets/![paste.jpg](../../assets/paste.jpg))
+![paste.jpg](../../assets/paste.jpg)
 
 ### Clear all ParticleEmitters
 
 If you want to remove all the places from an Emitter, just press the Empty button next to Emitters, and it's all gone.
 
-![empty.jpg](../../assets/![empty.jpg](../../assets/empty.jpg))
+![empty.jpg](../../assets/empty.jpg)
 
-![empty2.jpg](../../assets/![empty2.jpg](../../assets/empty2.jpg))
+![empty2.jpg](../../assets/empty2.jpg)
 
 ## Emitter Properties
 
@@ -129,11 +129,11 @@ Here almost all of the properties in an emitter will be listed. The fields that 
 
 To make particles move, you can give them Velocity and/or Acceleration. The Acceleration makes them move faster and faster, and is very easy to set up: open the properties of the Emitter and in there open the properties of your emitter. In there, expand Acceleration.
 
-![acceleration2.jpg](../../assets/![acceleration2.jpg](../../assets/acceleration2.jpg))
+![acceleration2.jpg](../../assets/acceleration2.jpg)
 
 There you can enter the amount of Acceleration you want along the X, Y and Z axis. You can enter negative values too. If you assume that the upper part of the Top View is the North, here's what the settings do:
 
-![base.jpg](../../assets/![base.jpg](../../assets/base.jpg))
+![base.jpg](../../assets/base.jpg)
 
 If X > 0, the particle will go to the East
 If X < 0, it'll go to the West
@@ -143,47 +143,47 @@ If Z > 0, it'll go to the ceiling or sky
 If Z < 0, it'll go to the ground
 The total acceleration is the sum of these 3 components, so if X = 425, Y = -950 and Z = -950, the particles will go to the North-East and down, and will go to the North with more acceleration than to the East. However, if you rotated the Emitter actor with the Rotation tool, this won't be correct anymore, the CoordinateSystem will be rotated then. The X-axis will then be the direction of the arrow if you set bDirectional to True in advanced. Once you gave it some acceleration, you'll see the particles move.
 
-![acceleration.gif](../../assets/![acceleration.gif](../../assets/acceleration.gif))
+![acceleration.gif](../../assets/acceleration.gif)
 
 For more information on making particles move, you can skip down to [Velocity](#velocity).
 
 ### Collision
 
-![collision.jpg](../../assets/![collision.jpg](../../assets/collision.jpg))
+![collision.jpg](../../assets/collision.jpg)
 
 Collision can make the particles realistically bounce on walls, floors or ceilings. It looks for example like the animated gif:
 
-![collision.gif](../../assets/![collision.gif](../../assets/collision.gif))
+![collision.gif](../../assets/collision.gif)
 
 If you have no Collision, the particles will just disappear in the wall:
 
-![collision0.jpg](../../assets/![collision0.jpg](../../assets/collision0.jpg))
+![collision0.jpg](../../assets/collision0.jpg)
 
 But if you set UseCollision to True, the particles will bounce on the wall. If they hit the wall perpendicularly, they will bounce back to from where they came as on the first screenshot, in any other case they'll bounce like on the second screenshot. Note that collision doens't work if the coordinatesystem is PTCS\_Relative.
 
-![collision1.jpg](../../assets/![collision1.jpg](../../assets/collision1.jpg))
+![collision1.jpg](../../assets/collision1.jpg)
 
-![collision2.jpg](../../assets/![collision2.jpg](../../assets/collision2.jpg))
+![collision2.jpg](../../assets/collision2.jpg)
 
 #### Collision Planes
 
 It is possible to make invisible planes, which only particles will bounce on. The planes don't collide anything else, only the particles of that particular emitter. These planes are 1-sided, the particle can go through it at one side but will bounce against it if it goes the other direction. You have to make the planes in the CollisionPlanes setting. For each plane, you can enter W, X, Y and Z. W is the distance from the plane to the center of the editor grid, and X, Y and Z determinate the direction of the normal of that plane. You can also enter negative values, for example to get on the other side of the grid or to turn around the 1-sided direction. On the screenshots, the red dot represents the center of the editor grid, the grid itself is 256 units, and the red line shows the (invisible) plane. The small red triangles point into the direction the particles can go through the plane. On the first screenshot, W=256, X=0, Y=1 and Z=0. The particles can go to the south until they bounce against the wall, and when going north again, they'll bounce against the plane. On the second screenshot, W is changed to -256 and Y to -1, so the direction turns around, and the particles will bounce against the other side of the plane instead.
 
-![plane256_0_1_0.jpg](../../assets/![plane256_0_1_0.jpg](../../assets/plane256_0_1_0.jpg))
+![plane256_0_1_0.jpg](../../assets/plane256_0_1_0.jpg)
 
-![plane256_0_-1_0.jpg](../../assets/![plane256_0_-1_0.jpg](../../assets/plane256_0_-1_0.jpg))Make sure to turn on the collision planes lower down in the properties, with [UseCollisionPlanes](#usecollisionplanes).
+![plane256_0_-1_0.jpg](../../assets/plane256_0_-1_0.jpg)Make sure to turn on the collision planes lower down in the properties, with [UseCollisionPlanes](#usecollisionplanes).
 
 #### DampingFactorRange
 
 The DampingFactor changes the velocity of the Particle every time it bounces on the wall. For example, in the real world if you let a tennis-ball fall on the ground, it bounces less high every time it hits the ground again. On the following screenshots, there is an acceleration Z = -950, and a velocity of X = 500. The Velocity gets multiplied by the Damping Factor, to determine how high the particles will bounce back..On every screenshot, the Z value of the DampingFactor is modified to alter the `bounciness' of the particles. It's the Z value that's used, because in this case the particles are bouncing on the Z-axis, to the floor. If the DampingFactor is `1' they can keep and keep bouncing as long as they live, as shown on the first screenshot. If you make it lower than 1, for example 0.9, they'll bounce less high every time they hit the ground, as in the second screenshot.
 
-![collision3.jpg](../../assets/![collision3.jpg](../../assets/collision3.jpg))
+![collision3.jpg](../../assets/collision3.jpg)
 
-![collision4.jpg](../../assets/![collision4.jpg](../../assets/collision4.jpg))If you make the DampingFactor higher than 1, for example 1.5, the particles will bounce higher and higher (1st screenshot). If you give a different Min and Max value, every particle will bounce randomly something between the Min and Max value (2nd screenshot).
+![collision4.jpg](../../assets/collision4.jpg)If you make the DampingFactor higher than 1, for example 1.5, the particles will bounce higher and higher (1st screenshot). If you give a different Min and Max value, every particle will bounce randomly something between the Min and Max value (2nd screenshot).
 
-![collision5.jpg](../../assets/![collision5.jpg](../../assets/collision5.jpg))
+![collision5.jpg](../../assets/collision5.jpg)
 
-![collision6.jpg](../../assets/![collision6.jpg](../../assets/collision6.jpg))
+![collision6.jpg](../../assets/collision6.jpg)
 
 #### ExtentMultiplier
 
@@ -223,7 +223,7 @@ This is a Boolean toggle that tells Unreal whether or not to use the [SpawnedVel
 
 ### Color
 
-![color.jpg](../../assets/![color.jpg](../../assets/color.jpg))
+![color.jpg](../../assets/color.jpg)
 
 #### ColorMultiplierRange
 
@@ -233,23 +233,23 @@ The Color Multiplier Range is a multiplier that is applied to each particle indi
 
 This is a time-based scale that can be applied to the particles. A scale changes a property of the particle during its LifeTime, in this case the color. To use a ColorScale, first set UseColorScale to True, and then add a new ColorScale: click on ColorScale, press the Add button and a new Color and RelativeTime will appear. To choose a color, use the "..." button to get the Windows Color Picker, use the "Pick" button to get a dropper tool, or enter the RGB value manually.
 
-![color2.jpg](../../assets/![color2.jpg](../../assets/color2.jpg))
+![color2.jpg](../../assets/color2.jpg)
 
-![color3.jpg](../../assets/![color3.jpg](../../assets/color3.jpg))First choose a color, for example red. Then you need to enter a RelativeTime. This time depends on the LifeTime of the particles (you can set this in Time), and on the ColorScaleRepetitions value. The RelativeTime does NOT depend on the MaxParticles, so if you have too few MaxParticles, it might be the LifeTime is too long. Then you'll have to make more MaxParticles, or reduce the LifeTime. If ColorScaleRepeats is at it's default value of 0, and RelativeTime = 1, the particles will be their own texture color (in this case blue) at the start of their Life, and will have finished fading to red at the end of their life.
+![color3.jpg](../../assets/color3.jpg)First choose a color, for example red. Then you need to enter a RelativeTime. This time depends on the LifeTime of the particles (you can set this in Time), and on the ColorScaleRepetitions value. The RelativeTime does NOT depend on the MaxParticles, so if you have too few MaxParticles, it might be the LifeTime is too long. Then you'll have to make more MaxParticles, or reduce the LifeTime. If ColorScaleRepeats is at it's default value of 0, and RelativeTime = 1, the particles will be their own texture color (in this case blue) at the start of their Life, and will have finished fading to red at the end of their life.
 
-![color4.jpg](../../assets/![color4.jpg](../../assets/color4.jpg))
+![color4.jpg](../../assets/color4.jpg)
 
 If RelativeTime = 0.5, they will have Faded to red in the half of their LifeTime, and then get their original color back (first screen). If RelativeTime = 1.5, the particles will never get read (they die already at "1"), but you will see the fading process already (second screen)
 
-![color5.jpg](../../assets/![color5.jpg](../../assets/color5.jpg))
+![color5.jpg](../../assets/color5.jpg)
 
-![color7.jpg](../../assets/![color7.jpg](../../assets/color7.jpg))You can also set more than one Color by adding more ColorScales. Then you can set as many Colors and RelativeTimes as there are ColorScales.
+![color7.jpg](../../assets/color7.jpg)You can also set more than one Color by adding more ColorScales. Then you can set as many Colors and RelativeTimes as there are ColorScales.
 
-![color8.jpg](../../assets/![color8.jpg](../../assets/color8.jpg))
+![color8.jpg](../../assets/color8.jpg)
 
-![color9.jpg](../../assets/![color9.jpg](../../assets/color9.jpg))If you want the particle to be red at the beginning of it's life already, set the RelativeTime of the red color to 0.
+![color9.jpg](../../assets/color9.jpg)If you want the particle to be red at the beginning of it's life already, set the RelativeTime of the red color to 0.
 
-![color10.jpg](../../assets/![color10.jpg](../../assets/color10.jpg))
+![color10.jpg](../../assets/color10.jpg)
 
 Remark: the color the particle will get depends on the Color you entered in ColorScale, but also on the color of the texture from the particle itself. On a black particle, the ColorScale will not be visible at all, on a white texture it works at it's best. In the examples above, the texture was blue.
 
@@ -258,7 +258,7 @@ Remark: the color the particle will get depends on the Color you entered in Colo
 This number indicates how many times to use the color scale over the life of the particle.
 If you enter 1 there will be 2 ColorScales over the particle lifetime. In this image, the RelativeTime is also reduced so if RelativeTime is 1 and ColorScaleRepeats is 1, the particles will have become red in the half of their LifeTime AND at the end of their LifeTime.
 
-![color6.jpg](../../assets/![color6.jpg](../../assets/color6.jpg))
+![color6.jpg](../../assets/color6.jpg)
 
 #### Opacity
 
@@ -270,7 +270,7 @@ This is a Boolean toggle that indicates whether or not to use the color scale fe
 
 ### Fading
 
-![fading.jpg](../../assets/![fading.jpg](../../assets/fading.jpg))
+![fading.jpg](../../assets/fading.jpg)
 
 With these fields you can make your particles fade in or fade out. You can also make only a few of the colorchannels to Fade, so for example the red and green parts of the texture will be invisible while the blue parts are always visible.
 
@@ -282,7 +282,7 @@ This enables fading in of particles. See below for the fields that control the f
 
 This is a number, given in seconds, that determines how long the particle will take to fade in, beginning from the moment it is spawned.On the screenshot, the particles have a LifeTime of 5 and a FadeInEndTime of 5, so they are 100% visible at the moment they die:
 
-![fadein.jpg](../../assets/![fadein.jpg](../../assets/fadein.jpg))
+![fadein.jpg](../../assets/fadein.jpg)
 
 #### FadeInFactor
 
@@ -295,9 +295,9 @@ These values indicate the levels of fading that the ParticleEmitter will use.
 
 If the values are 1, they Fade normally. If you make for example X = 0, the red channel will get changed 0%, so while the other colors are invisible (this is at the start of a FadeIn, or the end of a FadeOut), the red will still be visible (left part of the first screen). Or when Y = 0, the green will still be visible (right part of the first screen). If X and Y are 0, both will be visible, it looks somewhat yellowish here (left part of the second screen). If X, Y and Z are 5, the whole texture will get super-invisible so it Fades out much faster (right part of the second screen). If X, Y and Z would all be 0, the texture wouldn't get invisible at all.
 
-![fade3.jpg](../../assets/![fade3.jpg](../../assets/fade3.jpg))
+![fade3.jpg](../../assets/fade3.jpg)
 
-![fade4.jpg](../../assets/![fade4.jpg](../../assets/fade4.jpg))
+![fade4.jpg](../../assets/fade4.jpg)
 
 #### FadeOut
 
@@ -318,43 +318,43 @@ See [above](#fadeinfactor) for a complete description of these values.
 
 The time the particles will start fading out. If this is 0 they will begin fading when they're born. They're completely Faded out at the moment they die. On the screenshot, FadeOutStartTime is 1. This value is not relative, it's in seconds.
 
-![fadeout.jpg](../../assets/![fadeout.jpg](../../assets/fadeout.jpg))
+![fadeout.jpg](../../assets/fadeout.jpg)
 
 #### Fading in and fading out
 
 If you use a FadeIn AND a FadeOut, the effect will look like the first screen if FadeInEndTime is smaller than FadeOutStartTime (here 1 and 4), and it'll look like the second screen if FadeInEndTime is larger than FadeOutStartTime (here 4 and 1)
 
-![fadeinout1.jpg](../../assets/![fadeinout1.jpg](../../assets/fadeinout1.jpg))
+![fadeinout1.jpg](../../assets/fadeinout1.jpg)
 
-![fadeinout2.jpg](../../assets/![fadeinout2.jpg](../../assets/fadeinout2.jpg))
+![fadeinout2.jpg](../../assets/fadeinout2.jpg)
 
 ### Force
 
-![force.jpg](../../assets/![force.jpg](../../assets/force.jpg))
+![force.jpg](../../assets/force.jpg)
 
 With this, it's possible to make the particles get affected by other objects that are flying around. For example to shoot a projectile through smoke and have the smoke smoothly and realistically dissipate. To make this work, you have to set UseActorForces to True, and the projectile or whatever other object going through it must have Forces enabled. I tried this with a Flappy (an animal) running through some particles. So in the properties of the Flappy, the projectile or whatever else go to Force, and set ForceType to FT\_DragAlong. Also set a ForceScale (how big the Force is) and a ForceRadius (the radius of the Force).
 
-![flappyforce.jpg](../../assets/![flappyforce.jpg](../../assets/flappyforce.jpg))
+![flappyforce.jpg](../../assets/flappyforce.jpg)
 
 If now the Flappy runs through the particles (because it fears my grenade launcher), some of them will fly away. Of course you can make this effect looking much better with nice smoke and projectiles.
 
-![flappy1.jpg](../../assets/![flappy1.jpg](../../assets/flappy1.jpg))
+![flappy1.jpg](../../assets/flappy1.jpg)
 
-![flappy2.jpg](../../assets/![flappy2.jpg](../../assets/flappy2.jpg))
+![flappy2.jpg](../../assets/flappy2.jpg)
 
 ### General
 
-![general.jpg](../../assets/![general.jpg](../../assets/general.jpg))
+![general.jpg](../../assets/general.jpg)
 
 #### CoordinateSystem
 
 The CoordinateSystem determines what the X, Y and Z values for the [Location](#location) of the particles mean. If you set the CoordinateSystem to PTCS\_Relative, the (X,Y,Z) = (0,0,0) position for the particles is the position of the Emitter actor in the editor, so the particles will get spawned there:
 
-![coorrelative.jpg](../../assets/![coorrelative.jpg](../../assets/coorrelative.jpg))
+![coorrelative.jpg](../../assets/coorrelative.jpg)
 
 But if you set the CoordinateSystem to PTCS\_Absolute, the CoordinateSystem of the world in the editor is used, and there the (0,0,0) [Location](#location) is the exact center of the world (there the lines of the grid are painted a little darker than the others in the 2D views). So the particles will start in the center of the map (where the thicker gridlines in the 2D view cut each other), no matter where the Emitter actor is: note the emitter actor on the right of the screenshot:
 
-![coorabsolute.jpg](../../assets/![coorabsolute.jpg](../../assets/coorabsolute.jpg))
+![coorabsolute.jpg](../../assets/coorabsolute.jpg)
 
 The default CoordinateSystem PTCS\_Independent does the same as PTCS\_Relative, but after they are spawned the particles become independent and use the absolute coordinatesystem. The difference between PTCS\_Relative and PTCS\_Independent becomes very important when your ParticleEmitters are moving.All the three CoordinateSystems will rotate if you rotate the Emitter actor with the Rotation Tool. If you set in the properties of the Emitter actor in Advanced bDirectional to True, an arrow will be displayed in the editor to help you to rotate it better.In the section [Location](#location) is explained how you can make the particles spawn at another [Location](#location), again relative or absolute to the Emitter actor depending on the CoordinateSystem you use.
 
@@ -366,7 +366,7 @@ With EffectAxis, you can rotate the CoordinateSystem that determinates the spawn
 
 The MaxParticles setting sets the maximum number of particles that may be on screen for this ParticleEmitter. If the maximum number is reached, the oldest particle gets killed, so a new one can get spawned. For example, if you set this number to 4, there will be 4 particles on screen once the warmuptime is over. On the screenshot, the particles are moving to the left, and the most left one gets destroyed while a new one appears on the right:
 
-![maxparticles.jpg](../../assets/![maxparticles.jpg](../../assets/maxparticles.jpg))
+![maxparticles.jpg](../../assets/maxparticles.jpg)
 
 This setting is quite important, especially if you want to reduce the amount of particles on screen to get more performance. Another way to reduce the number of particles is by lowering their LifeTime. Note that if the max number of particles is reached before existing particles finish out their lifetimes, they will `pop' out of the world, which can be very distracting. Make good use of the [fade out](#fadeout) to avoid this.
 
@@ -376,7 +376,7 @@ If ResetAfterChange is True, the ParticleEmitter will restart from zero again af
 
 ### Local
 
-![local.jpg](../../assets/![local.jpg](../../assets/local.jpg))
+![local.jpg](../../assets/local.jpg)
 
 #### AutoDestroy, AutoReset
 
@@ -404,7 +404,7 @@ If RespawnDeadParticles is True, the InitialParticles (read [Spawning](#spawning
 
 ### Location
 
-![location.jpg](../../assets/![location.jpg](../../assets/location.jpg))
+![location.jpg](../../assets/location.jpg)
 
 With these settings you can make the particles start somewhere other than at the Emitter itself. There are several options here, but many of them are ignored depending on other settings. Read on for more information.
 
@@ -412,7 +412,7 @@ With these settings you can make the particles start somewhere other than at the
 
 In AddLocationFromOtherEmitter, you can enter the number of another ParticleEmitter that is inside the same Emitter actor. If you leave it at -1, nothing will happen, but if you set it for example to 1, the particles will not be spawned where they normally should spawn, but at the [Location](#location) of one of the particles of ParticleEmitter[1]. They will not keep following that particle, they only get spawned there and get independent after that. You can for example make a trace of particles behind another moving particle. This is done in the DEMO-Particles example map:
 
-![locationfromotheremitter.jpg](../../assets/![locationfromotheremitter.jpg](../../assets/locationfromotheremitter.jpg))
+![locationfromotheremitter.jpg](../../assets/locationfromotheremitter.jpg)
 
 The blue sprites never move, but when they die they respawn at one of the bouncing balls, so together all the blue sprites form the shape of the traces the balls follow.
 
@@ -420,13 +420,13 @@ The blue sprites never move, but when they die they respawn at one of the bounci
 
 This field is only used if the [StartLocationShape](#startlocationshape) is set to `PTLS\_Sphere.'To give the particles a random StartLocation, you can use StartLocationRange or SphereRadiusRange. First you have to choose if you want this random StartLocation to be inside a sphere or a box: set StartLocationShape to PTLS\_Sphere for a sphere, or PTLS\_Box for a box.If you use PTLS\_Sphere, you have to set a minimum and maximum radius in SphereRadiusRange. The particles will then start somewhere between these 2 radii.
 
-![sphere.jpg](../../assets/![sphere.jpg](../../assets/sphere.jpg))
+![sphere.jpg](../../assets/sphere.jpg)
 
 #### StartLocationOffset
 
 The easiest setting is StartLocationOffset: here you can set exactly where in the coordinate system the particles have to start. If you leave it at X=Y=Z=0, the particles will always start in the origin of the coordinatesystem, for PTCS\_Independent or PTCS\_Relative this is the Emitter itself, and with PTCS\_Absolute this is the (0,0,0) position in the grid from the editor. For example if you set X=100, Y=100 and Z=100, the particles will start 100 units to the east, 100 units to the south and 100 units above the Emitter actor
 
-![location1.jpg](../../assets/![location1.jpg](../../assets/location1.jpg))
+![location1.jpg](../../assets/location1.jpg)
 
 #### StartLocationPolarRange
 
@@ -436,7 +436,7 @@ This field is only used if the [StartLocationShape](#startlocationshape) is set 
 
 This field is only used if the [StartLocationShape](#startlocationshape) is set to `PTLS\_Box.'If you use PTLS\_Box, you can set 6 values to determinate the 6 sides of the box: X(Min), X(Max), Y(Min), Y(Max), Z(Min) and Z(Max). For example if you set X, Y and Z(Min) to -150 and X, Y and Z(Max) to +150, all the particles will start inside a 300\*300\*300 box.
 
-![box.jpg](../../assets/![box.jpg](../../assets/box.jpg))
+![box.jpg](../../assets/box.jpg)
 
 #### StartLocationShape
 
@@ -455,7 +455,7 @@ This setting does nothing at the moment. However, if the mass of a particle is 0
 
 ### MeshSpawning
 
-![meshspawning.jpg](../../assets/![meshspawning.jpg](../../assets/meshspawning.jpg))
+![meshspawning.jpg](../../assets/meshspawning.jpg)
 
 Mesh Spawning uses the vertices of a static mesh to calculate the spawn location, and optionally the velocity and the color of the particles in this emitter. The static mesh does not have to exist in the world, nor do the faces of the spawning static mesh matter. This means that you can make arbitrary shapes for static meshes in a modeling program to make a framework for particle spawning. You can also use existing static meshes in the world and attach effects to them to produce results like a bush on fire.
 
@@ -509,7 +509,7 @@ This scales the velocity from the mesh normal. For example if you have a mesh sp
 
 ### Object
 
-![object.jpg](../../assets/![object.jpg](../../assets/object.jpg))
+![object.jpg](../../assets/object.jpg)
 
 This are the same Object settings as any normal actor has (the Emitter itself has it too), but this time it's for the ParticleEmitter. The Group settings are missing here, and you can't change any of the values, you can just check the Class and Name of the ParticleEmitter here.
 
@@ -539,7 +539,7 @@ This causes the particles to write to the Z-buffer. ("In a graphics card, this s
 
 ### Revolution
 
-![revolution.jpg](../../assets/![revolution.jpg](../../assets/revolution.jpg))
+![revolution.jpg](../../assets/revolution.jpg)
 
 While `Rotation' rotates individual particles about their center, `Revolution'rotates particles about a fixed point in space. Using Revolution will cause the particles to change position.
 
@@ -569,7 +569,7 @@ This is a Boolean toggle to enable the Revolution Scale.
 
 ### Rotation
 
-![rotation.jpg](../../assets/![rotation.jpg](../../assets/rotation.jpg))
+![rotation.jpg](../../assets/rotation.jpg)
 
 These settings will allow your individual particles to spin during their lifetimes. Rotating particles is one of the biggest tools at your disposal for making particle systems that look convincing, as it helps to break up visual repetition a great deal. You'll be spending a lot of time with the following fields.
 
@@ -581,7 +581,7 @@ This is a Boolean toggle that tells Unreal whether or not to use the next field,
 
 This lets you set the damping factor for the Spinning particles, which makes the particles Spin slower or faster every time they bounce. For example if you make the Z(Min) and Z(Max) values of the RotationDampingFactorRange `0,' the Spin will stop after the first bounce on the floor already (because the SpinsPerSecondRange gets multiplied by 0). Note on the screenshot all the textures have the same Rotation after the bounce:
 
-![spin3.jpg](../../assets/![spin3.jpg](../../assets/spin3.jpg))
+![spin3.jpg](../../assets/spin3.jpg)
 
 #### RotationNormal
 
@@ -595,13 +595,13 @@ Here you can set the amount that the coordinatesystem has to Pitch, Yaw and Roll
 
 This field has X, Y and Z values, but only the X value is actually used. If you set the X of SpinCCWorCW to 0, all the particles will rotate CounterClockWise. If you set it to 1, all the particles will rotate ClockWise. If you set it to something between 0 and 1, for example 0.7, there's 70% chance a particle will rotate ClockWise and 30% chance it'll rotate CounterClockWise. If SpinsPerSecondRange is 0.5 and SpinCCWorCW is 1, it'll look somewhat like the first animated gif. If you set SpinCCWorCW to 0.5, it'll do for example like on the second animated gif (on the second screenshot, some particles may suddenly switch fro CCW to CW, but that's because otherwise the gif would require TOO much frames. This never happens in the editor.)
 
-![spin1.gif](../../assets/![spin1.gif](../../assets/spin1.gif))
+![spin1.gif](../../assets/spin1.gif)
 
-![spin2.gif](../../assets/![spin2.gif](../../assets/spin2.gif))
+![spin2.gif](../../assets/spin2.gif)
 
 ### Size
 
-![size.jpg](../../assets/![size.jpg](../../assets/size.jpg))
+![size.jpg](../../assets/size.jpg)
 
 Here you can set your particle sizes. It's possible to set them in a fairly random manner, or to control the size more with SizeScale settings over the lifetime of the particle.
 
@@ -617,7 +617,7 @@ This value will control what size a particle will appear at. The figure is given
 
 This value tells Unreal what point in the particle lifetime to apply the RelativeSize at. Note that this is to given in a value from zero to one, representing 0-100% of the particle's lifetime.Below is an example of the RelativeSize and RelativeTime over two SizeScales.
 
-![size5.jpg](../../assets/![size5.jpg](../../assets/size5.jpg))
+![size5.jpg](../../assets/size5.jpg)
 
 #### SizeScaleRepeats
 
@@ -627,11 +627,11 @@ This will make your size cale repeat the number of times indicated. Pulsing effe
 
 The StartSizeRange determines the size the particles will get when spawned. The default value is 100. The first screenshot shows X(Min) = X(Max) = 50; the second X(Min) = X(Max) = 150.
 
-![size1.jpg](../../assets/![size1.jpg](../../assets/size1.jpg))
+![size1.jpg](../../assets/size1.jpg)
 
-![size2.jpg](../../assets/![size2.jpg](../../assets/size2.jpg))If you enter a different X(Min) and X(Max) value, the particles will get a random size.
+![size2.jpg](../../assets/size2.jpg)If you enter a different X(Min) and X(Max) value, the particles will get a random size.
 
-![size3.jpg](../../assets/![size3.jpg](../../assets/size3.jpg))
+![size3.jpg](../../assets/size3.jpg)
 
 #### UniformSize
 
@@ -641,7 +641,7 @@ If Uniform Size is set to True, only the X is used for both U and V (or X, Y and
 
 If you set UseSizeScale to True AND UseRegularSizeScale to True, the Particles will always shrink, and you don't have to add any SizeScales.
 
-![size4.jpg](../../assets/![size4.jpg](../../assets/size4.jpg))
+![size4.jpg](../../assets/size4.jpg)
 
 If you want to use the SizeScales, you have to set UseRegularSizeScale to False.
 
@@ -651,7 +651,7 @@ This must be set to `True' to use the [SizeScale](#sizescale) field. Also, don't
 
 ### SkeletalMesh
 
-![skeletalmesh.jpg](../../assets/![skeletalmesh.jpg](../../assets/skeletalmesh.jpg))
+![skeletalmesh.jpg](../../assets/skeletalmesh.jpg)
 
 The SkeletalMesh field allows you to attach particles to the bones of a skeletal mesh. The mesh is used to determine the spawn location of the particles and can also be used to determine the movement the particles. For a thorough explanation, see the [ParticleSystems](ParticleSystems.md#skeletal-mesh) document.
 
@@ -675,7 +675,7 @@ This is used to set the scale of the spawning mesh, which is slightly different 
 
 ### Sound
 
-![sound.jpg](../../assets/![sound.jpg](../../assets/sound.jpg))
+![sound.jpg](../../assets/sound.jpg)
 
 #### CollisionSound
 
@@ -715,7 +715,7 @@ SpawningSoundProbability is a range for the probability that a sound will play o
 
 ### Spawning
 
-![spawning.jpg](../../assets/![spawning.jpg](../../assets/spawning.jpg))
+![spawning.jpg](../../assets/spawning.jpg)
 
 #### AutomaticInitialSpawning
 
@@ -729,90 +729,90 @@ InitialParticlesPerSecond is the number of particles per second that gets spawne
 
 If you set AutomaticInitialSpawning to False, you can enter the number of ParticlesPerSecond manually. After the [warmup](#warmup) period ends, the ParticlesPerSecond value gets used.For example, if MaxParticles = 20, InitialParticlesPerSecond = 100 and ParticlesPerSecond = 5, there will first be spawned 20 particles very quickly: in 1/5th of a second (because you had set it to 100 particles per second, and only 20 have to be spawned). Then, once the 20 particles are there, only 5 particles get spawned every second, but also the dead particles get respawned, unless you set RespawnDeadParticles to False in Local. In that case, at the beginning, it'll look like the first screenshot, but once the warmup is gone, it looks like the second screen. (the particles are moving from left to right).
 
-![initial1.jpg](../../assets/![initial1.jpg](../../assets/initial1.jpg))
+![initial1.jpg](../../assets/initial1.jpg)
 
-![initial2.jpg](../../assets/![initial2.jpg](../../assets/initial2.jpg))If ParticlesPerSecond = 0, all the InitialParticles will be respawned again after they die if the setting RespawnDeadParticles in [Local](#local) is `True.' If it's `False,' there will be no more particles spawned after all the InitialParticles are spawned (this is, until MaxParticles is reached), so the emitter will be effectively dead.
+![initial2.jpg](../../assets/initial2.jpg)If ParticlesPerSecond = 0, all the InitialParticles will be respawned again after they die if the setting RespawnDeadParticles in [Local](#local) is `True.' If it's `False,' there will be no more particles spawned after all the InitialParticles are spawned (this is, until MaxParticles is reached), so the emitter will be effectively dead.
 
 ### Texture
 
 A single texture can be subdivided into equally sized parts, vertically and horizontally. Many of the options in this section deal with managing this subdivision of textures. You can make the particles randomly pick one of the textures, or make one particle change from one Subdivision to another during it's LifeTime. Your texture will need to be created with this future subdivision in mind, of course. For example, this is a texture that can be divided into 3 \* 3 = 9 subdivisions:
 
-![shapes.jpg](../../assets/![shapes.jpg](../../assets/shapes.jpg))
+![shapes.jpg](../../assets/shapes.jpg)
 
 #### BlendBetweenSubdivisions
 
 This setting will turn on smooth transitions between the texture divisions, much like a crossfade.
 
-![subdivblend.jpg](../../assets/![subdivblend.jpg](../../assets/subdivblend.jpg))
+![subdivblend.jpg](../../assets/subdivblend.jpg)
 
 #### DrawStyle
 
 Using the DrawStyle property you can change the way the texture is drawn in the map. The DrawStyle for Particles is somewhat the same as the DrawStyle you find under Display of normal actors, but has some added options, and some others removed.
 
-![drawstyle.jpg](../../assets/![drawstyle.jpg](../../assets/drawstyle.jpg))
+![drawstyle.jpg](../../assets/drawstyle.jpg)
 
 For the example screenshots, the blue texture does not have an alphachannel. The second multicolored texture has an alphachannel that has 16 dark dots, like this:
 
-![alphatexture1.jpg](../../assets/![alphatexture1.jpg](../../assets/alphatexture1.jpg))
+![alphatexture1.jpg](../../assets/alphatexture1.jpg)
 
 PTDS\_Regular makes the texture opaque, so it's a non-transparent square.
 
-![regular2.jpg](../../assets/![regular2.jpg](../../assets/regular2.jpg))
+![regular2.jpg](../../assets/regular2.jpg)
 
-![regular.jpg](../../assets/![regular.jpg](../../assets/regular.jpg))
+![regular.jpg](../../assets/regular.jpg)
 
-![regular3.jpg](../../assets/![regular3.jpg](../../assets/regular3.jpg))
+![regular3.jpg](../../assets/regular3.jpg)
 
 PTDS\_AlphaBlend makes the darker parts of the A-channel of the RGBA texture more transparent than the bright parts. Black becomes 100% transparent (invisible) and white becomes 100% opaque. Grey becomes semi-transparent. This effect is not very visible on bright textures.
 
-![alphablend2.jpg](../../assets/![alphablend2.jpg](../../assets/alphablend2.jpg))
+![alphablend2.jpg](../../assets/alphablend2.jpg)
 
-![alphablend.jpg](../../assets/![alphablend.jpg](../../assets/alphablend.jpg))PTDS\_Modulated makes the texture some sort of inverse translucent: it makes the brightest colors of the texture more transparent than the darkest colors, so black becomes opaque, white becomes 100% transparent (invisible). Grey, red, blue, etc... become semi-transparent.
+![alphablend.jpg](../../assets/alphablend.jpg)PTDS\_Modulated makes the texture some sort of inverse translucent: it makes the brightest colors of the texture more transparent than the darkest colors, so black becomes opaque, white becomes 100% transparent (invisible). Grey, red, blue, etc... become semi-transparent.
 
-![modulated2.jpg](../../assets/![modulated2.jpg](../../assets/modulated2.jpg))
+![modulated2.jpg](../../assets/modulated2.jpg)
 
-![modulated.jpg](../../assets/![modulated.jpg](../../assets/modulated.jpg))PTDS\_Translucent makes the darkest colors of the texture more transparent than the brightest colors, so white become opaque, while black become 100% transparent (invisible). Grey, red, blue, etc... become semi-transparent.
+![modulated.jpg](../../assets/modulated.jpg)PTDS\_Translucent makes the darkest colors of the texture more transparent than the brightest colors, so white become opaque, while black become 100% transparent (invisible). Grey, red, blue, etc... become semi-transparent.
 
-![translucent2.jpg](../../assets/![translucent2.jpg](../../assets/translucent2.jpg))
+![translucent2.jpg](../../assets/translucent2.jpg)
 
-![translucent.jpg](../../assets/![translucent.jpg](../../assets/translucent.jpg))PTDS\_AlphaModulate makes the actual RGB texture brighter on places where the alphachannel is darker. It looks somewhat the opposite of AlphaBlend. This effect isn't good to see on very bright textures.
+![translucent.jpg](../../assets/translucent.jpg)PTDS\_AlphaModulate makes the actual RGB texture brighter on places where the alphachannel is darker. It looks somewhat the opposite of AlphaBlend. This effect isn't good to see on very bright textures.
 
-![alphamodulate2.jpg](../../assets/![alphamodulate2.jpg](../../assets/alphamodulate2.jpg))
+![alphamodulate2.jpg](../../assets/alphamodulate2.jpg)
 
-![alphamodulate.jpg](../../assets/![alphamodulate.jpg](../../assets/alphamodulate.jpg))PTDS\_Darken makes the colors of the texture negative and translucent.
+![alphamodulate.jpg](../../assets/alphamodulate.jpg)PTDS\_Darken makes the colors of the texture negative and translucent.
 
-![darken2.jpg](../../assets/![darken2.jpg](../../assets/darken2.jpg))
+![darken2.jpg](../../assets/darken2.jpg)
 
-![darken.jpg](../../assets/![darken.jpg](../../assets/darken.jpg))PTDS\_Brighten makes the texture to brighten the background, so the texture becomes translucent and brighter than it's original version.
+![darken.jpg](../../assets/darken.jpg)PTDS\_Brighten makes the texture to brighten the background, so the texture becomes translucent and brighter than it's original version.
 
-![brighten2.jpg](../../assets/![brighten2.jpg](../../assets/brighten2.jpg))
+![brighten2.jpg](../../assets/brighten2.jpg)
 
-![brighten.jpg](../../assets/![brighten.jpg](../../assets/brighten.jpg))As you can see, the alphachannel of an RGBA8 texture is only used for the DrawStyles AlphaBlend and AlphaModulate.
+![brighten.jpg](../../assets/brighten.jpg)As you can see, the alphachannel of an RGBA8 texture is only used for the DrawStyles AlphaBlend and AlphaModulate.
 
 #### SubdivisionEnd, SubdividionStart
 
 You'll set how many subdivisions you want in a texture in a later field. For now though, we'll use an example of a texture that we want to split into nine subdivisions.Use the SubdivisionEnd and SubdivisionStart values if you want only a few Subdivisions of the texture to be used. Subdivision 0 is the Subdivision in the upper left corner of the texture, Subdivision 1 the one below that, and the last one is in the lower right corner of the texture. This picture shows the numbering:
 
-![subdiv.jpg](../../assets/![subdiv.jpg](../../assets/subdiv.jpg))
+![subdiv.jpg](../../assets/subdiv.jpg)
 
 #### SubdivisionScale
 
 Subdivisions are very useful, in that you can change from one `image' in your particle systems to another, while staying within the same actual texture. Normally, each subdivision will exist for the same amount of time before transitioning to another.If you want to make some of your subdivisions last longer than others, you can use the SubDivisionScale feature. We'll use the above image as an example.First select SubDivisionScale in the properties and press the add button there 3 times, so there are 3 SubDivisionScales. This will make 4 of the 9 Subdivisions be active. If you want the 9 Subdivisions to be used, you have to make 8 SubDivisionScales. If you make less than 8 SubDivisionScales, the last Subdivisions will never appear. There's also nothing fatally wrong with making too many SubDivisionScales, the extra ones will just be ignored.
 
-![subdivscaleadd.jpg](../../assets/![subdivscaleadd.jpg](../../assets/subdivscaleadd.jpg))
+![subdivscaleadd.jpg](../../assets/subdivscaleadd.jpg)
 
-![subdivscale3.jpg](../../assets/![subdivscale3.jpg](../../assets/subdivscale3.jpg))The SubDivisionScale looks pretty straightforward: it's a single number that is relative to the LifeTime of the particles, so a SubDivisionScale of 1.0 will last for the entire particle LifeTime.Each SubDivisionScale represents a certain point in the LifeTime of the particle. For example if the LifeTimeRange is 4 seconds, a SubDivisionScale of 0.25 is the end of the first second of the LifeTime. A successive SubDivisionScale should always be larger than the previous one, otherwise you're going back in time and it will be ignored.For example, if you make Subdivision [0] = 0.1, [1] = 0.3 and [2] = 0.6, and LifeTimeRange is 4 seconds:
+![subdivscale3.jpg](../../assets/subdivscale3.jpg)The SubDivisionScale looks pretty straightforward: it's a single number that is relative to the LifeTime of the particles, so a SubDivisionScale of 1.0 will last for the entire particle LifeTime.Each SubDivisionScale represents a certain point in the LifeTime of the particle. For example if the LifeTimeRange is 4 seconds, a SubDivisionScale of 0.25 is the end of the first second of the LifeTime. A successive SubDivisionScale should always be larger than the previous one, otherwise you're going back in time and it will be ignored.For example, if you make Subdivision [0] = 0.1, [1] = 0.3 and [2] = 0.6, and LifeTimeRange is 4 seconds:
 
 * the particle will have Subdivision 1 for 0.4 seconds
 * Subdivision 2 will last for 0.8 seconds (0.3 x 4 = 1.2, 1.2 - 0.4  = 0.8)
 * Subdivision 3 will last for 1.2 seconds (0.6 x 4 = 2.4, 2.4 - 1.2 <Subdivision 2 lifetime. = 1.2)
 * Subdivision 4 for the remaining 1.6 seconds. On the screenshot, the particles move from left to right.
 
-![subdivscale1.jpg](../../assets/![subdivscale1.jpg](../../assets/subdivscale1.jpg))
+![subdivscale1.jpg](../../assets/subdivscale1.jpg)
 
 If you make SubDivisionScale [0] = 0.4 and [1] = 1, only two of the Subdivisions will be used. Then it doesn't matter anymore what value you entered in [2].
 
-![subdivscale2.jpg](../../assets/![subdivscale2.jpg](../../assets/subdivscale2.jpg))
+![subdivscale2.jpg](../../assets/subdivscale2.jpg)
 
 To get this effect at it's best, you have to use the correct LifeTimeRange and also make sure the MaxParticles value is high enough. Read sections General and Time for this.
 
@@ -828,35 +828,35 @@ This field tells the engine how many vertical sections you want your texture spl
 
 This field tells the engine how many horizontal sections you want your texture split into.
 
-![subdivisions.jpg](../../assets/![subdivisions.jpg](../../assets/subdivisions.jpg))
+![subdivisions.jpg](../../assets/subdivisions.jpg)
 
 Setting these settings to 0 or 1 does exactly the same thing: it divides the texture into 1 Subdivision, meaning there are no Subdivisions at all (the Subdivision is the texture itself), so the particles will look like this:
 
-![subdiv1.jpg](../../assets/![subdiv1.jpg](../../assets/subdiv1.jpg))
+![subdiv1.jpg](../../assets/subdiv1.jpg)
 
 If you set both TextureUSubdivisions and TextureVSubdivisions to 3, it looks like this:
 
-![subdiv2.jpg](../../assets/![subdiv2.jpg](../../assets/subdiv2.jpg))
+![subdiv2.jpg](../../assets/subdiv2.jpg)
 
 If you set them to 2 or 4, some pictures of this texture will be cut into half, because it has 3 \* 3 Subdivisions and isn't made for other values.
 
-![subdiv3.jpg](../../assets/![subdiv3.jpg](../../assets/subdiv3.jpg))
+![subdiv3.jpg](../../assets/subdiv3.jpg)
 
-![subdiv4.jpg](../../assets/![subdiv4.jpg](../../assets/subdiv4.jpg))If you set respectively TextureUSubdivisions=1 and TextureVSubdivisions=3 or TextureUSubdivisions=3 and TextureVSubdivisions=1, it'll look like this:
+![subdiv4.jpg](../../assets/subdiv4.jpg)If you set respectively TextureUSubdivisions=1 and TextureVSubdivisions=3 or TextureUSubdivisions=3 and TextureVSubdivisions=1, it'll look like this:
 
-![subdiv13.jpg](../../assets/![subdiv13.jpg](../../assets/subdiv13.jpg))
+![subdiv13.jpg](../../assets/subdiv13.jpg)
 
-![subdiv31.jpg](../../assets/![subdiv31.jpg](../../assets/subdiv31.jpg))
+![subdiv31.jpg](../../assets/subdiv31.jpg)
 
 #### UseRandomSubdivisions
 
 If you set UseRandomSubdivision to True, the ParticleEmitter will give each particle a random Subdivision at the beginning, and the particle keeps this Subdivision as long as it lives.
 
-![subdiv5.jpg](../../assets/![subdiv5.jpg](../../assets/subdiv5.jpg))
+![subdiv5.jpg](../../assets/subdiv5.jpg)
 
 If you set UseRandomSubdivision to False, the particles will change during their LifeTime. For example if you'd have 2 \* 2 Subdivisions, then first they'll have the upper left Subdivision, then the bottom left, then the upper right and finally the bottom right. The time it takes to change from one Subdivision to another, depends on their LifeTime, more about this further in the section Time. On the screenshot, there are 9 Subdivisions.
 
-![subdiv6.jpg](../../assets/![subdiv6.jpg](../../assets/subdiv6.jpg))
+![subdiv6.jpg](../../assets/subdiv6.jpg)
 
 #### UseSubdivisionScale
 
@@ -866,7 +866,7 @@ You must set UseSubDivisionScale to True, otherwise the engine will not use the 
 
 Some fairly obscure but important fields live in here.
 
-![tick.jpg](../../assets/![tick.jpg](../../assets/tick.jpg))
+![tick.jpg](../../assets/tick.jpg)
 
 #### MinSquaredVelocity
 
@@ -876,13 +876,13 @@ MinSquaredVelocity: the minimum velocity a particle may have before it gets inac
 
 When this is 0.000000, the movements of the particles are always calculated by the computer, even if they're out of view. If you enter a value in here, the computer will stop calculating the movements of the particles after the Emitter actor is out of view for this many seconds. This way you gain performance. So when you look away from the Emitter, the particles will freeze, and only come back to life when you look at them again. So when SecondsBeforeInactive = 0.010000 and you see this:
 
-![initial1.jpg](../../assets/![initial1.jpg](../../assets/initial1.jpg))
+![initial1.jpg](../../assets/initial1.jpg)
 
 and then rotate the camera 180�, wait an hour and then look again at the Emitter, you'll still see exactly the same image (where the warmup is not finished yet). When you can't see the Emitter actor, but you should be able to see some particles, you'll not see these particles! Only when you can see the Emitter itself, you'll be able to see its particles. If you'd rather have it calculate particle movement offscreen, set SecondsBeforeInactive to 0.000000.
 
 ### Time
 
-![time.jpg](../../assets/![time.jpg](../../assets/time.jpg))
+![time.jpg](../../assets/time.jpg)
 
 #### InitialDelayRange
 
@@ -898,7 +898,7 @@ The LifeTimeRange is the number of seconds the particle will live. After this ti
 
 ### Trigger
 
-![trigger.jpg](../../assets/![trigger.jpg](../../assets/trigger.jpg))
+![trigger.jpg](../../assets/trigger.jpg)
 
 Triggering allows you to change the behavior of an emitter when it is triggered. You can trigger an emitter just like everything else in Unrealed by setting the Tag of the Particle System to be that of an Event of a trigger. It is important to note that the Tag is not specified per emitter but for the entire particle system. Each emitter can configure how it handles the trigger differently but they will all receive the same trigger event at the same time.
 Triggers are use mainly to turn emitters on and off in different ways. This trigger system provides good ways to turn emitters on but it unfortunately does not provide a very smooth way to turn emitters off.
@@ -921,7 +921,7 @@ This will toggle the disabledness of the emitter. If the emitter is currently di
 
 ### Velocity
 
-![velocity.jpg](../../assets/![velocity.jpg](../../assets/velocity.jpg))
+![velocity.jpg](../../assets/velocity.jpg)
 
 #### AddVelocityFromOtherEmitter
 
@@ -938,7 +938,7 @@ If AddVelocityFromOtherEmitter is not set to `None' then the particle's velocity
 * PTVD\_OwnerAndStartPosition: this is similar to above, but now the particle will move from its startposition towards the Emitter Actor. When it has reached that, it will keep going further. This only works if its startposition is not the Emitter itself. See the [Location](#location) section for more information on offsetting the start position.
 * PTVD\_AddRadial: This setting will add a `pinching' effect to your emitter, as particles that don't spawn directly on the emitter will travel towards it. Note that this setting won't look as if anything is happening unless your particles spawn offset? from the emitter with random ranges (so that the movement can be seen).
 
-![radial1.jpg](../../assets/![radial1.jpg](../../assets/radial1.jpg))
+![radial1.jpg](../../assets/radial1.jpg)
 
 In the above image, you can see the effect of the AddRadial setting. The left picture has no movement (PTVD\_None) applied to a spherically-offset emitter. The right picture has the radial (PTVD\_AddRadial) setting selected, and the particles move towards the center.
 
@@ -950,7 +950,7 @@ If your particles are set to accelerate, they will speed up until they reach the
 
 This allows you to change the amount of radial movement applied to your particles. This is only useful when your GetVelocityDirectionFrom is set to PTVD\_AddRadial.
 
-![radial2.jpg](../../assets/![radial2.jpg](../../assets/radial2.jpg))
+![radial2.jpg](../../assets/radial2.jpg)
 
 In this image, there is a particle system with movement along the Z-axis. The first image shows the particles going straight up. The second image shows the same particle system with the AddRadial applied. The third image shows the AddRadial applied, with a higher overall value on the RadialRange. This causes the particles to reach the center and continue past, in the direction they were headed, until their lifetime ends.
 
@@ -958,29 +958,29 @@ In this image, there is a particle system with movement along the Z-axis. The fi
 
 Use Start Velocity to give the particles a constant speed. The X, Y and Z values will adjust how fast the particles travel in that direction.If Min and Max are the same, you get what you would expect: the particle moves with the speed you entered to the direction you used. If the values are not the same, you'll get a random velocity between those two values. For example, if you set X-Min equal to X-Max and Y-Min equal to Y-Max and Z-Min equal to Z-Man (and make sure there is no acceleration), all the particles will move towards the same direction:
 
-![velocity1.jpg](../../assets/![velocity1.jpg](../../assets/velocity1.jpg))
+![velocity1.jpg](../../assets/velocity1.jpg)
 
 Note that velocity can be **negative**, which will make the particles travel in opposite directions, not just faster or slower. We'll set X(Min) to -500 and X(Max) to +500 (and keep the Y values), so that the particles will spread randomly in the X direction:
 
-![velocity2.jpg](../../assets/![velocity2.jpg](../../assets/velocity2.jpg))
+![velocity2.jpg](../../assets/velocity2.jpg)
 
 If you'd have made X(Min) = -150 and X(Max) = +150, there'd be less difference in the directions:
 
-![velocity3.jpg](../../assets/![velocity3.jpg](../../assets/velocity3.jpg))
+![velocity3.jpg](../../assets/velocity3.jpg)
 
 ##### Velocity and Acceleration Interactions
 
 If you use Velocity AND Acceleration, the total speed of the particle will be the sum of the constant Velocity and the variable speed caused by the Acceleration. This sum is called the AbsVelocity.If there is a Velocity and a Acceleration along the same axis, but they have opposite (positive/negative) signs, the particle will first move in one direction, but at a certain point the absolute value of the speed caused but the Acceleration will be larger than the absolute value of the Velocity, so the particles will move back to the direction they came from. Put more simply, imagine shooting a cannonball straight up into the air. The high velocity will eventually be counteracted by a negative acceleration, and the ball will fall back to the earth.If you use a Velocity and an Acceleration, both along different axes, the particles will make a parabola. A parabola is the realistic trajectory that a bullet or a thrown object will follow. For example if Acceleration has Z = -950 (close to the gravity on Earth), and StartVelocityRange has X(Min) = X(Max) = + 500, it'll look like this:
 
-![parabola1.jpg](../../assets/![parabola1.jpg](../../assets/parabola1.jpg))
+![parabola1.jpg](../../assets/parabola1.jpg)
 
 If you now set also the X of Acceleration to -1000, it'll do the following:
 
-![parabola2.jpg](../../assets/![parabola2.jpg](../../assets/parabola2.jpg))
+![parabola2.jpg](../../assets/parabola2.jpg)
 
 If you use this, the Acceleration will keep speeding up the particle until the MaxAbsVelocity speed is reached.
 
-![parabola3.jpg](../../assets/![parabola3.jpg](../../assets/parabola3.jpg))
+![parabola3.jpg](../../assets/parabola3.jpg)
 
 #### UseVelocityScale
 
@@ -1010,7 +1010,7 @@ VelocityScaleRepeats is the number of times the Velocity Scale will be additiona
 
 The warmup is the part of the emitter lifetime when not all the particles have yet spawned.You can force the engine to precalculate your Emitters, so that when you start the map it's as if the ParticleEmitter has been there already for a few seconds, and the warmup effect will be skipped. Note that you may actually want warmup in certain particle sytems so don't
 
-![warmup.jpg](../../assets/![warmup.jpg](../../assets/warmup.jpg))
+![warmup.jpg](../../assets/warmup.jpg)
 
 #### RelativeWarmupTime
 
@@ -1024,7 +1024,7 @@ Before the engine will use RelativeWarmupTime correctly, you also have to set th
 
 Making particle systems is pretty complicated - especially with the property-based system of emitter editing. Consider using the particle system editor (in the UDN builds, and from build 3323), it's much more logically laid out.Here is a flowchart that may help in thinking about how you want to design your future particle systems. (items in parentheses indicate what section relevant fields can be found in.)
 
-![flowchartemitter.jpg](../../assets/![flowchartemitter.jpg](../../assets/flowchartemitter.jpg))
+![flowchartemitter.jpg](../../assets/flowchartemitter.jpg)
 
 ## Final Notes
 

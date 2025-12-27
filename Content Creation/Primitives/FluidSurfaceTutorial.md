@@ -21,17 +21,17 @@ Build 927 has a simple fluid-surface grid simulator effect. This is a brief over
 
 First, create yourself a hole to put your fluid in. FluidSurfaceInfo's are always rectangles along world X and Y (you can't rotate them). There is currently no LOD for fluid surfaces, so its really only suitable for small pools etc. My empty pool looks like this:
 
-![empty_pool.jpg](../../assets/![empty_pool.jpg](../../assets/empty_pool.jpg))
+![empty_pool.jpg](../../assets/empty_pool.jpg)
 
 ## Creating FluidSurfaceInfo
 
 In the Actor browser, find the FluidSurfaceInfo class, under Info:
 
-![actor_browse_fsi.jpg](../../assets/![actor_browse_fsi.jpg](../../assets/actor_browse_fsi.jpg))
+![actor_browse_fsi.jpg](../../assets/actor_browse_fsi.jpg)
 
 Select this class, right click in your empty pool, and choose 'Add FluidSurfaceInfo Here'. This shouold create a fluid surface using its default settings. This is a 32x32 hexagonal mesh grid, with a grid spacing of 32 Unreal units. Double-click on the fluid surface actor to bring up its properties. Here are the defaults:
 
-![fsi_default.jpg](../../assets/![fsi_default.jpg](../../assets/fsi_default.jpg))
+![fsi_default.jpg](../../assets/fsi_default.jpg)
 
 ## Configuring The Fluid Surface
 
@@ -73,17 +73,17 @@ Here is an overview of what all those options mean. Some are explained in more d
 
 To set the material to use for the fluid surfacem under Display add your material as element 0 of the Skins array.So for our example we set a simple semi-transparent material with a cube map, then set FluidNoiseFrequency to 50, so we get some ambient ripples and it looks like:
 
-![watery_pool.jpg](../../assets/![watery_pool.jpg](../../assets/watery_pool.jpg))
+![watery_pool.jpg](../../assets/watery_pool.jpg)
 
 ## FluidSurfaceOscillator
 
 Instead of generating ambient ripples all over your surface, you might want waves generated in specific locations. To do this use the FluidSurfaceOscillator actor. It's just under Actor in the Actor class browser:
 
-![actor_browse_fso.jpg](../../assets/![actor_browse_fso.jpg](../../assets/actor_browse_fso.jpg))
+![actor_browse_fso.jpg](../../assets/actor_browse_fso.jpg)
 
 Here are the properties for a FluidSurfaceOscillator:
 
-![fso_props.jpg](../../assets/![fso_props.jpg](../../assets/fso_props.jpg))
+![fso_props.jpg](../../assets/fso_props.jpg)
 
 |  |  |
 | --- | --- |
@@ -95,13 +95,13 @@ Here are the properties for a FluidSurfaceOscillator:
 
 You need to tell the Oscillator which fluid surface to oscillate. In the FluidSurfaceOscillator properties, click on FluidInfo, click Find, then click on the fluid surface. Here is my pool with an oscillator added:
 
-![oscillated_noclamp.jpg](../../assets/![oscillated_noclamp.jpg](../../assets/oscillated_noclamp.jpg))
+![oscillated_noclamp.jpg](../../assets/oscillated_noclamp.jpg)
 
 ## Vertex 'Clamping'
 
 As you can see in the picture above, the waves from the oscillator pass right through the bit of raised terrain. This isn't very realistic. Waves will also not bounce off the actual boundaries of your pool. To fix this, we use the 'ClampTerrain' property of the FluidSurfaceInfo. Got to the fluid surface properties, click on ClampTerrain, click Find and then click on the terrain surrounding the fluid. Then do a Rebuild All to get the water to update its 'clamped' information.The fluid surface will clamp to zero any vertices that are underneath the terrain you specify, or are inside blocking volumes. This stops waves passing through those vertices, and they will reflect off instead.After this, my pool looks like this:
 
-![oscillated.jpg](../../assets/![oscillated.jpg](../../assets/oscillated.jpg))
+![oscillated.jpg](../../assets/oscillated.jpg)
 
 Note how the waves don't pass through the raised land. Note: you will have to rebuild the clamping information if you change the fluids size/location etc.
 

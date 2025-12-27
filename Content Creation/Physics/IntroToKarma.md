@@ -31,7 +31,7 @@ This page briefly describes the contents and purpose of each of the Karma docume
 
 The [KarmaReference](KarmaReference.md) document is a comprehensive guide to all of the features of KarmaActors including removing Karma Integration, activating Karma, explanations of each of the Karma Properties, explanations of KConstraint properties, and tips for debugging Karma and creating good simulations.
 
-![karmaref.gif](../../assets/![karmaref.gif](../../assets/karmaref.gif))
+![karmaref.gif](../../assets/karmaref.gif)
 
 ---
 
@@ -39,7 +39,7 @@ The [KarmaReference](KarmaReference.md) document is a comprehensive guide to all
 
 The [ImportingKarmaActors](../../Uncategorized/ImportingKarmaActors.md) document contains a ready made KarmaActor (both in .ASE and .MAX file formats) that you can download and import into your own build. The document also provides explanations on how to create your own Karma Actors using 3rd party modeling programs (such as 3DS Max).
 
-![ex1_2.jpg](../../assets/![ex1_2.jpg](../../assets/ex1_2.jpg))
+![ex1_2.jpg](../../assets/ex1_2.jpg)
 
 ---
 
@@ -47,7 +47,7 @@ The [ImportingKarmaActors](../../Uncategorized/ImportingKarmaActors.md) document
 
 The [UsingKarmaActors](../../Uncategorized/UsingKarmaActors.md) document contains an additional example KarmaActor (both in .ASE and .MAX file formats) that you can download and import into your own build. This document focuses more on how to set up KActors with constraints.
 
-![hingedfan.jpg](../../assets/![hingedfan.jpg](../../assets/hingedfan.jpg))
+![hingedfan.jpg](../../assets/hingedfan.jpg)
 
 ---
 
@@ -55,7 +55,7 @@ The [UsingKarmaActors](../../Uncategorized/UsingKarmaActors.md) document contain
 
 The [KarmaAuthoringTool](../../Uncategorized/KarmaAuthoringTool.md) document is an introduction to using KAT for setting up ragdoll physics in character models.
 
-![kat.jpg](../../assets/![kat.jpg](../../assets/kat.jpg))
+![kat.jpg](../../assets/kat.jpg)
 
 ---
 
@@ -63,7 +63,7 @@ The [KarmaAuthoringTool](../../Uncategorized/KarmaAuthoringTool.md) document is 
 
 The [RagdollsInUT2003](../../Uncategorized/RagdollsInUT2003.md) document briefly talks about how KAT was used to set up ragdoll physics for the characters in UT2003.
 
-![ragdoll_stats.jpg](../../assets/![ragdoll_stats.jpg](../../assets/ragdoll_stats.jpg))
+![ragdoll_stats.jpg](../../assets/ragdoll_stats.jpg)
 
 ---
 
@@ -75,11 +75,11 @@ The following documents are example maps that demonstrate how to use Karma in yo
 
 In the [ExampleMapsKarmaColosseum](../../Uncategorized/ExampleMapsKarmaColosseum.md) document, you will see how to create a variety of Karma Objects ranging from simple Karma primitives, to more complex objects made of multiple parts including KConstraints and destructible geometry.
 
-![karmacolosseum.jpg](../../assets/![karmacolosseum.jpg](../../assets/karmacolosseum.jpg))
+![karmacolosseum.jpg](../../assets/karmacolosseum.jpg)
 
 ### Karma Example UT2003
 
 The [KarmaExampleUT2003](../../Uncategorized/KarmaExampleUT2003.md) document shows how Karma can be used to create a catapult, swinging door, and a rotating fan with dangling poles. While the map only works with UT2003, its principles should still hold true in a current build of Unreal.
 
-![karma_map2107.jpg](../../assets/![karma_map2107.jpg](../../assets/karma_map2107.jpg))
+![karma_map2107.jpg](../../assets/karma_map2107.jpg)
 

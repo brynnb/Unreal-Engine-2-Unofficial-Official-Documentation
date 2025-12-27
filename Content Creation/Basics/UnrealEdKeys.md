@@ -123,7 +123,7 @@ If non-orthographic viewport (3D view)
 | ![ctrl.gif](../../assets/ctrl.gif) ![m.gif](../../assets/m.gif) | Center Camera at Clicked Point |
 | A ![l.gif](../../assets/l.gif) | Add Current Actor |
 | L ![l.gif](../../assets/l.gif) | Add Light |
-| ![r.gif](../../assets/![r.gif](../../assets/r.gif)) | Context Menu |
+| ![r.gif](../../assets/r.gif) | Context Menu |
 | No- ![ctrl.gif](../../assets/ctrl.gif) ![l.gif](../../assets/l.gif) | Select None |
 | ![ctrl.gif](../../assets/ctrl.gif) ![r.gif](../../assets/r.gif) | Add Clip Marker |
 | ![shift.gif](../../assets/shift.gif) ![alt.gif](../../assets/alt.gif) ![m.gif](../../assets/m.gif) | Dragging the mouse extends a ruler that will give you the distance between any two points |
@@ -144,8 +144,8 @@ If non-orthographic viewport (3D view)
 | --- | --- |
 | ![ctrl.gif](../../assets/ctrl.gif) ![r.gif](../../assets/r.gif) | Add Clip Marker |
 | ![ctrl.gif](../../assets/ctrl.gif) ![l.gif](../../assets/l.gif) | Toggle selection of Actor |
-| ![l.gif](../../assets/![l.gif](../../assets/l.gif)) | Select this |
-| ![r.gif](../../assets/![r.gif](../../assets/r.gif)) | Context Menu |
+| ![l.gif](../../assets/l.gif) | Select this |
+| ![r.gif](../../assets/r.gif) | Context Menu |
 | ![l.gif](../../assets/l.gif) ![l.gif](../../assets/l.gif) | Properties Window |
 
 ### the vertex of a brush
@@ -153,7 +153,7 @@ If non-orthographic viewport (3D view)
 |  |  |
 | --- | --- |
 | ![ctrl.gif](../../assets/ctrl.gif) ![r.gif](../../assets/r.gif) | Add Clip Marker |
-| ![r.gif](../../assets/![r.gif](../../assets/r.gif)) | Set vertex as pivot |
+| ![r.gif](../../assets/r.gif) | Set vertex as pivot |
 
 ## Render Options
 
@@ -278,7 +278,7 @@ If non-orthographic viewport (3D view)
 
 |  |  |
 | --- | --- |
-| ![r.gif](../../assets/![r.gif](../../assets/r.gif)) | Add vertex (up to three) |
+| ![r.gif](../../assets/r.gif) | Add vertex (up to three) |
 
 ### Vertex Editing Mode
 
@@ -287,7 +287,7 @@ If non-orthographic viewport (3D view)
 | ![l.gif](../../assets/l.gif) ![xy.gif](../../assets/xy.gif) | Regular Camera Movement |
 | ![ctrl.gif](../../assets/ctrl.gif) ![l.gif](../../assets/l.gif) ![xy.gif](../../assets/xy.gif) | Move vertices |
 | ![alt.gif](../../assets/alt.gif) ![ctrl.gif](../../assets/ctrl.gif) ![l.gif](../../assets/l.gif) ![xy.gif](../../assets/xy.gif) | Add selected vertices (supports shift.gif for multiple-selection) |
-| ![l.gif](../../assets/![l.gif](../../assets/l.gif)) | Add vertex to selection |
+| ![l.gif](../../assets/l.gif) | Add vertex to selection |
 
 ### Polygon (Face) Dragging Mode
 
@@ -295,7 +295,7 @@ If non-orthographic viewport (3D view)
 | --- | --- |
 | ![l.gif](../../assets/l.gif) ![xy.gif](../../assets/xy.gif) | Regular Camera Movement |
 | ![ctrl.gif](../../assets/ctrl.gif) ![l.gif](../../assets/l.gif) ![xy.gif](../../assets/xy.gif) | Move faces |
-| ![l.gif](../../assets/![l.gif](../../assets/l.gif)) | Add polgyons visible to point clicked (as if it is on the 0 plane) |
+| ![l.gif](../../assets/l.gif) | Add polgyons visible to point clicked (as if it is on the 0 plane) |
 
 ### Brush Rotate Mode
 
@@ -322,9 +322,9 @@ If non-orthographic viewport (3D view)
 
 |  |  |
 | --- | --- |
-| ![r.gif](../../assets/![r.gif](../../assets/r.gif)) | Add vertex to list |
+| ![r.gif](../../assets/r.gif) | Add vertex to list |
 | ![l.gif](../../assets/l.gif) ![xy.gif](../../assets/xy.gif) | Regular Camera Movement |
-| ![r.gif](../../assets/![r.gif](../../assets/r.gif)) | Options which allow one to "Create Brush" |
+| ![r.gif](../../assets/r.gif) | Options which allow one to "Create Brush" |
 
 ### Texture Panning Mode
 
@@ -350,7 +350,7 @@ If non-orthographic viewport (3D view)
 | --- | --- |
 | ![l.gif](../../assets/l.gif) ![xy.gif](../../assets/xy.gif) | Regular Camera Movement |
 | ![ctrl.gif](../../assets/ctrl.gif) ![l.gif](../../assets/l.gif) ![r.gif](../../assets/r.gif) ![y.gif](../../assets/y.gif) | Raise/Lower Terrain Vertices |
-| ![l.gif](../../assets/![l.gif](../../assets/l.gif)) | Select Vertex |
+| ![l.gif](../../assets/l.gif) | Select Vertex |
 | ![shift.gif](../../assets/shift.gif) ![l.gif](../../assets/l.gif) | Select Additional Vertex |
 
 ### Regular Viewport Mode
@@ -358,7 +358,7 @@ If non-orthographic viewport (3D view)
 |  |  |
 | --- | --- |
 | ![alt.gif](../../assets/alt.gif) ![ctrl.gif](../../assets/ctrl.gif) ![l.gif](../../assets/l.gif) ![xy.gif](../../assets/xy.gif) | Add selected vertices (supports shift.gif for multiple-selection) |
-| ![l.gif](../../assets/![l.gif](../../assets/l.gif)) | Select brush, or Select vertex on brush |
+| ![l.gif](../../assets/l.gif) | Select brush, or Select vertex on brush |
 | ![alt.gif](../../assets/alt.gif) ![l.gif](../../assets/l.gif) ![xy.gif](../../assets/xy.gif) | Move selected vertices |
 | ![l.gif](../../assets/l.gif) ![xy.gif](../../assets/xy.gif) | Move |
 | ![l.gif](../../assets/l.gif) ![xy.gif](../../assets/xy.gif) | Move Actors |
@@ -366,35 +366,35 @@ If non-orthographic viewport (3D view)
 
 ## UnrealEd Bugs (found while creating the above document)
 
-![ctrl.gif](../../assets/![ctrl.gif](../../assets/ctrl.gif))
+![ctrl.gif](../../assets/ctrl.gif)
 
 N assigned to both "New" and "Intersect"
 
-![shift.gif](../../assets/![shift.gif](../../assets/shift.gif))
+![shift.gif](../../assets/shift.gif)
 
 S assigned to both "Select all surfaces" and "select adj. slants""Select None" mislabelled as
 
-![shift.gif](../../assets/![shift.gif](../../assets/shift.gif))
+![shift.gif](../../assets/shift.gif)
 
 Z, should be
 
-![shift.gif](../../assets/![shift.gif](../../assets/shift.gif))
+![shift.gif](../../assets/shift.gif)
 
 N"Select Adj. Slanted" should be
 
-![shift.gif](../../assets/![shift.gif](../../assets/shift.gif))
+![shift.gif](../../assets/shift.gif)
 
 Y, not
 
-![shift.gif](../../assets/![shift.gif](../../assets/shift.gif))
+![shift.gif](../../assets/shift.gif)
 
 S"Intersect" should be
 
-![ctrl.gif](../../assets/![ctrl.gif](../../assets/ctrl.gif))
+![ctrl.gif](../../assets/ctrl.gif)
 
 I, not
 
-![ctrl.gif](../../assets/![ctrl.gif](../../assets/ctrl.gif))
+![ctrl.gif](../../assets/ctrl.gif)
 
 N"Save As" should have "Ctrl-E" listed in the menu
 

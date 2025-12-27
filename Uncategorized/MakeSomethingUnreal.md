@@ -23,7 +23,7 @@
 
 $1,000,000 NVIDIA Make Something Unreal ContestWelcome to the $1,000,000 Make Something Unreal Contest, the ultimate modification competition brought to you by Nvidia in association with Epic Games and Atari Inc.We invite you to download and play the Phase 1, Phase 2 and Phase 3 winners. Next up is Grand Finals and it closes on November 15th, 2004!Educational Awards can run on UT2003 or UT2004, however Phase 3, Phase 4 and Grand Finals require your mod run on UT2004. For further details be sure to check out the Categories Listing, Legal, and Overview pages. When you are ready to submit for Grand Finals simply submit your mod!
 
-![contest_logo_live.gif](../assets/![contest_logo_live.gif](../assets/contest_logo_live.gif))
+![contest_logo_live.gif](../assets/contest_logo_live.gif)
 
 ## News
 

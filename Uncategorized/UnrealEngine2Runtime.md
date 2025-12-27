@@ -1,6 +1,6 @@
 # UnrealEngine2 Runtime
 
-![urt_logo.jpg](../assets/![urt_logo.jpg](../assets/urt_logo.jpg))
+![urt_logo.jpg](../assets/urt_logo.jpg)
 
 *Document Summary: Introduction to the UnrealEngine2 Runtime edition of the second-generation Unreal engine, including release information.**Document Changelog: Created and updated; maintained over time.*
 
