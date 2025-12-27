@@ -11,8 +11,8 @@
       * [LocationName](#locationname)
       * [LocationPriority](#locationpriority)
     - [BlockingVolume](#blockingvolume)
-      * [bClampFluid](#b-clampfluid)
-      * [bClassBlocker](#b-classblocker)
+      * [bClampFluid](#bclampfluid)
+      * [bClassBlocker](#bclassblocker)
       * [BlockedClasses](#blockedclasses)
     - [PhysicsVolume](#physicsvolume)
 

@@ -2,10 +2,10 @@
 
 *Document Summary: An introductory document on setting up DecoLayers.**Document Changelog: Last updated by Michiel Hendriks, v3323 update. Previously updated by Jason Lentz (DemiurgeStudios?) to separate into smaller docs for the 2110 build. Original author was Lode Vandevenne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).*
 
-* [Creating DecoLayers](CreatingDecoLayers.md#creating-_decolayers)
+* [Creating DecoLayers](CreatingDecoLayers.md#creating-decolayers)
   + [Introduction](CreatingDecoLayers.md#introduction)
-  + [Creating a DecoLayer](CreatingDecoLayers.md#creating-a-_decolayer)
-  + [Additional DecoLayer Properties](CreatingDecoLayers.md#additional-_decolayer-properties)
+  + [Creating a DecoLayer](CreatingDecoLayers.md#creating-a-decolayer)
+  + [Additional DecoLayer Properties](CreatingDecoLayers.md#additional-decolayer-properties)
     - [AlignToTerrain](CreatingDecoLayers.md#aligntoterrain)
     - [ColorMap](CreatingDecoLayers.md#colormap)
     - [DensityMap](CreatingDecoLayers.md#densitymap)
@@ -27,7 +27,7 @@
 
 ## Introduction
 
-Here you will see how to create your own DecoLayers and the various ways you can manipulate them to your liking. This document assumes that you know how to build and shape a terrain and that you are familiar with the [UnrealEdInterface](../Content Creation/Basics/UnrealEdInterface.md), the StaticMesh Browser, and the Texture Browser.
+Here you will see how to create your own DecoLayers and the various ways you can manipulate them to your liking. This document assumes that you know how to build and shape a terrain and that you are familiar with the [UnrealEdInterface](../Content%20Creation/Basics/UnrealEdInterface.md), the StaticMesh Browser, and the Texture Browser.
 
 ## Creating a DecoLayer
 
@@ -155,4 +155,4 @@ This is the StaticMesh you assigned by right clicking on the Layer in the Terrai
 
 ## Other Sections
 
-To view the other documents on Terrain creation, just click on one of the links below:[TerrainTutorial](../Content Creation/Primitives/TerrainTutorial.md) - This outlines all the contents of the following documents. Also, if you add new sections to this document, it is also good practice to update the [TerrainTutorial](../Content Creation/Primitives/TerrainTutorial.md) as well.[CreatingTerrain](CreatingTerrain.md) - This document explains how to create a Terrain starting from an empty level.[EditingTerrainMaps](EditingTerrainMaps.md) - Shows how to use the Terrain Editor Tools[EditingTerrainLayers](EditingTerrainLayers.md) - Explains how to create and use Layers within your Terrain.[AdditionalTerrainTips](AdditionalTerrainTips.md) - In this document you will find several ways to greatly improve the appearance and effectiveness of your Terrain. If you are learning how to create your first Terrain, this section should **NOT** be over looked.
+To view the other documents on Terrain creation, just click on one of the links below:[TerrainTutorial](../Content%20Creation/Primitives/TerrainTutorial.md) - This outlines all the contents of the following documents. Also, if you add new sections to this document, it is also good practice to update the [TerrainTutorial](../Content%20Creation/Primitives/TerrainTutorial.md) as well.[CreatingTerrain](CreatingTerrain.md) - This document explains how to create a Terrain starting from an empty level.[EditingTerrainMaps](EditingTerrainMaps.md) - Shows how to use the Terrain Editor Tools[EditingTerrainLayers](EditingTerrainLayers.md) - Explains how to create and use Layers within your Terrain.[AdditionalTerrainTips](AdditionalTerrainTips.md) - In this document you will find several ways to greatly improve the appearance and effectiveness of your Terrain. If you are learning how to create your first Terrain, this section should **NOT** be over looked.

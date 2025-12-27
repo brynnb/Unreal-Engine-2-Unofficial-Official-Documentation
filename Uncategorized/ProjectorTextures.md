@@ -6,8 +6,8 @@
   + [Introduction](ProjectorTextures.md#introduction)
   + [ProjTexture](ProjectorTextures.md#projtexture)
   + [ClampMode](ProjectorTextures.md#clampmode)
-  + [FrameBufferBlendingOp & MaterialBlendingOp](ProjectorTextures.md#framebufferblendingop--_materialblendingop)
-  + [Guidelines for Creating ProjTextures](ProjectorTextures.md#guidelines-for-creating-_projtextures)
+  + [FrameBufferBlendingOp & MaterialBlendingOp](ProjectorTextures.md#framebufferblendingop-materialblendingop)
+  + [Guidelines for Creating ProjTextures](ProjectorTextures.md#guidelines-for-creating-projtextures)
 
 ## Introduction
 

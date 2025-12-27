@@ -101,21 +101,21 @@ If everything worked correctly, you'll notice your particle system has begun spi
 
 ### Making Them Move
 
-Right now the particle system doesn't do much at all. The first step in making it a bit more interesting is to get the particle to move rather than piling up in one place. To do this select the [Movement](#movement) category from the left-hand column. The large scrolling area on the right will zip down to the Movement heading. Fill in the values under [Start Velocity](#startvelocity) to look like this and things will start to happen.
+Right now the particle system doesn't do much at all. The first step in making it a bit more interesting is to get the particle to move rather than piling up in one place. To do this select the [Movement](#movement) category from the left-hand column. The large scrolling area on the right will zip down to the Movement heading. Fill in the values under [Start Velocity](#start-velocity) to look like this and things will start to happen.
 
 ![startvelocity.jpg](../../assets/startvelocity.jpg)
 
-The [Start Velocity](#startvelocity) settings, like most of the settings in the particle system editor change things in real time. You can type numbers in or you can click and **drag** the buttons next to the fields to change values and watch the system change as you drag. You can also "link" values together so you don't have to change each one individually.
+The [Start Velocity](#start-velocity) settings, like most of the settings in the particle system editor change things in real time. You can type numbers in or you can click and **drag** the buttons next to the fields to change values and watch the system change as you drag. You can also "link" values together so you don't have to change each one individually.
 
 ![startvelocity2.jpg](../../assets/startvelocity2.jpg)
 
 ### Picking a Texture
 
-Another major change you can make to a particle system is to change the texture it is using for the sprites. From the texture browser, select a texture and then under the [Texture](#texture) category click the **Use** button in the [Texture](#textureuse) field.
+Another major change you can make to a particle system is to change the texture it is using for the sprites. From the texture browser, select a texture and then under the [Texture](#texture) category click the **Use** button in the [Texture](#texture) field.
 
 ### Play around
 
-Take some time to play around with all the properties available to you. They may not all make sense the first time around but most do what they say. If at anytime you want further explanation visit the [reference](#parameter-reference) section of this document. [Acceleration](#acceleration), [Max Number Of Particles](#maxnumberofparticles), [Lifetime](#lifetime), [Fading](#fading), and [Start Location](#startlocation) are all good places to start.
+Take some time to play around with all the properties available to you. They may not all make sense the first time around but most do what they say. If at anytime you want further explanation visit the [reference](#parameter-reference) section of this document. [Acceleration](#acceleration), [Max Number Of Particles](#max-number-of-particles), [Lifetime](#lifetime), [Fading](#fading), and [Start Location](#startlocation) are all good places to start.
 
 ## Particle Editor Interface
 
@@ -159,7 +159,7 @@ Some controls have mins and maxes. In addition to being able to set the individu
 * The two blue Legos signify that the values in min and max will be kept the same.
 * The two red Legos signify that the min and max values will be mirrored. For example, setting the max to 40.0 will automatically set the Min to -40.0.
 
-Some controls like [Start Velocity](#startvelocity) have a min and max for several fields, in this case X, Y and Z. Checking the check boxes on the right of the tool will keep the checked X, Y or Z values the same.
+Some controls like [Start Velocity](#start-velocity) have a min and max for several fields, in this case X, Y and Z. Checking the check boxes on the right of the tool will keep the checked X, Y or Z values the same.
 
 ### Deleting an Emitter
 
@@ -247,11 +247,11 @@ Unchecking this box will cause dead particles not to respawn. If you are making 
 
 #### Automatic Spawning
 
-Automatic Spawning causes the number of particles to remain equal to Max Number of Particles regardless of other particle system properties. For example, with this box checked and Max Particles set to 10 once the system warms up there will always be exactly 10 particles regardless of the [Lifetime](#lifetime) of the system. With Automatic Spawning checked you cannot directly control how many [Particles Per Second](#particlespersecond) are spawned.
+Automatic Spawning causes the number of particles to remain equal to Max Number of Particles regardless of other particle system properties. For example, with this box checked and Max Particles set to 10 once the system warms up there will always be exactly 10 particles regardless of the [Lifetime](#lifetime) of the system. With Automatic Spawning checked you cannot directly control how many [Particles Per Second](#particles-per-second) are spawned.
 
 #### Particles Per Second
 
-With Automatic Spawning unchecked, you can now control the rate at which your particles are released. Keep in mind that no matter what you can not cause there to be more particles than what [Max Particles](#maxnumberofparticles) is set to.
+With Automatic Spawning unchecked, you can now control the rate at which your particles are released. Keep in mind that no matter what you can not cause there to be more particles than what [Max Particles](#max-number-of-particles) is set to.
 
 #### Scale Emitter
 
@@ -348,7 +348,7 @@ If you make Subdivision Scale [0] = 0.4 and [1] = 1, only two of the Subdivision
 
 ![subdivscale2.jpg](../../assets/subdivscale2.jpg)
 
-To get this effect at it's best, you have to use the correct LifeTimeRange and also make sure the [Number of Particles](#maxnumberofparticles) value is high enough. Read sections [General](#general) and [Time](#time) for this.Use the Subdivision End and Subdivision Start values if you want only a few Subdivisions of the texture to be used. Subdivision 0 is the Subdivision in the upper left corner of the texture, Subdivision 1 the one below that, and the last one is in the lower right corner of the texture. This picture shows the numbering:
+To get this effect at it's best, you have to use the correct LifeTimeRange and also make sure the [Number of Particles](#max-number-of-particles) value is high enough. Read sections [General](#general) and [Time](#time) for this.Use the Subdivision End and Subdivision Start values if you want only a few Subdivisions of the texture to be used. Subdivision 0 is the Subdivision in the upper left corner of the texture, Subdivision 1 the one below that, and the last one is in the lower right corner of the texture. This picture shows the numbering:
 
 ![subdiv.jpg](../../assets/subdiv.jpg)
 
@@ -442,7 +442,7 @@ The Lifetime is the number of seconds the particle will live. After this time, i
 
 #### Initial Time
 
-The \_Initial Time\_ lets the particles be several seconds old already when they get spawned. If [Lifetime](#lifetime) is 4 and \_Initial Time\_ is 3, the particle will already be 3 seconds old when spawned and live for only one second. This setting can be interesting when you use scales: the [Subdivision Scale](#usesubdivisionscale), [Color Scale](#colorscale) and [SizeScale](#sizescale) will also be calculated as if they're 3 seconds old already.
+The \_Initial Time\_ lets the particles be several seconds old already when they get spawned. If [Lifetime](#lifetime) is 4 and \_Initial Time\_ is 3, the particle will already be 3 seconds old when spawned and live for only one second. This setting can be interesting when you use scales: the [Subdivision Scale](#usesubdivisionscale), [Color Scale](#color-scale) and [SizeScale](#size-scale) will also be calculated as if they're 3 seconds old already.
 
 #### Initial Delay
 
@@ -492,7 +492,7 @@ If Y > 0, it'll go to the South
 If Y < 0, it'll go to the North
 If Z > 0, it'll go to the ceiling or sky
 If Z < 0, it'll go to the ground
-The total acceleration is the sum of these 3 components, so if X = 425, Y = -950 and Z = -950, the particles will go to the North-East and down, and will go to the North with more acceleration than to the East. However, if you rotated the Emitter actor with the Rotation tool, this won't be correct anymore, the CoordinateSystem will be rotated then. The X-axis will then be the direction of the arrow if you set bDirectional to True in advanced. Once you gave it some acceleration, you'll see the particles move.While *Acceleration* makes the particle move faster every second, the [Start Velocity](#startvelocity) is a constant speed. If no *Acceleration* is used, but there is a Velocity, the particle will move with the same speed as long as it lives. If you use Velocity AND *Acceleration* the total speed of the particle will be the sum of the constant Velocity and the variable speed caused by the Acceleration. If there is a Velocity and a Acceleration along the same axis, but they have opposite signs, the particle will first move in one direction, but at a certain point the absolute value of the speed caused but the Acceleration will be larger than the absolute value of the Velocity, so the particles will move back to the direction they came from. If you use a Velocity and an Acceleration, both along a different axis, the particles will make a parabola. A parabola is the realistic trajectory for example a bullet or an object you throw follow. For example if Acceleration has Z = -950, and *Start Velocity* has X-Min = 500 X-Max = 500, it'll look like this:
+The total acceleration is the sum of these 3 components, so if X = 425, Y = -950 and Z = -950, the particles will go to the North-East and down, and will go to the North with more acceleration than to the East. However, if you rotated the Emitter actor with the Rotation tool, this won't be correct anymore, the CoordinateSystem will be rotated then. The X-axis will then be the direction of the arrow if you set bDirectional to True in advanced. Once you gave it some acceleration, you'll see the particles move.While *Acceleration* makes the particle move faster every second, the [Start Velocity](#start-velocity) is a constant speed. If no *Acceleration* is used, but there is a Velocity, the particle will move with the same speed as long as it lives. If you use Velocity AND *Acceleration* the total speed of the particle will be the sum of the constant Velocity and the variable speed caused by the Acceleration. If there is a Velocity and a Acceleration along the same axis, but they have opposite signs, the particle will first move in one direction, but at a certain point the absolute value of the speed caused but the Acceleration will be larger than the absolute value of the Velocity, so the particles will move back to the direction they came from. If you use a Velocity and an Acceleration, both along a different axis, the particles will make a parabola. A parabola is the realistic trajectory for example a bullet or an object you throw follow. For example if Acceleration has Z = -950, and *Start Velocity* has X-Min = 500 X-Max = 500, it'll look like this:
 
 ![parabola1.jpg](../../assets/parabola1.jpg)
 
@@ -516,7 +516,7 @@ The *Velocity Loss* setting hinders the particle from moving along any axis you 
 
 #### Add Velocity Multiplier
 
-If [Add Velocity From Other Emitter](#addvelocityfromotheremitter) is not set to *None* then the particle's velocity will be multiplied by this value. For example, if you want the particles from this emitter to have twice the velocity of the particles from other emitter you could set all the values in this tool equal to 2.0.
+If [Add Velocity From Other Emitter](#add-velocity-from-other-emitter) is not set to *None* then the particle's velocity will be multiplied by this value. For example, if you want the particles from this emitter to have twice the velocity of the particles from other emitter you could set all the values in this tool equal to 2.0.
 
 #### Get Velocity Direction From
 
@@ -571,7 +571,7 @@ Selecting *Sphere* makes it possible spawn the particles inside of a sphere with
 
 #### Start Location Offset
 
-The settings in [Start Location Shape](#startlocationshape) work in combination with *Location Offset*, so the final Start Location is the sum of those. This makes is possible for spawning area of particles to not be centered over the emitter.
+The settings in [Start Location Shape](#start-location-shape) work in combination with *Location Offset*, so the final Start Location is the sum of those. This makes is possible for spawning area of particles to not be centered over the emitter.
 
 #### Add Location From Other Emitter
 
@@ -647,7 +647,7 @@ Another way to use skeletal mesh animation is to create a simple model that move
 
 ![skelmesh3.jpg](../../assets/skelmesh3.jpg)
 
-Complex movement patterns can also be achieved by using [Anim Notifies](../Animation/AnimNotifies.md) to attach particles systems to bones. (See *AnimNotify\_Effect*).While it is possible to use skeletal mesh animation without any new code (the spiral example did not use any new code for example) the system works best when coupled with game specific code. This is mainly do to the fact that [SkeletalMeshActor](#skeletalmeshactor) must be an *Actor* that exists in the level. This makes it impossible to preview this type of particle system in Unrealed because characters do not move around or animate in the editor. Below is an example of attaching the dead green DeRes effect in UT2003:
+Complex movement patterns can also be achieved by using [Anim Notifies](../Animation/AnimNotifies.md) to attach particles systems to bones. (See *AnimNotify\_Effect*).While it is possible to use skeletal mesh animation without any new code (the spiral example did not use any new code for example) the system works best when coupled with game specific code. This is mainly do to the fact that [SkeletalMeshActor](#skeletalmesh-actor) must be an *Actor* that exists in the level. This makes it impossible to preview this type of particle system in Unrealed because characters do not move around or animate in the editor. Below is an example of attaching the dead green DeRes effect in UT2003:
 
 ```
 
@@ -707,7 +707,7 @@ Facing Direction determines how particles are oriented in the world. It is impor
 
 ![facingdirtex.jpg](../../assets/facingdirtex.jpg)
 
-**Facing Camera** is the default and most common choice for facing direction. All the particles are billboarded facing the camera no matter where the camera is. This can be seen in the image below. The one confusing part about *Facing Camera* is that it flips the texture vertically. Another confusing aspect of this settings is that the size of particles has a constant aspect ratio because X size (from [Start Size](#startsize)) is used to scale both X and Y. Y size is ignored when facing direction is set to *Facing Camera*.
+**Facing Camera** is the default and most common choice for facing direction. All the particles are billboarded facing the camera no matter where the camera is. This can be seen in the image below. The one confusing part about *Facing Camera* is that it flips the texture vertically. Another confusing aspect of this settings is that the size of particles has a constant aspect ratio because X size (from [Start Size](#start-size)) is used to scale both X and Y. Y size is ignored when facing direction is set to *Facing Camera*.
 
 ![facingdir1a.jpg](../../assets/facingdir1a.jpg)
 
@@ -715,11 +715,11 @@ Facing Direction determines how particles are oriented in the world. It is impor
 
 ![facingdir2a.jpg](../../assets/facingdir2a.jpg)
 
-![facingdir2b.jpg](../../assets/facingdir2b.jpg)**Specified Normal** is very simple; the particle normal is specified by [Projection Normal](#projectionnormal). In the case of the first image the normal is straight up (0, 0, 1). The second image has a normal of (-0.5, 0.3, 1.0).
+![facingdir2b.jpg](../../assets/facingdir2b.jpg)**Specified Normal** is very simple; the particle normal is specified by [Projection Normal](#projection-normal). In the case of the first image the normal is straight up (0, 0, 1). The second image has a normal of (-0.5, 0.3, 1.0).
 
 ![facingdir3.jpg](../../assets/facingdir3.jpg)
 
-![facingdir3b.jpg](../../assets/facingdir3b.jpg)**Along Movement Facing Normal** is like *Along Movement Facing Camera* but instead of facing the camera, the particles faces the specified [Projection Normal](#projectionnormal). This is very useful for things like waterfalls where the particles should orient with its movement but not face the camera. The effects can be seen below.
+![facingdir3b.jpg](../../assets/facingdir3b.jpg)**Along Movement Facing Normal** is like *Along Movement Facing Camera* but instead of facing the camera, the particles faces the specified [Projection Normal](#projection-normal). This is very useful for things like waterfalls where the particles should orient with its movement but not face the camera. The effects can be seen below.
 
 ![facingdir4a.jpg](../../assets/facingdir4a.jpg)
 
@@ -729,7 +729,7 @@ Facing Direction determines how particles are oriented in the world. It is impor
 
 #### Projection Normal
 
-This tool is enabled and used for the *Specified Normal* and *Along Movement Facing Normal* settings of [Facing Direction](#facingdirection).
+This tool is enabled and used for the *Specified Normal* and *Along Movement Facing Normal* settings of [Facing Direction](#facing-direction).
 
 #### Use Rotation From:
 
@@ -779,7 +779,7 @@ If Uniform Size is set to True, only the X is used for both U and V (or X, Y and
 
 #### Start Size
 
-The *Start Size Range* determinates the Size the particles will get when spawned. For Sprites, only the X values are useful if [Facing Direction](#facingdirection) is **Facing Camera**. For all other settings of **Facing Direction** the X and Y can be used to change the width and height of the texture separately (but only if [UniformSize](#uniformsize)  is false). For Meshes, X, Y, and Z are used (but only if [UniformSize](#uniformsize)  is false). The default value is 100, the screenshots show X(Min) = X(Max) = 50, and X(Min) = X(Max) = 150.
+The *Start Size Range* determinates the Size the particles will get when spawned. For Sprites, only the X values are useful if [Facing Direction](#facing-direction) is **Facing Camera**. For all other settings of **Facing Direction** the X and Y can be used to change the width and height of the texture separately (but only if [UniformSize](#uniform-size)  is false). For Meshes, X, Y, and Z are used (but only if [UniformSize](#uniform-size)  is false). The default value is 100, the screenshots show X(Min) = X(Max) = 50, and X(Min) = X(Max) = 150.
 
 ![size1.jpg](../../assets/size1.jpg)
 
@@ -789,7 +789,7 @@ The *Start Size Range* determinates the Size the particles will get when spawned
 
 #### Size Scale
 
-The *Size Scale* works exactly the same as the [Color Scale](#colorscale), only now you're working with a Size instead of a color. If you set *Use Size Scale* to True AND *Shrink Particles Exponentially* to True, the Particles will always shrink, and you don't have to add any SizeScales.
+The *Size Scale* works exactly the same as the [Color Scale](#color-scale), only now you're working with a Size instead of a color. If you set *Use Size Scale* to True AND *Shrink Particles Exponentially* to True, the Particles will always shrink, and you don't have to add any SizeScales.
 
 ![size4.jpg](../../assets/size4.jpg)
 
@@ -832,7 +832,7 @@ The DampingFactor changes the velocity of the Particle every time it bounces on 
 
 #### Rotation Damping Factor
 
-To use rotation damping factor you first have to check *Use Rotation Damping*. With *Rotation Damping Factor*, you can set the damping factor for the spinning particles, this works the same way as the [Damping Factor](#dampingfactor) of Collision, only it makes the particles spin slower or faster every time they bounce. For example if you make the Z-Min and Z-Max values of the *Rotation Damping Factor* 0, the spin will stop after the first bounce on the floor already because the *Spins Per Second* gets multiplied by 0. Note on the screenshot all the textures to have the same Rotation after the bounce:
+To use rotation damping factor you first have to check *Use Rotation Damping*. With *Rotation Damping Factor*, you can set the damping factor for the spinning particles, this works the same way as the [Damping Factor](#damping-factor) of Collision, only it makes the particles spin slower or faster every time they bounce. For example if you make the Z-Min and Z-Max values of the *Rotation Damping Factor* 0, the spin will stop after the first bounce on the floor already because the *Spins Per Second* gets multiplied by 0. Note on the screenshot all the textures to have the same Rotation after the bounce:
 
 ![spin3.jpg](../../assets/spin3.jpg)
 
@@ -854,11 +854,11 @@ If you set *Use Max Collisions* to True, the particle will die when it bounced t
 
 #### Spawn From Other Emitter
 
-With SpawnFromOtherEmitter, you can make something to get spawned at the location where the particle bounces, for example sparks leaving a glowing mark where they hit, or rippels in shallow water. For this to work, you have to make a second emitter inside of the same emitter actor, and select that emitter is *Spawn From Other Emitter*. The particles of this new emitter are the ones that will be spawned at the location of bouncing particle when it bounces (this is subtly different from the location of the bounce particularly if you have a large [Extent Multiplier](#extentmultiplier)). For the new emitter, set [Respawn Dead Particles](#respawndeadparticles) and [Automatic Spawning](#automaticspawning) to False. The reason for this is, otherwise these particles may also get spawned at the wrong moment at the location of the particle system in the world.Then, in *Spawn Amount Range*, enter the number of particles you want to get spawned when the bouncing particle hits the surface. This must be at least 1 for the anything to happen.
+With SpawnFromOtherEmitter, you can make something to get spawned at the location where the particle bounces, for example sparks leaving a glowing mark where they hit, or rippels in shallow water. For this to work, you have to make a second emitter inside of the same emitter actor, and select that emitter is *Spawn From Other Emitter*. The particles of this new emitter are the ones that will be spawned at the location of bouncing particle when it bounces (this is subtly different from the location of the bounce particularly if you have a large [Extent Multiplier](#extent-multiplier)). For the new emitter, set [Respawn Dead Particles](#respawn-dead-particles) and [Automatic Spawning](#automatic-spawning) to False. The reason for this is, otherwise these particles may also get spawned at the wrong moment at the location of the particle system in the world.Then, in *Spawn Amount Range*, enter the number of particles you want to get spawned when the bouncing particle hits the surface. This must be at least 1 for the anything to happen.
 
 #### Spawned Velocity Scale
 
-If you check *Use Spawned Velocity Scale*, you can also give the particles that get spawned when it bounces a velocity. You can set this Velocity in the *Spawned Velocity Scale* settings: you can give Minimum and Maximup X, Y and Z settings. If the particle bounces, the spawned particles only get the velocity in the normal direction on the surface. The best way to use this to give the mins and maxs of X, Y, and Z all the same positive value so that the they will travel in the direction of the normal (If you give X, Y, and Z negative values the spawned particles will more towards the surface they bounced off).Spawned Velocity Scale can be used very well with [Facing Direction](#facingdirection). If you set *Facing Direction* to 'Perpendicular To Movement' and set the spawned velocity to a very small value (like 1.0) the secondary particles will be aligned with the surface they bounced off. This works very well for impact marks.
+If you check *Use Spawned Velocity Scale*, you can also give the particles that get spawned when it bounces a velocity. You can set this Velocity in the *Spawned Velocity Scale* settings: you can give Minimum and Maximup X, Y and Z settings. If the particle bounces, the spawned particles only get the velocity in the normal direction on the surface. The best way to use this to give the mins and maxs of X, Y, and Z all the same positive value so that the they will travel in the direction of the normal (If you give X, Y, and Z negative values the spawned particles will more towards the surface they bounced off).Spawned Velocity Scale can be used very well with [Facing Direction](#facing-direction). If you set *Facing Direction* to 'Perpendicular To Movement' and set the spawned velocity to a very small value (like 1.0) the secondary particles will be aligned with the surface they bounced off. This works very well for impact marks.
 
 ### Sounds
 
@@ -905,7 +905,7 @@ Collision sounds can be enabled by setting the *Collision Sound* pull down to an
 * The *Radius* is in stand unit for sound radii which is something other than Unreal units. 64 seems to be a good value.
 * For *Pitch*, 1.0 is the default pitch.
 * The *Volume* setting only accepts values between 0.0 and 1.0. 1.0 is the standard volume and it can only be made more quiet.
-* *Probability* is the chance that this sound will play if it is told to play. The sound will be told to play based on [Spawning Sound Probability](#spawningsoundprobability) or [Collision Sound Probability](#collisionsoundprobability).
+* *Probability* is the chance that this sound will play if it is told to play. The sound will be told to play based on [Spawning Sound Probability](#spawning-sound-probability) or [Collision Sound Probability](#collision-sound-probability).
 
 ### Mesh
 
@@ -913,7 +913,7 @@ Collision sounds can be enabled by setting the *Collision Sound* pull down to an
 
 #### Mesh
 
-This is very similar to the [Texture](#textureuse) field. In the Static Mesh browser select the mesh you want to use for this mesh emitter and click **Use**.
+This is very similar to the [Texture](#texture) field. In the Static Mesh browser select the mesh you want to use for this mesh emitter and click **Use**.
 
 #### Use Mesh Blend Mode
 
@@ -921,21 +921,21 @@ If this is true, the blend mode of the mesh is used. This means that the particl
 
 #### Render Two Sided
 
-If this set, the mesh will render all triangles two sided. This is usefull only if [UseMeshBlendMode](#usemeshblendmode) is false.
+If this set, the mesh will render all triangles two sided. This is usefull only if [UseMeshBlendMode](#use-mesh-blend-mode) is false.
 
 #### Use Particle Color
 
-If this is set, the mesh will use the settings in Color/Fading?. This is only usefull if [UseMeshBlendMode](#usemeshblendmode) is true.
+If this is set, the mesh will use the settings in Color/Fading?. This is only usefull if [UseMeshBlendMode](#use-mesh-blend-mode) is true.
 
 ### Spark
 
 ![sparkcat.jpg](../../assets/sparkcat.jpg)
 
-This ParticleEmitter generates sparks, for example the kind of sparks you see when someone's welding. This emitter turns it's Texture into one thin line with the colors of the texture. Settings such as [Acceleration](#acceleration), [Start Velocity](#startvelocity), and [Start Location](#startlocation) still work on it, but [Collision](#collision), [Rotation](#rotation), [Size](#size), etc... don't work on it because the particles are just lines. [Texture](#texture) still works to color the particle but because it is just a line the entire texture can not be seen. Things such as the [Color Scale](#colorscale) and [Fading](#fading) work, but these work per segment so you might not get the look you expected. On the screenshot: a random [Start Location](#startlocation) and a subtle red [Color Scale](#colorscale) on a white texture.
+This ParticleEmitter generates sparks, for example the kind of sparks you see when someone's welding. This emitter turns it's Texture into one thin line with the colors of the texture. Settings such as [Acceleration](#acceleration), [Start Velocity](#start-velocity), and [Start Location](#startlocation) still work on it, but [Collision](#collision), [Rotation](#rotation), [Size](#size), etc... don't work on it because the particles are just lines. [Texture](#texture) still works to color the particle but because it is just a line the entire texture can not be seen. Things such as the [Color Scale](#color-scale) and [Fading](#fading) work, but these work per segment so you might not get the look you expected. On the screenshot: a random [Start Location](#startlocation) and a subtle red [Color Scale](#color-scale) on a white texture.
 
 ![spark10.jpg](../../assets/spark10.jpg)
 
-To get a working Spark Emitter, add one the same way you'd add a Sprite or Mesh Emitter, and first give the it Velocity or Acceleration and then go to it's Spark properties. There set the Min and Max value of [Time Between Segments](#timebetweensegments) to 1, you'll see the emitter working already.
+To get a working Spark Emitter, add one the same way you'd add a Sprite or Mesh Emitter, and first give the it Velocity or Acceleration and then go to it's Spark properties. There set the Min and Max value of [Time Between Segments](#time-between-segments) to 1, you'll see the emitter working already.
 
 ![spark1.jpg](../../assets/spark1.jpg)
 
@@ -1010,7 +1010,7 @@ This property sets what determines the EndPoint of the beam. The StartPoint is d
 ![lightning1.gif](../../assets/lightning1.gif)
 
 *Distance* does the same as *Velocity*, but the StartVelocityRange only determines the direction of the beam. The length is set with [Beam Distance](#beamdistance), in editor units.*Offset* allows you to determinate the EndPoint in relative coordinates. You have to enter these coordinates in Offset, inside BeamEndPoints[0]. To get this, first expand
-[Beam End Points](#beamendpoints) and press the Insert button.
+[Beam End Points](#beam-end-points) and press the Insert button.
 
 ![beamendpoints.jpg](../../assets/beamendpoints.jpg)
 
@@ -1024,15 +1024,15 @@ In Offset, enter the X, Y and Z coordinate range for the EndPoint of the Beam. T
 
 #### Beam Distance Range
 
-This determines the length of the beam when [Determine End Point By](#determineendpointby) is set to *Velocity*.
+This determines the length of the beam when [Determine End Point By](#determine-end-point-by) is set to *Velocity*.
 
 #### Beam End Points
 
-This determines the various end points of the beam when [Determine End Point By](#determineendpointby) is set to *Offset*, *Actor*, and *TraceOffset*.
+This determines the various end points of the beam when [Determine End Point By](#determine-end-point-by) is set to *Offset*, *Actor*, and *TraceOffset*.
 
 #### Trigger Actor End Point
 
-If *Trigger Actor End Point* is true, the beam will trigger the actor it draws to. This only works if [Determine End Point By](#determineendpointby) is set to *Actor* and there are valid actor tags in the the [Beam End Points](#beamendpoints) array. For example, this can be used to spawn impact effects for lighting at the strike point.
+If *Trigger Actor End Point* is true, the beam will trigger the actor it draws to. This only works if [Determine End Point By](#determine-end-point-by) is set to *Actor* and there are valid actor tags in the the [Beam End Points](#beam-end-points) array. For example, this can be used to spawn impact effects for lighting at the strike point.
 
 ### Beam Noise
 
@@ -1042,15 +1042,15 @@ Here you can give the beam noise. You can give *High Frequency Points* and *Low 
 
 ![lightning5.gif](../../assets/lightning5.gif)
 
-You can also make a *High Frequency Scale*. This is similar to the [Color Scale](#colorscale), [Size Scale](#sizescale), etc..., only the *High Frequency Scale* determinates the [High Frequency Noise Range](#highfrequencynoiserange) on the different places of the beam. You can see the effect of the *High Frequency Scale* best on beams with a lot of *High Frequency Points*, so set it to for example 100. Without the *High Frequency Scale*, the whole beam has the same *Noise Range* everywhere:
+You can also make a *High Frequency Scale*. This is similar to the [Color Scale](#color-scale), [Size Scale](#size-scale), etc..., only the *High Frequency Scale* determinates the [High Frequency Noise Range](#highfrequencynoiserange) on the different places of the beam. You can see the effect of the *High Frequency Scale* best on beams with a lot of *High Frequency Points*, so set it to for example 100. Without the *High Frequency Scale*, the whole beam has the same *Noise Range* everywhere:
 
 ![noise.jpg](../../assets/noise.jpg)
 
-To enable the *High Frequency Scale*, first set *Use High Frequency Scale* to True, and then add a *High Frequency Scale*, the same way as you added [Color Scale](#colorscale): expand the *High Frequency Scale Factors* and press the Insert button until you have enough scale factors. The frequency scale multiplies the *High Frequency Noise Range* (X, Y and Z separately), and *Relative Length* determinates the location on the beam where you want this multiplier to happen. 100% represents the length of the whole beam. If you set *Relative Length* of the first *High Frequency Scale Factor* to 70%, the first 70% of the Beam will have the scale of that *High Frequency Scale Factor*, and if you then set the *Relative Lentgh* of next *High Frequency Scale Factor* to 100%, the remaining 30% will get multiplied by the this *Frequency Scale*. On the screenshot the first *Frequency Scale* is 1 for X, Y and Z, and the second *Frequency Scale* is 10 for X, Y and Z.
+To enable the *High Frequency Scale*, first set *Use High Frequency Scale* to True, and then add a *High Frequency Scale*, the same way as you added [Color Scale](#color-scale): expand the *High Frequency Scale Factors* and press the Insert button until you have enough scale factors. The frequency scale multiplies the *High Frequency Noise Range* (X, Y and Z separately), and *Relative Length* determinates the location on the beam where you want this multiplier to happen. 100% represents the length of the whole beam. If you set *Relative Length* of the first *High Frequency Scale Factor* to 70%, the first 70% of the Beam will have the scale of that *High Frequency Scale Factor*, and if you then set the *Relative Lentgh* of next *High Frequency Scale Factor* to 100%, the remaining 30% will get multiplied by the this *Frequency Scale*. On the screenshot the first *Frequency Scale* is 1 for X, Y and Z, and the second *Frequency Scale* is 10 for X, Y and Z.
 
 ![freqscale.jpg](../../assets/freqscale.jpg)
 
-![freqscale2.jpg](../../assets/freqscale2.jpg)You can use *High Frequency Scale Repeats* to repeat the scale 1 or more times, just the same way as for the [Color Scale](#colorscale) and the other scales. For example it looks like this if *High Frequency Scale Repeats* = 2.
+![freqscale2.jpg](../../assets/freqscale2.jpg)You can use *High Frequency Scale Repeats* to repeat the scale 1 or more times, just the same way as for the [Color Scale](#color-scale) and the other scales. For example it looks like this if *High Frequency Scale Repeats* = 2.
 
 ![freqscale3.jpg](../../assets/freqscale3.jpg)
 
@@ -1064,7 +1064,7 @@ The *Low Frequency* settings do exactly the same as the *High Frequency* setting
 
 ![beambranching.gif](../../assets/beambranching.gif)
 
-To make good looking lightning effects, you can give beams branches. If this is used correctly, you can get a very cool and realistic lightning. It works like this: you have to create more than one [BeamEmitter](#beamemitter) (inside the same Emitter). Then you can tell the first [BeamEmitter](#beamemitter) to use the second [BeamEmitter](#beamemitter) for the branches. Then again, you can tell the second [BeamEmitter](#beamemitter) to use a third one for sub-branches, and so on. The *Max Particles* setting is also the maximum number of branches.First add multiple beam emitters and give each Emitter the properties you want. Make the first one big, and set it's *Max Particles* to 1. Make the second and third one smaller; they're for the branches. Give them many more *Max Particles*, for example 10 or 25. Also, set[RespawnDeadParticles](#respawndeadparticles) to False for all branches, and set [AutomaticInitialSpawning](#automaticinitialspawning) to False, otherwise the branches might get spawned at the start point of the emitter itself instead of the new start point they get when they become branch. Also, make sure the beam emitters that will get branches, have a lot of [Beam Noise](#beamnoise). The branches will appear in the bends only, so if there aren't enough [High Frequency Points](#highfrequencypoints), there will not be a place for all the branches! You can of course make the noise very subtle, so you won't notice it, only the number of [High Frequency Points](#highfrequencypoints) is important; the more the better.
+To make good looking lightning effects, you can give beams branches. If this is used correctly, you can get a very cool and realistic lightning. It works like this: you have to create more than one [BeamEmitter](#beamemitter) (inside the same Emitter). Then you can tell the first [BeamEmitter](#beamemitter) to use the second [BeamEmitter](#beamemitter) for the branches. Then again, you can tell the second [BeamEmitter](#beamemitter) to use a third one for sub-branches, and so on. The *Max Particles* setting is also the maximum number of branches.First add multiple beam emitters and give each Emitter the properties you want. Make the first one big, and set it's *Max Particles* to 1. Make the second and third one smaller; they're for the branches. Give them many more *Max Particles*, for example 10 or 25. Also, set[RespawnDeadParticles](#respawn-dead-particles) to False for all branches, and set [AutomaticInitialSpawning](#automaticinitialspawning) to False, otherwise the branches might get spawned at the start point of the emitter itself instead of the new start point they get when they become branch. Also, make sure the beam emitters that will get branches, have a lot of [Beam Noise](#beam-noise). The branches will appear in the bends only, so if there aren't enough [High Frequency Points](#highfrequencypoints), there will not be a place for all the branches! You can of course make the noise very subtle, so you won't notice it, only the number of [High Frequency Points](#highfrequencypoints) is important; the more the better.
 
 #### Use Branching, Branch Emitter
 
@@ -1084,7 +1084,7 @@ This is the range of high frequency points the branches of the beam will be spaw
 
 #### Linkup Lifetime
 
-If *Linkup Lifetime* is False, the branches may stay behind while the large beam is somewhere else already. This happens when the branch has a bigger [lifetime](#lifetime). If you set *Linkup Lifetime* to True, this problem is gone because the branches will live as long as the main beam, no matter what lifeTime they have. Only make sure [Respawn Dead Particles](#respawndeadparticles) is False for the branches then, otherwise they get spawned at the wrong place when *Linkup Lifetime* is True.For example, here the main beam is red, it has 12 [Low Frequency Points](#lowfrequencypoints), and 60 very small [High Frequency Points](#highfrequencypoints) that can be used as spawnpoints for the 25 green branches.
+If *Linkup Lifetime* is False, the branches may stay behind while the large beam is somewhere else already. This happens when the branch has a bigger [lifetime](#lifetime). If you set *Linkup Lifetime* to True, this problem is gone because the branches will live as long as the main beam, no matter what lifeTime they have. Only make sure [Respawn Dead Particles](#respawn-dead-particles) is False for the branches then, otherwise they get spawned at the wrong place when *Linkup Lifetime* is True.For example, here the main beam is red, it has 12 [Low Frequency Points](#lowfrequencypoints), and 60 very small [High Frequency Points](#highfrequencypoints) that can be used as spawnpoints for the 25 green branches.
 
 ![branchemitter1.jpg](../../assets/branchemitter1.jpg)
 
@@ -1112,11 +1112,11 @@ reset button. The emitter will start over with all its initial values.
 
 #### Number of Particles to Spawn
 
-*Number of Particles to Spawn* is the number of particles that will be spawned when the emitter is triggered. This setting depends on *Particles per Second* described below and also [Max Number of Particles](#maxnumberofparticles) in *General*. The particles whose number you specify here will spawn at rate described in *Particles per Second* and will not exceed *Max Number of Particles*.
+*Number of Particles to Spawn* is the number of particles that will be spawned when the emitter is triggered. This setting depends on *Particles per Second* described below and also [Max Number of Particles](#max-number-of-particles) in *General*. The particles whose number you specify here will spawn at rate described in *Particles per Second* and will not exceed *Max Number of Particles*.
 
 #### Particles per Second
 
-*Particles per Second* is the rate at which the particles specified above in *Number of Particles to Spawn* will spawn when triggered. If either *Particles per Second* or *Number of Particles to Spawn* are 0, no effect will be observed. If the emitter is currently emitting particles, this setting should be greater than the current rate of particles per second, otherwise no effect will be observed. In most cases *Particles per Second* and *Number of Particles to Spawn* will be used when [Respawn Dead Particles](#respawndeadparticles) is false but it does not have to be.
+*Particles per Second* is the rate at which the particles specified above in *Number of Particles to Spawn* will spawn when triggered. If either *Particles per Second* or *Number of Particles to Spawn* are 0, no effect will be observed. If the emitter is currently emitting particles, this setting should be greater than the current rate of particles per second, otherwise no effect will be observed. In most cases *Particles per Second* and *Number of Particles to Spawn* will be used when [Respawn Dead Particles](#respawn-dead-particles) is false but it does not have to be.
 
 ## Editing the "Old Way"
 

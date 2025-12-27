@@ -2,7 +2,7 @@
 
 *Document Summary: Channel rules for irc.enterthegame.com #UnrealScript.**Document Changelog: Created by Vito because he could.*
 
-* [#UnrealScript on the EnterTheGame IRC network.](UnrealScriptOnETG.md#unrealscript-on-the-_enterthegame-irc-network)
+* [#UnrealScript on the EnterTheGame IRC network.](UnrealScriptOnETG.md#unrealscript-on-the-enterthegame-irc-network)
   + [Live People to Grouse With](UnrealScriptOnETG.md#live-people-to-grouse-with)
   + [Channel Rules](UnrealScriptOnETG.md#channel-rules)
 

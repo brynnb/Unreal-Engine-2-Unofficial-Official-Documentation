@@ -11,11 +11,11 @@
 
 ## Introduction
 
-BSP is the most primitive of the geometry types as well as the most fundamental. Without it, your level will not exist. While BSP is the slowest geometry type to render, it does have some advantages over the other geometry types. Here you will see what the best uses are for BSP geometry and how you can use it efficiently in your level.This document is part of a collection of documents on [LevelOptimization](../Content Creation/Techniques/LevelOptimization.md), but sure to read the others.
+BSP is the most primitive of the geometry types as well as the most fundamental. Without it, your level will not exist. While BSP is the slowest geometry type to render, it does have some advantages over the other geometry types. Here you will see what the best uses are for BSP geometry and how you can use it efficiently in your level.This document is part of a collection of documents on [LevelOptimization](../Content%20Creation/Techniques/LevelOptimization.md), but sure to read the others.
 
 ## Creating the World Space
 
-It is necessary in creating the actual space of the world. You must start with BSP by subtracting a BSP brush from the world, so that you are working within subtracted world space. Using BSP brush is also the only way to set up zones (explained in detail in the [Zones and Portals](LevelOptimizationBSP.md#zonesandportals) section). Another thing to note with BSP is that it is occluded in nodes, which means that when it is set up to be hidden from the renderer it will be hidden in chunks, not on a triangle by triangle basis.Here are some images of a space that has been created entirely with BSP geometry carved out from the solid world space.
+It is necessary in creating the actual space of the world. You must start with BSP by subtracting a BSP brush from the world, so that you are working within subtracted world space. Using BSP brush is also the only way to set up zones (explained in detail in the [Zones and Portals](LevelOptimizationBSP.md#zones-and-portals) section). Another thing to note with BSP is that it is occluded in nodes, which means that when it is set up to be hidden from the renderer it will be hidden in chunks, not on a triangle by triangle basis.Here are some images of a space that has been created entirely with BSP geometry carved out from the solid world space.
 
 ![bsp_only.jpg](../assets/bsp_only.jpg)
 
@@ -27,7 +27,7 @@ Another thing to note is the frequency of BSP cuts. It is of course ideal to kee
 
 ## BSP Collision
 
-BSP geometry always handles collision calculations more efficiently but because of its rendering limitations, it is not ideal for everywhere. Typically BSP surfaces are used for ground and floor surfaces, and often invisible blocking volumes are constructed from the BSP brush and used to conceal more complicated StaticMesh geometry that may be making up the walls or sides of the space.For more detail on optimizing for collision, see the [CollisionTutorial](../Content Creation/Physics/CollisionTutorial.md)
+BSP geometry always handles collision calculations more efficiently but because of its rendering limitations, it is not ideal for everywhere. Typically BSP surfaces are used for ground and floor surfaces, and often invisible blocking volumes are constructed from the BSP brush and used to conceal more complicated StaticMesh geometry that may be making up the walls or sides of the space.For more detail on optimizing for collision, see the [CollisionTutorial](../Content%20Creation/Physics/CollisionTutorial.md)
 
 ### Zones and Portals
 
@@ -47,4 +47,4 @@ When the portal is not within the frustum of the player's view, the other room a
 
 ## Downloads
 
-To view a downloadable version of the map described above, go to the bottom of [main Level Optimization](../Content Creation/Techniques/LevelOptimization.md#downloads) and download the appropriate version from there.
+To view a downloadable version of the map described above, go to the bottom of [main Level Optimization](../Content%20Creation/Techniques/LevelOptimization.md#downloads) and download the appropriate version from there.

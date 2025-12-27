@@ -56,7 +56,7 @@ There are several properties that can be set for an Actor using Karma. Bring up 
 
 ![ex1_6.jpg](../assets/ex1_6.jpg)
 
-The default KFriction setting of our phone is 0, which is completely slippery. Change it to 0.2 as in the screenshot above, but we'll leave everything else at its defaults for now. Note that 'KStartEnabled' is set to False (we'll come to that in a sec).See the [KarmaReference](../Content Creation/Physics/KarmaReference.md) document for more information on KarmaParams settings.
+The default KFriction setting of our phone is 0, which is completely slippery. Change it to 0.2 as in the screenshot above, but we'll leave everything else at its defaults for now. Note that 'KStartEnabled' is set to False (we'll come to that in a sec).See the [KarmaReference](../Content%20Creation/Physics/KarmaReference.md) document for more information on KarmaParams settings.
 
 ## Playing The Level
 
@@ -68,7 +68,7 @@ But why is it hanging in the air? Karma automatically disables simulation of Act
 
 ## In Closing
 
-That's the basics of adding single objects to a scene and using Karma to simulate them. If you experience odd behaviour or crashes, make sure you check the UW.log file to see if there are any helpful warnings. Also, make sure you check the [KarmaReference](../Content Creation/Physics/KarmaReference.md) page and the Karma User Guide.Try also:
+That's the basics of adding single objects to a scene and using Karma to simulate them. If you experience odd behaviour or crashes, make sure you check the UW.log file to see if there are any helpful warnings. Also, make sure you check the [KarmaReference](../Content%20Creation/Physics/KarmaReference.md) page and the Karma User Guide.Try also:
 
 * Adding another object at a different scale. Collision geometry, inertia tensor and centre-of-mass position are scaled automatically. See how they behave differently.
 * Set friction to zero and see them skate around.

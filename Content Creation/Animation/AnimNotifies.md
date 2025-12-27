@@ -7,13 +7,13 @@ Last updated by Chris Linder (DemiurgeStudios?) for adding how multiple events a
   + [Overview](#overview)
   + [Adding a notify](#adding-a-notify)
   + [Notify types](#notify-types)
-    - [AnimNotify\_Effect](#animnotify-effect)
-    - [AnimNotify\_Destroyeffect](#animnotify-destroyeffect)
-    - [AnimNotify\_Sound](#animnotify-sound)
-    - [AnimNotify\_Script](#animnotify-script)
-    - [AnimNotify\_Scripted](#animnotify-scripted)
-    - [AnimNotify\_MatSubAction](#animnotify-matsubaction)
-    - [AnimNotify\_Trigger](#animnotify-trigger)
+    - [AnimNotify\_Effect](#animnotify_effect)
+    - [AnimNotify\_Destroyeffect](#animnotify_destroyeffect)
+    - [AnimNotify\_Sound](#animnotify_sound)
+    - [AnimNotify\_Script](#animnotify_script)
+    - [AnimNotify\_Scripted](#animnotify_scripted)
+    - [AnimNotify\_MatSubAction](#animnotify_matsubaction)
+    - [AnimNotify\_Trigger](#animnotify_trigger)
   + [Making new notifies, technical overview](#making-new-notifies-technical-overview)
 
 ## Introduction
@@ -26,7 +26,7 @@ The animation code (UnSkeletalMesh.cpp) checks for a notify in each frame for ea
 
 ## Adding a notify
 
-This is a relatively painless process; just go into the AnimationBrowser and select your mesh, and then the sequence you want to add a notify to. You'll see a box appear on the right panel of the browser window. It should say Animation. LOD, Mesh, Redigest, and Skin. Above that is a list of tabs, click on Notify. The item list should now just say Notify. If you click add and then new (not the button, just the text) you should be able to drop down a list of notify types you want to insert. You may have to adjust the box's size to fully see this. Once you have added your new notify type, then you need to type in the frame it should occur one (**Note:**. This is now displayed in frame numbers instead of time).The major limitation with animation notifies is that you can not add two notifies at the same time. You should also never put a notify on the very last frame because this will interfere with the *AnimEnd* event. You can put notifies very very close to each other if you want then to occur at the "same" time. For example, one notify can be at frame `20.0` and the next one can be at frame `20.001`. These two notifies will almost always be executed in the same tick but you can not guaranty it. If you **must** have two things happen at the same time, use an [AnimNotify\_Script](#animnotify-script) and write a function to do what you want. One more thing to watch out for is that the engine can only execute four animation notifies in a single tick. If there are still more to process, they will be processed the next tick. Once again, if you are really packing in many many notifies, you should probably just write a function and use [AnimNotify\_Script](#animnotify-script) .
+This is a relatively painless process; just go into the AnimationBrowser and select your mesh, and then the sequence you want to add a notify to. You'll see a box appear on the right panel of the browser window. It should say Animation. LOD, Mesh, Redigest, and Skin. Above that is a list of tabs, click on Notify. The item list should now just say Notify. If you click add and then new (not the button, just the text) you should be able to drop down a list of notify types you want to insert. You may have to adjust the box's size to fully see this. Once you have added your new notify type, then you need to type in the frame it should occur one (**Note:**. This is now displayed in frame numbers instead of time).The major limitation with animation notifies is that you can not add two notifies at the same time. You should also never put a notify on the very last frame because this will interfere with the *AnimEnd* event. You can put notifies very very close to each other if you want then to occur at the "same" time. For example, one notify can be at frame `20.0` and the next one can be at frame `20.001`. These two notifies will almost always be executed in the same tick but you can not guaranty it. If you **must** have two things happen at the same time, use an [AnimNotify\_Script](#animnotify_script) and write a function to do what you want. One more thing to watch out for is that the engine can only execute four animation notifies in a single tick. If there are still more to process, they will be processed the next tick. Once again, if you are really packing in many many notifies, you should probably just write a function and use [AnimNotify\_Script](#animnotify_script) .
 
 ## Notify types
 

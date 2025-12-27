@@ -12,7 +12,7 @@
 
 ## Introduction
 
-While the hardcore profiling of what can be optimized in a level should be left up to your programmers, there are still some initial steps that level designers can take to help determine where the trouble spots in your level might exist. This document outlines some of the approaches one can take within UnrealEd to see what can be improved upon in your level.This document is part of a collection of documents on [LevelOptimization](../Content Creation/Techniques/LevelOptimization.md), but sure to read the others.
+While the hardcore profiling of what can be optimized in a level should be left up to your programmers, there are still some initial steps that level designers can take to help determine where the trouble spots in your level might exist. This document outlines some of the approaches one can take within UnrealEd to see what can be improved upon in your level.This document is part of a collection of documents on [LevelOptimization](../Content%20Creation/Techniques/LevelOptimization.md), but sure to read the others.
 
 ## Viewport Display Modes
 
@@ -28,7 +28,7 @@ Because the editor renders the level in a slightly different way from the way th
 
 ![command_console.jpg](../assets/command_console.jpg)
 
-A complete list of console commands can be found [here](../Technical and Programming/Performance and Debugging/ConsoleCommands.md), below are some special interesting console commands.
+A complete list of console commands can be found [here](../Technical%20and%20Programming/Performance%20and%20Debugging/ConsoleCommands.md), below are some special interesting console commands.
 
 ### Stat Commands
 

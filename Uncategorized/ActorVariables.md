@@ -76,7 +76,7 @@ Therefore, when you are making your levels, keep in mind that the collisionheigh
 
 | Variable | Description | Default |
 | --- | --- | --- |
-| **AmbientGlow** | Controls how bright an actor will appear, from a 0-255 scale. See [LightingOnSurfaces](LightingOnSurfaces.md#lighting_on_meshes) for an example. | *0* |
+| **AmbientGlow** | Controls how bright an actor will appear, from a 0-255 scale. See [LightingOnSurfaces](LightingOnSurfaces.md#lighting-on-meshes) for an example. | *0* |
 | **AntiPortal** | Leave this field at its default value. | *None* |
 | **bAcceptsProjectors** | This determines whether projectors will affect the actor. | *True* |
 | **bAlwaysFaceCamera** | The actor will be rendered always facing the camera like a sprite. Only for vertex meshes. | *False* |
@@ -92,13 +92,13 @@ Therefore, when you are making your levels, keep in mind that the collisionheigh
 | **DrawScale3D** | This can be used to scale the actor non-uniformly. | *(1.0, 1.0, 1.0)* |
 | **DrawType** | This indicates what drawing effect the engine will choose to use. You shouldn't need to change this value. In fact, changing the value may crash your editor window. | *varies with actor* |
 | **ForcedVisibilityZoneTag** | This makes the visibility code treat the actor as if it was in the zone with the given tag. | *None* |
-| **LODBias** | Used by skeletal and vertex animated meshes to scale the Level of Detail (LOD) that is being used. This is a multiplier for the LOD to be used. If a mesh were going to use LOD level of 2, and LODBias was 2.0 then it would use a LOD level of 4. See the [Level of detail section of the AnimBrowserReference](../Content Creation/Animation/AnimBrowserReference.md#lod) document for more information. | *1.0* |
+| **LODBias** | Used by skeletal and vertex animated meshes to scale the Level of Detail (LOD) that is being used. This is a multiplier for the LOD to be used. If a mesh were going to use LOD level of 2, and LODBias was 2.0 then it would use a LOD level of 4. See the [Level of detail section of the AnimBrowserReference](../Content%20Creation/Animation/AnimBrowserReference.md#lod) document for more information. | *1.0* |
 | **MaxLights** | The limit of dynamic lights that can affect this actor. | *4* |
 | **Mesh** | This allows you to use a skeletal or vertex animated mesh in place of your actor. Make sure to change the *DrawType* to `DT_Mesh` when using this. | *None* |
 | **OverlayMaterial** | Shader/material effect to use with the skin (Only for skeletal meshes) | *None* |
 | **PrePivot** | These values allow you to offset the actor from its given pivot point. | *(0.0, 0.0, 0.0)* |
 | **ScaleGlow** | Allows you to change the brightness on static meshes and coronas. Rebuild lighting to see changes. | *1.0* |
-| **Skins** | Here you can reassign textures to your mesh. For more information see the [Workflow and Modularity](WorkflowAndModularity.md#variations_on_a_theme) doc. | ... |
+| **Skins** | Here you can reassign textures to your mesh. For more information see the [Workflow and Modularity](WorkflowAndModularity.md#variations-on-a-theme) doc. | ... |
 | **StaticMesh** | This allows you to substitute a StaticMesh for this actor. This won't work for all actors, such as emitters. If you use this, the DrawType is set to `DT_StaticMesh`. | *None* |
 | **Style** | The rendering style for sprites and meshes. This is usually best left at its default setting. | *STY Normal* |
 | **Texture** | This controls which texture will represent your sprite actor. | *varies with actor* |
@@ -126,7 +126,7 @@ Therefore, when you are making your levels, keep in mind that the collisionheigh
 
 |  |  |
 | --- | --- |
-| **KParams** | This is explained in the [KarmaReference](../Content Creation/Physics/KarmaReference.md#physics_parameters) doc. |
+| **KParams** | This is explained in the [KarmaReference](../Content%20Creation/Physics/KarmaReference.md#physics_parameters) doc. |
 
 ## LightColor
 
@@ -148,7 +148,7 @@ You can also use the Color Picker tool to set these values, or play around in Ph
 | **bDirectionalCorona** | If bCorona si true, make corona bigger if it faces you, and zero for 90 degrees or beyond. | *False* |
 | **bDynamicLight** | This will allow the lighting from this light to move with the light if `True`. Note that DynamicLights are somewhat more processor intensive than regular lights. | *False* |
 | **bLightingVisibility** | Calculates lighting visibility for this actor with line checks. | *True* |
-| **bSpecialLit** | See the [LightingReference](LightingReference.md#special_lit) document for an explanation. | *False* |
+| **bSpecialLit** | See the [LightingReference](LightingReference.md#special-lit) document for an explanation. | *False* |
 | **LightCone** | See the [LightingReference](LightingReference.md#lightcone) document for an explanation. | *0* |
 | **LightEffect** | See the [LightingReference](LightingReference.md#lighteffect) document for an explanation. | *LE None* |
 | **LightPeriod** | See the [LightingReference](LightingReference.md#lightperiod) document for an explanation. | *0* |
@@ -182,7 +182,7 @@ You can also use the Color Picker tool to set these values, or play around in Ph
 | Variable | Description | Default |
 | --- | --- | --- |
 | **Group** | Indicates which group this actor is assigned to in the [GroupsBrowser](GroupsBrowser.md). An actor can exist in more than one group at once. | *None* |
-| **InitialState** | This is not applicable to all actors. Certain actors such as [movers](../Content Creation/Primitives/MoversTutorial.md#assigning_activators) use this field. | *None* |
+| **InitialState** | This is not applicable to all actors. Certain actors such as [movers](../Content%20Creation/Primitives/MoversTutorial.md#assigning-activators) use this field. | *None* |
 | **Name** | This is the name that Unreal Ed assigns to your actor. This field can **NOT** be changed, and is **NOT** the same as the *Tag* field. | *None* |
 
 ## Sound

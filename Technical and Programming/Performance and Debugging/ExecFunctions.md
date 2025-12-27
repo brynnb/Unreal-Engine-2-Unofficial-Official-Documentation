@@ -225,7 +225,7 @@ Various commands that can be used from the PlayerController
 
 #### Gameplay
 
-Some gamplay related commands, also see the [inventory](#inventorycommands) commands
+Some gamplay related commands, also see the [inventory](#inventory) commands
 
 * BasePath - show the path to the base\next objective
 * Jump - tells the player code to jump

@@ -2,7 +2,7 @@
 
 *Created by Chris Linder (DemiurgeStudios?) on 11-18-03 for 2226 builds. Last Updated by Chris Linder (DemiurgeStudios?). Last updated by Michiel Hendriks, because of 3323*
 
-* [My First GameInfo](MyFirstGameInfo.md#my-first-_gameinfo)
+* [My First GameInfo](MyFirstGameInfo.md#my-first-gameinfo)
   + [Related Documents](MyFirstGameInfo.md#related-documents)
   + [Introduction](MyFirstGameInfo.md#introduction)
   + [The Class](MyFirstGameInfo.md#the-class)
@@ -33,4 +33,4 @@ defaultproperties
 }
 ```
 
-Note: The [CodeDrop2226](https://udn.epicgames.com/Two/CodeDrop2226) and 3323 version of this code additionally has the line: `"bDelayedStart=false"` which starts the game with no delay or waiting for the user to click. This line is not necessary for the Runtime or the UDNBuild because they already have *bDelayedStart* set to *false* in *GameInfo.uc*.Once the simple game info that specifies these things has been created, the game INI file (*ut2004.ini* or *ue2runtime.ini* for example) must be updated to use this new *GameInfo* by default. See the [MyFirstCode](MyFirstCode.md#installing_the_example) document for more details on installing the example.
+Note: The [CodeDrop2226](https://udn.epicgames.com/Two/CodeDrop2226) and 3323 version of this code additionally has the line: `"bDelayedStart=false"` which starts the game with no delay or waiting for the user to click. This line is not necessary for the Runtime or the UDNBuild because they already have *bDelayedStart* set to *false* in *GameInfo.uc*.Once the simple game info that specifies these things has been created, the game INI file (*ut2004.ini* or *ue2runtime.ini* for example) must be updated to use this new *GameInfo* by default. See the [MyFirstCode](MyFirstCode.md#installing-the-example) document for more details on installing the example.

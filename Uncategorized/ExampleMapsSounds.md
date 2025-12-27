@@ -7,7 +7,7 @@
   + [AmbientSounds](ExampleMapsSounds.md#ambientsounds)
   + [ZoneInfo Sounds](ExampleMapsSounds.md#zoneinfo-sounds)
     - [ZoneEffects](ExampleMapsSounds.md#zoneeffects)
-  + [Sounds in StaticMeshes and Movers](ExampleMapsSounds.md#sounds-in-_staticmeshes-and-movers)
+  + [Sounds in StaticMeshes and Movers](ExampleMapsSounds.md#sounds-in-staticmeshes-and-movers)
   + [Triggerable Sounds](ExampleMapsSounds.md#triggerable-sounds)
   + [Downloads](ExampleMapsSounds.md#downloads)
 
@@ -99,7 +99,7 @@ Sounds can also be concealed in StaticMeshes through the same way of setting an 
 
 ![moversounds.gif](../assets/moversounds.gif)
 
-These are explained in greater detail in the [MoversTutorial](../Content Creation/Primitives/MoversTutorial.md), but their names are fairly self explanatory of how they work. These are useful for setting the sounds for doors opening and closing, elevators moving, and any other sound that would be associated with moving geometry.
+These are explained in greater detail in the [MoversTutorial](../Content%20Creation/Primitives/MoversTutorial.md), but their names are fairly self explanatory of how they work. These are useful for setting the sounds for doors opening and closing, elevators moving, and any other sound that would be associated with moving geometry.
 
 ## Triggerable Sounds
 
@@ -112,4 +112,4 @@ Below you can download a compressed archive that contains the content for this e
 * [SoundsDemo.zip](../assets/soundsdemo.zip) (for Unreal Engine 2 build 2226)
 * [EM\_SoundsDemo\_RT.zip](../assets/em_soundsdemo_rt.zip) (for Unreal Engine 2 build 2226)
 
-To run this example map just download the appropriate zip file and put the packages in their appropriate folders. Also see the [Epic Sounds ExampleMap](ExampleMapsEPIC.md#sound_example_map) (build 2110).
+To run this example map just download the appropriate zip file and put the packages in their appropriate folders. Also see the [Epic Sounds ExampleMap](ExampleMapsEPIC.md#sound-example-map) (build 2110).

@@ -1,6 +1,6 @@
-# How to export animations using [ActorX](../Content Creation/Tools/ActorX.md) and XSI
+# How to export animations using [ActorX](../Content%20Creation/Tools/ActorX.md) and XSI
 
-*Document Summary: A tutorial showing how to export animations using [ActorX](../Content Creation/Tools/ActorX.md) with XSI.**Document Changelog: Created; maintained over time.*
+*Document Summary: A tutorial showing how to export animations using [ActorX](../Content%20Creation/Tools/ActorX.md) with XSI.**Document Changelog: Created; maintained over time.*
 
 * [How to export animations using ActorX and XSI](ActorXXSITutorial.md#how-to-export-animations-using-_actorx-and-xsi)
   + [Install the Plug-In](ActorXXSITutorial.md#install-the-plug-in)
@@ -12,7 +12,7 @@ This document assumes that you have already created and rigged your skeletal act
 
 ## Install the Plug-In
 
-1. Download and unzip the ActorX addon for XSI onto your system. (Files are available on the [ActorX](../Content Creation/Tools/ActorX.md) topic.)
+1. Download and unzip the ActorX addon for XSI onto your system. (Files are available on the [ActorX](../Content%20Creation/Tools/ActorX.md) topic.)
 2. Launch XSI, choose File -> Add-On -> Install and point it to wherever you stored the '.addon' file.
 3. Bring up the GUI by typing "ActorX()" (without quotes) into the script command line at the bottom of the screen, or into the Script Editor.
 

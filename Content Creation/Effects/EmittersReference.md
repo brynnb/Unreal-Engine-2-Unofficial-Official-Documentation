@@ -211,7 +211,7 @@ This is a Boolean toggle that turns [collision](#collision) for particles on or 
 
 #### UseCollisionPlanes
 
-This is a Boolean toggle that turns the [collision planes](#collisionplanes) on or off.
+This is a Boolean toggle that turns the [collision planes](#collision-planes) on or off.
 
 #### UseMaxCollisions
 
@@ -653,7 +653,7 @@ This must be set to `True' to use the [SizeScale](#sizescale) field. Also, don't
 
 ![skeletalmesh.jpg](../../assets/skeletalmesh.jpg)
 
-The SkeletalMesh field allows you to attach particles to the bones of a skeletal mesh. The mesh is used to determine the spawn location of the particles and can also be used to determine the movement the particles. For a thorough explanation, see the [ParticleSystems](ParticleSystems.md#skeletal_mesh) document.
+The SkeletalMesh field allows you to attach particles to the bones of a skeletal mesh. The mesh is used to determine the spawn location of the particles and can also be used to determine the movement the particles. For a thorough explanation, see the [ParticleSystems](ParticleSystems.md#skeletal-mesh) document.
 
 #### RelativeBoneIndexRange
 

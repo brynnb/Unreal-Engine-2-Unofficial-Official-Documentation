@@ -2,7 +2,7 @@
 
 *Document Summary: A comprehensive reference for the Actions available for use in Scripted Sequences.**Document Changelog: Last update by Michiel Hendriks, updated for v3323. Previous update by Jason Lentz to clarify SetViewTarget and playANIM settings (DemiurgeStudios?). Original author was Hugh Macdonald ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).*
 
-* [Scripted Sequences Tutorial - Actions](#scripted-sequences-tutorial-actions)
+* [Scripted Sequences Tutorial - Actions](#scripted-sequences-tutorial---actions)
   + [Overview](#overview)
   + [AIScript Actions](#aiscript-actions)
     - [Pawn Control Actions](#pawn-control-actions)

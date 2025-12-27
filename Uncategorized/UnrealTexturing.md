@@ -37,7 +37,7 @@ Powers of 2 are a must, first of all. You can make your textures in any combinat
 
 ## Texture Formats
 
-Unreal uses a variety of texture formats. Unreal supports five texture formats: DirectX Texture Compression (DXTC), 8-bit palettized (P8), and 24/32-bit RGBA textures; and 8-bit and 16-bit greyscale heightmaps. For more information on heightmaps, see the [TerrainTutorial](../Content Creation/Primitives/TerrainTutorial.md) docs.
+Unreal uses a variety of texture formats. Unreal supports five texture formats: DirectX Texture Compression (DXTC), 8-bit palettized (P8), and 24/32-bit RGBA textures; and 8-bit and 16-bit greyscale heightmaps. For more information on heightmaps, see the [TerrainTutorial](../Content%20Creation/Primitives/TerrainTutorial.md) docs.
 
 ### 32-bit RGBA (Targa)
 
@@ -62,7 +62,7 @@ This adds support for a four-bit explicit alpha channel, on top of DXT1's color 
 
 #### DXT5
 
-DXT5 supports a four-bit interpolated alpha channel. Three bits are used to determine explicit alpha values, and two eight-bit values are used to interpolate gradually between them. This makes the format especially suited for soft gradients and other textures where the alpha areas vary less wildly. The least compressed option.The [TextureComparison](../Content Creation/Lighting and Textures/TextureComparison.md) doc has lots of examples of bitmaps that have been put through the wringer - check it out to see nice visuals of what the compressions do.In case you're wondering, DXT2 and DXT4 assume colors are premultiplied by the alpha channel, and are not supported.
+DXT5 supports a four-bit interpolated alpha channel. Three bits are used to determine explicit alpha values, and two eight-bit values are used to interpolate gradually between them. This makes the format especially suited for soft gradients and other textures where the alpha areas vary less wildly. The least compressed option.The [TextureComparison](../Content%20Creation/Lighting%20and%20Textures/TextureComparison.md) doc has lots of examples of bitmaps that have been put through the wringer - check it out to see nice visuals of what the compressions do.In case you're wondering, DXT2 and DXT4 assume colors are premultiplied by the alpha channel, and are not supported.
 
 ### Eight-bit Palettized
 
@@ -134,5 +134,5 @@ Team skins are a special example of skin swapping. In UT2004, for example, the e
 
 ![teamskins.jpg](../assets/teamskins.jpg)
 
-A final note about the above textures. Notice that there is skin on the body texture as well as the face texture, which was just previously noted as a Bad Thing to do. This actually doesn't lead to any problems, *as long as your interchangeable facial textures all share similar skin tones.* If you are willing to live with that restriction, then feel free to mix and match to your heart's content.This skin/cloth swapping is also covered in the [UnrealDemoModels](UnrealDemoModels.md#swappable_clothing_and_skin)
+A final note about the above textures. Notice that there is skin on the body texture as well as the face texture, which was just previously noted as a Bad Thing to do. This actually doesn't lead to any problems, *as long as your interchangeable facial textures all share similar skin tones.* If you are willing to live with that restriction, then feel free to mix and match to your heart's content.This skin/cloth swapping is also covered in the [UnrealDemoModels](UnrealDemoModels.md#swappable-clothing-and-skin)
 document.

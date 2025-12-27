@@ -24,9 +24,9 @@ This map demonstrates some of the things you can do with Matinee. Upon playing t
 
 ![epicdolly3.jpg](../assets/epicdolly3.jpg)For more information on how to use Matinee, see the following docs:
 
-* [MatineeTutorial](../Content Creation/Matinee/MatineeTutorial.md)
-* [MatineeExample](../Content Creation/Matinee/MatineeExample.md)
-* [SampleMatineeTips](../Content Creation/Matinee/SampleMatineeTips.md)
+* [MatineeTutorial](../Content%20Creation/Matinee/MatineeTutorial.md)
+* [MatineeExample](../Content%20Creation/Matinee/MatineeExample.md)
+* [SampleMatineeTips](../Content%20Creation/Matinee/SampleMatineeTips.md)
 * [MatineeDemoOpening](MatineeDemoOpening.md)
 * [MatineeDemoDropship](MatineeDemoDropship.md)
 
@@ -38,7 +38,7 @@ In this map you can see several examples of how materials can be used in various
 
 ![epicmaterials2.jpg](../assets/epicmaterials2.jpg)
 
-For more information on how to use Materials, see the [MaterialTutorial](../Content Creation/Lighting and Textures/MaterialTutorial.md).
+For more information on how to use Materials, see the [MaterialTutorial](../Content%20Creation/Lighting%20and%20Textures/MaterialTutorial.md).
 
 ## Particles Example Map
 
@@ -54,8 +54,8 @@ In the Particles map you will see a myriad of effects ranging from sweeping lase
 
 ![epicparticles4.jpg](../assets/epicparticles4.jpg)For more information on how to create such effects, see the following docs:
 
-* [ParticleSystems](../Content Creation/Effects/ParticleSystems.md)
-* [ExampleParticleSystems](../Content Creation/Effects/ExampleParticleSystems.md)
+* [ParticleSystems](../Content%20Creation/Effects/ParticleSystems.md)
+* [ExampleParticleSystems](../Content%20Creation/Effects/ExampleParticleSystems.md)
 
 ## Sound Example Map
 

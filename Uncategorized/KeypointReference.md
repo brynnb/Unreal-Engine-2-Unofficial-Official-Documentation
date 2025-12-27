@@ -19,7 +19,7 @@ They Keypoints within the Actors Browser are used for a couple different things,
 
 ![aiscript_actor.jpg](../assets/aiscript_actor.jpg)
 
-These Keypoint Actors can be used in conjunction with `ScriptedSequences` to create AI for pawns in your level. For more about how to use `AIScripts` , see the [ScriptedSequenceTutorial](../Content Creation/Scripted Sequences/ScriptedSequenceTutorial.md) document.
+These Keypoint Actors can be used in conjunction with `ScriptedSequences` to create AI for pawns in your level. For more about how to use `AIScripts` , see the [ScriptedSequenceTutorial](../Content%20Creation/Scripted%20Sequences/ScriptedSequenceTutorial.md) document.
 
 ## AmbientSound
 
@@ -31,7 +31,7 @@ This is a simple sound actor that can be placed in a level to loop a sound. For 
 
 ![decolist_actor.jpg](../assets/decolist_actor.jpg)
 
-`DecorationLists` are actors that can define a list of StaticMeshes that will appear within a volume. To see more about `DecorationLists` , see the [Volumes Tutorial](../Content Creation/Primitives/VolumesTutorial.md#decolist) document.
+`DecorationLists` are actors that can define a list of StaticMeshes that will appear within a volume. To see more about `DecorationLists` , see the [Volumes Tutorial](../Content%20Creation/Primitives/VolumesTutorial.md#decolist) document.
 
 ## Matinee Keypoints
 
@@ -40,7 +40,7 @@ The following Keypoints are used in Matinee scenes:
 * InterpolationPoint
 * LookTarget
 
-An `InterpolatioPoint` is a convenience actor that you can point a matinee camera at. Note that they aren't `bStatic` so they can be attached these to movers and such.A `LookTarget` is a convenience actor that you can point a matinee camera at. Note that they aren't `bStatic` so they can be attached these to movers and such.For more about how to use these Keypoints, see the  [MatineeTutorial](../Content Creation/Matinee/MatineeTutorial.md#tools) document.
+An `InterpolatioPoint` is a convenience actor that you can point a matinee camera at. Note that they aren't `bStatic` so they can be attached these to movers and such.A `LookTarget` is a convenience actor that you can point a matinee camera at. Note that they aren't `bStatic` so they can be attached these to movers and such.For more about how to use these Keypoints, see the  [MatineeTutorial](../Content%20Creation/Matinee/MatineeTutorial.md#tools) document.
 
 ## Editor Reference Keypoints
 

@@ -40,7 +40,7 @@ The code described in this document is provided to you as a service of UDN or ot
 
 ## Introduction
 
-Several people have asked for good examples of particle systems to get them started. Using the [Particle System Editor](ParticleSystems.md) available in the [UDNBuild](https://udn.epicgames.com/Two/UDNBuildFeatures), we've assembled a small library of production-quality particle systems which you can use as a starting point in your own projects. In addition to having a texture pack, mesh pack and source-files many of these examples have a detailed "how we did it" [explanation](#emitterexamples). If this turns out to be popular, we might make some more, so send along requests to [al@demiurgestudios.com](mailto:al@demiurgestudios.com) if you have them.
+Several people have asked for good examples of particle systems to get them started. Using the [Particle System Editor](ParticleSystems.md) available in the [UDNBuild](https://udn.epicgames.com/Two/UDNBuildFeatures), we've assembled a small library of production-quality particle systems which you can use as a starting point in your own projects. In addition to having a texture pack, mesh pack and source-files many of these examples have a detailed "how we did it" [explanation](#emitter-examples). If this turns out to be popular, we might make some more, so send along requests to [al@demiurgestudios.com](mailto:al@demiurgestudios.com) if you have them.
 
 ## Emitter Examples
 
@@ -260,7 +260,7 @@ This lightning uses a range from -4000 to 4000 for both X and Y with Z held at 0
 
 #### Beam
 
-A thorough explanation of beam branching can be found in the [ParticleSystems](ParticleSystems.md#beam_branching) doc. This lightning is very similar to the examples discussed in the doc which also has three levels of branching that get increasing random and smaller.The color on the beams is one of few simple things in this emitter. Each beam has a quick fade in and then a slow fade out. Each beam also has a color scale which goes from almost white (255, 251, 255), to a yellowish color (238, 185, 62). The texture on each beam is different but all are white, narrow, and a little wavy. The textures get skinnier from main beam to smallest branch.
+A thorough explanation of beam branching can be found in the [ParticleSystems](ParticleSystems.md#beam-branching) doc. This lightning is very similar to the examples discussed in the doc which also has three levels of branching that get increasing random and smaller.The color on the beams is one of few simple things in this emitter. Each beam has a quick fade in and then a slow fade out. Each beam also has a color scale which goes from almost white (255, 251, 255), to a yellowish color (238, 185, 62). The texture on each beam is different but all are white, narrow, and a little wavy. The textures get skinnier from main beam to smallest branch.
 
 ![lightning3.jpg](../../assets/lightning3.jpg)
 

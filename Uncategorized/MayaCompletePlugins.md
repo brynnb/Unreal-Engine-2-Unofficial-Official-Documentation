@@ -19,4 +19,4 @@ Old versions:
 * [Setup-Unreal-V5.exe](rsrc/Two/MayaCompletePlugins/setup-unreal-v5.exe) Maya 5.0 UT2004 plugin.
 
 To install, right-click the link and save the file locally. Execute the self-installers only after both UT2004 and Maya have been installed on your system.
-After installation, help files will reside on your system in the "My Documents\maya\[maya\_version\_number]\docs" folder hierarcy.Note that these plugins work only with the retail UT2004 editor, where they provide a user-friendly alternative to a subset of the [ActorX](../Content Creation/Tools/ActorX.md) plugin functionality.
+After installation, help files will reside on your system in the "My Documents\maya\[maya\_version\_number]\docs" folder hierarcy.Note that these plugins work only with the retail UT2004 editor, where they provide a user-friendly alternative to a subset of the [ActorX](../Content%20Creation/Tools/ActorX.md) plugin functionality.

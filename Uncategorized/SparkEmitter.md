@@ -16,7 +16,7 @@
   + [Rendering](SparkEmitter.md#rendering)
   + [Revolution](SparkEmitter.md#revolution)
   + [Rotation](SparkEmitter.md#rotation)
-    - [RotationOffset, RotationNormal, UseRotationFrom](SparkEmitter.md#rotationoffset-_rotationnormal-_userotationfrom)
+    - [RotationOffset, RotationNormal, UseRotationFrom](SparkEmitter.md#rotationoffset-rotationnormal-userotationfrom)
   + [Size](SparkEmitter.md#size)
   + [SkeletalMesh](SparkEmitter.md#skeletalmesh)
   + [Spark](SparkEmitter.md#spark)
@@ -34,7 +34,7 @@
 
 ## Introduction
 
-This document will cover spark emitters, one of four different possible emitters available in the 2226 build. For more information on general emitter properties, see [EmittersReference](../Content Creation/Effects/EmittersReference.md). For more information on the other three emitter types, see [SpriteEmitter](https://udn.epicgames.com/Two/SpriteEmitter), [MeshEmitter](MeshEmitter.md) and [BeamEmitter](BeamEmitter.md).Spark Emitters are perhaps the least-used of the four emitter types. They're not nearly as flexible as sprite emitters or mesh emitters, and not as flashy as the beam emitter. The effect is similar to the kind of sparks you might see during welding. This emitter turns its source texture into one thin line with the colors of the texture. Settings such as Acceleration and Velocity still work on it, but many (Collision, Spin, SizeScale, etc.) don't work on it because the particles are limited to be lines.Perhaps because they are so limited in use, spark emitters don't have many class-specific fields to worry about.
+This document will cover spark emitters, one of four different possible emitters available in the 2226 build. For more information on general emitter properties, see [EmittersReference](../Content%20Creation/Effects/EmittersReference.md). For more information on the other three emitter types, see [SpriteEmitter](https://udn.epicgames.com/Two/SpriteEmitter), [MeshEmitter](MeshEmitter.md) and [BeamEmitter](BeamEmitter.md).Spark Emitters are perhaps the least-used of the four emitter types. They're not nearly as flexible as sprite emitters or mesh emitters, and not as flashy as the beam emitter. The effect is similar to the kind of sparks you might see during welding. This emitter turns its source texture into one thin line with the colors of the texture. Settings such as Acceleration and Velocity still work on it, but many (Collision, Spin, SizeScale, etc.) don't work on it because the particles are limited to be lines.Perhaps because they are so limited in use, spark emitters don't have many class-specific fields to worry about.
 
 ![spark.jpg](../assets/spark.jpg)
 
@@ -48,11 +48,11 @@ This does not function at all with SparkEmitters. Ignore this field.
 
 ## Color
 
-This functions almost normally. Since changing the color of the sparks emitted is one of the few options available, you may be tempted to spend lots of time in this section. However, the ColorScale operates on particles on a per-segment basis, so the end effect may not be exactly what you are looking for. See the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#trigger) for more information.
+This functions almost normally. Since changing the color of the sparks emitted is one of the few options available, you may be tempted to spend lots of time in this section. However, the ColorScale operates on particles on a per-segment basis, so the end effect may not be exactly what you are looking for. See the [Emitters Tutorial](../Content%20Creation/Effects/EmittersReference.md#trigger) for more information.
 
 ## Fading
 
-The fading fields may especially be of use in this type of system, since they are otherwise very discretely `on' or `off.' Unfortunately, these also work on a per-segment basis, like the ColorScale. See the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#trigger) for more information.
+The fading fields may especially be of use in this type of system, since they are otherwise very discretely `on' or `off.' Unfortunately, these also work on a per-segment basis, like the ColorScale. See the [Emitters Tutorial](../Content%20Creation/Effects/EmittersReference.md#trigger) for more information.
 
 ## Force
 
@@ -64,19 +64,19 @@ Of note in this field is the MaxParticles field. Spark emitters in particular se
 
 ## Local
 
-These fields operate normally. See the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#trigger) for more information.
+These fields operate normally. See the [Emitters Tutorial](../Content%20Creation/Effects/EmittersReference.md#trigger) for more information.
 
 ## Location
 
-These fields operate normally. See the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#trigger) for more information.
+These fields operate normally. See the [Emitters Tutorial](../Content%20Creation/Effects/EmittersReference.md#trigger) for more information.
 
 ## MeshSpawning
 
-These fields operate normally. See the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#trigger) for more information.
+These fields operate normally. See the [Emitters Tutorial](../Content%20Creation/Effects/EmittersReference.md#trigger) for more information.
 
 ## Rendering
 
-These fields operate normally. See the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#trigger) for more information.
+These fields operate normally. See the [Emitters Tutorial](../Content%20Creation/Effects/EmittersReference.md#trigger) for more information.
 
 ## Revolution
 
@@ -88,7 +88,7 @@ Rotation is possible, but only in a very limited format. Spark particles do not 
 
 ### RotationOffset, RotationNormal, UseRotationFrom
 
-These fields can be used to set the initial spawning direction of the particles. See the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#trigger) for more information. All other fields can be ignored.
+These fields can be used to set the initial spawning direction of the particles. See the [Emitters Tutorial](../Content%20Creation/Effects/EmittersReference.md#trigger) for more information. All other fields can be ignored.
 
 ## Size
 
@@ -96,7 +96,7 @@ This does not affect the size of SparkEmitter particles. Their length depends on
 
 ## SkeletalMesh
 
-These fields operate normally. See the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#trigger) for more information.
+These fields operate normally. See the [Emitters Tutorial](../Content%20Creation/Effects/EmittersReference.md#trigger) for more information.
 
 ## Spark
 
@@ -128,7 +128,7 @@ The effect of this setting is most visible if the path your particles take is cu
 
 ## Spawning
 
-Make sure to set appropriate values in the Spawning fields. These figures will affect how quickly particles are created, over the lifetime of your emitter. For a more in-depth review of Spawning, see the [Particle Systems](../Content Creation/Effects/EmittersReference.md#spawning) document.
+Make sure to set appropriate values in the Spawning fields. These figures will affect how quickly particles are created, over the lifetime of your emitter. For a more in-depth review of Spawning, see the [Particle Systems](../Content%20Creation/Effects/EmittersReference.md#spawning) document.
 
 ## Texture
 
@@ -141,22 +141,22 @@ The picture on the left is using the standard `five colored balls' icon that is 
 
 ## Tick
 
-This functions normally. See the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#tick) for more information.
+This functions normally. See the [Emitters Tutorial](../Content%20Creation/Effects/EmittersReference.md#tick) for more information.
 
 ## Time
 
 ### InitialTimeRange
 
-Trying to set an initial time seems to crash Unreal reliably, when used with spark emitters. Don't do it.The other two fields work as expected. See the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#time) for more information.
+Trying to set an initial time seems to crash Unreal reliably, when used with spark emitters. Don't do it.The other two fields work as expected. See the [Emitters Tutorial](../Content%20Creation/Effects/EmittersReference.md#time) for more information.
 
 ## Trigger
 
-This functions normally. See the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#trigger) for more information.
+This functions normally. See the [Emitters Tutorial](../Content%20Creation/Effects/EmittersReference.md#trigger) for more information.
 
 ## Velocity
 
-Your velocity settings of your particle system will have a huge impact on how the spark emitter finally turns out - it's one of the primary determinants of the final system appearance, since variables like rotation and size don't affect sparks. Having said that, the variables function as normal. See the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#velocity) for more information.
+Your velocity settings of your particle system will have a huge impact on how the spark emitter finally turns out - it's one of the primary determinants of the final system appearance, since variables like rotation and size don't affect sparks. Having said that, the variables function as normal. See the [Emitters Tutorial](../Content%20Creation/Effects/EmittersReference.md#velocity) for more information.
 
 ## Warmup
 
-This functions normally. See the [Emitters Tutorial](../Content Creation/Effects/EmittersReference.md#warmup) for more information.
+This functions normally. See the [Emitters Tutorial](../Content%20Creation/Effects/EmittersReference.md#warmup) for more information.

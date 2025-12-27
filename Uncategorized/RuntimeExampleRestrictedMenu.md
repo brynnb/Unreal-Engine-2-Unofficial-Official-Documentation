@@ -12,7 +12,7 @@
 
 ## Related Documents
 
-[GuiReference](../Technical and Programming/User Interface/GuiReference.md), [LocalizationReference](../Technical and Programming/User Interface/LocalizationReference.md)
+[GuiReference](../Technical%20and%20Programming/User%20Interface/GuiReference.md), [LocalizationReference](../Technical%20and%20Programming/User%20Interface/LocalizationReference.md)
 
 ## Introduction
 

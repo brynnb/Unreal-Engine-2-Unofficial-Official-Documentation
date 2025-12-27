@@ -16,9 +16,9 @@
   + [Scripting Physics](MyFirstPawn.md#scripting-physics)
   + [Installing the Example](MyFirstPawn.md#installing-the-example)
     - [Unreal Runtime](MyFirstPawn.md#unreal-runtime)
-    - [Code Drop, UDNBuild, UDNBuildOff](MyFirstPawn.md#code-drop-udnbuild-_udnbuildoff)
+    - [Code Drop, UDNBuild, UDNBuildOff](MyFirstPawn.md#code-drop-udnbuild-udnbuildoff)
   + [Using these Pawns in Net-Play](MyFirstPawn.md#using-these-pawns-in-net-play)
-  + [Making Changes to the Example - Using the Example in UnrealEd](MyFirstPawn.md#making-changes-to-the-example---using-the-example-in-_unrealed)
+  + [Making Changes to the Example - Using the Example in UnrealEd](MyFirstPawn.md#making-changes-to-the-example---using-the-example-in-unrealed)
 
 ## Related Documents
 
@@ -26,7 +26,7 @@
 
 ## Introduction
 
-If you have not looked over the [MyFirstCode](MyFirstCode.md) document you should do that first.This document goes over how to make a simple pawn class that will move around in the world and animate properly. Animating properly includes walking, running, crouch walking, swimming, flying, jumping, falling, landing, and idling. Animating properly also include functionality for playing arbitrary animations not based on movement. All these animations will work properly in a net game. This document includes not only the class to make pawns animate properly but two subclasses, *ExampleBoy* and *ExampleGirl*, that illustrate how to use the animation code with different models. The guy and the girl are very lightweight classes that only adjust defaultproperties.This document includes the UnrealScript source code as well as the compiled \*.u file and the animation and texture packages to make everything work. See [Installing the Example](MyFirstPawn.md#installing_the_example) below for details on seeing this pawn example in action.This example can be used in any 2226 build of the engine including the straight code drop, UDNBuild, UDNBuildOff, and the Runtime or a 3323 (and maybe later) build of the engine.
+If you have not looked over the [MyFirstCode](MyFirstCode.md) document you should do that first.This document goes over how to make a simple pawn class that will move around in the world and animate properly. Animating properly includes walking, running, crouch walking, swimming, flying, jumping, falling, landing, and idling. Animating properly also include functionality for playing arbitrary animations not based on movement. All these animations will work properly in a net game. This document includes not only the class to make pawns animate properly but two subclasses, *ExampleBoy* and *ExampleGirl*, that illustrate how to use the animation code with different models. The guy and the girl are very lightweight classes that only adjust defaultproperties.This document includes the UnrealScript source code as well as the compiled \*.u file and the animation and texture packages to make everything work. See [Installing the Example](MyFirstPawn.md#installing-the-example) below for details on seeing this pawn example in action.This example can be used in any 2226 build of the engine including the straight code drop, UDNBuild, UDNBuildOff, and the Runtime or a 3323 (and maybe later) build of the engine.
 
 ## Class Setup
 
@@ -43,7 +43,7 @@ Mesh=SkeletalMesh'UDN_CharacterModels_K.GenericMale'
 Mesh=SkeletalMesh'UDN_CharacterModels_K.GenericFemale'
 ```
 
-In some cases the imported model will not be the right size or orientated properly. You can alter the scale, location, and orientation of the modeling in the Animation Browser as described in the [AnimBrowserReference](../Content Creation/Animation/AnimBrowserReference.md#mesh).You also need to adjust the *CollisionRadius* and *CollisionHeight* of the collision cylinder for the model in defaultproperties of the class.
+In some cases the imported model will not be the right size or orientated properly. You can alter the scale, location, and orientation of the modeling in the Animation Browser as described in the [AnimBrowserReference](../Content%20Creation/Animation/AnimBrowserReference.md#mesh).You also need to adjust the *CollisionRadius* and *CollisionHeight* of the collision cylinder for the model in defaultproperties of the class.
 
 ## PointOfView
 
@@ -51,7 +51,7 @@ There is a function, `simulated function bool PointOfView()` which is called whe
 
 ## Pawn Movement and Animation
 
-Most of the animation for *ExamplePawn* is done using physics based animation. Physics based animation means that the motion of the pawn determines what animation the pawn is playing. This is the method with which animation is generally done in the Unreal engine. Not only does it work in single player but it is very good for multiplayer situations because each client just looks at the motion of a given pawn to see what animation should be playing; no extra information needs to be transmitted. To enable physics based animation, *bPhysicsAnimUpdate* is set to `true` in defaultproperties.For more information on physics based animation, see the [PhysicsBasedAnim](https://udn.epicgames.com/Two/PhysicsBasedAnim) document. This document is based on the 2226 code drop but it should still be helpful.For v3323 and up you can ignore the next sections up to [User Controlled Animation](MyFirstPawn.md#usercontrolledanimation), it's not completely relevant because the physics based animation has changed. Read the [PhysicsBasedAnim](https://udn.epicgames.com/Two/PhysicsBasedAnim) document for more information about this. In v3323 the below UnrealScript isn't needed, you just have to set the correct variables.
+Most of the animation for *ExamplePawn* is done using physics based animation. Physics based animation means that the motion of the pawn determines what animation the pawn is playing. This is the method with which animation is generally done in the Unreal engine. Not only does it work in single player but it is very good for multiplayer situations because each client just looks at the motion of a given pawn to see what animation should be playing; no extra information needs to be transmitted. To enable physics based animation, *bPhysicsAnimUpdate* is set to `true` in defaultproperties.For more information on physics based animation, see the [PhysicsBasedAnim](https://udn.epicgames.com/Two/PhysicsBasedAnim) document. This document is based on the 2226 code drop but it should still be helpful.For v3323 and up you can ignore the next sections up to [User Controlled Animation](MyFirstPawn.md#user-controlled-animation), it's not completely relevant because the physics based animation has changed. Read the [PhysicsBasedAnim](https://udn.epicgames.com/Two/PhysicsBasedAnim) document for more information about this. In v3323 the below UnrealScript isn't needed, you just have to set the correct variables.
 
 ### Movement Animation
 
@@ -169,7 +169,7 @@ simulated function PlayWaiting()
 
 ### User Controlled Animation
 
-User controlled animations are when the user presses a button or executes a command and the pawn plays an animation, like taunting in UT2004 for example. This is fairly easy in a single player situation. It unfortunately gets much harder in a net game because as mentioned [above](MyFirstPawn.md#pawn_movement_and_animation), animation is not sent over the network.This is why the function `simulated event SetAnimAction(name NewAction)` and the variable `var name AnimAction` exist. They are designed to work together to send animation data from the server to all clients. If *SetAnimAction* is called on the server, it changes *AnimAction* which is replicated from the server to all clients. When the clients receive the new *AnimAction*, code in C++ detects if the *AnimAction* is new and then calls *SetAnimAction* on that client with the new animation which is then played by *SetAnimAction*. Once the animation is done playing, *AnimAction* is set to '' on both the client and the server so that the next time *SetAnimAction* is called, everything will work again. The code for this is as follows:
+User controlled animations are when the user presses a button or executes a command and the pawn plays an animation, like taunting in UT2004 for example. This is fairly easy in a single player situation. It unfortunately gets much harder in a net game because as mentioned [above](MyFirstPawn.md#pawn-movement-and-animation), animation is not sent over the network.This is why the function `simulated event SetAnimAction(name NewAction)` and the variable `var name AnimAction` exist. They are designed to work together to send animation data from the server to all clients. If *SetAnimAction* is called on the server, it changes *AnimAction* which is replicated from the server to all clients. When the clients receive the new *AnimAction*, code in C++ detects if the *AnimAction* is new and then calls *SetAnimAction* on that client with the new animation which is then played by *SetAnimAction*. Once the animation is done playing, *AnimAction* is set to '' on both the client and the server so that the next time *SetAnimAction* is called, everything will work again. The code for this is as follows:
 
 ```
 
@@ -268,7 +268,7 @@ UCC MASTERMD5 -c *.U
 Now you can host a game and other people can connect to it and you can all run/fly/swim around together. You can host a game by typing the following at a command prompt in the system directory:`UE2Runtime <YourMap> -server`
   
 - or -  
-`UW <YourMap> -server`You can connect to server as described above in the [Installing the Example](MyFirstPawn.md#installing_the_example) section but instead of the map name, use the IP address of the server. For example, from the command line one might type:`UE2Runtime 192.168.1.112?Class=MyFirstExample.ExampleGirl`
+`UW <YourMap> -server`You can connect to server as described above in the [Installing the Example](MyFirstPawn.md#installing-the-example) section but instead of the map name, use the IP address of the server. For example, from the command line one might type:`UE2Runtime 192.168.1.112?Class=MyFirstExample.ExampleGirl`
 
 ## Making Changes to the Example - Using the Example in UnrealEd
 

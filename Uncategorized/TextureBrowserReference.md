@@ -37,12 +37,12 @@
       * [Material](TextureBrowserReference.md#material)
         + [FallbackMaterial](TextureBrowserReference.md#fallbackmaterial)
       * [Quality](TextureBrowserReference.md#quality)
-        + [bHighColorQuality](TextureBrowserReference.md#b_highcolorquality)
-        + [bHighextureQuality](TextureBrowserReference.md#b_highexturequality)
+        + [bHighColorQuality](TextureBrowserReference.md#bhighcolorquality)
+        + [bHighextureQuality](TextureBrowserReference.md#bhighexturequality)
       * [Surface](TextureBrowserReference.md#surface)
-        + [bAlphaTexture](TextureBrowserReference.md#b_alphatexture)
+        + [bAlphaTexture](TextureBrowserReference.md#balphatexture)
         + [bMasked](TextureBrowserReference.md#bmasked)
-        + [bTwoSided](TextureBrowserReference.md#b_twosided)
+        + [bTwoSided](TextureBrowserReference.md#btwosided)
       * [Texture](TextureBrowserReference.md#texture)
         + [Detail](TextureBrowserReference.md#detail)
         + [Detail Scale](TextureBrowserReference.md#detail-scale)
@@ -76,12 +76,12 @@ A .UTX file is a repository for a group of textures, and files derived from such
 
 ![utxbrowser.jpg](../assets/utxbrowser.jpg)
 
-* 1: [Pull down Menus](TextureBrowserReference.md#pull_down_menus). These duplicate the functionality of the buttons, and sometimes extend them.
+* 1: [Pull down Menus](TextureBrowserReference.md#pull-down-menus). These duplicate the functionality of the buttons, and sometimes extend them.
 * 2: Browser tabs. *Textures* should be selected, of course.
-* 3: [The toolbar buttons](TextureBrowserReference.md#toolbar_buttons). The more heavily used functions have places here.
+* 3: [The toolbar buttons](TextureBrowserReference.md#toolbar-buttons). The more heavily used functions have places here.
 * 4: [Tabs](TextureBrowserReference.md#tabs). Package management tabs/buttons.
 * 5: Main texture display window.
-* 6: [Name filter](TextureBrowserReference.md#name_filter) for current package.
+* 6: [Name filter](TextureBrowserReference.md#name-filter) for current package.
 
 ## Pull Down Menus
 
@@ -187,7 +187,7 @@ Clicking the Properties button will lead to you the texture properties window.
 
 #### Buttons
 
-This has been covered in another document. See the [Material Tutorial](../Content Creation/Lighting and Textures/MaterialTutorial.md#using_the_material_browser) for more information.
+This has been covered in another document. See the [Material Tutorial](../Content%20Creation/Lighting%20and%20Textures/MaterialTutorial.md#using-the-material-browser) for more information.
 
 #### Animation
 
@@ -214,7 +214,7 @@ The number of frames into a texture's animation that the animation will start at
 ##### FallbackMaterial
 
 A backup material, in case a video card doesn't happen to support the primary material effects.
-You can turn on "Render Emulation" in the editor (menu) and game ("renderemulate gf2" console command) to make it behave as if you have a lower model video card, if you want to see your fallbacks at work. If you don't specify a fallback, it'll fall back to the bubble texture.This section of the .UTX browser has been covered in other docs. See the [MaterialTutorial](../Content Creation/Lighting and Textures/MaterialTutorial.md) for more information.
+You can turn on "Render Emulation" in the editor (menu) and game ("renderemulate gf2" console command) to make it behave as if you have a lower model video card, if you want to see your fallbacks at work. If you don't specify a fallback, it'll fall back to the bubble texture.This section of the .UTX browser has been covered in other docs. See the [MaterialTutorial](../Content%20Creation/Lighting%20and%20Textures/MaterialTutorial.md) for more information.
 
 #### Quality
 

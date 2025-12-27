@@ -10,7 +10,7 @@
 
 ## Introduction
 
-Antiportals are invisible barriers used for blocking geometry from the renderer's view. They are very versatile tools for not only obscuring geometry in large wide open environments, but also for fine tuning within smaller zoned off areas. They can be used in conjunction with any visual barrier to the player, be it a BSP brush, static mesh, or within terrain. This doc describes how Antiportals can be used to improve the efficiency of your level.This document is part of a collection of documents on [LevelOptimization](../Content Creation/Techniques/LevelOptimization.md), but sure to read the others.
+Antiportals are invisible barriers used for blocking geometry from the renderer's view. They are very versatile tools for not only obscuring geometry in large wide open environments, but also for fine tuning within smaller zoned off areas. They can be used in conjunction with any visual barrier to the player, be it a BSP brush, static mesh, or within terrain. This doc describes how Antiportals can be used to improve the efficiency of your level.This document is part of a collection of documents on [LevelOptimization](../Content%20Creation/Techniques/LevelOptimization.md), but sure to read the others.
 
 ## Limitations
 

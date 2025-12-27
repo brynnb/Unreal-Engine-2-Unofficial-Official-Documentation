@@ -2,15 +2,15 @@
 
 *Document Summary: A guide to setting up WarpZones and Mirrors.**Document Changelog: Last updated by Jason Lentz (DemiurgeStudios?), to include ConstantColor/Shader trick for WarpZone Portals. Original author was Jason Lentz (DemiurgeStudios?).*
 
-* [Mirrors and WarpZones](MirrorsAndWarpZones.md#mirrors-and-_warpzones)
+* [Mirrors and WarpZones](MirrorsAndWarpZones.md#mirrors-and-warpzones)
   + [Introduction](MirrorsAndWarpZones.md#introduction)
   + [Mirrors](MirrorsAndWarpZones.md#mirrors)
     - [Mirror Limitations](MirrorsAndWarpZones.md#mirror-limitations)
   + [WarpZones](MirrorsAndWarpZones.md#warpzones)
-    - [Setting up WarpZoneInfos](MirrorsAndWarpZones.md#setting-up-_warpzoneinfos)
-    - [Correcting WarpZone Portals](MirrorsAndWarpZones.md#correcting-_warpzone-portals)
+    - [Setting up WarpZoneInfos](MirrorsAndWarpZones.md#setting-up-warpzoneinfos)
+    - [Correcting WarpZone Portals](MirrorsAndWarpZones.md#correcting-warpzone-portals)
     - [WarpZone Limitations](MirrorsAndWarpZones.md#warpzone-limitations)
-    - [One Way WarpZones](MirrorsAndWarpZones.md#one-way-_warpzones)
+    - [One Way WarpZones](MirrorsAndWarpZones.md#one-way-warpzones)
 
 ## Introduction
 
@@ -67,7 +67,7 @@ The ZonePortal will not show up properly in the editor, but it will show the nex
 
 ### WarpZone Limitations
 
-Just as with [mirrored surfaces](MirrorsAndWarpZones.md#mirrorlimitations), you should avoid having WarpZones look onto each other. The renderer will only display WarpZones three reflections deep and then render the texture assigned to the portal of that WarpZone.WarpZones are only used for teleporting Pawns. Below is a list of restrictions on WarpZones:
+Just as with [mirrored surfaces](MirrorsAndWarpZones.md#mirror-limitations), you should avoid having WarpZones look onto each other. The renderer will only display WarpZones three reflections deep and then render the texture assigned to the portal of that WarpZone.WarpZones are only used for teleporting Pawns. Below is a list of restrictions on WarpZones:
 
 * You cannot see other players through them
 * Mirrors do not work correctly with WarpZones; avoid having mirrors face WarpZones

@@ -5,7 +5,7 @@
 * [Improved Mod Support](ImprovedModSupport.md#improved-mod-support)
   + [Overview](ImprovedModSupport.md#overview)
   + [Running a Mod](ImprovedModSupport.md#running-a-mod)
-    - [The (Magic) Commandline Switch](ImprovedModSupport.md#the-magic) Commandline Switch)
+    - [The (Magic) Commandline Switch](ImprovedModSupport.md#the-magic-commandline-switch) Commandline Switch)
   + [Setting Up a Mod Project](ImprovedModSupport.md#setting-up-a-mod-project)
     - [Getting the Resources](ImprovedModSupport.md#getting-the-resources)
       * [Essential files](ImprovedModSupport.md#essential-files)
@@ -81,7 +81,7 @@ In addtition to the game, itself, you will need the following essential files. I
 * [UT2004 Debug package files](UDEBUGDownload.md) - Debug version of the game's Unreal Script packages.
 * [UDE 3.0 (UnrealScript Development Environment)](UDEDownload.md) - UDE is a full featured editing environment similar to Visual Studio from Microsoft.
 * [Maya Complete Plugins](MayaCompletePlugins.md) - The Maya Complete versions of the user-friendly PLE plugin that shipped with UT2004.
-* [ActorX](../Content Creation/Tools/ActorX.md) - Animation Export Tools
+* [ActorX](../Content%20Creation/Tools/ActorX.md) - Animation Export Tools
 
 ### Directory Structure
 

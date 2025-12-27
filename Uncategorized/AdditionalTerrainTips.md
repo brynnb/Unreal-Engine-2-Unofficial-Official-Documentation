@@ -6,15 +6,15 @@
   + [Introduction](AdditionalTerrainTips.md#introduction)
   + [Saving and Testing the Map](AdditionalTerrainTips.md#saving-and-testing-the-map)
   + [Terrain Statistics](AdditionalTerrainTips.md#terrain-statistics)
-  + [Adding a SkyBox](AdditionalTerrainTips.md#adding-a-_skybox)
+  + [Adding a SkyBox](AdditionalTerrainTips.md#adding-a-skybox)
   + [SunLight](AdditionalTerrainTips.md#sunlight)
   + [DistanceFog](AdditionalTerrainTips.md#distancefog)
-  + [Multiple TerrainInfos, Multiple Zones](AdditionalTerrainTips.md#multiple-_terraininfos-multiple-zones)
+  + [Multiple TerrainInfos, Multiple Zones](AdditionalTerrainTips.md#multiple-terraininfos-multiple-zones)
   + [Other Sections](AdditionalTerrainTips.md#other-sections)
 
 ## Introduction
 
-While none of these sections are absolutely required to create a Terrain, they are useful and some necessary to make your Terrain as beautiful and efficient as it can be. Many of these techniques do not even involve the Terrain tools, but since they are so crucial to Terrain creation, they have been included in this document. This document assumes that you know the general [UnrealEdInterface](../Content Creation/Basics/UnrealEdInterface.md) and that you are familiar with the process of [CreatingTerrain](CreatingTerrain.md).
+While none of these sections are absolutely required to create a Terrain, they are useful and some necessary to make your Terrain as beautiful and efficient as it can be. Many of these techniques do not even involve the Terrain tools, but since they are so crucial to Terrain creation, they have been included in this document. This document assumes that you know the general [UnrealEdInterface](../Content%20Creation/Basics/UnrealEdInterface.md) and that you are familiar with the process of [CreatingTerrain](CreatingTerrain.md).
 
 ## Saving and Testing the Map
 
@@ -102,4 +102,4 @@ If your map has multiple zones, and you are outside the zone with the terrain in
 
 ## Other Sections
 
-To view the other documents on Terrain creation, just click on one of the links below.[TerrainTutorial](../Content Creation/Primitives/TerrainTutorial.md) - This outlines all the contents of the following documents. Also, if you add new sections to this document, it is also good practice to update the [TerrainTutorial](../Content Creation/Primitives/TerrainTutorial.md) as well.[CreatingTerrain](CreatingTerrain.md) - This document explains how to create a Terrain starting from an empty level.[EditingTerrainMaps](EditingTerrainMaps.md) - Shows how to use the Terrain Editor Tools.[EditingTerrainLayers](EditingTerrainLayers.md) - Explains how to create and use Layers within your Terrain.[CreatingDecoLayers](CreatingDecoLayers.md) - Shows how to create DecoLayers.
+To view the other documents on Terrain creation, just click on one of the links below.[TerrainTutorial](../Content%20Creation/Primitives/TerrainTutorial.md) - This outlines all the contents of the following documents. Also, if you add new sections to this document, it is also good practice to update the [TerrainTutorial](../Content%20Creation/Primitives/TerrainTutorial.md) as well.[CreatingTerrain](CreatingTerrain.md) - This document explains how to create a Terrain starting from an empty level.[EditingTerrainMaps](EditingTerrainMaps.md) - Shows how to use the Terrain Editor Tools.[EditingTerrainLayers](EditingTerrainLayers.md) - Explains how to create and use Layers within your Terrain.[CreatingDecoLayers](CreatingDecoLayers.md) - Shows how to create DecoLayers.

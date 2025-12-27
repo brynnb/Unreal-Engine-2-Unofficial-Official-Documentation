@@ -13,7 +13,7 @@
 
 ## Introduction
 
-This map demonstrates how to use Karma, projectors and emitters to create a neato swinging lamp effect. I am assuming the reader is comfortable with using Emitters/projectors already and won't be going into minute detail about setting up these systems.This is an extension of the Lightbeams effect seen in [ExampleMaps](../Content Creation/Techniques/ExampleMaps.md).
+This map demonstrates how to use Karma, projectors and emitters to create a neato swinging lamp effect. I am assuming the reader is comfortable with using Emitters/projectors already and won't be going into minute detail about setting up these systems.This is an extension of the Lightbeams effect seen in [ExampleMaps](../Content%20Creation/Techniques/ExampleMaps.md).
 
 ![ingame01.jpg](../assets/ingame01.jpg)
 
@@ -57,7 +57,7 @@ Position the constraint so the center (not the arrow) is at the point you want y
 
 ![consraint01.jpg](../assets/consraint01.jpg)
 
-The mass of the lamp was increased from 1 to 2 to stop it swinging too easily and getting out of control. In this case I also set Karma to activate the lamp on map load rather than when something happens. This gives the lamp a gentle oscilating movement as it swings gently. If all you're wanting is something like that I recommend using an oscilating texture modifier ([MaterialTutorial](../Content Creation/Lighting and Textures/MaterialTutorial.md)) for the projector and a static lamp.
+The mass of the lamp was increased from 1 to 2 to stop it swinging too easily and getting out of control. In this case I also set Karma to activate the lamp on map load rather than when something happens. This gives the lamp a gentle oscilating movement as it swings gently. If all you're wanting is something like that I recommend using an oscilating texture modifier ([MaterialTutorial](../Content%20Creation/Lighting%20and%20Textures/MaterialTutorial.md)) for the projector and a static lamp.
 
 ![kactor01.jpg](../assets/kactor01.jpg)
 
@@ -75,11 +75,11 @@ As you can see the drawscale of the projector has been adjusted so it is only as
 
 ![projector02.jpg](../assets/projector02.jpg)
 
-I also added a corona to the projector in the same way I would add one to a normal light (See the [LightingBasics](../Content Creation/Lighting and Textures/LightingBasics.md) for more on Coronas). The reason for this being that coronas added to lights are static and won't swing with the lamp. The only drawback of adding it to the projector is the lack of control over the coronas size compared to a seperate actor.Now you can run the level and shoot the lamp to watch the light projecting all over the walls and floor groovy isn't it?
+I also added a corona to the projector in the same way I would add one to a normal light (See the [LightingBasics](../Content%20Creation/Lighting%20and%20Textures/LightingBasics.md) for more on Coronas). The reason for this being that coronas added to lights are static and won't swing with the lamp. The only drawback of adding it to the projector is the lack of control over the coronas size compared to a seperate actor.Now you can run the level and shoot the lamp to watch the light projecting all over the walls and floor groovy isn't it?
 
 ## The Emitter
 
-This is the stage that makes the effect really come to life and can also cripple your frame rate if you aren't careful so take heed. This technique uses a fairly standard sprite emitter ([EmittersReference](../Content Creation/Effects/EmittersReference.md)) with *bAcceptProjectors* set to True in it's **Rendering** properties. Below are some tips for acheiving good effects without a huge framerate hit.
+This is the stage that makes the effect really come to life and can also cripple your frame rate if you aren't careful so take heed. This technique uses a fairly standard sprite emitter ([EmittersReference](../Content%20Creation/Effects/EmittersReference.md)) with *bAcceptProjectors* set to True in it's **Rendering** properties. Below are some tips for acheiving good effects without a huge framerate hit.
 
 * Use large flat particles with long lifetimes and slow velocities
 

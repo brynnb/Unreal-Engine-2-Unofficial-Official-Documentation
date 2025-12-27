@@ -42,7 +42,7 @@ In a different MAX scene model a tire you want on your car. You can make differe
 
 #### For the Car
 
-Add Karma collision volumes to your scene such that they surround most of your vehicle. The adding of collision volumes is described in the [KarmaReference](../Content Creation/Physics/KarmaReference.md) [here](../Content Creation/Physics/KarmaReference.md#karma_collision). They should be as simple as possible while still surrounding the object. Also, avoid the use of cylinders, they don't seem to work. In the end your mesh and your volumes should look something like this:
+Add Karma collision volumes to your scene such that they surround most of your vehicle. The adding of collision volumes is described in the [KarmaReference](../Content%20Creation/Physics/KarmaReference.md) [here](../Content%20Creation/Physics/KarmaReference.md#karma-collision). They should be as simple as possible while still surrounding the object. Also, avoid the use of cylinders, they don't seem to work. In the end your mesh and your volumes should look something like this:
 
 ![udncarcontent2.jpg](../assets/udncarcontent2.jpg)
 

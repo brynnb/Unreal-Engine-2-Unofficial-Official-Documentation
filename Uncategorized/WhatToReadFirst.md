@@ -40,7 +40,7 @@ Once you have the drop, the [NewProjectPreparation](https://udn.epicgames.com/Tw
 
 #### For Texture Artists
 
-For 2D artists, [TextureSpecifications](../Content Creation/Lighting and Textures/TextureSpecifications.md) and [TextureComparison](../Content Creation/Lighting and Textures/TextureComparison.md) are good starting points, followed by [MaterialTutorial](../Content Creation/Lighting and Textures/MaterialTutorial.md), since level designers aren't going to be using your raw textures directly; they're going to be using them in materials (like shaders).
+For 2D artists, [TextureSpecifications](../Content%20Creation/Lighting%20and%20Textures/TextureSpecifications.md) and [TextureComparison](../Content%20Creation/Lighting%20and%20Textures/TextureComparison.md) are good starting points, followed by [MaterialTutorial](../Content%20Creation/Lighting%20and%20Textures/MaterialTutorial.md), since level designers aren't going to be using your raw textures directly; they're going to be using them in materials (like shaders).
 
 #### For Modelers
 
@@ -48,4 +48,4 @@ Modelers can head straight for the bottom of the page, in the Tools area, where 
 
 #### For Level Designers
 
-Level designers and level artists get the rest. I'd suggest beginning with [UnrealEdInterface](../Content Creation/Basics/UnrealEdInterface.md), and then starting to work through the docs in *Primitives*, in order. Then go back up and review the rest of the docs in the *Basics* section, because they make more sense if you already know how to build basic brushes and things. Also if you haven't already checked it out, take a look at the [IntroToUnrealEd](../Content Creation/Basics/IntroToUnrealEd.md) document.
+Level designers and level artists get the rest. I'd suggest beginning with [UnrealEdInterface](../Content%20Creation/Basics/UnrealEdInterface.md), and then starting to work through the docs in *Primitives*, in order. Then go back up and review the rest of the docs in the *Basics* section, because they make more sense if you already know how to build basic brushes and things. Also if you haven't already checked it out, take a look at the [IntroToUnrealEd](../Content%20Creation/Basics/IntroToUnrealEd.md) document.

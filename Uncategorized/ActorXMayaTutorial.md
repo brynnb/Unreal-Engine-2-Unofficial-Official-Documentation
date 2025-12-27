@@ -1,6 +1,6 @@
-# How to export animations using [ActorX](../Content Creation/Tools/ActorX.md) and Maya
+# How to export animations using [ActorX](../Content%20Creation/Tools/ActorX.md) and Maya
 
-*Document Summary: A tutorial showing how to export animations using [ActorX](../Content Creation/Tools/ActorX.md) with Maya.**Document Changelog: Created by Vito Miliano?. Updated by Erik de Neve?.*
+*Document Summary: A tutorial showing how to export animations using [ActorX](../Content%20Creation/Tools/ActorX.md) with Maya.**Document Changelog: Created by Vito Miliano?. Updated by Erik de Neve?.*
 
 * [How to export animations using ActorX and Maya](ActorXMayaTutorial.md#how-to-export-animations-using-_actorx-and-maya)
   + [Install the Plug-In](ActorXMayaTutorial.md#install-the-plug-in)
@@ -36,11 +36,11 @@
     - [Plugin failing to initialize](ActorXMayaTutorial.md#plugin-failing-to-initialize)
     - [UV mappings come out wrong](ActorXMayaTutorial.md#uv-mappings-come-out-wrong)
 
-This document assumes that you have already created and rigged your actor and are simply looking for a step-by-step tutorial on how to use the [ActorX](../Content Creation/Tools/ActorX.md) exporter to export your model and animations out of Maya and into Unreal. This also assumes that you have already read the [ActorX](../Content Creation/Tools/ActorX.md) documentation on the UDN site and understand conceptually the relationship between .PSK files and .PSA files.
+This document assumes that you have already created and rigged your actor and are simply looking for a step-by-step tutorial on how to use the [ActorX](../Content%20Creation/Tools/ActorX.md) exporter to export your model and animations out of Maya and into Unreal. This also assumes that you have already read the [ActorX](../Content%20Creation/Tools/ActorX.md) documentation on the UDN site and understand conceptually the relationship between .PSK files and .PSA files.
 
 ## Install the Plug-In
 
-1. Download the [ActorX](../Content Creation/Tools/ActorX.md) plug-in for Maya and copy it to your plug-ins directory.
+1. Download the [ActorX](../Content%20Creation/Tools/ActorX.md) plug-in for Maya and copy it to your plug-ins directory.
 2. Launch Maya, then enable the plug-in (go to Settings->Plug-In Manager) by checking the "loaded" check-box. Check "auto load" if you want it to be automatically loaded every time you run Maya.
 
 ![plug-in-manager.gif](../assets/plug-in-manager.gif)
@@ -54,7 +54,7 @@ This not only affects the order of slots for skeletal (and static) meshes, but c
 ## Export the skeleton and mesh
 
 1. Load a scene containing the actor you wish to export.
-2. Bring up the [ActorX](../Content Creation/Tools/ActorX.md) dialog by typing "axmain" in the MEL command window at the bottom of Maya.
+2. Bring up the [ActorX](../Content%20Creation/Tools/ActorX.md) dialog by typing "axmain" in the MEL command window at the bottom of Maya.
 3. Fill in the various fields as follows:
    * **Output folder**: enter the name of the directory where you wish to save the .PSK file. We recommend putting an "Unreal Files" directory under your actor's folder. The browse button is very useful here.
    * **Mesh file name**: enter the name for the .PSK file. We recommend the name of your actor.
@@ -73,7 +73,7 @@ There are two steps for exporting animations. First, load the scene containing y
 ### Digest an animation
 
 1. Load the file containing the animation you wish to export.
-2. Bring up the [ActorX](../Content Creation/Tools/ActorX.md) dialog by typing "axmain" in the MEL command window at the bottom of Maya.
+2. Bring up the [ActorX](../Content%20Creation/Tools/ActorX.md) dialog by typing "axmain" in the MEL command window at the bottom of Maya.
 3. Fill in the various fields as follows:
    * **Output folder**: same as for skeleton/mesh above.
    * **Animation file name**: we recommend the same as the mesh file name (they will have a different extension to help you tell them apart). Enter the name of your existing .PSA file if you wish to add this animation to that existing .PSA
@@ -82,9 +82,9 @@ There are two steps for exporting animations. First, load the scene containing y
 
 ![exporting an animation](../assets/namepsamaya.jpg)
 
-1. Make sure that the range slider and the time slider show 0 as the first frame. (Note: this is a superstitious behavior on our part to avoid a periodic crashing bug in [ActorX](../Content Creation/Tools/ActorX.md). Skip this step at your own peril)
+1. Make sure that the range slider and the time slider show 0 as the first frame. (Note: this is a superstitious behavior on our part to avoid a periodic crashing bug in [ActorX](../Content%20Creation/Tools/ActorX.md). Skip this step at your own peril)
 2. Click "Digest Animation". When it is done, you should see a pop-up message box describing the animation. If you don't see this pop-up then something went wrong and we recommend restarting Maya at this point because the plug-in is most likely now in a corrupted state.
-3. Repeat steps 1-5 for as many animations as you would like to export this session. We recommend not trying to do too many at once in case [ActorX](../Content Creation/Tools/ActorX.md) crashes and you have to start over.
+3. Repeat steps 1-5 for as many animations as you would like to export this session. We recommend not trying to do too many at once in case [ActorX](../Content%20Creation/Tools/ActorX.md) crashes and you have to start over.
 
 ![exporting an animation](../assets/animdigested.jpg)
 
@@ -105,9 +105,9 @@ Once you have digested one or more animations you are ready to add them to a .PS
 
 This option is disabled.
 
-## Additional [ActorX](../Content Creation/Tools/ActorX.md) options
+## Additional [ActorX](../Content%20Creation/Tools/ActorX.md) options
 
-[ActorX](../Content Creation/Tools/ActorX.md) also has several additional options. By typing "axoptions" in the MEL command window, you can bring up this options window. Note, this cannot be opened while the axmain window is open. Simply close one window before opening the next. We'll step through the options in order.
+[ActorX](../Content%20Creation/Tools/ActorX.md) also has several additional options. By typing "axoptions" in the MEL command window, you can bring up this options window. Note, this cannot be opened while the axmain window is open. Simply close one window before opening the next. We'll step through the options in order.
 
 ### Persistent Settings and Paths
 
@@ -212,7 +212,7 @@ Simple old style, non-skeletal vertex animation data can be exported through a s
 
 ### Plugin failing to initialize
 
-Verify that you have the MSVCR71.dll installed on your system ( either in your Windows\System32 folder, or alongside the Maya plugin )- it can be downloaded from the [ActorX](../Content Creation/Tools/ActorX.md) page. It should also be present after installing the Microsoft .Net 1.1 framework redistributable, though there have been reports that despite doing this a manual installation of the DLL was still necessary.
+Verify that you have the MSVCR71.dll installed on your system ( either in your Windows\System32 folder, or alongside the Maya plugin )- it can be downloaded from the [ActorX](../Content%20Creation/Tools/ActorX.md) page. It should also be present after installing the Microsoft .Net 1.1 framework redistributable, though there have been reports that despite doing this a manual installation of the DLL was still necessary.
 
 ### UV mappings come out wrong
 

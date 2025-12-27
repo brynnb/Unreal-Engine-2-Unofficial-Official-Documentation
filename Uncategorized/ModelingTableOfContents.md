@@ -8,7 +8,7 @@
   + [Example Models](ModelingTableOfContents.md#example-models)
   + [Texturing](ModelingTableOfContents.md#texturing)
   + [Rigging/Animation](ModelingTableOfContents.md#rigginganimation)
-  + [Exporting with ActorX](ModelingTableOfContents.md#exporting-with-_actorx)
+  + [Exporting with ActorX](ModelingTableOfContents.md#exporting-with-actorx)
     - [ActorX Max](ModelingTableOfContents.md#actorx-max)
     - [ActorX Maya](ModelingTableOfContents.md#actorx-maya)
 
@@ -18,7 +18,7 @@ This document is a guide to all the docs related to getting artwork into the Unr
   
 [Texturing](ModelingTableOfContents.md#texturing)   
 [Rigging and Animation](ModelingTableOfContents.md#rigging_animation)   
-[Exporting](ModelingTableOfContents.md#exporting_with_actorx)
+[Exporting](ModelingTableOfContents.md#exporting-with-actorx)
   
 
 ---
@@ -96,7 +96,7 @@ This doc includes information on the range of texture formats that Unreal will a
 
 ![Rigging Doc](../assets/skeleton.jpg)
 
-This document contains general information about setting up a skeleton in your finished models, with specific information dealing with correct initialization and Unreal capabilities.[SkeletalSetup](../Content Creation/Animation/SkeletalSetup.md)
+This document contains general information about setting up a skeleton in your finished models, with specific information dealing with correct initialization and Unreal capabilities.[SkeletalSetup](../Content%20Creation/Animation/SkeletalSetup.md)
   
 
 * Designing a Skeleton
@@ -126,7 +126,7 @@ You may want to consider using *Impersonator* for lip synch on your models. To g
   
 [ImpersonatorUserGuide](ImpersonatorUserGuide.md)
   
-Karma Physics (Ragdoll) is also an option in the Unreal Engine. For a thorough description and explanation, see these docs.[KarmaReference](../Content Creation/Physics/KarmaReference.md)
+Karma Physics (Ragdoll) is also an option in the Unreal Engine. For a thorough description and explanation, see these docs.[KarmaReference](../Content%20Creation/Physics/KarmaReference.md)
   
 [ImportingKarmaActors](ImportingKarmaActors.md)
   
@@ -144,18 +144,18 @@ Karma Physics (Ragdoll) is also an option in the Unreal Engine. For a thorough d
 
 ## Exporting with ActorX
 
-[ActorX](../Content Creation/Tools/ActorX.md) is the plugin that sends model and animation data from your 3D modeling package into a format that Unreal can understand. These documents will walk you through the exporting process, as well as explain the tool windows in depth.
+[ActorX](../Content%20Creation/Tools/ActorX.md) is the plugin that sends model and animation data from your 3D modeling package into a format that Unreal can understand. These documents will walk you through the exporting process, as well as explain the tool windows in depth.
 
 ![ActorX Docs](../assets/actorx.jpg)
 
-This document will simply point you to current versions of the [ActorX](../Content Creation/Tools/ActorX.md) plugin for Max and Maya.[ActorX](../Content Creation/Tools/ActorX.md)
+This document will simply point you to current versions of the [ActorX](../Content%20Creation/Tools/ActorX.md) plugin for Max and Maya.[ActorX](../Content%20Creation/Tools/ActorX.md)
 
 ### ActorX Max
 
-This doc covers [ActorX](../Content Creation/Tools/ActorX.md) for 3D Studio Max.[ActorXMaxTutorial](ActorXMaxTutorial.md)
+This doc covers [ActorX](../Content%20Creation/Tools/ActorX.md) for 3D Studio Max.[ActorXMaxTutorial](ActorXMaxTutorial.md)
 
 ### ActorX Maya
 
-This doc covers [ActorX](../Content Creation/Tools/ActorX.md) for Maya.[ActorXMayaTutorial](ActorXMayaTutorial.md)
+This doc covers [ActorX](../Content%20Creation/Tools/ActorX.md) for Maya.[ActorXMayaTutorial](ActorXMayaTutorial.md)
 
 ---

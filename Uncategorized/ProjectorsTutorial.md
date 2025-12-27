@@ -11,7 +11,7 @@
 
 ## Introduction
 
-Here you will see brief explanations of how you can set up Projectors to achieve various types of effects including complex shadows, light casting through a stained glass window, spawned decals (such as bullet holes), and rotating projections. This is a somewhat cursory explanation of these effects. For more detailed descriptions, see the [ExampleMaps](../Content Creation/Techniques/ExampleMaps.md) page for specific examples.
+Here you will see brief explanations of how you can set up Projectors to achieve various types of effects including complex shadows, light casting through a stained glass window, spawned decals (such as bullet holes), and rotating projections. This is a somewhat cursory explanation of these effects. For more detailed descriptions, see the [ExampleMaps](../Content%20Creation/Techniques/ExampleMaps.md) page for specific examples.
 
 ## Shadow
 

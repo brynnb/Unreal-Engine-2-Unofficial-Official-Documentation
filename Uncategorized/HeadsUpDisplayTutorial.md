@@ -2,7 +2,7 @@
 
 *Last updated by Michiel Hendriks, some minor v3323 updates and formatting changes. Previous update by Richard 'vajuras' Osborne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)). Original author was Richard 'vajuras' Osborne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).*
 
-* [Heads Up Display (HUD) Tutorial](HeadsUpDisplayTutorial.md#heads-up-display-hud) Tutorial) 
+* [Heads Up Display (HUD) Tutorial](HeadsUpDisplayTutorial.md#heads-up-display-hud-tutorial) Tutorial) 
   + [The Basics](HeadsUpDisplayTutorial.md#the-basics)
   + [Network Behavior](HeadsUpDisplayTutorial.md#network-behavior)
   + [Gametype](HeadsUpDisplayTutorial.md#gametype)
@@ -44,7 +44,7 @@ A GameReplicationInfo is used by HUD objects to derive information about the gam
 
 ## Canvas
 
-The [Canvas](../Technical and Programming/User Interface/CanvasReference.md) is basically the two dimensional surface that the HUD draws on. Therefore, most functions in the HUD class will accept a Canvas as an argument. The Canvas class contains a lot of important functions and you'll find that drawing on the Canvas is a bit different than the two dimensional drawing in other languages. For instance, the Canvas should be repositioned before drawing different elements.The Canvas defines many important variables. Some of the most important are:
+The [Canvas](../Technical%20and%20Programming/User%20Interface/CanvasReference.md) is basically the two dimensional surface that the HUD draws on. Therefore, most functions in the HUD class will accept a Canvas as an argument. The Canvas class contains a lot of important functions and you'll find that drawing on the Canvas is a bit different than the two dimensional drawing in other languages. For instance, the Canvas should be repositioned before drawing different elements.The Canvas defines many important variables. Some of the most important are:
 
 ```
 

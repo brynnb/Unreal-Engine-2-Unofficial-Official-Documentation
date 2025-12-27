@@ -40,7 +40,7 @@ In addtition to the game, itself, you will need the following essential files. I
 * [UT2004 Debug package files](UDEBUGDownload.md) - Debug version of the game's Unreal Script packages.
 * [UDE 3.0 (UnrealScript Development Environment)](UDEDownload.md) - UDE is a full featured editing environment similar to Visual Studio from Microsoft.
 * [Maya Complete Plugins](MayaCompletePlugins.md) - The Maya Complete versions of the user-friendly PLE plugin that shipped with UT2004.
-* [ActorX](../Content Creation/Tools/ActorX.md) - Animation Export Tools
+* [ActorX](../Content%20Creation/Tools/ActorX.md) - Animation Export Tools
 
 ## Support
 
@@ -57,7 +57,7 @@ There are various ways to get help during your mod development, most of them are
 
 If you are new to the Unreal Engine you first want to check out these documents to learn the basics.
 
-* [Intro To UnrealEd](../Content Creation/Basics/IntroToUnrealEd.md)
+* [Intro To UnrealEd](../Content%20Creation/Basics/IntroToUnrealEd.md)
 * [My First Code](MyFirstCode.md)
 
 Some tutorials on more specific elements of UT2004:
@@ -65,7 +65,7 @@ Some tutorials on more specific elements of UT2004:
 * [Improved Mod Support](ImprovedModSupport.md) - Learn all about the new TC/PC mod support in UT2004.
 * [Caching System](UnrealCacheLists.md) - Get information on the new caching system in UT2004.
 * [Script Profiler](ScriptProfiler.md) - Learn how to use the Unreal Script profiler in UT2004 v3339 to optimize your mod.
-* [LevelOptimization](../Content Creation/Techniques/LevelOptimization.md) - Introduction to level optimization
+* [LevelOptimization](../Content%20Creation/Techniques/LevelOptimization.md) - Introduction to level optimization
 * Impersonator:
   + [Impersonator User Guide](ImpersonatorUserGuide.md)
   + [Impersonator Tutorial](https://udn.epicgames.com/Two/ImpersonatorTutorial)
@@ -129,4 +129,4 @@ Various community run IRC channels:
 * Cliff Blezinski's [The Art and Science of Level Design](http://www.cliffyb.com/art-sci-ld.html)
 * The original [Mod Authoring for Unreal Tournament](http://unreal.epicgames.com/UTMods.html) page from Epic's [Unreal Technology page](http://unreal.epicgames.com)
 * [WOTGreal](http://www.wotgreal.com) - WOTgreal won first place in the tools category for round one of MSU. It's an expanded version of UDE and worth checking out.
-* [UmodWizard](../Content Creation/Tools/UmodWizard.md) - ob1's UMod Wizard is an excellent utility for creating Unreal Mod package files.
+* [UmodWizard](../Content%20Creation/Tools/UmodWizard.md) - ob1's UMod Wizard is an excellent utility for creating Unreal Mod package files.

@@ -6,7 +6,7 @@
   + [Introduction](CreatingTerrain.md#introduction)
   + [Preparing Your Map for Terrain](CreatingTerrain.md#preparing-your-map-for-terrain)
   + [Your First Terrain](CreatingTerrain.md#your-first-terrain)
-    - [The TerrainMap](CreatingTerrain.md#the-_terrainmap)
+    - [The TerrainMap](CreatingTerrain.md#the-terrainmap)
     - [Adding a Texture](CreatingTerrain.md#adding-a-texture)
     - [Rebuilding the Map](CreatingTerrain.md#rebuilding-the-map)
   + [The Terrain Generator](CreatingTerrain.md#the-terrain-generator)
@@ -14,7 +14,7 @@
 
 ## Introduction
 
-This document explains how to create a Terrain starting with an empty level. This document assumes that you've never made a Terrain before, but you are familiar with the general [UnrealEdInterface](../Content Creation/Basics/UnrealEdInterface.md) and know how to use the Texture Browser, and Actor Browser.
+This document explains how to create a Terrain starting with an empty level. This document assumes that you've never made a Terrain before, but you are familiar with the general [UnrealEdInterface](../Content%20Creation/Basics/UnrealEdInterface.md) and know how to use the Texture Browser, and Actor Browser.
 
 ## Preparing Your Map for Terrain
 
@@ -140,4 +140,4 @@ If you press the Build button, random terrain will be generated inside the selec
 
 ## Other Sections
 
-From here on out you can alter the Terrain in a number of ways. Below are a series of pages that describe the various ways you can manipulate your Terrain.[TerrainTutorial](../Content Creation/Primitives/TerrainTutorial.md) - This outlines all the contents of the following documents. Also, if you add new sections to this document, it is also good practice to update the [TerrainTutorial](../Content Creation/Primitives/TerrainTutorial.md) as well.[EditingTerrainMaps](EditingTerrainMaps.md) - Shows how to use the Terrain Editor Tools.[EditingTerrainLayers](EditingTerrainLayers.md) - Explains how to create and use Layers within your Terrain.[CreatingDecoLayers](CreatingDecoLayers.md) - Shows how to create DecoLayers.[AdditionalTerrainTips](AdditionalTerrainTips.md) - In this document you will find several ways to greatly improve the appearance and effectiveness of your Terrain. If you are learning how to create your first Terrain, this section should **NOT** be over looked.
+From here on out you can alter the Terrain in a number of ways. Below are a series of pages that describe the various ways you can manipulate your Terrain.[TerrainTutorial](../Content%20Creation/Primitives/TerrainTutorial.md) - This outlines all the contents of the following documents. Also, if you add new sections to this document, it is also good practice to update the [TerrainTutorial](../Content%20Creation/Primitives/TerrainTutorial.md) as well.[EditingTerrainMaps](EditingTerrainMaps.md) - Shows how to use the Terrain Editor Tools.[EditingTerrainLayers](EditingTerrainLayers.md) - Explains how to create and use Layers within your Terrain.[CreatingDecoLayers](CreatingDecoLayers.md) - Shows how to create DecoLayers.[AdditionalTerrainTips](AdditionalTerrainTips.md) - In this document you will find several ways to greatly improve the appearance and effectiveness of your Terrain. If you are learning how to create your first Terrain, this section should **NOT** be over looked.

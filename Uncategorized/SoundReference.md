@@ -13,10 +13,10 @@
 * [Sound Reference](SoundReference.md#sound-reference)
   + [Related Documents](SoundReference.md#related-documents)
   + [Intro](SoundReference.md#intro)
-  + [Importing Sounds in UnrealEd](SoundReference.md#importing-sounds-in-_unrealed)
+  + [Importing Sounds in UnrealEd](SoundReference.md#importing-sounds-in-unrealed)
   + [Script Sound Functions](SoundReference.md#script-sound-functions)
     - [PlaySound](SoundReference.md#playsound)
-      * [Single vs. Multiplayer Use of PlaySound](SoundReference.md#single-vs-multiplayer-use-of-_playsound)
+      * [Single vs. Multiplayer Use of PlaySound](SoundReference.md#single-vs-multiplayer-use-of-playsound)
     - [PlayOwnedSound](SoundReference.md#playownedsound)
       * [Summary of PlayOwnedSound](SoundReference.md#summary-of-_playownedsound)
       * [Details](SoundReference.md#details)
@@ -39,7 +39,7 @@
     - [SoundRadius](SoundReference.md#soundradius)
     - [SoundVolume](SoundReference.md#soundvolume)
     - [SoundPitch](SoundReference.md#soundpitch)
-    - [bFullVolume](SoundReference.md#b_fullvolume)
+    - [bFullVolume](SoundReference.md#bfullvolume)
 
 ## Related Documents
 

@@ -10,7 +10,7 @@
 
 ## Related Documents
 
-[MyFirstCode](MyFirstCode.md), [MyFirstPawn](MyFirstPawn.md), [MyFirstController](MyFirstController.md), [MyFirstGameInfo](MyFirstGameInfo.md), [HeadsUpDisplayReference](../Technical and Programming/User Interface/HeadsUpDisplayReference.md), [CanvasReference](../Technical and Programming/User Interface/CanvasReference.md)
+[MyFirstCode](MyFirstCode.md), [MyFirstPawn](MyFirstPawn.md), [MyFirstController](MyFirstController.md), [MyFirstGameInfo](MyFirstGameInfo.md), [HeadsUpDisplayReference](../Technical%20and%20Programming/User%20Interface/HeadsUpDisplayReference.md), [CanvasReference](../Technical%20and%20Programming/User%20Interface/CanvasReference.md)
 
 ## Introduction
 
@@ -67,7 +67,7 @@ function DrawHUD(canvas Canvas)
 }
 ```
 
-Once we have the *PlayerReplicationInfo* we can get the score for this player by accessing *PawnOwnerPRI.Score*.The next thing we need to do before we can draw the HUD is pick a font to use. Fonts in Unreal are tricky because they don't scale and you therefore need to pick the font you want based on the resolution of the screen. See the [HeadsUpDisplayReference](../Technical and Programming/User Interface/HeadsUpDisplayReference.md) and the [FontTutorial](FontTutorial.md) for more details. The fonts specified in the *FontArrayNames* array are sorted in a descending order and so smaller numbers indices are larger fonts. Fonts are accessed with the `static function Font LoadFontStatic(int i)` function which returns the font with the given index. The block of code below shows how an appropriate font size is picked.
+Once we have the *PlayerReplicationInfo* we can get the score for this player by accessing *PawnOwnerPRI.Score*.The next thing we need to do before we can draw the HUD is pick a font to use. Fonts in Unreal are tricky because they don't scale and you therefore need to pick the font you want based on the resolution of the screen. See the [HeadsUpDisplayReference](../Technical%20and%20Programming/User%20Interface/HeadsUpDisplayReference.md) and the [FontTutorial](FontTutorial.md) for more details. The fonts specified in the *FontArrayNames* array are sorted in a descending order and so smaller numbers indices are larger fonts. Fonts are accessed with the `static function Font LoadFontStatic(int i)` function which returns the font with the given index. The block of code below shows how an appropriate font size is picked.
 
 ```
 
@@ -111,7 +111,7 @@ defaultproperties
 }
 ```
 
-Now that we have the *Score* and the font we are ready to actually draw things on the HUD. The block of code below draws a texture in the lower right hand corner scaled based on the current resolution and then draws the current score on top of that texture. The text of the score is manually right justified using the *StrLen* function. See the [CanvasReference](../Technical and Programming/User Interface/CanvasReference.md) document for more details about the functions used below to draw the HUD.
+Now that we have the *Score* and the font we are ready to actually draw things on the HUD. The block of code below draws a texture in the lower right hand corner scaled based on the current resolution and then draws the current score on top of that texture. The text of the score is manually right justified using the *StrLen* function. See the [CanvasReference](../Technical%20and%20Programming/User%20Interface/CanvasReference.md) document for more details about the functions used below to draw the HUD.
 
 ```
 
@@ -140,4 +140,4 @@ function DrawHUD(canvas Canvas)
 
 ## ExampleScoreboard
 
-The scoreboard works by accessing the *GRI.PRIArray* which is defined in *ScoreBoard.uc* like so:`var() GameReplicationInfo GRI;`The *GameReplicationInfo* class defines the *PRIArray* as follows:`var() array PRIArray;`The *PRIArray* contains the player replication information for all the players in the game. With this array we can get all the player names and scores to display on the scoreboard.The actual drawing of the scoreboard is relatively straight forward but the code is somewhat lengthy because there is a lot to draw. The code is well documented and looking at the UnrealScript file *ExampleScoreboard.uc* would be the best way to understand what is going on. See the [HeadsUpDisplayReference](../Technical and Programming/User Interface/HeadsUpDisplayReference.md) and the [CanvasReference](../Technical and Programming/User Interface/CanvasReference.md) for more details about the functions used below to draw the HUD.
+The scoreboard works by accessing the *GRI.PRIArray* which is defined in *ScoreBoard.uc* like so:`var() GameReplicationInfo GRI;`The *GameReplicationInfo* class defines the *PRIArray* as follows:`var() array PRIArray;`The *PRIArray* contains the player replication information for all the players in the game. With this array we can get all the player names and scores to display on the scoreboard.The actual drawing of the scoreboard is relatively straight forward but the code is somewhat lengthy because there is a lot to draw. The code is well documented and looking at the UnrealScript file *ExampleScoreboard.uc* would be the best way to understand what is going on. See the [HeadsUpDisplayReference](../Technical%20and%20Programming/User%20Interface/HeadsUpDisplayReference.md) and the [CanvasReference](../Technical%20and%20Programming/User%20Interface/CanvasReference.md) for more details about the functions used below to draw the HUD.

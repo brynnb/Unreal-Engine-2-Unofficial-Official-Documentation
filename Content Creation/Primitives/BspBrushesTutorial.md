@@ -163,7 +163,7 @@ Accessed through right-clicking the brush, there are several functions here. I w
 
 ### Transform
 
-* Scaling -see [Brush Scaling](#brushscaling)
+* Scaling -see [Brush Scaling](#brush-scaling)
 * Mirroring - mirrors the brush on the given axis.
 * Transform Permanently - when you scale or rotate the brush the editor will "know" this (that's why you can reset) so transforming permanently will make your scale/rotation permanent on the brush. Also, when vertex editing you will sometimes get a brush that will disappear from view when you zoom in on it. Transforming permanently will fix that.
 

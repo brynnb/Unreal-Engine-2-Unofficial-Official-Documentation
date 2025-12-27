@@ -27,7 +27,7 @@
 
 ## Related Documents
 
-[SVehicleReference](SVehicleReference.md), [SVehicleCreation](SVehicleCreation.md), [SVehicleMayaMAXFix](https://udn.epicgames.com/Two/SVehicleMayaMAXFix), [KarmaReference](../Content Creation/Physics/KarmaReference.md)
+[SVehicleReference](SVehicleReference.md), [SVehicleCreation](SVehicleCreation.md), [SVehicleMayaMAXFix](https://udn.epicgames.com/Two/SVehicleMayaMAXFix), [KarmaReference](../Content%20Creation/Physics/KarmaReference.md)
 
 ## Introduction
 
@@ -56,7 +56,7 @@ The first thing I needed to do was create my own *SVehicle* class (both in C++ a
 KAddForces(Force, Torque);
 ```
 
-To make physics for a helicopter, [SCopter](SCopterReference.md) seemed like a good place to start, but it was not enough of a helicopter simulation. For example, *SCopter* does not apply forces in local helicopter space. This means that if the *SCopter* is nosed down completely vertically and you press the raise button (jump), the helicopter will move up tail first. Also, the only implementation of *SCopter*, *COGChopper*, is not affected by gravity.The first decision I made was that the helicopter would be affected by gravity. To accomplish this goal I set [KActorGravScale](../Content Creation/Physics/KarmaReference.md#karmaparams) to 1.0 as opposed to 0.0. I set this value in *CTLChopper.uc* which is the only place that a *KarmaParams* is defined for *SHelicopter*.The second decision I made when designing my helicopter was that the main rotor would be the only thing to apply a force to helicopter. To fly forward one would have tilt the helicopter forward so the force of the rotor would be divided between keeping the helicopter in the air and moving it forward. To do this I would need to apply a force in local helicopter space as opposed to world space. I got the local coordinate system of the helicopter and applied the rotor force as follows:
+To make physics for a helicopter, [SCopter](SCopterReference.md) seemed like a good place to start, but it was not enough of a helicopter simulation. For example, *SCopter* does not apply forces in local helicopter space. This means that if the *SCopter* is nosed down completely vertically and you press the raise button (jump), the helicopter will move up tail first. Also, the only implementation of *SCopter*, *COGChopper*, is not affected by gravity.The first decision I made was that the helicopter would be affected by gravity. To accomplish this goal I set [KActorGravScale](../Content%20Creation/Physics/KarmaReference.md#karmaparams) to 1.0 as opposed to 0.0. I set this value in *CTLChopper.uc* which is the only place that a *KarmaParams* is defined for *SHelicopter*.The second decision I made when designing my helicopter was that the main rotor would be the only thing to apply a force to helicopter. To fly forward one would have tilt the helicopter forward so the force of the rotor would be divided between keeping the helicopter in the air and moving it forward. To do this I would need to apply a force in local helicopter space as opposed to world space. I got the local coordinate system of the helicopter and applied the rotor force as follows:
 
 ```
 
@@ -173,7 +173,7 @@ Torque += ( TurnTorqueMag * Up );
 
 #### KStayUpRight
 
-*bKStayUpright* in [KarmaParams](../Content Creation/Physics/KarmaReference.md#karmaparams) along with *UprightStiffness* and *UprightDamping* probably affect the balance and easy of flight of the helicopter more than any other variables. If *bKStayUpright* is true, the helicopter will always be trying to turn itself upright and level. *UprightStiffness* and *UprightDamping* set *StayUprightStiffness* and *StayUprightDamping* in [KarmaParams](../Content Creation/Physics/KarmaReference.md#karmaparams) which affect how strongly the helicopter will try to stay upright. If these variables are large the helicopter will level out easily but be hard to turn or bank sharply. By default in *CTLChopper*, *bKStayUpright* is true, *UprightStiffness* is 7.5, and *UprightDamping* is 5.0.
+*bKStayUpright* in [KarmaParams](../Content%20Creation/Physics/KarmaReference.md#karmaparams) along with *UprightStiffness* and *UprightDamping* probably affect the balance and easy of flight of the helicopter more than any other variables. If *bKStayUpright* is true, the helicopter will always be trying to turn itself upright and level. *UprightStiffness* and *UprightDamping* set *StayUprightStiffness* and *StayUprightDamping* in [KarmaParams](../Content%20Creation/Physics/KarmaReference.md#karmaparams) which affect how strongly the helicopter will try to stay upright. If these variables are large the helicopter will level out easily but be hard to turn or bank sharply. By default in *CTLChopper*, *bKStayUpright* is true, *UprightStiffness* is 7.5, and *UprightDamping* is 5.0.
 
 #### Linear Damping
 

@@ -39,4 +39,4 @@ The landing gear takes about 2.5 seconds to lower. I find that triggering it 3 s
 
 ---
 
-The next tutorial? will cover using [ScriptedSequences](../Content Creation/Scripted Sequences/ScriptedSequenceTutorial.md) to control characters in the scene.
+The next tutorial? will cover using [ScriptedSequences](../Content%20Creation/Scripted%20Sequences/ScriptedSequenceTutorial.md) to control characters in the scene.

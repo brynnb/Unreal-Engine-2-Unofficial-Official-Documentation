@@ -14,8 +14,8 @@
     - [Modular Design](RuntimeMapProcess.md#modular-design)
     - [Collision](RuntimeMapProcess.md#collision)
   + [Setting up the Water](RuntimeMapProcess.md#setting-up-the-water)
-    - [Advantages of the StaticMesh water surface](RuntimeMapProcess.md#advantages-of-the-_staticmesh-water-surface)
-    - [Advantages of the FluidSurface water surface](RuntimeMapProcess.md#advantages-of-the-_fluidsurface-water-surface)
+    - [Advantages of the StaticMesh water surface](RuntimeMapProcess.md#advantages-of-the-staticmesh-water-surface)
+    - [Advantages of the FluidSurface water surface](RuntimeMapProcess.md#advantages-of-the-fluidsurface-water-surface)
     - [Final Decision](RuntimeMapProcess.md#final-decision)
 
 ![runtime_map.jpg](../assets/runtime_map.jpg)
@@ -65,7 +65,7 @@ In total there were 5 Layers used in the Terrain, 2 using the grass texture, 2 u
 
 ## StaticMesh Guidelines
 
-There are several things to consider when creating a mesh such as how many materials will be used, how much texture memory can be devoted to the mesh, how many triangles it will be, what sort of collision it has, as well as how it will work with the rest of the level. Here you will find a couple of guidelines for creating StaticMeshes for your own levels.For more information on StaticMeshes, see the [StaticMeshesTutorial](../Content Creation/Primitives/StaticMeshesTutorial.md)
+There are several things to consider when creating a mesh such as how many materials will be used, how much texture memory can be devoted to the mesh, how many triangles it will be, what sort of collision it has, as well as how it will work with the rest of the level. Here you will find a couple of guidelines for creating StaticMeshes for your own levels.For more information on StaticMeshes, see the [StaticMeshesTutorial](../Content%20Creation/Primitives/StaticMeshesTutorial.md)
 
 ### Size Matters
 
@@ -117,7 +117,7 @@ Or these maps that will run on the UDN Off Build 2226
 
 * Rising Water maps ([ExampleMapsRisingWater](ExampleMapsRisingWater.md))
 
-Also you can learn more about FluidSurfaces from the [FluidSurfaceTutorial](../Content Creation/Primitives/FluidSurfaceTutorial.md) doc.
+Also you can learn more about FluidSurfaces from the [FluidSurfaceTutorial](../Content%20Creation/Primitives/FluidSurfaceTutorial.md) doc.
 
 ### Final Decision
 

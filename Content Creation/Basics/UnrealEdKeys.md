@@ -30,7 +30,7 @@
   + [Editing Modes](#editing-modes)
     - [Brush Clipping Mode](#brush-clipping-mode)
     - [Vertex Editing Mode](#vertex-editing-mode)
-    - [Polygon (Face) Dragging Mode](#polygon-face) Dragging Mode)
+    - [Polygon (Face) Dragging Mode](#polygon-face-dragging-mode) Dragging Mode)
     - [Brush Rotate Mode](#brush-rotate-mode)
     - [Brush Scale Mode](#brush-scale-mode)
     - [Freehand Polygon Drawing Tool](#freehand-polygon-drawing-tool)

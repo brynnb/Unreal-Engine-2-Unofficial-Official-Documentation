@@ -81,7 +81,7 @@ Because you've used terrains to create you cavern you can know quite easily crea
 
 ![pool_creation.jpg](../assets/pool_creation.jpg)
 
-To learn more about creating special volumes see the [VolumesTutorial](../Content Creation/Primitives/VolumesTutorial.md)
+To learn more about creating special volumes see the [VolumesTutorial](../Content%20Creation/Primitives/VolumesTutorial.md)
 
 ### Lighting and Visibility
 

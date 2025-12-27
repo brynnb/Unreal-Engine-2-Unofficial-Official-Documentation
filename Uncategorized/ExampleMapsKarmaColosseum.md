@@ -5,7 +5,7 @@
 * [Karma Colosseum](ExampleMapsKarmaColosseum.md#karma-colosseum)
   + [Introduction](ExampleMapsKarmaColosseum.md#introduction)
   + [Simple Primitives](ExampleMapsKarmaColosseum.md#simple-primitives)
-    - [Creating the StaticMesh](ExampleMapsKarmaColosseum.md#creating-the-_staticmesh)
+    - [Creating the StaticMesh](ExampleMapsKarmaColosseum.md#creating-the-staticmesh)
     - [Setting the KParams](ExampleMapsKarmaColosseum.md#setting-the-kparams)
     - [Boxes (MCDBX)](ExampleMapsKarmaColosseum.md#boxes-mcdbx))
       * [Stone Block](ExampleMapsKarmaColosseum.md#stone-block)
@@ -21,14 +21,14 @@
     - [Punching Bag](ExampleMapsKarmaColosseum.md#punching-bag)
     - [Destructible Columns](ExampleMapsKarmaColosseum.md#destructible-columns)
     - [Ball and Chain](ExampleMapsKarmaColosseum.md#ball-and-chain)
-      * [Ball KarmaParams](ExampleMapsKarmaColosseum.md#ball-_karmaparams)
-      * [Link KarmaParams](ExampleMapsKarmaColosseum.md#link-_karmaparams)
+      * [Ball KarmaParams](ExampleMapsKarmaColosseum.md#ball-karmaparams)
+      * [Link KarmaParams](ExampleMapsKarmaColosseum.md#link-karmaparams)
       * [The Base](ExampleMapsKarmaColosseum.md#the-base)
   + [Tips and Pointers](ExampleMapsKarmaColosseum.md#tips-and-pointers)
     - [Avoid Scaling Karma Actors in Unreal Ed](ExampleMapsKarmaColosseum.md#avoid-scaling-karma-actors-in-unreal-ed)
     - [Pivot Placement of Karma Actors](ExampleMapsKarmaColosseum.md#pivot-placement-of-karma-actors)
     - [Using Cylinder Karma Primitives (MCDCY)](ExampleMapsKarmaColosseum.md#using-cylinder-karma-primitives-mcdcy))
-    - [Karma Collisions Through Geometry](ExampleMapsKarmaColosseum.md#karma-collisions-emthroughem-geometry)
+    - [Karma Collisions Through Geometry](ExampleMapsKarmaColosseum.md#karma-collisions-through-geometry)
     - [Karma with Movers](ExampleMapsKarmaColosseum.md#karma-with-movers)
   + [Downloads](ExampleMapsKarmaColosseum.md#downloads)
 
@@ -36,13 +36,13 @@
 
 ## Introduction
 
-The Karma Physics engine allows you to integrate more realistic simulations of collisions with your StaticMeshes, but Karma should not be applied to every object in your level. While the calculations for determining reactions are simplified from what's actually happening in reality, they still have an impact on the engine. Karma should be used selectively in your level so as not to overwhelm the Unreal Engine. The example map described below pushes the boundary of what Karma can realistically do within a scene.In this document you will see how to create and use the basic Karma and learn about several tips to getting the most out of Karma. In the first section you will see how to create different simple primitives using the various types of Karma Primitives. The second section demonstrates how to use constraints and how to create more complex effects. The third section outlines various tips and pointers to keep in mind when using Karma. The map and associated packages can be downloaded at the bottom of this page as well as on the main [ExampleMaps](../Content Creation/Techniques/ExampleMaps.md) page.
+The Karma Physics engine allows you to integrate more realistic simulations of collisions with your StaticMeshes, but Karma should not be applied to every object in your level. While the calculations for determining reactions are simplified from what's actually happening in reality, they still have an impact on the engine. Karma should be used selectively in your level so as not to overwhelm the Unreal Engine. The example map described below pushes the boundary of what Karma can realistically do within a scene.In this document you will see how to create and use the basic Karma and learn about several tips to getting the most out of Karma. In the first section you will see how to create different simple primitives using the various types of Karma Primitives. The second section demonstrates how to use constraints and how to create more complex effects. The third section outlines various tips and pointers to keep in mind when using Karma. The map and associated packages can be downloaded at the bottom of this page as well as on the main [ExampleMaps](../Content%20Creation/Techniques/ExampleMaps.md) page.
 
 ## Simple Primitives
 
 ### Creating the StaticMesh
 
-The process for creating StaticMesh with Karma properties is fairly trivial. You simply need to create simple primitives and give it the proper name in the third party modeling program. This is described in greater detail in the [KarmaReference](../Content Creation/Physics/KarmaReference.md) doc. Once you've imported your ASE and clicked the Karma information has successfully been imported, you will now be ready to place your Karma Actor in the world. With the desired StaticMesh selected in the StaticMesh browser, just right click and in a viewport and select the **"Add Karma Actor"** option.Also one should note that in order for Karma Actors to collide with StaticMeshes without collision hulls, you must set "UseSimpleKarmaCollision" to False in the StaticMesh Browser. This setting is a bit misleading in that if the setting is True, the StaticMesh will attempt to use Karma information that it doesn't have and as a result the StaticMesh will not collide with Karma Actors. The False setting will tell the StaticMesh to collide per triangle and then it will then collide with Karma Actors.
+The process for creating StaticMesh with Karma properties is fairly trivial. You simply need to create simple primitives and give it the proper name in the third party modeling program. This is described in greater detail in the [KarmaReference](../Content%20Creation/Physics/KarmaReference.md) doc. Once you've imported your ASE and clicked the Karma information has successfully been imported, you will now be ready to place your Karma Actor in the world. With the desired StaticMesh selected in the StaticMesh browser, just right click and in a viewport and select the **"Add Karma Actor"** option.Also one should note that in order for Karma Actors to collide with StaticMeshes without collision hulls, you must set "UseSimpleKarmaCollision" to False in the StaticMesh Browser. This setting is a bit misleading in that if the setting is True, the StaticMesh will attempt to use Karma information that it doesn't have and as a result the StaticMesh will not collide with Karma Actors. The False setting will tell the StaticMesh to collide per triangle and then it will then collide with Karma Actors.
 
 ![usesimplekarma.gif](../assets/usesimplekarma.gif)
 
@@ -52,7 +52,7 @@ In the properties window of your Karma Actor, expand the Karma tab and all of th
 
 ![default_kparams.gif](../assets/default_kparams.gif)
 
-For a detailed description of all the KarmaParams see the [Physics\_Parameters](../Content Creation/Physics/KarmaReference.md#physics_parameters_kparams_) sections of the [KarmaReference](../Content Creation/Physics/KarmaReference.md) doc.**NOTE:** Actors will only use Karma if their **bHighDetailOnly** setting is set to **True**. It defaults to False because Karma can cause a substantial performace hit on slower machines and is often not used as an integral part of the game. However, If you are using Karma as an integral part of your game you will want to also change the below setting your uw.ini and default.ini files, otherwise Karma may be toggled off by slower end-user machines.In the .ini files, search for this setting...
+For a detailed description of all the KarmaParams see the [Physics\_Parameters](../Content%20Creation/Physics/KarmaReference.md#physics_parameters_kparams_) sections of the [KarmaReference](../Content%20Creation/Physics/KarmaReference.md) doc.**NOTE:** Actors will only use Karma if their **bHighDetailOnly** setting is set to **True**. It defaults to False because Karma can cause a substantial performace hit on slower machines and is often not used as an integral part of the game. However, If you are using Karma as an integral part of your game you will want to also change the below setting your uw.ini and default.ini files, otherwise Karma may be toggled off by slower end-user machines.In the .ini files, search for this setting...
 
 ```
 
@@ -72,7 +72,7 @@ The Karma settings provide approximations of how objects act within the real wor
 
 ### Boxes (MCDBX)
 
-The following three meshes are made with only having one Karma Box (MCDBX) in the ase, but in altering their KarmaParams one can achieve dramatically different effects for each one. For more information on setting up the MCDBX, see the [KarmaReference](../Content Creation/Physics/KarmaReference.md) doc.
+The following three meshes are made with only having one Karma Box (MCDBX) in the ase, but in altering their KarmaParams one can achieve dramatically different effects for each one. For more information on setting up the MCDBX, see the [KarmaReference](../Content%20Creation/Physics/KarmaReference.md) doc.
 
 #### Stone Block
 
@@ -106,7 +106,7 @@ To give a weightier appearance than the cardboard box but still not quite as hea
 
 ### Balls (MCDSP)
 
-The following two balls were created with only having one Karma Sphere (MCDSP), but with changing a few simple properties, they can have radically different behaviors in game. For more information on setting up the MCDSP, see the [KarmaReference](../Content Creation/Physics/KarmaReference.md) doc.
+The following two balls were created with only having one Karma Sphere (MCDSP), but with changing a few simple properties, they can have radically different behaviors in game. For more information on setting up the MCDSP, see the [KarmaReference](../Content%20Creation/Physics/KarmaReference.md) doc.
 
 #### Bowling Ball
 
@@ -130,7 +130,7 @@ To give the beach ball an extra light feeling, the *KActorGravScale* is reduced 
 
 ### Complex Shapes (MCDCX and multiple Karma Primitives)
 
-When creating the Karma Primitives in a third party modeling program you are not just limited to simple primitives such as spheres, boxes, and cylinders. You can also make irregular convex shapes (*MCDCX*) or even combine the basic primates to create any shape you desire. Below you will see how you can create more complex shapes such as a balloon and a boulder. For more information on setting up the MCDCX and other Karma Primitives, see the [KarmaReference](../Content Creation/Physics/KarmaReference.md) doc.
+When creating the Karma Primitives in a third party modeling program you are not just limited to simple primitives such as spheres, boxes, and cylinders. You can also make irregular convex shapes (*MCDCX*) or even combine the basic primates to create any shape you desire. Below you will see how you can create more complex shapes such as a balloon and a boulder. For more information on setting up the MCDCX and other Karma Primitives, see the [KarmaReference](../Content%20Creation/Physics/KarmaReference.md) doc.
 
 #### Balloon
 
@@ -238,7 +238,7 @@ Karma Cylinders tend to be a bit fussy upon importing into Unreal Ed. If you are
 
 ![mcdcyerror.gif](../assets/mcdcyerror.gif)
 
-For whatever reason cylinders often need to be subdivided to be properly read by the import process, so just add an additional segment around the height of the Karma Cylinder and try re-importing. For more information on setting up the MCDCY or other Karma Primitives, see the [KarmaReference](../Content Creation/Physics/KarmaReference.md) doc.
+For whatever reason cylinders often need to be subdivided to be properly read by the import process, so just add an additional segment around the height of the Karma Cylinder and try re-importing. For more information on setting up the MCDCY or other Karma Primitives, see the [KarmaReference](../Content%20Creation/Physics/KarmaReference.md) doc.
 
 ### Karma Collisions *Through* Geometry
 

@@ -40,7 +40,7 @@
         + [CollisionSpheres](#collisionspheres)
       * [Imposter](#imposter)
       * [LOD](#lod)
-        + [LOD\_Strength](#lod-strength)
+        + [LOD\_Strength](#lod_strength)
         + [LOD Levels](#lod-levels)
           - [DistanceFactor](#distancefactor)
           - [Hysteresis](#hysteresis)
@@ -95,7 +95,7 @@ The script-based art-path of linking in animation and mesh data using script #ex
 * 4: Package name.
 * 5: Mesh name.
 * 6: Animation set name.
-* 7: [Animation sequences and sorting controls.](#animation-sequences-and-sorting-)
+* 7: [Animation sequences and sorting controls.](#animation-sequences-and-sorting-controls)
 * 8: The model viewport
 * 9: [Model properties tabs](#tabbed-properties).
 * 10: [Animation playback controls](#animation-playback-controls)
@@ -243,7 +243,7 @@ This button forces the engine to re-evaluate your LOD settings when you change t
 
 ![RecompressAnim.gif ](../../assets/recompressanim.gif)
 
-*In version 3323 this button is no longer available, see [Animation Set](#animationset) section for more information about this.*If you've made changes to your animations in the browser that might make them smaller, you'll want to hit this button. You have the option of recompressing an entire set at a time, or individual animations. It will perform a task based on which tab is open in the tabbed properties section, `Animation Set' or `Sequence,' so make sure the right one is picked.It is important to keep in mind that any compression performed on the data with this button is a one-way process - if you over-compressed and need to go back to the original raw animation, you'll need to re-import the .PSA source data - so, be sure to always backup .PSA data files - and of course the 3DS Max or Maya files from which they were created.You'll receive one of two confirmation windows:
+*In version 3323 this button is no longer available, see [Animation Set](#animation-set) section for more information about this.*If you've made changes to your animations in the browser that might make them smaller, you'll want to hit this button. You have the option of recompressing an entire set at a time, or individual animations. It will perform a task based on which tab is open in the tabbed properties section, `Animation Set' or `Sequence,' so make sure the right one is picked.It is important to keep in mind that any compression performed on the data with this button is a one-way process - if you over-compressed and need to go back to the original raw animation, you'll need to re-import the .PSA source data - so, be sure to always backup .PSA data files - and of course the 3DS Max or Maya files from which they were created.You'll receive one of two confirmation windows:
 
 ![recompress1.jpg ](../../assets/recompress1.jpg)
 
@@ -478,7 +478,7 @@ This section has a list of all the different material IDs used in your mesh.Whil
 The double-underscore naming convention allows you to specify the materialname tags that are recommended to order the skins ( skin00, skin01, alpha, etc.) without confusing the texture match-up - the editor will only look at the part before the double underscore.
 So, a material named bodyarmor\_\_skin00\_translucent will be linked up
 at PSK-import time to a material named bodyarmor, if that material
-is present in the editor at that time (i.e., anywhere in the texture browser.)Materials are assigned by going to the Texture browser and selecting the desired skin material to make it the 'current' material, then pressing 'use current' in the appropriate slot. If desired for skin-linkup work, the Animation and/or Texture browser window can be undocked to put them side by side. For a more complete explanation of the process, see the [AnimBrowserTutorial](AnimBrowserTutorial.md#texture_assignment) document.
+is present in the editor at that time (i.e., anywhere in the texture browser.)Materials are assigned by going to the Texture browser and selecting the desired skin material to make it the 'current' material, then pressing 'use current' in the appropriate slot. If desired for skin-linkup work, the Animation and/or Texture browser window can be undocked to put them side by side. For a more complete explanation of the process, see the [AnimBrowserTutorial](AnimBrowserTutorial.md#texture-assignment) document.
 
 ### Animation Set
 

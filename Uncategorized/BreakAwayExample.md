@@ -19,7 +19,7 @@
     - [BSP Holes](BreakAwayExample.md#bsp-holes)
     - [Additional BSP references](BreakAwayExample.md#additional-bsp-references)
   + [Setting up Trees with Shadows](BreakAwayExample.md#setting-up-trees-with-shadows)
-    - [Basic Tree StaticMesh](BreakAwayExample.md#basic-tree-_staticmesh)
+    - [Basic Tree StaticMesh](BreakAwayExample.md#basic-tree-staticmesh)
     - [Shadow Projector](BreakAwayExample.md#shadow-projector)
     - [Special Materials for Leaves](BreakAwayExample.md#special-materials-for-leaves)
     - [Assembling the Torches](BreakAwayExample.md#assembling-the-torches)
@@ -52,7 +52,7 @@ The creation of the level can be broken down into six stages:
 
 ### Subtracting Out the World Space
 
-There is also of course a *zeroth* step which is the designing of your level but once you've figured out what you want where and how big, you are ready to subtract out your world space. If you misjudge how large your world needs to be, you may need to make more subtractions later, which is not ideal. So when in doubt, it is best to error on the side of larger rather than smaller.After subtracting the space you will need to do three more things, make sure the faces are set up to be Fake Backdrop, add a SunLight Actor, and then set up a ZoneInfo. The only fields that are necessary to fill out right now are **bTerrainZone = True** and some sort of **AmbientBrightness.** It might also be a good idea to set **bDistanceFog = True** but we'll get to that later in this doc.One last thing you can do to make your life just a little bit easier, is to increase the **DrawScale** to something on the order of 10 or 20 so it's easier to find in the level. This only changes the size of the icon, so it's a purely cosmetic feature that will only be noticeable in the Editor.For more about setting up a basic world space see the [Intro To Unreal Ed](../Content Creation/Basics/IntroToUnrealEd.md#creating_the_basic_world_space) doc.
+There is also of course a *zeroth* step which is the designing of your level but once you've figured out what you want where and how big, you are ready to subtract out your world space. If you misjudge how large your world needs to be, you may need to make more subtractions later, which is not ideal. So when in doubt, it is best to error on the side of larger rather than smaller.After subtracting the space you will need to do three more things, make sure the faces are set up to be Fake Backdrop, add a SunLight Actor, and then set up a ZoneInfo. The only fields that are necessary to fill out right now are **bTerrainZone = True** and some sort of **AmbientBrightness.** It might also be a good idea to set **bDistanceFog = True** but we'll get to that later in this doc.One last thing you can do to make your life just a little bit easier, is to increase the **DrawScale** to something on the order of 10 or 20 so it's easier to find in the level. This only changes the size of the icon, so it's a purely cosmetic feature that will only be noticeable in the Editor.For more about setting up a basic world space see the [Intro To Unreal Ed](../Content%20Creation/Basics/IntroToUnrealEd.md#creating-the-basic-world-space) doc.
 
 ### Adding a Rough Terrain
 
@@ -62,7 +62,7 @@ Next in the process for creating the Runtime map a rough Terrain was added. In t
 
 ### Adding/Subtracting secondary BSP zones
 
-Once a rough layout of the landscape of the entire level is set up, then the more detailed underground BSP section was added. This in itself was a multi-step process, but the most important part was setting it up to make sure it would fit beneath the Terrain without popping through. A more detailed description of the BSP space can be found [below.](BreakAwayExample.md#creating_the_bsp_space) Also in this step a sky box was added to help give the entire world a better sense of place.
+Once a rough layout of the landscape of the entire level is set up, then the more detailed underground BSP section was added. This in itself was a multi-step process, but the most important part was setting it up to make sure it would fit beneath the Terrain without popping through. A more detailed description of the BSP space can be found [below.](BreakAwayExample.md#creating-the-bsp-space) Also in this step a sky box was added to help give the entire world a better sense of place.
 
 ### Adding World Geometry
 
@@ -135,7 +135,7 @@ If you do encounter BSP holes, often it is easier to revert to an earlier versio
 
 For more detailed information on these various topics check out the following documents:
 
-* [LevelOptimization](../Content Creation/Techniques/LevelOptimization.md)
+* [LevelOptimization](../Content%20Creation/Techniques/LevelOptimization.md)
 * [ExampleMapsCaverns](ExampleMapsCaverns.md)
 * [LightingOnSurfaces](LightingOnSurfaces.md)
 
@@ -163,7 +163,7 @@ To create the appearance of several different similar types of trees and avoid o
 
 ### Shadow Projector
 
-To set up a more elaborate shadow, a projector is used in conjunction with the tree mesh. This will require a special additional texture to be created, by taking a screenshot of the tree in the level and importing desaturating then importing it as described in the [Advanced Lighting Example Map doc](ExampleMapsAdvLighting.md#single_tree_shadow).In the EM\_RunTime map the sun is at such a steep angle that the shadow is close enough to being directly beneath it that a simple TexRotator that subtly oscillated back and for was used to give the effect that the shadow of the leaves are waiving just as the leaves in the tree are. The next section describes briefly how the leaves were made to wave.
+To set up a more elaborate shadow, a projector is used in conjunction with the tree mesh. This will require a special additional texture to be created, by taking a screenshot of the tree in the level and importing desaturating then importing it as described in the [Advanced Lighting Example Map doc](ExampleMapsAdvLighting.md#single-tree-shadow).In the EM\_RunTime map the sun is at such a steep angle that the shadow is close enough to being directly beneath it that a simple TexRotator that subtly oscillated back and for was used to give the effect that the shadow of the leaves are waiving just as the leaves in the tree are. The next section describes briefly how the leaves were made to wave.
 
 ### Special Materials for Leaves
 
@@ -183,7 +183,7 @@ The torches in the EM\_RunTime map are made up of four parts, the StaticMesh, th
 
 ![ba_torch.jpg](../assets/ba_torch.jpg)
 
-The AmbientSound, for simplicities sake was set in the Sound property of the Fire Emitter -this way if you need to copy or move a torch set up you have one less object to select. The light is best left as a separate actor as the lighting looks much better if it is actually set apart from the wall some and thus the apparent light source. And of course the Emitter and StaticMesh must be separate actors.One helpful tool used in organizing this torch set is the Groups Browser. By creating a group that has just the lights for the torch you can then go back later if you want to tweak the lighting to adjust the hue or brightness. You could even create a hidden mover that constantly wiggles back and forth, attach all the lights to it at once, and set them to bDynamicLight = *True* to create a shimmering effect consistent with flickering flame. If the lights were not in their own group, this task would be as many times more time consuming as you have lights, and there's always the chance you might miss one.For more on using the Groups Browser, see the [GroupsBrowser](GroupsBrowser.md) document. Also you can see more cool effects that you can add to your torch in the [Advanced Lighting Example Map doc](ExampleMapsAdvLighting.md#wavering_torch_light). If you are curious about how to create your own fire emitter, check out the this example in the [Emitters Examples doc](EmittersExamples.md#the_torches).
+The AmbientSound, for simplicities sake was set in the Sound property of the Fire Emitter -this way if you need to copy or move a torch set up you have one less object to select. The light is best left as a separate actor as the lighting looks much better if it is actually set apart from the wall some and thus the apparent light source. And of course the Emitter and StaticMesh must be separate actors.One helpful tool used in organizing this torch set is the Groups Browser. By creating a group that has just the lights for the torch you can then go back later if you want to tweak the lighting to adjust the hue or brightness. You could even create a hidden mover that constantly wiggles back and forth, attach all the lights to it at once, and set them to bDynamicLight = *True* to create a shimmering effect consistent with flickering flame. If the lights were not in their own group, this task would be as many times more time consuming as you have lights, and there's always the chance you might miss one.For more on using the Groups Browser, see the [GroupsBrowser](GroupsBrowser.md) document. Also you can see more cool effects that you can add to your torch in the [Advanced Lighting Example Map doc](ExampleMapsAdvLighting.md#wavering-torch-light). If you are curious about how to create your own fire emitter, check out the this example in the [Emitters Examples doc](EmittersExamples.md#the-torches).
 
 ---
 
@@ -201,7 +201,7 @@ The SunLight Actor was among the first of these elements to be placed and set up
 
 ### Rolling Clouds
 
-To create a rolling clouds all you really need is a panning cloud texture and a really large projector that casts down across the entire level. For a more detailed description you can take a look at the [Advanced Lighting Example Map](ExampleMapsAdvLighting.md#rolling_clouds) doc.Some things to watch out for when setting up your rolling clouds Projector are artifacts that occur on masked and alpha-ed textures (like the leaves in the tree StaticMesh) as well as indoor spaces that are still within the MaxTraceDistance of the Projector. There are a couple ways to take care of these issues. Mainly, just make sure that the Projector isn't casting on the surfaces. This can be accomplished with any of the following techniques:
+To create a rolling clouds all you really need is a panning cloud texture and a really large projector that casts down across the entire level. For a more detailed description you can take a look at the [Advanced Lighting Example Map](ExampleMapsAdvLighting.md#rolling-clouds) doc.Some things to watch out for when setting up your rolling clouds Projector are artifacts that occur on masked and alpha-ed textures (like the leaves in the tree StaticMesh) as well as indoor spaces that are still within the MaxTraceDistance of the Projector. There are a couple ways to take care of these issues. Mainly, just make sure that the Projector isn't casting on the surfaces. This can be accomplished with any of the following techniques:
 
 * ProjectTag settings
 * bAcceptProjectors on the non-cooperative Actors
@@ -217,4 +217,4 @@ As you can see, the SkyZone is constructed out of four StaticMeshes -or rather t
 
 ### Distance Fog
 
-The last thing you can use to create a sense of atmosphere in your level is to turn on Distance Fog in your ZoneInfo. By playing with the DistanceFogEnd and DistanceFogStart values you can get the density of fog you want, and then by making the DistanceFogColor matching the inner ring of a sky cylinder, you will get the effect of things being culled by the Distance Fog will appear as if they are blending into the horizon.For additional information on using Distance Fog, see the [Level Optimization doc](../Content Creation/Techniques/LevelOptimization.md#distance_fog).
+The last thing you can use to create a sense of atmosphere in your level is to turn on Distance Fog in your ZoneInfo. By playing with the DistanceFogEnd and DistanceFogStart values you can get the density of fog you want, and then by making the DistanceFogColor matching the inner ring of a sky cylinder, you will get the effect of things being culled by the Distance Fog will appear as if they are blending into the horizon.For additional information on using Distance Fog, see the [Level Optimization doc](../Content%20Creation/Techniques/LevelOptimization.md#distance-fog).

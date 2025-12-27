@@ -19,7 +19,7 @@
 
 ## Related Documents
 
-[SVehicleReference](SVehicleReference.md), [SVehicleCreation](SVehicleCreation.md), [SVehicleMayaMAXFix](https://udn.epicgames.com/Two/SVehicleMayaMAXFix), [KarmaReference](../Content Creation/Physics/KarmaReference.md)
+[SVehicleReference](SVehicleReference.md), [SVehicleCreation](SVehicleCreation.md), [SVehicleMayaMAXFix](https://udn.epicgames.com/Two/SVehicleMayaMAXFix), [KarmaReference](../Content%20Creation/Physics/KarmaReference.md)
 
 ## Introduction
 
@@ -84,7 +84,7 @@ You turn *SCopters* by pointing the player's view (using the mouse or thumb-stic
 
 #### PitchTorqueFactor
 
-`var() float PitchTorqueFactor`*PitchTorqueFactor* will be multiplied by the "throttle" of *SCopter* (see the [Controls](SVehicleReference.md#controls) sections of the *SVehicle* doc). The result of this multiply is the torque used to pitch the copter. The copter only pitches forward so far and does not spin about the Y axis because the Karma properties for *SCopters* have [bKStayUpright](../Content Creation/Physics/KarmaReference.md#karmaparams) set to true.
+`var() float PitchTorqueFactor`*PitchTorqueFactor* will be multiplied by the "throttle" of *SCopter* (see the [Controls](SVehicleReference.md#controls) sections of the *SVehicle* doc). The result of this multiply is the torque used to pitch the copter. The copter only pitches forward so far and does not spin about the Y axis because the Karma properties for *SCopters* have [bKStayUpright](../Content%20Creation/Physics/KarmaReference.md#karmaparams) set to true.
 
 #### PitchTorqueMax
 
@@ -100,7 +100,7 @@ You turn *SCopters* by pointing the player's view (using the mouse or thumb-stic
 
 #### RollTorqueTurnFactor
 
-`var() float RollTorqueTurnFactor`*RollTorqueTurnFactor* is very similar to [TurnTorqueFactor](SCopterReference.md#turntorquefactor) because both are multiplied by a number which represent how hard the copter is turning. The result of this multiply is used to roll in the direction of the turn. The copter only rolls so far and does not spin about the X axis because the Karma properties for *SCopters* have [bKStayUpright](../Content Creation/Physics/KarmaReference.md#karmaparams) set to true.
+`var() float RollTorqueTurnFactor`*RollTorqueTurnFactor* is very similar to [TurnTorqueFactor](SCopterReference.md#turntorquefactor) because both are multiplied by a number which represent how hard the copter is turning. The result of this multiply is used to roll in the direction of the turn. The copter only rolls so far and does not spin about the X axis because the Karma properties for *SCopters* have [bKStayUpright](../Content%20Creation/Physics/KarmaReference.md#karmaparams) set to true.
 
 #### RollTorqueStrafeFactor
 

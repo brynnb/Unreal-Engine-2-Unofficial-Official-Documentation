@@ -35,7 +35,7 @@
 
 ## Introduction
 
-This document will contain links to Demos and Example Maps. Feel free to create new pages describing a map or to improve the existing ones and link then add links to them from this site.Click on the link under the particular map section you are interested in to see the doc on that example map. For the actual example maps themselves, you can download them at the bottom of this page if they are not available on the corresponding Example Map page.For better organization this document has been separated into different types of example maps ([Lights](#lightssection), [Movers](#moverssection), [Volumes](#volumessection), [Environmental](#environmentalsection), [Special Effects](#specialeffectssection), and [Miscellaneous](#miscsection)). Some maps may fit into multiple categories so if you can't find something in one section, check other sections that might be related.
+This document will contain links to Demos and Example Maps. Feel free to create new pages describing a map or to improve the existing ones and link then add links to them from this site.Click on the link under the particular map section you are interested in to see the doc on that example map. For the actual example maps themselves, you can download them at the bottom of this page if they are not available on the corresponding Example Map page.For better organization this document has been separated into different types of example maps ([Lights](#lights), [Movers](#movers), [Volumes](#volumes), [Environmental](#environmentalsection), [Special Effects](#special-effects), and [Miscellaneous](#miscellaneous)). Some maps may fit into multiple categories so if you can't find something in one section, check other sections that might be related.
 
 ---
 

@@ -3,13 +3,13 @@
 *Document Summary: An introductory document on editing Terrain Layers.**Document Changelog: Last updated by Michiel Hendriks, minor fixes. Previously updated by Jason Lentz (DemiurgeStudios?) to separate into smaller docs. Original author was Lode Vandevenne ([UdnStaff](https://udn.epicgames.com/Main/UdnStaff)).*
 
 * [Editing the Terrain Layers](EditingTerrainLayers.md#editing-the-terrain-layers)
-  + [The TerrainInfo](EditingTerrainLayers.md#the-_terraininfo)
+  + [The TerrainInfo](EditingTerrainLayers.md#the-terraininfo)
   + [Layer Hierarchy](EditingTerrainLayers.md#layer-hierarchy)
   + [Layers](EditingTerrainLayers.md#layers)
     - [Creating a New Layer](EditingTerrainLayers.md#creating-a-new-layer)
     - [Layer Properties](EditingTerrainLayers.md#layer-properties)
     - [TextureMapAxis](EditingTerrainLayers.md#texturemapaxis)
-  + [Editing the AlphaMaps](EditingTerrainLayers.md#editing-the-_alphamaps)
+  + [Editing the AlphaMaps](EditingTerrainLayers.md#editing-the-alphamaps)
     - [Vertex Editing and Select](EditingTerrainLayers.md#vertex-editing-and-select)
     - [Painting](EditingTerrainLayers.md#painting)
     - [Smoothing](EditingTerrainLayers.md#smoothing)
@@ -17,7 +17,7 @@
     - [Flatten](EditingTerrainLayers.md#flatten)
     - [Visibility](EditingTerrainLayers.md#visibility)
     - [Tex Pan, Tex Rotate and Tex Scale](EditingTerrainLayers.md#tex-pan-tex-rotate-and-tex-scale)
-  + [Fake DisplacementMaps](EditingTerrainLayers.md#fake-_displacementmaps)
+  + [Fake DisplacementMaps](EditingTerrainLayers.md#fake-displacementmaps)
   + [Other Sections](EditingTerrainLayers.md#other-sections)
 
 ## The TerrainInfo
@@ -225,4 +225,4 @@ In TerrainScale, the Z should be a very low value, for example 0.05, if you leav
 
 ## Other Sections
 
-[TerrainTutorial](../Content Creation/Primitives/TerrainTutorial.md) - This outlines all the contents of the following documents. Also, if you add new sections to this document, it is also good practice to update the [TerrainTutorial](../Content Creation/Primitives/TerrainTutorial.md) as well.[CreatingTerrain](CreatingTerrain.md) - This document explains how to create a Terrain starting from an empty level.[EditingTerrainMaps](EditingTerrainMaps.md) - Shows how to use the Terrain Editor Tools.[EditingTerrainLayers](EditingTerrainLayers.md) - Explains how to create and use Layers within your Terrain.[CreatingDecoLayers](CreatingDecoLayers.md) - Shows how to create DecoLayers.[AdditionalTerrainTips](AdditionalTerrainTips.md) - In this document you will find several ways to greatly improve the appearance and effectiveness of your Terrain. If you are learning how to create your first Terrain, this section should **NOT** be over looked.
+[TerrainTutorial](../Content%20Creation/Primitives/TerrainTutorial.md) - This outlines all the contents of the following documents. Also, if you add new sections to this document, it is also good practice to update the [TerrainTutorial](../Content%20Creation/Primitives/TerrainTutorial.md) as well.[CreatingTerrain](CreatingTerrain.md) - This document explains how to create a Terrain starting from an empty level.[EditingTerrainMaps](EditingTerrainMaps.md) - Shows how to use the Terrain Editor Tools.[EditingTerrainLayers](EditingTerrainLayers.md) - Explains how to create and use Layers within your Terrain.[CreatingDecoLayers](CreatingDecoLayers.md) - Shows how to create DecoLayers.[AdditionalTerrainTips](AdditionalTerrainTips.md) - In this document you will find several ways to greatly improve the appearance and effectiveness of your Terrain. If you are learning how to create your first Terrain, this section should **NOT** be over looked.

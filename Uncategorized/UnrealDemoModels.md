@@ -46,7 +46,7 @@ For the models I made, most of the answers are cut and dry. I had a budget of 40
 
 ### The Eye
 
-I used a planar sheet of polygons for the eyes in my models. This method is a polygon efficient way to create eyes that will require eye tracking. For a more thorough explanation, see the [UnrealModeling](UnrealModeling.md#movable_eyes)
+I used a planar sheet of polygons for the eyes in my models. This method is a polygon efficient way to create eyes that will require eye tracking. For a more thorough explanation, see the [UnrealModeling](UnrealModeling.md#movable-eyes)
 doc.
 
 ![eye motion range](../assets/eyelimits.jpg)
@@ -63,7 +63,7 @@ You can see in the picture above that each finger joint has two segments around 
 
 ### Feet
 
-I experimented a little bit when making the feet. As explained in the [UnrealModeling](UnrealModeling.md#in_game_perspective)
+I experimented a little bit when making the feet. As explained in the [UnrealModeling](UnrealModeling.md#in-game-perspective)
 doc, perspective in games often makes 'normal' human proportions seem wrong. This is especially the case with feet, where the camera point of view is often looking down at your models from a position above and behind your character. To compensate for this effect, I made the feet on the male model much larger than is normal. I made the girl's feet normal sized, so that evaluating the appropriateness of both sizes is possible.
 
 ![foot size comparison](../assets/sidefeet.jpg)
@@ -74,7 +74,7 @@ Texturing the models is a fairly straightforward task. There are some alpha and 
 
 ### Crossing Alpha Textured Triangles
 
-A major concern while texturing for UnrealEd is the "no crossing alpha textured triangles" rule. For a more detailed explanation, see the [UnrealTexturing](UnrealTexturing.md#alpha_channels)
+A major concern while texturing for UnrealEd is the "no crossing alpha textured triangles" rule. For a more detailed explanation, see the [UnrealTexturing](UnrealTexturing.md#alpha-channels)
 doc. In a nutshell, when two triangles cross that both have textures with alpha channels on them, Unreal gets confused. This results in ugly draw order issues, where one triangle will 'pop' over the next, and back again. Try to avoid this situation if at all possible.
 
 ### Texture Size and Number

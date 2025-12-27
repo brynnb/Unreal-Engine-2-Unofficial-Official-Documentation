@@ -75,7 +75,7 @@ EngineModel.SetRelativeRotation(rot(0, 32768, 0));
 EngineModel.LoopAnim('Vibrate');
 ```
 
-The vibrate animation is played at different rates depending on the pitch of the engine noise (engine pitch covered in section [below](HotRod.md#how_to_fake_gears)). This is done by calling *LoopAnim* every tick with a different rate. This causes the animation to be played at different rates and thankfully does not start the animation from the beginning each call. If there is no driver in the car, the engine vibrate is played very very slowly to make it look stopped.The engine is destroyed in *Destroyed*.
+The vibrate animation is played at different rates depending on the pitch of the engine noise (engine pitch covered in section [below](HotRod.md#how-to-fake-gears)). This is done by calling *LoopAnim* every tick with a different rate. This causes the animation to be played at different rates and thankfully does not start the animation from the beginning each call. If there is no driver in the car, the engine vibrate is played very very slowly to make it look stopped.The engine is destroyed in *Destroyed*.
 
 ### How to Fake Gears
 

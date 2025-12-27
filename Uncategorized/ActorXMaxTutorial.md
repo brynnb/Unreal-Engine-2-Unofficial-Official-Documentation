@@ -1,6 +1,6 @@
-# How to export animations using [ActorX](../Content Creation/Tools/ActorX.md) and Max
+# How to export animations using [ActorX](../Content%20Creation/Tools/ActorX.md) and Max
 
-*Document Summary: A tutorial showing how to export animations using [ActorX](../Content Creation/Tools/ActorX.md) with 3DS Max.*
+*Document Summary: A tutorial showing how to export animations using [ActorX](../Content%20Creation/Tools/ActorX.md) with 3DS Max.*
 
 * [How to export animations using ActorX and Max](ActorXMaxTutorial.md#how-to-export-animations-using-_actorx-and-max)
   + [Install the Plug-In](ActorXMaxTutorial.md#install-the-plug-in)
@@ -29,32 +29,32 @@
       * [Hard Lock](ActorXMaxTutorial.md#hard-lock)
     - [Logfiles/No Log Files](ActorXMaxTutorial.md#logfilesno-log-files)
     - [Script Template](ActorXMaxTutorial.md#script-template)
-  + [Batch exporting using MaxScript](ActorXMaxTutorial.md#batch-exporting-using-_maxscript)
+  + [Batch exporting using MaxScript](ActorXMaxTutorial.md#batch-exporting-using-maxscript)
   + [Troubleshooting](ActorXMaxTutorial.md#troubleshooting)
     - ["Unmatched Node ID" warning](ActorXMaxTutorial.md#unmatched-node-id-warning)
     - ["Invalid number of physique bone influences" warning](ActorXMaxTutorial.md#invalid-number-of-physique-bone-influences-warning)
   + [Downloads](ActorXMaxTutorial.md#downloads)
 
-This document assumes that you have already created & rigged your actor and are simply looking for a step-by-step tutorial on how to use the [ActorX](../Content Creation/Tools/ActorX.md) exporter to export your model & animations out of Max and into Unreal. This also assumes that you have already read the [ActorX](../Content Creation/Tools/ActorX.md) documentation on the UDN site and understand conceptually the relationship between .PSK files and .PSA files.
+This document assumes that you have already created & rigged your actor and are simply looking for a step-by-step tutorial on how to use the [ActorX](../Content%20Creation/Tools/ActorX.md) exporter to export your model & animations out of Max and into Unreal. This also assumes that you have already read the [ActorX](../Content%20Creation/Tools/ActorX.md) documentation on the UDN site and understand conceptually the relationship between .PSK files and .PSA files.
 
 ## Install the Plug-In
 
-1. Download the [ActorX](../Content Creation/Tools/ActorX.md) plug-in for Max and copy it to your plug-ins directory.
-2. Launch Max, and [ActorX](../Content Creation/Tools/ActorX.md) should load automatically. You can find it under the utilities tab. (If this is the first time you are using it, you'll find it when you click the *more* button)
+1. Download the [ActorX](../Content%20Creation/Tools/ActorX.md) plug-in for Max and copy it to your plug-ins directory.
+2. Launch Max, and [ActorX](../Content%20Creation/Tools/ActorX.md) should load automatically. You can find it under the utilities tab. (If this is the first time you are using it, you'll find it when you click the *more* button)
 
 ![utils.jpg](../assets/utils.jpg)
 
-If activating the plugin results in an error message - the most common one is "failed to initialize", verify your system is up to date with the latest Windows system updates, and download and install the latest Microsoft .Net framework update, available via <http://www.microsoft.com/downloads> ( choose .net in the download product/technology box and press [go]). If this doesn't fix it, get msvcr71.dll from the [ActorX](../Content Creation/Tools/ActorX.md) page and manually place it either in your windows\system32 folder or in the plug-ins folder alongside the [ActorX](../Content Creation/Tools/ActorX.md) plugin.
+If activating the plugin results in an error message - the most common one is "failed to initialize", verify your system is up to date with the latest Windows system updates, and download and install the latest Microsoft .Net framework update, available via <http://www.microsoft.com/downloads> ( choose .net in the download product/technology box and press [go]). If this doesn't fix it, get msvcr71.dll from the [ActorX](../Content%20Creation/Tools/ActorX.md) page and manually place it either in your windows\system32 folder or in the plug-ins folder alongside the [ActorX](../Content%20Creation/Tools/ActorX.md) plugin.
 
 ## Setting up your scene
 
-Always make sure that everything in the scene belongs to a single hierarchy. Delete all placeholder objects and any other helper elements that are not part of the mesh.3DS Max is very flexible as to what makes up a bone in a skeleton - by default, all regular bones as well as all proper parent-child relations linking geometry, dummies, and even point helpers (since [ActorX](../Content Creation/Tools/ActorX.md) plugin version 2.14) will be interpreted as skeletal bones by the exporter, as long as they make up a single hierarchy.Be aware of the axes and orientation: on export from Max, the Y-coordinates of the mesh get their sign flipped to comply with Unreal's handedness (relative orientation of axes.) So, if in Max, the Z axis is up, a character faces down the X axis, and the Y axis points into the screen away from the viewer, should turn into a mesh facing down X, Z being up, and Y pointing towards the viewer - provided no additional mesh properties like rotation or negative scalings are applied in the editor.Multiple materials can be used in the scene. They will end up as multiple material slots in the final mesh, and the order will be arbitrary by default, unless you force it by appending "skinXX" tags to the names of the materials - i.e., if the material names are Body and Head , renaming them to Body\_Skin00 and Head\_Skin01 will tell the exporter to obey that order when creating the .PSK file. You are free to use both individual and "multi-sub" materials. When using the latter, simply put the desired skin order tags on each sub material.
+Always make sure that everything in the scene belongs to a single hierarchy. Delete all placeholder objects and any other helper elements that are not part of the mesh.3DS Max is very flexible as to what makes up a bone in a skeleton - by default, all regular bones as well as all proper parent-child relations linking geometry, dummies, and even point helpers (since [ActorX](../Content%20Creation/Tools/ActorX.md) plugin version 2.14) will be interpreted as skeletal bones by the exporter, as long as they make up a single hierarchy.Be aware of the axes and orientation: on export from Max, the Y-coordinates of the mesh get their sign flipped to comply with Unreal's handedness (relative orientation of axes.) So, if in Max, the Z axis is up, a character faces down the X axis, and the Y axis points into the screen away from the viewer, should turn into a mesh facing down X, Z being up, and Y pointing towards the viewer - provided no additional mesh properties like rotation or negative scalings are applied in the editor.Multiple materials can be used in the scene. They will end up as multiple material slots in the final mesh, and the order will be arbitrary by default, unless you force it by appending "skinXX" tags to the names of the materials - i.e., if the material names are Body and Head , renaming them to Body\_Skin00 and Head\_Skin01 will tell the exporter to obey that order when creating the .PSK file. You are free to use both individual and "multi-sub" materials. When using the latter, simply put the desired skin order tags on each sub material.
 This not only affects the order of slots for skeletal meshes, but can be used to influence rendering order as well.
 
 ## Export the skeleton and mesh
 
 1. Load a scene containing the actor you wish to export.
-2. Bring up the [ActorX](../Content Creation/Tools/ActorX.md) dialog by going to the utilities tab (see above) and opening [ActorX](../Content Creation/Tools/ActorX.md).
+2. Bring up the [ActorX](../Content%20Creation/Tools/ActorX.md) dialog by going to the utilities tab (see above) and opening [ActorX](../Content%20Creation/Tools/ActorX.md).
 3. Fill in the various fields as follows:
    * **Output folder**: enter the name of the directory where you wish to save the .PSK file. We recommend putting an "Unreal Files" directory under your actor's folder. The browse button is very useful here.
    * **Mesh file name**: enter the name for the .PSK file. We recommend the name of your actor.
@@ -73,7 +73,7 @@ There are two steps for exporting animations. First, load the scene containing y
 ### Digest an animation
 
 1. Load the file containing the animation you wish to export.
-2. Bring up the [ActorX](../Content Creation/Tools/ActorX.md) dialog by opening the utilities tab, and opening the [ActorX](../Content Creation/Tools/ActorX.md) option. (You may have to click the `more' button, as described above)
+2. Bring up the [ActorX](../Content%20Creation/Tools/ActorX.md) dialog by opening the utilities tab, and opening the [ActorX](../Content%20Creation/Tools/ActorX.md) option. (You may have to click the `more' button, as described above)
 3. Fill in the various fields as follows:
    * **Output folder**: same as for skeleton/mesh above.
    * **Animation file name**: we recommend the same as the mesh file name (they will have a different extension to help you tell them apart). Enter the name of your existing .PSA file if you wish to add this animation to that existing .PSA
@@ -82,9 +82,9 @@ There are two steps for exporting animations. First, load the scene containing y
 
 ![PSA name me](../assets/namepsa.jpg)
 
-1. Make sure that the range slider and the time slider show 0 as the first frame. (Note: this is a superstitious behavior on our part to avoid a periodic crashing bug in [ActorX](../Content Creation/Tools/ActorX.md). Skip this step at your own peril)
+1. Make sure that the range slider and the time slider show 0 as the first frame. (Note: this is a superstitious behavior on our part to avoid a periodic crashing bug in [ActorX](../Content%20Creation/Tools/ActorX.md). Skip this step at your own peril)
 2. Click *Digest Animation*. When it is done, you will **not** get a window telling you that it was/was not successful.
-3. Repeat steps 1-5 for as many animations as you would like to export this session. We recommend not trying to do too many at once in case [ActorX](../Content Creation/Tools/ActorX.md) crashes and you have to start over.
+3. Repeat steps 1-5 for as many animations as you would like to export this session. We recommend not trying to do too many at once in case [ActorX](../Content%20Creation/Tools/ActorX.md) crashes and you have to start over.
 
 ### Add your animations to a .PSA file
 
@@ -92,7 +92,7 @@ Once you have digested one or more animations you are ready to add them to a .PS
 
 ![anim-manager.gif](../assets/anim-manager.gif)
 
-1. Bring up the [ActorX](../Content Creation/Tools/ActorX.md) dialog if it is not already displayed.
+1. Bring up the [ActorX](../Content%20Creation/Tools/ActorX.md) dialog if it is not already displayed.
 2. Click the *animation manager* button to display the animation manager.
 3. If you are adding your animations to an existing .PSA file, click *Load* to load the .PSA file. (assumes that you already provided the name of the animation file in step 3b of the previous section. If not, then use the \_Load As...... button)
 4. On the left in the *animations* list you should see the animations that you have just digested. On the right you will see any animations that already exist in the .PSA file. This will be empty if you are creating a new .PSA file.
@@ -103,7 +103,7 @@ Once you have digested one or more animations you are ready to add them to a .PS
 
 ## Batch Processing
 
-As the list of animations for each character grows the process for creating the .PSA files starts to take a very long time. In order to simplify this process you can have [ActorX](../Content Creation/Tools/ActorX.md) process all of the animations in a given folder in one step.
+As the list of animations for each character grows the process for creating the .PSA files starts to take a very long time. In order to simplify this process you can have [ActorX](../Content%20Creation/Tools/ActorX.md) process all of the animations in a given folder in one step.
 
 ### Preparing your animations
 
@@ -122,15 +122,15 @@ in 3D-Studio to set this up properly.
 
 Once your animations are properly setup follow these steps to export them all to a .PSA file.
 
-1. Fill in the *Output Folder* field in [ActorX](../Content Creation/Tools/ActorX.md) with the desired location of the .PSA file
+1. Fill in the *Output Folder* field in [ActorX](../Content%20Creation/Tools/ActorX.md) with the desired location of the .PSA file
 2. Fill in the *Animation File Name* field with the desired name of the .PSA file.
 3. In the *Actor X - Setup* section of the tool, check *cull unused dummies*.
-4. Also in the *Actor X - Setup* section click *Process all Animations*. [ActorX](../Content Creation/Tools/ActorX.md) will prompt you for the folder where all of the animations reside. Select the folder and click *Okay*.
+4. Also in the *Actor X - Setup* section click *Process all Animations*. [ActorX](../Content%20Creation/Tools/ActorX.md) will prompt you for the folder where all of the animations reside. Select the folder and click *Okay*.
 5. Now that the animations have been imported click *Animation Manager* which will open the Animation Manager window (see above). The left list is all the animations you have digested thus far. The right column is the list of animations that exist in the .PSA file you selected in the *Animation File Name* field.
 6. Select the animations you which to export from the left column and click the *Copy ==>* button, to copy them into the area where the .PSA animations reside.
 7. Click *Save*. The .PSA file will be created.
 
-## Additional [ActorX](../Content Creation/Tools/ActorX.md) options
+## Additional [ActorX](../Content%20Creation/Tools/ActorX.md) options
 
 You may have noticed that there are a wealth of options underneath the animation manager button, in the `ActorX - Setup' section. We'll step through them in order.
 
@@ -203,7 +203,7 @@ With revision 2.18 of the plug-in, all major export commands and switches are ex
 
 ### "Unmatched Node ID" warning
 
-A frequently encountered issue is the "Unmatched node ID" warning. It means there is mesh geometry in the scene that the exporter cannot associate with a bone. For example a piece of mesh that is not properly linked to the main hierarchy, but which has a Physique or Skin modifier on it. As outlined above in the setup notes, everything in the scene must belong to a single, tree-like hierarchy where all bones and all objects acting as bones eventually link down to the root bone/root object of the skeleton. Make sure there is no accidental texturing on any biped or dummy 'helper' geometry, and if you don't need it (when all your skins are purely Physique or Max skins) uncheck the 'all textured' option under "Skin Export" in the [ActorX](../Content Creation/Tools/ActorX.md) setup panel.
+A frequently encountered issue is the "Unmatched node ID" warning. It means there is mesh geometry in the scene that the exporter cannot associate with a bone. For example a piece of mesh that is not properly linked to the main hierarchy, but which has a Physique or Skin modifier on it. As outlined above in the setup notes, everything in the scene must belong to a single, tree-like hierarchy where all bones and all objects acting as bones eventually link down to the root bone/root object of the skeleton. Make sure there is no accidental texturing on any biped or dummy 'helper' geometry, and if you don't need it (when all your skins are purely Physique or Max skins) uncheck the 'all textured' option under "Skin Export" in the [ActorX](../Content%20Creation/Tools/ActorX.md) setup panel.
 
 ### "Invalid number of physique bone influences" warning
 

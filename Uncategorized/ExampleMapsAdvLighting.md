@@ -4,7 +4,7 @@
 
 * [Advanced Lighting Tutorial](ExampleMapsAdvLighting.md#advanced-lighting-tutorial)
   + [Introduction](ExampleMapsAdvLighting.md#introduction)
-  + [Projectors + Shaders](ExampleMapsAdvLighting.md#projectors--shaders)
+  + [Projectors + Shaders](ExampleMapsAdvLighting.md#projectors-shaders)
     - [Tree Canopy Shadows](ExampleMapsAdvLighting.md#tree-canopy-shadows)
       * [Single Tree Shadow](ExampleMapsAdvLighting.md#single-tree-shadow)
       * [Forest Canopy Shadow](ExampleMapsAdvLighting.md#forest-canopy-shadow)
@@ -14,7 +14,7 @@
     - [Caustics](ExampleMapsAdvLighting.md#caustics)
       * [Underwater](ExampleMapsAdvLighting.md#underwater)
       * [Above Water](ExampleMapsAdvLighting.md#above-water)
-  + [Projectors + Emitters](ExampleMapsAdvLighting.md#projectors--emitters)
+  + [Projectors + Emitters](ExampleMapsAdvLighting.md#projectors-emitters)
     - [Light Beam through Window](ExampleMapsAdvLighting.md#light-beam-through-window)
   + [Mesh Effects](ExampleMapsAdvLighting.md#mesh-effects)
     - [Tree Canopy Light Beams](ExampleMapsAdvLighting.md#tree-canopy-light-beams)
@@ -22,14 +22,14 @@
     - [Rotating Caution Light](ExampleMapsAdvLighting.md#rotating-caution-light)
     - [Moths Casting Shadows](ExampleMapsAdvLighting.md#moths-casting-shadows)
   + [Special Projectors](ExampleMapsAdvLighting.md#special-projectors)
-    - [Triggerable FluorescentLight Projector](ExampleMapsAdvLighting.md#triggerable-_fluorescentlight-projector)
+    - [Triggerable FluorescentLight Projector](ExampleMapsAdvLighting.md#triggerable-fluorescentlight-projector)
   + [Downloads](ExampleMapsAdvLighting.md#downloads)
 
 ![advanced_lighting.jpg](../assets/advanced_lighting.jpg)
 
 ## Introduction
 
-This document assumes that you know the fundamentals of using Lights, Projectors, [Static Meshes](https://udn.epicgames.com/Two/StaticMeshTopics), [Particle Systems](https://udn.epicgames.com/Two/ParticleTopics), and [Materials](../Content Creation/Lighting and Textures/MaterialTutorial.md). In the example map are demonstrations as well as explanations on how to create various lighting effects mostly using some combination of the actors listed above. In the example map, the effects are divided into indoors and outdoors effects. Inside you will find triggerable fluorescent lights, neon lights, caution lights, light beams through a window, and moving lights through grates. Outside you will find trees with moving canopy shadows and beams of light, wavering torch lights, volumetric ground frog, water caustics, and rolling clouds. Within the document though, these effects are categorized by how they are created.You will need the [UDN content](https://udn.epicgames.com/Two/UDNBuildContent) for some of the examples.
+This document assumes that you know the fundamentals of using Lights, Projectors, [Static Meshes](https://udn.epicgames.com/Two/StaticMeshTopics), [Particle Systems](https://udn.epicgames.com/Two/ParticleTopics), and [Materials](../Content%20Creation/Lighting%20and%20Textures/MaterialTutorial.md). In the example map are demonstrations as well as explanations on how to create various lighting effects mostly using some combination of the actors listed above. In the example map, the effects are divided into indoors and outdoors effects. Inside you will find triggerable fluorescent lights, neon lights, caution lights, light beams through a window, and moving lights through grates. Outside you will find trees with moving canopy shadows and beams of light, wavering torch lights, volumetric ground frog, water caustics, and rolling clouds. Within the document though, these effects are categorized by how they are created.You will need the [UDN content](https://udn.epicgames.com/Two/UDNBuildContent) for some of the examples.
 
 ## Projectors + Shaders
 

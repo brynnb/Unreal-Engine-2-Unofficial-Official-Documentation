@@ -6,21 +6,21 @@
 
 ## Related documents
 
-[UnrealScriptReference](../Technical and Programming/UnrealScript/UnrealScriptReference.md), [StringsInNativeCode](https://udn.epicgames.com/Two/StringsInNativeCode)
+[UnrealScriptReference](../Technical%20and%20Programming/UnrealScript/UnrealScriptReference.md), [StringsInNativeCode](https://udn.epicgames.com/Two/StringsInNativeCode)
 
 ## Contents
 
-* [Strings In UnrealScript](StringsInUnrealScript.md#strings-in-_unrealscript)
+* [Strings In UnrealScript](StringsInUnrealScript.md#strings-in-unrealscript)
   + [Related documents](StringsInUnrealScript.md#related-documents)
   + [Contents](StringsInUnrealScript.md#contents)
   + [Intro](StringsInUnrealScript.md#intro)
   + [Operators](StringsInUnrealScript.md#operators)
     - [$ (dollar sign)](StringsInUnrealScript.md#-dollar-sign))
-    - [$=](StringsInUnrealScript.md#)
+    - [$=](StringsInUnrealScript.md)
     - [@ (at)](StringsInUnrealScript.md#-at))
-    - [@=](StringsInUnrealScript.md#)
-    - [< (less-than)](StringsInUnrealScript.md#less-than))
-    - [> (greater-than)](StringsInUnrealScript.md#greater-than))
+    - [@=](StringsInUnrealScript.md)
+    - [< (less-than)](StringsInUnrealScript.md#-less-than))
+    - [> (greater-than)](StringsInUnrealScript.md#-greater-than))
     - [<= (less-than-or-equal-to)](StringsInUnrealScript.md#-less-than-or-equal-to))
     - [>= (greater-than-or-equal-to)](StringsInUnrealScript.md#-greater-than-or-equal-to))
     - [== (equal-equal)](StringsInUnrealScript.md#-equal-equal))

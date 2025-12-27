@@ -33,9 +33,9 @@ Below are descriptions of the three properties and the default setting for a Lig
 
 | Property | Description | Default |
 | --- | --- | --- |
-| **LightBrightness** | This controls the amount of light cast. See [below](LightingReference.md#lightbrightness) for detailed description. | 64.0 |
-| **LightHue** | This controls the hue or color of the light cast. See [below](LightingReference.md#lighthue) for detailed description. | 0 |
-| **LightSaturation** | This controls the saturation level or "pureness" of the light cast. See [below](LightingReference.md#lightsaturation) for detailed description. | 255 |
+| **LightBrightness** | This controls the amount of light cast. See [below](LightingReference.md#light-brightness) for detailed description. | 64.0 |
+| **LightHue** | This controls the hue or color of the light cast. See [below](LightingReference.md#light-hue) for detailed description. | 0 |
+| **LightSaturation** | This controls the saturation level or "pureness" of the light cast. See [below](LightingReference.md#light-saturation) for detailed description. | 255 |
 
 ### Light Brightness
 
@@ -96,7 +96,7 @@ In these properties there are a lot more variable to tinker with. Below is a tab
 | **bDirectionalCorona** | The corona will only have an effect in the set direction instead of any direction. | *False* |
 | **bDynamicLight** | This will allow the lighting from this light to move with the light if `True.' Note that DynamicLights are somewhat more processor intensive than regular lights. | *False* |
 | **bLightingVisibility** | Calculates lighting visibility for this actor with line checks. | *True* |
-| **bSpecialLit** | This setting allows you to some extent manually control what is affected by this light and what is not. See [below](LightingReference.md#speciallit) for detailed description. | *False* |
+| **bSpecialLit** | This setting allows you to some extent manually control what is affected by this light and what is not. See [below](LightingReference.md#special-lit) for detailed description. | *False* |
 | **LightCone** | If you are using the Light Effect *LE SpotLight,* this will determine the angle of the spotlight cone. See [below](LightingReference.md#lightcone) for detailed description. | *128* |
 | **LightEffect** | These are ready made effects that you can use in your light. See [below](LightingReference.md#lighteffect) for detailed description. | *LE None* |
 | **LightPeriod** | This determines the rate of special [Light Types](LightingReference.md#lighttype) See [below](LightingReference.md#lightperiod) for detailed description. | *32* |
@@ -265,7 +265,7 @@ LT\_SubtlePulse: this does the same as pulse, but more subtle
 
 ![subtlepulse.gif](../assets/subtlepulse.gif)
 
-LT\_TexturePaletteLoop and LT\_TexturePaletteOnce: these can be used to make the light loop through different colors, more about this in the sections [TexturePaletteLoop](SpecialLightingFeatures.md#tpl) and [TexturePaletteOnce](SpecialLightingFeatures.md#tpo).  
+LT\_TexturePaletteLoop and LT\_TexturePaletteOnce: these can be used to make the light loop through different colors, more about this in the sections [TexturePaletteLoop](SpecialLightingFeatures.md#texturepaletteloop) and [TexturePaletteOnce](SpecialLightingFeatures.md#texturepaletteonce).  
 LT\_FadeOut: looks exactly the same as LT\_None
 
 ![none.gif](../assets/none.gif)
@@ -278,4 +278,4 @@ Another setting that affects lighting of BSP yet is not in the Light Properties 
 
 ## Relevant Documents
 
-For more about LightActors and general lighting in Unreal Ed, also see the following documents:[LightingBasics](../Content Creation/Lighting and Textures/LightingBasics.md) - A detailed table of contents to all of the Lighting documents[UsingLights](UsingLights.md) - A general guide to not only using lights but also how to use features associated with lights.[TypesOfLights](TypesOfLights.md) - A guide to the various types of LightActors and light sources.[LightingOnSurfaces](LightingOnSurfaces.md) - A guide showing how LightActors affect various types of geometry.[SpecialLightingFeatures](SpecialLightingFeatures.md) - A tutorial showing how to set up special lighting features.
+For more about LightActors and general lighting in Unreal Ed, also see the following documents:[LightingBasics](../Content%20Creation/Lighting%20and%20Textures/LightingBasics.md) - A detailed table of contents to all of the Lighting documents[UsingLights](UsingLights.md) - A general guide to not only using lights but also how to use features associated with lights.[TypesOfLights](TypesOfLights.md) - A guide to the various types of LightActors and light sources.[LightingOnSurfaces](LightingOnSurfaces.md) - A guide showing how LightActors affect various types of geometry.[SpecialLightingFeatures](SpecialLightingFeatures.md) - A tutorial showing how to set up special lighting features.

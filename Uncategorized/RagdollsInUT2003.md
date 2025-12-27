@@ -12,7 +12,7 @@
 
 ## Related Documents
 
-[KarmaAuthoringTool](KarmaAuthoringTool.md), [KarmaAuthoringToolTutorial](https://udn.epicgames.com/Two/KarmaAuthoringToolTutorial), [KarmaReference](../Content Creation/Physics/KarmaReference.md)
+[KarmaAuthoringTool](KarmaAuthoringTool.md), [KarmaAuthoringToolTutorial](https://udn.epicgames.com/Two/KarmaAuthoringToolTutorial), [KarmaReference](../Content%20Creation/Physics/KarmaReference.md)
 
 ## Introduction
 
@@ -54,7 +54,7 @@ The section above talks about adding ragdolls for use when a character dies. How
 
 11. Inside the KarmaParams sub-section, change KStartEnabled from False to True. This means the ragdoll will start to simulate the moment the level begins.
 
-That should get your guy basically working. See the [KarmaReference](../Content Creation/Physics/KarmaReference.md) page for more details on what the different properties inside KarmaParams do. You can do standard things like making the ragdoll heavier or non-standard things like make ragdolls float by settings the gravity to negative.Once you have your guy in the level, you can do other things, like joint it to the world! See the [ExampleMapsKarmaColosseum](ExampleMapsKarmaColosseum.md) document or the [UsingKarmaActors](UsingKarmaActors.md) document for info on using joints.
+That should get your guy basically working. See the [KarmaReference](../Content%20Creation/Physics/KarmaReference.md) page for more details on what the different properties inside KarmaParams do. You can do standard things like making the ragdoll heavier or non-standard things like make ragdolls float by settings the gravity to negative.Once you have your guy in the level, you can do other things, like joint it to the world! See the [ExampleMapsKarmaColosseum](ExampleMapsKarmaColosseum.md) document or the [UsingKarmaActors](UsingKarmaActors.md) document for info on using joints.
 
 ## Profiling Ragdolls
 

@@ -62,7 +62,7 @@ Documentation including references, technical guides, and tutorials covering set
 
 Essential Reading
 
-* [UnrealScript Reference](../Technical and Programming/UnrealScript/UnrealScriptReference.md) - Complete reference for the UnrealScript programming language.
+* [UnrealScript Reference](../Technical%20and%20Programming/UnrealScript/UnrealScriptReference.md) - Complete reference for the UnrealScript programming language.
 * [UnrealWiki UnrealScript Overview](http://wiki.beyondunreal.com/UnrealScript_overview) - UnrealScript language information on the UnrealWiki.
 * [Custom UnrealScript Projects](CustomUnrealScriptProjects.md) - Setting up new UnrealScript projects.
 * [Basic Game Quick Start](BasicGameQuickStart.md) - Creating an empty game framework to start from.

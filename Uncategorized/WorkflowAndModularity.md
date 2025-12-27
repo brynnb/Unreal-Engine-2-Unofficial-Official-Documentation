@@ -36,7 +36,7 @@
     - [Textures](WorkflowAndModularity.md#textures)
     - [Animation](WorkflowAndModularity.md#animation)
   + [General Rules of Optimization](WorkflowAndModularity.md#general-rules-of-optimization)
-    - [Batched-Rendering Specific Optimizations](WorkflowAndModularity.md#batched-rendering--specific-optimizations)
+    - [Batched-Rendering Specific Optimizations](WorkflowAndModularity.md#batched-rendering-specific-optimizations)
     - [UnBatched-Rendering Specific Optimizations](WorkflowAndModularity.md#unbatched-rendering-specific-optimizations)
 
 ## Introduction
@@ -244,7 +244,7 @@ The rigging of the model can take place concurrently with the texture. Not only 
 
 ## General Rules of Optimization
 
-This section will provide an overview of how to make your modular meshes render faster. Be sure to go through the [LevelOptimization](../Content Creation/Techniques/LevelOptimization.md) doc to speed things up as well. A few simple rules can give you much higher triangle counts at the same framerate. These rules are generalizations and will not always prove to come true in practice. For detailed a detailed explanation of making your meshes render fast, see the [MeshOptimization](MeshOptimization.md) doc. Take a look at "stat render" then use these
+This section will provide an overview of how to make your modular meshes render faster. Be sure to go through the [LevelOptimization](../Content%20Creation/Techniques/LevelOptimization.md) doc to speed things up as well. A few simple rules can give you much higher triangle counts at the same framerate. These rules are generalizations and will not always prove to come true in practice. For detailed a detailed explanation of making your meshes render fast, see the [MeshOptimization](MeshOptimization.md) doc. Take a look at "stat render" then use these
 
 * Use as few materials as possible in each mesh.
 * Make sure your meshes do not have any redundant materials in them. In the static mesh browser, take a look at the materials list for each mesh, and insure that the same material does not appear twice.

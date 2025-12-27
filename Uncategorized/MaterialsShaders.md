@@ -111,4 +111,4 @@ Here you can set a Texture that the Engine will default to if for whatever reaso
 
 ![epicmaterials1.jpg](../assets/epicmaterials1.jpg)
 
-For an example map that shows many different complex Materials in action, take a look at this document:[ExampleMapsEPIC](ExampleMapsEPIC.md#materials_example_map) *(The example map is at the bottom of the page)*To return back the main Materials page, click [here](../Content Creation/Lighting and Textures/MaterialTutorial.md) <--
+For an example map that shows many different complex Materials in action, take a look at this document:[ExampleMapsEPIC](ExampleMapsEPIC.md#materials-example-map) *(The example map is at the bottom of the page)*To return back the main Materials page, click [here](../Content%20Creation/Lighting%20and%20Textures/MaterialTutorial.md) <--

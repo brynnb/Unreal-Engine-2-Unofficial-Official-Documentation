@@ -117,7 +117,7 @@ To begin writing your own functionality for the Runtime, you will need the [Unre
 
 * You can launch the UnrealEngine2 Editor (UnrealEd) by selecting *Start*, *Programs*, *UnrealEngine2 Runtime* and clicking on *UnrealEngine2 Editor*.
 * The [UnrealEngine2](WebHome.md) area of UDN contains full documentation on the level design process. [WhatToReadFirst](WhatToReadFirst.md) is an excellent place to start.
-  + Additionally, the UDN [ExampleMaps](../Content Creation/Techniques/ExampleMaps.md) list many small, sample levels you can download to see how certain features and functions are implemented. Make sure to download the "Runtime" versions of each one.
+  + Additionally, the UDN [ExampleMaps](../Content%20Creation/Techniques/ExampleMaps.md) list many small, sample levels you can download to see how certain features and functions are implemented. Make sure to download the "Runtime" versions of each one.
 * Technical documentation on customizing the Runtime's interface, creating new UnrealScript code and more is underway.
   + Learn about creating your own menus at [RuntimeExampleRestrictedMenu](RuntimeExampleRestrictedMenu.md).
   + Package up your Runtime project as a standalone application by reading [MakingRuntimeInstallers](MakingRuntimeInstallers.md).

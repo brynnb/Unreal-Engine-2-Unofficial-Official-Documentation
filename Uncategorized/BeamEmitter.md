@@ -59,11 +59,11 @@
 
 ## Introduction
 
-This document will cover Beam Emitters, one of five different possible emitters available in the 3323 build. For more information on general emitter properties, see  [EmittersReference](../Content Creation/Effects/EmittersReference.md). For more information on the other three emitter types, see  [SpriteEmitter](https://udn.epicgames.com/Two/SpriteEmitter),  [SparkEmitter](SparkEmitter.md),  [MeshEmitter](MeshEmitter.md) and [TrailEmitter?.This Emitter is very useful to create lightning and electrical effects. It stretches the chosen texture into a beam with HighFrequencyPoints and LowFrequencyPoints. There must be at least two of each to make the lightning work. Each beam is one particle. Normally, the beam is only one angular line, but you can also give it branches.As previously stated, we will be discussing Beam Emitters a property at a time, with most of our attention on those properties unique to, or especially relevant to, these Emitters.
+This document will cover Beam Emitters, one of five different possible emitters available in the 3323 build. For more information on general emitter properties, see  [EmittersReference](../Content%20Creation/Effects/EmittersReference.md). For more information on the other three emitter types, see  [SpriteEmitter](https://udn.epicgames.com/Two/SpriteEmitter),  [SparkEmitter](SparkEmitter.md),  [MeshEmitter](MeshEmitter.md) and [TrailEmitter?.This Emitter is very useful to create lightning and electrical effects. It stretches the chosen texture into a beam with HighFrequencyPoints and LowFrequencyPoints. There must be at least two of each to make the lightning work. Each beam is one particle. Normally, the beam is only one angular line, but you can also give it branches.As previously stated, we will be discussing Beam Emitters a property at a time, with most of our attention on those properties unique to, or especially relevant to, these Emitters.
 
 ## Acceleration
 
-Applies acceleration to the beam particles. This is probably not going to be useful as real-world lightning bolts are not visibly affected by gravity. Probably better results will result in changes to  [StartVelocityRange](BeamEmitter.md#velocity). For more information on Acceleration check out the [Emitters Reference](../Content Creation/Effects/EmittersReference.md#acceleration) document.
+Applies acceleration to the beam particles. This is probably not going to be useful as real-world lightning bolts are not visibly affected by gravity. Probably better results will result in changes to  [StartVelocityRange](BeamEmitter.md#velocity). For more information on Acceleration check out the [Emitters Reference](../Content%20Creation/Effects/EmittersReference.md#acceleration) document.
 
 ## Beam
 
@@ -76,7 +76,7 @@ option is set to  [PTEPDistance](BeamEmitter.md#ptepdistance).
 
 ### BeamEndPoints
 
-Add one or more to specify either an offset range or an ActorTag. This is further explained in  [PTEP\_Offset](BeamEmitter.md#ptepoffset) and  [PTEP\_Actor](BeamEmitter.md#ptepactor) under [DetermineEndPointBy](BeamEmitter.md#determineendpointby).
+Add one or more to specify either an offset range or an ActorTag. This is further explained in  [PTEP\_Offset](BeamEmitter.md#ptep_offset) and  [PTEP\_Actor](BeamEmitter.md#ptep_actor) under [DetermineEndPointBy](BeamEmitter.md#determineendpointby).
 
 ### BeamTextureUScale
 
@@ -131,15 +131,15 @@ Note: In the event that you have competed the above steps and your beam is still
 
 #### PTEP\_TraceOffset
 
-This does the same as  [PTEP\_Offset](BeamEmitter.md#ptepoffset), but if there is a solid surface in the way the lightning will hit against it, instead of going to the actual EndPoint. Oh, and PTEP\_TraceOffset doesn't work good in combination with the coordinate system PTCS\_Relative.
+This does the same as  [PTEP\_Offset](BeamEmitter.md#ptep_offset), but if there is a solid surface in the way the lightning will hit against it, instead of going to the actual EndPoint. Oh, and PTEP\_TraceOffset doesn't work good in combination with the coordinate system PTCS\_Relative.
 
 #### PTEP\_OffsetAsAbsolute
 
-The same as [PTEP\_Offset](BeamEmitter.md#ptepoffset), except that the EndPoint is the absolute location instead of the relative location.
+The same as [PTEP\_Offset](BeamEmitter.md#ptep_offset), except that the EndPoint is the absolute location instead of the relative location.
 
 #### PTEP\_DynamicDistance
 
-Does the same as [PTEP\_Distance](BeamEmitter.md#ptepoffset) except that the length can be scaled by *Size.Y* and the distance can be changed in realtime from UnrealScript.
+Does the same as [PTEP\_Distance](BeamEmitter.md#ptep_distance) except that the length can be scaled by *Size.Y* and the distance can be changed in realtime from UnrealScript.
 
 ### RotatingSheets
 
@@ -149,7 +149,7 @@ This option determines how many sheets the beam has. 0 and 1 mean the same: only
 
 ### TriggerEndpoint
 
-This allows your beam to trigger another Actor. It is usable only when the  [DetermineEndpointBy](BeamEmitter.md#determineendpointby) is set to  [PTEP\_Actor](BeamEmitter.md#ptepactor). If the Actor in question is something that can be triggered, ie. another particle system or a mover, then when the beam EndPoint will activate the trigger when it strikes.In the following example, a BeamEmitter is set to strike a SpriteEmitter with the Tag "ParticleActor" and a Mover with the Tag "MoveActor".
+This allows your beam to trigger another Actor. It is usable only when the  [DetermineEndpointBy](BeamEmitter.md#determineendpointby) is set to  [PTEP\_Actor](BeamEmitter.md#ptep_actor). If the Actor in question is something that can be triggered, ie. another particle system or a mover, then when the beam EndPoint will activate the trigger when it strikes.In the following example, a BeamEmitter is set to strike a SpriteEmitter with the Tag "ParticleActor" and a Mover with the Tag "MoveActor".
 
 ![triggerexample.jpg](../assets/triggerexample.jpg)
 
@@ -219,7 +219,7 @@ This determines the time the engine waits before updating the Dynamic Noise. If 
 
 ### HFScaleFactors
 
-Insert these to create a High Frequency Scale, similar to the ColorScale explained in the [EmittersReference](../Content Creation/Effects/EmittersReference.md#color) document.For example, let's say you have a beam with 100 HighFrequencyPoints. Without the HFScale, the whole Beam has the same NoiseRange everywhere, as in the image below.
+Insert these to create a High Frequency Scale, similar to the ColorScale explained in the [EmittersReference](../Content%20Creation/Effects/EmittersReference.md#color) document.For example, let's say you have a beam with 100 HighFrequencyPoints. Without the HFScale, the whole Beam has the same NoiseRange everywhere, as in the image below.
 
 ![noise.jpg](../assets/noise.jpg)
 
@@ -273,7 +273,7 @@ If True, the beam will use a  [LFScale](BeamEmitter.md#lfscalefactors) as descri
 
 ## Collision
 
-Beam Emitters do not work with collision *per se*. However, the beam can be interrupted if it intersects something. See  [PTEP\_TraceOffset](BeamEmitter.md#pteptraceoffset) for more information. For more on particle collision check out the [EmittersReference](../Content Creation/Effects/EmittersReference.md#collision) document.
+Beam Emitters do not work with collision *per se*. However, the beam can be interrupted if it intersects something. See  [PTEP\_TraceOffset](BeamEmitter.md#ptep_traceoffset) for more information. For more on particle collision check out the [EmittersReference](../Content%20Creation/Effects/EmittersReference.md#collision) document.
 
 ## Color
 
@@ -281,52 +281,52 @@ The best way to make the lightning to flash realistically is to use a color scal
 
 ![lightning14.gif](../assets/lightning14.gif)
 
-The use of ColorScale is further explained in the [EmittersReference](../Content Creation/Effects/EmittersReference.md#color) document.
+The use of ColorScale is further explained in the [EmittersReference](../Content%20Creation/Effects/EmittersReference.md#color) document.
 
 ## Fading
 
-For a more in-depth review of fading, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#fading) document.
+For a more in-depth review of fading, see the [EmittersReference](../Content%20Creation/Effects/EmittersReference.md#fading) document.
 
 ## Revolution
 
-This doesn't seem to affect Beam Emitters. For a more in-depth review of revolution, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#revolution) document.
+This doesn't seem to affect Beam Emitters. For a more in-depth review of revolution, see the [EmittersReference](../Content%20Creation/Effects/EmittersReference.md#revolution) document.
 
 ## Rotation
 
-You may want to add rotations to your Beam Emitter. For a more in-depth review of rotation, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#rotation) document.
+You may want to add rotations to your Beam Emitter. For a more in-depth review of rotation, see the [EmittersReference](../Content%20Creation/Effects/EmittersReference.md#rotation) document.
 
 ## Size
 
-With the X values of the StartSizeRange, you can make the lightning more thin or more fat. This doesn't change the length of the lightning, only the width of it's texture.For a more on Size, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#size) document.
+With the X values of the StartSizeRange, you can make the lightning more thin or more fat. This doesn't change the length of the lightning, only the width of it's texture.For a more on Size, see the [EmittersReference](../Content%20Creation/Effects/EmittersReference.md#size) document.
 
 ## SkeletalMesh
 
-Skeletal Mesh emitters allows you to attach particles to the bones of a skeletal mesh. The mesh is used to determine the spawn location of the particles and can also be used to determine the movement the particles. For a more in-depth review of Skeletal Mesh emitters, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#skeletal_mesh) document.
+Skeletal Mesh emitters allows you to attach particles to the bones of a skeletal mesh. The mesh is used to determine the spawn location of the particles and can also be used to determine the movement the particles. For a more in-depth review of Skeletal Mesh emitters, see the [EmittersReference](../Content%20Creation/Effects/EmittersReference.md#skeletal_mesh) document.
 
 ## Spawning
 
-Make sure to set appropriate values in the Spawning fields. These figures will affect how quickly particles are created, over the lifetime of your emitter. For a more in-depth review of Spawning, see the [EmittersReference](../Content Creation/Effects/EmittersReference.md#spawning) document.
+Make sure to set appropriate values in the Spawning fields. These figures will affect how quickly particles are created, over the lifetime of your emitter. For a more in-depth review of Spawning, see the [EmittersReference](../Content%20Creation/Effects/EmittersReference.md#spawning) document.
 
 ## Texture
 
-For more information on the texture field, see the [Emitters Reference](../Content Creation/Effects/EmittersReference.md#texture_).
+For more information on the texture field, see the [Emitters Reference](../Content%20Creation/Effects/EmittersReference.md#texture_).
 
 ## Tick
 
-This functions normally. See the [Emitters Reference](../Content Creation/Effects/EmittersReference.md#tick) for more information.
+This functions normally. See the [Emitters Reference](../Content%20Creation/Effects/EmittersReference.md#tick) for more information.
 
 ## Time
 
-This functions normally. See the [Emitters Reference](../Content Creation/Effects/EmittersReference.md#time) for more information.
+This functions normally. See the [Emitters Reference](../Content%20Creation/Effects/EmittersReference.md#time) for more information.
 
 ## Trigger
 
-This functions normally. See the [Emitters Reference](../Content Creation/Effects/EmittersReference.md#trigger) for more information.
+This functions normally. See the [Emitters Reference](../Content%20Creation/Effects/EmittersReference.md#trigger) for more information.
 
 ## Velocity
 
-StartVelocityRange will determine the initial velocity of your particles. Since this is given in a range, the value chosen for the particle velocities will be random. If your  [DetermineEndPointBy](BeamEmitter.md#determineendpointby) setting is not  [PTEP\_Velocity](BeamEmitter.md#ptep_actor), these numbers will be ignored.See the [Emitters Reference](../Content Creation/Effects/EmittersReference.md#velocity) for more information on Velocity.
+StartVelocityRange will determine the initial velocity of your particles. Since this is given in a range, the value chosen for the particle velocities will be random. If your  [DetermineEndPointBy](BeamEmitter.md#determineendpointby) setting is not  [PTEP\_Velocity](BeamEmitter.md#ptep_actor), these numbers will be ignored.See the [Emitters Reference](../Content%20Creation/Effects/EmittersReference.md#velocity) for more information on Velocity.
 
 ## Warmup
 
-This functions normally. See the [Emitters Reference](../Content Creation/Effects/EmittersReference.md#warmup) for more information.
+This functions normally. See the [Emitters Reference](../Content%20Creation/Effects/EmittersReference.md#warmup) for more information.

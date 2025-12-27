@@ -412,7 +412,7 @@ Variables may also contain additional specifiers such as `const` that further de
 :   Advanced. Only meaningful for the Brush variable in Actor classes. ([More details](https://udn.epicgames.com/lists/showpost/php?list=unprog&id=1197)).
 
 **localized**
-:   The value of this variable will have a localized value defined. Mostly used for strings. Read more about this in the [LocalizationReference](../User Interface/LocalizationReference.md).
+:   The value of this variable will have a localized value defined. Mostly used for strings. Read more about this in the [LocalizationReference](../User%20Interface/LocalizationReference.md).
 
 ### Arrays
 
@@ -423,7 +423,7 @@ Arrays are declared using the following syntax:
 var int MyArray[20]; // Declares an array of 20 ints.
 ```
 
-UnrealScript supports only single-dimensional arrays, though you can simulate multidimensional arrays by carrying out the row/column math yourself. For information on Dynamic Arrays, see below in the [Advanced Language Features](#dynarray) section.
+UnrealScript supports only single-dimensional arrays, though you can simulate multidimensional arrays by carrying out the row/column math yourself. For information on Dynamic Arrays, see below in the [Advanced Language Features](#advanced-language-features) section.
 
 ### Editability
 

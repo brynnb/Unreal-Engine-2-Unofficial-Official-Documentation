@@ -6,11 +6,11 @@
   + [Introduction](FontTutorial.md#introduction)
   + [Font Lowdown](FontTutorial.md#font-lowdown)
   + [True Type Fonts](FontTutorial.md#true-type-fonts)
-  + [Exporting Fonts](FontTutorial.md#exporting--fonts)
+  + [Exporting Fonts](FontTutorial.md#exporting-fonts)
     - [Messing with the Images](FontTutorial.md#messing-with-the-images)
   + [Importing Fonts](FontTutorial.md#importing-fonts)
     - [FontUpdater (licensee only)](FontTutorial.md#fontupdater-licensee-only))
-    - ["Font Update" UnrealEd Command](FontTutorial.md#font-update-_unrealed-command)
+    - ["Font Update" UnrealEd Command](FontTutorial.md#font-update-unrealed-command)
   + [Using Fonts In-Game](FontTutorial.md#using-fonts-in-game)
   + [Example](FontTutorial.md#example)
 
@@ -57,7 +57,7 @@ By default, you can not export font textures because they are compressed. There 
 
 Texture->Compress( TEXF_DXT5 );
 ```**
-and recompile. Now follow the font importing instructions [above](FontTutorial.md#true_type_fonts) and the fonts you import will not be compressed so you can export them. Be sure to change the compress line back to normal so you don't accidentally have many uncompressed fonts.**2. Screen Shot the Font**This method is theoretically simple but annoying. You can take a screen shot of the texture browser in UnrealEd when the font image you want is selected. Then crop and process this image in PhotoShop.
+and recompile. Now follow the font importing instructions [above](FontTutorial.md#true-type-fonts) and the fonts you import will not be compressed so you can export them. Be sure to change the compress line back to normal so you don't accidentally have many uncompressed fonts.**2. Screen Shot the Font**This method is theoretically simple but annoying. You can take a screen shot of the texture browser in UnrealEd when the font image you want is selected. Then crop and process this image in PhotoShop.
 
 ### Messing with the Images
 
@@ -76,7 +76,7 @@ ucc fontupdate ..\Textures\MyFonts.utx c:\temp MyFont_PageA.tga
 
 ### "Font Update" UnrealEd Command
 
-First load the texture package that contains the font you want to alter. Even it the package is already open, opening the package ensures that all the fonts and images in this package are loaded.The next step to using "font update" is importing the image you wish to use as a font page. (See [Font Lowdown](FontTutorial.md#font_lowdown) above for more info on font pages.) Import the texture as you normally would. The texture can be put in any package but it is probably best to put it in the package that contains the font already.Now at the **"Command"** text box in UnrealEd type:**`font update font=name_of_font texture=name_of_texture page=font_page_to_replace`**For example: Lets assume the texture package that contained your fonts is *MyFonts\_T*. Also, let's say the font page you wanted to replace is the first page of *MyFont17* and you wanted to replace it with the texture *MyFonts\_T.MyFont17\_PageA\_New*. In this case you would type:**```
+First load the texture package that contains the font you want to alter. Even it the package is already open, opening the package ensures that all the fonts and images in this package are loaded.The next step to using "font update" is importing the image you wish to use as a font page. (See [Font Lowdown](FontTutorial.md#font-lowdown) above for more info on font pages.) Import the texture as you normally would. The texture can be put in any package but it is probably best to put it in the package that contains the font already.Now at the **"Command"** text box in UnrealEd type:**`font update font=name_of_font texture=name_of_texture page=font_page_to_replace`**For example: Lets assume the texture package that contained your fonts is *MyFonts\_T*. Also, let's say the font page you wanted to replace is the first page of *MyFont17* and you wanted to replace it with the texture *MyFonts\_T.MyFont17\_PageA\_New*. In this case you would type:**```
 
 font update Font=MyFonts_T.MyFont17 Texture=MyFonts_T.MyFont17_PageA_New Page=0
 ```**The "font update" command will tell the abstract font object to point to the new texture instead of the old one. Both textures will still exist in the texture package and nothing will appear to have changed, but when you run the game, the font will be using the new texture.
@@ -103,11 +103,11 @@ Another solution would be to use DynamicLoadObject to load the font this this:
 
 Canvas.Font = Font(DynamicLoadObject("FunFonts.FunFont", class'Font'));
 ```**
-Now just draw text to the screen with your fine new font. (See the [CanvasReference](../Technical and Programming/User Interface/CanvasReference.md) if you need help drawing text.)
+Now just draw text to the screen with your fine new font. (See the [CanvasReference](../Technical%20and%20Programming/User%20Interface/CanvasReference.md) if you need help drawing text.)
 
 ## Example
 
-This example will show how to make a fancy font for numbers. First we start the font creation process by making the following text file *NumFont.exec* in the system directory.**new truetypefontfactory package=NumFonts name=NumFontBasic fontname="Impact" height=30 antialias=1 Chars="1234567890"new truetypefontfactory package=NumFonts name=NumFont fontname="Impact" height=30 antialias=1 Chars="1234567890" XPad=10 YPad=10 ExtendBoxRight=10 ExtendBoxBottom=10obj savepackage package="NumFonts" file="..\textures\NumFonts.utx"***Note: There should be only 3 lines in this file; the lines are wrapping here because they are long.*The NumFont has an XPad/YPad and an ExtendBoxRight/ ExtendBoxBottom so that when we edit the font in Photoshop and add a glow, the numbers will not overlap. (It turns out 10 was a bit too large, 6 would have been better). Next we open Unrealed and type **"exec NumFont.exec"** in the Command text box or in the log. This will create the font texture package. Now we open the *NumFonts.utx* package in the editor and [export](FontTutorial.md#exporting_fonts) the "NumFont\_PageA.tga" image as a tga file to the c:\temp\Fonts directory. After closing Unrealed and opening the exported file in Photoshop we find both the RGB channel and the Alpha channel look like this:
+This example will show how to make a fancy font for numbers. First we start the font creation process by making the following text file *NumFont.exec* in the system directory.**new truetypefontfactory package=NumFonts name=NumFontBasic fontname="Impact" height=30 antialias=1 Chars="1234567890"new truetypefontfactory package=NumFonts name=NumFont fontname="Impact" height=30 antialias=1 Chars="1234567890" XPad=10 YPad=10 ExtendBoxRight=10 ExtendBoxBottom=10obj savepackage package="NumFonts" file="..\textures\NumFonts.utx"***Note: There should be only 3 lines in this file; the lines are wrapping here because they are long.*The NumFont has an XPad/YPad and an ExtendBoxRight/ ExtendBoxBottom so that when we edit the font in Photoshop and add a glow, the numbers will not overlap. (It turns out 10 was a bit too large, 6 would have been better). Next we open Unrealed and type **"exec NumFont.exec"** in the Command text box or in the log. This will create the font texture package. Now we open the *NumFonts.utx* package in the editor and [export](FontTutorial.md#exporting-fonts) the "NumFont\_PageA.tga" image as a tga file to the c:\temp\Fonts directory. After closing Unrealed and opening the exported file in Photoshop we find both the RGB channel and the Alpha channel look like this:
 
 ![orignumfont.jpg](../assets/orignumfont.jpg)
 

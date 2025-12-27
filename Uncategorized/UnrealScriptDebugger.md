@@ -34,9 +34,9 @@ The fundamentals of the UnrealScript debugger closely resemble those of Develope
 
 1. Class tree; by default it only shows the actors, uncheck (6) to use Object as root
 2. Source code; shows the source code of the class currently being debugged. Break points and the current execution line are highlighted (in red and aqua respectively).
-3. [Information Tabs](UnrealScriptDebugger.md#informationtabs) shows various details about the current debug process.
-4. [Call stack](UnrealScriptDebugger.md#callstack)
-5. [Toolbar buttons](UnrealScriptDebugger.md#toolbarbuttons)
+3. [Information Tabs](UnrealScriptDebugger.md#information-tabs) shows various details about the current debug process.
+4. [Call stack](UnrealScriptDebugger.md#call-stack)
+5. [Toolbar buttons](UnrealScriptDebugger.md#toolbar-buttons)
 6. Set\unset the root of the class tree to actor.
 
 ### Menu

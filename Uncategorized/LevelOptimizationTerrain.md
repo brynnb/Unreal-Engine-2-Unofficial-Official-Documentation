@@ -7,11 +7,11 @@
   + [Setting an Initial Size](LevelOptimizationTerrain.md#setting-an-initial-size)
   + [Invisibility Tool](LevelOptimizationTerrain.md#invisibility-tool)
   + [Optimizing Layers](LevelOptimizationTerrain.md#optimizing-layers)
-  + [Terrain SectorSize](LevelOptimizationTerrain.md#terrain-_sectorsize)
+  + [Terrain SectorSize](LevelOptimizationTerrain.md#terrain-sectorsize)
 
 ## Introduction
 
-Terrain geometry falls between Static Meshes and BSP as far as rendering and collision efficiency. There isn't a whole lot that can be done to optimize Terrain with respect to collision, but there are a few things to be aware of to optimize for rendering. This document shows what aspects of Terrain can be optimized and how best to optimize them.This document is part of a collection of documents on [LevelOptimization](../Content Creation/Techniques/LevelOptimization.md), but sure to read the others.
+Terrain geometry falls between Static Meshes and BSP as far as rendering and collision efficiency. There isn't a whole lot that can be done to optimize Terrain with respect to collision, but there are a few things to be aware of to optimize for rendering. This document shows what aspects of Terrain can be optimized and how best to optimize them.This document is part of a collection of documents on [LevelOptimization](../Content%20Creation/Techniques/LevelOptimization.md), but sure to read the others.
 
 ## Setting an Initial Size
 

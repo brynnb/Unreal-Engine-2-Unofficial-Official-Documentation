@@ -23,7 +23,7 @@ WarpZones can be used to create a variety of effects. This example map document 
 Before you start on creating your WarpZones, you will want to make sure that you follow these guidelines
 
 * **bUseStencil = True** Make sure you have this set option in your *.ini* file set to true. You will need to exit Unreal Ed, go into your system folder open up your *yourgam.ini/ file (in a clean build from UDN, that would be the \_UW.ini* file), search for "UseStencil" and set that value to True. If you don't know which *.ini* file to update, ask a programmer.
-* **WarpZone Portal Textures** You will need to create special shaders to assign to the WarpZone Portals. This is described in greater detail [here](MirrorsAndWarpZones.md#correcting_warpzone_portals) .
+* **WarpZone Portal Textures** You will need to create special shaders to assign to the WarpZone Portals. This is described in greater detail [here](MirrorsAndWarpZones.md#correcting-warpzone-portals) .
 * **WarpZone Portal Alignment** WarpZones work best when the Zones you are warping between are facing in opposite directions (e.g. WarpZone A faces East and warps to WarpZone B which faces west).
 * **SkyZonesInfos** Having a SkyZone in your level can *sometimes* cause artifacts to appear when looking through a WarpZone Portal. Test this early if you intend to use a SkyZone in your level.
 

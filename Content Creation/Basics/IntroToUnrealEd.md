@@ -51,7 +51,7 @@ Here you can set its dimensions and various other attributes. For this initial s
 
 ![redbuilderbrush.gif](../../assets/redbuilderbrush.gif)
 
-Once you have the brush in position, use the subtract button to carve out your space and it will create a Constructed Solid Geometry (CSG) but it is more commonly referred to as BSP (Binary Space Partition). For a more in depth description of these terms see the [BspBrushesTutorial](../Primitives/BspBrushesTutorial.md#bsp_brush_introduction).
+Once you have the brush in position, use the subtract button to carve out your space and it will create a Constructed Solid Geometry (CSG) but it is more commonly referred to as BSP (Binary Space Partition). For a more in depth description of these terms see the [BspBrushesTutorial](../Primitives/BspBrushesTutorial.md#bsp-brush-introduction).
 
 ![subtract.gif](../../assets/subtract.gif)
 

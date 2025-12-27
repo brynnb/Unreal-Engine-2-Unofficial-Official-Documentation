@@ -143,5 +143,5 @@ For more details about collision for static meshes, see the [StaticMeshCollision
 
 ## References
 
-Movers also use Static Meshes. More about movers is in the [MoversTutorial](MoversTutorial.md).To get CubeMaps and other effects on the Static Mesh, you need to use the Material System, explained in the [MaterialTutorial](../Lighting and Textures/MaterialTutorial.md).More about the lighting on Static Meshes is in the [LightingBasics](../Lighting and Textures/LightingBasics.md).
+Movers also use Static Meshes. More about movers is in the [MoversTutorial](MoversTutorial.md).To get CubeMaps and other effects on the Static Mesh, you need to use the Material System, explained in the [MaterialTutorial](../Lighting%20and%20Textures/MaterialTutorial.md).More about the lighting on Static Meshes is in the [LightingBasics](../Lighting%20and%20Textures/LightingBasics.md).
 

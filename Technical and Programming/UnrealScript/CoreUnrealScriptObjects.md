@@ -33,7 +33,7 @@
   + [Basic native operators and functions](#basic-native-operators-and-functions)
     - [Boolean operators](#boolean-operators)
       * [A](#a)
-      * [A = B](#a-code-b)
+      * [A = B](#a-b)
       * [A = B](#a-b)
       * [A && B](#a-b)
       * [A ^^ B](#a-b)
@@ -44,9 +44,9 @@
       * [A += B](#a-b)
       * [A -= B](#a-b)
       * [++A](#a)
-      * [A--](#a-)
+      * [A--](#a--)
       * [A++](#a)
-      * [A--](#a-)
+      * [A--](#a--)
     - [Bit Manipulation](#bit-manipulation)
     - [Integer operators](#integer-operators)
     - [Integer functions](#integer-functions)
@@ -278,7 +278,7 @@ struct Range
 
 ### Range Vector
 
-Range vectors, in general can specify any 3D rectangle, having an Min and Max for X, Y and Z. They're usually used to define an area in the map where something is or is not happening, such as an area where it is raining or where you can hear music. They are also used in the [particle systems](../../Content Creation/Effects/ParticleSystems.md) as a randomly chosen value in this range for the number/velocity of particles moving in each direction. [Bounding Boxes](#bounding-box) are similar.Examples:
+Range vectors, in general can specify any 3D rectangle, having an Min and Max for X, Y and Z. They're usually used to define an area in the map where something is or is not happening, such as an area where it is raining or where you can hear music. They are also used in the [particle systems](../../Content%20Creation/Effects/ParticleSystems.md) as a randomly chosen value in this range for the number/velocity of particles moving in each direction. [Bounding Boxes](#bounding-box) are similar.Examples:
 
 ```
 
@@ -382,7 +382,7 @@ struct Color
 
 ### Bounding Box
 
-This is a 3D Box to contain something, like a system of particles, for example. See: [Particle Systems](../../Content Creation/Effects/ParticleSystems.md).This is similar to a [Range Vector](#range-vector).
+This is a 3D Box to contain something, like a system of particles, for example. See: [Particle Systems](../../Content%20Creation/Effects/ParticleSystems.md).This is similar to a [Range Vector](#range-vector).
 
 ```
 

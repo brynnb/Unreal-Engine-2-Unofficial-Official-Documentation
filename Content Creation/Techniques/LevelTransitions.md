@@ -35,7 +35,7 @@ To simplify the set up process you can set up one base Teleporter then copy it w
 
 ![prop_base.gif](../../assets/prop_base.gif)
 
-If you level transition is in larger space, you may need to create multiple Teleporters in a row. The [Placement](#placementsection) section explains how you should arrange the Teleporters. You will of course need unique names for each Teleporter in a single map.
+If you level transition is in larger space, you may need to create multiple Teleporters in a row. The [Placement](#placement) section explains how you should arrange the Teleporters. You will of course need unique names for each Teleporter in a single map.
 Now in the *TO* Teleporters you need only set the **bEnabled** field to *False.* Leave the URL field in the *FROM* Teleporter though. The Teleporter in this level won't use it, but if you select all of your Teleporters -and- the surrounding Level Transition space, you can copy and paste it into your other map (as described above in the [Level Setup](#levelsetup) section) and then switching the *TO* and *FROM* Teleporters becomes trivial. Just select all the Teleporters in the second map and reverse their **bEnabled** fields so that the *TO* Teleporters become *FROM* and vice versa.
 
 ![prop_from.gif](../../assets/prop_from.gif)

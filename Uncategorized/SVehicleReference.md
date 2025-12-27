@@ -32,7 +32,7 @@
 
 ## Related Documents
 
-[SVehicleCreation](SVehicleCreation.md), [SVehicleMayaMAXFix](https://udn.epicgames.com/Two/SVehicleMayaMAXFix), [KarmaReference](../Content Creation/Physics/KarmaReference.md), [AnimBrowserReference](../Content Creation/Animation/AnimBrowserReference.md), [KarmaCarCreation](KarmaCarCreation.md), [KarmaCars](KarmaCars.md), [HotRod](HotRod.md)
+[SVehicleCreation](SVehicleCreation.md), [SVehicleMayaMAXFix](https://udn.epicgames.com/Two/SVehicleMayaMAXFix), [KarmaReference](../Content%20Creation/Physics/KarmaReference.md), [AnimBrowserReference](../Content%20Creation/Animation/AnimBrowserReference.md), [KarmaCarCreation](KarmaCarCreation.md), [KarmaCars](KarmaCars.md), [HotRod](HotRod.md)
 
 ## Intro
 
@@ -75,19 +75,19 @@ SVehicles use a skeleton to control which parts of the mesh move and rotate. For
 
 ### Rigidize
 
-In general, animated meshes render slower than static meshes which is a concern when making highly detailed vehicles. Fortunately, there is a way to make parts of animated meshes render as fast as static meshes if these parts are only influenced by one bone. This is called "Rigidize" and is explained more fully in the [Animation Browser Reference](../Content Creation/Animation/AnimBrowserReference.md#rigidize).
+In general, animated meshes render slower than static meshes which is a concern when making highly detailed vehicles. Fortunately, there is a way to make parts of animated meshes render as fast as static meshes if these parts are only influenced by one bone. This is called "Rigidize" and is explained more fully in the [Animation Browser Reference](../Content%20Creation/Animation/AnimBrowserReference.md#rigidize).
 
 ### Collision Volumes
 
-SVehicles need collision volumes to work. You can not, however, import collision information in the manner of static meshes. This means you have to use the animation browser to add collision after you have imported the mesh. See the [Animation Browser Reference](../Content Creation/Animation/AnimBrowserReference.md#collision) for more details on adding collision. You can use more than one collision volume but it is a good idea to keep the number of collision volumes as small as possible. It is also good for the collision volume to be large enough that when the vehicle hits a wall, a collision volume collides before the center of any wheel collides.
+SVehicles need collision volumes to work. You can not, however, import collision information in the manner of static meshes. This means you have to use the animation browser to add collision after you have imported the mesh. See the [Animation Browser Reference](../Content%20Creation/Animation/AnimBrowserReference.md#collision) for more details on adding collision. You can use more than one collision volume but it is a good idea to keep the number of collision volumes as small as possible. It is also good for the collision volume to be large enough that when the vehicle hits a wall, a collision volume collides before the center of any wheel collides.
 
 ### Center of Mass
 
-The center of mass of an SVehicle is located at the origin of the mesh. This is the (0,0,0) point in the 3D modeling program and the animation browser. Neither the shape of the mesh nor the collision volume(s) affect the center of mass at all. The center of mass can be moved in 3 ways. First, move the mesh in the 3D modeling program. Second, move the mesh with the *Translation* offset in the "Mesh" category of the **Mesh** tab in the Animation Browser. Both of these options affect all instances of the SVehicle using the given mesh. (Remember to save the package before trying to see your changes though.) Third, you can adjust the *KCOMOffset* in [KarmaParamsRBFull](../Content Creation/Physics/KarmaReference.md#karmaparamsrbfull), in the "KParams", in the "Karma" category of the properties of the individual car. This change will only apply to the one SVehicle you change.
+The center of mass of an SVehicle is located at the origin of the mesh. This is the (0,0,0) point in the 3D modeling program and the animation browser. Neither the shape of the mesh nor the collision volume(s) affect the center of mass at all. The center of mass can be moved in 3 ways. First, move the mesh in the 3D modeling program. Second, move the mesh with the *Translation* offset in the "Mesh" category of the **Mesh** tab in the Animation Browser. Both of these options affect all instances of the SVehicle using the given mesh. (Remember to save the package before trying to see your changes though.) Third, you can adjust the *KCOMOffset* in [KarmaParamsRBFull](../Content%20Creation/Physics/KarmaReference.md#karmaparamsrbfull), in the "KParams", in the "Karma" category of the properties of the individual car. This change will only apply to the one SVehicle you change.
 
 ### Rotational Inertia
 
-The rotational inertia of the SVehicle is determined by *KInertiaTensor* in [KarmaParamsRBFull](../Content Creation/Physics/KarmaReference.md#karmaparamsrbfull). The rotational inertia is not affected by the collision volume(s) or by the shape of the mesh. This means you should tweak the *KInertiaTensor* for each new mesh you make so that the rotational inertia matches what the vehicle looks like.
+The rotational inertia of the SVehicle is determined by *KInertiaTensor* in [KarmaParamsRBFull](../Content%20Creation/Physics/KarmaReference.md#karmaparamsrbfull). The rotational inertia is not affected by the collision volume(s) or by the shape of the mesh. This means you should tweak the *KInertiaTensor* for each new mesh you make so that the rotational inertia matches what the vehicle looks like.
 
 ## Editable SVehicle Variables
 
@@ -207,7 +207,7 @@ Below are properties that define some of the physics of this vehicle.
 
 #### VehicleMass
 
-`var (SVehicle) float VehicleMass`This is the mass of the vehicle which includes the wheels. If the vehicle is too heavy it will jitter very oddly, and if it lands upside-down, it will also sink through the ground. The mass of the vehicle is centered around the [Center of Mass](SVehicleReference.md#center_of_mass) of the vehicle.
+`var (SVehicle) float VehicleMass`This is the mass of the vehicle which includes the wheels. If the vehicle is too heavy it will jitter very oddly, and if it lands upside-down, it will also sink through the ground. The mass of the vehicle is centered around the [Center of Mass](SVehicleReference.md#center-of-mass) of the vehicle.
 
 #### Wheels
 

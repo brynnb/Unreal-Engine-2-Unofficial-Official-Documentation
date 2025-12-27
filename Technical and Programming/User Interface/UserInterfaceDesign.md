@@ -41,12 +41,12 @@ Legenda: (Key) only when holding this key; [Key] only required when not in *inte
 | --- | --- |
 | (F1) | View this help screen. |
 | Ctrl + Alt + D | Toggles design mode. |
-| Ctrl + Alt + E | Toggles [property editor](#propertyeditor) mode. |
+| Ctrl + Alt + E | Toggles [property editor](#property-editor) mode. |
 | [Ctrl +] H | Toggles active/focused info; This will show some component details at the bottom of the screen. |
 | [Ctrl +] I | Toggle interactive mode; when enabled some functions are more easy accessable. |
 | [Ctrl +] P | Toggles full MenuOwner? chains for active/focused |
 | [Ctrl +] C | Copy position and dimension to the clipboard |
-| [Ctrl +] X | Export the selected component to the clipboard; This is usefull in combination with the [property editor](#propertyeditor) |
+| [Ctrl +] X | Export the selected component to the clipboard; This is usefull in combination with the [property editor](#property-editor) |
 | [Ctrl +] U | Refresh the property editor window in the designer. |
 | [Ctrl +] Up/Down/Left/Right | Reposition the selected component using arrow keys. |
 | [Ctrl +] =/- | Resize the selected component vertically. |

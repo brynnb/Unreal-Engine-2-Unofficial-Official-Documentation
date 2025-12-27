@@ -11,8 +11,8 @@
       * [MoveToPoint and Walk](ExampleMapsScriptedSequencesRT.md#movetopoint-and-walk)
       * [SetViewTarget](ExampleMapsScriptedSequencesRT.md#setviewtarget)
       * [Triggering Events](ExampleMapsScriptedSequencesRT.md#triggering-events)
-      * [PLAYANIM and WaitForAnimEnd](ExampleMapsScriptedSequencesRT.md#playanim-and-_waitforanimend)
-      * [IfConditions and TriggeredConditions](ExampleMapsScriptedSequencesRT.md#ifconditions-and-_triggeredconditions)
+      * [PLAYANIM and WaitForAnimEnd](ExampleMapsScriptedSequencesRT.md#playanim-and-waitforanimend)
+      * [IfConditions and TriggeredConditions](ExampleMapsScriptedSequencesRT.md#ifconditions-and-triggeredconditions)
   + [Trouble Shooting and Known Issues](ExampleMapsScriptedSequencesRT.md#trouble-shooting-and-known-issues)
   + [Downloads](ExampleMapsScriptedSequencesRT.md#downloads)
 

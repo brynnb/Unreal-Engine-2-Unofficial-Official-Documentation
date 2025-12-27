@@ -5,7 +5,7 @@
 * [Triggerable Lights](ExampleMapsTriggerableLighting.md#triggerable-lights)
   + [Introduction](ExampleMapsTriggerableLighting.md#introduction)
   + [Ingredients](ExampleMapsTriggerableLighting.md#ingredients)
-  + [Setting up a TriggerLight](ExampleMapsTriggerableLighting.md#setting-up-a-_triggerlight)
+  + [Setting up a TriggerLight](ExampleMapsTriggerableLighting.md#setting-up-a-triggerlight)
   + [TriggerLight Effects](ExampleMapsTriggerableLighting.md#triggerlight-effects)
     - [Running Lights](ExampleMapsTriggerableLighting.md#running-lights)
   + [Downloads](ExampleMapsTriggerableLighting.md#downloads)

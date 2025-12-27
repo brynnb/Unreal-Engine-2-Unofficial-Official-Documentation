@@ -31,7 +31,7 @@ If you used the LightType LE\_TexturePaletteLoop, the light will now cycle throu
 
 TexturePaletteOnce does the same thing as TexturePaletteLoop, only it'll do this only once. You can't use TexturePaletteOnce with normal lights. You need to make a new Actor Class for this. When this new actor is spawned in the game, it will loop through the colors of the palette once and then die. This new actor class should have the following Default Properties:
 
-* bStatic = False. You can read more about this bStatic setting in the section [Moving Lights](SpecialLightingFeatures.md#mov).
+* bStatic = False. You can read more about this bStatic setting in the section [Moving Lights](SpecialLightingFeatures.md#moving-lights).
 * Advanced --> bNoDelete = False: this is necessary because the actor must be able to be deleted after it's spawned.
 * Advanced --> LifeSpan > 0: here you enter the time that the actor will live. This is also the time it needs to loop through the palette. So for example if you set LifeSpan to 3 seconds, once the actor is spawned it will finish looping through the whole palette in 3 seconds and then die.
 * Display --> Skin: the skin you want to use for the palette
@@ -83,4 +83,4 @@ You can use a colored Projective Texture for example for light through stained g
 
 ## Relevant Documents
 
-For more about LightActors and general lighting in Unreal Ed, also see the following documents:[LightingBasics](../Content Creation/Lighting and Textures/LightingBasics.md) - A detailed table of contents to all of the Lighting documents[UsingLights](UsingLights.md) - A general guide to not only using lights but also how to use features associated with lights.[TypesOfLights](TypesOfLights.md) - A guide to the various types of LightActors and light sources.[LightingReference](LightingReference.md) - A comprehensive reference for the LightColor and Lighting properties.[LightingOnSurfaces](LightingOnSurfaces.md) - A guide showing how LightActors affect various types of geometry.
+For more about LightActors and general lighting in Unreal Ed, also see the following documents:[LightingBasics](../Content%20Creation/Lighting%20and%20Textures/LightingBasics.md) - A detailed table of contents to all of the Lighting documents[UsingLights](UsingLights.md) - A general guide to not only using lights but also how to use features associated with lights.[TypesOfLights](TypesOfLights.md) - A guide to the various types of LightActors and light sources.[LightingReference](LightingReference.md) - A comprehensive reference for the LightColor and Lighting properties.[LightingOnSurfaces](LightingOnSurfaces.md) - A guide showing how LightActors affect various types of geometry.

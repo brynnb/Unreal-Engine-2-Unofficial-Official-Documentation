@@ -142,8 +142,8 @@ A dynamically generated list of all toolchain support-related topics.
 **UmodWizard** (22 Jun 2005 - 14:30)  
  A download page for the UmodWizard.
 
-* [Umod Wizard](../../Content Creation/Tools/UmodWizard.md#umod-wizard)
-  + [Features](../../Content Creation/Tools/UmodWizard.md#features)
+* [Umod Wizard](../../Content%20Creation/Tools/UmodWizard.md#umod-wizard)
+  + [Features](../../Content%20Creation/Tools/UmodWizard.md#features)
 
 [![]()](UmodWizard.html)
 

@@ -32,7 +32,7 @@
 
 ## Introduction
 
-Interaction(s) are graphical user components that can accept key input and render two dimensional graphics to the screen (make sure you read [CanvasReference](../Technical and Programming/User Interface/CanvasReference.md) on how to render to the Canvas). The interaction system primarily serves two purposes. First, it's designed to lay the foundation for supporting input and render pipelines for multiple viewports and second, to be as friendly as possible to existing systems.Currently, it's used extensively for ingame menus. The system is very flexible and powerful, containing functions to transform 3d vectors into 2d vectors (from the world to the screen) and vice versa. It also provides the functionality and flexibility to be applied on an individual basis to players to provide support for real-time targeting systems (see the example below). This document will focus mainly on basic uses of Interactions with respect to the player.
+Interaction(s) are graphical user components that can accept key input and render two dimensional graphics to the screen (make sure you read [CanvasReference](../Technical%20and%20Programming/User%20Interface/CanvasReference.md) on how to render to the Canvas). The interaction system primarily serves two purposes. First, it's designed to lay the foundation for supporting input and render pipelines for multiple viewports and second, to be as friendly as possible to existing systems.Currently, it's used extensively for ingame menus. The system is very flexible and powerful, containing functions to transform 3d vectors into 2d vectors (from the world to the screen) and vice versa. It also provides the functionality and flexibility to be applied on an individual basis to players to provide support for real-time targeting systems (see the example below). This document will focus mainly on basic uses of Interactions with respect to the player.
 
 ## Interactions.uc
 
@@ -64,7 +64,7 @@ class InteractionMaster extends Interactions
       Native;
 ```
 
-The InteractionMaster has only one single instance on the client machine. During intialization (refer to UnGame.cpp), the game engine creates a global instance of the InteractionMaster. The InteractionsMaster is responsible for delegating all key and render events to all other Interactions on the client. The interaction master maintains a list of [global interactions](InteractionReference.md#global_interactions) in the *GlobalInteraction* array as well as references to the *BaseMenu* Interaction and the *Console* Interaction. The class of *Console* is specified in UT2004.ini (`[Engine.Engine]`) and it is created at startup and put in the *GlobalInteraction* array. *BaseMenu* will be associated with the *GUIController* instance defined in the UT2004.ini, this is done right before creation of the console (Note: pre-v3323 *BaseMenu* is not set). The *BaseMenu* is also put in the *GlobalInteraction* array. The InteractionMaster is also responsible for [local interactions](InteractionReference.md#local_interactions) but it does not maintain a list of these people they are stored per player viewport.
+The InteractionMaster has only one single instance on the client machine. During intialization (refer to UnGame.cpp), the game engine creates a global instance of the InteractionMaster. The InteractionsMaster is responsible for delegating all key and render events to all other Interactions on the client. The interaction master maintains a list of [global interactions](InteractionReference.md#global-interactions) in the *GlobalInteraction* array as well as references to the *BaseMenu* Interaction and the *Console* Interaction. The class of *Console* is specified in UT2004.ini (`[Engine.Engine]`) and it is created at startup and put in the *GlobalInteraction* array. *BaseMenu* will be associated with the *GUIController* instance defined in the UT2004.ini, this is done right before creation of the console (Note: pre-v3323 *BaseMenu* is not set). The *BaseMenu* is also put in the *GlobalInteraction* array. The InteractionMaster is also responsible for [local interactions](InteractionReference.md#local-interactions) but it does not maintain a list of these people they are stored per player viewport.
 
 ### User Functions
 
@@ -92,7 +92,7 @@ Unlike the [InteractionMaster](InteractionReference.md#interactionmaster_uc), th
 
 ### Global Interactions
 
-Global interactions have two major advantages. First, they get to process input first and draw last and second, they can implement certain functions natively without calling anything in script. (See [Functions to Override](InteractionReference.md#functions_to_override)). A menu would be a good thing to do with a global interacation.
+Global interactions have two major advantages. First, they get to process input first and draw last and second, they can implement certain functions natively without calling anything in script. (See [Functions to Override](InteractionReference.md#functions-to-override)). A menu would be a good thing to do with a global interacation.
 
 ### Local Interactions
 

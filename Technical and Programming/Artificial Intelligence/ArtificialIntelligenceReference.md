@@ -35,7 +35,7 @@
   + [AIController](#aicontroller)
     - [Scripting](#scripting)
     - [Movement](#movement)
-      * [bAdjustFromWalls](#b-adjustfromwalls)
+      * [bAdjustFromWalls](#badjustfromwalls)
       * [GetFacingDirection](#getfacingdirection)
     - [Mover Functionality](#mover-functionality)
     - [Misc](#misc)
@@ -52,7 +52,7 @@
   + [AIScript](#aiscript)
     - [How AIScripts are Used](#how-aiscripts-are-used)
   + [ScriptedSequence](#scriptedsequence)
-  + [Dynamic AI - Bot as an Example](#dynamic-ai-bot-as-an-example)
+  + [Dynamic AI - Bot as an Example](#dynamic-ai---bot-as-an-example)
   + [Related Documents](#related-documents)
 
 ## Introduction
@@ -213,7 +213,7 @@ Initially the ScriptedController does nothing. There is no code in any \*BeginPl
 
 #### Begin
 
-At the Begin: label the next [action](../../Content Creation/Scripted Sequences/ScriptedSequenceActions.md) is chosen from the [ScriptedSequence](#scriptedsequence) by calling *InitforNextAction()*. This function sets the *CurrentAction* which will be used to determine what to do next. A few things are also done to setup weapons and shooting. Next the Pawn is made ready to move by calling:
+At the Begin: label the next [action](../../Content%20Creation/Scripted%20Sequences/ScriptedSequenceActions.md) is chosen from the [ScriptedSequence](#scriptedsequence) by calling *InitforNextAction()*. This function sets the *CurrentAction* which will be used to determine what to do next. A few things are also done to setup weapons and shooting. Next the Pawn is made ready to move by calling:
 
 ```
 
@@ -247,7 +247,7 @@ In most cases AIScripts are placed in Unrealed and are associated with Pawns als
 
 ## ScriptedSequence
 
-ScriptedSequence extends [AIScript](#aiscript) and adds the ability to store a list of [Actions](../../Content Creation/Scripted Sequences/ScriptedSequenceActions.md) which a [ScriptedController](#scriptedcontroller) can read from. When SpawnControllerFor(...) is called in a ScriptedSequence, it also calls TakeOver(...) so as soon as Pawn starts in a level and is associate with a ScriptedSequence, it will be controlled immediately by ScriptedController.Once a ScriptedController exists it can be assigned new ScriptedSequences with the the SetNewScript(ScriptedSequence NewScript) function in ScriptedController. Scripts can also be changed with the [ChangeScript](../../Content Creation/Scripted Sequences/ScriptedSequenceActions.md#changescript) action within the ScriptedSequence. This means that ScriptedSequences can not only be used to control multiple pawns but can also be used modularly and fit together to form more complex behaviors.For example you could have a ScriptedSequence for every area in a map and have controllers switch scripts as the pawn moves between areas. ScriptedSequences can also be used to temporarily control more complex AI. Any class that extends ScriptedSequences can simply call SetNewScript(...) and it will perform the script. When the script is over or when the [LeaveSequence](../../Content Creation/Scripted Sequences/ScriptedSequenceActions.md#leavesequence) action is called the AI will resume its normal behavior.
+ScriptedSequence extends [AIScript](#aiscript) and adds the ability to store a list of [Actions](../../Content%20Creation/Scripted%20Sequences/ScriptedSequenceActions.md) which a [ScriptedController](#scriptedcontroller) can read from. When SpawnControllerFor(...) is called in a ScriptedSequence, it also calls TakeOver(...) so as soon as Pawn starts in a level and is associate with a ScriptedSequence, it will be controlled immediately by ScriptedController.Once a ScriptedController exists it can be assigned new ScriptedSequences with the the SetNewScript(ScriptedSequence NewScript) function in ScriptedController. Scripts can also be changed with the [ChangeScript](../../Content%20Creation/Scripted%20Sequences/ScriptedSequenceActions.md#changescript) action within the ScriptedSequence. This means that ScriptedSequences can not only be used to control multiple pawns but can also be used modularly and fit together to form more complex behaviors.For example you could have a ScriptedSequence for every area in a map and have controllers switch scripts as the pawn moves between areas. ScriptedSequences can also be used to temporarily control more complex AI. Any class that extends ScriptedSequences can simply call SetNewScript(...) and it will perform the script. When the script is over or when the [LeaveSequence](../../Content%20Creation/Scripted%20Sequences/ScriptedSequenceActions.md#leavesequence) action is called the AI will resume its normal behavior.
 
 ## Dynamic AI - Bot as an Example
 
@@ -255,5 +255,5 @@ Dynamic AI can be done in many many ways. To narrow the scope of the general pro
 
 ## Related Documents
 
-These are documents on the content side of things.[AIControllers](../../Content Creation/Scripted Sequences/AIControllers.md) - This document goes over all the types of AIControllers as well as how to set up AIControllers in Unrealed.[ScriptedSequenceTutorial](../../Content Creation/Scripted Sequences/ScriptedSequenceTutorial.md) - This is a document about how to use ScriptedSequences.[ScriptedSequenceActions](../../Content Creation/Scripted Sequences/ScriptedSequenceActions.md) - This document talks about the types of actions ScriptedSequences can do.
+These are documents on the content side of things.[AIControllers](../../Content%20Creation/Scripted%20Sequences/AIControllers.md) - This document goes over all the types of AIControllers as well as how to set up AIControllers in Unrealed.[ScriptedSequenceTutorial](../../Content%20Creation/Scripted%20Sequences/ScriptedSequenceTutorial.md) - This is a document about how to use ScriptedSequences.[ScriptedSequenceActions](../../Content%20Creation/Scripted%20Sequences/ScriptedSequenceActions.md) - This document talks about the types of actions ScriptedSequences can do.
 

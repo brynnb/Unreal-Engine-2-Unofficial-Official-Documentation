@@ -514,4 +514,4 @@ Caption="UnInstall GODZTestUT"
 
 ## Umod Generation Tools
 
-You can use the [UmodWizard](../Content Creation/Tools/UmodWizard.md) Tool to automate the umod generation process or use it to create the initial ini/int files.
+You can use the [UmodWizard](../Content%20Creation/Tools/UmodWizard.md) Tool to automate the umod generation process or use it to create the initial ini/int files.

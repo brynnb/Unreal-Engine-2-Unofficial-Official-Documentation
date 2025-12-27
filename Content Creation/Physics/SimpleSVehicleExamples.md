@@ -45,7 +45,7 @@ In either case, follow the instructions presented in the install window and this
 
 ## Compiling new SVehicles for the Runtime
 
-If you want to make changes to the code of the SVehicles you will need to recompile the example vehicles. See the [RuntimeSVehicles](../../Uncategorized/RuntimeSVehicles.md#compiling_new_svehicles) document for more details on compiling new SVehicles.
+If you want to make changes to the code of the SVehicles you will need to recompile the example vehicles. See the [RuntimeSVehicles](../../Uncategorized/RuntimeSVehicles.md#compiling-new-svehicles) document for more details on compiling new SVehicles.
 
 ## The Example Vehicles
 
