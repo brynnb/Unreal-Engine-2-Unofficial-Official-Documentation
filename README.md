@@ -16,7 +16,7 @@ The content was originally crawled from the [legacy Unreal Engine 2 documentatio
 
 **Modifications made:**
 *   Converted original HTML to Markdown.
-*   Downloaded and locally linked all image assets.
+*   Downloaded and locally linked all images and zip files.
 *   Cleaned unnecessary navigation headers, sidebars, and footers.
 *   Structured into folder hierarchy.
 
